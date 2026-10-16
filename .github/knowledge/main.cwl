@@ -27,7 +27,7 @@ outputs:
     outputSource: validate/report
   knowledge:
     type: File
-    outputSource: knowledge/knowledge
+    outputSource: extract_knowledge/knowledge
   knowledge_verification:
     type: File
     outputSource: verify_knowledge/report
@@ -45,7 +45,7 @@ steps:
       candidate: aggregate/candidate
       python_package: python_package
     out: [report]
-  knowledge:
+  extract_knowledge:
     run: tools/knowledge.cwl
     in:
       candidate: aggregate/candidate
@@ -57,6 +57,6 @@ steps:
     in:
       candidate: aggregate/candidate
       topics: topics
-      knowledge: knowledge/knowledge
+      knowledge: extract_knowledge/knowledge
       python_package: python_package
     out: [report]

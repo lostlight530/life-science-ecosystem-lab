@@ -7,9 +7,8 @@ requirements:
     envDef:
       PYTHONPATH: $(inputs.python_package.path)/.github/runtime:$(inputs.python_package.path)
       PYTHONDONTWRITEBYTECODE: '1'
-baseCommand: [python3, -m, life_science_ecosystem_lab]
+baseCommand: [python3, -m, evidence]
 arguments:
-  - evidence
   - aggregate
   - --input
   - $(inputs.records.path)
