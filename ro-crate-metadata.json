@@ -1,0 +1,309 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.3/context",
+    "https://w3id.org/ro/terms/test"
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.3"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Source-Grounded Life Science Workflow Knowledge Cartography",
+      "description": "Executable research workflow that constructs a topic-linked, source-cited knowledge map from immutable GitHub evidence snapshots, verifies provenance and reports unknowns; no biology or clinical inference",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      },
+      "mainEntity": {
+        "@id": "workflow/main.cwl"
+      },
+      "mentions": [
+        {
+          "@id": "#suite"
+        }
+      ],
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.3"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.1"
+        },
+        {
+          "@id": "https://w3id.org/ro/wftest/0.2"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "workflow/main.cwl"
+        },
+        {
+          "@id": "workflow/tools/aggregate.cwl"
+        },
+        {
+          "@id": "workflow/tools/validate.cwl"
+        },
+        {
+          "@id": "workflow/tools/knowledge.cwl"
+        },
+        {
+          "@id": "workflow/tools/verify-knowledge.cwl"
+        },
+        {
+          "@id": "workflow/README.md"
+        },
+        {
+          "@id": "test/workflow-job.yml"
+        },
+        {
+          "@id": "examples/evidence-records.json"
+        },
+        {
+          "@id": "profiles/topics.json"
+        },
+        {
+          "@id": "src/"
+        }
+      ]
+    },
+    {
+      "@id": "workflow/main.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "name": "Source-Grounded Life Science Workflow Knowledge Cartography",
+      "description": "Reproducibly extracts source-cited research workflow knowledge and explicit coverage gaps from independently verified GitHub evidence records",
+      "programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+      },
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      },
+      "version": "0.2.0",
+      "creator": {
+        "@id": "#creator"
+      },
+      "input": [
+        {
+          "@id": "#records"
+        },
+        {
+          "@id": "#topics"
+        },
+        {
+          "@id": "#python_package"
+        }
+      ],
+      "output": [
+        {
+          "@id": "#candidate"
+        },
+        {
+          "@id": "#validation_report"
+        },
+        {
+          "@id": "#knowledge"
+        },
+        {
+          "@id": "#knowledge_verification"
+        }
+      ],
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE"
+      }
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+      "@type": "ComputerLanguage",
+      "name": "Common Workflow Language",
+      "alternateName": "CWL",
+      "url": "https://www.commonwl.org/v1.2/"
+    },
+    {
+      "@id": "https://spdx.org/licenses/MIT",
+      "@type": "CreativeWork",
+      "name": "MIT License"
+    },
+    {
+      "@id": "#creator",
+      "@type": "Person",
+      "name": "Xuanyi Jiang",
+      "identifier": "https://orcid.org/0009-0001-3617-0832"
+    },
+    {
+      "@id": "#records",
+      "@type": "FormalParameter",
+      "name": "records",
+      "additionalType": "File",
+      "description": "Frozen normalized GitHub evidence record array"
+    },
+    {
+      "@id": "#topics",
+      "@type": "FormalParameter",
+      "name": "topics",
+      "additionalType": "File",
+      "description": "Versioned deterministic topic profile"
+    },
+    {
+      "@id": "#python_package",
+      "@type": "FormalParameter",
+      "name": "python_package",
+      "additionalType": "Directory",
+      "description": "Bundled tool source directory"
+    },
+    {
+      "@id": "#candidate",
+      "@type": "FormalParameter",
+      "name": "candidate",
+      "additionalType": "File",
+      "description": "Validated content-addressed candidate evidence JSON"
+    },
+    {
+      "@id": "#validation_report",
+      "@type": "FormalParameter",
+      "name": "validation_report",
+      "additionalType": "File",
+      "description": "CWL validation step output"
+    },
+    {
+      "@id": "workflow/tools/aggregate.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ],
+      "name": "Evidence aggregation tool step"
+    },
+    {
+      "@id": "workflow/tools/validate.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ],
+      "name": "Candidate verification tool step"
+    },
+    {
+      "@id": "test/workflow-job.yml",
+      "@type": "File",
+      "name": "Synthetic workflow test inputs"
+    },
+    {
+      "@id": "examples/evidence-records.json",
+      "@type": "File",
+      "name": "Synthetic demonstration evidence – not an actual GitHub observation"
+    },
+    {
+      "@id": "profiles/topics.json",
+      "@type": "File",
+      "name": "Topic profile"
+    },
+    {
+      "@id": "src/",
+      "@type": "Dataset",
+      "name": "Standalone Python evidence tool"
+    },
+    {
+      "@id": "#suite",
+      "@type": "TestSuite",
+      "name": "GitHub Actions automated workflow tests",
+      "mainEntity": {
+        "@id": "workflow/main.cwl"
+      },
+      "instance": [
+        {
+          "@id": "#gh-test"
+        }
+      ]
+    },
+    {
+      "@id": "#gh-test",
+      "@type": "TestInstance",
+      "runsOn": {
+        "@id": "https://w3id.org/ro/terms/test#GithubActionsService"
+      },
+      "url": "https://api.github.com",
+      "resource": "repos/lostlight530/life-science-ecosystem-lab/actions/workflows/validate.yml"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/test#GithubActionsService",
+      "@type": "TestService",
+      "name": "GitHub Actions"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.1",
+      "@type": "CreativeWork",
+      "name": "Workflow RO-Crate profile"
+    },
+    {
+      "@id": "https://w3id.org/ro/wftest/0.2",
+      "@type": "CreativeWork",
+      "name": "Workflow Testing RO-Crate profile"
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "name": "Workflow crate documentation",
+      "encodingFormat": "text/markdown",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "workflow/README.md",
+      "@type": "File",
+      "encodingFormat": "text/markdown"
+    },
+    {
+      "@id": "workflow/tools/knowledge.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ],
+      "name": "Cited knowledge construction"
+    },
+    {
+      "@id": "workflow/tools/verify-knowledge.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ],
+      "name": "Independent knowledge replay verification"
+    },
+    {
+      "@id": "#knowledge",
+      "@type": "FormalParameter",
+      "name": "knowledge",
+      "additionalType": "File",
+      "description": "Source-cited deterministic topic knowledge map"
+    },
+    {
+      "@id": "#knowledge_verification",
+      "@type": "FormalParameter",
+      "name": "knowledge_verification",
+      "additionalType": "File",
+      "description": "Independent knowledge validation report"
+    },
+    {
+      "@id": "https://w3id.org/ro/crate/1.3",
+      "@type": "CreativeWork",
+      "name": "RO-Crate 1.3"
+    },
+    {
+      "@id": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE",
+      "@type": "CreativeWork",
+      "name": "Bioschemas ComputationalWorkflow 1.0"
+    }
+  ]
+}
