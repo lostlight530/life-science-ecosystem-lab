@@ -1,0 +1,46 @@
+name: Validate pilot contracts
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile source
+        run: python -m compileall -q src tests
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate workflow integration profile
+        run: python -m life_science_ecosystem_lab validate-workflow-profile examples/workflow-profile.json
+      - name: Verify deterministic record manifest
+        run: |
+          mkdir -p build/first build/second
+          python -m life_science_ecosystem_lab record-integrity examples/records/input.json --output build/first/manifest.json
+          python -m life_science_ecosystem_lab record-integrity examples/records/input.json --output build/second/manifest.json
+          diff -u build/first/manifest.json build/second/manifest.json
+      - name: Enforce repository hygiene
+        run: |
+          if git ls-files | grep -E '(^|/)(__pycache__|\.pytest_cache)(/|$)|\.pyc$'; then
+            echo 'Tracked cache files are not allowed'
+            exit 1
+          fi
+
+

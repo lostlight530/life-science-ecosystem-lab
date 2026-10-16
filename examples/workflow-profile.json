@@ -1,0 +1,11 @@
+{
+  "maturity": "pilot",
+  "monitoring_status": "not-connected",
+  "registry_status": "not-connected",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "schema_version": "1.0.0",
+  "source_commit": "1111111111111111111111111111111111111111",
+  "workflow_path": ".github/workflows/validate.yml",
+  "workflow_sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+}
+
