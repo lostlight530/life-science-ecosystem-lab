@@ -1,0 +1,50 @@
+[
+  {
+    "source_id": "fixture-workflowhub",
+    "source_registry": "synthetic-fixture-v1",
+    "repository": "workflowhub-eu/about",
+    "ref": "main",
+    "commit": "1111111111111111111111111111111111111111",
+    "tree_sha": "4444444444444444444444444444444444444444",
+    "path": "README.md",
+    "blob_sha": "7777777777777777777777777777777777777777",
+    "raw_size": 84,
+    "content_sha256": "7e5418fce175cf63396011523fe093c682d3d2c3bb31e64bd51c0733d0d7cfc8",
+    "selection_rule": "fixture-workflowhub@1.0.0",
+    "trust": "primary",
+    "collector_version": "0.2.0",
+    "text": "A research workflow registry catalogs reproducible workflows and RO-Crate metadata.\n"
+  },
+  {
+    "source_id": "fixture-life-monitor",
+    "source_registry": "synthetic-fixture-v1",
+    "repository": "crs4/life_monitor",
+    "ref": "main",
+    "commit": "2222222222222222222222222222222222222222",
+    "tree_sha": "5555555555555555555555555555555555555555",
+    "path": "README.md",
+    "blob_sha": "8888888888888888888888888888888888888888",
+    "raw_size": 70,
+    "content_sha256": "6da108085e24eabcf0df525c4a6a8c934a18acdb8c8b9301a1af914a6fcf3fd9",
+    "selection_rule": "fixture-life-monitor@1.0.0",
+    "trust": "primary",
+    "collector_version": "0.2.0",
+    "text": "LifeMonitor supports workflow testing, monitoring and version status.\n"
+  },
+  {
+    "source_id": "fixture-cwl",
+    "source_registry": "synthetic-fixture-v1",
+    "repository": "common-workflow-language/cwl-v1.2",
+    "ref": "main",
+    "commit": "3333333333333333333333333333333333333333",
+    "tree_sha": "6666666666666666666666666666666666666666",
+    "path": "README.md",
+    "blob_sha": "9999999999999999999999999999999999999999",
+    "raw_size": 88,
+    "content_sha256": "52d3bde2b49a12ee79d3e8a8d3bcc33cbbfbe2c61ed39245cfba3ac7b9754e92",
+    "selection_rule": "fixture-cwl@1.0.0",
+    "trust": "primary",
+    "collector_version": "0.2.0",
+    "text": "The Common Workflow Language (CWL) helps describe reproducible computational workflows.\n"
+  }
+]
