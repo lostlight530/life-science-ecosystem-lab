@@ -1,0 +1,10 @@
+{
+  "assay": "example-only",
+  "record_id": "LS-PILOT-001",
+  "sample": {
+    "identifier": "SYNTHETIC-001",
+    "sensitive": false
+  },
+  "value": 7
+}
+

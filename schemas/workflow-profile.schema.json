@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lostlight530/life-science-ecosystem-lab/schemas/workflow-profile.schema.json",
+  "title": "Workflow Integration Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "repository", "source_commit", "workflow_path", "workflow_sha256", "maturity", "registry_status", "monitoring_status"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+    "source_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "workflow_path": {"type": "string", "minLength": 1},
+    "workflow_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "maturity": {"enum": ["prototype", "pilot", "candidate", "stable"]},
+    "registry_status": {"enum": ["not-connected", "prepared", "submitted", "accepted", "verified"]},
+    "monitoring_status": {"enum": ["not-connected", "prepared", "submitted", "accepted", "verified"]}
+  }
+}
+
