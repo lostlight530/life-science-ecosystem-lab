@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "life-science-approved-github-sources",
+  "sources": [
+    {
+      "id": "workflowhub",
+      "repository": "workflowhub-eu/about",
+      "ref": "master",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md",
+        "Workflow-RO-Crate/1.1/index.md",
+        "Workflow-RO-Crate/1.1/changelog.md",
+        "developer/how-to-make-a-workflow-ro-crate.md",
+        "docs/registering_workflows/*.md",
+        "docs/maintaining-your-workflow.md"
+      ],
+      "exclude": [
+        "docs/archive/**",
+        "**/fixtures/**",
+        "**/examples/**"
+      ],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "seek",
+      "repository": "seek4science/seek",
+      "ref": "main",
+      "approved": true,
+      "required": false,
+      "trust": "primary",
+      "include": [
+        "README.md"
+      ],
+      "exclude": [
+        "**/fixtures/**",
+        "**/examples/**"
+      ],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "lifemonitor",
+      "repository": "crs4/life_monitor",
+      "ref": "master",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md",
+        "docs/wfhub-setup-notes.md"
+      ],
+      "exclude": [
+        "**/fixtures/**",
+        "**/examples/**"
+      ],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "cwl-standard",
+      "repository": "common-workflow-language/cwl-v1.2",
+      "ref": "main",
+      "approved": true,
+      "required": false,
+      "trust": "primary",
+      "include": [
+        "README.md"
+      ],
+      "exclude": [],
+      "max_bytes": 1000000
+    }
+  ]
+}

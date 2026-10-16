@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lostlight530/life-science-ecosystem-lab/raw/main/schemas/candidate-evidence.schema.json",
+  "title": "Life Science candidate evidence bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "profile_digest", "algorithm_version", "sources", "records", "topics", "changes", "diagnostics", "input_digest", "output_digest", "projection_eligible"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "profile_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "algorithm_version": {"type": "string", "minLength": 1},
+    "sources": {"type": "array"},
+    "records": {"type": "array"},
+    "topics": {"type": "array"},
+    "changes": {"type": "array"},
+    "diagnostics": {"type": "array"},
+    "input_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "output_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "projection_eligible": {"type": "boolean"}
+  }
+}

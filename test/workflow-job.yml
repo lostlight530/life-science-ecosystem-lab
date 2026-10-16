@@ -1,9 +1,0 @@
-records:
-  class: File
-  path: ../examples/evidence-records.json
-topics:
-  class: File
-  path: ../profiles/topics.json
-python_package:
-  class: Directory
-  path: ../src

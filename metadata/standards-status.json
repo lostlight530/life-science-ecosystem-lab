@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "software_version": "0.3.0",
+  "workflow": ".github/workflows/life-science-knowledge.yml",
+  "tool": "evidence/cli.py",
+  "requirements": {
+    "Workflow RO-Crate 1.1": "REQUIRED_STRUCTURAL_PREFLIGHT",
+    "Workflow Testing RO-Crate 0.2": "REQUIRED_STRUCTURAL_PREFLIGHT",
+    "CWL 1.2 portable workflow": "CI_EXECUTABLE",
+    "Bioschemas ComputationalWorkflow 1.0": "DECLARED_NOT_EXTERNALLY_CERTIFIED",
+    "Bioschemas ComputationalTool 1.0": "DECLARED_NOT_EXTERNALLY_CERTIFIED",
+    "Bioschemas FormalParameter 1.0": "DECLARED_NOT_EXTERNALLY_CERTIFIED",
+    "CFF 1.2.0": "DECLARED_TESTED",
+    "SPDX MIT": "DECLARED_TESTED",
+    "LifeMonitor enrollment": "EXTERNAL_VERIFICATION_REQUIRED",
+    "WorkflowHub registration": "EXTERNAL_VERIFICATION_REQUIRED",
+    "bio.tools scope and acceptance": "EXTERNAL_VERIFICATION_REQUIRED",
+    "Workflow Run RO-Crate": "CONDITIONAL_NOT_YET_CLAIMED",
+    "Clinical or biological scientific validity": "NOT_APPLICABLE"
+  },
+  "global_lifemonitor_defaults": "UNOVERRIDDEN_IF_APP_INSTALLED",
+  "notes": "Structural checks and CI are not independent external registration or scientific validity"
+}

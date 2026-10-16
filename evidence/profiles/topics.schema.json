@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lostlight530/life-science-ecosystem-lab/raw/main/profiles/topics.schema.json",
+  "title": "Life Science deterministic evidence topics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "registry_id", "topics"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "registry_id": {"type": "string", "minLength": 1},
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "aliases", "required_terms", "excluded_terms", "minimum_matches"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "aliases": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "required_terms": {"type": "array", "items": {"type": "string"}},
+          "excluded_terms": {"type": "array", "items": {"type": "string"}},
+          "minimum_matches": {"type": "integer", "minimum": 1}
+        }
+      }
+    }
+  }
+}

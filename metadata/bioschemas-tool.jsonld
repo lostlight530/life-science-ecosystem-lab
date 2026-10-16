@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "https://schema.org/",
+    {
+      "dct": "http://purl.org/dc/terms/"
+    }
+  ],
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/evidence",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE",
+  "name": "Life Science Evidence Tool",
+  "version": "0.3.0",
+  "description": "Independently callable GitHub evidence source identity, provenance verification, change classification, research software documentation link audit, and read-only topic discovery",
+  "url": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/evidence",
+  "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": "Python 3",
+  "softwareRequirements": "Python 3.11+",
+  "creator": {
+    "@type": "Person",
+    "name": "Xuanyi Jiang",
+    "identifier": "https://orcid.org/0009-0001-3617-0832"
+  },
+  "applicationCategory": "Research software quality and provenance assurance",
+  "featureList": [
+    "approved GitHub source collection",
+    "commit/tree/blob provenance",
+    "content SHA-256 verification",
+    "semantic evidence change classification",
+    "repository Markdown link auditing",
+    "read-only GitHub topic discovery"
+  ]
+}

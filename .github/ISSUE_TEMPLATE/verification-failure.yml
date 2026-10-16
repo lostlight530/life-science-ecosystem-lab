@@ -1,0 +1,22 @@
+name: Evidence or knowledge verification failure
+about: Report a reproducible Life Science verification or knowledge regression
+labels: ["verification"]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected state or result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed failure, commit SHA, public non-sensitive logs
+    validations:
+      required: true
+  - type: textarea
+    id: replay
+    attributes:
+      label: Minimal replay command and inputs
+    validations:
+      required: true

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "life-science-workflow-knowledge-topics",
+  "topics": [
+    {
+      "id": "workflow-registration",
+      "aliases": [
+        "workflow",
+        "registry",
+        "registration",
+        "ro-crate"
+      ],
+      "required_terms": [
+        "workflow"
+      ],
+      "excluded_terms": [],
+      "minimum_matches": 1
+    },
+    {
+      "id": "workflow-monitoring",
+      "aliases": [
+        "monitoring",
+        "testing",
+        "lifemonitor",
+        "status"
+      ],
+      "required_terms": [],
+      "excluded_terms": [],
+      "minimum_matches": 1
+    },
+    {
+      "id": "research-object-metadata",
+      "aliases": [
+        "ro-crate",
+        "bioschemas",
+        "provenance",
+        "cwl"
+      ],
+      "required_terms": [],
+      "excluded_terms": [],
+      "minimum_matches": 1
+    }
+  ]
+}

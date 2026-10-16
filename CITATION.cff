@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this pilot, please cite the repository release"
-title: "Life Science Ecosystem Lab"
+message: "If you use the Life Science Knowledge Workflow or Evidence Tool, cite this software version"
+title: "Life Science Ecosystem Lab — Knowledge Workflow and Evidence Tool"
 type: software
 authors:
   - family-names: Jiang
@@ -8,5 +8,5 @@ authors:
     orcid: "https://orcid.org/0009-0001-3617-0832"
 repository-code: "https://github.com/lostlight530/life-science-ecosystem-lab"
 license: MIT
-version: 0.2.0
+version: 0.3.0
 

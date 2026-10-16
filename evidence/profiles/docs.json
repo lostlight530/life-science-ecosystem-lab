@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "documents": [
+    "README.md",
+    ".github/README.md",
+    ".github/knowledge/README.md",
+    "evidence/README.md",
+    "docs/SCOPE.md",
+    "docs/PROVENANCE.md",
+    "docs/ARCHITECTURE.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ]
+}

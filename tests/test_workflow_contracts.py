@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class WorkflowContractTests(unittest.TestCase):
     def test_lifecycle_has_split_permissions_and_ordered_guards(self):
-        text = (ROOT / ".github" / "workflows" / "nexus-life-cycle.yml").read_text(encoding="utf-8")
+        text = (ROOT / ".github" / "workflows" / "life-science-knowledge.yml").read_text(encoding="utf-8")
         self.assertIn("validate:", text)
         self.assertIn("apply:", text)
         self.assertIn("needs: validate", text)
