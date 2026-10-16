@@ -1,0 +1,24 @@
+name: Research source proposal
+about: Propose a public GitHub source for manual approval
+labels: ["research-source"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Source repository
+      description: Public owner/repository, not an API token or private URL
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Scientific relevance and authority
+      description: Which evidence does the source add, and how is its authority established?
+    validations:
+      required: true
+  - type: textarea
+    id: documents
+    attributes:
+      label: Relevant document paths and proposed approval boundaries
+    validations:
+      required: true

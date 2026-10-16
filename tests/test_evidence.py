@@ -3,11 +3,11 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from life_science_ecosystem_lab.evidence.aggregation import aggregate_evidence
-from life_science_ecosystem_lab.evidence.models import GitTreeEntry, SourceIdentity
-from life_science_ecosystem_lab.evidence.normalization import normalize_text_bytes
-from life_science_ecosystem_lab.evidence.profiles import load_source_registry, load_topic_registry
-from life_science_ecosystem_lab.evidence.selection import select_paths
+from evidence.aggregation import aggregate_evidence
+from evidence.models import GitTreeEntry, SourceIdentity
+from evidence.normalization import normalize_text_bytes
+from evidence.profiles import load_source_registry, load_topic_registry
+from evidence.selection import select_paths
 
 
 class EvidenceTests(unittest.TestCase):

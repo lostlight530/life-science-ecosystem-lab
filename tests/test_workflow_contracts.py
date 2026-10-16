@@ -7,8 +7,22 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class WorkflowContractTests(unittest.TestCase):
+    def test_cwl_installs_tool_instead_of_staging_repo_root(self):
+        cwl = (ROOT / ".github" / "knowledge" / "main.cwl").read_text(encoding="utf-8")
+        job = (ROOT / ".github" / "knowledge" / "test" / "workflow-job.yml").read_text(encoding="utf-8")
+        self.assertNotIn("python_package", cwl + job)
+        for command in ("aggregate", "validate", "knowledge", "verify-knowledge"):
+            doc = (ROOT / ".github" / "knowledge" / "tools" / f"{command}.cwl").read_text(encoding="utf-8")
+            self.assertNotIn("python_package", doc)
+
+    def test_cwl_executes_peer_tool_not_legacy_nested_command(self):
+        for command in ("aggregate", "validate"):
+            doc = (ROOT / ".github" / "knowledge" / "tools" / f"{command}.cwl").read_text(encoding="utf-8")
+            self.assertIn("baseCommand: [python3, -m, evidence]", doc)
+            self.assertNotIn("  - evidence\n", doc)
+
     def test_lifecycle_has_split_permissions_and_ordered_guards(self):
-        text = (ROOT / ".github" / "workflows" / "nexus-life-cycle.yml").read_text(encoding="utf-8")
+        text = (ROOT / ".github" / "workflows" / "life-science-knowledge.yml").read_text(encoding="utf-8")
         self.assertIn("validate:", text)
         self.assertIn("apply:", text)
         self.assertIn("needs: validate", text)

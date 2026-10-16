@@ -8,8 +8,9 @@ from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 
 from life_science_ecosystem_lab.cli import main
-from life_science_ecosystem_lab.evidence.collector import collect_sources
-from life_science_ecosystem_lab.evidence.profiles import SourceRegistry
+from evidence.cli import main as evidence_main
+from evidence.collector import collect_sources
+from evidence.profiles import SourceRegistry
 
 
 class FixtureTransport:
@@ -83,20 +84,20 @@ class CollectorCliTests(unittest.TestCase):
             records = root / "records.json"
             topics = root / "topics.json"
             output_path = root / "out" / "candidate.json"
-            records.write_text((Path(__file__).resolve().parents[1] / "examples/evidence-records.json").read_text(encoding="utf-8"), encoding="utf-8")
+            records.write_text((Path(__file__).resolve().parents[1] / "evidence/examples/evidence-records.json").read_text(encoding="utf-8"), encoding="utf-8")
             topics.write_text(json.dumps({
                 "schema_version": "1.0.0", "registry_id": "topics",
                 "topics": [{"id": "workflow", "aliases": ["workflow"], "required_terms": ["research"], "excluded_terms": [], "minimum_matches": 1}],
             }), encoding="utf-8")
-            code = main(["evidence", "aggregate", "--input", str(records), "--topics", str(topics), "--output", str(output_path)])
+            code = evidence_main(["aggregate", "--input", str(records), "--topics", str(topics), "--output", str(output_path)])
             self.assertEqual(code, 0)
             self.assertTrue(output_path.is_file())
-            self.assertEqual(main(["evidence", "validate", "--bundle", str(output_path)]), 0)
+            self.assertEqual(evidence_main(["validate", "--bundle", str(output_path)]), 0)
 
     def test_cli_applies_lifecycle_with_explicit_world_line(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            from life_science_ecosystem_lab.evidence.aggregation import aggregate_evidence
+            from evidence.aggregation import aggregate_evidence
             candidate = aggregate_evidence([], {"topics": []})
             path = root / "candidate.json"
             path.write_text(json.dumps(candidate), encoding="utf-8")

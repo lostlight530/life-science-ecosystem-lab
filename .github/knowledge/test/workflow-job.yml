@@ -1,0 +1,6 @@
+records:
+  class: File
+  path: ../../../evidence/examples/evidence-records.json
+topics:
+  class: File
+  path: ../../../evidence/profiles/topics.json

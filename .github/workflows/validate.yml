@@ -1,4 +1,4 @@
-name: Validate computational workflow and evidence contracts
+name: Validate life-science workflow and evidence contracts
 
 on:
   pull_request:
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      PYTHONPATH: src
+      PYTHONPATH: ".github/runtime:."
       PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -29,27 +29,37 @@ jobs:
         run: python -m pip install cwltool
       - name: Compile source and run regression tests
         run: |
-          python -m compileall -q src tests scripts
+          python -m compileall -q .github/runtime evidence tests .github/scripts
+          python -m pip install --no-deps -e .
           python -m unittest discover -s tests -v
       - name: Validate profiles and crate metadata
         run: |
-          python -m life_science_ecosystem_lab validate-source-registry profiles/sources.json
-          python -m life_science_ecosystem_lab validate-topic-registry profiles/topics.json
-          python -m life_science_ecosystem_lab validate-workflow-profile examples/workflow-profile.json
-          python scripts/check_rocrate.py
+          python -m life_science_ecosystem_lab validate-source-registry evidence/profiles/sources.json
+          python -m life_science_ecosystem_lab validate-topic-registry evidence/profiles/topics.json
+          python -m life_science_ecosystem_lab validate-workflow-profile evidence/examples/workflow-profile.json
+          python .github/scripts/check_rocrate.py
+          python .github/scripts/check_metadata.py
+          python .github/scripts/check_publication_boundary.py
+          ls-evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
       - name: Execute the actual CWL knowledge workflow
         run: |
           mkdir -p build/cwl-one build/cwl-two
-          cwltool --no-container --outdir build/cwl-one workflow/main.cwl test/workflow-job.yml
-          cwltool --no-container --outdir build/cwl-two workflow/main.cwl test/workflow-job.yml
+          cwltool --no-container --outdir build/cwl-one .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
+          cwltool --no-container --outdir build/cwl-two .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
           diff -u build/cwl-one/knowledge.json build/cwl-two/knowledge.json
           diff -u build/cwl-one/candidate.json build/cwl-two/candidate.json
-          python -m life_science_ecosystem_lab knowledge verify --candidate build/cwl-one/candidate.json --topics profiles/topics.json --knowledge build/cwl-one/knowledge.json
+          python -m life_science_ecosystem_lab knowledge verify --candidate build/cwl-one/candidate.json --topics evidence/profiles/topics.json --knowledge build/cwl-one/knowledge.json
       - name: Verify reproducible workflow crate
         run: |
-          python scripts/build_rocrate.py build/one.crate.zip
-          python scripts/build_rocrate.py build/two.crate.zip
+          python .github/scripts/build_rocrate.py build/one.crate.zip
+          python .github/scripts/build_rocrate.py build/two.crate.zip
           cmp build/one.crate.zip build/two.crate.zip
+      - name: Independent evidence tool contract checks
+        run: |
+          ls-evidence aggregate --input evidence/examples/evidence-records.json --topics evidence/profiles/topics.json --output build/tool-candidate.json
+          ls-evidence validate --bundle build/tool-candidate.json
+          python -m life_science_ecosystem_lab knowledge build --candidate build/tool-candidate.json --topics evidence/profiles/topics.json --output build/tool-knowledge.json
+          python -m life_science_ecosystem_lab knowledge verify --candidate build/tool-candidate.json --topics evidence/profiles/topics.json --knowledge build/tool-knowledge.json
       - name: Enforce repository hygiene
         run: |
           if git ls-files | grep -E '(^|/)(__pycache__|\.pytest_cache)(/|$)|\.pyc$'; then

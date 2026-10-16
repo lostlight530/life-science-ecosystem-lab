@@ -3,8 +3,8 @@ import json
 import unittest
 from pathlib import Path
 
-from life_science_ecosystem_lab.evidence.aggregation import aggregate_evidence
-from life_science_ecosystem_lab.evidence.validation import validate_candidate_bundle
+from evidence.aggregation import aggregate_evidence
+from evidence.validation import validate_candidate_bundle
 from life_science_ecosystem_lab.knowledge import build_knowledge, verify_knowledge
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class KnowledgeWorkflowTests(unittest.TestCase):
     def setup_inputs(self):
-        records = json.loads((ROOT / 'examples/evidence-records.json').read_text())
-        topics = json.loads((ROOT / 'profiles/topics.json').read_text())
+        records = json.loads((ROOT / 'evidence/examples/evidence-records.json').read_text())
+        topics = json.loads((ROOT / 'evidence/profiles/topics.json').read_text())
         return records, topics
 
     def test_extracts_actual_source_cited_fragments_with_stable_digests(self):

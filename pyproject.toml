@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "life-science-ecosystem-lab"
-version = "0.2.0"
-description = "Knowledge-first research workflow and verifiable GitHub provenance tool"
+version = "0.3.0"
+description = "GitHub-native life-science knowledge workflow and independent research-evidence tool"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -13,8 +13,14 @@ authors = [{name = "Xuanyi Jiang"}]
 dependencies = []
 
 [project.scripts]
-ls-ecosystem-lab = "life_science_ecosystem_lab.cli:main"
+ls-knowledge = "life_science_ecosystem_lab.cli:main"
+ls-evidence = "evidence.cli:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["life_science_ecosystem_lab", "life_science_ecosystem_lab.lifecycle", "evidence"]
+
+[tool.setuptools.package-dir]
+life_science_ecosystem_lab = ".github/runtime/life_science_ecosystem_lab"
+"life_science_ecosystem_lab.lifecycle" = ".github/runtime/life_science_ecosystem_lab/lifecycle"
+evidence = "evidence"
 

@@ -1,0 +1,56 @@
+name: Life Science Evidence Tool — Independent Verification
+
+on:
+  push:
+    paths:
+      - 'evidence/**'
+      - '.github/workflows/life-science-evidence.yml'
+      - 'tests/**'
+      - 'README.md'
+  pull_request:
+    paths:
+      - 'evidence/**'
+      - '.github/workflows/life-science-evidence.yml'
+      - 'tests/**'
+      - 'README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tool-contract:
+    name: Verify evidence CLI, source contracts and docs
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONPATH: '.github/runtime:.'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Install independently callable tool
+        run: python -m pip install --no-deps -e .
+      - name: Test package and GitHub evidence contracts
+        run: |
+          python -m unittest discover -s tests -v
+          ls-evidence aggregate --input evidence/examples/evidence-records.json --topics evidence/profiles/topics.json --output build/tool-candidate.json
+          ls-evidence validate --bundle build/tool-candidate.json
+      - name: Verify research documentation and metadata links
+        run: |
+          ls-evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
+          python .github/scripts/check_rocrate.py
+          python .github/scripts/check_metadata.py
+          python .github/scripts/check_publication_boundary.py
+      - name: Publish independent tool receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: life-science-evidence-verification
+          path: |
+            build/tool-candidate.json
+            build/docs-audit.json
+          if-no-files-found: ignore
+          retention-days: 14

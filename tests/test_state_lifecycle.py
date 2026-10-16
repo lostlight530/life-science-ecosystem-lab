@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from life_science_ecosystem_lab.evidence.aggregation import aggregate_evidence
+from evidence.aggregation import aggregate_evidence
 from life_science_ecosystem_lab.lifecycle.guard import check_write_boundary, world_line_matches
 from life_science_ecosystem_lab.lifecycle.orchestrator import apply_lifecycle
 from life_science_ecosystem_lab.lifecycle.state import StateRoots, apply_candidate, verify_state
@@ -12,7 +12,7 @@ from life_science_ecosystem_lab.lifecycle.state import StateRoots, apply_candida
 
 class StateLifecycleTests(unittest.TestCase):
     def candidate(self, text="first"):
-        from life_science_ecosystem_lab.evidence.normalization import sha256_bytes, canonical_text_bytes
+        from evidence.normalization import sha256_bytes, canonical_text_bytes
         record = {
             "source_id": "source", "source_registry": "fixture-v1", "repository": "owner/repo", "ref": "main",
             "commit": "1" * 40, "tree_sha": "2" * 40, "blob_sha": "3" * 40,

@@ -23,11 +23,14 @@
         "@id": "https://spdx.org/licenses/MIT"
       },
       "mainEntity": {
-        "@id": "workflow/main.cwl"
+        "@id": ".github/workflows/life-science-knowledge.yml"
       },
       "mentions": [
         {
           "@id": "#suite"
+        },
+        {
+          "@id": "#evidence-tool"
         }
       ],
       "conformsTo": [
@@ -46,39 +49,69 @@
           "@id": "README.md"
         },
         {
-          "@id": "workflow/main.cwl"
+          "@id": ".github/knowledge/main.cwl"
         },
         {
-          "@id": "workflow/tools/aggregate.cwl"
+          "@id": ".github/knowledge/tools/aggregate.cwl"
         },
         {
-          "@id": "workflow/tools/validate.cwl"
+          "@id": ".github/knowledge/tools/validate.cwl"
         },
         {
-          "@id": "workflow/tools/knowledge.cwl"
+          "@id": ".github/knowledge/tools/knowledge.cwl"
         },
         {
-          "@id": "workflow/tools/verify-knowledge.cwl"
+          "@id": ".github/knowledge/tools/verify-knowledge.cwl"
         },
         {
-          "@id": "workflow/README.md"
+          "@id": ".github/knowledge/README.md"
         },
         {
-          "@id": "test/workflow-job.yml"
+          "@id": ".github/knowledge/test/workflow-job.yml"
         },
         {
-          "@id": "examples/evidence-records.json"
+          "@id": "evidence/examples/evidence-records.json"
         },
         {
-          "@id": "profiles/topics.json"
+          "@id": "evidence/profiles/topics.json"
         },
         {
-          "@id": "src/"
+          "@id": ".github/runtime/"
+        },
+        {
+          "@id": ".github/workflows/life-science-knowledge.yml"
+        },
+        {
+          "@id": "evidence/README.md"
+        },
+        {
+          "@id": "evidence/cli.py"
+        },
+        {
+          "@id": "evidence/discovery.py"
+        },
+        {
+          "@id": "evidence/documentation.py"
+        },
+        {
+          "@id": "evidence/profiles/sources.json"
+        },
+        {
+          "@id": "evidence/profiles/docs.json"
+        },
+        {
+          "@id": ".github/README.md"
+        },
+        {
+          "@id": "docs/ARCHITECTURE.md"
+        },
+        {
+          "@id": "SECURITY.md"
         }
       ]
     },
     {
-      "@id": "workflow/main.cwl",
+      "@id": ".github/knowledge/main.cwl",
       "@type": [
         "File",
         "SoftwareSourceCode",
@@ -102,9 +135,6 @@
         },
         {
           "@id": "#topics"
-        },
-        {
-          "@id": "#python_package"
         }
       ],
       "output": [
@@ -123,7 +153,8 @@
       ],
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE"
-      }
+      },
+      "softwareRequirements": "Python 3.11+; pip-installable life-science-ecosystem-lab; CWL reference runner"
     },
     {
       "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
@@ -158,13 +189,6 @@
       "description": "Versioned deterministic topic profile"
     },
     {
-      "@id": "#python_package",
-      "@type": "FormalParameter",
-      "name": "python_package",
-      "additionalType": "Directory",
-      "description": "Bundled tool source directory"
-    },
-    {
       "@id": "#candidate",
       "@type": "FormalParameter",
       "name": "candidate",
@@ -179,7 +203,7 @@
       "description": "CWL validation step output"
     },
     {
-      "@id": "workflow/tools/aggregate.cwl",
+      "@id": ".github/knowledge/tools/aggregate.cwl",
       "@type": [
         "File",
         "SoftwareSourceCode"
@@ -187,7 +211,7 @@
       "name": "Evidence aggregation tool step"
     },
     {
-      "@id": "workflow/tools/validate.cwl",
+      "@id": ".github/knowledge/tools/validate.cwl",
       "@type": [
         "File",
         "SoftwareSourceCode"
@@ -195,22 +219,22 @@
       "name": "Candidate verification tool step"
     },
     {
-      "@id": "test/workflow-job.yml",
+      "@id": ".github/knowledge/test/workflow-job.yml",
       "@type": "File",
       "name": "Synthetic workflow test inputs"
     },
     {
-      "@id": "examples/evidence-records.json",
+      "@id": "evidence/examples/evidence-records.json",
       "@type": "File",
       "name": "Synthetic demonstration evidence – not an actual GitHub observation"
     },
     {
-      "@id": "profiles/topics.json",
+      "@id": "evidence/profiles/topics.json",
       "@type": "File",
       "name": "Topic profile"
     },
     {
-      "@id": "src/",
+      "@id": ".github/runtime/",
       "@type": "Dataset",
       "name": "Standalone Python evidence tool"
     },
@@ -219,7 +243,7 @@
       "@type": "TestSuite",
       "name": "GitHub Actions automated workflow tests",
       "mainEntity": {
-        "@id": "workflow/main.cwl"
+        "@id": ".github/workflows/life-science-knowledge.yml"
       },
       "instance": [
         {
@@ -261,12 +285,12 @@
       }
     },
     {
-      "@id": "workflow/README.md",
+      "@id": ".github/knowledge/README.md",
       "@type": "File",
       "encodingFormat": "text/markdown"
     },
     {
-      "@id": "workflow/tools/knowledge.cwl",
+      "@id": ".github/knowledge/tools/knowledge.cwl",
       "@type": [
         "File",
         "SoftwareSourceCode"
@@ -274,7 +298,7 @@
       "name": "Cited knowledge construction"
     },
     {
-      "@id": "workflow/tools/verify-knowledge.cwl",
+      "@id": ".github/knowledge/tools/verify-knowledge.cwl",
       "@type": [
         "File",
         "SoftwareSourceCode"
@@ -304,6 +328,122 @@
       "@id": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE",
       "@type": "CreativeWork",
       "name": "Bioschemas ComputationalWorkflow 1.0"
+    },
+    {
+      "@id": ".github/workflows/life-science-knowledge.yml",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "name": "Life Science Knowledge Lifecycle — GitHub Actions",
+      "description": "GitHub-native, source-governed life-science knowledge ingestion, validation and state lifecycle",
+      "programmingLanguage": {
+        "@id": "#github-actions"
+      },
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      },
+      "softwareRequirements": "GitHub Actions; Python 3.12",
+      "hasPart": [
+        {
+          "@id": ".github/knowledge/main.cwl"
+        }
+      ],
+      "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/blob/main/.github/workflows/life-science-knowledge.yml",
+      "input": [
+        {
+          "@id": "#records"
+        },
+        {
+          "@id": "#topics"
+        }
+      ],
+      "output": [
+        {
+          "@id": "#candidate"
+        },
+        {
+          "@id": "#validation_report"
+        },
+        {
+          "@id": "#knowledge"
+        },
+        {
+          "@id": "#knowledge_verification"
+        }
+      ]
+    },
+    {
+      "@id": "#github-actions",
+      "@type": "ComputerLanguage",
+      "name": "GitHub Actions workflow syntax (YAML)"
+    },
+    {
+      "@id": "evidence/README.md",
+      "@type": "File"
+    },
+    {
+      "@id": "evidence/cli.py",
+      "@type": "File"
+    },
+    {
+      "@id": "evidence/discovery.py",
+      "@type": "File"
+    },
+    {
+      "@id": "evidence/documentation.py",
+      "@type": "File"
+    },
+    {
+      "@id": "evidence/profiles/sources.json",
+      "@type": "File"
+    },
+    {
+      "@id": "evidence/profiles/docs.json",
+      "@type": "File"
+    },
+    {
+      "@id": ".github/README.md",
+      "@type": "File"
+    },
+    {
+      "@id": "docs/ARCHITECTURE.md",
+      "@type": "File"
+    },
+    {
+      "@id": "#evidence-tool",
+      "@type": [
+        "SoftwareApplication",
+        "SoftwareSourceCode"
+      ],
+      "name": "Life Science Evidence Tool",
+      "description": "Independent GitHub provenance and research-documentation verification command-line tool",
+      "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      },
+      "programmingLanguage": {
+        "@id": "#python-language"
+      },
+      "softwareRequirements": "Python 3.11+",
+      "hasPart": [
+        {
+          "@id": "evidence/cli.py"
+        },
+        {
+          "@id": "evidence/documentation.py"
+        },
+        {
+          "@id": "evidence/discovery.py"
+        }
+      ]
+    },
+    {
+      "@id": "#python-language",
+      "@type": "ComputerLanguage",
+      "name": "Python"
     }
   ]
 }

@@ -1,12 +1,12 @@
-# Pilot scope
+# Scope and assurance boundaries
 
 ## In scope
 
 - Deterministic validation of non-sensitive JSON research records
 - Immutable source identity for GitHub-hosted research workflows
 - Versioned schemas, examples, tests, provenance, and recovery information
-- Preparation for future WorkflowHub and LifeMonitor integration
-- Evidence-based maintenance of reusable Life Science infrastructure templates
+- Standards-aware, externally inspectable WorkflowHub and LifeMonitor metadata without asserting registration or monitoring
+- Evidence-based maintenance of repository documentation, citation and reusable Life Science infrastructure templates
 
 ## Out of scope
 

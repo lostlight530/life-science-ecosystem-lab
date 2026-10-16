@@ -1,0 +1,59 @@
+{
+  "@context": [
+    "https://schema.org/",
+    {
+      "dct": "http://purl.org/dc/terms/"
+    }
+  ],
+  "@type": "ComputationalWorkflow",
+  "@id": "https://github.com/lostlight530/life-science-ecosystem-lab/blob/main/.github/workflows/life-science-knowledge.yml",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE",
+  "name": "Life Science Knowledge Workflow",
+  "description": "GitHub Actions native, reproducible source-governed workflow for iterative life-science workflow documentation, citation, coverage and state maintenance",
+  "url": "https://github.com/lostlight530/life-science-ecosystem-lab/blob/main/.github/workflows/life-science-knowledge.yml",
+  "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": "GitHub Actions (YAML), Python and CWL 1.2",
+  "version": "0.3.0",
+  "creator": {
+    "@type": "Person",
+    "name": "Xuanyi Jiang",
+    "identifier": "https://orcid.org/0009-0001-3617-0832"
+  },
+  "documentation": "https://github.com/lostlight530/life-science-ecosystem-lab/blob/main/.github/README.md",
+  "input": [
+    {
+      "@type": "FormalParameter",
+      "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE",
+      "name": "approved_sources",
+      "description": "GitHub approved-source registry, JSON",
+      "encodingFormat": "application/json",
+      "valueRequired": true
+    },
+    {
+      "@type": "FormalParameter",
+      "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE",
+      "name": "knowledge_topics",
+      "description": "Topic taxonomy, JSON",
+      "encodingFormat": "application/json",
+      "valueRequired": true
+    }
+  ],
+  "output": [
+    {
+      "@type": "FormalParameter",
+      "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE",
+      "name": "knowledge_map",
+      "description": "Source-cited, replayable life-science knowledge with explicit gaps",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "FormalParameter",
+      "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE",
+      "name": "validation_receipt",
+      "description": "Provenance and verification decisions, JSON",
+      "encodingFormat": "application/json"
+    }
+  ],
+  "softwareRequirements": "GitHub Actions; Python 3.12; GitHub REST read-only access"
+}
