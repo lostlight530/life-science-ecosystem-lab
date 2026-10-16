@@ -38,8 +38,9 @@ jobs:
           diff -u build/first/manifest.json build/second/manifest.json
       - name: Enforce repository hygiene
         run: |
-          if find . -path ./.git -prune -o \( -name '__pycache__' -o -name '*.pyc' -o -name '.pytest_cache' \) -print | grep -q .; then
-            echo 'Generated cache files are not allowed'
+          if git ls-files | grep -E '(^|/)(__pycache__|\.pytest_cache)(/|$)|\.pyc$'; then
+            echo 'Tracked cache files are not allowed'
             exit 1
           fi
+
 
