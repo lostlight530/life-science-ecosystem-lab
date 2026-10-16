@@ -7,6 +7,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class WorkflowContractTests(unittest.TestCase):
+    def test_cwl_installs_tool_instead_of_staging_repo_root(self):
+        cwl = (ROOT / ".github" / "knowledge" / "main.cwl").read_text(encoding="utf-8")
+        job = (ROOT / ".github" / "knowledge" / "test" / "workflow-job.yml").read_text(encoding="utf-8")
+        self.assertNotIn("python_package", cwl + job)
+        for command in ("aggregate", "validate", "knowledge", "verify-knowledge"):
+            doc = (ROOT / ".github" / "knowledge" / "tools" / f"{command}.cwl").read_text(encoding="utf-8")
+            self.assertNotIn("python_package", doc)
+
     def test_cwl_executes_peer_tool_not_legacy_nested_command(self):
         for command in ("aggregate", "validate"):
             doc = (ROOT / ".github" / "knowledge" / "tools" / f"{command}.cwl").read_text(encoding="utf-8")

@@ -26,6 +26,7 @@ python -m unittest discover -s tests -v
 For fully offline CWL reproduction (uses synthetic test data only):
 
 ```sh
+python -m pip install -e .
 python -m pip install cwltool
 cwltool --no-container .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
 ```

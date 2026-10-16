@@ -2,10 +2,8 @@ cwlVersion: v1.2
 class: CommandLineTool
 label: Aggregate GitHub evidence
 requirements:
-  InlineJavascriptRequirement: {}
   EnvVarRequirement:
     envDef:
-      PYTHONPATH: $(inputs.python_package.path)/.github/runtime:$(inputs.python_package.path)
       PYTHONDONTWRITEBYTECODE: '1'
 baseCommand: [python3, -m, evidence]
 arguments:
@@ -19,7 +17,6 @@ arguments:
 inputs:
   records: File
   topics: File
-  python_package: Directory
 outputs:
   candidate:
     type: File

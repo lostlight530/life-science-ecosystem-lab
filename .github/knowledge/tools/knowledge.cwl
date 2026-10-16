@@ -2,10 +2,8 @@ cwlVersion: v1.2
 class: CommandLineTool
 label: Construct source-grounded workflow knowledge map
 requirements:
-  InlineJavascriptRequirement: {}
   EnvVarRequirement:
     envDef:
-      PYTHONPATH: $(inputs.python_package.path)/.github/runtime:$(inputs.python_package.path)
       PYTHONDONTWRITEBYTECODE: '1'
 baseCommand: [python3, -m, life_science_ecosystem_lab]
 arguments:
@@ -20,7 +18,6 @@ arguments:
 inputs:
   candidate: File
   topics: File
-  python_package: Directory
 outputs:
   knowledge:
     type: File

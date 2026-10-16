@@ -7,13 +7,14 @@
 ## Reproducible computational workflow (CWL v1.2)
 
 ```sh
+python -m pip install -e .
 python -m pip install cwltool
 cwltool --no-container .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
 ```
 
 Four observable steps run in order: `aggregate` → `validate` → `knowledge` → `verify_knowledge`
 
-Inputs are `records` (GitHub snapshots with commit and blob identities), `topics` (reviewed research taxonomy), and `python_package` (repository root containing `.github/runtime/` and `evidence/`). Outputs include the verifiable `knowledge.json`, candidate evidence, and both validation reports. All output identities are deterministic for unchanged content and profiles
+Inputs are `records` (GitHub snapshots with commit and blob identities), `topics` (reviewed research taxonomy), and the independently installed Python software package. Outputs include the verifiable `knowledge.json`, candidate evidence, and both validation reports. All output identities are deterministic for unchanged content and profiles
 
 The committed `.github/knowledge/test/workflow-job.yml` is **synthetic**, allowing fully offline reproducibility and regression testing. Its dummy Git SHAs demonstrate the data contract, not a real observation; the actual source adapter is tested independently. To work with verified current GitHub sources, first run:
 

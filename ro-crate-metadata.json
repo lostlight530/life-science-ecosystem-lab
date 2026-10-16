@@ -135,9 +135,6 @@
         },
         {
           "@id": "#topics"
-        },
-        {
-          "@id": "#python_package"
         }
       ],
       "output": [
@@ -156,7 +153,8 @@
       ],
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE"
-      }
+      },
+      "softwareRequirements": "Python 3.11+; pip-installable life-science-ecosystem-lab; CWL reference runner"
     },
     {
       "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
@@ -189,13 +187,6 @@
       "name": "topics",
       "additionalType": "File",
       "description": "Versioned deterministic topic profile"
-    },
-    {
-      "@id": "#python_package",
-      "@type": "FormalParameter",
-      "name": "python_package",
-      "additionalType": "Directory",
-      "description": "Bundled tool source directory"
     },
     {
       "@id": "#candidate",
@@ -367,9 +358,6 @@
         },
         {
           "@id": "#topics"
-        },
-        {
-          "@id": "#python_package"
         }
       ],
       "output": [

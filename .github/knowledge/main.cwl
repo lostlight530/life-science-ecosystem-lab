@@ -15,9 +15,6 @@ inputs:
   topics:
     type: File
     doc: Versioned topic registry JSON
-  python_package:
-    type: Directory
-    doc: Python source directory for the accompanying tool
 outputs:
   candidate:
     type: File
@@ -37,20 +34,17 @@ steps:
     in:
       records: records
       topics: topics
-      python_package: python_package
     out: [candidate]
   validate:
     run: tools/validate.cwl
     in:
       candidate: aggregate/candidate
-      python_package: python_package
     out: [report]
   extract_knowledge:
     run: tools/knowledge.cwl
     in:
       candidate: aggregate/candidate
       topics: topics
-      python_package: python_package
     out: [knowledge]
   verify_knowledge:
     run: tools/verify-knowledge.cwl
@@ -58,5 +52,4 @@ steps:
       candidate: aggregate/candidate
       topics: topics
       knowledge: extract_knowledge/knowledge
-      python_package: python_package
     out: [report]

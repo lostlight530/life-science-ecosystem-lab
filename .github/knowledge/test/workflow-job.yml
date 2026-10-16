@@ -4,6 +4,3 @@ records:
 topics:
   class: File
   path: ../../../evidence/profiles/topics.json
-python_package:
-  class: Directory
-  path: ../../..
