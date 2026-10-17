@@ -49,3 +49,13 @@ Runner-local workspaces and hosted Actions artifact retention are separate from 
 `SOURCE_MATCH` is a topic/document lexical relationship, not a life-science result. Agent-generated explanations, registration claims and research interpretations cannot be promoted to accepted production facts without independent checks. Explicitly preserve source licensing, credential safety, counterevidence, reproducible steps and the boundary between public source citation and republication of full source text.
 
 [Production Operations](PRODUCTION_OPERATIONS.md) · [Provenance](PROVENANCE.md) · [Understanding Verification](VERIFYING_RESULTS.md)
+
+## Independent reviewer base check
+
+An optional handoff `base: {commit, observed_at}` is agent-supplied provenance metadata; structural validation alone does **not** verify that the commit exists or is fresh. Reviewers can supply the independently fetched current target default-branch SHA:
+
+```sh
+ls-evidence validate-handoff --input .github/agent-handoff/example-handoff.json --topics evidence/profiles/topics.json --expected-base-sha <trusted-current-default-branch-sha>
+```
+
+Matching SHA indicates declared equality to that independently chosen review baseline, not experimental validation, Git ancestry, authorship, or a claim that upstream scientific methods and measurements are correct. A stale older anchor must be re-reviewed against current runtime and data contracts, rather than silently treated as a fresh run. Historical no-base schema 1.0.0 handoffs remain shape-valid without `--expected-base-sha`.
