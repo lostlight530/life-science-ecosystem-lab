@@ -14,7 +14,7 @@ FILES = [
     'ro-crate-metadata.json', '.github/workflows/life-science-knowledge.yml', '.github/workflows/validate.yml', '.github/workflows/life-science-evidence.yml', '.github/README.md', 'evidence/README.md', 'docs/ARCHITECTURE.md', 'README.md', 'SECURITY.md', 'LICENSE', 'CITATION.cff', '.github/knowledge/README.md', '.github/knowledge/main.cwl',
     '.github/knowledge/tools/aggregate.cwl', '.github/knowledge/tools/validate.cwl',
     '.github/knowledge/tools/knowledge.cwl', '.github/knowledge/tools/verify-knowledge.cwl',
-    '.github/knowledge/test/workflow-job.yml', 'evidence/examples/evidence-records.json', 'evidence/profiles/topics.json', 'evidence/profiles/sources.json', 'evidence/profiles/docs.json', 'metadata/bioschemas-workflow.jsonld', 'metadata/bioschemas-tool.jsonld', 'metadata/bioschemas-bio-tool.jsonld', 'metadata/biotools-protein-audit.draft.json', 'metadata/standards-status.json', 'bio_tool/README.md', '.github/bio/protein-fasta.cwl', '.github/bio/protein-pdb.cwl', '.github/bio/test/example.fasta', '.github/bio/test/example.pdb',
+    '.github/knowledge/test/workflow-job.yml', 'evidence/examples/evidence-records.json', 'evidence/profiles/topics.json', 'evidence/profiles/sources.json', 'evidence/profiles/docs.json', 'metadata/bioschemas-workflow.jsonld', 'metadata/bioschemas-tool.jsonld', 'metadata/bioschemas-bio-tool.jsonld', 'metadata/biotools-protein-audit.draft.json', 'metadata/standards-status.json', 'bio_tool/README.md', '.github/bio/protein-fasta.cwl', '.github/bio/protein-pdb.cwl', '.github/bio/test/example.fasta', '.github/bio/test/example.pdb', '.github/bio/test/fasta-job.yml', '.github/bio/test/pdb-job.yml',
 ]
 
 
