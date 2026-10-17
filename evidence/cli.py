@@ -17,6 +17,7 @@ from .profiles import load_source_registry, load_topic_registry
 from .validation import validate_candidate_bundle
 from .inspection import inspect_repository, write_reports
 from .agent_handoff import validate_agent_handoff
+from .knowledge_quality import audit_knowledge
 from .aggregation import canonical_bytes
 from .normalization import sha256_bytes
 
@@ -48,6 +49,11 @@ def parser() -> argparse.ArgumentParser:
     handoff = commands.add_parser("validate-handoff", help="Validate an optional, proposal-only external Agent research handoff")
     handoff.add_argument("--input", type=Path, required=True)
     handoff.add_argument("--topics", type=Path, required=True, help="Current native topic registry; does not authorize new topics")
+    quality = commands.add_parser("audit-knowledge", help="Review knowledge structure, cross-version drift and optional relevance labels")
+    quality.add_argument("--knowledge", type=Path, required=True)
+    quality.add_argument("--previous", type=Path, help="Previously accepted knowledge map, never a hidden live fetch")
+    quality.add_argument("--labels", type=Path, help="Optional user-supplied labeled topic/document examples")
+    quality.add_argument("--output", type=Path, required=True)
     find = commands.add_parser("discover", help="Find unapproved GitHub topic candidates")
     find.add_argument("--topic", required=True)
     find.add_argument("--limit", type=int, default=20)
@@ -106,6 +112,19 @@ def main(argv: list[str] | None = None) -> int:
             write_reports(report, args.output, markdown=args.markdown, sarif=args.sarif)
             print('INSPECTION_' + report['status'])
             return 1 if report["status"] == "FAIL" else 0
+        elif args.command == 'audit-knowledge':
+            def bounded_json(path: Path) -> object:
+                if path.stat().st_size > 12_000_000:
+                    raise ValueError('input exceeds 12MB bounded audit limit')
+                return json.loads(path.read_text(encoding='utf-8'))
+            current = bounded_json(args.knowledge)
+            previous = bounded_json(args.previous) if args.previous else None
+            labels = bounded_json(args.labels) if args.labels else None
+            payload = audit_knowledge(current, previous=previous, labels=labels)
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False, allow_nan=False) + '\n', encoding='utf-8')
+            print('KNOWLEDGE_QUALITY_' + payload['status'])
+            return 1 if payload["status"] == "FAIL" else 0
         elif args.command == 'validate-handoff':
             value = json.loads(args.input.read_text(encoding='utf-8'))
             topics = load_topic_registry(args.topics)
