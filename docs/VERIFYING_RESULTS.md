@@ -13,7 +13,7 @@ This project's independent Workflow and Tool produce **bounded engineering evide
 
 ## Tool report decisions
 
-`ls-evidence inspect` returns **0** for PASS or WARN; **1** for FAIL; **2** for invalid usage or inspect errors. Read the `status`, `findings`, `scope` and `unverified` keys in the JSON report instead of assuming exit code 0 means scientific verification. Do not report `WARN` as certified success.
+`ls-evidence inspect` returns **0** for PASS or WARN; **1** for FAIL; **2** for invalid usage or inspect errors. The static preflight now distinguishes root `CITATION.cff` from recognized alternative citation guides (`CITATIONS.md`, `CITATION.md`, `CITATION.txt`); finding a guide remains WARN rather than an unsupported CFF PASS. A service repository is not required to include a workflow's root RO-Crate metadata. Nested crates are not assessed by the root-level rule. Read the `status`, `findings`, `scope` and `unverified` keys in the JSON report instead of assuming exit code 0 means scientific verification. Do not report `WARN` as certified success.
 
 `ls-evidence audit-docs` checks pinned **local Markdown links**. The listed external URLs are inventory records and are **not** confirmed reachable. It returns an error if a local link is missing, unsafe or unsupported.
 

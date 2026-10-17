@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "LIVE_READ_ONLY_FIELD_EVIDENCE_INDEX",
+  "observed_utc": "2026-10-17",
+  "title": "Real GitHub source collection + independent external research software inspection",
+  "source_run_id": 38994004639,
+  "source_run_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/38994004639",
+  "source_commit": "8eb9666be87a0cdf72ac8d4e8a8374187bfde612",
+  "artifact_id": 12086636220,
+  "artifact_sha256": "1587346ba0f09d325064c191890774f45aa2ea65e9006d08ae71b2f1e26026ee",
+  "outcome": "READ_ONLY_EVIDENCE_COMPLETE",
+  "source_evidence": {
+    "eligible_for_projection": true,
+    "diagnostic_count": 0,
+    "record_count": 15,
+    "source_count": 4,
+    "input_digest": "0fc7d508fa5afb89eb9eec424869ae107ab28ff2419f124cafe8f88e6f483005",
+    "output_digest": "5c3ee4aaea441494d94155ee06b3263d401a8a21dcbf7af738d2d778d63d5d67",
+    "snapshot_id": "0fc7d508fa5afb89-787471b78dfe37c2"
+  },
+  "knowledge": {
+    "knowledge_digest": "b968d7ab41e1f6932bd6026e1b50442bf70682f904ff34a8bc5bc084cec1d74d",
+    "node_count": 17,
+    "edge_count": 26,
+    "topic_coverages": [
+      "research-object-metadata:MULTI_SOURCE",
+      "workflow-monitoring:MULTI_SOURCE",
+      "workflow-registration:MULTI_SOURCE"
+    ]
+  },
+  "actual_sources": [
+    {
+      "repo": "common-workflow-language/cwl-v1.2",
+      "commit": "979083396fee912fca8ef778174216d317338a00",
+      "documents": 1
+    },
+    {
+      "repo": "crs4/life_monitor",
+      "commit": "7649406c11c5c04eebc5ca61926f5dbe30469c82",
+      "documents": 2
+    },
+    {
+      "repo": "seek4science/seek",
+      "commit": "e47e21f6517ae0a0808c18b733ec7bdbea64e593",
+      "documents": 1
+    },
+    {
+      "repo": "workflowhub-eu/about",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "documents": 11
+    }
+  ],
+  "independent_inspections": [
+    {
+      "repo": "nf-core/rnaseq",
+      "pinned_commit": "95dbcd977a74a4d1b2a3954abb90df3851014afa",
+      "status": "WARN",
+      "counts": {
+        "PASS": 2,
+        "WARN": 2,
+        "FAIL": 0
+      },
+      "report_digest": "2f4ae73fb429b122f32aa3f0824d41ff23474c3b0de8eae5ae379cf8c860ee51",
+      "specific_finding": "CITATIONS.md citation guidance exists despite no root CITATION.cff; RO-Crate main.nf path verified"
+    },
+    {
+      "repo": "crs4/life_monitor",
+      "pinned_commit": "7649406c11c5c04eebc5ca61926f5dbe30469c82",
+      "status": "WARN",
+      "counts": {
+        "PASS": 1,
+        "WARN": 3,
+        "FAIL": 0
+      },
+      "report_digest": "52092a9896ebb361bfc101b157034b4b4a29b794cd715cf6053dedb172eeaf80",
+      "specific_finding": "No root RO-Crate; service repository contains nested examples outside the root inspector's scope"
+    }
+  ],
+  "production_persisted": false,
+  "external_code_executed": false,
+  "limits": [
+    "No real production data/ commit",
+    "No scientific validity claim",
+    "No independent WorkflowHub/LifeMonitor enrollment verification",
+    "Reports inspect pinned snapshots, not external code execution"
+  ]
+}

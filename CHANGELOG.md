@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.3.0)
 
+- Run the real, read-only GitHub source and third-party software drill against four approved sources and pinned nf-core/rnaseq plus crs4/life_monitor revisions, with bounded reproducible artifacts
+- Recognize alternative citation guidance in actual bioinformatics repositories without claiming CFF compliance; distinguish root-level RO-Crate absence from nested workflow examples
+
 - Reject forged snapshot IDs even if the envelope checksum was recomputed and validate calendar dates before building archive paths
 - Refuse to apply over corrupted accepted state, including an inconsistent graph ledger or latest receipt; never silently launder a damaged baseline
 - Add regression tests for impossible/path-shaped dates, forged candidate identity, corrupted-state preflight and latest-event receipt binding
