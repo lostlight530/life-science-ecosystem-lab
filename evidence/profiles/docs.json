@@ -1,15 +1,18 @@
 {
   "schema_version": "1.0.0",
   "documents": [
-    "README.md",
     ".github/README.md",
     ".github/knowledge/README.md",
-    "evidence/README.md",
-    "docs/SCOPE.md",
-    "docs/PROVENANCE.md",
-    "docs/ARCHITECTURE.md",
-    "CONTRIBUTING.md",
     "CHANGELOG.md",
-    "SECURITY.md"
+    "CONTRIBUTING.md",
+    "README.md",
+    "SECURITY.md",
+    "docs/ARCHITECTURE.md",
+    "docs/MAINTENANCE.md",
+    "docs/PROVENANCE.md",
+    "docs/PUBLIC_INTERFACES.md",
+    "docs/SCOPE.md",
+    "docs/STANDARDS.md",
+    "evidence/README.md"
   ]
 }

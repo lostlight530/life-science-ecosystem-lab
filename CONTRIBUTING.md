@@ -10,3 +10,7 @@ Changes to **knowledge behavior** belong in `.github/` and changes to **provenan
 6. Never include real patient records, personal access tokens, unsupported biological claims or unreviewed external credentials
 
 **PR checks** require verified source identity, state ownership, failure transparency and data-only persisted writes. Approval to change a source profile is distinct from successful automated tests
+
+## Research-software inspection contributions
+
+For Tool issues, submit a public immutable source revision or a minimal synthetic fixture, CLI invocation, expected contract and sanitized report. For graph/search changes, include deterministic JSONL/FTS5 fixtures and provenance checks. Do not include private research plans, credentials or personally identifying/health data. Neither agent output nor a passing schema check is an accepted scientific conclusion. See [maintenance policy](docs/MAINTENANCE.md).

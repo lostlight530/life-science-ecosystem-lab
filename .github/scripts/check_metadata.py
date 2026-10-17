@@ -23,6 +23,10 @@ def verify() -> None:
     assert status['software_version']==version, 'status version mismatch'
     assert status['workflow']=='.github/workflows/life-science-knowledge.yml'
     assert status['tool']=='evidence/cli.py'
+    codemeta=json.loads((ROOT/'codemeta.json').read_text(encoding='utf-8'))
+    assert codemeta.get('@type')=='SoftwareSourceCode', 'CodeMeta type mismatch'
+    assert codemeta.get('softwareVersion')==version, 'CodeMeta version mismatch'
+    assert len(codemeta.get('hasPart', []))==2, 'CodeMeta peer assets mismatch'
     assert not (ROOT/'lifemonitor.yaml').exists(), 'global LifeMonitor defaults should not be overridden'
     assert (ROOT/'LICENSE').is_file()
 if __name__=='__main__':

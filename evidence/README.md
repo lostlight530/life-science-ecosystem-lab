@@ -30,3 +30,13 @@ Source records carry approved repository, commit, tree, blob, path, normalized S
 - GitHub Actions runs the tool independently in `../.github/workflows/life-science-evidence.yml`
 
 This is research software **about** workflow evidence, not a biological analysis tool or claim of bio.tools eligibility
+
+## Independent research software inspection
+
+Inspect a local third-party research software project **without** scheduling the knowledge Workflow or executing third-party code:
+
+```sh
+ls-evidence inspect --root /path/to/research-software --output build/report.json --markdown build/report.md --sarif build/report.sarif
+```
+
+This checks local README/citation availability, RO-Crate main-entity links and basic Bioschemas JSON-LD identities when present. It records missing optional metadata as warnings and deliberately does **not** certify bio.tools eligibility, external registrations, scientific truth or workflow execution. It leaves the inspected project untouched. See [public interfaces](../docs/PUBLIC_INTERFACES.md).

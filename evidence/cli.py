@@ -15,6 +15,9 @@ from .documentation import audit_documents, write_report
 from .github import GitHubTransportError, UrlLibGitHubTransport
 from .profiles import load_source_registry, load_topic_registry
 from .validation import validate_candidate_bundle
+from .inspection import inspect_repository, write_reports
+from .aggregation import canonical_bytes
+from .normalization import sha256_bytes
 
 
 def parser() -> argparse.ArgumentParser:
@@ -23,17 +26,24 @@ def parser() -> argparse.ArgumentParser:
     collect = commands.add_parser("collect", help="Collect approved GitHub source documents")
     collect.add_argument("--sources", type=Path, required=True)
     collect.add_argument("--output", type=Path, required=True)
+    collect.add_argument("--diagnostics-output", type=Path)
     agg = commands.add_parser("aggregate", help="Compute deterministic candidate evidence")
     agg.add_argument("--input", type=Path, required=True)
     agg.add_argument("--topics", type=Path, required=True)
     agg.add_argument("--previous", type=Path)
     agg.add_argument("--output", type=Path, required=True)
+    agg.add_argument("--diagnostics", type=Path)
     check = commands.add_parser("validate", help="Verify provenance and candidate digests")
     check.add_argument("--bundle", type=Path, required=True)
     audit = commands.add_parser("audit-docs", help="Check internal links in research software docs")
     audit.add_argument("--root", type=Path, default=Path('.'))
     audit.add_argument("--files", type=Path, required=True, help="JSON file containing a documents array")
     audit.add_argument("--output", type=Path, required=True)
+    inspect = commands.add_parser("inspect", help="Static, nonexecuting external research software preflight")
+    inspect.add_argument("--root", type=Path, required=True)
+    inspect.add_argument("--output", type=Path, required=True)
+    inspect.add_argument("--markdown", type=Path)
+    inspect.add_argument("--sarif", type=Path)
     find = commands.add_parser("discover", help="Find unapproved GitHub topic candidates")
     find.add_argument("--topic", required=True)
     find.add_argument("--limit", type=int, default=20)
@@ -49,6 +59,9 @@ def main(argv: list[str] | None = None) -> int:
             now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
             result = collect_sources(sources, UrlLibGitHubTransport(token=os.environ.get('GITHUB_TOKEN')), retrieved_at=now)
             payload = list(result.records)
+            if args.diagnostics_output:
+                args.diagnostics_output.parent.mkdir(parents=True, exist_ok=True)
+                args.diagnostics_output.write_text(json.dumps(list(result.diagnostics), indent=2, sort_keys=True) + "\n", encoding="utf-8")
             if not payload:
                 raise ValueError('no approved source documents were collected')
         elif args.command == 'aggregate':
@@ -58,6 +71,14 @@ def main(argv: list[str] | None = None) -> int:
             topics = load_topic_registry(args.topics)
             old = json.loads(args.previous.read_text(encoding='utf-8')) if args.previous else None
             payload = aggregate_evidence(records, topics, old)
+            if args.diagnostics:
+                diagnostics = json.loads(args.diagnostics.read_text(encoding="utf-8"))
+                if not isinstance(diagnostics, list) or not all(isinstance(i, dict) for i in diagnostics):
+                    raise ValueError("diagnostics must be an array of objects")
+                payload["diagnostics"] = diagnostics
+                body = dict(payload)
+                body.pop("output_digest", None)
+                payload["output_digest"] = sha256_bytes(canonical_bytes(body))
         elif args.command == 'validate':
             value = json.loads(args.bundle.read_text(encoding='utf-8'))
             result = validate_candidate_bundle(value)
@@ -73,6 +94,11 @@ def main(argv: list[str] | None = None) -> int:
             write_report(report, args.output)
             print('DOCUMENTATION_' + ('PASS' if not report.issues else 'FAIL'))
             return 0 if not report.issues else 1
+        elif args.command == 'inspect':
+            report = inspect_repository(args.root)
+            write_reports(report, args.output, markdown=args.markdown, sarif=args.sarif)
+            print('INSPECTION_' + report['status'])
+            return 1 if report["status"] == "FAIL" else 0
         elif args.command == 'discover':
             payload = discover_repositories(args.topic, limit=args.limit)
         else:

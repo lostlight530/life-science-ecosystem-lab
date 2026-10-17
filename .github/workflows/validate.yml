@@ -49,6 +49,12 @@ jobs:
           diff -u build/cwl-one/knowledge.json build/cwl-two/knowledge.json
           diff -u build/cwl-one/candidate.json build/cwl-two/candidate.json
           python -m life_science_ecosystem_lab knowledge verify --candidate build/cwl-one/candidate.json --topics evidence/profiles/topics.json --knowledge build/cwl-one/knowledge.json
+      - name: Verify JSONL graph and independent static Tool
+        run: |
+          python -m life_science_ecosystem_lab graph project --knowledge build/cwl-one/knowledge.json --output-dir build/graph
+          python -m life_science_ecosystem_lab graph verify --dir build/graph --knowledge build/cwl-one/knowledge.json
+          python -m life_science_ecosystem_lab graph search --dir build/graph --query workflow --limit 3 --hops 1
+          ls-evidence inspect --root . --output build/software-inspection.json --markdown build/software-inspection.md --sarif build/software-inspection.sarif
       - name: Verify reproducible workflow crate
         run: |
           python .github/scripts/build_rocrate.py build/one.crate.zip
