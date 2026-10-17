@@ -4,7 +4,7 @@
 
 **Canonical runtime:** [`.github/workflows/life-science-knowledge.yml`](workflows/life-science-knowledge.yml)
 
-This directory owns the scientific knowledge-production lifecycle, including workflow definition, deterministic knowledge projections, contract validation and state transitions. GitHub Actions **executes** the Workflow; it is not a third independently registered asset
+This directory owns the scientific knowledge-production lifecycle, including workflow definition, deterministic knowledge projections, contract validation and state transitions. GitHub Actions **executes** the Knowledge Workflow; it is not a fourth independently callable asset
 
 | Location | Role |
 | --- | --- |
@@ -16,7 +16,7 @@ This directory owns the scientific knowledge-production lifecycle, including wor
 | `runtime/life_science_ecosystem_lab/` | Native knowledge projection, memory and lifecycle engine |
 | `scripts/` | Provenance, world-line, write-boundary, RO-Crate checks |
 
-**LifeMonitor:** no repository-specific `lifemonitor.yaml`; preserve the user's existing global all-branch, all-tag and issue-check settings where the app is installed. No external enrollment is implied
+**LifeMonitor:** [`.lifemonitor.yaml`](../.lifemonitor.yaml) enables repository issue checks while leaving branch and tag tracking to the account-wide global settings. The installed App and accepted Bot PR are observed repository facts; workflow-test enrollment and periodic monitoring remain separately unverified
 
 **Publication boundaries:** WorkflowHub, LifeMonitor and additional registries require evidence of actual external registrations; a passing GitHub test is not proof of enrollment
 

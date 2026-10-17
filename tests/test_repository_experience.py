@@ -13,7 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 PUBLIC_DOCS = {
     "README.md", "AGENTS.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md",
-    ".github/README.md", ".github/knowledge/README.md", "evidence/README.md"
+    ".github/README.md", ".github/knowledge/README.md", "evidence/README.md",
+    "bio_tool/README.md"
 }
 
 class RepositoryExperienceTests(unittest.TestCase):
@@ -37,15 +38,18 @@ class RepositoryExperienceTests(unittest.TestCase):
                 self.assertNotRegex(data, r"(?m)^about:")
                 self.assertRegex(data, r"(?m)^\s+- type: (input|textarea|markdown)")
 
-    def test_first_use_commands_and_dual_identity_exist(self):
+    def test_first_use_commands_and_three_asset_identity_exist(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("ls-knowledge", readme)
         self.assertIn("ls-evidence", readme)
+        self.assertIn("ls-bio", readme)
         self.assertIn("docs/GETTING_STARTED.md", readme)
         self.assertIn("CITATION.cff", readme)
         self.assertTrue((ROOT / ".github/workflows/life-science-knowledge.yml").is_file())
         self.assertTrue((ROOT / "evidence/inspection.py").is_file())
+        self.assertTrue((ROOT / "bio_tool/cli.py").is_file())
         self.assertFalse((ROOT / "lifemonitor.yaml").exists())
+        self.assertTrue((ROOT / ".lifemonitor.yaml").is_file())
 
     def test_changelog_has_single_unreleased_and_no_fabricated_release(self):
         value = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
