@@ -11,6 +11,7 @@ from life_science_ecosystem_lab.cli import main
 from evidence.cli import main as evidence_main
 from evidence.collector import collect_sources
 from evidence.profiles import SourceRegistry
+from evidence.github import GitHubTransportError
 
 
 class FixtureTransport:
@@ -63,6 +64,30 @@ class CollectorCliTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "TREE_TRUNCATED"):
             collect_sources(self.registry(), Truncated(), retrieved_at="2026-10-16T00:00:00Z")
+
+    def test_optional_source_blob_failure_discards_partial_source(self):
+        spec = dict(self.registry().sources[0])
+        spec.update({"id": "optional", "ref": "optional", "required": False,
+                     "include": ["README.md", "archive/old.md"], "exclude": []})
+        class Interrupted(FixtureTransport):
+            def get_blob(self, identity, blob_sha):
+                if blob_sha == "4" * 40:
+                    raise GitHubTransportError("interrupted blob fetch")
+                return super().get_blob(identity, blob_sha)
+
+        registry = SourceRegistry("1.0.0", "fixture", (spec,))
+        result = collect_sources(registry, Interrupted(), retrieved_at="2026-10-17T00:00:00Z")
+        self.assertEqual(result.records, ())
+        self.assertEqual(len(result.diagnostics), 1)
+        self.assertEqual(result.diagnostics[0]["source_id"], "optional")
+        self.assertEqual(result.diagnostics[0]["reason"], "OPTIONAL_SOURCE_UNAVAILABLE")
+
+    def test_required_empty_source_is_not_silent_success(self):
+        spec = dict(self.registry().sources[0])
+        spec.update({"include": ["absent-document.md"], "exclude": []})
+        registry = SourceRegistry("1.0.0", "fixture", (spec,))
+        with self.assertRaisesRegex(ValueError, "NO_SELECTED_DOCUMENTS"):
+            collect_sources(registry, FixtureTransport(), retrieved_at="2026-10-17T00:00:00Z")
 
     def test_cli_validates_source_registry(self):
         with tempfile.TemporaryDirectory() as directory:

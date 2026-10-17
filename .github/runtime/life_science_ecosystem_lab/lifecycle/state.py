@@ -80,9 +80,13 @@ def verify_state(roots: StateRoots, *, require_accepted: bool = False) -> Valida
             if isinstance(knowledge, dict) and isinstance(knowledge.get("knowledge_graph"), dict):
                 graph_dir = knowledge_path.parent
                 verify_graph(graph_dir, knowledge)
-                verify_graph_events(graph_dir)
+                event_count = verify_graph_events(graph_dir)
+                if require_accepted and not event_count:
+                    errors.append('accepted knowledge has no graph events')
         except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
             errors.append(f"knowledge graph integrity: {exc}")
+    if require_accepted and not any((roots.root / 'data' / 'receipts').glob('*.json')):
+        errors.append('no accepted run receipt')
     for path in roots.archive.rglob("*.json") if roots.archive.exists() else ():
         try:
             archived = json.loads(path.read_text(encoding="utf-8"))
