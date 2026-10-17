@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "PINNED_PROTEIN_RESEARCH_DATA_SAMPLE_MANIFEST",
+  "scope": "Small, public GitHub-hosted example and benchmarking objects; not full training datasets",
+  "license_boundary": "Do not infer dataset rights from GitHub repository code licenses; metadata-only artifact",
+  "samples": [
+    {
+      "id": "openfold-fasta",
+      "repository": "aqlaboratory/openfold",
+      "commit": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+      "path": "examples/monomer/fasta_dir/6kwc.fasta",
+      "blob_sha": "4fbcc4f33528dc49d7c13f4f7734123ac5637598",
+      "bytes": 200,
+      "format": "FASTA",
+      "role": "example_sequence"
+    },
+    {
+      "id": "openfold-predicted-pdb",
+      "repository": "aqlaboratory/openfold",
+      "commit": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+      "path": "examples/monomer/sample_predictions/6KWC_1_model_1_ptm_relaxed.pdb",
+      "blob_sha": "78781cf1472d3bcb18c5914f7b1889ac25f9cb4a",
+      "bytes": 230149,
+      "format": "PDB",
+      "role": "predicted_structure"
+    },
+    {
+      "id": "casp15-alphafold2-t1104",
+      "repository": "Bhattacharya-Lab/CASP15",
+      "commit": "96687bc0f6e117240015766bb7c4d8b11ec796cd",
+      "path": "AlphaFold2/T1104.pdb",
+      "blob_sha": "155ae80aba876ed7cd374a8bc0d8f25918740165",
+      "bytes": 146132,
+      "format": "PDB",
+      "role": "benchmark_prediction"
+    },
+    {
+      "id": "casp15-esmfold-t1104",
+      "repository": "Bhattacharya-Lab/CASP15",
+      "commit": "96687bc0f6e117240015766bb7c4d8b11ec796cd",
+      "path": "ESMFold/T1104.pdb",
+      "blob_sha": "2f1b7b6efc395301554185d2c400860a20c68991",
+      "bytes": 72861,
+      "format": "PDB",
+      "role": "benchmark_prediction"
+    },
+    {
+      "id": "alphafold3-ubiquitin",
+      "repository": "google-deepmind/alphafold3",
+      "commit": "03f4f48867748c164ae6d5144ae0529477df02e3",
+      "path": "examples/ubiquitin_monomer.json",
+      "blob_sha": "12b09d04d798d798ca6ea9c8088cf16a6873a556",
+      "bytes": 350,
+      "format": "JSON",
+      "role": "inference_input"
+    },
+    {
+      "id": "proteingym-fasta",
+      "repository": "ProteinGym/proteingym-base",
+      "commit": "8e0e29b608c60755f4341707292670cf14aa7992",
+      "path": "example_data/NEIME_2019/A0A1I9GEU1.fasta",
+      "blob_sha": "7c626626bd61060085ab87be4501390f63d82db7",
+      "bytes": 244,
+      "format": "FASTA",
+      "role": "variant_effect_example"
+    },
+    {
+      "id": "proteingym-computational-pdb",
+      "repository": "ProteinGym/proteingym-base",
+      "commit": "8e0e29b608c60755f4341707292670cf14aa7992",
+      "path": "example_data/NEIME_2019/Structures/computational.pdb",
+      "blob_sha": "5ce0d454aea57ad445ec7ccade6c30bf6dd0adaa",
+      "bytes": 101978,
+      "format": "PDB",
+      "role": "variant_effect_example"
+    }
+  ],
+  "not_executed": [
+    "AlphaFold/OpenFold/ESMFold training or inference",
+    "GPU structure calculation",
+    "CASP performance score recomputation",
+    "external dataset download outside these pinned samples"
+  ]
+}

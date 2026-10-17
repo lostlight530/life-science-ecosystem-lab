@@ -1,0 +1,115 @@
+name: Protein Structure External Agent and Native Workflow Demo
+on:
+  push:
+    branches:
+      - experiment/protein-structure-20261017
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: protein-research-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      PYTHONPATH: ".github/runtime:."
+      GITHUB_TOKEN: ${{ github.token }}
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Validate external Agent proposal, native profiles, Tool and existing accepted state
+        run: |
+          python -m pip install -e .
+          mkdir -p build/protein
+          python -m unittest discover -s tests -v
+          ls-evidence validate-handoff --input .github/agent-handoff/protein-structure-2026-10-17.json --topics evidence/profiles/research/protein_structure/topics.json
+          ls-knowledge validate-source-registry evidence/profiles/research/protein_structure/sources.json
+          ls-knowledge validate-topic-registry evidence/profiles/research/protein_structure/topics.json
+          ls-knowledge state verify --repository-root . --require-accepted
+      - name: Advisory GitHub discovery, never approved automatically
+        run: |
+          if ls-evidence discover --topic protein-structure-prediction --limit 5 --output build/protein/discovery.json; then
+            echo 'DISCOVERY_CHECKED_NO_AUTO_APPROVAL' > build/protein/discovery-status.txt
+          else
+            echo 'DISCOVERY_UNAVAILABLE_NO_SOURCE_AUTO_APPROVAL' > build/protein/discovery-status.txt
+          fi
+      - name: Collect six pinned live sources, build knowledge, validate graph and search
+        run: |
+          ls-evidence collect --sources evidence/profiles/research/protein_structure/sources.json --output build/protein/records.json --diagnostics-output build/protein/diagnostics.json
+          ls-evidence aggregate --input build/protein/records.json --topics evidence/profiles/research/protein_structure/topics.json --diagnostics build/protein/diagnostics.json --output build/protein/candidate.json
+          ls-evidence validate --bundle build/protein/candidate.json
+          ls-knowledge knowledge build --candidate build/protein/candidate.json --topics evidence/profiles/research/protein_structure/topics.json --output build/protein/knowledge.json
+          ls-knowledge knowledge verify --candidate build/protein/candidate.json --topics evidence/profiles/research/protein_structure/topics.json --knowledge build/protein/knowledge.json
+          ls-knowledge graph project --knowledge build/protein/knowledge.json --output-dir build/protein/graph
+          ls-knowledge graph verify --dir build/protein/graph --knowledge build/protein/knowledge.json
+          ls-knowledge graph search --dir build/protein/graph --query protein --limit 6 --hops 1 > build/protein/graph-search.json
+          ls-evidence audit-docs --root . --files evidence/profiles/docs.json --output build/protein/docs-audit.json
+      - name: Audit seven actual FASTA PDB and JSON Git objects
+        run: python .github/scripts/protein_structure_sample_audit.py --manifest evidence/profiles/research/protein_structure/sample-manifest.json --output build/protein/sample-audit.json
+      - name: Checkout OpenFold software at fixed revision for independent inspection
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: aqlaboratory/openfold
+          ref: be2ec1841f16c966c65ae0e7599ebbadc725757d
+          path: build/protein/external/openfold
+          persist-credentials: false
+          submodules: false
+          lfs: false
+          fetch-depth: 1
+      - name: Checkout ProteinNet at fixed revision for independent inspection
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: aqlaboratory/proteinnet
+          ref: e831afd9faa5c2334ee39dd60a68b7e9383f189a
+          path: build/protein/external/proteinnet
+          persist-credentials: false
+          submodules: false
+          lfs: false
+          fetch-depth: 1
+      - name: Independently run Evidence Tool on two external research repositories
+        run: |
+          ls-evidence inspect --root build/protein/external/openfold --output build/protein/openfold-inspection.json --markdown build/protein/openfold-inspection.md --sarif build/protein/openfold-inspection.sarif
+          ls-evidence inspect --root build/protein/external/proteinnet --output build/protein/proteinnet-inspection.json --markdown build/protein/proteinnet-inspection.md --sarif build/protein/proteinnet-inspection.sarif
+      - name: Execute portable synthetic CWL replay
+        run: |
+          python -m pip install cwltool
+          mkdir -p build/protein/cwl
+          cwltool --no-container --outdir build/protein/cwl .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
+      - name: Isolated accepted-state transition, archive, event chain and no-change replay
+        run: |
+          mkdir -p build/protein/simulated
+          cp -a data build/protein/simulated/data
+          ls-knowledge lifecycle apply --candidate build/protein/candidate.json --knowledge build/protein/knowledge.json --topics evidence/profiles/research/protein_structure/topics.json --repository-root build/protein/simulated --logical-date "$(date -u +%F)" --validated-head "$GITHUB_SHA" --current-head "$GITHUB_SHA" --execution-id "demo-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" > build/protein/simulated-apply.json
+          ls-knowledge state verify --repository-root build/protein/simulated --require-accepted
+          ls-knowledge graph verify --dir build/protein/simulated/data/knowledge --knowledge build/protein/simulated/data/knowledge/current.json
+          ls-knowledge lifecycle apply --candidate build/protein/candidate.json --knowledge build/protein/knowledge.json --topics evidence/profiles/research/protein_structure/topics.json --repository-root build/protein/simulated --logical-date "$(date -u +%F)" --validated-head "$GITHUB_SHA" --current-head "$GITHUB_SHA" --execution-id "demo-repeat-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" > build/protein/simulated-repeat.json
+          ls-knowledge state verify --repository-root build/protein/simulated --require-accepted
+      - name: Verify final run report and all result distinctions
+        run: python .github/scripts/protein_structure_demo_summary.py --root build/protein --output build/protein/field-summary.json
+      - name: Publish bounded artifact without upstream raw text or accepted data
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: protein-structure-agent-tool-workflow-demo
+          path: |
+            build/protein/field-summary.json
+            build/protein/sample-audit.json
+            build/protein/diagnostics.json
+            build/protein/graph/graph-manifest.json
+            build/protein/docs-audit.json
+            build/protein/discovery-status.txt
+            build/protein/openfold-inspection.json
+            build/protein/openfold-inspection.md
+            build/protein/openfold-inspection.sarif
+            build/protein/proteinnet-inspection.json
+            build/protein/proteinnet-inspection.md
+            build/protein/proteinnet-inspection.sarif
+          if-no-files-found: warn
+          retention-days: 14

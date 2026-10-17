@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from typing import Any, Callable
 from urllib.parse import urlencode
@@ -21,7 +22,11 @@ def discover_repositories(topic: str, *, limit: int = 20,
         "q": f"topic:{topic} archived:false fork:false", "sort": "updated", "order": "desc", "per_page": limit
     })
     def request(url: str) -> dict[str, Any]:
-        with urlopen(Request(url, headers={"Accept": "application/vnd.github+json", "User-Agent": "ls-evidence/0.3"}), timeout=20) as response:
+        headers = {"Accept": "application/vnd.github+json", "User-Agent": "ls-evidence/0.3"}
+        token = os.environ.get("GITHUB_TOKEN")
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+        with urlopen(Request(url, headers=headers), timeout=20) as response:
             return json.load(response)
     data = (retrieve or request)(url)
     candidates = []

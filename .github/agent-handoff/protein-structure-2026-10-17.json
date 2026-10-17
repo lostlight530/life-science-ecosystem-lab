@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "EXTERNAL_AGENT_RESEARCH_HANDOFF",
+  "authority": "PROPOSAL_ONLY",
+  "task": {
+    "id": "protein-structure-20261017",
+    "question": "Can pinned public protein structure prediction repositories and small dataset samples form a reproducible source-cited native Tool/Workflow demo without running prediction models or silently promoting Agent proposals?",
+    "topic_ids": [
+      "protein-structure-methods",
+      "protein-structure-benchmarks",
+      "protein-structure-datasets",
+      "protein-variant-effects"
+    ]
+  },
+  "result": "PROPOSED",
+  "observations": [
+    {
+      "statement": "AlphaFold 2 repository publishes structure-prediction source code; code and parameter terms must be distinguished",
+      "status": "UNVERIFIED",
+      "source_url": "https://github.com/google-deepmind/alphafold/blob/c77e5d2a8961d1a353632c462914ff0a32a950f6/README.md"
+    },
+    {
+      "statement": "OpenFold has protein FASTA and predicted-PDB examples in its repository, separate from large training datasets",
+      "status": "UNVERIFIED",
+      "source_url": "https://github.com/aqlaboratory/openfold/blob/be2ec1841f16c966c65ae0e7599ebbadc725757d/README.md"
+    },
+    {
+      "statement": "ProteinNet documents standardized structure-training datasets; its GitHub README is not an actual CASP training corpus",
+      "status": "UNVERIFIED",
+      "source_url": "https://github.com/aqlaboratory/proteinnet/blob/e831afd9faa5c2334ee39dd60a68b7e9383f189a/README.md"
+    },
+    {
+      "statement": "CASP15 benchmark repository publishes predicted structures and scoring descriptions; prediction files are not independently re-scored in this pilot",
+      "status": "UNVERIFIED",
+      "source_url": "https://github.com/Bhattacharya-Lab/CASP15/blob/96687bc0f6e117240015766bb7c4d8b11ec796cd/README.md"
+    },
+    {
+      "statement": "AlphaFold 3 model weights have terms separate from the Apache-2.0 inference source code",
+      "status": "UNVERIFIED",
+      "source_url": "https://github.com/google-deepmind/alphafold3/blob/03f4f48867748c164ae6d5144ae0529477df02e3/README.md"
+    },
+    {
+      "statement": "ProteinGym addresses protein variant effects, a separate task from direct 3D structure prediction",
+      "status": "UNVERIFIED",
+      "source_url": "https://github.com/ProteinGym/proteingym-base/blob/8e0e29b608c60755f4341707292670cf14aa7992/README.md"
+    }
+  ],
+  "proposed_changes": [
+    {
+      "path": "evidence/profiles/research/protein_structure/sources.json",
+      "rationale": "Separately reviewed pilot source registry with frozen commits, not automatic promotion into active weekly sources",
+      "review_required": true
+    },
+    {
+      "path": "evidence/profiles/research/protein_structure/topics.json",
+      "rationale": "Use native matching configuration for the scoped protein structure pilot without altering production topic IDs",
+      "review_required": true
+    },
+    {
+      "path": "docs/PROTEIN_STRUCTURE_FIELD_DEMO.md",
+      "rationale": "Publish reproducibility, dataset separation, licensing and non-execution caveats",
+      "review_required": true
+    }
+  ],
+  "limitations": [
+    "Observations are proposals pending independent source/data checks and normal PR review",
+    "GitHub objects include examples and benchmark predictions; full datasets may reside on external archives",
+    "Neither model weights nor inference are downloaded or executed",
+    "Prediction benchmark quality metrics will not be inferred from a PDB existence check"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "protein-structure-2026-10-17-field-scope",
+  "sources": [
+    {
+      "id": "alphafold2",
+      "repository": "google-deepmind/alphafold",
+      "ref": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md"
+      ],
+      "exclude": [],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "openfold",
+      "repository": "aqlaboratory/openfold",
+      "ref": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md",
+        "CITATION.cff",
+        "examples/monomer/fasta_dir/6kwc.fasta"
+      ],
+      "exclude": [],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "proteinnet",
+      "repository": "aqlaboratory/proteinnet",
+      "ref": "e831afd9faa5c2334ee39dd60a68b7e9383f189a",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md"
+      ],
+      "exclude": [],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "casp15",
+      "repository": "Bhattacharya-Lab/CASP15",
+      "ref": "96687bc0f6e117240015766bb7c4d8b11ec796cd",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md"
+      ],
+      "exclude": [],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "alphafold3",
+      "repository": "google-deepmind/alphafold3",
+      "ref": "03f4f48867748c164ae6d5144ae0529477df02e3",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md",
+        "examples/ubiquitin_monomer.json"
+      ],
+      "exclude": [],
+      "max_bytes": 1000000
+    },
+    {
+      "id": "proteingym",
+      "repository": "ProteinGym/proteingym-base",
+      "ref": "8e0e29b608c60755f4341707292670cf14aa7992",
+      "approved": true,
+      "required": true,
+      "trust": "primary",
+      "include": [
+        "README.md",
+        "example_data/NEIME_2019/A0A1I9GEU1.fasta"
+      ],
+      "exclude": [],
+      "max_bytes": 1000000
+    }
+  ]
+}
