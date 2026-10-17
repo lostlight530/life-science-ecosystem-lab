@@ -1,5 +1,5 @@
 name: Research software inspection
-description: Report a reproducible Tool inspection issue for a public non-sensitive research object
+description: Report a reproducible static Tool inspection issue using public or synthetic data
 body:
   - type: markdown
     attributes:

@@ -12,6 +12,12 @@ license = {text = "MIT"}
 authors = [{name = "Xuanyi Jiang"}]
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/lostlight530/life-science-ecosystem-lab"
+Documentation = "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/docs"
+Source = "https://github.com/lostlight530/life-science-ecosystem-lab"
+Issues = "https://github.com/lostlight530/life-science-ecosystem-lab/issues"
+
 [project.scripts]
 ls-knowledge = "life_science_ecosystem_lab.cli:main"
 ls-evidence = "evidence.cli:main"

@@ -1,5 +1,7 @@
 # Life Science Knowledge Workflow
 
+[First-use tutorial](../docs/GETTING_STARTED.md) · [Public interfaces](../docs/PUBLIC_INTERFACES.md) · [Verification limits](../docs/VERIFYING_RESULTS.md)
+
 **Canonical runtime:** [`.github/workflows/life-science-knowledge.yml`](workflows/life-science-knowledge.yml)
 
 This directory owns the scientific knowledge-production lifecycle, including workflow definition, deterministic knowledge projections, contract validation and state transitions. GitHub Actions **executes** the Workflow; it is not a third independently registered asset

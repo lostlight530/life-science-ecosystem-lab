@@ -10,7 +10,7 @@
   "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE",
   "name": "Life Science Evidence Tool",
   "version": "0.3.0",
-  "description": "Independently callable GitHub evidence source identity, provenance verification, change classification, research software documentation link audit, and read-only topic discovery",
+  "description": "Standalone, nonexecuting research-software inspection and approved GitHub evidence provenance, deterministic aggregation, metadata/documentation auditing and validation",
   "url": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/evidence",
   "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
   "license": "https://spdx.org/licenses/MIT",
@@ -28,6 +28,10 @@
     "content SHA-256 verification",
     "semantic evidence change classification",
     "repository Markdown link auditing",
-    "read-only GitHub topic discovery"
-  ]
+    "read-only GitHub topic discovery",
+    "independent local research-software inspection",
+    "machine-readable JSON and SARIF reporting",
+    "human-readable Markdown diagnostics"
+  ],
+  "documentation": "https://github.com/lostlight530/life-science-ecosystem-lab/blob/main/evidence/README.md"
 }

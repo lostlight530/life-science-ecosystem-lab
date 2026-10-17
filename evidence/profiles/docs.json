@@ -8,11 +8,14 @@
     "README.md",
     "SECURITY.md",
     "docs/ARCHITECTURE.md",
+    "docs/GETTING_STARTED.md",
     "docs/MAINTENANCE.md",
     "docs/PROVENANCE.md",
     "docs/PUBLIC_INTERFACES.md",
+    "docs/README.md",
     "docs/SCOPE.md",
     "docs/STANDARDS.md",
+    "docs/VERIFYING_RESULTS.md",
     "evidence/README.md"
   ]
 }

@@ -1,16 +1,31 @@
-# Contributing to the Life Science Ecosystem Lab
+# Contributing to Life Science Ecosystem Lab
 
-Changes to **knowledge behavior** belong in `.github/` and changes to **provenance/documentation verification** in `evidence/`
+The repository maintains **two equal assets**, not an Agent/Skills package. Knowledge behavior belongs to [`.github/`](.github/README.md), and standalone research-software evidence inspection and source verification to [`evidence/`](evidence/README.md). See the [documentation index](docs/README.md) before starting.
 
-1. Describe the research question, approved source documents and expected observable output
-2. Add or update deterministic fixtures; new sources remain untrusted until explicit approval in `evidence/profiles/sources.json`
-3. Run `python -m unittest discover -s tests -v`, `python .github/scripts/check_rocrate.py` and `python -m evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json`
-4. When changing CWL interfaces or the canonical Actions workflow, update RO-Crate, Bioschemas and examples in the same PR
-5. Include reproducible inputs, resulting output diffs, a reasoned impact assessment and documented uncertainty
-6. Never include real patient records, personal access tokens, unsupported biological claims or unreviewed external credentials
+## Reproduce your proposed change
 
-**PR checks** require verified source identity, state ownership, failure transparency and data-only persisted writes. Approval to change a source profile is distinct from successful automated tests
+1. Open the relevant [issue form](.github/ISSUE_TEMPLATE/) or PR and state the *observable* problem, proposed behavior, and affected asset
+2. Supply a minimal synthetic fixture or link to a **public, immutable** Git commit; new collection sources require an explicitly reviewed change to `evidence/profiles/sources.json`
+3. Include the command, expected and actual output, status, error handling, and remaining verification limits
+4. Run both local regression and link checks from the repo root:
 
-## Research-software inspection contributions
+```sh
+python -m pip install -e .
+python -m unittest discover -s tests -v
+ls-evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
+python .github/scripts/check_rocrate.py
+python .github/scripts/check_metadata.py
+python .github/scripts/check_publication_boundary.py
+```
 
-For Tool issues, submit a public immutable source revision or a minimal synthetic fixture, CLI invocation, expected contract and sanitized report. For graph/search changes, include deterministic JSONL/FTS5 fixtures and provenance checks. Do not include private research plans, credentials or personally identifying/health data. Neither agent output nor a passing schema check is an accepted scientific conclusion. See [maintenance policy](docs/MAINTENANCE.md).
+5. Changes to CWL, GitHub Actions inputs/outputs or public descriptions must update the relevant [RO-Crate](ro-crate-metadata.json), [Bioschemas](metadata/) and documentation contracts; verify CWL with [Getting Started](docs/GETTING_STARTED.md)
+6. For a structural documentation change, update `docs/README.md` **and** the authoritative documentation inventory `evidence/profiles/docs.json`. CI tests require complete coverage of public Markdown guides
+
+## Review boundaries
+
+- PR tests and static inspection cannot establish biological truth, full external standards certification, publication or registry acceptance
+- External Agents may independently contribute via normal GitHub review; they are not runtime requirements or trusted decision authorities
+- Repository sources, private plans, internal research methods, credentials, unpublished texts, personal/health information and nonpublic URLs must **not** be submitted to this public repository, issues or CI logs
+- Maintainers accept source and state changes under independent provenance, world-line and write-boundary checks, not merely because a proposed solution runs
+
+[Verification results](docs/VERIFYING_RESULTS.md) · [Maintenance and privacy](docs/MAINTENANCE.md) · [Security](SECURITY.md)

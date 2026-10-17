@@ -1,5 +1,5 @@
 name: Research source proposal
-about: Propose a public GitHub source for manual approval
+description: Propose an approved-public-source registry change for review, with immutable evidence
 labels: ["research-source"]
 body:
   - type: input

@@ -1,5 +1,7 @@
 # Public software interfaces
 
+[First-use commands](GETTING_STARTED.md) · [Result interpretation](VERIFYING_RESULTS.md) · [Documentation index](README.md)
+
 The repository publishes two peer software assets under one source-code and release identity.
 Both are usable by researchers and ordinary programs. Neither depends on a configured model, a prompt package, or an external Agent.
 

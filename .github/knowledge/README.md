@@ -1,5 +1,7 @@
 # Life Science Knowledge Workflow — Portable CWL Replay
 
+[Reproduction tutorial](../../docs/GETTING_STARTED.md) · [Verification results](../../docs/VERIFYING_RESULTS.md)
+
 **Primary research artifact:** `knowledge.json` — a deterministic, source-cited map of what approved GitHub documentation actually states about life-science workflow registration, monitoring/testing, and reproducible research-object metadata
 
 **Separate assurance asset:** the GitHub Evidence Aggregator processes immutable source snapshots and verifies the candidate bundle before knowledge extraction; it never claims scientific truth or overwrites active knowledge on its own

@@ -1,5 +1,5 @@
 name: Evidence or knowledge verification failure
-about: Report a reproducible Life Science verification or knowledge regression
+description: Report a reproducible public verification or knowledge regression
 labels: ["verification"]
 body:
   - type: textarea

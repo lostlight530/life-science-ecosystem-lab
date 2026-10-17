@@ -16,6 +16,11 @@ Source identities / frozen commits, fixture inputs, commands, outputs, expected 
 
 Any changes to source approvals, write authority, external credentials or registry status?
 
+## First-time user experience
+
+- [ ] Existing CLI commands, import paths, public links, and sample commands still work
+- [ ] Public documentation inventory and asset navigation are updated when needed
+
 ## Test result
 
 - [ ] Regression suite
