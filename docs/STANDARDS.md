@@ -35,7 +35,7 @@ Use `ls-evidence audit-ecosystem --root . --output build/interop.json` before co
 | Service | Specific independent criterion | Current repo scope |
 | --- | --- | --- |
 | WorkflowHub | Workflow RO-Crate 1.1 requires a typed main workflow, programmingLanguage, license, and a ZIP with root metadata; registry entry is created only by an actual upload/registration | Local RO-Crate and CWL plus synthetic tests; external entry unverified |
-| LifeMonitor | Workflow Testing RO-Crate links main workflow, test suite, test instance, and compatible CI service; monitoring requires actual enrollment | Installed App, accepted Bot PR and minimal issue-check configuration observed; workflow-test enrollment and periodic monitoring unverified |
+| LifeMonitor | Workflow Testing RO-Crate links main workflow, test suite, test instance, and compatible CI service; monitoring requires actual enrollment | Installed App and bot PR observed; root config path corrected locally, but external recognition, workflow-test enrollment and periodic monitoring remain unverified |
 | bio.tools | Curator scope requires actual bioinformatics data-processing operations and appropriate EDAM topic/operation/input/output terms | Independent FASTA/PDB processing and a draft EDAM mapping exist; registry eligibility, curation and acceptance are not asserted |
 
 Evidence gates are `LOCAL_PREFLIGHT → SUBMITTED → ACCEPTED → EXTERNALLY_VERIFIED`; platform submission is a separate user-authorized action and requires a stable public record URL. Neither an identity connection nor a completed local preflight is accepted registration, and external adoption requires separately sourced use evidence.
