@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import PurePosixPath
 from typing import Any, Mapping
 from urllib.parse import urlsplit
+from .agent_identity import proposer_errors
 
 _ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$")
 _SHA = re.compile(r"^[0-9a-f]{40}$")
@@ -144,6 +145,8 @@ def validate_agent_handoff(value: Any, *, known_topics: set[str] | None = None, 
     limitations = value.get("limitations")
     if not isinstance(limitations, list) or len(limitations) > 30 or not all(_text(x) for x in limitations):
         errors.append("limitations must be a bounded string array")
+    if "proposer" in value:
+        errors.extend(proposer_errors(value["proposer"]))
     if "base" in value:
         _validate_base(value.get("base"), errors)
     if expected_base_commit is not None:
