@@ -1,6 +1,6 @@
 # Life Science Lab · Canonical Architecture
 
-## Two peer assets, one native execution environment
+## Three peer assets, one native execution environment
 
 1. **Knowledge Workflow** — `.github/` is the canonical lifecycle and knowledge runtime. The GitHub Actions workflow controls scheduling, source ingestion, knowledge transformation, state recovery, conditional persistence and receipts; a CWL computational sub-workflow offers portable replay
 2. **Evidence Tool** — `evidence/` is an independent Python package and CLI for source identification, immutable provenance, diff/replay, scientific-software documentation checks and independent verdicts
