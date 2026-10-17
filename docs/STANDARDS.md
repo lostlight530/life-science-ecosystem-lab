@@ -15,8 +15,8 @@ This document lists supported *software-interface mappings*, not certifications.
 | W3C PROV-O / SKOS | Source and relationship export vocabulary guidance | Internal JSONL is not claimed to be RDF or PROV-O/SHACL conformant |
 | Software Heritage SWHID | Optional immutable source object identifier | Only use real computed/archived identifiers, never invent them |
 | WorkflowHub | External publication opportunity | Not registered/accepted unless confirmed externally |
-| LifeMonitor | Optional monitoring platform | No repository `lifemonitor.yaml` override of existing account defaults; enrollment not inferred |
-| bio.tools + EDAM | Future Tool curation target | Apply only if actual input/operations/output and scope meet curator guidance; no fabricated EDAM terms |
+| LifeMonitor | Installed GitHub App + `.lifemonitor.yaml` | Genuine Bot PR #15 accepted; global branch/tag tracking retained; test enrollment and periodic monitoring separate |
+| bio.tools + EDAM | `bio_tool/`, `metadata/biotools-protein-audit.draft.json` | Actual FASTA/PDB processing, reviewed EDAM operations/data/formats and unsubmitted candidate; accession and eligibility require registry verification |
 
 Reference documents:
 
@@ -49,3 +49,7 @@ python .github/scripts/build_portable_workflow_crate.py build/life-science-porta
 ```
 
 The portable archive declares CWL as its main workflow, includes synthetic replay fixtures, and excludes accepted production `data/` and private information. GitHub Actions remains the native owner of live observations and guarded persistence. The LifeMonitor GitHub App supports repository checks and can assist with workflow test enrollment when installed by the repository owner. Installation, monitoring and WorkflowHub records require separate external confirmation. Avoid overriding existing LifeMonitor global settings with a repository-specific configuration until its effect is reviewed.
+
+## Third independently callable Bio Tool
+
+`ls-bio protein-fasta` and `ls-bio protein-pdb` implement actual biological data processing, separately from software inspection and source-grounded knowledge generation. The unsubmitted `metadata/biotools-protein-audit.draft.json` uses EDAM operation_2403 / operation_2406, data_2976 / data_1460 / data_2955, and format_1929 / format_1476 for the supported formats. EDAM assignments are semantic descriptors, not third-party certification, and must be independently checked during bio.tools registration.
