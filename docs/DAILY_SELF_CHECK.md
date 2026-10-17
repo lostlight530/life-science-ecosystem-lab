@@ -10,6 +10,7 @@ The repository executes one scheduled, **read-only** GitHub Actions workflow wit
 - On actual schedule (or manual dispatch with `live_public_institutions: true`) the institutional job makes at most six bounded, anonymous, read-only GET requests against exact allowlisted public service URLs, without following redirects, access tokens or user account state
 - The custom job verifies local file SHA-256s, three public CLI entrypoints, the current source/topic and scientific metadata rules,  full Python regression tests, docs links, RO-Crate structure, publication boundary, accepted Git state, knowledge map and graph, and Knowledge Quality
 - Two jobs have `contents: read`, independent results and **no production writes**, no external registration, no privileged Agent execution and no user credentials
+- These scheduled jobs are not downstream of the pull-request gate and are not prerequisites for it. Their separate concurrency group and lack of cross-job `needs` keep institutional observation available when a project-local check fails
 
 ## Institutional public defaults (external reference plane)
 

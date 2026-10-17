@@ -11,6 +11,12 @@ This project's independent Workflow and Tool produce **bounded engineering evide
 | Computational knowledge replay | Deterministic knowledge JSON, source-linked JSONL and FTS5 queries on a specific input | That the synthetic fixture is a live GitHub observation or causal inference |
 | GitHub native durable lifecycle | Completed scheduled/authorized job **plus** accepted `data/` commit and state verification | That third-party registries accepted or independently reproduced the software |
 
+## Required pull-request verdict
+
+The required validation workflow starts four independent domains on every pull request and `main` push: `Repository contracts`, `Knowledge Workflow`, `Evidence Tool` and `Portable package`. Their diagnostic artifacts use failure-safe upload steps, but the checks themselves are not allowed to continue on error. The aggregate `validate` check preserves the existing required-check name and succeeds only when all four domain results are `success`
+
+A failed domain does not cancel or skip the other domains, so one run can expose multiple independent defects. A canceled workflow is not converted into a passing verdict. No contributor identity, GitHub App or Bot account receives a bypass. External service reachability and registry acceptance remain outside this required local verdict
+
 ## Tool report decisions
 
 `ls-evidence inspect` returns **0** for PASS or WARN; **1** for FAIL; **2** for invalid usage or inspect errors. The static preflight now distinguishes root `CITATION.cff` from recognized alternative citation guides (`CITATIONS.md`, `CITATION.md`, `CITATION.txt`); finding a guide remains WARN rather than an unsupported CFF PASS. A service repository is not required to include a workflow's root RO-Crate metadata. Nested crates are not assessed by the root-level rule. Read the `status`, `findings`, `scope` and `unverified` keys in the JSON report instead of assuming exit code 0 means scientific verification. Do not report `WARN` as certified success.

@@ -2,6 +2,8 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Isolate required validation into independent repository, Knowledge Workflow, Evidence Tool and portable-package domains with an actor-neutral aggregate verdict and failure-safe diagnostics
+- Keep scheduled research observations and external registry availability outside the required PR dependency graph while preserving native validate-before-apply authority
 - Align the public three-asset inventory, real-sample boundary and LifeMonitor integration status across the README, methodology, architecture, standards guidance and executable documentation gate
 - Add independent `ls-bio` protein FASTA/PDB file analysis package, CWL wrappers, EDAM-indexed bio.tools draft and testable bounded scientific data-processing outputs
 - Run separate Bio Tool CLI/CWL CI and read-only pinned external protein examples, retaining digest/quality metadata rather than raw upstream content
