@@ -64,6 +64,12 @@ jobs:
           python .github/scripts/build_rocrate.py build/one.crate.zip
           python .github/scripts/build_rocrate.py build/two.crate.zip
           cmp build/one.crate.zip build/two.crate.zip
+      - name: Build reproducible portable CWL main crate
+        run: |
+          python .github/scripts/build_portable_workflow_crate.py build/portable-one.crate.zip
+          python .github/scripts/build_portable_workflow_crate.py build/portable-two.crate.zip
+          cmp build/portable-one.crate.zip build/portable-two.crate.zip
+          ls-evidence audit-ecosystem --root . --output build/external-readiness.json
       - name: Independent evidence tool contract checks
         run: |
           ls-evidence aggregate --input evidence/examples/evidence-records.json --topics evidence/profiles/topics.json --output build/tool-candidate.json
