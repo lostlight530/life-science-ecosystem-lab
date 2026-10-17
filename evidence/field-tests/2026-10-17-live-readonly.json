@@ -61,7 +61,8 @@
         "FAIL": 0
       },
       "report_digest": "80182e861497821495b16b1f6cfb40666222f942f0203a6e06d81a3c11b9f8e1",
-      "specific_finding": "CITATIONS.md citation guidance exists despite no root CITATION.cff; RO-Crate main.nf path verified"
+      "specific_finding": "CITATIONS.md citation guidance exists despite no root CITATION.cff; RO-Crate main.nf path verified",
+      "archived_report": "evidence/field-tests/2026-10-17/rnaseq-inspection.json"
     },
     {
       "repo": "crs4/life_monitor",
@@ -73,7 +74,8 @@
         "FAIL": 0
       },
       "report_digest": "7c12ffbec6093caf6e40aa4c79d490d4ca49566138d4552a8704b1b1f14df024",
-      "specific_finding": "No root RO-Crate; service repository contains nested examples outside the root inspector's scope"
+      "specific_finding": "No root RO-Crate; service repository contains nested examples outside the root inspector's scope",
+      "archived_report": "evidence/field-tests/2026-10-17/lifemonitor-inspection.json"
     }
   ],
   "production_persisted": false,
