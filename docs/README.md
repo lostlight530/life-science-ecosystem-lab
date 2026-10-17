@@ -11,6 +11,8 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Run and verify a real guarded production acceptance | [Production Operations](PRODUCTION_OPERATIONS.md) |
 | Understand three independent assets and native state ownership | [Architecture](ARCHITECTURE.md) |
 | Hand research between independent Jules/GPT/other Agents and the native assets | [Optional Agent Collaboration](AGENT_COLLABORATION.md) |
+| Review a heterogeneous Agent cohort's real public PR contributions and scientific non-claims | [Agent Cohort Research Case](AGENT_CLUSTER_RESEARCH_CASE.md) |
+| Inspect accepted, revised and unverified Agent research claims | [Agent Review Decision Ledger](AGENT_REVIEW_DECISIONS.md) |
 | Integrate through command-line / JSONL / SARIF interfaces | [Public Interfaces](PUBLIC_INTERFACES.md) |
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |
 | Trace immutable sources, commits, and public research evidence | [Provenance](PROVENANCE.md) |

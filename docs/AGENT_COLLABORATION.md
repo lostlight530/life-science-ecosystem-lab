@@ -59,3 +59,9 @@ ls-evidence validate-handoff --input .github/agent-handoff/example-handoff.json 
 ```
 
 Matching SHA indicates declared equality to that independently chosen review baseline, not experimental validation, Git ancestry, authorship, or a claim that upstream scientific methods and measurements are correct. A stale older anchor must be re-reviewed against current runtime and data contracts, rather than silently treated as a fresh run. Historical no-base schema 1.0.0 handoffs remain shape-valid without `--expected-base-sha`.
+
+## Heterogeneous multi-Agent research submissions
+
+A locally run IDE Agent, a cloud research observer and a desktop engineering Agent can each submit different kinds of research work via PR. Their GitHub submissions are auditable even when the `lostlight530` Git credential is shared. Use the optional `proposer` fields (`agent_label`, `execution_surface`, `assertion: "SELF_DECLARED"`) only as claims of origin, never as verified execution attestations. Reviewers should preserve unverified/superseded claims and record meaningful corrections without replacing the contributor's original words.
+
+See [Agent cohort research case](AGENT_CLUSTER_RESEARCH_CASE.md) and [review decision ledger](AGENT_REVIEW_DECISIONS.md). The proposal/review path is research collaboration, not a transfer of `data/` write authority, automated source registry permission or biological scientific proof.

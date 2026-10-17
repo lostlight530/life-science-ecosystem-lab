@@ -66,3 +66,7 @@ ls-evidence audit-ecosystem --root . --output build/interop.json
 ## Domain-neutral research methodology case gate
 
 `ls-evidence validate-research-case --input path/to/case.json --output build/case-report.json` checks the eight-stage reproducible research envelope without knowing the input's scientific domain. The output is explicitly `PROPOSAL_SHAPE_ONLY`; it never verifies experimental truth, external input bytes, approval or model quality. See [research methodology](../docs/RESEARCH_METHODOLOGY.md) and `tests/test_research_case.py` for unrelated test domains and negative cases.
+
+## Optional Agent research attribution
+
+`EXTERNAL_AGENT_RESEARCH_HANDOFF` and `RESEARCH_CASE_PROPOSAL` may include the optional, deliberately untrusted `proposer` object with exact fields `agent_label`, `execution_surface` and `assertion: "SELF_DECLARED"`. Absence is backward compatible. Passing validation never authenticates the originating model/runtime or certifies a research claim. The shared policy is implemented in `evidence/agent_identity.py`, with negative tests in both scientific proposal validators. See [cross-agent field study](../docs/AGENT_CLUSTER_RESEARCH_CASE.md).

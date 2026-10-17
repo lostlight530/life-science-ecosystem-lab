@@ -47,3 +47,7 @@ Synthetic fixtures are permitted only for labeled software-contract regression. 
 Distinguish document revision-only change from changed source content, method version from data version, and rerun execution identity from accepted content identity. Log unverified hypotheses separately from measured outcomes. Never infer durable scheduled production from one green CI run. A DOI, workflow registry identifier, external GitHub App installation or software citation describes a different layer from scientific method validation.
 
 This is a publicly reproducible software research method, not an assertion of unpublished experimental results.
+
+## Heterogeneous Agent cohort as a replaceable research case
+
+[Three actual public Agent contributions](AGENT_CLUSTER_RESEARCH_CASE.md) form a study of proposal provenance, attribution, review, correction and integration under the **same fixed eight-stage method**. This is a research-software collaboration field case; it does not prove that three authenticated independent Agent runtimes reproduced a biological ground truth. The [decision ledger](AGENT_REVIEW_DECISIONS.md) distinguishes revised technical claims, validated engineering changes, observer-only statements and remaining unknowns. The research question and falsification plan may be transferred to another domain without changing the underlying method.
