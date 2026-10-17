@@ -36,15 +36,24 @@ jobs:
           python -m life_science_ecosystem_lab validate-source-registry evidence/profiles/sources.json
           python -m life_science_ecosystem_lab validate-topic-registry evidence/profiles/topics.json
       - name: GitHub evidence collect
-        run: python -m evidence collect --sources evidence/profiles/sources.json --output build/records.json
+        run: python -m evidence collect --sources evidence/profiles/sources.json --output build/records.json --diagnostics-output build/source-diagnostics.json
       - name: GitHub evidence aggregate
-        run: python -m evidence aggregate --input build/records.json --topics evidence/profiles/topics.json --output build/candidate.json
+        run: |
+          optional_previous=()
+          if test -f data/inputs/current/candidate.json; then
+            optional_previous+=(--previous data/inputs/current/candidate.json)
+          fi
+          python -m evidence aggregate --input build/records.json --topics evidence/profiles/topics.json --diagnostics build/source-diagnostics.json --output build/candidate.json "${optional_previous[@]}"
       - name: Evidence boundary validation
         run: python -m evidence validate --bundle build/candidate.json
       - name: Extract source-cited workflow knowledge
         run: python -m life_science_ecosystem_lab knowledge build --candidate build/candidate.json --topics evidence/profiles/topics.json --output build/knowledge.json
       - name: Verify reproducible knowledge
         run: python -m life_science_ecosystem_lab knowledge verify --candidate build/candidate.json --topics evidence/profiles/topics.json --knowledge build/knowledge.json
+      - name: Project and verify queryable graph
+        run: |
+          python -m life_science_ecosystem_lab graph project --knowledge build/knowledge.json --output-dir build/graph
+          python -m life_science_ecosystem_lab graph verify --dir build/graph --knowledge build/knowledge.json
       - name: Verify scientific software documentation
         run: python -m evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
       - name: Record validation head
@@ -55,6 +64,8 @@ jobs:
           path: |
             build/candidate.json
             build/knowledge.json
+            build/graph/
+            build/source-diagnostics.json
             build/validated-head.txt
             build/docs-audit.json
           if-no-files-found: error
@@ -94,6 +105,7 @@ jobs:
         run: |
           python -m life_science_ecosystem_lab state verify --repository-root .
           python -m life_science_ecosystem_lab knowledge verify --candidate data/inputs/current/candidate.json --topics evidence/profiles/topics.json --knowledge data/knowledge/current.json
+          python -m life_science_ecosystem_lab graph verify --dir data/knowledge --knowledge data/knowledge/current.json
       - name: Write boundary and final world-line guard
         run: |
           git add -A data/

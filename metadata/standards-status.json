@@ -16,7 +16,10 @@
     "WorkflowHub registration": "EXTERNAL_VERIFICATION_REQUIRED",
     "bio.tools scope and acceptance": "EXTERNAL_VERIFICATION_REQUIRED",
     "Workflow Run RO-Crate": "CONDITIONAL_NOT_YET_CLAIMED",
-    "Clinical or biological scientific validity": "NOT_APPLICABLE"
+    "Clinical or biological scientific validity": "NOT_APPLICABLE",
+    "CodeMeta 3.0": "DECLARED_STRUCTURAL_PREFLIGHT",
+    "JSONL graph projection + SQLite FTS5": "CI_EXECUTABLE_LOCAL",
+    "Independent research software inspection": "STATIC_PREFLIGHT_ONLY"
   },
   "global_lifemonitor_defaults": "UNOVERRIDDEN_IF_APP_INSTALLED",
   "notes": "Structural checks and CI are not independent external registration or scientific validity"

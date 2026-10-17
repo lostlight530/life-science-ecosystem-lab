@@ -40,3 +40,7 @@ LifeMonitor's existing global all-branch/all-tag/issue-check preferences remain 
 - [Galaxy IWC](https://github.com/galaxyproject/iwc) — executable workflows, workflow tests and release/registry metadata
 
 These are design precedents, not endorsements or proof of external integration
+
+## Rebuildable graph and peer Tool contracts
+
+A validated knowledge map is projected into JSONL topic/source entities and evidenced `SOURCE_MATCH` relations, plus deterministic manifest and accepted-run event records. SQLite FTS5 BM25 and bounded adjacency traversal provide inspectable retrieval. Neither graph rank nor lexical proximity creates a new scientific claim. A separate static `ls-evidence inspect` function accepts third-party local research repositories and emits JSON/Markdown/SARIF findings. External Agents remain outside both native runtimes and may independently read these outputs. See [public interfaces](PUBLIC_INTERFACES.md) and [standards](STANDARDS.md).

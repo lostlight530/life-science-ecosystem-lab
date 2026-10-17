@@ -46,3 +46,9 @@ See the public [architecture](docs/ARCHITECTURE.md), [scope](docs/SCOPE.md), [pr
 ## Origins
 
 The project was established in October 2026 from an earlier research-workflow prototype. Only the current public software interfaces, metadata, tests and documentation define its supported behavior. Private working documents and internal decisions are not part of the published artifact
+
+## Executable graph and independent tool interfaces
+
+The two peer assets exchange public, versioned machine-readable results; neither requires an Agent, LLM API or prompt package. The source-cited knowledge map now has a rebuildable JSONL graph and bounded SQLite FTS5 search. The standalone Evidence CLI can statically inspect **unrelated local research software repositories** and emit JSON, Markdown and SARIF without executing their code.
+
+See [public CLI and output contracts](docs/PUBLIC_INTERFACES.md), [maintenance and publication policy](docs/MAINTENANCE.md) and [standards status](docs/STANDARDS.md). The graph describes source-document matches, **not** inferred biological relationships. A passing tool preflight is not WorkflowHub/bio.tools registration or scientific validation.

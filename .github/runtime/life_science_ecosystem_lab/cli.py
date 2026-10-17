@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .integrity import build_record_manifest, write_manifest
 from .knowledge import build_knowledge, verify_knowledge
+from .graph import write_graph, verify_graph, verify_graph_events, search_graph
 from evidence.profiles import load_source_registry, load_topic_registry
 from .lifecycle.orchestrator import apply_lifecycle
 from .lifecycle.state import StateRoots, verify_state
@@ -40,6 +41,20 @@ def build_parser() -> argparse.ArgumentParser:
     knowledge_verify.add_argument("--candidate", type=Path, required=True)
     knowledge_verify.add_argument("--topics", type=Path, required=True)
     knowledge_verify.add_argument("--knowledge", type=Path, required=True)
+
+    graph = commands.add_parser("graph")
+    graph_commands = graph.add_subparsers(dest="graph_command", required=True)
+    projection = graph_commands.add_parser("project")
+    projection.add_argument("--knowledge", type=Path, required=True)
+    projection.add_argument("--output-dir", type=Path, required=True)
+    graph_verify = graph_commands.add_parser("verify")
+    graph_verify.add_argument("--dir", type=Path, required=True)
+    graph_verify.add_argument("--knowledge", type=Path)
+    graph_search = graph_commands.add_parser("search")
+    graph_search.add_argument("--dir", type=Path, required=True)
+    graph_search.add_argument("--query", required=True)
+    graph_search.add_argument("--limit", type=int, default=10)
+    graph_search.add_argument("--hops", type=int, default=1)
 
     lifecycle = commands.add_parser("lifecycle")
     lifecycle_commands = lifecycle.add_subparsers(dest="lifecycle_command", required=True)
@@ -87,6 +102,18 @@ def main(argv: list[str] | None = None) -> int:
                 knowledge_value = json.loads(args.knowledge.read_text(encoding="utf-8"))
                 verify_knowledge(candidate, topic_registry, knowledge_value)
                 print("knowledge provenance and content verified")
+            return 0
+        if args.command == "graph":
+            if args.graph_command == "project":
+                knowledge = json.loads(args.knowledge.read_text(encoding="utf-8"))
+                result = write_graph(knowledge, args.output_dir)
+            elif args.graph_command == "verify":
+                knowledge = json.loads(args.knowledge.read_text(encoding="utf-8")) if args.knowledge else None
+                result = verify_graph(args.dir, knowledge)
+                result["event_count"] = verify_graph_events(args.dir)
+            else:
+                result = search_graph(args.dir, args.query, limit=args.limit, hops=args.hops)
+            print(json.dumps(result, ensure_ascii=False, sort_keys=True))
             return 0
         if args.command == "lifecycle" and args.lifecycle_command == "apply":
             candidate = json.loads(args.candidate.read_text(encoding="utf-8"))

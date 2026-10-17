@@ -44,6 +44,7 @@ jobs:
           python .github/scripts/check_rocrate.py
           python .github/scripts/check_metadata.py
           python .github/scripts/check_publication_boundary.py
+          ls-evidence inspect --root . --output build/tool-inspection.json --markdown build/tool-inspection.md --sarif build/tool-inspection.sarif
       - name: Publish independent tool receipt
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -52,5 +53,8 @@ jobs:
           path: |
             build/tool-candidate.json
             build/docs-audit.json
+            build/tool-inspection.json
+            build/tool-inspection.md
+            build/tool-inspection.sarif
           if-no-files-found: ignore
           retention-days: 14

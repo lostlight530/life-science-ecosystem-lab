@@ -1,0 +1,22 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Life Science Ecosystem Lab",
+  "description": "GitHub-native life-science knowledge workflow and independently callable research software evidence inspection and validation tool",
+  "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
+  "url": "https://github.com/lostlight530/life-science-ecosystem-lab",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": "Python",
+  "softwareRequirements": "Python 3.11+; GitHub Actions for scheduled knowledge maintenance",
+  "softwareVersion": "0.3.0",
+  "author": {
+    "@type": "Person",
+    "givenName": "Xuanyi",
+    "familyName": "Jiang",
+    "identifier": "https://orcid.org/0009-0001-3617-0832"
+  },
+  "hasPart": [
+    {"@id": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/.github", "name": "Life Science Knowledge Workflow"},
+    {"@id": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/evidence", "name": "Life Science Evidence Tool"}
+  ]
+}

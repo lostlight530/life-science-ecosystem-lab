@@ -8,6 +8,7 @@ from typing import Any, Mapping
 
 from evidence.validation import validate_candidate_bundle
 from ..knowledge import verify_knowledge
+from ..graph import write_graph, append_graph_event
 from .guard import check_write_boundary, world_line_matches
 from .state import StateRoots, apply_candidate, verify_state
 
@@ -51,7 +52,11 @@ def apply_lifecycle(
         }
     if roots.current.exists():
         active = json.loads(roots.current.read_text(encoding="utf-8"))
-        if active.get("output_digest") == candidate.get("output_digest"):
+        previous_knowledge = roots.root / "data" / "knowledge" / "current.json"
+        same_knowledge = (knowledge is None or
+                          (previous_knowledge.exists() and json.loads(previous_knowledge.read_text(encoding="utf-8")) == knowledge))
+        if (active.get("input_digest") == candidate.get("input_digest") and
+                active.get("profile_digest") == candidate.get("profile_digest") and same_knowledge):
             return {"outcome": "NO_MEANINGFUL_DELTA", "output_digest": candidate["output_digest"]}
 
     changed = [
@@ -60,6 +65,11 @@ def apply_lifecycle(
         "data/memories/current.json",
         f"data/receipts/{candidate['run_id']}.json",
     ]
+    if knowledge is not None:
+        changed.extend([
+            "data/knowledge/entities.jsonl", "data/knowledge/relations.jsonl",
+            "data/knowledge/graph-manifest.json", "data/knowledge/events.jsonl",
+        ])
     rejected = check_write_boundary(changed)
     if rejected:
         return {"outcome": "VALIDATION_FAILED", "errors": ["write boundary rejected: " + ", ".join(rejected)]}
@@ -106,6 +116,10 @@ def apply_lifecycle(
     _write_json(roots.root / "data" / "knowledge" / "current.json", knowledge_output)
     _write_json(roots.root / "data" / "memories" / "current.json", memory)
     _write_json(roots.root / "data" / "receipts" / f"{candidate['run_id']}.json", receipt)
+    if knowledge is not None:
+        graph_root = roots.root / "data" / "knowledge"
+        write_graph(knowledge_output, graph_root)
+        append_graph_event(graph_root, receipt=receipt)
     final = verify_state(roots)
     if not final.valid:
         raise ValueError("final state validation failed: " + "; ".join(final.errors))

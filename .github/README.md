@@ -17,3 +17,7 @@ This directory owns the scientific knowledge-production lifecycle, including wor
 **LifeMonitor:** no repository-specific `lifemonitor.yaml`; preserve the user's existing global all-branch, all-tag and issue-check settings where the app is installed. No external enrollment is implied
 
 **Publication boundaries:** WorkflowHub, LifeMonitor and additional registries require evidence of actual external registrations; a passing GitHub test is not proof of enrollment
+
+## Queryable, replayable graph surface
+
+Verified knowledge projects into a deterministic graph under `data/knowledge/entities.jsonl` and `relations.jsonl` with `graph-manifest.json`. Accepted changes append events to `events.jsonl`. The search command builds a short-lived SQLite FTS5 index from the checked JSONL; it does not own authoritative state or require a resident service. Details: [public interfaces](../docs/PUBLIC_INTERFACES.md).

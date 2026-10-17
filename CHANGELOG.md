@@ -16,3 +16,11 @@
 ## 0.1.0 · 2026-10-16
 
 - Life Science pilot and workflow profile/integrity bootstrap
+
+## Unreleased — research software integration
+
+- Add deterministic, source-cited JSONL graph projection, bounded SQLite FTS5 search and accepted-run event chain under the native knowledge lifecycle
+- Add independent local research software inspection, JSON/Markdown/SARIF reports and CI regression tests to the Evidence Tool
+- Connect previous snapshots and optional-source diagnostics to native evidence ingestion, with knowledge-content-aware no-change classification
+- Publish CodeMeta, public asset interfaces, standards mapping, maintenance boundaries and a reproducible inspection issue form
+- No new required LLM API, Agent runtime, external server or registration claim
