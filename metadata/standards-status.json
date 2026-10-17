@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "software_version": "0.3.0",
+  "software_version": "0.4.0",
   "workflow": ".github/workflows/life-science-knowledge.yml",
   "tool": "evidence/cli.py",
   "requirements": {
@@ -19,8 +19,12 @@
     "Clinical or biological scientific validity": "NOT_APPLICABLE",
     "CodeMeta 3.0": "DECLARED_STRUCTURAL_PREFLIGHT",
     "JSONL graph projection + SQLite FTS5": "CI_EXECUTABLE_LOCAL",
-    "Independent research software inspection": "STATIC_PREFLIGHT_ONLY"
+    "Independent research software inspection": "STATIC_PREFLIGHT_ONLY",
+    "Independent protein FASTA / PDB bioinformatics data QA": "CI_EXECUTABLE_LOCAL",
+    "bio.tools registration": "EXTERNAL_VERIFICATION_REQUIRED",
+    "LifeMonitor GitHub App": "INSTALLED_BOT_PR_EXTERNALLY_OBSERVED"
   },
-  "global_lifemonitor_defaults": "UNOVERRIDDEN_IF_APP_INSTALLED",
-  "notes": "Structural checks and CI are not independent external registration or scientific validity"
+  "global_lifemonitor_defaults": "INHERITED_BY_MINIMAL_DOT_LIFEMONITOR_CONFIG",
+  "notes": "Structural checks and CI are not independent external registration or scientific validity",
+  "bio_tool": "bio_tool/cli.py"
 }
