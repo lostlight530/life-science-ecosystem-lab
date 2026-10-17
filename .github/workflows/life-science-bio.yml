@@ -62,8 +62,8 @@ jobs:
       - name: Replay actual biological file processing via CWL
         run: |
           mkdir -p build/bio/cwl-fasta build/bio/cwl-pdb
-          cwltool --no-container --outdir build/bio/cwl-fasta .github/bio/protein-fasta.cwl --fasta .github/bio/test/example.fasta
-          cwltool --no-container --outdir build/bio/cwl-pdb .github/bio/protein-pdb.cwl --pdb .github/bio/test/example.pdb
+          cwltool --no-container --outdir build/bio/cwl-fasta .github/bio/protein-fasta.cwl .github/bio/test/fasta-job.yml
+          cwltool --no-container --outdir build/bio/cwl-pdb .github/bio/protein-pdb.cwl .github/bio/test/pdb-job.yml
           cmp build/bio/fasta-one.json build/bio/cwl-fasta/protein-fasta-report.json
           cmp build/bio/pdb-one.json build/bio/cwl-pdb/protein-pdb-report.json
       - name: Publish compact reports only
