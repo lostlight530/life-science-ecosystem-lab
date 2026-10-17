@@ -44,7 +44,19 @@ def inspect_repository(directory: Path) -> dict[str, Any]:
         add("citation.version", "PASS" if "cff-version:" in cff[1] else "WARN",
             "Citation metadata contains CFF version" if "cff-version:" in cff[1] else "No CFF version declared", "CITATION.cff")
     else:
-        add("citation.present", "WARN", "Citation metadata not found", "CITATION.cff")
+        # Some real bioinformatics projects (e.g. nf-core workflows) supply
+        # CITATIONS.md with linked primary/software citations rather than CFF.
+        # The alternative is evidence of guidance, NOT CFF conformance.
+        alternatives = ("CITATIONS.md", "CITATION.md", "CITATION.txt")
+        alternate = next(((path, item) for path in alternatives
+                          if (item := _load(root, path)) is not None), None)
+        if alternate is not None:
+            observed.append(alternate[0])
+            add("citation.alternative", "WARN",
+                f"CITATION.cff absent; alternative citation guidance at {alternate[0]} (not CFF validation)",
+                alternate[0])
+        else:
+            add("citation.present", "WARN", "Root CITATION.cff not found; citation information in other locations was not assessed", "CITATION.cff")
     crate = _load(root, "ro-crate-metadata.json")
     if crate:
         observed.append("ro-crate-metadata.json")
@@ -68,7 +80,9 @@ def inspect_repository(directory: Path) -> dict[str, Any]:
                     observed.append(main)
                     add("rocrate.main_entity", "PASS", "Main workflow referenced by existing local file", main)
     else:
-        add("rocrate.present", "WARN", "RO-Crate metadata not found", "ro-crate-metadata.json")
+        add("rocrate.present", "WARN",
+            "No root-level ro-crate-metadata.json (may be in examples; not required for service repositories)",
+            "ro-crate-metadata.json")
     bioschemas = 0
     metadata = root / "metadata"
     if metadata.is_dir() and not metadata.is_symlink():
