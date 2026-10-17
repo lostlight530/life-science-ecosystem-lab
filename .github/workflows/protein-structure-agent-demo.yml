@@ -35,8 +35,8 @@ jobs:
           ls-knowledge state verify --repository-root . --require-accepted
       - name: Advisory GitHub discovery, never approved automatically
         run: |
-          if ls-evidence discover --topic "protein structure prediction" --limit 5 --output build/protein/discovery.json; then
-            echo 'DISCOVERY_RETURNED_UNAPPROVED_CANDIDATES' > build/protein/discovery-status.txt
+          if ls-evidence discover --topic protein-structure-prediction --limit 5 --output build/protein/discovery.json; then
+            echo 'DISCOVERY_CHECKED_NO_AUTO_APPROVAL' > build/protein/discovery-status.txt
           else
             echo 'DISCOVERY_UNAVAILABLE_NO_SOURCE_AUTO_APPROVAL' > build/protein/discovery-status.txt
           fi

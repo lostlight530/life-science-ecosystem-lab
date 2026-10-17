@@ -49,6 +49,7 @@ class ProteinFieldTests(unittest.TestCase):
         self.assertNotIn("git push", text)
         self.assertIn("build/protein/simulated", text)
         self.assertIn("ls-evidence validate-handoff", text)
+        self.assertIn("--topic protein-structure-prediction", text)
         self.assertIn("NO_MEANINGFUL_DELTA", (ROOT / ".github" / "scripts" / "protein_structure_demo_summary.py").read_text())
 
 

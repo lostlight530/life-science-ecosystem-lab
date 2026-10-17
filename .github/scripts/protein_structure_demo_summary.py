@@ -26,6 +26,10 @@ def main():
     second = load(root / "simulated-repeat.json")
     diagnostics = load(root / "diagnostics.json")
     discovery_status = (root / "discovery-status.txt").read_text(encoding="utf-8").strip()
+    discovered = load(root / "discovery.json") if (root / "discovery.json").exists() else {"candidates": []}
+    discovery_count = len(discovered.get("candidates", []))
+    if any(item.get("approved") is not False or item.get("status") != "DISCOVERY_ONLY" for item in discovered.get("candidates", [])):
+        raise ValueError("advisory discovery cannot approve proposed repositories")
     simulated = root / "simulated" / "data"
     events = [json.loads(x) for x in (simulated / "knowledge" / "events.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
     archives = sorted((simulated / "inputs" / "archive").rglob("*.json"))
@@ -58,7 +62,7 @@ def main():
                            "authority": "NO_AUTOMATIC_PROMOTION"},
         "native_tool": {"source_count": len(sources), "record_count": len(candidate["records"]),
                         "snapshot_id": candidate["run_id"], "evidence_digest": candidate["output_digest"],
-                        "source_diagnostics": diagnostics, "sources": sources, "discovery_status": discovery_status,
+                        "source_diagnostics": diagnostics, "sources": sources, "discovery_status": discovery_status, "unapproved_discovery_candidates": discovery_count,
                         "inspection": {"OpenFold": {"status": inspection["status"], "counts": inspection["counts"]},
                                        "ProteinNet": {"status": sample_inspection["status"], "counts": sample_inspection["counts"]}}},
         "native_workflow": {"knowledge_digest": knowledge["knowledge_digest"],
