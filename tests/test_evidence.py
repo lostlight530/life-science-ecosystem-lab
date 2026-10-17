@@ -93,5 +93,21 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(bundle["changes"], [{"source_id":"s1", "repository":"owner/repo", "from_path": "old.md", "path": "new.md", "kind": "moved"}])
 
 
+
+class CandidateIdentityContractTests(unittest.TestCase):
+    def test_forged_snapshot_id_rejected_even_with_recalculated_digest(self):
+        from evidence.aggregation import canonical_bytes
+        from evidence.normalization import sha256_bytes
+        from evidence.validation import validate_candidate_bundle
+        candidate = aggregate_evidence([], {"topics": []})
+        self.assertTrue(validate_candidate_bundle(candidate).valid)
+        candidate["run_id"] = "../invalid"
+        unsigned = dict(candidate)
+        unsigned.pop("output_digest")
+        candidate["output_digest"] = sha256_bytes(canonical_bytes(unsigned))
+        result = validate_candidate_bundle(candidate)
+        self.assertFalse(result.valid)
+        self.assertTrue(any("run_id" in issue for issue in result.errors))
+
 if __name__ == "__main__":
     unittest.main()

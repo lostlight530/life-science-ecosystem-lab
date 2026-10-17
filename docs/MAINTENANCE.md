@@ -30,6 +30,8 @@ The public repository documents **observable behavior** and how to reproduce it.
 - `candidate.run_id` / `receipt.snapshot_id`: content-derived snapshot identity, legitimately reused if upstream content is restored
 - `receipt.execution_id`: unique execution attempt; GitHub runs use run ID and attempt ID, local invocations may provide their own bounded identifier
 - `receipt.change_kind`: distinguishes first acceptance, profile changes, selected document changes and unchanged selected document text with revised provenance
+- Before applying a new candidate, the lifecycle verifies the existing accepted state (including ledger and latest receipt linkage) and returns `EXISTING_STATE_INVALID_NO_APPLY` when it is damaged; it must not overwrite a broken baseline as though it were repaired
+- Only canonical `YYYY-MM-DD` logical dates are valid for archive paths; candidate `run_id` must equal the digest-derived snapshot ID even if an attacker recomputes the JSON envelope digest
 - After an accepted production operation, run `ls-knowledge state verify --repository-root . --require-accepted`. An empty bootstrap repository must not be described as accepted production state
 - Before enabling writes, manually trigger a read-only workflow (`persist=false`) and examine diagnostics and `projection_eligible` from the artifact
 - A public upstream source does not by itself authorize unrestricted republication. Before broadening inputs, review the source's license, data minimization and retention of copied text and artifacts

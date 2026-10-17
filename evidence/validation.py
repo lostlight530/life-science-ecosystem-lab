@@ -34,6 +34,15 @@ def validate_candidate_bundle(value: Mapping[str, Any]) -> BundleValidation:
     for field in ("profile_digest", "input_digest", "output_digest"):
         if not SHA256.fullmatch(str(value.get(field, ""))):
             errors.append(f"{field} must be a lowercase SHA-256 digest")
+    # The published candidate run_id is a content identity, never an arbitrary
+    # filesystem component. Rehashing a forged envelope cannot authorize it.
+    input_digest = value.get("input_digest")
+    profile_digest = value.get("profile_digest")
+    if (isinstance(input_digest, str) and SHA256.fullmatch(input_digest) and
+            isinstance(profile_digest, str) and SHA256.fullmatch(profile_digest)):
+        expected_id = input_digest[:16] + "-" + profile_digest[:16]
+        if value.get("run_id") != expected_id:
+            errors.append("run_id does not match the canonical snapshot identity")
     records = value.get("records")
     if not isinstance(records, list):
         errors.append("records must be a list")

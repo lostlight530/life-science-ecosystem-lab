@@ -12,7 +12,7 @@ from evidence.validation import validate_candidate_bundle
 from ..knowledge import verify_knowledge
 from ..graph import write_graph, append_graph_event
 from .guard import check_write_boundary, world_line_matches
-from .state import StateRoots, apply_candidate, verify_state
+from .state import StateRoots, apply_candidate, verify_state, validated_date_parts
 
 
 def _document_identity(candidate: Mapping[str, Any]) -> list[tuple[str, str, str, str]]:
@@ -43,6 +43,8 @@ def apply_lifecycle(
     topic_registry: Mapping[str, Any] | None = None,
     execution_id: str | None = None,
 ) -> dict[str, Any]:
+    # Reject path-shaped or impossible dates even on no-change execution.
+    validated_date_parts(logical_date)
     # Candidate run_id is a content snapshot, not a unique execution attempt.
     execution_id = execution_id if execution_id is not None else 'local-' + uuid.uuid4().hex
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', execution_id):
@@ -63,6 +65,14 @@ def apply_lifecycle(
             "validated_head": validated_head,
             "current_head": current_head,
         }
+    # Never repair or conceal a corrupted accepted history by applying a new
+    # candidate over it. Fail before any local filesystem mutation.
+    knowledge_root = roots.root / 'data' / 'knowledge'
+    existing_state = any(p.exists() for p in (
+        roots.current, knowledge_root / 'current.json', knowledge_root / 'events.jsonl'))
+    preflight = verify_state(roots, require_accepted=bool(knowledge is not None and existing_state))
+    if not preflight.valid:
+        return {'outcome': 'EXISTING_STATE_INVALID_NO_APPLY', 'errors': list(preflight.errors)}
     previous_candidate = json.loads(roots.current.read_text(encoding='utf-8')) if roots.current.exists() else None
     if previous_candidate is not None:
         active = previous_candidate

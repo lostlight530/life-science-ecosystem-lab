@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import re
+from datetime import date
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Mapping
@@ -38,8 +40,19 @@ class StateRoots:
         return self.root / "data" / "state"
 
 
+def validated_date_parts(logical_date: str) -> tuple[str, str]:
+    """Accept only canonical Gregorian YYYY-MM-DD before constructing paths."""
+    try:
+        parsed = date.fromisoformat(logical_date)
+    except (TypeError, ValueError) as exc:
+        raise ValueError("logical_date must be an ISO YYYY-MM-DD calendar date") from exc
+    if parsed.isoformat() != logical_date:
+        raise ValueError("logical_date must be an ISO YYYY-MM-DD calendar date")
+    return f"{parsed.year:04d}", f"{parsed.month:02d}"
+
+
 def apply_candidate(candidate: Mapping[str, Any], roots: StateRoots, *, logical_date: str) -> None:
-    year, month, _ = logical_date.split("-", 2)
+    year, month = validated_date_parts(logical_date)
     new_bytes = _bytes(candidate)
     if roots.current.exists():
         previous = json.loads(roots.current.read_text(encoding="utf-8"))
@@ -98,6 +111,24 @@ def verify_state(roots: StateRoots, *, require_accepted: bool = False) -> Valida
                 elif ('snapshot_id' in events[-1] and
                       events[-1]['snapshot_id'] != current.get('run_id')):
                     errors.append('last accepted graph event has a different snapshot ID')
+                # New-format accepted events have a uniquely named receipt.
+                # Older ledgers remain readable without inventing a receipt link.
+                if events and 'snapshot_id' in events[-1]:
+                    event = events[-1]
+                    execution_id = event.get('run_id')
+                    if not isinstance(execution_id, str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', execution_id):
+                        errors.append('latest event execution identity is unsafe')
+                    else:
+                        receipt_file = roots.root / 'data' / 'receipts' / f'{execution_id}.json'
+                        if not receipt_file.is_file():
+                            errors.append('latest accepted event has no matching receipt')
+                        else:
+                            receipt = json.loads(receipt_file.read_text(encoding='utf-8'))
+                            if (not isinstance(receipt, dict) or receipt.get('execution_id') != execution_id or
+                                    receipt.get('snapshot_id') != event.get('snapshot_id') or
+                                    receipt.get('output_digest') != event.get('evidence_digest') or
+                                    receipt.get('outcome') != 'APPLIED'):
+                                errors.append('latest accepted receipt does not match graph event')
             except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
                 errors.append(f'event-to-current binding invalid: {exc}')
     for path in roots.archive.rglob("*.json") if roots.archive.exists() else ():
