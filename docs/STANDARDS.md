@@ -35,8 +35,8 @@ Use `ls-evidence audit-ecosystem --root . --output build/interop.json` before co
 | Service | Specific independent criterion | Current repo scope |
 | --- | --- | --- |
 | WorkflowHub | Workflow RO-Crate 1.1 requires a typed main workflow, programmingLanguage, license, and a ZIP with root metadata; registry entry is created only by an actual upload/registration | Local RO-Crate and CWL plus synthetic tests; external entry unverified |
-| LifeMonitor | Workflow Testing RO-Crate links main workflow, test suite, test instance, and compatible CI service; monitoring requires actual enrollment | GitHub Actions testing and WTROC-related metadata; enrollment and monitoring unverified |
-| bio.tools | Curator scope requires actual bioinformatics data-processing operations and appropriate EDAM topic/operation/input/output terms | Independent static research software inspection; domain eligibility and EDAM annotations not asserted |
+| LifeMonitor | Workflow Testing RO-Crate links main workflow, test suite, test instance, and compatible CI service; monitoring requires actual enrollment | Installed App, accepted Bot PR and minimal issue-check configuration observed; workflow-test enrollment and periodic monitoring unverified |
+| bio.tools | Curator scope requires actual bioinformatics data-processing operations and appropriate EDAM topic/operation/input/output terms | Independent FASTA/PDB processing and a draft EDAM mapping exist; registry eligibility, curation and acceptance are not asserted |
 
 Evidence gates are `LOCAL_PREFLIGHT → SUBMITTED → ACCEPTED → EXTERNALLY_VERIFIED`; platform submission is a separate user-authorized action and requires a stable public record URL. Neither an identity connection nor a completed local preflight is accepted registration, and external adoption requires separately sourced use evidence.
 
@@ -48,7 +48,7 @@ References: [Workflow RO-Crate 1.1](https://about.workflowhub.eu/Workflow-RO-Cra
 python .github/scripts/build_portable_workflow_crate.py build/life-science-portable.cwl.crate.zip
 ```
 
-The portable archive declares CWL as its main workflow, includes synthetic replay fixtures, and excludes accepted production `data/` and private information. GitHub Actions remains the native owner of live observations and guarded persistence. The LifeMonitor GitHub App supports repository checks and can assist with workflow test enrollment when installed by the repository owner. Installation, monitoring and WorkflowHub records require separate external confirmation. Avoid overriding existing LifeMonitor global settings with a repository-specific configuration until its effect is reviewed.
+The portable archive declares CWL as its main workflow, includes synthetic replay fixtures, and excludes accepted production `data/` and private information. GitHub Actions remains the native owner of live observations and guarded persistence. The installed LifeMonitor GitHub App and accepted Bot PR establish repository integration, while `.lifemonitor.yaml` enables issue checks without overriding global branch/tag tracking. Workflow-test enrollment, periodic monitoring and WorkflowHub records still require separate external confirmation.
 
 ## Third independently callable Bio Tool
 

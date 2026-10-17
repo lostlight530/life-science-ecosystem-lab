@@ -41,7 +41,7 @@ The short-retention Artifact includes original bounded JSON/Markdown/SARIF repor
 
 [GitHub Actions: Protein Structure External Agent and Native Workflow Demo](https://github.com/lostlight530/life-science-ecosystem-lab/actions/workflows/protein-structure-agent-demo.yml) runs on the dedicated experiment branch (push) or by manual dispatch. Its `contents: read` permission prevents publishing accepted production changes. Steps:
 
-1. Regress both assets and validate the external Agent proposal shape, frozen protein-source registry and four native topic IDs
+1. Regress all three assets and validate the external Agent proposal shape, frozen protein-source registry and four native topic IDs
 2. Run advisory live discovery without registering any returned candidates
 3. Collect, aggregate and independently validate real GitHub blobs; produce source-cited knowledge, JSONL graph, graph check and live FTS5 query
 4. Verify seven real pinned examples from GitHub objects, inspect fixed OpenFold and ProteinNet checkouts with the independent Tool, and emit JSON/Markdown/SARIF

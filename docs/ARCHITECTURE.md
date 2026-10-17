@@ -4,8 +4,9 @@
 
 1. **Knowledge Workflow** — `.github/` is the canonical lifecycle and knowledge runtime. The GitHub Actions workflow controls scheduling, source ingestion, knowledge transformation, state recovery, conditional persistence and receipts; a CWL computational sub-workflow offers portable replay
 2. **Evidence Tool** — `evidence/` is an independent Python package and CLI for source identification, immutable provenance, diff/replay, scientific-software documentation checks and independent verdicts
+3. **Bio Tool** — `bio_tool/` is an independent Python package and CLI for bounded protein FASTA/PDB quality analysis, with portable CWL command wrappers
 
-A workflow can call the tool, and the tool can validate workflow artifacts, but **neither asset's identity is defined by that call graph**
+The three assets can be composed through explicit files and CLI calls, but **no asset's identity is defined by that call graph**
 
 ## Native lifecycle
 
@@ -28,7 +29,7 @@ GitHub-native `data/` holds current evidence, immutable archive, source-cited kn
 
 The workflow descriptor, RO-Crate, Workflow Testing RO-Crate, Bioschemas, CFF and MIT licensing describe verifiable functionality. They do not certify clinical validity, automatic WorkflowHub registration, LifeMonitor enrollment or semantic scientific understanding
 
-LifeMonitor's existing global all-branch/all-tag/issue-check preferences remain untouched — no `lifemonitor.yaml` override is committed
+The repository's minimal `.lifemonitor.yaml` enables issue checks and intentionally leaves branch and tag tracking to the existing account-wide global settings. It does not itself prove workflow-test enrollment or recurring monitoring
 
 ## Implementation precedents
 

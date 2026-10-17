@@ -31,4 +31,4 @@ The GitHub Actions **Life Science Knowledge Workflow — Native Lifecycle** carr
 
 `ro-crate-metadata.json` documents the main workflow, four CWL steps, Bioschemas FormalParameter inputs/outputs, testing suite and GitHub Actions test resource. `python .github/scripts/build_rocrate.py build/life-science-knowledge.crate.zip` builds a reproducible inspection crate. The package is prepared for review but is **not** a claim of WorkflowHub registration, LifeMonitor enrollment, or full third-party validator certification
 
-**LifeMonitor GitHub App:** no `lifemonitor.yaml` override is committed, so its account-level all-branches/all-tags/issue-check defaults remain in place where the App is installed
+**LifeMonitor GitHub App:** the Bot-created [`.lifemonitor.yaml`](../../.lifemonitor.yaml) keeps repository issue checks enabled and omits `push` overrides, so branch and tag selection remains governed by the account-level settings. This repository evidence does not by itself prove workflow-test enrollment or recurring monitoring

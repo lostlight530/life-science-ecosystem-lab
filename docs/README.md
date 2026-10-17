@@ -4,7 +4,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 
 | I want to… | Read |
 | --- | --- |
-| Install and run either asset from a clean checkout | [Getting Started](GETTING_STARTED.md) |
+| Install and run any of the three assets from a clean checkout | [Getting Started](GETTING_STARTED.md) |
 | Know what a report proves, how to reproduce it, or why a CI check passes | [Understanding Verification](VERIFYING_RESULTS.md) |
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |
 | Run the full external Agent + protein-structure dataset/tool/graph demo | [Protein Structure Field Demo](PROTEIN_STRUCTURE_FIELD_DEMO.md) |
@@ -22,6 +22,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 - [Knowledge Workflow](../.github/README.md): GitHub Actions native executor, computational CWL sub-workflow, source-cited graph, state and guarded persistence
 - [Portable CWL replay](../.github/knowledge/README.md): synthetic fixture and four executable computational steps
 - [Evidence Tool](../evidence/README.md): independent CLI, optional network collection, inspection, documented validation limits
+- [Bio Tool](../bio_tool/README.md): independent bounded protein FASTA/PDB analysis and CWL adapters
 
 ## Contribution and support
 
