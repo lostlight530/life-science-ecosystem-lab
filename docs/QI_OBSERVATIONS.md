@@ -45,3 +45,7 @@ Observer bias is declared up front: the author of this document is also the auth
 ## Scope
 
 Documentation only. No code, no workflow, no runtime, no registry changes. All interpretations above belong to the observer; all facts are anchored to public PR numbers and commits.
+
+## Maintainer evidence note (added during the reviewed archive merge)
+
+This contribution remains an **attributed, single-observer timeline interpretation**. Run-counter samples are not independent proof of continuous healthy execution, scientific productivity, or absence of cancelled/superseded runs. The generalization about 19 uniformly maintainer-authored PRs is not exact: the first commit of LifeMonitor PR #15 was created by `lifemonitor[bot]`; Git author identity does not independently identify Clinder, Qi or Codex execution instances when they write through `lostlight530`. PR #17 was technically critiqued, revised and merged, not formally rejected. No public evidence here proves an unbounded execution loop. Original observations are preserved for historical study rather than silently rewritten. Integration into `main` is a decision to retain a calibrated research observation, **not** to convert interpretations into verified facts.
