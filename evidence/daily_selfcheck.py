@@ -148,6 +148,25 @@ def validate_project_manifest(value: dict[str, Any]) -> list[str]:
     return files
 
 
+def validate_lifemonitor_config(root: Path) -> list[str]:
+    """Validate only this repository's config; never contact or mutate LifeMonitor."""
+    path = root / "lifemonitor.yaml"
+    legacy_path = root / ".lifemonitor.yaml"
+    if path.is_symlink() or not path.is_file() or legacy_path.exists() or legacy_path.is_symlink():
+        return ["LIFEMONITOR_CONFIG_PATH_CONTRACT"]
+    text = path.read_text(encoding="utf-8")
+    errors = []
+    if not re.search(r"(?m)^name:[ \\t]*\\S", text):
+        errors.append("LIFEMONITOR_CONFIG_NAME")
+    if not re.search(r"(?m)^issues:[ \\t]*\\n[ \\t]+check:[ \\t]*true[ \\t]*(?:#.*)?$", text):
+        errors.append("LIFEMONITOR_ISSUE_CHECK_CONTRACT")
+    # Leave release tracking, registry updates and visibility to account-wide
+    # settings; only an explicit top-level key would override those settings.
+    if re.search(r"(?m)^(?:push|public)[ \\t]*:", text):
+        errors.append("LIFEMONITOR_GLOBAL_SETTINGS_OVERRIDE")
+    return errors
+
+
 def project_report(root: Path, manifest: dict[str, Any], digest: str) -> dict[str, Any]:
     files = validate_project_manifest(manifest)
     root = root.resolve(strict=True)
@@ -171,8 +190,7 @@ def project_report(root: Path, manifest: dict[str, Any], digest: str) -> dict[st
                 errors.append("MISSING_ENTRYPOINT:" + cmd)
     except (OSError, KeyError, ValueError) as error:
         errors.append("INVALID_PACKAGE_METADATA:" + type(error).__name__)
-    if not (root / ".lifemonitor.yaml").is_file() or (root / "lifemonitor.yaml").exists():
-        errors.append("LIFEMONITOR_LOCAL_OVERRIDE_CONTRACT")
+    errors.extend(validate_lifemonitor_config(root))
     # No custom report may embed the separately governed institutional catalogue.
     return {
         "kind": "PROJECT_CUSTOM_SELF_CHECK",
