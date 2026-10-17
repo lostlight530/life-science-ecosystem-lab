@@ -47,6 +47,19 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("if: failure()", workflow)
         self.assertIn("build/source-diagnostics.json", workflow)
 
+    def test_daily_institutional_observation_is_not_gated_by_project_contract_tests(self):
+        text = (ROOT / ".github" / "workflows" / "life-science-daily-selfcheck.yml").read_text(encoding="utf-8")
+        institutional = text.split("  institutional-defaults:", 1)[1].split("  project-custom:", 1)[0]
+        project = text.split("  project-custom:", 1)[1]
+        self.assertIn("test_institutional_selfcheck.py", institutional)
+        self.assertNotIn("test_project_selfcheck.py", institutional)
+        self.assertNotIn("unittest discover -s tests -v", institutional)
+        self.assertIn("unittest discover -s tests -v", project)
+        self.assertNotIn("needs:", institutional)
+        self.assertNotIn("needs:", project)
+        self.assertIn("permissions:\\n  contents: read", text)
+        self.assertIn("persist-credentials: false", institutional)
+
     def test_validation_workflow_checks_profiles_and_caches(self):
         text = (ROOT / ".github" / "workflows" / "validate.yml").read_text(encoding="utf-8")
         self.assertIn("validate-source-registry", text)
