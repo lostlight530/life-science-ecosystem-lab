@@ -2,8 +2,8 @@
 
 [First-use commands](GETTING_STARTED.md) · [Result interpretation](VERIFYING_RESULTS.md) · [Documentation index](README.md)
 
-The repository publishes two peer software assets under one source-code and release identity.
-Both are usable by researchers and ordinary programs. Neither depends on a configured model, a prompt package, or an external Agent.
+The repository publishes three peer software assets under one source-code and release identity.
+All three are usable by researchers and ordinary programs. None depends on a configured model, a prompt package, or an external Agent.
 
 ## Knowledge Workflow (`.github/`)
 
@@ -36,8 +36,18 @@ The graph projection currently represents directly traceable `SOURCE_MATCH` link
 
 The Tool never writes into the inspected research repository. It only writes the caller-specified report paths. Its checks are useful for Life Science workflows and other research software, but eligibility for bio.tools is **not** claimed.
 
+## Independent Protein Bio Tool (`bio_tool/`)
+
+- Package and CLI: `bio_tool` / `ls-bio`; separate command from `ls-evidence` and `ls-knowledge`
+- Inputs: bounded protein FASTA and first-model PDB coordinate files, caller-supplied local paths
+- Operations: residue composition and uncertain code summaries; per-chain observed C-alpha residue inventory
+- Outputs: deterministic JSON quality reports with input SHA-256, explicit status and scientific limits
+- Portable adapters: `.github/bio/protein-fasta.cwl` and `.github/bio/protein-pdb.cwl`
+- Registry proposal: `metadata/biotools-protein-audit.draft.json`, using real EDAM concepts; no external accession claimed
+- No inference, folding model, molecular geometry validation, full sequence alignment or external upload; see [Bio Tool](../bio_tool/README.md)
+
 ## Composition
 
-The Knowledge Workflow may call Evidence as an external command. Evidence can inspect an unrelated repository without importing the knowledge runtime or relying on its scheduler. Both exchange JSON-based contracts, with their own CI and documentation.
+The Knowledge Workflow may call Evidence as an external command, and independent researchers or CWL tools can call Bio Tool on supplied protein files. Evidence can inspect an unrelated repository without importing the knowledge runtime or relying on its scheduler. All three exchange explicit CLI/file contracts, with their own CI and documentation.
 
 External researchers and Agents may use human- or machine-readable outputs independently. They are not an internal runtime stage and cannot promote findings to accepted knowledge without repository governance and independent verification.
