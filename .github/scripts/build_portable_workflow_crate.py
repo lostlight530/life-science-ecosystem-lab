@@ -32,6 +32,8 @@ REQUIRED = (
     ".github/bio/protein-pdb.cwl",
     ".github/bio/test/example.fasta",
     ".github/bio/test/example.pdb",
+    ".github/bio/test/fasta-job.yml",
+    ".github/bio/test/pdb-job.yml",
     "metadata/biotools-protein-audit.draft.json",
     "metadata/bioschemas-bio-tool.jsonld",
 )
