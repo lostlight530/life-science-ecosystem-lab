@@ -2,6 +2,7 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Align the public three-asset inventory, real-sample boundary and LifeMonitor integration status across the README, methodology, architecture, standards guidance and executable documentation gate
 - Add independent `ls-bio` protein FASTA/PDB file analysis package, CWL wrappers, EDAM-indexed bio.tools draft and testable bounded scientific data-processing outputs
 - Run separate Bio Tool CLI/CWL CI and read-only pinned external protein examples, retaining digest/quality metadata rather than raw upstream content
 - Refresh source metadata from software version 0.3.0 to 0.4.0 for the three independently callable assets; no hosted package release or third-party registry accession asserted
