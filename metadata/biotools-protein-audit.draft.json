@@ -1,0 +1,98 @@
+{
+  "name": "Life Science Protein File Audit",
+  "description": "Offline, deterministic bioinformatics command-line analysis of amino-acid composition and ambiguous residues in protein FASTA files, and observed first-model C-alpha residue inventory in PDB coordinate files. Reports source SHA-256 and bounded quality warnings. Does not infer protein structures or validate molecular geometry.",
+  "homepage": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/bio_tool",
+  "version": "0.4.0",
+  "toolType": [
+    "Command-line tool"
+  ],
+  "topic": [
+    {
+      "uri": "http://edamontology.org/topic_0078",
+      "term": "Proteins"
+    },
+    {
+      "uri": "http://edamontology.org/topic_0080",
+      "term": "Sequence analysis"
+    }
+  ],
+  "function": [
+    {
+      "operation": [
+        {
+          "uri": "http://edamontology.org/operation_2403",
+          "term": "Sequence analysis"
+        }
+      ],
+      "input": [
+        {
+          "data": {
+            "uri": "http://edamontology.org/data_2976",
+            "term": "Protein sequence"
+          },
+          "format": [
+            {
+              "uri": "http://edamontology.org/format_1929",
+              "term": "FASTA"
+            }
+          ]
+        }
+      ],
+      "output": [
+        {
+          "data": {
+            "uri": "http://edamontology.org/data_2955",
+            "term": "Sequence report"
+          }
+        }
+      ],
+      "note": "Computes counts and source digests; flags uncertain codes without inferring function or sequence correctness.",
+      "cmd": "ls-bio protein-fasta --input protein.fasta --output fasta-report.json"
+    },
+    {
+      "operation": [
+        {
+          "uri": "http://edamontology.org/operation_2406",
+          "term": "Protein structure analysis"
+        }
+      ],
+      "input": [
+        {
+          "data": {
+            "uri": "http://edamontology.org/data_1460",
+            "term": "Protein structure"
+          },
+          "format": [
+            {
+              "uri": "http://edamontology.org/format_1476",
+              "term": "PDB"
+            }
+          ]
+        }
+      ],
+      "output": [
+        {
+          "data": {
+            "uri": "http://edamontology.org/data_2955",
+            "term": "Sequence report"
+          }
+        }
+      ],
+      "note": "Counts only observed C-alpha residues in the first PDB model; not a geometry or fold quality assessment.",
+      "cmd": "ls-bio protein-pdb --input structure.pdb --output pdb-report.json"
+    }
+  ],
+  "license": "MIT",
+  "operatingSystem": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "language": [
+    "Python"
+  ],
+  "cost": "Free of charge",
+  "accessibility": [
+    "Open access"
+  ]
+}
