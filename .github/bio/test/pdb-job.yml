@@ -1,0 +1,4 @@
+pdb:
+  class: File
+  path: example.pdb
+  format: http://edamontology.org/format_1476
