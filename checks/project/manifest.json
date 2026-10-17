@@ -37,6 +37,6 @@
     "data/knowledge/current.json",
     "data/inputs/current/candidate.json",
     "checks/project/README.md",
-    "checks/institutional/README.md"
+    "checks/project/manifest.json"
   ]
 }
