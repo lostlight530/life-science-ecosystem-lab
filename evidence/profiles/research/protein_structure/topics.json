@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "protein-structure-2026-10-17-native-topic-pilot",
+  "topics": [
+    {
+      "id": "protein-structure-methods",
+      "aliases": [
+        "alphafold",
+        "openfold",
+        "folding",
+        "structure",
+        "protein"
+      ],
+      "required_terms": [],
+      "excluded_terms": [],
+      "minimum_matches": 1
+    },
+    {
+      "id": "protein-structure-benchmarks",
+      "aliases": [
+        "casp15",
+        "benchmark",
+        "prediction",
+        "gdt-ts",
+        "tm-score"
+      ],
+      "required_terms": [],
+      "excluded_terms": [],
+      "minimum_matches": 1
+    },
+    {
+      "id": "protein-structure-datasets",
+      "aliases": [
+        "proteinnet",
+        "dataset",
+        "datasets",
+        "fasta",
+        "pdb"
+      ],
+      "required_terms": [],
+      "excluded_terms": [],
+      "minimum_matches": 1
+    },
+    {
+      "id": "protein-variant-effects",
+      "aliases": [
+        "variant",
+        "mutation",
+        "mutations",
+        "assay"
+      ],
+      "required_terms": [],
+      "excluded_terms": [],
+      "minimum_matches": 1
+    }
+  ]
+}
