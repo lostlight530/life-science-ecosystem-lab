@@ -127,5 +127,19 @@ class MethodologyContractTests(unittest.TestCase):
             self.assertIn("human-authoritative", " ".join(json.loads(out.read_text())["errors"]))
 
 
+    def test_cross_domain_case_proposer_is_optional_and_untrusted(self):
+        for domain, name in (("Protein sequence study", "protein"), ("Repository governance", "governance")):
+            case = specimen(domain, name)
+            self.assertTrue(validate_research_case(case).valid)
+            case["proposer"] = {
+                "agent_label": "Qi", "execution_surface": "Cloud sandbox",
+                "assertion": "SELF_DECLARED"
+            }
+            self.assertTrue(validate_research_case(case).valid)
+            case["proposer"]["assertion"] = "VERIFIED"
+            verdict = validate_research_case(case)
+            self.assertFalse(verdict.valid)
+            self.assertTrue(any("SELF_DECLARED" in x for x in verdict.errors))
+
 if __name__ == "__main__":
     unittest.main()
