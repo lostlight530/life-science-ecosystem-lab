@@ -33,6 +33,10 @@ Source records carry approved repository, commit, tree, blob, path, normalized S
 
 This is research software **about** workflow evidence, not a biological analysis tool or claim of bio.tools eligibility
 
+## Optional external Agent research proposal
+
+`ls-evidence validate-handoff --input .github/agent-handoff/example-handoff.json --topics evidence/profiles/topics.json` checks the bounded, proposal-only research handoff envelope without importing an Agent framework, searching the web, certifying claims or granting access to accepted `data/`. `AGENT_HANDOFF_SHAPE_VALID_PROPOSAL_ONLY` means format and permission boundaries were checked, **not** that its cited research is accepted. See [Agent collaboration](../docs/AGENT_COLLABORATION.md).
+
 ## Independent research software inspection
 
 Inspect a local third-party research software project **without** scheduling the knowledge Workflow or executing third-party code:

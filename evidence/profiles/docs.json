@@ -3,10 +3,12 @@
   "documents": [
     ".github/README.md",
     ".github/knowledge/README.md",
+    "AGENTS.md",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "README.md",
     "SECURITY.md",
+    "docs/AGENT_COLLABORATION.md",
     "docs/ARCHITECTURE.md",
     "docs/GETTING_STARTED.md",
     "docs/LIVE_EVIDENCE_DRILL.md",

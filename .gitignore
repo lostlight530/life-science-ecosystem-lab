@@ -10,3 +10,11 @@ dist/
 .DS_Store
 Thumbs.db
 
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+.hypothesis/
+htmlcov/
+.cache/
+.agent-work/
