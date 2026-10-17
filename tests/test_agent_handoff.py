@@ -1,10 +1,13 @@
 """Offline tests for bounded optional external-Agent handoff contracts."""
 import copy
+import contextlib
+import io
 import json
 import unittest
 from pathlib import Path
 
 from evidence.agent_handoff import validate_agent_handoff
+from evidence.cli import main as evidence_main
 
 ROOT = Path(__file__).resolve().parents[1]
 EXAMPLE = ROOT / ".github/agent-handoff/example-handoff.json"
@@ -70,6 +73,15 @@ class AgentHandoffTests(unittest.TestCase):
         value = copy.deepcopy(self.value)
         value["result"] = "NO_FINDINGS"
         self.assertFalse(self.verdict(value).valid)
+
+    def test_installed_tool_cli_accepts_only_a_proposal(self):
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            code = evidence_main(["validate-handoff", "--input", str(EXAMPLE),
+                                  "--topics", str(ROOT / "evidence/profiles/topics.json")])
+        self.assertEqual(code, 0)
+        self.assertIn("AGENT_HANDOFF_SHAPE_VALID_PROPOSAL_ONLY", out.getvalue())
+        self.assertNotIn("EVIDENCE_VERIFIED", out.getvalue())
 
     def test_rejects_malformed_input(self):
         self.assertFalse(validate_agent_handoff([]).valid)
