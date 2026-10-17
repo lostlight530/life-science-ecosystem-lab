@@ -28,6 +28,8 @@ ls-knowledge graph search --dir build/graph --query workflow --limit 5 --hops 1
 
 To reproduce the query, preserve the exact knowledge input and the `entities.jsonl`, `relations.jsonl` and `graph-manifest.json` outputs and record the repository commit. For accepted main-branch graph events, the append-only event-chain verification is included in state checks. Accepted receipts distinguish per-attempt `execution_id`, content-addressed `snapshot_id` and `change_kind`, so restoring an earlier source snapshot does not reuse an earlier event or receipt. `DOCUMENT_TEXT_UNCHANGED` is a selected-text comparison, not a proof of new scientific knowledge.
 
+Prior-state validation happens **before** any accepted apply, including when the new evidence is unchanged. An invalid old ledger, current snapshot or latest receipt produces `EXISTING_STATE_INVALID_NO_APPLY`, not a new success or an implicit repair. Logical dates are validated as canonical calendar dates and snapshot IDs are bound to their input/profile digests.
+
 ## Native workflow reading guide
 
 1. Check the GitHub Actions event: PR/push CI, synthetic CWL replay, manual observation and scheduled persistence are different events

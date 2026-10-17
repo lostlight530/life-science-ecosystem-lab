@@ -2,6 +2,10 @@
 
 ## Unreleased · current working tree (package metadata 0.3.0)
 
+- Reject forged snapshot IDs even if the envelope checksum was recomputed and validate calendar dates before building archive paths
+- Refuse to apply over corrupted accepted state, including an inconsistent graph ledger or latest receipt; never silently launder a damaged baseline
+- Add regression tests for impossible/path-shaped dates, forged candidate identity, corrupted-state preflight and latest-event receipt binding
+
 - Reject required sources with zero selected documents and stage optional source collection atomically so partial blob retrieval cannot masquerade as a deletion
 - Strengthen strict accepted-state verification with a nonempty event ledger, receipt requirement and last-event/current-snapshot binding
 - Distinguish repeatable content snapshots from per-attempt execution identities in accepted event and receipt paths, including A → B → A recovery

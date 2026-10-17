@@ -137,6 +137,57 @@ class StateLifecycleTests(unittest.TestCase):
             self.assertTrue(any("last accepted graph event" in e for e in
                                 verify_state(roots, require_accepted=True).errors))
 
+
+    def test_invalid_logical_date_rejected_without_writes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            roots = StateRoots(Path(directory))
+            a = self.candidate("safe")
+            for bad in ("2026-02-30", "20261017", "2026-10-17/../outside"):
+                with self.assertRaisesRegex(ValueError, "logical_date"):
+                    apply_candidate(a, roots, logical_date=bad)
+            self.assertFalse(roots.current.exists())
+            self.assertEqual(list((roots.root / "data").rglob("*.json")) if
+                             (roots.root / "data").exists() else [], [])
+
+    def test_existing_corrupt_graph_blocks_new_apply_before_writing(self):
+        with tempfile.TemporaryDirectory() as directory:
+            roots = StateRoots(Path(directory))
+            topics = {"topics": []}
+            first, second = self.candidate("first"), self.candidate("second")
+            one = apply_lifecycle(first, roots, logical_date="2026-10-17",
+                                  validated_head="1" * 40, current_head="1" * 40,
+                                  knowledge=build_knowledge(first, topics), topic_registry=topics,
+                                  execution_id="first-execution")
+            self.assertEqual(one["outcome"], "APPLIED")
+            corrupted = roots.root / "data" / "knowledge" / "entities.jsonl"
+            corrupted.write_text(corrupted.read_text() + '{"id":"unverified"}\\n')
+            report = apply_lifecycle(second, roots, logical_date="2026-10-18",
+                                     validated_head="1" * 40, current_head="1" * 40,
+                                     knowledge=build_knowledge(second, topics), topic_registry=topics,
+                                     execution_id="second-execution")
+            self.assertEqual(report["outcome"], "EXISTING_STATE_INVALID_NO_APPLY")
+            self.assertEqual(json.loads(roots.current.read_text())["run_id"], first["run_id"])
+            self.assertFalse((roots.root / "data" / "receipts" / "second-execution.json").exists())
+
+    def test_last_receipt_must_match_accepted_event(self):
+        with tempfile.TemporaryDirectory() as directory:
+            roots = StateRoots(Path(directory))
+            topics = {"topics": []}
+            a = self.candidate("receipts")
+            r = apply_lifecycle(a, roots, logical_date="2026-10-17",
+                                validated_head="1" * 40, current_head="1" * 40,
+                                knowledge=build_knowledge(a, topics), topic_registry=topics,
+                                execution_id="receipt-binding")
+            self.assertEqual(r["outcome"], "APPLIED")
+            self.assertTrue(verify_state(roots, require_accepted=True).valid)
+            receipt_path = roots.root / "data" / "receipts" / "receipt-binding.json"
+            receipt = json.loads(receipt_path.read_text())
+            receipt["output_digest"] = "f" * 64
+            receipt_path.write_text(json.dumps(receipt))
+            report = verify_state(roots, require_accepted=True)
+            self.assertFalse(report.valid)
+            self.assertTrue(any("latest accepted receipt" in e for e in report.errors))
+
     def test_strict_state_check_rejects_empty_bootstrap(self):
         with tempfile.TemporaryDirectory() as directory:
             roots = StateRoots(Path(directory))
