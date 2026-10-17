@@ -2,6 +2,10 @@
   "schema_version": "1.0.0",
   "kind": "EXTERNAL_AGENT_RESEARCH_HANDOFF",
   "authority": "PROPOSAL_ONLY",
+  "base": {
+    "commit": "809be73fed2c452a9edbc5cd02e08a8809336eac",
+    "observed_at": "2026-10-17T03:46:00Z"
+  },
   "task": {
     "id": "example-workflow-monitoring-review",
     "question": "Is the current documentation of computational workflow monitoring accurately linked to its source?",
