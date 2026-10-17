@@ -126,5 +126,50 @@ class AgentHandoffTests(unittest.TestCase):
         self.assertTrue(any("observed_at" in e for e in verdict.errors))
 
 
+    def test_trusted_reviewer_expected_baseline_match(self):
+        self.assertTrue(validate_agent_handoff(
+            self.value, known_topics=TOPICS,
+            expected_base_commit=self.value["base"]["commit"]).valid)
+
+    def test_stale_agent_baseline_is_rejected_when_reviewer_has_newer_head(self):
+        verdict = validate_agent_handoff(
+            self.value, known_topics=TOPICS,
+            expected_base_commit="272f6dfb5f805a180f9c2d7004ca7288591278e9")
+        self.assertFalse(verdict.valid)
+        self.assertTrue(any("STALE_BASE" in e for e in verdict.errors))
+
+    def test_legacy_optional_base_requires_anchor_for_trusted_comparison(self):
+        old = copy.deepcopy(self.value)
+        del old["base"]
+        self.assertTrue(self.verdict(old).valid)
+        verdict = validate_agent_handoff(old, known_topics=TOPICS,
+                                         expected_base_commit="2" * 40)
+        self.assertFalse(verdict.valid)
+        self.assertTrue(any("requires a declared base" in e for e in verdict.errors))
+
+    def test_invalid_trusted_reviewer_baseline_rejected(self):
+        verdict = validate_agent_handoff(self.value, known_topics=TOPICS,
+                                         expected_base_commit="main")
+        self.assertFalse(verdict.valid)
+        self.assertTrue(any("40-hex trusted" in e for e in verdict.errors))
+
+    def test_trusted_base_cli_is_distinct_from_shape_only_verdict(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "handoff.json"
+            path.write_text(json.dumps(self.value))
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                code = evidence_main(["validate-handoff", "--input", str(path),
+                    "--topics", str(ROOT / "evidence/profiles/topics.json"),
+                    "--expected-base-sha", self.value["base"]["commit"]])
+            self.assertEqual(code, 0)
+            self.assertIn("TRUSTED_BASE_MATCH", out.getvalue())
+            with contextlib.redirect_stderr(io.StringIO()):
+                code = evidence_main(["validate-handoff", "--input", str(path),
+                    "--topics", str(ROOT / "evidence/profiles/topics.json"),
+                    "--expected-base-sha", "3" * 40])
+            self.assertEqual(code, 2)
+
 if __name__ == "__main__":
     unittest.main()
