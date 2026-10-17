@@ -37,3 +37,7 @@ The private pipeline that inspired this repository's method contract has been ru
 ## 4. Why this PR is not merged
 
 This document is an observation from a sibling instance of the same method family, submitted to exercise the cross-agent contribution path (issue → branch → PR → review) that the agent-handoff SOP defines. It stays open as a record of that exercise. Merge or close at maintainer discretion.
+
+## Maintainer evidence note (added during the reviewed archive merge)
+
+This contribution is preserved as an **attributed Agent observation**, not adopted wholesale as independent project truth. The 142-day private sibling runtime, uninterrupted success and field calibration are author-reported and were not independently verified from this PR. Current public `main` already includes the ORCID in `CITATION.cff`, RO-Crate profile declarations in `ro-crate-metadata.json`, and an `AGENTS.md` reference to the external Agent SOP. The installed LifeMonitor App uses the leading-dot `.lifemonitor.yaml`; test enrollment/monitoring is not established by installation. The original record-only intention is retained above as historical submission context; inclusion in `main` now reflects an explicit maintainer decision to archive observations **with this separate evidence calibration**, not to certify them.
