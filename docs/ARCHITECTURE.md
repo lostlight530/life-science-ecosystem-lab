@@ -1,6 +1,6 @@
 # Life Science Lab · Canonical Architecture
 
-## Two peer assets, one native execution environment
+## Three peer assets, one native execution environment
 
 1. **Knowledge Workflow** — `.github/` is the canonical lifecycle and knowledge runtime. The GitHub Actions workflow controls scheduling, source ingestion, knowledge transformation, state recovery, conditional persistence and receipts; a CWL computational sub-workflow offers portable replay
 2. **Evidence Tool** — `evidence/` is an independent Python package and CLI for source identification, immutable provenance, diff/replay, scientific-software documentation checks and independent verdicts
@@ -44,3 +44,7 @@ These are design precedents, not endorsements or proof of external integration
 ## Rebuildable graph and peer Tool contracts
 
 A validated knowledge map is projected into JSONL topic/source entities and evidenced `SOURCE_MATCH` relations, plus deterministic manifest and accepted-run event records. SQLite FTS5 BM25 and bounded adjacency traversal provide inspectable retrieval. Neither graph rank nor lexical proximity creates a new scientific claim. A separate static `ls-evidence inspect` function accepts third-party local research repositories and emits JSON/Markdown/SARIF findings. External Agents remain outside both native runtimes and may independently read these outputs. See [public interfaces](PUBLIC_INTERFACES.md) and [standards](STANDARDS.md).
+
+## Third independent bioinformatics data-processing plane
+
+The `bio_tool/` software asset exposes `ls-bio` and CWL CommandLineTool wrappers for protein FASTA/PDB files. It has no dependency on accepted `data/`, the Evidence Tool, external Agents or native GitHub scheduling. Outputs are bounded local JSON measurements with input SHA-256 and explicit biological non-claims. The native Workflow and Evidence Tool retain their existing responsibilities and write boundaries. This addition does not change any accepted `data/` snapshot or infer a new biological knowledge edge.

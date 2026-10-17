@@ -1,6 +1,6 @@
 # Contributing to Life Science Ecosystem Lab
 
-The repository maintains **two equal assets**, not an Agent/Skills package. Knowledge behavior belongs to [`.github/`](.github/README.md), and standalone research-software evidence inspection and source verification to [`evidence/`](evidence/README.md). See the [documentation index](docs/README.md) before starting.
+The repository maintains **three independent assets**, not an Agent/Skills package. Knowledge behavior belongs to [`.github/`](.github/README.md), and standalone research-software evidence inspection and source verification to [`evidence/`](evidence/README.md), and bounded bioinformatics protein file analysis to [`bio_tool/`](bio_tool/README.md). See the [documentation index](docs/README.md) before starting.
 
 ## Reproduce your proposed change
 

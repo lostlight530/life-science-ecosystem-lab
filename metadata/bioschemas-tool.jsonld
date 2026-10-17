@@ -9,7 +9,7 @@
   "@id": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/evidence",
   "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE",
   "name": "Life Science Evidence Tool",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Standalone, nonexecuting research-software inspection and approved GitHub evidence provenance, deterministic aggregation, metadata/documentation auditing and validation",
   "url": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/evidence",
   "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",

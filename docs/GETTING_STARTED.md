@@ -1,6 +1,6 @@
 # Getting started
 
-This guide is for someone who just cloned the public repository. It gives **separate starting points** for both peer assets. No model API key, Skills package, persistent database server or remote execution service is required.
+This guide is for someone who just cloned the public repository. It gives **separate starting points** for the three peer software assets. No model API key, Skills package, persistent database server or remote execution service is required.
 
 ## Prerequisites
 
@@ -10,9 +10,10 @@ Python 3.11+; a Git checkout; optional `cwltool` for the portable computational 
 python -m pip install -e .
 ls-evidence --help
 ls-knowledge --help
+ls-bio --help
 ```
 
-One Python distribution intentionally supplies **two independent commands**; it is not two separately published PyPI packages.
+One Python distribution intentionally supplies **three independent commands**; it is not two separately published PyPI packages.
 
 ## Path A — Evidence Tool only (offline)
 
@@ -61,6 +62,17 @@ ls-knowledge graph verify --dir build/live-graph --knowledge build/knowledge.jso
 
 Collection can fail if GitHub is unreachable, a required repository/ref/path is unavailable, or no approved documents can be retrieved. Partial observations are **not** automatically eligible for durable persistence. These commands only create ignored local outputs. Do not infer external registration or completed production knowledge maintenance from their success.
 
+## Path D — Bio Tool molecular file analysis (offline, independent)
+
+The third component performs actual bioinformatics data processing on supplied files and never runs model inference.
+
+```sh
+ls-bio protein-fasta --input .github/bio/test/example.fasta --output build/bio-fasta.json
+ls-bio protein-pdb --input .github/bio/test/example.pdb --output build/bio-pdb.json
+```
+
+The output contains input SHA-256, residue statistics and explicit uncertainty boundaries. Read [the Bio Tool contract](../bio_tool/README.md) before using external sequences or coordinates. The portable CWL adapters and a separate read-only pinned-source CI are in `.github/bio/` and `.github/workflows/life-science-bio.yml`.
+
 ## Native GitHub Actions and persistence
 
 - [Knowledge lifecycle](../.github/workflows/life-science-knowledge.yml): scheduled weekly on Mondays at 03:23 UTC; manual `workflow_dispatch` without `persist` is a read-only observation
@@ -73,7 +85,7 @@ Before treating a run as successful durable knowledge, inspect its actual run ev
 
 | Symptom | What to check |
 | --- | --- |
-| `ls-knowledge` or `ls-evidence` not found | Run `python -m pip install -e .` in your active Python environment |
+| `ls-knowledge`, `ls-evidence` or `ls-bio` not found | Run `python -m pip install -e .` in your active Python environment |
 | `cwltool` not found | Install the optional `cwltool` reference runner |
 | GitHub collect fails | Network, source registry, source ref/path and API rate limit |
 | `projection_eligible=false` | Inspect source diagnostics; do not treat missing documents as verified deletions |

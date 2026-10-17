@@ -14,7 +14,7 @@
   "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
   "license": "https://spdx.org/licenses/MIT",
   "programmingLanguage": "GitHub Actions (YAML), Python and CWL 1.2",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "creator": {
     "@type": "Person",
     "name": "Xuanyi Jiang",

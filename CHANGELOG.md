@@ -1,6 +1,12 @@
 # Changelog
 
-## Unreleased · current working tree (package metadata 0.3.0)
+## Unreleased · current working tree (package metadata 0.4.0)
+
+- Add independent `ls-bio` protein FASTA/PDB file analysis package, CWL wrappers, EDAM-indexed bio.tools draft and testable bounded scientific data-processing outputs
+- Run separate Bio Tool CLI/CWL CI and read-only pinned external protein examples, retaining digest/quality metadata rather than raw upstream content
+- Refresh source metadata from software version 0.3.0 to 0.4.0 for the three independently callable assets; no hosted package release or third-party registry accession asserted
+- Integrate the LifeMonitor GitHub App's verified repository check with a minimal issue-check configuration inheriting global branch/tag tracking
+
 
 - Archive independently checked real protein Agent/Tool/Workflow field-run metrics, artifact checksum, provenance identities and bounded non-claims under evidence/field-tests
 

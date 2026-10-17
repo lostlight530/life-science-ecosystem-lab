@@ -27,7 +27,7 @@ class PortableCrateTests(unittest.TestCase):
                 nodes = {n["@id"]: n for n in body["@graph"] if isinstance(n, dict) and "@id" in n}
                 self.assertEqual(nodes["./"]["mainEntity"]["@id"], ".github/knowledge/main.cwl")
                 self.assertEqual(nodes["#suite"]["mainEntity"]["@id"], ".github/knowledge/main.cwl")
-                self.assertEqual(nodes[".github/knowledge/main.cwl"]["version"], "0.3.0")
+                self.assertEqual(nodes[".github/knowledge/main.cwl"]["version"], "0.4.0")
                 self.assertEqual(nodes[".github/knowledge/main.cwl"]["programmingLanguage"]["@id"],
                                  "https://w3id.org/workflowhub/workflow-ro-crate#cwl")
                 self.assertTrue({v["@id"] for v in nodes["./"]["hasPart"]}.issubset(names))

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "life-science-ecosystem-lab"
-version = "0.3.0"
-description = "GitHub-native life-science knowledge workflow and independent research-evidence tool"
+version = "0.4.0"
+description = "GitHub-native life-science knowledge workflow and independent research-evidence tool and protein bioinformatics quality analysis"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -19,14 +19,16 @@ Source = "https://github.com/lostlight530/life-science-ecosystem-lab"
 Issues = "https://github.com/lostlight530/life-science-ecosystem-lab/issues"
 
 [project.scripts]
+ls-bio = "bio_tool.cli:main"
 ls-knowledge = "life_science_ecosystem_lab.cli:main"
 ls-evidence = "evidence.cli:main"
 
 [tool.setuptools]
-packages = ["life_science_ecosystem_lab", "life_science_ecosystem_lab.lifecycle", "evidence"]
+packages = ["life_science_ecosystem_lab", "life_science_ecosystem_lab.lifecycle", "evidence", "bio_tool"]
 
 [tool.setuptools.package-dir]
 life_science_ecosystem_lab = ".github/runtime/life_science_ecosystem_lab"
 "life_science_ecosystem_lab.lifecycle" = ".github/runtime/life_science_ecosystem_lab/lifecycle"
 evidence = "evidence"
+bio_tool = "bio_tool"
 

@@ -70,6 +70,28 @@ jobs:
           python .github/scripts/build_portable_workflow_crate.py build/portable-two.crate.zip
           cmp build/portable-one.crate.zip build/portable-two.crate.zip
           ls-evidence audit-ecosystem --root . --output build/external-readiness.json
+      - name: Unpack and execute distributed three-asset RO-Crate
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          archive = Path('build/portable-one.crate.zip')
+          with zipfile.ZipFile(archive) as z:
+              names = z.namelist()
+              if len(names) != len(set(names)) or any(n.startswith('/') or '..' in Path(n).parts for n in names):
+                  raise SystemExit('unsafe portable archive paths')
+              z.extractall('build/unpacked')
+          PY
+          (
+            cd build/unpacked
+            python -m pip install --no-deps -e .
+            mkdir -p ../unpacked-replay
+            cwltool --no-container --outdir ../unpacked-replay .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
+            python -m bio_tool protein-fasta --input .github/bio/test/example.fasta --output ../unpacked-fasta-report.json
+            python -m bio_tool protein-pdb --input .github/bio/test/example.pdb --output ../unpacked-pdb-report.json
+            python -m life_science_ecosystem_lab knowledge verify --candidate ../unpacked-replay/candidate.json --topics evidence/profiles/topics.json --knowledge ../unpacked-replay/knowledge.json
+          )
+          cmp build/cwl-one/knowledge.json build/unpacked-replay/knowledge.json
       - name: Independent evidence tool contract checks
         run: |
           ls-evidence aggregate --input evidence/examples/evidence-records.json --topics evidence/profiles/topics.json --output build/tool-candidate.json
@@ -82,3 +104,10 @@ jobs:
             echo 'Generated cache files are not allowed'
             exit 1
           fi
+      - name: Publish reproducible public portable Workflow RO-Crate
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: life-science-portable-workflow-crate
+          path: build/portable-one.crate.zip
+          if-no-files-found: error
+          retention-days: 30
