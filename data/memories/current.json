@@ -1,0 +1,30 @@
+{
+  "change_kind": "INITIAL_SNAPSHOT",
+  "current_knowledge_digest": "b968d7ab41e1f6932bd6026e1b50442bf70682f904ff34a8bc5bc084cec1d74d",
+  "previous_knowledge_digest": null,
+  "record_count": 15,
+  "schema_version": "1.0.0",
+  "source_bundle": "5c3ee4aaea441494d94155ee06b3263d401a8a21dcbf7af738d2d778d63d5d67",
+  "topic_count": 3,
+  "topic_transitions": [
+    {
+      "current_coverage": "MULTI_SOURCE",
+      "previous_coverage": null,
+      "state": "ADDED",
+      "topic_id": "research-object-metadata"
+    },
+    {
+      "current_coverage": "MULTI_SOURCE",
+      "previous_coverage": null,
+      "state": "ADDED",
+      "topic_id": "workflow-monitoring"
+    },
+    {
+      "current_coverage": "MULTI_SOURCE",
+      "previous_coverage": null,
+      "state": "ADDED",
+      "topic_id": "workflow-registration"
+    }
+  ],
+  "unresolved_topics": []
+}

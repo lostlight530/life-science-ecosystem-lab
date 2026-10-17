@@ -1,0 +1,8 @@
+{
+  "entities_sha256": "7b0f4e324a7d2286433dc9c9b53e14bbe7da92e36647367e9376f28678ea259f",
+  "entity_count": 17,
+  "knowledge_digest": "b968d7ab41e1f6932bd6026e1b50442bf70682f904ff34a8bc5bc084cec1d74d",
+  "relation_count": 26,
+  "relations_sha256": "45c268139fb3aa61ac7c428a1c71f0bd40008c89573080adfce7411e6504c622",
+  "schema_version": "1.0.0"
+}
