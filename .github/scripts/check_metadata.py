@@ -27,9 +27,14 @@ def verify() -> None:
     assert codemeta.get('@type')=='SoftwareSourceCode', 'CodeMeta type mismatch'
     assert codemeta.get('softwareVersion')==version, 'CodeMeta version mismatch'
     assert len(codemeta.get('hasPart', []))==3, 'CodeMeta three independently callable assets mismatch'
-    assert not (ROOT/'lifemonitor.yaml').exists(), 'global LifeMonitor defaults should not be overridden'
+    life_config_path = ROOT/'lifemonitor.yaml'
+    assert life_config_path.is_file(), 'LifeMonitor requires the official root-level lifemonitor.yaml'
+    assert not (ROOT/'.lifemonitor.yaml').exists(), 'nonstandard .lifemonitor.yaml must not coexist with the official configuration'
+    life_config = life_config_path.read_text(encoding='utf-8')
+    assert re.search(r'(?m)^name:\s*\S', life_config), 'LifeMonitor repository name missing'
+    assert re.search(r'(?m)^issues:[ \t]*\n[ \t]+check:[ \t]*true[ \t]*(?:#.*)?$', life_config), 'LifeMonitor issue checks must be enabled for this repository'
+    assert not re.search(r'(?m)^(?:push|public)\s*:', life_config), 'LifeMonitor push and visibility settings must remain governed by account-wide settings'
     assert status['bio_tool']=='bio_tool/cli.py', 'bioinformatics tool identity mismatch'
-    assert (ROOT/'.lifemonitor.yaml').is_file(), 'LifeMonitor configuration missing'
     bio=json.loads((ROOT/'metadata/bioschemas-bio-tool.jsonld').read_text(encoding='utf-8'))
     assert bio['@type']=='SoftwareApplication' and bio['version']==version, 'Bio Tool descriptor mismatch'
     assert bio['license'].endswith('/MIT'), 'Bio Tool license mismatch'
