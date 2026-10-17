@@ -5,7 +5,8 @@ The repository executes one scheduled, **read-only** GitHub Actions workflow wit
 ## Schedule and behavior
 
 - **Daily at 01:41 UTC** (09:41 Asia/Shanghai), plus optional manual `workflow_dispatch`
-- On pull requests the institutional checker runs **offline contract tests** only, avoiding unrequested contacts to external institutions
+- On pull requests the institutional checker runs **only its own offline contract tests**, avoiding unrequested contacts to external institutions
+- The institutional job runs `tests/test_institutional_selfcheck.py`; project-manifest and LifeMonitor repository-config tests run in the sibling project job. There is no `needs` dependency between jobs, so a project-only contract failure cannot suppress scheduled institutional observations
 - On actual schedule (or manual dispatch with `live_public_institutions: true`) the institutional job makes at most six bounded, anonymous, read-only GET requests against exact allowlisted public service URLs, without following redirects, access tokens or user account state
 - The custom job verifies local file SHA-256s, three public CLI entrypoints, the current source/topic and scientific metadata rules,  full Python regression tests, docs links, RO-Crate structure, publication boundary, accepted Git state, knowledge map and graph, and Knowledge Quality
 - Two jobs have `contents: read`, independent results and **no production writes**, no external registration, no privileged Agent execution and no user credentials
@@ -33,7 +34,8 @@ This job fails if a mandatory local file is missing/unsafe, one of the three CLI
 ```sh
 PYTHONPATH=.github/runtime:. python -m evidence.daily_selfcheck institutional --catalogue checks/institutional/defaults.json --output build/daily-selfcheck/institutional-defaults/report.json
 PYTHONPATH=.github/runtime:. python -m evidence.daily_selfcheck project --root . --manifest checks/project/manifest.json --output build/daily-selfcheck/project-custom/file-contract.json
-PYTHONPATH=.github/runtime:. python -m unittest discover -s tests -p 'test_daily_selfcheck.py' -v
+PYTHONPATH=.github/runtime:. python -m unittest discover -s tests -p 'test_institutional_selfcheck.py' -v
+PYTHONPATH=.github/runtime:. python -m unittest discover -s tests -p 'test_project_selfcheck.py' -v
 ```
 
 The first command is intentionally offline by default. To observe the six public endpoints, add `--live` deliberately.
