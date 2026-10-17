@@ -21,6 +21,8 @@ python .github/scripts/check_publication_boundary.py
 5. Changes to CWL, GitHub Actions inputs/outputs or public descriptions must update the relevant [RO-Crate](ro-crate-metadata.json), [Bioschemas](metadata/) and documentation contracts; verify CWL with [Getting Started](docs/GETTING_STARTED.md)
 6. For a structural documentation change, update `docs/README.md` **and** the authoritative documentation inventory `evidence/profiles/docs.json`. CI tests require complete coverage of public Markdown guides
 
+The required validation workflow is actor-neutral. Do not add contributor-specific bypasses, blanket `continue-on-error`, or external registry/network calls as merge prerequisites. Its independent domains all run before the aggregate verdict, so address every failed domain reported by the same run rather than relying on an earlier failure to hide later checks
+
 ## Review boundaries
 
 - PR tests and static inspection cannot establish biological truth, full external standards certification, publication or registry acceptance

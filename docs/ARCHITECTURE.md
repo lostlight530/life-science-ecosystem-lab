@@ -29,7 +29,13 @@ GitHub-native `data/` holds current evidence, immutable archive, source-cited kn
 
 The workflow descriptor, RO-Crate, Workflow Testing RO-Crate, Bioschemas, CFF and MIT licensing describe verifiable functionality. They do not certify clinical validity, automatic WorkflowHub registration, LifeMonitor enrollment or semantic scientific understanding
 
-The repository's minimal `.lifemonitor.yaml` enables issue checks and intentionally leaves branch and tag tracking to the existing account-wide global settings. It does not itself prove workflow-test enrollment or recurring monitoring
+The repository's minimal `lifemonitor.yaml` enables issue checks and intentionally leaves branch and tag tracking to the existing account-wide global settings. It does not itself prove workflow-test enrollment or recurring monitoring. The Workflow and Tools are registration-ready research software assets, but repository metadata and CI success do not claim that an external registry has accepted them
+
+## Validation, schedules and external observers
+
+Pull-request validation is an actor-neutral repository authority plane. Four independent read-only jobs validate repository contracts, Knowledge Workflow replay, Evidence Tool behavior and the portable package. A final verdict aggregates their results without preventing any domain from starting. This makes failures complete and inspectable while preserving one strict merge decision
+
+Scheduled checks, external Bots and institutional services are separate execution planes. A Bot PR runs the same repository contracts as a human PR without an identity bypass. LifeMonitor, WorkflowHub, LS Login and other public services may observe or register released assets, but their network, authentication or registration state is never a prerequisite for local required validation. The only intentional job dependency with write authority remains native validation before guarded `data/` apply
 
 ## Implementation precedents
 

@@ -23,6 +23,10 @@ User-contributed research proposals, including those produced using third-party 
 
 Scheduled and explicitly authorized main-branch runs may write only to `data/`; PR jobs are read-only. Any source registry expansion, workflow code change or new external registry claim requires normal code review. Published artifacts must not contain tokens, hidden policies, private research notes, or internal decision histories. Git history cannot be erased merely by deleting a tracked file.
 
+Required PR validation is contributor-neutral. Human contributors, Codex, Jules and external GitHub Apps submit through the same read-only contract jobs; maintainers must not add `github.actor` bypasses or blanket `continue-on-error`. External institutions and registries are observers rather than merge prerequisites, so their authentication, uptime and acceptance state must not be placed in required local CI
+
+The four validation domains run independently and retain bounded diagnostics even when another domain fails. Only their aggregate verdict represents admission to the reviewed repository state. This isolation does not weaken production authority: native apply still depends on successful native validation and retains its existing world-line and `data/` write boundary
+
 The public repository documents **observable behavior** and how to reproduce it. It does not publish internal research planning, private collaboration strategies or unsupported claims. Do not include internal documents in Git, uploaded Actions artifacts, CI logs or PR descriptions.
 
 ## Native production operation

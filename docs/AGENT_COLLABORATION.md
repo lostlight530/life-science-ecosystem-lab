@@ -12,6 +12,12 @@ The Life Science Ecosystem Lab has **three peer software assets**, not an embedd
 
 No recurring external-Agent schedule is created by this repository, and no native `workflow_dispatch` is triggered merely by creating an Agent handoff.
 
+## Pull-request gate participation
+
+An external Agent or GitHub App may propose ordinary branch changes and receive the same required validation as any human contributor. Validation is based on repository content, not `github.actor`, provider identity or LS affiliation. The independent gate domains continue running after a sibling failure and the final verdict fails unless all required domains succeed
+
+This is execution access, not trust transfer. Passing CI does not authorize accepted `data/` writes, source/topic expansion, scientific promotion or an external registration claim. LifeMonitor and registry availability are not required CI dependencies; they evaluate public assets through their own interfaces and schedules
+
 ## Optional handoff lifecycle
 
 `External network research → Source citations and uncertainties → PROPOSAL_ONLY handoff → Shape validation → Human review / PR → Independent software checks → Ordinary native acceptance (only when separately authorized)`

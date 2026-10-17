@@ -66,6 +66,34 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("validate-topic-registry", text)
         self.assertIn("Generated cache files are not allowed", text)
 
+    def test_required_validation_domains_are_independent_and_actor_neutral(self):
+        text = (ROOT / ".github" / "workflows" / "validate.yml").read_text(encoding="utf-8")
+        jobs = text.split("jobs:", 1)[1]
+        verdict = jobs.split("  gate-verdict:", 1)[1]
+        independent = jobs.split("  gate-verdict:", 1)[0]
+        for job in ("repository-contracts", "knowledge-workflow", "evidence-tool", "portable-package"):
+            self.assertIn(f"  {job}:\n", independent)
+            block = independent.split(f"  {job}:\n", 1)[1]
+            self.assertNotIn("\n    needs:", block.split("\n  ", 1)[0])
+        self.assertNotIn("github.actor", text)
+        self.assertNotIn("continue-on-error", text)
+        self.assertNotIn("\n    paths:", text.split("jobs:", 1)[0])
+        self.assertIn(
+            "needs: [repository-contracts, knowledge-workflow, evidence-tool, portable-package]",
+            verdict,
+        )
+        self.assertIn("name: validate", verdict)
+        self.assertIn("if: ${{ !cancelled() }}", verdict)
+
+    def test_validation_retains_diagnostics_without_weakening_verdict(self):
+        text = (ROOT / ".github" / "workflows" / "validate.yml").read_text(encoding="utf-8")
+        self.assertGreaterEqual(text.count("if: ${{ always() }}"), 4)
+        self.assertIn("Repository contracts result", text)
+        self.assertIn("Knowledge Workflow result", text)
+        self.assertIn("Evidence Tool result", text)
+        self.assertIn("Portable package result", text)
+        self.assertIn("exit 1", text.split("  gate-verdict:", 1)[1])
+
 
 if __name__ == "__main__":
     unittest.main()
