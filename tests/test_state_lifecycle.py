@@ -122,6 +122,21 @@ class StateLifecycleTests(unittest.TestCase):
                     validated_head="1" * 40, current_head="1" * 40, execution_id="gh-reuse")
             self.assertEqual(json.loads(roots.current.read_text())["run_id"], a["run_id"])
 
+    def test_strict_state_rejects_valid_but_unbound_current_candidate(self):
+        with tempfile.TemporaryDirectory() as directory:
+            roots = StateRoots(Path(directory))
+            topics = {"topics": []}
+            a, b = self.candidate("accepted"), self.candidate("substituted")
+            apply_lifecycle(a, roots, logical_date="2026-10-17",
+                validated_head="1" * 40, current_head="1" * 40,
+                execution_id="binding-a", knowledge=build_knowledge(a, topics),
+                topic_registry=topics)
+            self.assertTrue(verify_state(roots, require_accepted=True).valid)
+            roots.current.write_text(json.dumps(b))
+            self.assertFalse(verify_state(roots, require_accepted=True).valid)
+            self.assertTrue(any("last accepted graph event" in e for e in
+                                verify_state(roots, require_accepted=True).errors))
+
     def test_strict_state_check_rejects_empty_bootstrap(self):
         with tempfile.TemporaryDirectory() as directory:
             roots = StateRoots(Path(directory))

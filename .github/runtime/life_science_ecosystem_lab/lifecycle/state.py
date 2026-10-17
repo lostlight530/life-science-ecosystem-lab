@@ -87,6 +87,19 @@ def verify_state(roots: StateRoots, *, require_accepted: bool = False) -> Valida
             errors.append(f"knowledge graph integrity: {exc}")
     if require_accepted and not any((roots.root / 'data' / 'receipts').glob('*.json')):
         errors.append('no accepted run receipt')
+    if require_accepted and roots.current.is_file():
+        event_file = roots.root / 'data' / 'knowledge' / 'events.jsonl'
+        if event_file.is_file():
+            try:
+                events = [json.loads(line) for line in event_file.read_text(encoding='utf-8').splitlines() if line.strip()]
+                current = json.loads(roots.current.read_text(encoding='utf-8'))
+                if not events or events[-1].get('evidence_digest') != current.get('output_digest'):
+                    errors.append('last accepted graph event does not match active evidence snapshot')
+                elif ('snapshot_id' in events[-1] and
+                      events[-1]['snapshot_id'] != current.get('run_id')):
+                    errors.append('last accepted graph event has a different snapshot ID')
+            except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
+                errors.append(f'event-to-current binding invalid: {exc}')
     for path in roots.archive.rglob("*.json") if roots.archive.exists() else ():
         try:
             archived = json.loads(path.read_text(encoding="utf-8"))
