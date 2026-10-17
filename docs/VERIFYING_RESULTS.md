@@ -39,3 +39,9 @@ Prior-state validation happens **before** any accepted apply, including when the
 5. Treat WorkflowHub, LifeMonitor and bio.tools as externally verified states only when a genuine registry or monitoring record exists
 
 [Getting Started](GETTING_STARTED.md) · [Provenance](PROVENANCE.md) · [Maintenance](MAINTENANCE.md)
+
+## Cross-version knowledge review
+
+`ls-evidence audit-knowledge` performs an offline and bounded structural audit. Its digest and graph checks are not independent extraction verification: a newly recalculated digest can authenticate the bytes of a fabricated fragment without authenticating the external passage. Use `knowledge verify` with the fixed candidate and topic registry for source-text derivation, then separately review scientific relevance. The optional labeled set measures selection performance only on precisely those supplied cases; an unlabeled run returns null precision/recall. Source revision changes with unchanged selected text never imply scientific novelty.
+
+A separate read-only `life-science-continuity.yml` schedule can observe accepted Git state without acquiring write permission. Its success proves a single check at the recorded Git revision, not multiple-week production durability. The original production lifecycle alone owns allowed `data/` writes.
