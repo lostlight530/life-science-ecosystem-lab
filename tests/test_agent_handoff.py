@@ -87,6 +87,44 @@ class AgentHandoffTests(unittest.TestCase):
         self.assertFalse(validate_agent_handoff([]).valid)
         self.assertFalse(validate_agent_handoff({"kind": "OTHER"}).valid)
 
+    def test_valid_world_line_anchor_is_accepted(self):
+        value = copy.deepcopy(self.value)
+        value["base"] = {
+            "commit": "809be73fed2c452a9edbc5cd02e08a8809336eac",
+            "observed_at": "2026-10-17T03:46:00Z",
+        }
+        self.assertTrue(self.verdict(value).valid, self.verdict(value).errors)
+
+    def test_future_base_timestamp_is_rejected(self):
+        value = copy.deepcopy(self.value)
+        value["base"] = {
+            "commit": "809be73fed2c452a9edbc5cd02e08a8809336eac",
+            "observed_at": "2099-01-01T00:00:00Z",
+        }
+        verdict = self.verdict(value)
+        self.assertFalse(verdict.valid)
+        self.assertTrue(any("observed_at" in e for e in verdict.errors))
+
+    def test_bad_base_commit_is_rejected(self):
+        value = copy.deepcopy(self.value)
+        value["base"] = {"commit": "809be73", "observed_at": "2026-10-17T03:46:00Z"}
+        verdict = self.verdict(value)
+        self.assertFalse(verdict.valid)
+        self.assertTrue(any("base.commit" in e for e in verdict.errors))
+
+    def test_missing_base_stays_backward_compatible(self):
+        self.assertTrue(self.verdict().valid)
+
+    def test_observation_timestamp_is_validated_when_present(self):
+        good = copy.deepcopy(self.value)
+        good["observations"][0]["observed_at"] = "2026-10-17T03:46:00Z"
+        self.assertTrue(self.verdict(good).valid, self.verdict(good).errors)
+        bad = copy.deepcopy(self.value)
+        bad["observations"][0]["observed_at"] = "2026-10-17 03:46:00"
+        verdict = self.verdict(bad)
+        self.assertFalse(verdict.valid)
+        self.assertTrue(any("observed_at" in e for e in verdict.errors))
+
 
 if __name__ == "__main__":
     unittest.main()

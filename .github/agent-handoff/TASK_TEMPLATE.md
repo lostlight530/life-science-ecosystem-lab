@@ -10,6 +10,7 @@ Copy into your own task system or issue/PR; **do not** create a new GitHub Actio
 **Allowed actions:** network research, local evidence inspection, draft and reviewed PR
 **Disallowed actions:** bypass source registry, directly mutate accepted `data/`, invoke `persist=true`, claim enrollment or biological verification without proof
 **Desired deliverables:** source URLs + immutable Git revision when possible, findings vs uncertainty, proposed improvements and review steps
+**World-line anchor:** new handoff JSON declares `base: {commit, observed_at}` (immutable base SHA + UTC observation instant) — see SOP fresh-state protocol
 **Output:** structured handoff JSON, optional review Markdown, exact issue/PR/CI references or `NO_FINDINGS`
 **When incomplete:** report `BLOCKED` with evidence and next check; do not fabricate success
 **Schedule:** set separately in Jules / GPT / other Agent scheduler, if desired
