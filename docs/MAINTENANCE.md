@@ -25,11 +25,13 @@ Scheduled and explicitly authorized main-branch runs may write only to `data/`; 
 
 The public repository documents **observable behavior** and how to reproduce it. It does not publish internal research planning, private collaboration strategies or unsupported claims. Do not include internal documents in Git, uploaded Actions artifacts, CI logs or PR descriptions.
 
-## First native live-data acceptance drill
+## Native production operation
 
-The first accepted-cycle request is intentionally a one-off `main` push trigger scoped to `evidence/field-tests/2026-10-17-first-accepted-cycle.json` and an exact merge-title prefix `ops: first-accepted-cycle-20261017`. It executes the **existing two-job Knowledge Workflow**, not a separate simulated producer: one `contents: read` job collects verified live sources and emits an Artifact; the second `contents: write` job verifies the expected main SHA, applies the guarded lifecycle, verifies the accepted knowledge/graph and writes only `data/`. Failed validation emits bounded source diagnostic artifacts without publishing upstream document text. The first-cycle trigger must be retired by removing `on.push` and the push clause after the real run; schedule and manually authorized dispatch remain.
+The native Knowledge Workflow is intentionally **manual/scheduled only**. A manual run is authorized through GitHub Actions on `main` with `persist=true`; otherwise the dispatcher runs read-only. The schedule retains guarded acceptance. See [Production Operations](PRODUCTION_OPERATIONS.md) for separate evidence levels and the post-push remote-HEAD verification.
 
-**Scientific limitation:** an accepted Git commit is evidence that the software executed its specific source-linked computation and state checks, not that its topic matches constitute scientific truth. Approved source documents may be carried into accepted evidence state; review their licenses, notices, retention and replication before distributing derivative copies outside this repository.
+After collection, the read-only validation job passes an immutable source + knowledge Artifact to the write job. The write job verifies both the validated Git SHA and the current remote main world-line before applying, checks candidate/knowledge/graph/receipts, stages only `data/`, verifies the remote SHA again, and pushes. A **post-push** verification confirms the actual remote main ref equals the local accepted commit. Any failure is not accepted production.
+
+Failed validation uploads **diagnostics and docs-audit reports only**, when available. No private inputs or raw upstream document text are added to that failure-report Artifact. Real public upstream source content may be included in accepted `data/` snapshots under the established provenance policy, subject to source copyright/license review.
 
 ## Execution and production checkpoints
 

@@ -36,6 +36,17 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertTrue(uses)
         self.assertTrue(all(re.fullmatch(r"[0-9a-f]{40}", value) for value in uses))
 
+    def test_native_write_requires_manual_or_schedule_and_checks_remote_after_push(self):
+        workflow = (ROOT / ".github" / "workflows" / "life-science-knowledge.yml").read_text(encoding="utf-8")
+        self.assertNotIn("  push:", workflow)
+        self.assertIn("github.event_name == 'schedule'", workflow)
+        self.assertIn("inputs.persist == true", workflow)
+        self.assertIn("Verify remote accepted state matches local commit", workflow)
+        self.assertIn('verify_world_line.py --validated-head "$(git rev-parse HEAD)"', workflow)
+        self.assertIn("Preserve bounded diagnostics on validation failure", workflow)
+        self.assertIn("if: failure()", workflow)
+        self.assertIn("build/source-diagnostics.json", workflow)
+
     def test_validation_workflow_checks_profiles_and_caches(self):
         text = (ROOT / ".github" / "workflows" / "validate.yml").read_text(encoding="utf-8")
         self.assertIn("validate-source-registry", text)

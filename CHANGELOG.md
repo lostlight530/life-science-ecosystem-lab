@@ -2,8 +2,7 @@
 
 ## Unreleased · current working tree (package metadata 0.3.0)
 
-- Prepare the first native live-source production acceptance with a time-limited, path/commit-title scoped main-branch push trigger, existing validation+apply jobs and explicit authorization artifact
-- Preserve bounded source diagnostics on failing verification runs without exposing raw upstream text
+- Strengthen manual/scheduled native production operations with bounded validation-failure diagnostics and a mandatory post-push remote-main SHA verification
 
 - Run the real, read-only GitHub source and third-party software drill against four approved sources and pinned nf-core/rnaseq plus crs4/life_monitor revisions, with bounded reproducible artifacts
 - Recognize alternative citation guidance in actual bioinformatics repositories without claiming CFF compliance; distinguish root-level RO-Crate absence from nested workflow examples
