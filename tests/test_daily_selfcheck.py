@@ -109,5 +109,21 @@ class DailySelfcheckTests(unittest.TestCase):
             self.assertNotIn("official_documentation_url", second.read_text())
 
 
+    def test_official_catalogue_cannot_claim_fabricated_approval_or_extra_fields(self):
+        altered = copy.deepcopy(self.institutional)
+        altered["services"][0]["official_status"] = "CERTIFIED"
+        with self.assertRaisesRegex(ValueError, "unknown institutional catalogue fields"):
+            validate_official(altered)
+
+    def test_custom_manifest_refuses_fourth_asset_or_silent_scope_expansion(self):
+        altered = copy.deepcopy(self.project)
+        altered["required_commands"].append("ls-agent")
+        with self.assertRaisesRegex(ValueError, "three independently callable"):
+            validate_project_manifest(altered)
+        altered = copy.deepcopy(self.project)
+        altered["required_files"].append("/etc/passwd")
+        with self.assertRaises(ValueError):
+            validate_project_manifest(altered)
+
 if __name__ == "__main__":
     unittest.main()
