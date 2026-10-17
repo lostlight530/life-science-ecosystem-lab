@@ -16,7 +16,7 @@ This directory owns the scientific knowledge-production lifecycle, including wor
 | `runtime/life_science_ecosystem_lab/` | Native knowledge projection, memory and lifecycle engine |
 | `scripts/` | Provenance, world-line, write-boundary, RO-Crate checks |
 
-**LifeMonitor:** [`.lifemonitor.yaml`](../.lifemonitor.yaml) enables repository issue checks while leaving branch and tag tracking to the account-wide global settings. The installed App and accepted Bot PR are observed repository facts; workflow-test enrollment and periodic monitoring remain separately unverified
+**LifeMonitor:** [`lifemonitor.yaml`](../lifemonitor.yaml) uses the documented root-level config path and enables repository issue checks. It leaves branch/tag tracking, registry updates and visibility unspecified so account-wide settings remain authoritative. External recognition of this corrected file, workflow-test enrollment and periodic monitoring remain separately unverified
 
 **Publication boundaries:** WorkflowHub, LifeMonitor and additional registries require evidence of actual external registrations; a passing GitHub test is not proof of enrollment
 
