@@ -50,3 +50,15 @@ This checks local README/citation availability, RO-Crate main-entity links and b
 ## Degraded source observations
 
 The collector can emit optional-source diagnostics with `--diagnostics-output`; pass these to `aggregate --diagnostics`. A source-unavailable diagnostic remains machine-readable, and the candidate becomes `projection_eligible=false`: partial observations are not accepted into the durable corpus automatically.
+
+## Offline cross-version quality and interoperability checks
+
+```sh
+ls-evidence audit-knowledge --knowledge data/knowledge/current.json --output build/quality.json
+ls-evidence audit-knowledge --knowledge build/new-knowledge.json --previous data/knowledge/current.json --labels build/review-labels.json --output build/version-quality.json
+ls-evidence audit-ecosystem --root . --output build/interop.json
+```
+
+`audit-knowledge` validates a bounded knowledge-map envelope, content digest, citation identity, graph projection and coverage counts. With `--previous` it records additions, removals, content changes, source-revision-only changes and topic coverage transitions without automatically inferring scientific novelty. Optional `--labels` accepts `{"schema_version":"1.0.0","cases":[{"topic_id":"workflow-registration","repository":"owner/repo","path":"README.md","relevant":true}]}` for a fixed, reviewer-supplied precision/recall sample; no labels means no precision/recall claim. The audit cannot independently prove upstream excerpt correctness without the complete validated candidate or scientific truth in any case. Exit code 0 means structural PASS, not scientific certification.
+
+`audit-ecosystem` reviews local WorkflowHub RO-Crate/CWL packaging, LifeMonitor test metadata and tool/software descriptors. Its `NOT_VERIFIED` external statuses are intentional until actual registry, monitoring and third-party usage evidence exists. Its result is a local preflight, never platform certification or automatic registration.
