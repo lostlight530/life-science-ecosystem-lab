@@ -1,6 +1,11 @@
 name: Life Science Knowledge Workflow — Native Lifecycle
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - evidence/field-tests/2026-10-17-first-accepted-cycle.json
   workflow_dispatch:
     inputs:
       persist:
@@ -58,6 +63,16 @@ jobs:
         run: python -m evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
       - name: Record validation head
         run: printf '%s\n' "$GITHUB_SHA" > build/validated-head.txt
+      - name: Preserve bounded diagnostics on validation failure
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: life-science-validation-failure
+          path: |
+            build/source-diagnostics.json
+            build/docs-audit.json
+          if-no-files-found: ignore
+          retention-days: 14
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: life-science-verified-knowledge
@@ -74,7 +89,9 @@ jobs:
   apply:
     if: >-
       github.ref == 'refs/heads/main' &&
-      (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.persist == true))
+      (github.event_name == 'schedule' ||
+       (github.event_name == 'workflow_dispatch' && inputs.persist == true) ||
+       (github.event_name == 'push' && startsWith(github.event.head_commit.message, 'ops: first-accepted-cycle-20261017')))
     needs: validate
     runs-on: ubuntu-latest
     permissions:
@@ -95,6 +112,22 @@ jobs:
         with:
           name: life-science-verified-knowledge
           path: build
+      - name: Verify one-time write authorization
+        if: github.event_name == 'push'
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          marker = Path('evidence/field-tests/2026-10-17-first-accepted-cycle.json')
+          document = json.loads(marker.read_text(encoding='utf-8'))
+          assert document['scope'] == 'one-time verified source-cited production snapshot'
+          assert document['approved_target'] == os.environ['GITHUB_REPOSITORY']
+          assert document['branch'] == 'refs/heads/main'
+          assert document['persist_data_only'] is True
+          assert document['allow_external_execution'] is False
+          print('ONE_SHOT_SCOPE_VERIFIED')
+          PY
       - name: World-line precondition
         run: |
           python .github/scripts/verify_world_line.py --validated-head "$(cat build/validated-head.txt)"
