@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.3.0)
 
+- Introduce optional proposal-only external Agent research handoff (AGENTS.md, Jules/GPT-style SOP and task template, JSON example and CLI validator), without a new Agent service or write permission
+- Verify tracked repository cleanliness and ignore more developer-only caches/scratch paths while preserving accepted source history, production data, field evidence and receipts
+
 - Strengthen manual/scheduled native production operations with bounded validation-failure diagnostics and a mandatory post-push remote-main SHA verification
 
 - Run the real, read-only GitHub source and third-party software drill against four approved sources and pinned nf-core/rnaseq plus crs4/life_monitor revisions, with bounded reproducible artifacts

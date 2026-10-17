@@ -12,7 +12,7 @@ from evidence.documentation import audit_documents
 ROOT = Path(__file__).resolve().parents[1]
 
 PUBLIC_DOCS = {
-    "README.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md",
+    "README.md", "AGENTS.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md",
     ".github/README.md", ".github/knowledge/README.md", "evidence/README.md"
 }
 
