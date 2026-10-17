@@ -10,6 +10,10 @@ This open-source repository contains **three independently callable research-sof
 | [Evidence Tool](evidence/README.md) | `ls-evidence` independently | Software and evidence checks, JSON/Markdown/SARIF |
 | [Bio Tool](bio_tool/README.md) | `ls-bio` independently / CWL wrappers | Real protein FASTA/PDB file analysis and bounded JSON results |
 
+## Heterogeneous Agent cohort research
+
+[**谁说 Agent 集群不可以科研？ — An auditable multi-Agent research case**](docs/AGENT_CLUSTER_RESEARCH_CASE.md) documents three externally submitted contributions (local IDE, cloud observer, desktop Codex), their GitHub reviews, accepted corrections and evidentiary limits. [Decision ledger](docs/AGENT_REVIEW_DECISIONS.md) preserves the difference between a claim, its correction, code acceptance and independent scientific proof. Multiple Agent contributions are inspectable, but Agent runtime identity and independent scientific reproduction are not inferred from a shared Git account.
+
 ## First use: three independent paths
 
 **1. Try the Tool without network access or executing research code**
