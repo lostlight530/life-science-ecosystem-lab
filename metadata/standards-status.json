@@ -24,7 +24,7 @@
     "bio.tools registration": "EXTERNAL_VERIFICATION_REQUIRED",
     "LifeMonitor GitHub App": "INSTALLED_BOT_PR_EXTERNALLY_OBSERVED"
   },
-  "global_lifemonitor_defaults": "BRANCH_TAG_TRACKING_REGISTRY_UPDATES_AND_VISIBILITY_UNSPECIFIED_IN_REPOSITORY_CONFIG",
+  "global_lifemonitor_defaults": "BRANCH_TAG_TRACKING_REGISTRY_UPDATES_AND_VISIBILITY_LEFT_TO_ACCOUNT_GLOBAL_SETTINGS",
   "notes": "The root-level LifeMonitor config uses the documented filename and only sets repository name and issue checks; structural checks and CI are not independent external registration or scientific validity",
   "bio_tool": "bio_tool/cli.py",
   "lifemonitor_repository_config": {
