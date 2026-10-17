@@ -104,3 +104,10 @@ jobs:
             echo 'Generated cache files are not allowed'
             exit 1
           fi
+      - name: Publish reproducible public portable Workflow RO-Crate
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: life-science-portable-workflow-crate
+          path: build/portable-one.crate.zip
+          if-no-files-found: error
+          retention-days: 30
