@@ -85,7 +85,7 @@ def _validate_base(base: Any, errors: list[str]) -> None:
         errors.append("base.observed_at must be a UTC ISO-8601 instant (YYYY-MM-DDTHH:MM:SSZ) that is not in the future")
 
 
-def validate_agent_handoff(value: Any, *, known_topics: set[str] | None = None) -> HandoffVerdict:
+def validate_agent_handoff(value: Any, *, known_topics: set[str] | None = None, expected_base_commit: str | None = None) -> HandoffVerdict:
     errors: list[str] = []
     if not isinstance(value, dict):
         return HandoffVerdict(False, ("handoff must be a JSON object",))
@@ -146,4 +146,14 @@ def validate_agent_handoff(value: Any, *, known_topics: set[str] | None = None) 
         errors.append("limitations must be a bounded string array")
     if "base" in value:
         _validate_base(value.get("base"), errors)
+    if expected_base_commit is not None:
+        # The expected SHA MUST come from independently fetched trusted repository
+        # state, not from the submitted Agent handoff itself. Equality is a review
+        # precondition, not independent commit existence or ancestry verification.
+        if not isinstance(expected_base_commit, str) or not _SHA.fullmatch(expected_base_commit):
+            errors.append("expected_base_commit must be a 40-hex trusted repository commit")
+        elif not isinstance(value.get("base"), dict):
+            errors.append("trusted-base review requires a declared base anchor")
+        elif value["base"].get("commit") != expected_base_commit:
+            errors.append("STALE_BASE: submitted base.commit does not match the independently observed repository baseline")
     return HandoffVerdict(not errors, tuple(errors))
