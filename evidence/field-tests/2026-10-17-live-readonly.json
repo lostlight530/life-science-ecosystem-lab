@@ -60,7 +60,7 @@
         "WARN": 2,
         "FAIL": 0
       },
-      "report_digest": "2f4ae73fb429b122f32aa3f0824d41ff23474c3b0de8eae5ae379cf8c860ee51",
+      "report_digest": "80182e861497821495b16b1f6cfb40666222f942f0203a6e06d81a3c11b9f8e1",
       "specific_finding": "CITATIONS.md citation guidance exists despite no root CITATION.cff; RO-Crate main.nf path verified"
     },
     {
@@ -72,7 +72,7 @@
         "WARN": 3,
         "FAIL": 0
       },
-      "report_digest": "52092a9896ebb361bfc101b157034b4b4a29b794cd715cf6053dedb172eeaf80",
+      "report_digest": "7c12ffbec6093caf6e40aa4c79d490d4ca49566138d4552a8704b1b1f14df024",
       "specific_finding": "No root RO-Crate; service repository contains nested examples outside the root inspector's scope"
     }
   ],
@@ -83,5 +83,6 @@
     "No scientific validity claim",
     "No independent WorkflowHub/LifeMonitor enrollment verification",
     "Reports inspect pinned snapshots, not external code execution"
-  ]
+  ],
+  "verification_note": "Inspection digests recomputed independently from the downloaded GitHub Actions artifact JSON reports; the earlier index hashes were incorrect."
 }
