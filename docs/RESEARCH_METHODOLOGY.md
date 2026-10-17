@@ -40,6 +40,8 @@ python -m unittest discover -s tests -p 'test_research_case.py' -v
 
 The current fixed protein examples illustrate data-quality computation and pinned Git identity; the scientific-workflow corpus illustrates evidence/knowledge lifecycle and replay. These prove specific contracts in particular cases—not generalized biological or scientific correctness. Replacing the examples to test transferability must retain fixed core gates while documenting new failure modes, negative controls, reference sets, measurement limitations and independent reviewer evidence. Example choice can vary; **sampling and scientific conclusions still require an explicit, reproducible design**.
 
+Synthetic fixtures are permitted only for labeled software-contract regression. They cannot be presented as field samples, external observations, benchmark ground truth or evidence for a scientific conclusion. A field case described as real must bind the actual source bytes to an immutable source identity and digest, preserve licensing and measurement limits, and retain negative or failed outcomes without substituting fabricated success data.
+
 ## Cross-version durability
 
 Distinguish document revision-only change from changed source content, method version from data version, and rerun execution identity from accepted content identity. Log unverified hypotheses separately from measured outcomes. Never infer durable scheduled production from one green CI run. A DOI, workflow registry identifier, external GitHub App installation or software citation describes a different layer from scientific method validation.

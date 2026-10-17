@@ -2,7 +2,7 @@
 
 **Three independently callable life-science research software assets: Knowledge Workflow, Evidence Tool and Bio Tool**
 
-This open-source repository contains **three independently callable research-software assets**. Both can be used separately, tested separately, and composed through public file/CLI interfaces. GitHub Actions operates the native knowledge workflow; it is not a third asset. External Agents and human research are independent collaborators, **not runtime requirements**.
+This open-source repository contains **three independently callable research-software assets**. All three can be used separately, tested separately, and composed through public file/CLI interfaces. GitHub Actions operates the Knowledge Workflow; it is the native execution environment for that asset, not a fourth asset. External Agents and human research are independent collaborators, **not runtime requirements**.
 
 | Asset | Execution | Primary output |
 | --- | --- | --- |
