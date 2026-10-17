@@ -19,6 +19,7 @@ from .inspection import inspect_repository, write_reports
 from .agent_handoff import validate_agent_handoff
 from .knowledge_quality import audit_knowledge
 from .interoperability import audit_ecosystem
+from .research_case import research_case_shape_report
 from .aggregation import canonical_bytes
 from .normalization import sha256_bytes
 
@@ -51,6 +52,9 @@ def parser() -> argparse.ArgumentParser:
     handoff.add_argument("--input", type=Path, required=True)
     handoff.add_argument("--topics", type=Path, required=True, help="Current native topic registry; does not authorize new topics")
     handoff.add_argument("--expected-base-sha", help="40-hex default-branch SHA independently fetched by the reviewer; reject stale or absent proposal base")
+    research = commands.add_parser("validate-research-case", help="Validate replaceable scientific case against fixed methodology, proposal shape only")
+    research.add_argument("--input", type=Path, required=True)
+    research.add_argument("--output", type=Path, required=True)
     eco = commands.add_parser("audit-ecosystem", help="Local WorkflowHub/LifeMonitor/bio.tools interoperability preflight, not registration")
     eco.add_argument("--root", type=Path, default=Path("."))
     eco.add_argument("--output", type=Path, required=True)
@@ -117,6 +121,14 @@ def main(argv: list[str] | None = None) -> int:
             write_reports(report, args.output, markdown=args.markdown, sarif=args.sarif)
             print('INSPECTION_' + report['status'])
             return 1 if report["status"] == "FAIL" else 0
+        elif args.command == 'validate-research-case':
+            if args.input.stat().st_size > 250_000:
+                raise ValueError("research case exceeds 250KB bound")
+            payload = research_case_shape_report(json.loads(args.input.read_text(encoding='utf-8')))
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False, allow_nan=False) + '\n', encoding='utf-8')
+            print('RESEARCH_CASE_' + payload['status'] + '_PROPOSAL_SHAPE_ONLY')
+            return 0 if payload["status"] == "PASS" else 1
         elif args.command == 'audit-ecosystem':
             payload = audit_ecosystem(args.root)
         elif args.command == 'audit-knowledge':
