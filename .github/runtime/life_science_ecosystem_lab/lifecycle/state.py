@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, Mapping
 
 from evidence.validation import validate_candidate_bundle
+from ..graph import verify_graph, verify_graph_events
 
 
 def _bytes(value: Mapping[str, Any]) -> bytes:
@@ -65,6 +66,16 @@ def verify_state(roots: StateRoots) -> ValidationReport:
                 errors.extend("current: " + e for e in report.errors)
         except (OSError, json.JSONDecodeError) as exc:
             errors.append(str(exc))
+    knowledge_path = roots.root / "data" / "knowledge" / "current.json"
+    if knowledge_path.exists():
+        try:
+            knowledge = json.loads(knowledge_path.read_text(encoding="utf-8"))
+            if isinstance(knowledge, dict) and isinstance(knowledge.get("knowledge_graph"), dict):
+                graph_dir = knowledge_path.parent
+                verify_graph(graph_dir, knowledge)
+                verify_graph_events(graph_dir)
+        except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
+            errors.append(f"knowledge graph integrity: {exc}")
     for path in roots.archive.rglob("*.json") if roots.archive.exists() else ():
         try:
             archived = json.loads(path.read_text(encoding="utf-8"))

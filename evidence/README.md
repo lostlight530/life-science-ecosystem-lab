@@ -40,3 +40,7 @@ ls-evidence inspect --root /path/to/research-software --output build/report.json
 ```
 
 This checks local README/citation availability, RO-Crate main-entity links and basic Bioschemas JSON-LD identities when present. It records missing optional metadata as warnings and deliberately does **not** certify bio.tools eligibility, external registrations, scientific truth or workflow execution. It leaves the inspected project untouched. See [public interfaces](../docs/PUBLIC_INTERFACES.md).
+
+## Degraded source observations
+
+The collector can emit optional-source diagnostics with `--diagnostics-output`; pass these to `aggregate --diagnostics`. A source-unavailable diagnostic remains machine-readable, and the candidate becomes `projection_eligible=false`: partial observations are not accepted into the durable corpus automatically.

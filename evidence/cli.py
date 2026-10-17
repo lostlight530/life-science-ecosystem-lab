@@ -76,6 +76,9 @@ def main(argv: list[str] | None = None) -> int:
                 if not isinstance(diagnostics, list) or not all(isinstance(i, dict) for i in diagnostics):
                     raise ValueError("diagnostics must be an array of objects")
                 payload["diagnostics"] = diagnostics
+                # Partial observations may be inspected, but must not overwrite
+                # the durable knowledge corpus while a source was unavailable
+                payload["projection_eligible"] = not bool(diagnostics)
                 body = dict(payload)
                 body.pop("output_digest", None)
                 payload["output_digest"] = sha256_bytes(canonical_bytes(body))
