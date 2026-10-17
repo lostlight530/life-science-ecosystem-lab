@@ -1,0 +1,105 @@
+name: Life Science Bio Tool — Independent Data Processing
+
+on:
+  pull_request:
+    paths:
+      - 'bio_tool/**'
+      - '.github/bio/**'
+      - '.github/workflows/life-science-bio.yml'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'metadata/**'
+  push:
+    branches: [main]
+    paths:
+      - 'bio_tool/**'
+      - '.github/bio/**'
+      - '.github/workflows/life-science-bio.yml'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'metadata/**'
+  workflow_dispatch:
+  schedule:
+    - cron: "19 2 * * 5"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: life-science-bio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONPATH: ".github/runtime:."
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - name: Install the independently callable Bio Tool and CWL
+        run: |
+          python -m pip install --no-deps -e .
+          python -m pip install cwltool
+      - name: Prove bounded biological data analysis and public metadata
+        run: |
+          python -m unittest discover -s tests -v
+          python .github/scripts/check_metadata.py
+          ls-bio --help
+          mkdir -p build/bio
+          ls-bio protein-fasta --input .github/bio/test/example.fasta --output build/bio/fasta-one.json
+          ls-bio protein-fasta --input .github/bio/test/example.fasta --output build/bio/fasta-two.json
+          cmp build/bio/fasta-one.json build/bio/fasta-two.json
+          ls-bio protein-pdb --input .github/bio/test/example.pdb --output build/bio/pdb-one.json
+          ls-bio protein-pdb --input .github/bio/test/example.pdb --output build/bio/pdb-two.json
+          cmp build/bio/pdb-one.json build/bio/pdb-two.json
+      - name: Replay actual biological file processing via CWL
+        run: |
+          mkdir -p build/bio/cwl-fasta build/bio/cwl-pdb
+          cwltool --no-container --outdir build/bio/cwl-fasta .github/bio/protein-fasta.cwl --fasta .github/bio/test/example.fasta
+          cwltool --no-container --outdir build/bio/cwl-pdb .github/bio/protein-pdb.cwl --pdb .github/bio/test/example.pdb
+          cmp build/bio/fasta-one.json build/bio/cwl-fasta/protein-fasta-report.json
+          cmp build/bio/pdb-one.json build/bio/cwl-pdb/protein-pdb-report.json
+      - name: Publish compact reports only
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: life-science-bio-offline-audit
+          path: |
+            build/bio/fasta-one.json
+            build/bio/pdb-one.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+  pinned-field:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      PYTHONPATH: ".github/runtime:."
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - name: Verify immutable external research examples before processing
+        run: |
+          python -m bio_tool.pinned_samples --manifest evidence/profiles/research/protein_structure/sample-manifest.json --output build/bio/pinned-sample-report.json
+      - name: Publish metadata-only pinned-source measurements
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: life-science-bio-pinned-field
+          path: build/bio/pinned-sample-report.json
+          if-no-files-found: ignore
+          retention-days: 14
