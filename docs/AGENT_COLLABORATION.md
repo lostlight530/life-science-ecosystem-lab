@@ -1,6 +1,6 @@
 # External Agent research handoff · optional interoperability
 
-The Life Science Ecosystem Lab has **two peer software assets**, not an embedded Agent orchestration service. The existing [Knowledge Workflow](../.github/README.md) is authoritative for approved-source ingestion, native topic matching, graph projection, accepted `data/` state, receipts and Git-based replay; the independent [Evidence Tool](../evidence/README.md) is a reusable validator and inspector. Neither requires an LLM API or an Agent scheduler.
+The Life Science Ecosystem Lab has **three peer software assets**, not an embedded Agent orchestration service. The independent [Bio Tool](../bio_tool/README.md) processes supplied protein FASTA/PDB files without an Agent. The existing [Knowledge Workflow](../.github/README.md) is authoritative for approved-source ingestion, native topic matching, graph projection, accepted `data/` state, receipts and Git-based replay; the independent [Evidence Tool](../evidence/README.md) is a reusable validator and inspector. Neither requires an LLM API or an Agent scheduler.
 
 ## Three deliberately separate clocks
 
