@@ -39,8 +39,13 @@ def _safe_path(value: Any) -> bool:
 def _source_url(value: Any) -> bool:
     if not _text(value, limit=2000):
         return False
-    parsed = urlsplit(value)
-    if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password or parsed.fragment:
+    try:
+        parsed = urlsplit(value)
+        valid_host = parsed.hostname
+        has_credentials = parsed.username or parsed.password
+    except ValueError:
+        return False
+    if parsed.scheme != "https" or not parsed.netloc or not valid_host or has_credentials or parsed.fragment:
         return False
     if parsed.hostname == "github.com" and parsed.path.count("/") >= 4 and "/blob/" in parsed.path:
         matched = _GITHUB_BLOB.fullmatch(parsed.path)
