@@ -171,5 +171,22 @@ class AgentHandoffTests(unittest.TestCase):
                     "--expected-base-sha", "3" * 40])
             self.assertEqual(code, 2)
 
+    def test_optional_agent_proposer_is_self_declared_not_authenticated(self):
+        value = copy.deepcopy(self.value)
+        self.assertTrue(self.verdict(value).valid)
+        value["proposer"] = {
+            "agent_label": "Clinder", "execution_surface": "Local WorkBuddy IDE",
+            "assertion": "SELF_DECLARED"
+        }
+        self.assertTrue(self.verdict(value).valid, self.verdict(value).errors)
+        value["proposer"]["assertion"] = "GITHUB_VERIFIED"
+        verdict = self.verdict(value)
+        self.assertFalse(verdict.valid)
+        self.assertTrue(any("SELF_DECLARED" in err for err in verdict.errors))
+        value["proposer"]["assertion"] = "SELF_DECLARED"
+        value["proposer"]["agent_label"] = ""
+        self.assertFalse(self.verdict(value).valid)
+
+
 if __name__ == "__main__":
     unittest.main()
