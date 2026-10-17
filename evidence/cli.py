@@ -16,6 +16,7 @@ from .github import GitHubTransportError, UrlLibGitHubTransport
 from .profiles import load_source_registry, load_topic_registry
 from .validation import validate_candidate_bundle
 from .inspection import inspect_repository, write_reports
+from .agent_handoff import validate_agent_handoff
 from .aggregation import canonical_bytes
 from .normalization import sha256_bytes
 
@@ -44,6 +45,9 @@ def parser() -> argparse.ArgumentParser:
     inspect.add_argument("--output", type=Path, required=True)
     inspect.add_argument("--markdown", type=Path)
     inspect.add_argument("--sarif", type=Path)
+    handoff = commands.add_parser("validate-handoff", help="Validate an optional, proposal-only external Agent research handoff")
+    handoff.add_argument("--input", type=Path, required=True)
+    handoff.add_argument("--topics", type=Path, required=True, help="Current native topic registry; does not authorize new topics")
     find = commands.add_parser("discover", help="Find unapproved GitHub topic candidates")
     find.add_argument("--topic", required=True)
     find.add_argument("--limit", type=int, default=20)
@@ -102,6 +106,14 @@ def main(argv: list[str] | None = None) -> int:
             write_reports(report, args.output, markdown=args.markdown, sarif=args.sarif)
             print('INSPECTION_' + report['status'])
             return 1 if report["status"] == "FAIL" else 0
+        elif args.command == 'validate-handoff':
+            value = json.loads(args.input.read_text(encoding='utf-8'))
+            topics = load_topic_registry(args.topics)
+            verdict = validate_agent_handoff(value, known_topics={item["id"] for item in topics.topics})
+            if not verdict.valid:
+                raise ValueError("; ".join(verdict.errors))
+            print("AGENT_HANDOFF_SHAPE_VALID_PROPOSAL_ONLY")
+            return 0
         elif args.command == 'discover':
             payload = discover_repositories(args.topic, limit=args.limit)
         else:
