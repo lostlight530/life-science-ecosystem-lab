@@ -25,6 +25,14 @@ Scheduled and explicitly authorized main-branch runs may write only to `data/`; 
 
 The public repository documents **observable behavior** and how to reproduce it. It does not publish internal research planning, private collaboration strategies or unsupported claims. Do not include internal documents in Git, uploaded Actions artifacts, CI logs or PR descriptions.
 
+## Native production operation
+
+The native Knowledge Workflow is intentionally **manual/scheduled only**. A manual run is authorized through GitHub Actions on `main` with `persist=true`; otherwise the dispatcher runs read-only. The schedule retains guarded acceptance. See [Production Operations](PRODUCTION_OPERATIONS.md) for separate evidence levels and the post-push remote-HEAD verification.
+
+After collection, the read-only validation job passes an immutable source + knowledge Artifact to the write job. The write job verifies both the validated Git SHA and the current remote main world-line before applying, checks candidate/knowledge/graph/receipts, stages only `data/`, verifies the remote SHA again, and pushes. A **post-push** verification confirms the actual remote main ref equals the local accepted commit. Any failure is not accepted production.
+
+Failed validation uploads **diagnostics and docs-audit reports only**, when available. No private inputs or raw upstream document text are added to that failure-report Artifact. Real public upstream source content may be included in accepted `data/` snapshots under the established provenance policy, subject to source copyright/license review.
+
 ## Execution and production checkpoints
 
 - `candidate.run_id` / `receipt.snapshot_id`: content-derived snapshot identity, legitimately reused if upstream content is restored

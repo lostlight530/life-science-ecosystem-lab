@@ -7,6 +7,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Install and run either asset from a clean checkout | [Getting Started](GETTING_STARTED.md) |
 | Know what a report proves, how to reproduce it, or why a CI check passes | [Understanding Verification](VERIFYING_RESULTS.md) |
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |
+| Run and verify a real guarded production acceptance | [Production Operations](PRODUCTION_OPERATIONS.md) |
 | Understand two independent assets and native state ownership | [Architecture](ARCHITECTURE.md) |
 | Integrate through command-line / JSONL / SARIF interfaces | [Public Interfaces](PUBLIC_INTERFACES.md) |
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |

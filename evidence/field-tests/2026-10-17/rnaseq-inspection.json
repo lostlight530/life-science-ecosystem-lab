@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "RESEARCH_SOFTWARE_EVIDENCE_INSPECTION",
+  "status": "WARN",
+  "counts": {
+    "PASS": 2,
+    "WARN": 2,
+    "FAIL": 0
+  },
+  "observed_files": [
+    "CITATIONS.md",
+    "README.md",
+    "main.nf",
+    "ro-crate-metadata.json"
+  ],
+  "findings": [
+    {
+      "rule": "documentation.readme",
+      "status": "PASS",
+      "detail": "README available",
+      "path": "README.md"
+    },
+    {
+      "rule": "citation.alternative",
+      "status": "WARN",
+      "detail": "CITATION.cff absent; alternative citation guidance at CITATIONS.md (not CFF validation)",
+      "path": "CITATIONS.md"
+    },
+    {
+      "rule": "rocrate.main_entity",
+      "status": "PASS",
+      "detail": "Main workflow referenced by existing local file",
+      "path": "main.nf"
+    },
+    {
+      "rule": "bioschemas.present",
+      "status": "WARN",
+      "detail": "No successfully inspected Bioschemas descriptor",
+      "path": ""
+    }
+  ],
+  "scope": "local, static, nonexecuting, basic scientific-software identity and metadata preflight",
+  "unverified": [
+    "scientific validity",
+    "external registrations",
+    "full standards conformance",
+    "remote links",
+    "workflow reproducibility"
+  ],
+  "report_sha256": "80182e861497821495b16b1f6cfb40666222f942f0203a6e06d81a3c11b9f8e1"
+}

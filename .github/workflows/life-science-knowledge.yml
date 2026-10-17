@@ -58,6 +58,16 @@ jobs:
         run: python -m evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
       - name: Record validation head
         run: printf '%s\n' "$GITHUB_SHA" > build/validated-head.txt
+      - name: Preserve bounded diagnostics on validation failure
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: life-science-validation-failure
+          path: |
+            build/source-diagnostics.json
+            build/docs-audit.json
+          if-no-files-found: ignore
+          retention-days: 14
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: life-science-verified-knowledge
@@ -120,3 +130,5 @@ jobs:
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: persist verified workflow knowledge snapshot'
             git push origin HEAD:main
           fi
+      - name: Verify remote accepted state matches local commit
+        run: python .github/scripts/verify_world_line.py --validated-head "$(git rev-parse HEAD)"
