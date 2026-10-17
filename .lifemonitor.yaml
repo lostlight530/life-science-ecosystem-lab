@@ -1,0 +1,7 @@
+# LifeMonitor GitHub App repository identity and issue-check policy.
+# All branch/tag version tracking inherits the account-wide LifeMonitor
+# Global Settings; no repository-level push override is specified.
+# WorkflowHub registration and visibility are managed in LifeMonitor itself.
+name: "Life Science Knowledge Lifecycle — GitHub Actions"
+issues:
+  check: true
