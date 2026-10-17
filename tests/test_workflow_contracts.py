@@ -57,7 +57,7 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("unittest discover -s tests -v", project)
         self.assertNotIn("needs:", institutional)
         self.assertNotIn("needs:", project)
-        self.assertIn("permissions:\\n  contents: read", text)
+        self.assertIn("permissions:\n  contents: read", text)
         self.assertIn("persist-credentials: false", institutional)
 
     def test_validation_workflow_checks_profiles_and_caches(self):
