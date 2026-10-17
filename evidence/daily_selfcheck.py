@@ -65,7 +65,7 @@ def validate_official(value: dict[str, Any]) -> list[dict[str, str]]:
         if not isinstance(row, dict) or set(row) != {"id", "public_probe_url", "official_documentation_url"}:
             raise ValueError("unknown institutional catalogue fields")
         key = row.get("id")
-        if key not in OFFICIAL or key in seen:
+        if not isinstance(key, str) or key not in OFFICIAL or key in seen:
             raise ValueError("unknown or duplicate official service id")
         seen.add(key)
         if (row["public_probe_url"], row["official_documentation_url"]) != OFFICIAL[key]:
@@ -134,7 +134,7 @@ def validate_project_manifest(value: dict[str, Any]) -> list[str]:
     if set(value) != {"schema_version", "scope", "required_files", "required_commands"} or value["schema_version"] != "1.0.0" or value["scope"] != "PROJECT_CUSTOM_CONTRACT":
         raise ValueError("invalid custom-project manifest contract")
     files, commands = value["required_files"], value["required_commands"]
-    if not isinstance(files, list) or not 12 <= len(files) <= 100 or len(files) != len(set(files)):
+    if not isinstance(files, list) or not 12 <= len(files) <= 100 or not all(isinstance(x, str) for x in files) or len(files) != len(set(files)):
         raise ValueError("custom files must be a bounded, unique list")
     if commands != ["ls-knowledge", "ls-evidence", "ls-bio"]:
         raise ValueError("three independently callable research assets required")
