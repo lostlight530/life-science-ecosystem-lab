@@ -103,10 +103,10 @@ class CollectorCliTests(unittest.TestCase):
             path.write_text(json.dumps(candidate), encoding="utf-8")
             code = main([
                 "lifecycle", "apply", "--candidate", str(path), "--repository-root", str(root),
-                "--logical-date", "2026-10-16", "--validated-head", "1" * 40, "--current-head", "1" * 40,
+                "--logical-date", "2026-10-16", "--validated-head", "1" * 40, "--current-head", "1" * 40, "--execution-id", "fixture-cli-1",
             ])
             self.assertEqual(code, 0)
-            self.assertTrue((root / "data" / "receipts" / f"{candidate['run_id']}.json").is_file())
+            self.assertTrue((root / "data" / "receipts" / "fixture-cli-1.json").is_file())
 
 
 if __name__ == "__main__":
