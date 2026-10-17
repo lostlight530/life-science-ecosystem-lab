@@ -185,9 +185,12 @@ def append_graph_event(directory: Path, *, receipt: Mapping[str, Any]) -> dict[s
     path = directory / "events.jsonl"
     prior = _read_jsonl(path) if path.exists() else []
     previous = prior[-1]["event_sha256"] if prior else None
-    event = {"schema_version": "1.0.0", "run_id": receipt["run_id"],
+    event = {"schema_version": "1.0.0", "run_id": receipt.get("execution_id", receipt["run_id"]),
              "logical_date": receipt["logical_date"], "outcome": "APPLIED",
              "evidence_digest": receipt["output_digest"], "previous_event_sha256": previous}
+    if "execution_id" in receipt:
+        event["snapshot_id"] = receipt["run_id"]
+        event["change_kind"] = receipt["change_kind"]
     event["event_sha256"] = _digest(event)
     if any(x.get("run_id") == event["run_id"] for x in prior):
         raise ValueError("duplicate event run_id")

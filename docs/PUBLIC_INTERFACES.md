@@ -13,6 +13,7 @@ Both are usable by researchers and ordinary programs. Neither depends on a confi
 - Inputs: approved GitHub source registry, topic registry, verified evidence candidate
 - Outputs: source-cited knowledge JSON, JSONL graph projection, bounded graph-search responses, reproducible receipts
 - Durable authority: repository `data/` and accepted Git history, **not** a transient SQLite index
+- Accepted receipt identity: `snapshot_id` identifies content; `execution_id` identifies the actual GitHub/local attempt; `change_kind` describes what changed. Use `ls-knowledge state verify --repository-root . --require-accepted` for a production acceptance claim
 
 Commands:
 

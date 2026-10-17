@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import re
+import uuid
 from pathlib import Path
 from typing import Any, Mapping
 
@@ -11,6 +13,12 @@ from ..knowledge import verify_knowledge
 from ..graph import write_graph, append_graph_event
 from .guard import check_write_boundary, world_line_matches
 from .state import StateRoots, apply_candidate, verify_state
+
+
+def _document_identity(candidate: Mapping[str, Any]) -> list[tuple[str, str, str, str]]:
+    """Compare selected document text, not incidental source revision metadata."""
+    return sorted((str(r['source_id']), str(r['repository']), str(r['path']), str(r['content_sha256']))
+                  for r in candidate.get('records', []))
 
 
 def _write_json(path: Path, value: Mapping[str, Any]) -> None:
@@ -33,7 +41,12 @@ def apply_lifecycle(
     current_head: str,
     knowledge: Mapping[str, Any] | None = None,
     topic_registry: Mapping[str, Any] | None = None,
+    execution_id: str | None = None,
 ) -> dict[str, Any]:
+    # Candidate run_id is a content snapshot, not a unique execution attempt.
+    execution_id = execution_id if execution_id is not None else 'local-' + uuid.uuid4().hex
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', execution_id):
+        raise ValueError('execution_id must be a safe, bounded file identifier')
     report = validate_candidate_bundle(candidate)
     if not report.valid or candidate.get("projection_eligible") is not True:
         return {"outcome": "VALIDATION_FAILED", "errors": list(report.errors)}
@@ -50,8 +63,9 @@ def apply_lifecycle(
             "validated_head": validated_head,
             "current_head": current_head,
         }
-    if roots.current.exists():
-        active = json.loads(roots.current.read_text(encoding="utf-8"))
+    previous_candidate = json.loads(roots.current.read_text(encoding='utf-8')) if roots.current.exists() else None
+    if previous_candidate is not None:
+        active = previous_candidate
         previous_knowledge = roots.root / "data" / "knowledge" / "current.json"
         same_knowledge = (knowledge is None or
                           (previous_knowledge.exists() and json.loads(previous_knowledge.read_text(encoding="utf-8")) == knowledge))
@@ -59,11 +73,24 @@ def apply_lifecycle(
                 active.get("profile_digest") == candidate.get("profile_digest") and same_knowledge):
             return {"outcome": "NO_MEANINGFUL_DELTA", "output_digest": candidate["output_digest"]}
 
+    if previous_candidate is None:
+        change_kind = 'INITIAL_SNAPSHOT'
+    elif previous_candidate.get('profile_digest') != candidate.get('profile_digest'):
+        change_kind = 'TOPIC_PROFILE_CHANGE'
+    elif _document_identity(previous_candidate) == _document_identity(candidate):
+        change_kind = 'DOCUMENT_TEXT_UNCHANGED'
+    else:
+        change_kind = 'DOCUMENT_CONTENT_OR_SELECTION_CHANGE'
+
+    receipt_path = roots.root / 'data' / 'receipts' / f'{execution_id}.json'
+    if receipt_path.exists():
+        raise ValueError(f'execution_id already has an accepted receipt: {execution_id}')
+
     changed = [
         "data/inputs/current/candidate.json",
         "data/knowledge/current.json",
         "data/memories/current.json",
-        f"data/receipts/{candidate['run_id']}.json",
+        f'data/receipts/{execution_id}.json',
     ]
     if knowledge is not None:
         changed.extend([
@@ -94,6 +121,7 @@ def apply_lifecycle(
     memory = {
         "schema_version": "1.0.0",
         "source_bundle": candidate["output_digest"],
+        "change_kind": change_kind,
         "record_count": len(candidate.get("records", [])),
         "topic_count": len(candidate.get("topics", [])),
         "previous_knowledge_digest": old_knowledge.get("knowledge_digest"),
@@ -104,6 +132,9 @@ def apply_lifecycle(
     receipt: dict[str, Any] = {
         "schema_version": "1.0.0",
         "run_id": candidate["run_id"],
+        "snapshot_id": candidate["run_id"],
+        "execution_id": execution_id,
+        "change_kind": change_kind,
         "logical_date": logical_date,
         "validated_head": validated_head,
         "current_head": current_head,
@@ -115,12 +146,12 @@ def apply_lifecycle(
     apply_candidate(candidate, roots, logical_date=logical_date)
     _write_json(roots.root / "data" / "knowledge" / "current.json", knowledge_output)
     _write_json(roots.root / "data" / "memories" / "current.json", memory)
-    _write_json(roots.root / "data" / "receipts" / f"{candidate['run_id']}.json", receipt)
+    _write_json(receipt_path, receipt)
     if knowledge is not None:
         graph_root = roots.root / "data" / "knowledge"
         write_graph(knowledge_output, graph_root)
         append_graph_event(graph_root, receipt=receipt)
-    final = verify_state(roots)
+    final = verify_state(roots, require_accepted=knowledge is not None)
     if not final.valid:
         raise ValueError("final state validation failed: " + "; ".join(final.errors))
     return receipt
