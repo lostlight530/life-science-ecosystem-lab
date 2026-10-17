@@ -50,6 +50,7 @@ def parser() -> argparse.ArgumentParser:
     handoff = commands.add_parser("validate-handoff", help="Validate an optional, proposal-only external Agent research handoff")
     handoff.add_argument("--input", type=Path, required=True)
     handoff.add_argument("--topics", type=Path, required=True, help="Current native topic registry; does not authorize new topics")
+    handoff.add_argument("--expected-base-sha", help="40-hex default-branch SHA independently fetched by the reviewer; reject stale or absent proposal base")
     eco = commands.add_parser("audit-ecosystem", help="Local WorkflowHub/LifeMonitor/bio.tools interoperability preflight, not registration")
     eco.add_argument("--root", type=Path, default=Path("."))
     eco.add_argument("--output", type=Path, required=True)
@@ -134,10 +135,10 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == 'validate-handoff':
             value = json.loads(args.input.read_text(encoding='utf-8'))
             topics = load_topic_registry(args.topics)
-            verdict = validate_agent_handoff(value, known_topics={item["id"] for item in topics.topics})
+            verdict = validate_agent_handoff(value, known_topics={item["id"] for item in topics.topics}, expected_base_commit=args.expected_base_sha)
             if not verdict.valid:
                 raise ValueError("; ".join(verdict.errors))
-            print("AGENT_HANDOFF_SHAPE_VALID_PROPOSAL_ONLY")
+            print("AGENT_HANDOFF_TRUSTED_BASE_MATCH_PROPOSAL_ONLY" if args.expected_base_sha else "AGENT_HANDOFF_SHAPE_VALID_PROPOSAL_ONLY")
             return 0
         elif args.command == 'discover':
             payload = discover_repositories(args.topic, limit=args.limit)
