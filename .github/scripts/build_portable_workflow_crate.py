@@ -27,6 +27,13 @@ REQUIRED = (
     "evidence/examples/evidence-records.json",
     "evidence/profiles/topics.json",
     "evidence/profiles/sources.json",
+    "bio_tool/README.md",
+    ".github/bio/protein-fasta.cwl",
+    ".github/bio/protein-pdb.cwl",
+    ".github/bio/test/example.fasta",
+    ".github/bio/test/example.pdb",
+    "metadata/biotools-protein-audit.draft.json",
+    "metadata/bioschemas-bio-tool.jsonld",
 )
 PORTABLE_README = """# Source-grounded research workflow knowledge cartography
 
@@ -41,7 +48,7 @@ Requirements: Python 3.11+, pip and the CWL reference runner
     python -m pip install cwltool
     cwltool --no-container --outdir build/replay .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
 
-The included records are synthetic examples. Use externally validated records
+A separate ls-bio command supports protein FASTA/PDB file-level analysis. The included records are synthetic examples. Use externally validated records
 only with appropriate source licenses and permission. See the public repository
 for actual native ingestion, acceptance and provenance controls.
 """
@@ -72,6 +79,7 @@ def build(path: Path) -> None:
     files.update(name for name in NATIVE_CRATE_FILES if name not in ("README.md", "ro-crate-metadata.json"))
     files.update(p.relative_to(ROOT).as_posix() for p in (ROOT / ".github/runtime").rglob("*.py"))
     files.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "evidence").glob("*.py"))
+    files.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "bio_tool").glob("*.py"))
     if not files or any(not (ROOT / name).is_file() or name.startswith("data/") for name in files):
         raise ValueError("missing or invalid source file in portable crate")
     crate["hasPart"] = [{"@id": name} for name in sorted(files)] + [{"@id": "README.md"}]
