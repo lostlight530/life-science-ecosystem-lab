@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.3.0)
 
+- Real external-Agent protein-structure prediction field case: six pinned GitHub sources, four native topics, seven SHA-verified FASTA/PDB/JSON examples, independent Evidence Tool inspection, CWL replay, FTS5 search and isolated acceptance/no-change lifecycle
+
+
 - Introduce optional proposal-only external Agent research handoff (AGENTS.md, Jules/GPT-style SOP and task template, JSON example and CLI validator), without a new Agent service or write permission
 - Verify tracked repository cleanliness and ignore more developer-only caches/scratch paths while preserving accepted source history, production data, field evidence and receipts
 
