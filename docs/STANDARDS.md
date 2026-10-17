@@ -1,5 +1,7 @@
 # Standards mapping and external status
 
+[Documentation index](README.md) · [Understanding results](VERIFYING_RESULTS.md)
+
 This document lists supported *software-interface mappings*, not certifications.
 
 | Standard / service | Repository interface | Meaning |

@@ -7,12 +7,34 @@ on:
       - '.github/workflows/life-science-evidence.yml'
       - 'tests/**'
       - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'CHANGELOG.md'
+      - 'docs/**'
+      - 'metadata/**'
+      - 'codemeta.json'
+      - 'CITATION.cff'
+      - 'ro-crate-metadata.json'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/README.md'
+      - '.github/scripts/check_metadata.py'
+      - '.github/scripts/check_rocrate.py'
   pull_request:
     paths:
       - 'evidence/**'
       - '.github/workflows/life-science-evidence.yml'
       - 'tests/**'
       - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'CHANGELOG.md'
+      - 'docs/**'
+      - 'metadata/**'
+      - 'codemeta.json'
+      - 'CITATION.cff'
+      - 'ro-crate-metadata.json'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/README.md'
+      - '.github/scripts/check_metadata.py'
+      - '.github/scripts/check_rocrate.py'
   workflow_dispatch:
 
 permissions:
@@ -36,6 +58,8 @@ jobs:
       - name: Test package and GitHub evidence contracts
         run: |
           python -m unittest discover -s tests -v
+          ls-evidence --help
+          ls-knowledge --help
           ls-evidence aggregate --input evidence/examples/evidence-records.json --topics evidence/profiles/topics.json --output build/tool-candidate.json
           ls-evidence validate --bundle build/tool-candidate.json
       - name: Verify research documentation and metadata links

@@ -1,54 +1,71 @@
 # Life Science Ecosystem Lab
 
-**GitHub-native, knowledge-first scientific workflow engineering · Independently verifiable evidence tools**
+**GitHub-native research knowledge infrastructure and an independent research software evidence tool**
 
-This repository carries two peer research-software assets, each with its own source, contract, documentation and tests. Their GitHub integration implements the native knowledge ingestion, processing, storage, verification and iteration practices established in our earlier research repositories, now specialized for the **Life Science** domain
+This open-source repository contains **two equal research-software assets**. Both can be used separately, tested separately, and composed through public file/CLI interfaces. GitHub Actions operates the native knowledge workflow; it is not a third asset. External Agents and human research are independent collaborators, **not runtime requirements**.
 
-| Asset | Canonical directory | Responsibility |
+| Start here | Knowledge Workflow | Evidence Tool |
 | --- | --- | --- |
-| **Life Science Knowledge Workflow** | [`.github/`](.github/README.md) | Scheduled GitHub Actions runtime, approved document ingestion, source-cited knowledge projections, state/memory, versioned history, guarded iterative application |
-| **Life Science Evidence Tool** | [`evidence/`](evidence/README.md) | Independently callable provenance collection, evidence aggregation and validation, documentation maintenance, advisory GitHub topic discovery |
+| Purpose | Periodic, source-cited knowledge maintenance | Reusable, read-only research-software verification |
+| Home | [`.github/`](.github/README.md) | [`evidence/`](evidence/README.md) |
+| Command | `ls-knowledge` | `ls-evidence` |
+| Main output | Knowledge JSON, source-linked JSONL graph, receipts | Provenance bundles and JSON / Markdown / SARIF reports |
+| Runs independently? | Yes, with approved inputs | Yes, including on an unrelated local repository |
 
-GitHub Actions is the **native runtime for our workflow**, not a third independent research asset. Evidence is a peer tool with an independent CLI/CI lifecycle, not an incidental post-processing script
+## First use: two independent paths
 
-## Workflow lifecycle
-
-The canonical executable is [`.github/workflows/life-science-knowledge.yml`](.github/workflows/life-science-knowledge.yml), with a portable [CWL v1.2 knowledge sub-workflow](.github/knowledge/main.cwl)
+**1. Try the Tool without network access or executing research code**
 
 ```sh
 python -m pip install -e .
-python -m life_science_ecosystem_lab validate-source-registry evidence/profiles/sources.json
-python -m life_science_ecosystem_lab validate-topic-registry evidence/profiles/topics.json
-ls-evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
-python -m unittest discover -s tests -v
+ls-evidence inspect --root . --output build/inspection.json --markdown build/inspection.md --sarif build/inspection.sarif
 ```
 
-For fully offline CWL reproduction (uses synthetic test data only):
+**2. Reproduce the computational knowledge sub-workflow using synthetic fixtures**
 
 ```sh
-python -m pip install -e .
 python -m pip install cwltool
-cwltool --no-container .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
+mkdir -p build/replay
+cwltool --no-container --outdir build/replay .github/knowledge/main.cwl .github/knowledge/test/workflow-job.yml
+ls-knowledge graph project --knowledge build/replay/knowledge.json --output-dir build/graph
+ls-knowledge graph verify --dir build/graph --knowledge build/replay/knowledge.json
+ls-knowledge graph search --dir build/graph --query workflow --limit 5 --hops 1
 ```
 
-For live approved GitHub-source observation and standalone tool usage, see [Evidence CLI](evidence/README.md)
+Run from the cloned **repository root** with Python 3.11+. The CWL replay is offline *after installing the required packages* and uses **synthetic**, not live, GitHub observations. For detailed instructions, networked collection, exit statuses and troubleshooting, see [Getting Started](docs/GETTING_STARTED.md).
 
-## Evidence, data and standards
+## How the repository is organized
 
-- **Knowledge:** source-cited excerpts, explicit coverage states and unresolved gaps, then stateful bounded revisions — deterministic classification, **not** autonomous biological interpretation or scientific inference
-- **Evidence:** source repo, immutable Git object identity, content SHA, source registry/trust rules and independent reproducibility checks
-- **Data:** `data/inputs/current`, `data/inputs/archive`, `data/knowledge`, `data/memories`, `data/state`, `data/receipts`
-- **Standards:** Workflow RO-Crate, Workflow Testing RO-Crate, Bioschemas ComputationalWorkflow / ComputationalTool / FormalParameter, Citation File Format and MIT — inspect [metadata](ro-crate-metadata.json)
-- **Monitoring:** existing LifeMonitor global defaults for all branches, all tags and issue checks remain unmodified; repository packaging does not prove registration or active monitoring
+```text
+.github/                  Native knowledge lifecycle (Actions, CWL, runtime, guards)
+evidence/                 Independent installed Evidence Tool, profiles and schemas
+data/                     Git-tracked accepted inputs, graph, memory and receipts
+metadata/                 Public Bioschemas descriptors and standards-status data
+docs/                     User guides, scope, interfaces, architecture and provenance
+tests/                    Executable regression and integration contracts
+ro-crate-metadata.json    Workflow and testing research-object metadata
+codemeta.json             Shared software identity, two named asset components
+CITATION.cff              Citation for the repository's software version
+```
 
-See the public [architecture](docs/ARCHITECTURE.md), [scope](docs/SCOPE.md), [provenance](docs/PROVENANCE.md) and [publication policy](SECURITY.md)
+[Documentation index](docs/README.md) · [Public interfaces](docs/PUBLIC_INTERFACES.md) · [Understanding verification](docs/VERIFYING_RESULTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
-## Origins
+## Current capabilities and limits
 
-The project was established in October 2026 from an earlier research-workflow prototype. Only the current public software interfaces, metadata, tests and documentation define its supported behavior. Private working documents and internal decisions are not part of the published artifact
+- The Knowledge Workflow collects only **approved public GitHub sources**, verifies Git object/content identity, constructs a source-cited knowledge map and rebuildable JSONL graph, and supports bounded SQLite FTS5/BM25 search. Scheduled persistence is gated by evidence completeness, state checks, `main` world-line, and a `data/`-only write boundary.
+- The Evidence Tool provides source collection, aggregation, validation, advisory discovery, local Markdown-link auditing, and a standalone **nonexecuting** external-repository inspection function. Its reports distinguish findings from unknown or unverified outcomes.
+- Graph `SOURCE_MATCH` edges are **document-topic matches**, not proven scientific, biological or causal relations. Metadata validation is not scientific validity or external certification.
+- The committed `data/` directory may initially contain only placeholders. Passing CI does **not** prove that a scheduled production observation has already persisted a live corpus.
 
-## Executable graph and independent tool interfaces
+Standards-facing descriptors exist for CWL, RO-Crate, Bioschemas, CFF and CodeMeta. **WorkflowHub registration, LifeMonitor enrollment and bio.tools eligibility/acceptance require independent external verification**. See [standards status](docs/STANDARDS.md).
 
-The two peer assets exchange public, versioned machine-readable results; neither requires an Agent, LLM API or prompt package. The source-cited knowledge map now has a rebuildable JSONL graph and bounded SQLite FTS5 search. The standalone Evidence CLI can statically inspect **unrelated local research software repositories** and emit JSON, Markdown and SARIF without executing their code.
+## Development, identity and responsible use
 
-See [public CLI and output contracts](docs/PUBLIC_INTERFACES.md), [maintenance and publication policy](docs/MAINTENANCE.md) and [standards status](docs/STANDARDS.md). The graph describes source-document matches, **not** inferred biological relationships. A passing tool preflight is not WorkflowHub/bio.tools registration or scientific validation.
+```sh
+python -m unittest discover -s tests -v
+ls-evidence audit-docs --root . --files evidence/profiles/docs.json --output build/docs-audit.json
+python .github/scripts/check_metadata.py
+python .github/scripts/check_publication_boundary.py
+```
+
+The software is MIT licensed. Cite the version recorded in [CITATION.cff](CITATION.cff). Never submit credentials, private research material or health/person-level data to public issues, Actions artifacts or PRs. The [public maintenance policy](docs/MAINTENANCE.md) explains the security and publication boundary.

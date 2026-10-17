@@ -1,5 +1,7 @@
 # Life Science Evidence Tool
 
+[Start here](../docs/GETTING_STARTED.md) · [Tool output and status](../docs/VERIFYING_RESULTS.md) · [Public API](../docs/PUBLIC_INTERFACES.md)
+
 Independent and reusable tool for GitHub-source provenance, change detection, documentation maintenance and reproducible verification
 
 The tool shares a repository with the [knowledge workflow](../.github/README.md) but **does not rely on the workflow scheduler for its own validation**. Its code is in this directory, its root package is `evidence`, and its console entry point is `ls-evidence`

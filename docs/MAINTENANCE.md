@@ -1,5 +1,7 @@
 # Research software maintenance and publication boundaries
 
+[Documentation index](README.md) · [Verification results](VERIFYING_RESULTS.md)
+
 ## Repository maintenance
 
 - Pull requests: run code regression, offline CWL replay, graph JSONL reconstruction and Tool inspection tests before merging
