@@ -9,7 +9,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |
 | Run the full external Agent + protein-structure dataset/tool/graph demo | [Protein Structure Field Demo](PROTEIN_STRUCTURE_FIELD_DEMO.md) |
 | Run and verify a real guarded production acceptance | [Production Operations](PRODUCTION_OPERATIONS.md) |
-| Understand two independent assets and native state ownership | [Architecture](ARCHITECTURE.md) |
+| Understand three independent assets and native state ownership | [Architecture](ARCHITECTURE.md) |
 | Hand research between independent Jules/GPT/other Agents and the native assets | [Optional Agent Collaboration](AGENT_COLLABORATION.md) |
 | Integrate through command-line / JSONL / SARIF interfaces | [Public Interfaces](PUBLIC_INTERFACES.md) |
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |
