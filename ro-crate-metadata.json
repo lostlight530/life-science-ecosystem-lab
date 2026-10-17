@@ -31,6 +31,9 @@
         },
         {
           "@id": "#evidence-tool"
+        },
+        {
+          "@id": "#bio-tool"
         }
       ],
       "conformsTo": [
@@ -107,6 +110,27 @@
         },
         {
           "@id": "SECURITY.md"
+        },
+        {
+          "@id": "bio_tool/README.md"
+        },
+        {
+          "@id": "bio_tool/cli.py"
+        },
+        {
+          "@id": "bio_tool/protein.py"
+        },
+        {
+          "@id": ".github/bio/protein-fasta.cwl"
+        },
+        {
+          "@id": ".github/bio/protein-pdb.cwl"
+        },
+        {
+          "@id": "metadata/bioschemas-bio-tool.jsonld"
+        },
+        {
+          "@id": "metadata/biotools-protein-audit.draft.json"
         }
       ]
     },
@@ -444,6 +468,67 @@
       "@id": "#python-language",
       "@type": "ComputerLanguage",
       "name": "Python"
+    },
+    {
+      "@id": "#bio-tool",
+      "@type": [
+        "SoftwareApplication",
+        "SoftwareSourceCode"
+      ],
+      "name": "Life Science Protein File Audit",
+      "description": "Independent bounded protein FASTA sequence composition and PDB observed C-alpha residue analysis",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/bio_tool",
+      "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
+      "softwareVersion": "0.4.0",
+      "programmingLanguage": {
+        "@id": "#python-language"
+      },
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      }
+    },
+    {
+      "@id": "bio_tool/README.md",
+      "@type": "File",
+      "name": "Bio Tool standalone documentation"
+    },
+    {
+      "@id": "bio_tool/cli.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "bio_tool/protein.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": ".github/bio/protein-fasta.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ],
+      "name": "Portable FASTA data processing tool adapter"
+    },
+    {
+      "@id": ".github/bio/protein-pdb.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ],
+      "name": "Portable PDB data processing tool adapter"
+    },
+    {
+      "@id": "metadata/bioschemas-bio-tool.jsonld",
+      "@type": "File"
+    },
+    {
+      "@id": "metadata/biotools-protein-audit.draft.json",
+      "@type": "File"
     }
   ]
 }
