@@ -7,14 +7,14 @@ from __future__ import annotations
 
 import copy
 import json
+import runpy
 import sys
 import tomllib
 import zipfile
 from pathlib import Path
 
-from build_rocrate import FILES as NATIVE_CRATE_FILES
-
 ROOT = Path(__file__).resolve().parents[2]
+NATIVE_CRATE_FILES = runpy.run_path(str(Path(__file__).with_name('build_rocrate.py')))['FILES']
 CWL_MAIN = ".github/knowledge/main.cwl"
 REQUIRED = (
     "pyproject.toml", "LICENSE", "CITATION.cff",
