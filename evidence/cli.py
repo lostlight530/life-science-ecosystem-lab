@@ -18,6 +18,7 @@ from .validation import validate_candidate_bundle
 from .inspection import inspect_repository, write_reports
 from .agent_handoff import validate_agent_handoff
 from .knowledge_quality import audit_knowledge
+from .interoperability import audit_ecosystem
 from .aggregation import canonical_bytes
 from .normalization import sha256_bytes
 
@@ -49,6 +50,9 @@ def parser() -> argparse.ArgumentParser:
     handoff = commands.add_parser("validate-handoff", help="Validate an optional, proposal-only external Agent research handoff")
     handoff.add_argument("--input", type=Path, required=True)
     handoff.add_argument("--topics", type=Path, required=True, help="Current native topic registry; does not authorize new topics")
+    eco = commands.add_parser("audit-ecosystem", help="Local WorkflowHub/LifeMonitor/bio.tools interoperability preflight, not registration")
+    eco.add_argument("--root", type=Path, default=Path("."))
+    eco.add_argument("--output", type=Path, required=True)
     quality = commands.add_parser("audit-knowledge", help="Review knowledge structure, cross-version drift and optional relevance labels")
     quality.add_argument("--knowledge", type=Path, required=True)
     quality.add_argument("--previous", type=Path, help="Previously accepted knowledge map, never a hidden live fetch")
@@ -112,6 +116,8 @@ def main(argv: list[str] | None = None) -> int:
             write_reports(report, args.output, markdown=args.markdown, sarif=args.sarif)
             print('INSPECTION_' + report['status'])
             return 1 if report["status"] == "FAIL" else 0
+        elif args.command == 'audit-ecosystem':
+            payload = audit_ecosystem(args.root)
         elif args.command == 'audit-knowledge':
             def bounded_json(path: Path) -> object:
                 if path.stat().st_size > 12_000_000:
