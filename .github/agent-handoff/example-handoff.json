@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "EXTERNAL_AGENT_RESEARCH_HANDOFF",
+  "authority": "PROPOSAL_ONLY",
+  "task": {
+    "id": "example-workflow-monitoring-review",
+    "question": "Is the current documentation of computational workflow monitoring accurately linked to its source?",
+    "topic_ids": [
+      "workflow-monitoring"
+    ]
+  },
+  "result": "PROPOSED",
+  "observations": [
+    {
+      "statement": "The upstream README describes LifeMonitor as a testing and monitoring service for computational workflows",
+      "status": "UNVERIFIED",
+      "source_url": "https://github.com/crs4/life_monitor/blob/7649406c11c5c04eebc5ca61926f5dbe30469c82/README.md"
+    }
+  ],
+  "proposed_changes": [
+    {
+      "path": "docs/PROVENANCE.md",
+      "rationale": "If warranted by review, clarify the source citation and evidence limits; this is not an automatic update",
+      "review_required": true
+    }
+  ],
+  "limitations": [
+    "This is a sample handoff, not a current research finding or independently accepted scientific claim",
+    "Any upstream revision, quotation and suggested change requires separate live verification"
+  ]
+}
