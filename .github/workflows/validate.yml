@@ -49,6 +49,10 @@ jobs:
           diff -u build/cwl-one/knowledge.json build/cwl-two/knowledge.json
           diff -u build/cwl-one/candidate.json build/cwl-two/candidate.json
           python -m life_science_ecosystem_lab knowledge verify --candidate build/cwl-one/candidate.json --topics evidence/profiles/topics.json --knowledge build/cwl-one/knowledge.json
+      - name: Audit accepted cross-version knowledge contracts
+        run: |
+          ls-evidence audit-knowledge --knowledge data/knowledge/current.json --output build/accepted-quality.json
+          ls-evidence audit-knowledge --knowledge build/cwl-one/knowledge.json --previous build/cwl-two/knowledge.json --output build/replay-quality.json
       - name: Verify JSONL graph and independent static Tool
         run: |
           python -m life_science_ecosystem_lab graph project --knowledge build/cwl-one/knowledge.json --output-dir build/graph
