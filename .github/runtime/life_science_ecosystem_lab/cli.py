@@ -64,6 +64,7 @@ def build_parser() -> argparse.ArgumentParser:
     apply.add_argument("--logical-date", required=True)
     apply.add_argument("--validated-head", required=True)
     apply.add_argument("--current-head", required=True)
+    apply.add_argument("--execution-id", help="Unique execution attempt identity; distinct from snapshot run_id")
     apply.add_argument("--knowledge", type=Path)
     apply.add_argument("--topics", type=Path)
 
@@ -71,6 +72,7 @@ def build_parser() -> argparse.ArgumentParser:
     state_commands = state.add_subparsers(dest="state_command", required=True)
     verify = state_commands.add_parser("verify")
     verify.add_argument("--repository-root", type=Path, required=True)
+    verify.add_argument("--require-accepted", action="store_true", help="Require an actual accepted knowledge snapshot and event ledger")
     return parser
 
 
@@ -127,11 +129,12 @@ def main(argv: list[str] | None = None) -> int:
                 current_head=args.current_head,
                 knowledge=json.loads(args.knowledge.read_text(encoding="utf-8")) if args.knowledge else None,
                 topic_registry=json.loads(args.topics.read_text(encoding="utf-8")) if args.topics else None,
+                execution_id=args.execution_id,
             )
             print(json.dumps(receipt, ensure_ascii=False, sort_keys=True))
             return 0 if receipt["outcome"] in {"APPLIED", "NO_MEANINGFUL_DELTA"} else 1
         if args.command == "state" and args.state_command == "verify":
-            report = verify_state(StateRoots(args.repository_root.resolve()))
+            report = verify_state(StateRoots(args.repository_root.resolve()), require_accepted=args.require_accepted)
             if not report.valid:
                 for error in report.errors:
                     print(error, file=sys.stderr)

@@ -56,8 +56,15 @@ def apply_candidate(candidate: Mapping[str, Any], roots: StateRoots, *, logical_
     temporary.replace(roots.current)
 
 
-def verify_state(roots: StateRoots) -> ValidationReport:
+def verify_state(roots: StateRoots, *, require_accepted: bool = False) -> ValidationReport:
     errors: list[str] = []
+    if require_accepted:
+        if not roots.current.is_file():
+            errors.append('no accepted current evidence snapshot')
+        if not (roots.root / 'data' / 'knowledge' / 'current.json').is_file():
+            errors.append('no accepted current knowledge')
+        if not (roots.root / 'data' / 'knowledge' / 'events.jsonl').is_file():
+            errors.append('no accepted knowledge event ledger')
     if roots.current.exists():
         try:
             current = json.loads(roots.current.read_text(encoding="utf-8"))

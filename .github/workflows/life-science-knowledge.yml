@@ -100,10 +100,10 @@ jobs:
           python .github/scripts/verify_world_line.py --validated-head "$(cat build/validated-head.txt)"
       - name: Guarded lifecycle apply
         run: |
-          python -m life_science_ecosystem_lab lifecycle apply --candidate build/candidate.json --knowledge build/knowledge.json --topics evidence/profiles/topics.json --repository-root . --logical-date "$(date -u +%F)" --validated-head "$(cat build/validated-head.txt)" --current-head "$(git rev-parse HEAD)"
+          python -m life_science_ecosystem_lab lifecycle apply --candidate build/candidate.json --knowledge build/knowledge.json --topics evidence/profiles/topics.json --repository-root . --logical-date "$(date -u +%F)" --validated-head "$(cat build/validated-head.txt)" --current-head "$(git rev-parse HEAD)" --execution-id "gh-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
       - name: Final validation
         run: |
-          python -m life_science_ecosystem_lab state verify --repository-root .
+          python -m life_science_ecosystem_lab state verify --repository-root . --require-accepted
           python -m life_science_ecosystem_lab knowledge verify --candidate data/inputs/current/candidate.json --topics evidence/profiles/topics.json --knowledge data/knowledge/current.json
           python -m life_science_ecosystem_lab graph verify --dir data/knowledge --knowledge data/knowledge/current.json
       - name: Write boundary and final world-line guard
