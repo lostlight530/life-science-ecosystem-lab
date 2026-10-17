@@ -14,16 +14,28 @@ on:
   pull_request:
     paths:
       - "checks/**"
+      - "lifemonitor.yaml"
+      - ".lifemonitor.yaml"
+      - ".github/scripts/check_metadata.py"
+      - "metadata/standards-status.json"
+      - "docs/STANDARDS.md"
       - "evidence/daily_selfcheck.py"
-      - "tests/test_daily_selfcheck.py"
+      - "tests/test_institutional_selfcheck.py"
+      - "tests/test_project_selfcheck.py"
       - ".github/workflows/life-science-daily-selfcheck.yml"
       - "docs/DAILY_SELF_CHECK.md"
   push:
     branches: [main]
     paths:
       - "checks/**"
+      - "lifemonitor.yaml"
+      - ".lifemonitor.yaml"
+      - ".github/scripts/check_metadata.py"
+      - "metadata/standards-status.json"
+      - "docs/STANDARDS.md"
       - "evidence/daily_selfcheck.py"
-      - "tests/test_daily_selfcheck.py"
+      - "tests/test_institutional_selfcheck.py"
+      - "tests/test_project_selfcheck.py"
       - ".github/workflows/life-science-daily-selfcheck.yml"
       - "docs/DAILY_SELF_CHECK.md"
 
@@ -52,7 +64,7 @@ jobs:
           python-version: "3.12"
       - name: Verify official curated URL contract independently
         run: |
-          python -m unittest discover -s tests -p 'test_daily_selfcheck.py' -v
+          python -m unittest discover -s tests -p 'test_institutional_selfcheck.py' -v
           if [ "$PUBLIC_LIVE" = "true" ]; then
             python -m evidence.daily_selfcheck institutional --catalogue checks/institutional/defaults.json --output build/daily-selfcheck/institutional-defaults/report.json --live
           else
