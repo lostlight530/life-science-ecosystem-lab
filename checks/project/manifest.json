@@ -13,7 +13,7 @@
     "codemeta.json",
     "ro-crate-metadata.json",
     "pyproject.toml",
-    ".lifemonitor.yaml",
+    "lifemonitor.yaml",
     "evidence/profiles/docs.json",
     "evidence/profiles/sources.json",
     "evidence/profiles/topics.json",
