@@ -28,3 +28,5 @@ Choose the path matching your task. This index describes **public, reproducible 
 [Contribution guide](../CONTRIBUTING.md) · [Issue forms](../.github/ISSUE_TEMPLATE/) · [Security reporting](../SECURITY.md) · [Changelog](../CHANGELOG.md)
 
 **State ownership:** Git-tracked `data/` only after a validated and accepted native run. Neither screenshots, documentation, an Agent reply nor passing static tests are authoritative accepted knowledge.
+
+[Research Methodology](RESEARCH_METHODOLOGY.md) documents invariant scientific workflow and evidence stages and explains why domain-specific demonstrations are replaceable rather than the project's central research objective.

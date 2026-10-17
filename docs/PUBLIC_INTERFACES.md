@@ -51,3 +51,6 @@ The Tool never writes into the inspected research repository. It only writes the
 The Knowledge Workflow may call Evidence as an external command, and independent researchers or CWL tools can call Bio Tool on supplied protein files. Evidence can inspect an unrelated repository without importing the knowledge runtime or relying on its scheduler. All three exchange explicit CLI/file contracts, with their own CI and documentation.
 
 External researchers and Agents may use human- or machine-readable outputs independently. They are not an internal runtime stage and cannot promote findings to accepted knowledge without repository governance and independent verification.
+## Common methodological contract across research examples
+
+The domain-neutral `ls-evidence validate-research-case` validates a fixed eight-stage research proposal contract before any case-specific evaluation. It is intentionally not a biological prediction algorithm, scientific ground-truth benchmark or automatic acceptance gate. Current `ls-bio` FASTA/PDB operations are replaceable case adapters; the methodology survives their replacement. See [Research Methodology](RESEARCH_METHODOLOGY.md).
