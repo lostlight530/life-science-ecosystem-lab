@@ -7,6 +7,7 @@ from __future__ import annotations
 
 from collections import Counter
 import hashlib
+import math
 from pathlib import Path
 from typing import Any
 
@@ -125,6 +126,13 @@ def analyze_pdb(path: Path) -> dict[str, Any]:
             continue
         if len(line) < 54:
             raise ValueError("malformed PDB ATOM record")
+        for start, end in ((30, 38), (38, 46), (46, 54)):
+            try:
+                coordinate = float(line[start:end])
+            except ValueError as exc:
+                raise ValueError("malformed PDB Cartesian coordinate") from exc
+            if not math.isfinite(coordinate):
+                raise ValueError("nonfinite PDB Cartesian coordinate")
         if line[12:16].strip() != "CA":
             continue
         if line[16:17] not in (" ", "A"):
