@@ -59,6 +59,8 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
           ls-evidence --help
+          ls-evidence audit-knowledge --knowledge data/knowledge/current.json --output build/tool-knowledge-quality.json
+          ls-evidence audit-ecosystem --root . --output build/tool-external-readiness.json
           ls-knowledge --help
           ls-evidence aggregate --input evidence/examples/evidence-records.json --topics evidence/profiles/topics.json --output build/tool-candidate.json
           ls-evidence validate --bundle build/tool-candidate.json
@@ -76,6 +78,8 @@ jobs:
           name: life-science-evidence-verification
           path: |
             build/tool-candidate.json
+            build/tool-knowledge-quality.json
+            build/tool-external-readiness.json
             build/docs-audit.json
             build/tool-inspection.json
             build/tool-inspection.md

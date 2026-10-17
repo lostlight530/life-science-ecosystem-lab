@@ -49,6 +49,10 @@ jobs:
           diff -u build/cwl-one/knowledge.json build/cwl-two/knowledge.json
           diff -u build/cwl-one/candidate.json build/cwl-two/candidate.json
           python -m life_science_ecosystem_lab knowledge verify --candidate build/cwl-one/candidate.json --topics evidence/profiles/topics.json --knowledge build/cwl-one/knowledge.json
+      - name: Audit accepted cross-version knowledge contracts
+        run: |
+          ls-evidence audit-knowledge --knowledge data/knowledge/current.json --output build/accepted-quality.json
+          ls-evidence audit-knowledge --knowledge build/cwl-one/knowledge.json --previous build/cwl-two/knowledge.json --output build/replay-quality.json
       - name: Verify JSONL graph and independent static Tool
         run: |
           python -m life_science_ecosystem_lab graph project --knowledge build/cwl-one/knowledge.json --output-dir build/graph
@@ -60,6 +64,12 @@ jobs:
           python .github/scripts/build_rocrate.py build/one.crate.zip
           python .github/scripts/build_rocrate.py build/two.crate.zip
           cmp build/one.crate.zip build/two.crate.zip
+      - name: Build reproducible portable CWL main crate
+        run: |
+          python .github/scripts/build_portable_workflow_crate.py build/portable-one.crate.zip
+          python .github/scripts/build_portable_workflow_crate.py build/portable-two.crate.zip
+          cmp build/portable-one.crate.zip build/portable-two.crate.zip
+          ls-evidence audit-ecosystem --root . --output build/external-readiness.json
       - name: Independent evidence tool contract checks
         run: |
           ls-evidence aggregate --input evidence/examples/evidence-records.json --topics evidence/profiles/topics.json --output build/tool-candidate.json
