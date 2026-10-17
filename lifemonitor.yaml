@@ -1,0 +1,8 @@
+# Repository-scoped configuration for the LifeMonitor GitHub App.
+# Use the official root-level filename documented by LifeMonitor.
+# Issue checks are enabled for this repository. Branch/tag tracking,
+# registry updates and visibility are intentionally unspecified here and
+# remain governed by the account-wide LifeMonitor settings.
+name: "Life Science Knowledge Lifecycle — GitHub Actions"
+issues:
+  check: true

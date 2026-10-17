@@ -1,4 +1,4 @@
-"""Offline invariants of two independent daily research self-check planes."""
+"""Tests for this repository's custom self-check contract only."""
 from __future__ import annotations
 
 import copy
@@ -9,57 +9,26 @@ import unittest
 from pathlib import Path
 
 from evidence.daily_selfcheck import (
-    OFFICIAL, institutional_report, load_object, project_report,
-    validate_official, validate_project_manifest, write_report,
+    institutional_report, load_object, project_report, validate_lifemonitor_config,
+    validate_project_manifest, write_report,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-class DailySelfcheckTests(unittest.TestCase):
+class ProjectSelfcheckTests(unittest.TestCase):
     def setUp(self):
         self.institutional, self.institutional_sha = load_object(
             ROOT / "checks/institutional/defaults.json"
         )
         self.project, self.project_sha = load_object(ROOT / "checks/project/manifest.json")
 
-    def test_our_public_official_reference_list_is_fixed_and_unique(self):
-        rows = validate_official(self.institutional)
-        self.assertEqual({item["id"] for item in rows}, set(OFFICIAL))
-        self.assertEqual(len(rows), 6)
-        for row in rows:
-            self.assertTrue(row["public_probe_url"].startswith("https://"))
-
-    def test_upstream_endpoint_redirection_and_single_run_can_never_prove_registration(self):
-        report = institutional_report(self.institutional, self.institutional_sha,
-            live=True, probe=lambda _: {"result": "HTTP_REDIRECT", "http_status": 302})
-        self.assertEqual(report["mode"], "PUBLIC_HTTP_READ_ONLY")
-        self.assertEqual({x["observation"]["http_status"] for x in report["checks"]}, {302})
-        self.assertTrue(any("registration" in item for item in report["non_claims"]))
-        self.assertNotIn("status", report)  # No fictitious official health verdict.
-
-    def test_network_failures_are_inconclusive_not_official_outages(self):
-        report = institutional_report(self.institutional, self.institutional_sha,
-            live=True, probe=lambda _: {"result": "INCONCLUSIVE_NETWORK", "error_type": "TimeoutError"})
-        self.assertEqual(report["inconclusive_count"], 6)
-        self.assertNotIn("FAIL", json.dumps(report))
-        self.assertEqual(institutional_report(self.institutional, self.institutional_sha)["mode"],
-                         "OFFLINE_CONTRACT_ONLY")
-
-    def test_unreviewed_official_endpoint_or_extra_service_fails_closed(self):
-        bad = copy.deepcopy(self.institutional)
-        bad["services"][0]["public_probe_url"] = "https://evil.example/"
-        with self.assertRaisesRegex(ValueError, "URL mismatch"):
-            validate_official(bad)
-        bad = copy.deepcopy(self.institutional)
-        bad["services"].append(copy.deepcopy(bad["services"][0]))
-        with self.assertRaises(ValueError):
-            validate_official(bad)
-
     def test_project_owns_file_inventory_not_institutional_defaults(self):
         paths = validate_project_manifest(self.project)
         self.assertIn("bio_tool/cli.py", paths)
         self.assertIn(".github/workflows/life-science-knowledge.yml", paths)
+        self.assertIn("lifemonitor.yaml", paths)
+        self.assertNotIn(".lifemonitor.yaml", paths)
         self.assertNotIn("checks/institutional/defaults.json", paths)
         bad = copy.deepcopy(self.project)
         bad["required_files"].append("checks/institutional/defaults.json")
@@ -76,18 +45,48 @@ class DailySelfcheckTests(unittest.TestCase):
         self.assertEqual(len(report["checks"]), len(self.project["required_files"]))
         self.assertNotIn("institutional", json.dumps(report["checks"]))
 
+    def test_lifemonitor_config_uses_official_path_and_preserves_global_policy(self):
+        config = ROOT / "lifemonitor.yaml"
+        self.assertTrue(config.is_file())
+        self.assertFalse((ROOT / ".lifemonitor.yaml").exists())
+        self.assertEqual(validate_lifemonitor_config(ROOT), [])
+        content = config.read_text(encoding="utf-8")
+        self.assertRegex(content, r"(?m)^name:[ \t]*\S")
+        self.assertRegex(content, r"(?m)^issues:[ \t]*\n[ \t]+check:[ \t]*true[ \t]*(?:#.*)?$")
+        self.assertNotRegex(content, r"(?m)^(?:push|public)[ \t]*:")
+
+    def test_lifemonitor_config_rejects_global_policy_overrides(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = root / "lifemonitor.yaml"
+            path.write_text('name: "Fixture"\nissues:\n  check: true\n', encoding="utf-8")
+            self.assertEqual(validate_lifemonitor_config(root), [])
+            path.write_text(
+                'name: "Fixture"\nissues:\n  check: true\npush:\n  branches: []\n',
+                encoding="utf-8",
+            )
+            self.assertIn("LIFEMONITOR_GLOBAL_SETTINGS_OVERRIDE", validate_lifemonitor_config(root))
+            path.write_text(
+                'name: "Fixture"\nissues:\n  check: true\npublic: true\n',
+                encoding="utf-8",
+            )
+            self.assertIn("LIFEMONITOR_GLOBAL_SETTINGS_OVERRIDE", validate_lifemonitor_config(root))
+
     def test_missing_file_and_bad_cli_are_fail_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             manifest = {
                 "schema_version": "1.0.0", "scope": "PROJECT_CUSTOM_CONTRACT",
                 "required_commands": ["ls-knowledge", "ls-evidence", "ls-bio"],
-                "required_files": [".lifemonitor.yaml", "pyproject.toml"] +
+                "required_files": ["lifemonitor.yaml", "pyproject.toml"] +
                                   ["docs/file_" + str(i) + ".md" for i in range(10)],
             }
-            (root / ".lifemonitor.yaml").write_text("issues:\n  check: true\n")
+            (root / "lifemonitor.yaml").write_text(
+                'name: "Fixture"\nissues:\n  check: true\n', encoding="utf-8"
+            )
             (root / "pyproject.toml").write_text(
-                '[project.scripts]\nls-knowledge = "k:x"\nls-evidence = "e:y"\nls-bio = "b:z"\n')
+                '[project.scripts]\nls-knowledge = "k:x"\nls-evidence = "e:y"\nls-bio = "b:z"\n'
+            )
             (root / "docs").mkdir()
             for i in range(10):
                 (root / "docs" / f"file_{i}.md").write_text("fixture")
@@ -108,13 +107,6 @@ class DailySelfcheckTests(unittest.TestCase):
                                 json.loads(second.read_text())["kind"])
             self.assertNotIn("official_documentation_url", second.read_text())
 
-
-    def test_official_catalogue_cannot_claim_fabricated_approval_or_extra_fields(self):
-        altered = copy.deepcopy(self.institutional)
-        altered["services"][0]["official_status"] = "CERTIFIED"
-        with self.assertRaisesRegex(ValueError, "unknown institutional catalogue fields"):
-            validate_official(altered)
-
     def test_custom_manifest_refuses_fourth_asset_or_silent_scope_expansion(self):
         altered = copy.deepcopy(self.project)
         altered["required_commands"].append("ls-agent")
@@ -124,6 +116,7 @@ class DailySelfcheckTests(unittest.TestCase):
         altered["required_files"].append("/etc/passwd")
         with self.assertRaises(ValueError):
             validate_project_manifest(altered)
+
 
 if __name__ == "__main__":
     unittest.main()

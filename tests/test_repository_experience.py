@@ -48,8 +48,8 @@ class RepositoryExperienceTests(unittest.TestCase):
         self.assertTrue((ROOT / ".github/workflows/life-science-knowledge.yml").is_file())
         self.assertTrue((ROOT / "evidence/inspection.py").is_file())
         self.assertTrue((ROOT / "bio_tool/cli.py").is_file())
-        self.assertFalse((ROOT / "lifemonitor.yaml").exists())
-        self.assertTrue((ROOT / ".lifemonitor.yaml").is_file())
+        self.assertTrue((ROOT / "lifemonitor.yaml").is_file())
+        self.assertFalse((ROOT / ".lifemonitor.yaml").exists())
 
     def test_changelog_has_single_unreleased_and_no_fabricated_release(self):
         value = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")

@@ -15,7 +15,7 @@ This document lists supported *software-interface mappings*, not certifications.
 | W3C PROV-O / SKOS | Source and relationship export vocabulary guidance | Internal JSONL is not claimed to be RDF or PROV-O/SHACL conformant |
 | Software Heritage SWHID | Optional immutable source object identifier | Only use real computed/archived identifiers, never invent them |
 | WorkflowHub | External publication opportunity | Not registered/accepted unless confirmed externally |
-| LifeMonitor | Installed GitHub App + `.lifemonitor.yaml` | Genuine Bot PR #15 accepted; global branch/tag tracking retained; test enrollment and periodic monitoring separate |
+| LifeMonitor | Installed GitHub App + root `lifemonitor.yaml` | Bot PR #15 was observed; repository config uses the documented filename and enables issue checks without push/visibility overrides; external recognition, test enrollment and periodic monitoring remain unverified |
 | bio.tools + EDAM | `bio_tool/`, `metadata/biotools-protein-audit.draft.json` | Actual FASTA/PDB processing, reviewed EDAM operations/data/formats and unsubmitted candidate; accession and eligibility require registry verification |
 
 Reference documents:
@@ -35,7 +35,7 @@ Use `ls-evidence audit-ecosystem --root . --output build/interop.json` before co
 | Service | Specific independent criterion | Current repo scope |
 | --- | --- | --- |
 | WorkflowHub | Workflow RO-Crate 1.1 requires a typed main workflow, programmingLanguage, license, and a ZIP with root metadata; registry entry is created only by an actual upload/registration | Local RO-Crate and CWL plus synthetic tests; external entry unverified |
-| LifeMonitor | Workflow Testing RO-Crate links main workflow, test suite, test instance, and compatible CI service; monitoring requires actual enrollment | Installed App, accepted Bot PR and minimal issue-check configuration observed; workflow-test enrollment and periodic monitoring unverified |
+| LifeMonitor | Workflow Testing RO-Crate links main workflow, test suite, test instance, and compatible CI service; monitoring requires actual enrollment | Installed App and bot PR observed; root config path corrected locally, but external recognition, workflow-test enrollment and periodic monitoring remain unverified |
 | bio.tools | Curator scope requires actual bioinformatics data-processing operations and appropriate EDAM topic/operation/input/output terms | Independent FASTA/PDB processing and a draft EDAM mapping exist; registry eligibility, curation and acceptance are not asserted |
 
 Evidence gates are `LOCAL_PREFLIGHT → SUBMITTED → ACCEPTED → EXTERNALLY_VERIFIED`; platform submission is a separate user-authorized action and requires a stable public record URL. Neither an identity connection nor a completed local preflight is accepted registration, and external adoption requires separately sourced use evidence.
@@ -48,7 +48,7 @@ References: [Workflow RO-Crate 1.1](https://about.workflowhub.eu/Workflow-RO-Cra
 python .github/scripts/build_portable_workflow_crate.py build/life-science-portable.cwl.crate.zip
 ```
 
-The portable archive declares CWL as its main workflow, includes synthetic replay fixtures, and excludes accepted production `data/` and private information. GitHub Actions remains the native owner of live observations and guarded persistence. The installed LifeMonitor GitHub App and accepted Bot PR establish repository integration, while `.lifemonitor.yaml` enables issue checks without overriding global branch/tag tracking. Workflow-test enrollment, periodic monitoring and WorkflowHub records still require separate external confirmation.
+The portable archive declares CWL as its main workflow, includes synthetic replay fixtures, and excludes accepted production `data/` and private information. GitHub Actions remains the native owner of live observations and guarded persistence. The installed LifeMonitor GitHub App and accepted Bot PR establish prior repository integration. The root-level `lifemonitor.yaml` uses the documented filename and enables issue checks while leaving branch/tag tracking, registry updates and visibility unspecified in this repository config. The corrected file's recognition by LifeMonitor, workflow-test enrollment, periodic monitoring and WorkflowHub records still require separate external confirmation.
 
 ## Third independently callable Bio Tool
 
