@@ -14,6 +14,10 @@ This open-source repository contains **three independently callable research-sof
 
 [**谁说 Agent 集群不可以科研？ — An auditable multi-Agent research case**](docs/AGENT_CLUSTER_RESEARCH_CASE.md) documents three externally submitted contributions (local IDE, cloud observer, desktop Codex), their GitHub reviews, accepted corrections and evidentiary limits. [Decision ledger](docs/AGENT_REVIEW_DECISIONS.md) preserves the difference between a claim, its correction, code acceptance and independent scientific proof. Multiple Agent contributions are inspectable, but Agent runtime identity and independent scientific reproduction are not inferred from a shared Git account.
 
+## Daily institutional and project self-checks
+
+[**Daily fixed self-check SOP**](docs/DAILY_SELF_CHECK.md) runs two fully isolated, read-only checks: [institutional official public references](checks/institutional/README.md) and [our custom repository contracts](checks/project/README.md). Their JSON reports, document inventories and 30-day GitHub Artifacts are separate. External endpoint HTTP observations are not official uptime verification, external registry accession or LS Login authorization.
+
 ## First use: three independent paths
 
 **1. Try the Tool without network access or executing research code**

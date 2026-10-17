@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "CURATED_OFFICIAL_PUBLIC_POINTERS",
+  "services": [
+    {
+      "id": "ls-login",
+      "public_probe_url": "https://lifescience-ri.eu/ls-login/",
+      "official_documentation_url": "https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html"
+    },
+    {
+      "id": "workflowhub",
+      "public_probe_url": "https://workflowhub.eu/",
+      "official_documentation_url": "https://about.workflowhub.eu/Workflow-RO-Crate/1.1/"
+    },
+    {
+      "id": "lifemonitor",
+      "public_probe_url": "https://lifemonitor.eu/",
+      "official_documentation_url": "https://lifemonitor.eu/lm_test_monitoring"
+    },
+    {
+      "id": "openebench",
+      "public_probe_url": "https://openebench.bsc.es/",
+      "official_documentation_url": "https://elixir-europe.org/services/openebench"
+    },
+    {
+      "id": "fairdomhub",
+      "public_probe_url": "https://fairdomhub.org/",
+      "official_documentation_url": "https://fairdomhub.org/"
+    },
+    {
+      "id": "bio-tools",
+      "public_probe_url": "https://bio.tools/",
+      "official_documentation_url": "https://bio.tools/components/about/about.html"
+    }
+  ]
+}

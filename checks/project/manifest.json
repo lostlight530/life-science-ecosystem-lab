@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "PROJECT_CUSTOM_CONTRACT",
+  "required_commands": [
+    "ls-knowledge",
+    "ls-evidence",
+    "ls-bio"
+  ],
+  "required_files": [
+    "README.md",
+    "AGENTS.md",
+    "CITATION.cff",
+    "codemeta.json",
+    "ro-crate-metadata.json",
+    "pyproject.toml",
+    ".lifemonitor.yaml",
+    "evidence/profiles/docs.json",
+    "evidence/profiles/sources.json",
+    "evidence/profiles/topics.json",
+    "metadata/standards-status.json",
+    "metadata/bioschemas-workflow.jsonld",
+    "metadata/bioschemas-tool.jsonld",
+    "metadata/bioschemas-bio-tool.jsonld",
+    "metadata/biotools-protein-audit.draft.json",
+    ".github/workflows/life-science-knowledge.yml",
+    ".github/workflows/life-science-evidence.yml",
+    ".github/workflows/life-science-bio.yml",
+    ".github/workflows/life-science-continuity.yml",
+    ".github/knowledge/main.cwl",
+    ".github/bio/protein-fasta.cwl",
+    ".github/bio/protein-pdb.cwl",
+    "evidence/cli.py",
+    "bio_tool/cli.py",
+    "docs/RESEARCH_METHODOLOGY.md",
+    "docs/AGENT_CLUSTER_RESEARCH_CASE.md",
+    "docs/AGENT_REVIEW_DECISIONS.md",
+    "data/knowledge/current.json",
+    "data/inputs/current/candidate.json",
+    "checks/project/README.md",
+    "checks/project/manifest.json"
+  ]
+}

@@ -1,0 +1,13 @@
+# Institutional default pointers — external authority only
+
+This directory contains **maintainer-curated references to official public institution/service documents**, not mirror copies or files issued by those institutions. The official documents and service settings remain controlled by their publishers. `defaults.json` is a locally reviewed, pinned list of **official URLs** and cannot substitute for checking the current upstream documentation.
+
+Scope: LS Login identity federation; WorkflowHub workflow registry and Workflow RO-Crate guidance; LifeMonitor GitHub App/monitoring; OpenEBench benchmarking/observatory; FAIRDOMHub/SEEK research assets; bio.tools registry/EDAM. **bio.tools is not asserted to be an LS Login relying-party integration.** OpenEBench, FAIRDOMHub and the other services are not treated as automatic permissions granted by an LS Login identity.
+
+The daily checker may query only its six **literal HTTPS allowlisted host URLs** and records the result of one bounded, read-only HTTP observation. Status codes, redirects, 403 responses and transient failures **do not prove full uptime, official compliance, institutional affiliation, authorization or registration**. A single outage is `INCONCLUSIVE_NETWORK` and should be rechecked by the operator, not overwritten by made-up success or alarmed as definite institutional failure.
+
+This directory must **not** contain our project's CWL, YAML, Bio Tool schemas, publications, sample data or custom configuration. They belong to `checks/project/`, `metadata/` and `docs/`. The one project-level `.lifemonitor.yaml` is explicitly custom and is **not** a LifeMonitor-published defaults file. No credentials, login requests, API submissions or service mutations are allowed.
+
+On GitHub Actions, upstream reports are retained only at `build/daily-selfcheck/institutional-defaults/` and in the separate `institutional-defaults` Artifact. They are regenerated, not committed as a fake official snapshot.
+
+External official references: [LS Login](https://lifescience-ri.eu/ls-login/), [WorkflowHub profile](https://about.workflowhub.eu/Workflow-RO-Crate/1.1/), [LifeMonitor test monitoring](https://lifemonitor.eu/lm_test_monitoring), [ELIXIR OpenEBench](https://elixir-europe.org/services/openebench), [FAIRDOMHub](https://fairdomhub.org/), [bio.tools](https://bio.tools/components/about/about.html).
