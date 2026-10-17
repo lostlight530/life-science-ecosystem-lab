@@ -62,7 +62,7 @@ Standards-facing descriptors exist for CWL, RO-Crate, Bioschemas, CFF and CodeMe
 
 ## Ongoing verification
 
-The read-only [continuity check](.github/workflows/life-science-continuity.yml) validates the accepted Git-backed state independently of the production scheduler. The Evidence Tool also offers bounded offline `audit-knowledge` for reproducibility and cross-version selection changes and `audit-ecosystem` for local standards readiness, without pretending external platform registration or scientific verification.
+The read-only [continuity check](.github/workflows/life-science-continuity.yml) validates the accepted Git-backed state independently of the production scheduler. The Evidence Tool also offers bounded offline `audit-knowledge` for reproducibility and cross-version selection changes and `audit-ecosystem` for local standards readiness. A reproducible CWL-main archive can be created using `.github/scripts/build_portable_workflow_crate.py`. None of these actions implies external platform registration or scientific verification.
 
 ## Development, identity and responsible use
 
