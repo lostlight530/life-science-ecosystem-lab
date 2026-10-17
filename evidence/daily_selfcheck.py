@@ -156,13 +156,13 @@ def validate_lifemonitor_config(root: Path) -> list[str]:
         return ["LIFEMONITOR_CONFIG_PATH_CONTRACT"]
     text = path.read_text(encoding="utf-8")
     errors = []
-    if not re.search(r"(?m)^name:[ \\t]*\\S", text):
+    if not re.search(r"(?m)^name:[ \t]*\S", text):
         errors.append("LIFEMONITOR_CONFIG_NAME")
-    if not re.search(r"(?m)^issues:[ \\t]*\\n[ \\t]+check:[ \\t]*true[ \\t]*(?:#.*)?$", text):
+    if not re.search(r"(?m)^issues:[ \t]*\n[ \t]+check:[ \t]*true[ \t]*(?:#.*)?$", text):
         errors.append("LIFEMONITOR_ISSUE_CHECK_CONTRACT")
     # Leave release tracking, registry updates and visibility to account-wide
     # settings; only an explicit top-level key would override those settings.
-    if re.search(r"(?m)^(?:push|public)[ \\t]*:", text):
+    if re.search(r"(?m)^(?:push|public)[ \t]*:", text):
         errors.append("LIFEMONITOR_GLOBAL_SETTINGS_OVERRIDE")
     return errors
 
