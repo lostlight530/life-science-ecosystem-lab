@@ -12,6 +12,8 @@ import tomllib
 import zipfile
 from pathlib import Path
 
+from build_rocrate import FILES as NATIVE_CRATE_FILES
+
 ROOT = Path(__file__).resolve().parents[2]
 CWL_MAIN = ".github/knowledge/main.cwl"
 REQUIRED = (
@@ -66,6 +68,8 @@ def build(path: Path) -> None:
     if isinstance(suite, dict):
         suite["mainEntity"] = {"@id": CWL_MAIN}
     files = set(REQUIRED)
+    # Keep all local file entities already referenced by existing public RO-Crate metadata.
+    files.update(name for name in NATIVE_CRATE_FILES if name not in ("README.md", "ro-crate-metadata.json"))
     files.update(p.relative_to(ROOT).as_posix() for p in (ROOT / ".github/runtime").rglob("*.py"))
     files.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "evidence").glob("*.py"))
     if not files or any(not (ROOT / name).is_file() or name.startswith("data/") for name in files):
