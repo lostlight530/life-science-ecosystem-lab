@@ -14,6 +14,7 @@ from typing import Any
 from urllib.parse import urlsplit
 
 from .aggregation import canonical_bytes
+from .agent_identity import proposer_errors
 
 STAGES = ("DEFINE", "PIN", "QUALIFY", "EXECUTE", "EVALUATE", "AUDIT", "REVIEW", "REPLAY")
 STAGE_STATES = frozenset({"PENDING", "REPORTED", "BLOCKED", "NOT_APPLICABLE"})
@@ -63,6 +64,8 @@ def validate_research_case(value: Any) -> CaseVerdict:
         errors.append("domain and research question are required")
     if value.get("authority") != "PROPOSAL_ONLY":
         errors.append("case cannot grant scientific acceptance or production write authority")
+    if "proposer" in value:
+        errors.extend(proposer_errors(value["proposer"]))
     stages = value.get("stages")
     if not isinstance(stages, dict) or set(stages) != set(STAGES):
         errors.append("all eight fixed methodological stages are required")
