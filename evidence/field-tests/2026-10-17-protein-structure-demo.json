@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "VERIFIED_PROTEIN_STRUCTURE_AGENT_TOOL_WORKFLOW_FIELD_RUN",
+  "observation_date_utc": "2026-10-17",
+  "result": "READ_ONLY_REAL_SOURCES_AND_ISOLATED_LIFECYCLE_VERIFIED",
+  "source_run_id": 38997600043,
+  "source_run_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/38997600043",
+  "source_commit": "5c5f9e76e889849b7c3f35233a4fbf3607382646",
+  "merged_pr": "https://github.com/lostlight530/life-science-ecosystem-lab/pull/12",
+  "merged_main_commit": "4e4635d5363718008ee0e77bbb0218abd1be1e09",
+  "artifact": {
+    "id": 12087234359,
+    "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/38997600043/artifacts/12087234359",
+    "sha256": "f557f2a58cf6231d61bdb3414f7471372016e9eedbd549b30be0dee2959c8463",
+    "field_summary_sha256": "fbc80b714dee1b7c4cd64f79b69f64e117bae8717a074e52c751daf7100170e5",
+    "sample_audit_sha256": "94f398deb9857ad92476e3f25b21ad469a0de970e1b2d88d85685a431ff5e180"
+  },
+  "agent": {
+    "handoff_path": ".github/agent-handoff/protein-structure-2026-10-17.json",
+    "authority": "PROPOSAL_ONLY",
+    "validated_shape": true
+  },
+  "discovery": {
+    "status": "DISCOVERY_CHECKED_NO_AUTO_APPROVAL",
+    "unapproved_candidates": 5
+  },
+  "sources": {
+    "registry": "evidence/profiles/research/protein_structure/sources.json",
+    "count": 6,
+    "document_count": 10,
+    "diagnostics_count": 0,
+    "snapshot_id": "6a0d55bc29b23de1-91040a5002e537f6",
+    "evidence_digest": "30bf5585410729e2132bbf140b5900b24a83d043cb7339281e6c51149aee573b"
+  },
+  "knowledge": {
+    "native_profile": "evidence/profiles/research/protein_structure/topics.json",
+    "digest": "a0ce7275788a6c6aba33737e1fd80cb9acf33e4ef4598dccd7d11a0acb8237fc",
+    "topics": 4,
+    "nodes": 12,
+    "source_match_edges": 21,
+    "fts5_search_hits": 6
+  },
+  "data_samples": {
+    "manifest": "evidence/profiles/research/protein_structure/sample-manifest.json",
+    "verified_git_objects_and_file_format": 7,
+    "full_training_data_downloaded": false,
+    "model_inference_executed": false
+  },
+  "third_party_inspection": {
+    "OpenFold": {
+      "status": "WARN",
+      "PASS": 2,
+      "WARN": 2,
+      "FAIL": 0
+    },
+    "ProteinNet": {
+      "status": "WARN",
+      "PASS": 1,
+      "WARN": 3,
+      "FAIL": 0
+    }
+  },
+  "portable_cwl": {
+    "synthetic_fixture_replay": "PASS",
+    "live_source_consumption_claimed": false
+  },
+  "isolated_lifecycle": {
+    "prior_accepted_state_verified": true,
+    "change_kind": "TOPIC_PROFILE_CHANGE",
+    "first_outcome": "APPLIED",
+    "archived_previous_snapshots": 1,
+    "linked_event_count": 2,
+    "repeat_outcome": "NO_MEANINGFUL_DELTA",
+    "real_production_data_written": false
+  },
+  "conclusions_not_supported": [
+    "protein structure inferred or a model trained",
+    "CASP accuracy scores recomputed",
+    "protein biological correctness",
+    "external registry enrollment",
+    "all ProteinNet or CASP datasets acquired",
+    "native production protein corpus accepted"
+  ],
+  "audit_note": "Hashes were recomputed independently from downloaded GitHub Actions ZIP and included JSON files; source raw text, upstream datasets, and model weights are not archived here"
+}

@@ -27,6 +27,16 @@ See [`sample-manifest.json`](../evidence/profiles/research/protein_structure/sam
 
 **An accessible GitHub example is not equivalent to a downloaded complete dataset.** This case does not run AlphaFold, OpenFold or ESMFold, train a model, validate experimental ground truth, use a GPU, or score structural prediction quality.
 
+## Verified real-world execution and permanent evidence index
+
+- Actual successful read-only Actions run: [#38997600043](https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/38997600043)
+- GitHub Artifact ID: `12087234359`, SHA-256: `f557f2a58cf6231d61bdb3414f7471372016e9eedbd549b30be0dee2959c8463` (independently checked against ZIP bytes)
+- [Bounded, Git-tracked field observation index](../evidence/field-tests/2026-10-17-protein-structure-demo.json) records source run, Merkle-like evidence digests, graph counts, 7 audited sample identities, 5 discovery-only candidates, isolated two-event ledger and the no-change replay
+- Real external software findings: OpenFold 2 PASS / 2 WARN; ProteinNet 1 PASS / 3 WARN, neither is a scientific or standards certification
+- Core source evidence: 6 pinned GitHub repositories, 10 records, 0 diagnostics, four topic coverages, 12 graph nodes and 21 `SOURCE_MATCH` edges
+
+The short-retention Artifact includes original bounded JSON/Markdown/SARIF reports; the tracked index is durable but is **not** an archived full source corpus and does not contain raw protein samples. To independently verify the ZIP digest, download the specific GitHub Artifact and compute SHA-256 locally.
+
 ## Repeat the full demonstration
 
 [GitHub Actions: Protein Structure External Agent and Native Workflow Demo](https://github.com/lostlight530/life-science-ecosystem-lab/actions/workflows/protein-structure-agent-demo.yml) runs on the dedicated experiment branch (push) or by manual dispatch. Its `contents: read` permission prevents publishing accepted production changes. Steps:

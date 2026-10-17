@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.3.0)
 
+- Archive independently checked real protein Agent/Tool/Workflow field-run metrics, artifact checksum, provenance identities and bounded non-claims under evidence/field-tests
+
+
 - Real external-Agent protein-structure prediction field case: six pinned GitHub sources, four native topics, seven SHA-verified FASTA/PDB/JSON examples, independent Evidence Tool inspection, CWL replay, FTS5 search and isolated acceptance/no-change lifecycle
 
 
