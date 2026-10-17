@@ -2,6 +2,10 @@
 
 ## Unreleased · current working tree (package metadata 0.3.0)
 
+- Distinguish repeatable content snapshots from per-attempt execution identities in accepted event and receipt paths, including A → B → A recovery
+- Record selected document text versus source revision/provenance differences without declaring false scientific novelty
+- Require a populated accepted snapshot, current knowledge and event ledger in production final verification; expand replay and unsafe identity tests
+
 - Reorganize the native workflow and independently callable Evidence Tool as peer assets under `.github/` and `evidence/`
 - Normalize canonical Life Science naming and publish only public-facing design and usage contracts
 - Add read-only topic discovery and deterministic scientific software documentation auditing

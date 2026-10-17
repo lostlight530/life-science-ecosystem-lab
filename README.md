@@ -55,6 +55,7 @@ CITATION.cff              Citation for the repository's software version
 - The Knowledge Workflow collects only **approved public GitHub sources**, verifies Git object/content identity, constructs a source-cited knowledge map and rebuildable JSONL graph, and supports bounded SQLite FTS5/BM25 search. Scheduled persistence is gated by evidence completeness, state checks, `main` world-line, and a `data/`-only write boundary.
 - The Evidence Tool provides source collection, aggregation, validation, advisory discovery, local Markdown-link auditing, and a standalone **nonexecuting** external-repository inspection function. Its reports distinguish findings from unknown or unverified outcomes.
 - Graph `SOURCE_MATCH` edges are **document-topic matches**, not proven scientific, biological or causal relations. Metadata validation is not scientific validity or external certification.
+- Accepted receipts distinguish `snapshot_id` from `execution_id` and classify selected document-content changes separately from provenance-only changes. Final production validation rejects a placeholder-only `data/` tree.
 - The committed `data/` directory may initially contain only placeholders. Passing CI does **not** prove that a scheduled production observation has already persisted a live corpus.
 
 Standards-facing descriptors exist for CWL, RO-Crate, Bioschemas, CFF and CodeMeta. **WorkflowHub registration, LifeMonitor enrollment and bio.tools eligibility/acceptance require independent external verification**. See [standards status](docs/STANDARDS.md).
