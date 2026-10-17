@@ -16,7 +16,7 @@ ls-bio protein-pdb --input path/to/structure.pdb --output build/protein-pdb-repo
 
 ### Workflow integration and reproducibility
 
-Portable CWL CommandLineTool wrappers are in `.github/bio/protein-fasta.cwl` and `.github/bio/protein-pdb.cwl`. `python -m unittest discover -s tests -v` checks deterministic reports, malformed input rejection, first-model behavior and CLI. The separate `life-science-bio.yml` CI also runs CWL replay.
+Portable CWL CommandLineTool wrappers are in `.github/bio/protein-fasta.cwl` and `.github/bio/protein-pdb.cwl`. `python -m unittest discover -s tests -v` checks deterministic reports, malformed input rejection, first-model behavior and CLI. The separate `life-science-bio.yml` CI also runs CWL replay. CWL inputs require explicit EDAM format declarations, supplied by `.github/bio/test/fasta-job.yml` and `.github/bio/test/pdb-job.yml`. The optional scheduled or manual pinned-sample job verifies immutable GitHub tree/blob identity before running on external research example files. Only metadata summaries are retained.
 
 ### bio.tools / ELIXIR registration
 
