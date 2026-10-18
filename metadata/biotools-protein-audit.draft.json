@@ -1,5 +1,7 @@
 {
   "name": "Life Science Protein File Audit",
+  "biotoolsID": "life-science-protein-file-audit",
+  "biotoolsCURIE": "biotools:life-science-protein-file-audit",
   "description": "Offline, deterministic bioinformatics command-line analysis of amino-acid composition and ambiguous residues in protein FASTA files, and observed first-model C-alpha residue inventory in PDB coordinate files. Reports source SHA-256 and bounded quality warnings. Does not infer protein structures or validate molecular geometry.",
   "homepage": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/bio_tool",
   "version": "0.4.0",

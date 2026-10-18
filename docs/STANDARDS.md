@@ -16,7 +16,7 @@ This document lists supported *software-interface mappings*, not certifications.
 | Software Heritage SWHID | Optional immutable source object identifier | Only use real computed/archived identifiers, never invent them |
 | WorkflowHub | External publication record | `Life Science Knowledge Workflow` is externally observed as WorkflowHub 2347.1; this does not prove LifeMonitor synchronization or independent scientific validity |
 | LifeMonitor | Installed GitHub App + root `lifemonitor.yaml` + uploaded WTROC | Workflow `cc202b33-cd3e-48cc-8004-8e8db87bd200` and suite `fc958fb2-1a36-48df-a978-72ace9114eb9` were externally observed with 1 Passing, 0 Some passing, 0 Failing and 0 Unavailable on 2026-10-18 |
-| bio.tools + EDAM | `bio_tool/`, `metadata/biotools-protein-audit.draft.json` | Actual FASTA/PDB processing, reviewed EDAM operations/data/formats and unsubmitted candidate; accession and eligibility require registry verification |
+| bio.tools + EDAM | `bio_tool/`, `metadata/biotools-protein-audit.draft.json` | Actual FASTA/PDB processing and reviewed EDAM mappings correspond to the maintainer-observed record `biotools:life-science-protein-file-audit`; API verification, curation status and OpenEBench evaluation remain separate and unverified |
 
 Reference documents:
 
@@ -36,7 +36,7 @@ Use `ls-evidence audit-ecosystem --root . --output build/interop.json` before co
 | --- | --- | --- |
 | WorkflowHub | Workflow RO-Crate 1.1 requires a typed main workflow, programmingLanguage, license, and a ZIP with root metadata; registry entry is created only by an actual upload/registration | WorkflowHub 2347.1 is externally observed for the portable CWL workflow |
 | LifeMonitor | Workflow Testing RO-Crate links main workflow, test suite, test instance, and compatible CI service; monitoring requires actual enrollment | A direct local WTROC upload is enrolled as workflow `cc202b33-cd3e-48cc-8004-8e8db87bd200`; its GitHub Actions suite was externally observed passing on 2026-10-18 |
-| bio.tools | Curator scope requires actual bioinformatics data-processing operations and appropriate EDAM topic/operation/input/output terms | Independent FASTA/PDB processing and a draft EDAM mapping exist; registry eligibility, curation and acceptance are not asserted |
+| bio.tools | Curator scope requires actual bioinformatics data-processing operations and appropriate EDAM topic/operation/input/output terms | The independent FASTA/PDB processor has the maintainer-observed ID `life-science-protein-file-audit`; record existence does not establish independent API verification, curation approval or OpenEBench performance |
 
 Evidence gates are `LOCAL_PREFLIGHT → SUBMITTED → ACCEPTED → EXTERNALLY_VERIFIED`; platform submission is a separate user-authorized action and requires a stable public record URL. Neither an identity connection nor a completed local preflight is accepted registration, and external adoption requires separately sourced use evidence.
 
@@ -52,4 +52,4 @@ The portable archive declares CWL as its main workflow, includes synthetic repla
 
 ## Third independently callable Bio Tool
 
-`ls-bio protein-fasta` and `ls-bio protein-pdb` implement actual biological data processing, separately from software inspection and source-grounded knowledge generation. The unsubmitted `metadata/biotools-protein-audit.draft.json` uses EDAM operation_2403 / operation_2406, data_2976 / data_1460 / data_2955, and format_1929 / format_1476 for the supported formats. EDAM assignments are semantic descriptors, not third-party certification, and must be independently checked during bio.tools registration.
+`ls-bio protein-fasta` and `ls-bio protein-pdb` implement actual biological data processing, separately from software inspection and source-grounded knowledge generation. The repository-side `metadata/biotools-protein-audit.draft.json` preserves the metadata corresponding to the maintainer-observed record `biotools:life-science-protein-file-audit` and uses EDAM operation_2403 / operation_2406, data_2976 / data_1460 / data_2955, and format_1929 / format_1476 for the supported formats. The filename is retained to avoid needless path churn; it is a repository-side metadata source, not a claim that the registry exported or independently validated these exact bytes. EDAM assignments, record existence, curation status, API verification and external benchmark results remain distinct evidence claims.

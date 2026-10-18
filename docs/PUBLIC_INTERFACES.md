@@ -43,7 +43,7 @@ The Tool never writes into the inspected research repository. It only writes the
 - Operations: residue composition and uncertain code summaries; per-chain observed C-alpha residue inventory
 - Outputs: deterministic JSON quality reports with input SHA-256, explicit status and scientific limits
 - Portable adapters: `.github/bio/protein-fasta.cwl` and `.github/bio/protein-pdb.cwl`
-- Registry proposal: `metadata/biotools-protein-audit.draft.json`, using real EDAM concepts; no external accession claimed
+- Registry metadata source: `metadata/biotools-protein-audit.draft.json`, using real EDAM concepts and the maintainer-observed identifier `biotools:life-science-protein-file-audit`; independent API verification, curation status and OpenEBench evaluation are not claimed
 - No inference, folding model, molecular geometry validation, full sequence alignment or external upload; see [Bio Tool](../bio_tool/README.md)
 
 ## Composition
