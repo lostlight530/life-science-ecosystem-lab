@@ -14,14 +14,14 @@
     "SPDX MIT": "DECLARED_TESTED",
     "LifeMonitor enrollment": "EXTERNALLY_OBSERVED_LOCAL_UPLOAD",
     "WorkflowHub registration": "EXTERNALLY_OBSERVED_WORKFLOW_2347_VERSION_1",
-    "bio.tools scope and acceptance": "EXTERNAL_VERIFICATION_REQUIRED",
+    "bio.tools scope and acceptance": "EXTERNALLY_OBSERVED_REGISTRY_RECORD",
     "Workflow Run RO-Crate": "CONDITIONAL_NOT_YET_CLAIMED",
     "Clinical or biological scientific validity": "NOT_APPLICABLE",
     "CodeMeta 3.0": "DECLARED_STRUCTURAL_PREFLIGHT",
     "JSONL graph projection + SQLite FTS5": "CI_EXECUTABLE_LOCAL",
     "Independent research software inspection": "STATIC_PREFLIGHT_ONLY",
     "Independent protein FASTA / PDB bioinformatics data QA": "CI_EXECUTABLE_LOCAL",
-    "bio.tools registration": "EXTERNAL_VERIFICATION_REQUIRED",
+    "bio.tools registration": "EXTERNALLY_OBSERVED_REGISTRY_RECORD",
     "LifeMonitor GitHub App": "INSTALLED_BOT_PR_EXTERNALLY_OBSERVED"
   },
   "global_lifemonitor_defaults": "BRANCH_TAG_TRACKING_REGISTRY_UPDATES_AND_VISIBILITY_LEFT_TO_ACCOUNT_GLOBAL_SETTINGS",
@@ -39,6 +39,16 @@
     "version": 1,
     "workflow_type": "Common Workflow Language",
     "status": "EXTERNALLY_OBSERVED"
+  },
+  "biotools_registration": {
+    "biotools_id": "life-science-protein-file-audit",
+    "biotools_curie": "biotools:life-science-protein-file-audit",
+    "record_url": "https://bio.tools/life-science-protein-file-audit",
+    "status": "EXTERNALLY_OBSERVED",
+    "evidence_basis": "MAINTAINER_OBSERVED_REGISTRY_RECORD",
+    "api_verification": "NOT_INDEPENDENTLY_VERIFIED",
+    "curation_status": "NOT_INDEPENDENTLY_VERIFIED",
+    "openebench_evaluation": "NOT_OBSERVED"
   },
   "lifemonitor_registration": {
     "workflow_uuid": "cc202b33-cd3e-48cc-8004-8e8db87bd200",

@@ -20,6 +20,6 @@ Portable CWL CommandLineTool wrappers are in `.github/bio/protein-fasta.cwl` and
 
 ### bio.tools / ELIXIR registration
 
-`metadata/biotools-protein-audit.draft.json` is a **candidate**, not a registered entry and contains no invented tool ID. It uses reviewed EDAM terms for Proteins (topic_0078), Sequence analysis (operation_2403), Protein structure analysis (operation_2406), Protein sequence (data_2976), FASTA (format_1929), PDB (format_1476) and Sequence report (data_2955). All operations map to implemented commands. A real bio.tools account, current registry validation and actual public accession are independently required before stating registration.
+`metadata/biotools-protein-audit.draft.json` is the repository-side metadata source corresponding to the maintainer-observed record [`biotools:life-science-protein-file-audit`](https://bio.tools/life-science-protein-file-audit). It uses reviewed EDAM terms for Proteins (topic_0078), Sequence analysis (operation_2403), Protein structure analysis (operation_2406), Protein sequence (data_2976), FASTA (format_1929), PDB (format_1476) and Sequence report (data_2955). All operations map to implemented commands. The observed record and identifier do not by themselves establish independent API verification, curation approval, OpenEBench evaluation or scientific validity.
 
 Public reference: [bio.tools Curators Guide](https://biotools.readthedocs.io/en/latest/curators_guide.html), [biotoolsSchema](https://github.com/bio-tools/biotoolsSchema), [EDAM ontology](https://www.ebi.ac.uk/ols4/ontologies/edam/).

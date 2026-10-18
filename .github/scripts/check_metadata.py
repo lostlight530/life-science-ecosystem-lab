@@ -63,7 +63,19 @@ def verify() -> None:
     assert {op['uri'] for func in draft['function'] for op in func['operation']} == {
         'http://edamontology.org/operation_2403', 'http://edamontology.org/operation_2406'
     }, 'bio.tools EDAM operations mismatch'
-    assert 'biotoolsID' not in draft and 'doi' not in draft, 'bio.tools external IDs cannot be fabricated'
+    assert draft['biotoolsID']=='life-science-protein-file-audit', 'bio.tools registered ID mismatch'
+    assert draft['biotoolsCURIE']=='biotools:life-science-protein-file-audit', 'bio.tools registered CURIE mismatch'
+    assert 'doi' not in draft, 'bio.tools descriptor must not invent a DOI'
+    assert status['biotools_registration'] == {
+        'biotools_id': 'life-science-protein-file-audit',
+        'biotools_curie': 'biotools:life-science-protein-file-audit',
+        'record_url': 'https://bio.tools/life-science-protein-file-audit',
+        'status': 'EXTERNALLY_OBSERVED',
+        'evidence_basis': 'MAINTAINER_OBSERVED_REGISTRY_RECORD',
+        'api_verification': 'NOT_INDEPENDENTLY_VERIFIED',
+        'curation_status': 'NOT_INDEPENDENTLY_VERIFIED',
+        'openebench_evaluation': 'NOT_OBSERVED',
+    }, 'bio.tools external record boundary mismatch'
     assert (ROOT/'bio_tool/cli.py').is_file(), 'Bio Tool command missing'
     assert (ROOT/'LICENSE').is_file()
 if __name__=='__main__':
