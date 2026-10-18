@@ -37,7 +37,7 @@ REQUIRED = (
     "metadata/biotools-protein-audit.draft.json",
     "metadata/bioschemas-bio-tool.jsonld",
 )
-PORTABLE_README = """# Source-grounded research workflow knowledge cartography
+PORTABLE_README = """# Life Science Knowledge Workflow
 
 This portable CWL v1.2 workflow processes supplied evidence-record fixtures.
 It does not make network requests, register with external services, or produce
@@ -69,9 +69,15 @@ def build(path: Path) -> None:
     if main.get("programmingLanguage", {}).get("@id") != "https://w3id.org/workflowhub/workflow-ro-crate#cwl":
         raise ValueError("CWL language identity missing")
     crate["mainEntity"] = {"@id": CWL_MAIN}
-    crate["name"] = "Source-grounded Research Workflow Knowledge Cartography — portable CWL"
-    crate["description"] = ("Deterministic CWL v1.2 extraction of source-linked research workflow documentation "
-                            "from supplied evidence records; no live ingestion or biological inference")
+    crate["name"] = "Life Science Knowledge Workflow"
+    crate["version"] = version
+    crate["author"] = {"@id": "#creator"}
+    crate["description"] = (
+        "Deterministic and portable CWL v1.2 workflow that transforms supplied, source-linked GitHub "
+        "evidence records into a topic-linked knowledge map, validates provenance and schema constraints, "
+        "and reports explicit coverage gaps; no live collection, repository writes, biological inference "
+        "or clinical analysis"
+    )
     main["version"] = version
     suite = nodes.get("#suite")
     if isinstance(suite, dict):

@@ -27,9 +27,9 @@ GitHub-native `data/` holds current evidence, immutable archive, source-cited kn
 
 ## Standards, scope and external states
 
-The workflow descriptor, RO-Crate, Workflow Testing RO-Crate, Bioschemas, CFF and MIT licensing describe verifiable functionality. They do not certify clinical validity, automatic WorkflowHub registration, LifeMonitor enrollment or semantic scientific understanding
+The workflow descriptor, RO-Crate, Workflow Testing RO-Crate, Bioschemas, CFF and MIT licensing describe verifiable functionality. They do not by themselves certify clinical validity, external registration, monitoring enrollment or semantic scientific understanding
 
-The repository's minimal `lifemonitor.yaml` enables issue checks and intentionally leaves branch and tag tracking to the existing account-wide global settings. It does not itself prove workflow-test enrollment or recurring monitoring. The Workflow and Tools are registration-ready research software assets, but repository metadata and CI success do not claim that an external registry has accepted them
+The repository's minimal `lifemonitor.yaml` enables issue checks and intentionally leaves branch and tag tracking to the existing account-wide global settings. It does not itself prove workflow-test enrollment or recurring monitoring; current external records are tracked separately in [standards status](STANDARDS.md)
 
 ## Validation, schedules and external observers
 

@@ -2,6 +2,7 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Align Workflow Testing RO-Crate GitHub service metadata with LifeMonitor's supported contract and record the externally observed passing local-upload workflow without claiming automatic WorkflowHub synchronization
 - Isolate required validation into independent repository, Knowledge Workflow, Evidence Tool and portable-package domains with an actor-neutral aggregate verdict and failure-safe diagnostics
 - Keep scheduled research observations and external registry availability outside the required PR dependency graph while preserving native validate-before-apply authority
 - Align the public three-asset inventory, real-sample boundary and LifeMonitor integration status across the README, methodology, architecture, standards guidance and executable documentation gate

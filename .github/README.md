@@ -18,7 +18,7 @@ This directory owns the scientific knowledge-production lifecycle, including wor
 
 The required `validate.yml` workflow uses four actor-neutral, read-only domains: repository contracts, Knowledge Workflow replay, Evidence Tool checks and portable package replay. The domains have no inter-job dependency, so one failure does not suppress the remaining evidence. The aggregate `validate` check preserves the historical required-check name, reports all four results and fails unless every domain succeeds. Scheduled research checks and guarded native persistence remain separate workflows, not prerequisites for pull-request execution
 
-**LifeMonitor:** [`lifemonitor.yaml`](../lifemonitor.yaml) uses the documented root-level config path and enables repository issue checks. It leaves branch/tag tracking, registry updates and visibility unspecified so account-wide settings remain authoritative. External recognition of this corrected file, workflow-test enrollment and periodic monitoring remain separately unverified
+**LifeMonitor:** [`lifemonitor.yaml`](../lifemonitor.yaml) uses the documented root-level config path and enables repository issue checks. It leaves branch/tag tracking, registry updates and visibility unspecified so account-wide settings remain authoritative. Current enrollment evidence is maintained in the single [standards status](../docs/STANDARDS.md) record
 
 **Publication boundaries:** WorkflowHub, LifeMonitor and additional registries require evidence of actual external registrations; a passing GitHub test is not proof of enrollment
 

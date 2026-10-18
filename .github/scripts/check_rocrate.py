@@ -20,7 +20,14 @@ def verify() -> None:
     assert graph['./']['license']['@id'] in graph
     assert graph['#suite']['@type'] == 'TestSuite'
     assert any(x['@id'] == '#gh-test' for x in graph['#suite']['instance'])
+    assert graph['#gh-test']['name'] == 'GitHub Actions integration validation'
+    assert graph['#gh-test']['runsOn']['@id'] == 'https://w3id.org/ro/terms/test#GithubService'
+    assert graph['#gh-test']['url'] == 'https://api.github.com'
     assert graph['#gh-test']['resource'] == 'repos/lostlight530/life-science-ecosystem-lab/actions/workflows/validate.yml'
+    github_service = graph['https://w3id.org/ro/terms/test#GithubService']
+    assert github_service['@type'] == 'TestService'
+    assert github_service['name'] == 'Github Actions'
+    assert github_service['url']['@id'] == 'https://github.com'
     for p in graph['./']['hasPart']:
         if not (ROOT / p['@id']).exists():
             raise ValueError('missing declared crate member: ' + p['@id'])
