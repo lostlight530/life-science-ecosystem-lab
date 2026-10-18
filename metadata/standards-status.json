@@ -12,8 +12,8 @@
     "Bioschemas FormalParameter 1.0": "DECLARED_NOT_EXTERNALLY_CERTIFIED",
     "CFF 1.2.0": "DECLARED_TESTED",
     "SPDX MIT": "DECLARED_TESTED",
-    "LifeMonitor enrollment": "EXTERNAL_VERIFICATION_REQUIRED",
-    "WorkflowHub registration": "EXTERNAL_VERIFICATION_REQUIRED",
+    "LifeMonitor enrollment": "EXTERNALLY_OBSERVED_LOCAL_UPLOAD",
+    "WorkflowHub registration": "EXTERNALLY_OBSERVED_WORKFLOW_2347_VERSION_1",
     "bio.tools scope and acceptance": "EXTERNAL_VERIFICATION_REQUIRED",
     "Workflow Run RO-Crate": "CONDITIONAL_NOT_YET_CLAIMED",
     "Clinical or biological scientific validity": "NOT_APPLICABLE",
@@ -25,13 +25,40 @@
     "LifeMonitor GitHub App": "INSTALLED_BOT_PR_EXTERNALLY_OBSERVED"
   },
   "global_lifemonitor_defaults": "BRANCH_TAG_TRACKING_REGISTRY_UPDATES_AND_VISIBILITY_LEFT_TO_ACCOUNT_GLOBAL_SETTINGS",
-  "notes": "The root-level LifeMonitor config uses the documented filename and only sets repository name and issue checks; structural checks and CI are not independent external registration or scientific validity",
+  "notes": "The root-level LifeMonitor config only sets repository name and issue checks. The separately uploaded WTROC was observed in LifeMonitor with one passing GitHub Actions suite. This does not establish automatic WorkflowHub synchronization, scientific validity or public visibility",
   "bio_tool": "bio_tool/cli.py",
   "lifemonitor_repository_config": {
     "path": "lifemonitor.yaml",
     "issue_checks": "ENABLED_FOR_THIS_REPOSITORY",
     "push_overrides": "NONE",
     "visibility_override": "NONE",
-    "external_recognition": "REQUIRES_POST_CHANGE_VERIFICATION"
+    "external_recognition": "EXTERNALLY_OBSERVED_LOCAL_UPLOAD"
+  },
+  "workflowhub_registration": {
+    "workflow_id": 2347,
+    "version": 1,
+    "workflow_type": "Common Workflow Language",
+    "status": "EXTERNALLY_OBSERVED"
+  },
+  "lifemonitor_registration": {
+    "workflow_uuid": "cc202b33-cd3e-48cc-8004-8e8db87bd200",
+    "origin": "local file uploaded",
+    "visibility": "private",
+    "workflow_type": "cwl",
+    "observed_on": "2026-10-18",
+    "suite": {
+      "uuid": "fc958fb2-1a36-48df-a978-72ace9114eb9",
+      "name": "GitHub Actions automated workflow tests",
+      "passing": 1,
+      "some_passing": 0,
+      "failing": 0,
+      "unavailable": 0
+    },
+    "evidence_basis": "MAINTAINER_OBSERVED_AUTHENTICATED_DASHBOARD",
+    "limitations": [
+      "Private dashboard observation is not a public status endpoint",
+      "Local upload is not evidence of automatic WorkflowHub synchronization",
+      "Passing CI is not biological, clinical or scientific validation"
+    ]
   }
 }

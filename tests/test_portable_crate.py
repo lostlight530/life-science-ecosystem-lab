@@ -25,11 +25,26 @@ class PortableCrateTests(unittest.TestCase):
                 self.assertFalse(any(name.startswith("data/") or name.startswith(".agent-work/") for name in names))
                 body = json.loads(crate.read("ro-crate-metadata.json"))
                 nodes = {n["@id"]: n for n in body["@graph"] if isinstance(n, dict) and "@id" in n}
+                self.assertEqual(nodes["./"]["name"], "Life Science Knowledge Workflow")
+                self.assertEqual(nodes["./"]["version"], "0.4.0")
+                self.assertEqual(nodes["./"]["author"]["@id"], "#creator")
+                self.assertIn("portable CWL v1.2 workflow", nodes["./"]["description"])
+                self.assertIn("no live collection", nodes["./"]["description"])
                 self.assertEqual(nodes["./"]["mainEntity"]["@id"], ".github/knowledge/main.cwl")
                 self.assertEqual(nodes["#suite"]["mainEntity"]["@id"], ".github/knowledge/main.cwl")
                 self.assertEqual(nodes[".github/knowledge/main.cwl"]["version"], "0.4.0")
                 self.assertEqual(nodes[".github/knowledge/main.cwl"]["programmingLanguage"]["@id"],
                                  "https://w3id.org/workflowhub/workflow-ro-crate#cwl")
+                self.assertEqual(nodes["#gh-test"]["name"], "GitHub Actions integration validation")
+                self.assertEqual(nodes["#gh-test"]["url"], "https://api.github.com")
+                self.assertEqual(
+                    nodes["#gh-test"]["runsOn"]["@id"],
+                    "https://w3id.org/ro/terms/test#GithubService",
+                )
+                github_service = nodes["https://w3id.org/ro/terms/test#GithubService"]
+                self.assertEqual(github_service["@type"], "TestService")
+                self.assertEqual(github_service["name"], "Github Actions")
+                self.assertEqual(github_service["url"]["@id"], "https://github.com")
                 self.assertTrue({v["@id"] for v in nodes["./"]["hasPart"]}.issubset(names))
 
 

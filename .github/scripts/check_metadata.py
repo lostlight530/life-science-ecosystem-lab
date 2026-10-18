@@ -23,6 +23,25 @@ def verify() -> None:
     assert status['software_version']==version, 'status version mismatch'
     assert status['workflow']=='.github/workflows/life-science-knowledge.yml'
     assert status['tool']=='evidence/cli.py'
+    workflowhub=status['workflowhub_registration']
+    assert workflowhub == {
+        'workflow_id': 2347,
+        'version': 1,
+        'workflow_type': 'Common Workflow Language',
+        'status': 'EXTERNALLY_OBSERVED',
+    }, 'WorkflowHub external record mismatch'
+    lifemonitor=status['lifemonitor_registration']
+    assert lifemonitor['workflow_uuid']=='cc202b33-cd3e-48cc-8004-8e8db87bd200', 'LifeMonitor workflow UUID mismatch'
+    assert lifemonitor['origin']=='local file uploaded' and lifemonitor['visibility']=='private', 'LifeMonitor record boundary mismatch'
+    assert lifemonitor['evidence_basis']=='MAINTAINER_OBSERVED_AUTHENTICATED_DASHBOARD', 'LifeMonitor evidence basis mismatch'
+    assert lifemonitor['suite'] == {
+        'uuid': 'fc958fb2-1a36-48df-a978-72ace9114eb9',
+        'name': 'GitHub Actions automated workflow tests',
+        'passing': 1,
+        'some_passing': 0,
+        'failing': 0,
+        'unavailable': 0,
+    }, 'LifeMonitor suite status mismatch'
     codemeta=json.loads((ROOT/'codemeta.json').read_text(encoding='utf-8'))
     assert codemeta.get('@type')=='SoftwareSourceCode', 'CodeMeta type mismatch'
     assert codemeta.get('softwareVersion')==version, 'CodeMeta version mismatch'

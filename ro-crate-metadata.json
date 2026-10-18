@@ -278,16 +278,20 @@
     {
       "@id": "#gh-test",
       "@type": "TestInstance",
+      "name": "GitHub Actions integration validation",
       "runsOn": {
-        "@id": "https://w3id.org/ro/terms/test#GithubActionsService"
+        "@id": "https://w3id.org/ro/terms/test#GithubService"
       },
       "url": "https://api.github.com",
       "resource": "repos/lostlight530/life-science-ecosystem-lab/actions/workflows/validate.yml"
     },
     {
-      "@id": "https://w3id.org/ro/terms/test#GithubActionsService",
+      "@id": "https://w3id.org/ro/terms/test#GithubService",
       "@type": "TestService",
-      "name": "GitHub Actions"
+      "name": "Github Actions",
+      "url": {
+        "@id": "https://github.com"
+      }
     },
     {
       "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.1",

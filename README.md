@@ -73,7 +73,7 @@ CITATION.cff              Citation for the repository's software version
 - Accepted receipts distinguish `snapshot_id` from `execution_id` and classify selected document-content changes separately from provenance-only changes. Final production validation rejects a placeholder-only `data/` tree.
 - The first verified live production snapshot was accepted on 2026-10-17 in [Run 38995485443](https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/38995485443) and [Commit b2d1d31](https://github.com/lostlight530/life-science-ecosystem-lab/commit/b2d1d31f715275823f7ea0440d0a14a552f35e2a). This historic acceptance does **not** establish recurring schedule success or any external scientific certification.
 
-Standards-facing descriptors exist for CWL, RO-Crate, Bioschemas, CFF and CodeMeta. **The LifeMonitor GitHub App installation and first Bot PR are externally observed; LifeMonitor test enrollment, WorkflowHub registration, and bio.tools acceptance require independent external verification**. See [standards status](docs/STANDARDS.md).
+Standards-facing descriptors exist for CWL, RO-Crate, Bioschemas, CFF and CodeMeta. Current external records and their evidence boundaries are maintained only in [standards status](docs/STANDARDS.md); local metadata alone is not proof of registration or scientific validity.
 
 ## Reusable research methodology
 
