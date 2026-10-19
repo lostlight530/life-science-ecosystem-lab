@@ -96,6 +96,8 @@ def assess(bundle: Any, root: Path) -> dict[str, Any]:
         if not (_array(assets) and _array(steps) and _array(claims)):
             _problem(errors, "UNBOUNDED_COLLECTION", "bundle")
         else:
+            if not assets:
+                _problem(errors, "EMPTY_ASSET_SET", "bundle")
             for asset in assets:
                 if (not isinstance(asset, dict)
                         or not {"id", "domain", "kind", "sha256", "source"}.issubset(asset)

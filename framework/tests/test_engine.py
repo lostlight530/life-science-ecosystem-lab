@@ -29,6 +29,14 @@ class FrameworkContractTests(unittest.TestCase):
         self.assertEqual(r["metrics"]["domains"], ["genomics", "life_sciences_integrative", "microscopy"])
         self.assertTrue(r["not_verified"])
 
+    def test_empty_asset_bundle_is_not_valid_evidence(self):
+        data = specimen()
+        data["assets"] = []
+        data["steps"] = []
+        report = self.evaluate(data)
+        self.assertEqual(report["status"], "FAIL")
+        self.assertIn("EMPTY_ASSET_SET", {x["code"] for x in report["errors"]})
+
     def test_canonical_determinism(self):
         original = specimen()
         self.assertEqual(self.evaluate(original), self.evaluate(copy.deepcopy(original)))
