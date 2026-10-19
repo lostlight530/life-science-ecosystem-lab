@@ -1,12 +1,13 @@
 # Life Science Lab · Canonical Architecture
 
-## Three peer assets, one native execution environment
+## Three established peer assets plus an experimental independent Framework
 
 1. **Knowledge Workflow** — `.github/` is the canonical lifecycle and knowledge runtime. The GitHub Actions workflow controls scheduling, source ingestion, knowledge transformation, state recovery, conditional persistence and receipts; a CWL computational sub-workflow offers portable replay
 2. **Evidence Tool** — `evidence/` is an independent Python package and CLI for source identification, immutable provenance, diff/replay, scientific-software documentation checks and independent verdicts
 3. **Bio Tool** — `bio_tool/` is an independent Python package and CLI for bounded protein FASTA/PDB quality analysis, with portable CWL command wrappers
+4. **Framework (experimental)** — `framework/` is an independent Python distribution for *life-sciences cross-domain software engineering contracts*. It is not a Tool, a biological interpretation engine or part of the other three assets. See [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
-The three assets can be composed through explicit files and CLI calls, but **no asset's identity is defined by that call graph**
+Each established asset and the experimental Framework can operate independently and interoperate through explicit file/CLI interfaces. **No software entity's identity is defined by that call graph**. The root distribution still packages the three established assets; the Framework is installed separately
 
 ## Native lifecycle
 

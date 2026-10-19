@@ -1,14 +1,15 @@
 # Life Science Ecosystem Lab
 
-**Three independently callable life-science research software assets: Knowledge Workflow, Evidence Tool and Bio Tool**
+**Three established independent research-software assets plus one experimental independent cross-domain software engineering Framework**
 
-This open-source repository contains **three independently callable research-software assets**. All three can be used separately, tested separately, and composed through public file/CLI interfaces. GitHub Actions operates the Knowledge Workflow; it is the native execution environment for that asset, not a fourth asset. External Agents and human research are independent collaborators, **not runtime requirements**.
+This open-source repository contains **three established independently callable research-software assets**, plus a separately packaged, experimental **Life Sciences Cross-Domain Software Engineering Framework**. Each can be tested independently and combined through explicit public file/CLI contracts. GitHub Actions operates the Knowledge Workflow; it is the native execution environment for that asset, not a fourth asset. External Agents and human research are independent collaborators, **not runtime requirements**.
 
 | Asset | Execution | Primary output |
 | --- | --- | --- |
 | [Knowledge Workflow](.github/README.md) | `ls-knowledge` / native GitHub Actions / CWL | Accepted source-linked knowledge, graph and receipts |
 | [Evidence Tool](evidence/README.md) | `ls-evidence` independently | Software and evidence checks, JSON/Markdown/SARIF |
 | [Bio Tool](bio_tool/README.md) | `ls-bio` independently / CWL wrappers | Real protein FASTA/PDB file analysis and bounded JSON results |
+| [Framework — experimental](framework/README.md) | Separate `pip install -e ./framework` / `ls-framework` | Life-science cross-domain software-contract and lineage assessment, not biological interpretation |
 
 ## Heterogeneous Agent cohort research
 
@@ -55,16 +56,21 @@ Run from the cloned **repository root** with Python 3.11+. The CWL replay is off
 .github/                  Native knowledge lifecycle (Actions, CWL, runtime, guards)
 evidence/                 Independent installed Evidence Tool, profiles and schemas
 bio_tool/                 Independent protein FASTA/PDB analysis package
+framework/                Independent experimental cross-domain software engineering package
 data/                     Git-tracked accepted inputs, graph, memory and receipts
 metadata/                 Public Bioschemas descriptors and standards-status data
 docs/                     User guides, scope, interfaces, architecture and provenance
 tests/                    Executable regression and integration contracts
 ro-crate-metadata.json    Workflow and testing research-object metadata
-codemeta.json             Shared software identity, three named asset components
+codemeta.json             Published root-package metadata for the three established assets; the experimental Framework has separate package metadata
 CITATION.cff              Citation for the repository's software version
 ```
 
 [Optional external Agent handoff](docs/AGENT_COLLABORATION.md) · [Documentation index](docs/README.md) · [Public interfaces](docs/PUBLIC_INTERFACES.md) · [Understanding verification](docs/VERIFYING_RESULTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
+
+## Independent Framework pilot
+
+The experimental [Framework](framework/README.md) is a **software-engineering** peer focused on versioned, bounded contracts across different life-science data systems. The frozen genomics/microscopy example uses synthetic JSON fixtures and tests local byte identity, declared method applicability, lineage and failure boundaries — **it performs no omics integration or scientific inference**. See [independent architecture decision](docs/ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
 ## Current capabilities and limits
 

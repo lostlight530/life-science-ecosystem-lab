@@ -85,6 +85,8 @@ def assess(bundle: Any, root: Path) -> dict[str, Any]:
         digest = canonical_digest(bundle)
     except (TypeError, ValueError, OverflowError):
         digest = None
+    if digest is None:
+        _problem(errors, "INVALID_CANONICAL_DIGEST", "bundle")
     if not isinstance(bundle, dict) or set(bundle) != {
         "kind", "schema_version", "scope", "assets", "steps", "claims",
     } or bundle.get("kind") != KIND or bundle.get("schema_version") != VERSION or bundle.get("scope") != "LIFE_SCIENCES":
@@ -212,9 +214,10 @@ def assess(bundle: Any, root: Path) -> dict[str, Any]:
                 claim_ids.add(cid)
                 if claim["authority"] != "PROPOSAL_ONLY":
                     _problem(errors, "SCIENTIFIC_AUTHORITY_ESCALATION", cid)
-                if len(set(claim["evidence"])) != len(claim["evidence"]) or any(
+                if (not all(_id(x) for x in claim["evidence"])
+                        or len(set(claim["evidence"])) != len(claim["evidence"]) or any(
                     x not in asset_ids for x in claim["evidence"]
-                ):
+                )):
                     _problem(errors, "UNKNOWN_OR_DUPLICATE_CLAIM_EVIDENCE", cid)
                 _problem(warnings, "SCIENTIFIC_CLAIM_NOT_ADJUDICATED", cid)
 

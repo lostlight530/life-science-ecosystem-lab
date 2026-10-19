@@ -7,6 +7,7 @@
 - Versioned schemas, examples, tests, provenance, and recovery information
 - Standards-aware, externally inspectable WorkflowHub and LifeMonitor metadata without asserting registration or monitoring
 - Evidence-based maintenance of repository documentation, citation and reusable Life Science infrastructure templates
+- Experimental, independent life-sciences cross-domain **software-engineering** contracts, with synthetic negative tests and no biological interpretation
 
 ## Out of scope
 

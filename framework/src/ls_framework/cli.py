@@ -18,7 +18,14 @@ def main(argv: list[str] | None = None) -> int:
         data = args.bundle.read_bytes()
         if len(data) > 256_000:
             raise ValueError("bundle exceeds 256 KB")
-        bundle = json.loads(data)
+        def reject_duplicates(pairs):
+            result = {}
+            for key, value in pairs:
+                if key in result:
+                    raise ValueError("duplicate JSON object key")
+                result[key] = value
+            return result
+        bundle = json.loads(data, object_pairs_hook=reject_duplicates)
         report = assess(bundle, (args.root or args.bundle.parent).resolve(strict=True))
     except (OSError, ValueError, json.JSONDecodeError) as error:
         report = {

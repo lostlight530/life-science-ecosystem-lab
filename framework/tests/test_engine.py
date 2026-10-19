@@ -108,6 +108,13 @@ class FrameworkContractTests(unittest.TestCase):
         data["steps"][0]["outcome"] = {}
         self.assertEqual(self.evaluate(data)["status"], "FAIL")
 
+    def test_malformed_claim_evidence_fails_closed(self):
+        data = specimen()
+        data["claims"].append({"id": "claim-2", "statement": "untrusted", "evidence": [{}], "authority": "PROPOSAL_ONLY"})
+        self.assertIn("UNKNOWN_OR_DUPLICATE_CLAIM_EVIDENCE", {
+            x["code"] for x in self.evaluate(data)["errors"]
+        })
+
     def test_command_line_independent_execution(self):
         with tempfile.TemporaryDirectory() as tmp:
             out = Path(tmp) / "result.json"

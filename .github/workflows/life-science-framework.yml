@@ -39,8 +39,8 @@ jobs:
       - name: Verify cross-domain software-contract replay
         run: |
           mkdir -p build/framework
-          ls-framework assess             --bundle framework/fixtures/software-cross-domain.json             --root framework/fixtures             --output build/framework/assessment.json
-          python -m ls_framework assess             --bundle framework/fixtures/software-cross-domain.json             --root framework/fixtures             --output build/framework/replay.json
+          ls-framework assess --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/assessment.json
+          python -m ls_framework assess --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/replay.json
           cmp build/framework/assessment.json build/framework/replay.json
       - name: Retain compact report
         if: ${{ always() }}
