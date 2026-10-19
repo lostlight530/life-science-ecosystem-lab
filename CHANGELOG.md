@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Bind native and protein research executions to a closed, digest-recorded Workflow profile registry; only the native profile can reach guarded persistence
+- Preserve the daily self-check as topic-neutral repository assurance while recording complete independent check outcomes and GitHub execution identity
+- Route the protein structure field demonstration through its reviewed isolated profile without accepting arbitrary commands, paths, URLs or runtime research subjects
 - Align Workflow Testing RO-Crate GitHub service metadata with LifeMonitor's supported contract and record the externally observed passing local-upload workflow without claiming automatic WorkflowHub synchronization
 - Isolate required validation into independent repository, Knowledge Workflow, Evidence Tool and portable-package domains with an actor-neutral aggregate verdict and failure-safe diagnostics
 - Keep scheduled research observations and external registry availability outside the required PR dependency graph while preserving native validate-before-apply authority

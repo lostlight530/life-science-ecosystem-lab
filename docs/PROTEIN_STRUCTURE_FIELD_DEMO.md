@@ -19,7 +19,7 @@ The protein prediction question here is **3D structure prediction**, not general
 | [AlphaFold 3](https://github.com/google-deepmind/alphafold3) | Source code and a small example inference-input JSON | Model weights/outputs carry additional use terms; none downloaded |
 | [ProteinGym Base](https://github.com/ProteinGym/proteingym-base) | Variant-effect dataset infrastructure and sequence/structure examples | This is not direct 3D structure prediction accuracy |
 
-Source and topic files: [`sources.json`](../evidence/profiles/research/protein_structure/sources.json), [`topics.json`](../evidence/profiles/research/protein_structure/topics.json). These scoped profiles use the same native collection and keyword matching code, but **do not alter the weekly production source and topic registries**. All six source refs are immutable Commit SHAs.
+Source and topic files: [`sources.json`](../evidence/profiles/research/protein_structure/sources.json), [`topics.json`](../evidence/profiles/research/protein_structure/topics.json). The closed [`workflow-profiles.json`](../evidence/profiles/workflow-profiles.json) entry binds these files, the Agent handoff and sample manifest to `protein_structure`, records content digests at execution and explicitly denies persistence. These scoped profiles use the same native collection and keyword matching code, but **do not alter the weekly production source and topic registries**. All six source refs are immutable Commit SHAs.
 
 ## Seven individual GitHub data samples
 
@@ -48,6 +48,8 @@ The short-retention Artifact includes original bounded JSON/Markdown/SARIF repor
 5. Replay portable CWL with **synthetic** frozen fixture (different from the live GitHub evidence), proving the separately executable computational interface
 6. Copy accepted main `data/` to an ignored sandbox, accept protein topic evidence there, archive the older candidate and append a linked event, then reapply the unchanged candidate and require `NO_MEANINGFUL_DELTA`
 7. Validate every result and upload only bounded summaries, source identities, hashes, reports and diagnostics; **exclude raw retrieved upstream source and accepted snapshots**
+
+This is a customized research execution, but not a free-form dispatcher. Its sources, topics, proposal, samples and method are version-controlled and reviewable. Manual dispatch starts the reviewed protein profile exactly as recorded; changing the scientific scope or adding a new domain requires a separate profile and tests rather than editing an arbitrary path or URL at run time
 
 Success is a verified software demonstration, not an accepted production protein-research knowledge update. An explicit separately authorized native run/registry governance would be required to make this the ongoing topic.
 

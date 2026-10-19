@@ -114,6 +114,7 @@ def run_checks(
     *,
     executor: Callable[..., Any] = subprocess.run,
 ) -> dict[str, Any]:
+    report_began = time.monotonic()
     checks = validate_registry(policy)
     root = root.resolve(strict=True)
     if not root.is_dir():
@@ -153,12 +154,21 @@ def run_checks(
         "observed_at": utc_now(),
         "registry_sha256": policy_sha256,
         "source_commit": os.environ.get("GITHUB_SHA", "LOCAL_UNSPECIFIED"),
+        "tested_sha": os.environ.get("GITHUB_SHA", "LOCAL_UNSPECIFIED"),
+        "git_ref": os.environ.get("GITHUB_REF", "LOCAL_UNSPECIFIED"),
+        "head_ref": os.environ.get("GITHUB_HEAD_REF", ""),
+        "base_ref": os.environ.get("GITHUB_BASE_REF", ""),
+        "workflow_ref": os.environ.get("GITHUB_WORKFLOW_REF", "LOCAL_UNSPECIFIED"),
+        "run_id": os.environ.get("GITHUB_RUN_ID", "LOCAL_UNSPECIFIED"),
+        "run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT", "1"),
         "execution_id": (os.environ.get("GITHUB_RUN_ID", "LOCAL_UNSPECIFIED")
                          + "-" + os.environ.get("GITHUB_RUN_ATTEMPT", "1")),
         "event": os.environ.get("GITHUB_EVENT_NAME", "LOCAL_UNSPECIFIED"),
         "status": ("FAIL" if blocking_failed else
                    "PASS_WITH_ADVISORY" if advisory_failed else "PASS"),
         "checks": rows,
+        "selected_check_count": len(rows),
+        "elapsed_ms": max(0, int((time.monotonic() - report_began) * 1000)),
         "blocking_failure_count": sum(
             item["severity"] == "blocking" and item["outcome"] != "PASS" for item in rows
         ),

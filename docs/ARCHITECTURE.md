@@ -14,6 +14,15 @@ The three assets can be composed through explicit files and CLI calls, but **no 
 
 The canonical GitHub Actions workflow is **not a mere wrapper around CWL**. The CWL descriptor records a deterministic sub-workflow for portability, not the scheduler, branch authority or state machine
 
+## Reviewed Workflow profiles
+
+`evidence/profiles/workflow-profiles.json` is the closed execution-profile registry shared by the native lifecycle and isolated protein field case. A profile binds an identifier to repository-relative source and topic registries and records whether persistence is allowed. The current reviewed set is deliberately small:
+
+- `native` uses the production source/topic registries and is the only profile eligible for guarded persistence
+- `protein_structure` uses the isolated field-case registries, Agent handoff and sample manifest and is always read-only with respect to repository `data/`
+
+Profile resolution validates exact identifiers, repository-relative paths, file existence and content SHA-256 before collection. It does not accept commands, URLs or arbitrary paths. The scheduled lifecycle always resolves `native`; a manual isolated-profile run produces verification artifacts only. Adding another research area requires a reviewed registry/profile change and its own evidence, not a free-form dispatcher value
+
 GitHub-native `data/` holds current evidence, immutable archive, source-cited knowledge, bounded memories, state and receipts. CI fixtures and manual dry-runs do not claim the durable live corpus was updated
 
 ## Trust and write boundaries

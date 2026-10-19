@@ -47,6 +47,17 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("if: failure()", workflow)
         self.assertIn("build/source-diagnostics.json", workflow)
 
+    def test_knowledge_profiles_are_closed_and_only_native_can_persist(self):
+        workflow = (ROOT / ".github" / "workflows" / "life-science-knowledge.yml").read_text(encoding="utf-8")
+        self.assertIn("profile:", workflow)
+        self.assertIn("- native", workflow)
+        self.assertIn("- protein_structure", workflow)
+        self.assertIn("python -m evidence.workflow_profiles", workflow)
+        self.assertIn("$LS_SOURCES_PROFILE", workflow)
+        self.assertIn("$LS_TOPICS_PROFILE", workflow)
+        self.assertIn("inputs.profile == 'native'", workflow)
+        self.assertIn("build/workflow-profile.json", workflow)
+
     def test_daily_institutional_observation_is_not_gated_by_project_contract_tests(self):
         text = (ROOT / ".github" / "workflows" / "life-science-daily-selfcheck.yml").read_text(encoding="utf-8")
         institutional = text.split("  institutional-defaults:", 1)[1].split("  project-custom:", 1)[0]
@@ -64,6 +75,8 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertNotIn("needs:", project)
         self.assertIn("permissions:\n  contents: read", text)
         self.assertIn("persist-credentials: false", institutional)
+        self.assertNotIn("workflow_profiles", text)
+        self.assertNotIn("protein_structure", text)
 
     def test_validation_workflow_checks_profiles_and_caches(self):
         text = (ROOT / ".github" / "workflows" / "validate.yml").read_text(encoding="utf-8")

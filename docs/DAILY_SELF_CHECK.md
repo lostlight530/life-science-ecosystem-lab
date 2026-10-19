@@ -53,6 +53,10 @@ GitHub Actions run log and 30-day artifacts are the operational receipt. Daily r
 
 The independent existing `life-science-continuity.yml` daily accepted-state check remains in place; this new daily self-check complements it rather than replacing its original production-state role.
 
+## Custom does not mean a research-profile selector
+
+`Project Custom` means that this repository owns a reviewed check registry and built-in implementations. The daily workflow always executes the mandatory project assurance set. It does not select `native`, `protein_structure` or any future research subject, and it does not collect or persist research evidence. Research source/topic selection belongs to the separate Knowledge Workflow profile contract
+
 ## 2026-10-19 engineering revision — deterministic custom execution ledger
 
 The custom job now delegates its existing validation commands to `evidence.daily_custom_runner` and a project-owned `checks/project/daily_checks.json` registry. This is an **Evidence Tool execution helper**, not a new standalone product or an Agent runtime.
@@ -70,4 +74,4 @@ For a local reproduction run:
 PYTHONPATH=.github/runtime:. python -m evidence.daily_custom_runner --root . --registry checks/project/daily_checks.json --output build/daily-selfcheck/project-custom/execution-report.json
 ```
 
-The original institutional/public job, its fixed allowlist, `NOT_RUN_OFFLINE` behavior and project/official separation remain unchanged. The runner reports actual `observed_at` and GitHub run identifiers where available; it deliberately does not infer the nominal scheduled start from the cron expression. GitHub Actions' scheduled run creation time, observation timestamp and intended cron time require separate measurements for delay analysis. No check result is committed as a new accepted research event.
+The original institutional/public job, its fixed allowlist, `NOT_RUN_OFFLINE` behavior and project/official separation remain unchanged. The runner reports actual `observed_at`, tested SHA, Git ref, head/base refs, workflow ref and run identifiers where available; it deliberately does not infer the nominal scheduled start from the cron expression. GitHub Actions' scheduled run creation time, observation timestamp and intended cron time require separate measurements for delay analysis. No check result is committed as a new accepted research event.

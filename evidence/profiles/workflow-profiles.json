@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "profiles": {
+    "native": {
+      "authority": "PRODUCTION",
+      "sources": "evidence/profiles/sources.json",
+      "topics": "evidence/profiles/topics.json",
+      "persistence_allowed": true
+    },
+    "protein_structure": {
+      "authority": "ISOLATED_RESEARCH",
+      "sources": "evidence/profiles/research/protein_structure/sources.json",
+      "topics": "evidence/profiles/research/protein_structure/topics.json",
+      "persistence_allowed": false,
+      "agent_handoff": ".github/agent-handoff/protein-structure-2026-10-17.json",
+      "sample_manifest": "evidence/profiles/research/protein_structure/sample-manifest.json"
+    }
+  }
+}

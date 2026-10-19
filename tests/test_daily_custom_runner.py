@@ -7,6 +7,7 @@ import json
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -84,6 +85,30 @@ class DailyCustomRunnerTests(unittest.TestCase):
         self.assertNotIn("some private log", encoded)
         self.assertNotIn("detail", encoded)
         self.assertEqual(report["checks"][0]["stdout_sha256"], hashlib.sha256(b"some private log").hexdigest())
+
+    def test_report_records_unambiguous_github_execution_identity(self):
+        def fake(argv, **kwargs):
+            return SimpleNamespace(returncode=0, stdout="ok", stderr="")
+        environment = {
+            "GITHUB_SHA": "a" * 40,
+            "GITHUB_REF": "refs/pull/28/merge",
+            "GITHUB_HEAD_REF": "feature/profile-contracts",
+            "GITHUB_BASE_REF": "main",
+            "GITHUB_RUN_ID": "123",
+            "GITHUB_RUN_ATTEMPT": "2",
+            "GITHUB_EVENT_NAME": "pull_request",
+            "GITHUB_WORKFLOW_REF": "lostlight530/lab/.github/workflows/check.yml@refs/pull/28/merge",
+        }
+        with patch.dict("os.environ", environment, clear=True):
+            report = run_checks(ROOT, self.policy, self.digest, executor=fake)
+        self.assertEqual(report["tested_sha"], "a" * 40)
+        self.assertEqual(report["git_ref"], "refs/pull/28/merge")
+        self.assertEqual(report["head_ref"], "feature/profile-contracts")
+        self.assertEqual(report["base_ref"], "main")
+        self.assertEqual(report["run_id"], "123")
+        self.assertEqual(report["run_attempt"], "2")
+        self.assertEqual(report["selected_check_count"], len(self.policy["checks"]))
+        self.assertGreaterEqual(report["elapsed_ms"], 0)
 
 
 if __name__ == "__main__":
