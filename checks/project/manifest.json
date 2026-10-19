@@ -37,6 +37,9 @@
     "data/knowledge/current.json",
     "data/inputs/current/candidate.json",
     "checks/project/README.md",
-    "checks/project/manifest.json"
+    "checks/project/manifest.json",
+    "checks/project/daily_checks.json",
+    "evidence/daily_custom_runner.py",
+    "tests/test_daily_custom_runner.py"
   ]
 }
