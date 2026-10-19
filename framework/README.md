@@ -45,4 +45,4 @@ The report preserves canonical input digest, typed findings, bounded metrics and
 This proposed fourth independent *framework* entity is additive to the existing three assets and does not create a fourth Tool
 Framework contracts can be consumed by other software, but it cannot promote a proposal to approved sources, production data, third-party registration or scientific fact
 
-See `docs/ADR-INDEPENDENT-LS-FRAMEWORK.md` and independent `.github/workflows/life-science-framework.yml`
+See [the independent ADR](../docs/ADR-INDEPENDENT-LS-FRAMEWORK.md) and independent `.github/workflows/life-science-framework.yml`
