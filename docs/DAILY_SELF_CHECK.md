@@ -52,3 +52,22 @@ GitHub Actions run log and 30-day artifacts are the operational receipt. Daily r
 - **Non-goal:** mixing official, custom, synthetic and real observations into a single undifferentiated PASS
 
 The independent existing `life-science-continuity.yml` daily accepted-state check remains in place; this new daily self-check complements it rather than replacing its original production-state role.
+
+## 2026-10-19 engineering revision — deterministic custom execution ledger
+
+The custom job now delegates its existing validation commands to `evidence.daily_custom_runner` and a project-owned `checks/project/daily_checks.json` registry. This is an **Evidence Tool execution helper**, not a new standalone product or an Agent runtime.
+
+- **Algorithm:** frozen identifier → reviewed built-in argv → independent bounded subprocess → normalized result → final blocking/advisory verdict
+- **No dynamic shell:** registry data cannot change executable commands, endpoints, source approval, production persistence or the institutional reference catalogue
+- **Failure completeness:** an early regression/metadata/state failure is recorded without silently suppressing later checks; `TIMEOUT` and `ERROR` remain distinct from validator `FAIL`
+- **Unconditional artifact attempt:** the existing `if: always()` upload preserves the custom execution report and any intermediate diagnostics even when the final custom job fails
+- **Extensibility:** additional optional check implementations require new explicitly reviewed Python command-catalogue entries and tests; the manifest may only select registered IDs and severity constrained by the code
+- **Non-claims:** a check exit status is a software execution verdict, not biological ground truth, third-party approval, or an independent scientific review
+
+For a local reproduction run:
+
+```sh
+PYTHONPATH=.github/runtime:. python -m evidence.daily_custom_runner --root . --registry checks/project/daily_checks.json --output build/daily-selfcheck/project-custom/execution-report.json
+```
+
+The original institutional/public job, its fixed allowlist, `NOT_RUN_OFFLINE` behavior and project/official separation remain unchanged. The runner reports actual `observed_at` and GitHub run identifiers where available; it deliberately does not infer the nominal scheduled start from the cron expression. GitHub Actions' scheduled run creation time, observation timestamp and intended cron time require separate measurements for delay analysis. No check result is committed as a new accepted research event.
