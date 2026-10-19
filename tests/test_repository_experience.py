@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DOCS = {
     "README.md", "AGENTS.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md",
     ".github/README.md", ".github/knowledge/README.md", "evidence/README.md",
-    "bio_tool/README.md"
+    "bio_tool/README.md", "framework/README.md"
 }
 
 class RepositoryExperienceTests(unittest.TestCase):
