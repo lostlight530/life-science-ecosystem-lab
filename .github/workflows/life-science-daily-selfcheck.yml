@@ -22,8 +22,12 @@ on:
       - "evidence/daily_selfcheck.py"
       - "evidence/daily_custom_runner.py"
       - "tests/test_daily_custom_runner.py"
+      - "tests/test_workflow_contracts.py"
       - "tests/test_institutional_selfcheck.py"
       - "tests/test_project_selfcheck.py"
+      - "evidence/daily_custom_runner.py"
+      - "tests/test_daily_custom_runner.py"
+      - "tests/test_workflow_contracts.py"
       - ".github/workflows/life-science-daily-selfcheck.yml"
       - "docs/DAILY_SELF_CHECK.md"
   push:
