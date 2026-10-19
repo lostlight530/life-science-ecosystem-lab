@@ -1,7 +1,7 @@
 {
-  "evidence_bundle_digest": "5c3ee4aaea441494d94155ee06b3263d401a8a21dcbf7af738d2d778d63d5d67",
+  "evidence_bundle_digest": "06d0a853514df44d1250e29abef44c60472c52c3ad61932961f1e38d2b790968",
   "kind": "EXTRACTIVE_WORKFLOW_KNOWLEDGE_MAP",
-  "knowledge_digest": "b968d7ab41e1f6932bd6026e1b50442bf70682f904ff34a8bc5bc084cec1d74d",
+  "knowledge_digest": "787bcbdda25b84e8eb00eec1ede7daa93c36f316cbca0b5e20dbd566f9f68421",
   "knowledge_graph": {
     "edges": [
       {

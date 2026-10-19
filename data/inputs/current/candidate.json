@@ -2,91 +2,91 @@
   "algorithm_version": "1.1.0",
   "changes": [
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "README.md",
       "repository": "common-workflow-language/cwl-v1.2",
       "source_id": "cwl-standard"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "README.md",
       "repository": "crs4/life_monitor",
       "source_id": "lifemonitor"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/wfhub-setup-notes.md",
       "repository": "crs4/life_monitor",
       "source_id": "lifemonitor"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "README.md",
       "repository": "seek4science/seek",
       "source_id": "seek"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "README.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "Workflow-RO-Crate/1.1/changelog.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "Workflow-RO-Crate/1.1/index.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "developer/how-to-make-a-workflow-ro-crate.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/maintaining-your-workflow.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/registering_workflows/adding-files.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/registering_workflows/check-uploaded-workflow.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/registering_workflows/complete-workflow-metadata.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/registering_workflows/register-and-login.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/registering_workflows/registering-a-workflow.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
     },
     {
-      "kind": "unknown_baseline",
+      "kind": "unchanged",
       "path": "docs/registering_workflows/supported-workflow-types.md",
       "repository": "workflowhub-eu/about",
       "source_id": "workflowhub"
@@ -94,7 +94,7 @@
   ],
   "diagnostics": [],
   "input_digest": "0fc7d508fa5afb89eb9eec424869ae107ab28ff2419f124cafe8f88e6f483005",
-  "output_digest": "5c3ee4aaea441494d94155ee06b3263d401a8a21dcbf7af738d2d778d63d5d67",
+  "output_digest": "06d0a853514df44d1250e29abef44c60472c52c3ad61932961f1e38d2b790968",
   "profile_digest": "787471b78dfe37c2e63d0bbc637a747b53150590210b4bfab61d3b74aea835a3",
   "projection_eligible": true,
   "records": [

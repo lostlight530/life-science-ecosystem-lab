@@ -1,28 +1,28 @@
 {
-  "change_kind": "INITIAL_SNAPSHOT",
-  "current_knowledge_digest": "b968d7ab41e1f6932bd6026e1b50442bf70682f904ff34a8bc5bc084cec1d74d",
-  "previous_knowledge_digest": null,
+  "change_kind": "DOCUMENT_TEXT_UNCHANGED",
+  "current_knowledge_digest": "787bcbdda25b84e8eb00eec1ede7daa93c36f316cbca0b5e20dbd566f9f68421",
+  "previous_knowledge_digest": "b968d7ab41e1f6932bd6026e1b50442bf70682f904ff34a8bc5bc084cec1d74d",
   "record_count": 15,
   "schema_version": "1.0.0",
-  "source_bundle": "5c3ee4aaea441494d94155ee06b3263d401a8a21dcbf7af738d2d778d63d5d67",
+  "source_bundle": "06d0a853514df44d1250e29abef44c60472c52c3ad61932961f1e38d2b790968",
   "topic_count": 3,
   "topic_transitions": [
     {
       "current_coverage": "MULTI_SOURCE",
-      "previous_coverage": null,
-      "state": "ADDED",
+      "previous_coverage": "MULTI_SOURCE",
+      "state": "UNCHANGED",
       "topic_id": "research-object-metadata"
     },
     {
       "current_coverage": "MULTI_SOURCE",
-      "previous_coverage": null,
-      "state": "ADDED",
+      "previous_coverage": "MULTI_SOURCE",
+      "state": "UNCHANGED",
       "topic_id": "workflow-monitoring"
     },
     {
       "current_coverage": "MULTI_SOURCE",
-      "previous_coverage": null,
-      "state": "ADDED",
+      "previous_coverage": "MULTI_SOURCE",
+      "state": "UNCHANGED",
       "topic_id": "workflow-registration"
     }
   ],
