@@ -3,8 +3,16 @@ name: Life Science Knowledge Workflow — Native Lifecycle
 on:
   workflow_dispatch:
     inputs:
+      profile:
+        description: "Reviewed source/topic profile; isolated research profiles are read-only"
+        required: true
+        default: native
+        type: choice
+        options:
+          - native
+          - protein_structure
       persist:
-        description: "Persist the verified knowledge and evidence delta to main; schedules perform guarded maintenance automatically"
+        description: "Persist a verified native-profile delta to main; ignored for isolated research profiles"
         required: false
         default: false
         type: boolean
@@ -30,26 +38,31 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.12'
+      - name: Resolve reviewed source and topic profile
+        env:
+          REQUESTED_PROFILE: ${{ github.event_name == 'workflow_dispatch' && inputs.profile || 'native' }}
+        run: |
+          python -m evidence.workflow_profiles --root . --profile "$REQUESTED_PROFILE" --output build/workflow-profile.json --github-env "$GITHUB_ENV"
       - name: Verify contracts and record
         run: |
           python -m unittest discover -s tests -v
-          python -m life_science_ecosystem_lab validate-source-registry evidence/profiles/sources.json
-          python -m life_science_ecosystem_lab validate-topic-registry evidence/profiles/topics.json
+          python -m life_science_ecosystem_lab validate-source-registry "$LS_SOURCES_PROFILE"
+          python -m life_science_ecosystem_lab validate-topic-registry "$LS_TOPICS_PROFILE"
       - name: GitHub evidence collect
-        run: python -m evidence collect --sources evidence/profiles/sources.json --output build/records.json --diagnostics-output build/source-diagnostics.json
+        run: python -m evidence collect --sources "$LS_SOURCES_PROFILE" --output build/records.json --diagnostics-output build/source-diagnostics.json
       - name: GitHub evidence aggregate
         run: |
           optional_previous=()
-          if test -f data/inputs/current/candidate.json; then
+          if test "$LS_PROFILE_ID" = 'native' && test -f data/inputs/current/candidate.json; then
             optional_previous+=(--previous data/inputs/current/candidate.json)
           fi
-          python -m evidence aggregate --input build/records.json --topics evidence/profiles/topics.json --diagnostics build/source-diagnostics.json --output build/candidate.json "${optional_previous[@]}"
+          python -m evidence aggregate --input build/records.json --topics "$LS_TOPICS_PROFILE" --diagnostics build/source-diagnostics.json --output build/candidate.json "${optional_previous[@]}"
       - name: Evidence boundary validation
         run: python -m evidence validate --bundle build/candidate.json
       - name: Extract source-cited workflow knowledge
-        run: python -m life_science_ecosystem_lab knowledge build --candidate build/candidate.json --topics evidence/profiles/topics.json --output build/knowledge.json
+        run: python -m life_science_ecosystem_lab knowledge build --candidate build/candidate.json --topics "$LS_TOPICS_PROFILE" --output build/knowledge.json
       - name: Verify reproducible knowledge
-        run: python -m life_science_ecosystem_lab knowledge verify --candidate build/candidate.json --topics evidence/profiles/topics.json --knowledge build/knowledge.json
+        run: python -m life_science_ecosystem_lab knowledge verify --candidate build/candidate.json --topics "$LS_TOPICS_PROFILE" --knowledge build/knowledge.json
       - name: Audit source-cited knowledge quality
         run: python -m evidence audit-knowledge --knowledge build/knowledge.json --output build/knowledge-quality.json
       - name: Project and verify queryable graph
@@ -68,6 +81,7 @@ jobs:
           path: |
             build/source-diagnostics.json
             build/docs-audit.json
+            build/workflow-profile.json
           if-no-files-found: ignore
           retention-days: 14
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -81,13 +95,15 @@ jobs:
             build/source-diagnostics.json
             build/validated-head.txt
             build/docs-audit.json
+            build/workflow-profile.json
           if-no-files-found: error
           retention-days: 14
 
   apply:
     if: >-
       github.ref == 'refs/heads/main' &&
-      (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.persist == true))
+      (github.event_name == 'schedule' ||
+       (github.event_name == 'workflow_dispatch' && inputs.profile == 'native' && inputs.persist == true))
     needs: validate
     runs-on: ubuntu-latest
     permissions:

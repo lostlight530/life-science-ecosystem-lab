@@ -17,6 +17,7 @@
     "evidence/profiles/docs.json",
     "evidence/profiles/sources.json",
     "evidence/profiles/topics.json",
+    "evidence/profiles/workflow-profiles.json",
     "metadata/standards-status.json",
     "metadata/bioschemas-workflow.jsonld",
     "metadata/bioschemas-tool.jsonld",
@@ -37,6 +38,11 @@
     "data/knowledge/current.json",
     "data/inputs/current/candidate.json",
     "checks/project/README.md",
-    "checks/project/manifest.json"
+    "checks/project/manifest.json",
+    "checks/project/daily_checks.json",
+    "evidence/daily_custom_runner.py",
+    "evidence/workflow_profiles.py",
+    "tests/test_daily_custom_runner.py",
+    "tests/test_workflow_profiles.py"
   ]
 }

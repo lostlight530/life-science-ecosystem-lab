@@ -18,6 +18,8 @@ This open-source repository contains **three independently callable research-sof
 
 [**Daily fixed self-check SOP**](docs/DAILY_SELF_CHECK.md) runs two fully isolated, read-only checks: [institutional official public references](checks/institutional/README.md) and [our custom repository contracts](checks/project/README.md). Their JSON reports, document inventories and 30-day GitHub Artifacts are separate. External endpoint HTTP observations are not official uptime verification, external registry accession or LS Login authorization.
 
+Research scope selection belongs to the separate Knowledge Workflow. Its closed profile registry currently offers production `native` and read-only `protein_structure` executions. The protein field workflow is a dedicated rendering of that isolated profile; the daily self-check does not select research subjects or approve evidence sources.
+
 ## First use: three independent paths
 
 **1. Try the Tool without network access or executing research code**
@@ -66,7 +68,7 @@ CITATION.cff              Citation for the repository's software version
 
 ## Current capabilities and limits
 
-- The Knowledge Workflow collects only **approved public GitHub sources**, verifies Git object/content identity, constructs a source-cited knowledge map and rebuildable JSONL graph, and supports bounded SQLite FTS5/BM25 search. Scheduled persistence is gated by evidence completeness, state checks, `main` world-line, and a `data/`-only write boundary.
+- The Knowledge Workflow collects only **approved public GitHub sources**, verifies Git object/content identity, constructs a source-cited knowledge map and rebuildable JSONL graph, and supports bounded SQLite FTS5/BM25 search. Manual runs select only reviewed profiles from `evidence/profiles/workflow-profiles.json`; scheduled production always selects `native`. Persistence is gated by native authority, evidence completeness, state checks, `main` world-line, and a `data/`-only write boundary.
 - The Evidence Tool provides source collection, aggregation, validation, advisory discovery, local Markdown-link auditing, and a standalone **nonexecuting** external-repository inspection function. Its reports distinguish findings from unknown or unverified outcomes.
 - The third Bio Tool performs actual protein FASTA/PDB processing with bounded input sizes, deterministic composition/residue summaries and no model inference.
 - Graph `SOURCE_MATCH` edges are **document-topic matches**, not proven scientific, biological or causal relations. Metadata validation is not scientific validity or external certification.

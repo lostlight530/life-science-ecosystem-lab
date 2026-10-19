@@ -50,6 +50,11 @@ class ProteinFieldTests(unittest.TestCase):
         self.assertIn("build/protein/simulated", text)
         self.assertIn("ls-evidence validate-handoff", text)
         self.assertIn("--topic protein-structure-prediction", text)
+        self.assertIn("python -m evidence.workflow_profiles", text)
+        self.assertIn("$LS_SOURCES_PROFILE", text)
+        self.assertIn("$LS_TOPICS_PROFILE", text)
+        self.assertIn("$LS_SAMPLE_MANIFEST", text)
+        self.assertIn("$LS_AGENT_HANDOFF", text)
         self.assertIn("NO_MEANINGFUL_DELTA", (ROOT / ".github" / "scripts" / "protein_structure_demo_summary.py").read_text())
 
 

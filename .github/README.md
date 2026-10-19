@@ -8,7 +8,9 @@ This directory owns the scientific knowledge-production lifecycle, including wor
 
 | Location | Role |
 | --- | --- |
-| `workflows/life-science-knowledge.yml` | Source-aware periodic ingestion and guarded persistence |
+| `workflows/life-science-knowledge.yml` | Reviewed-profile ingestion, verification and native-only guarded persistence |
+| `workflows/life-science-daily-selfcheck.yml` | Fixed daily institutional/project assurance with versioned project-owned checks |
+| `workflows/protein-structure-agent-demo.yml` | Isolated protein profile, Agent proposal and full-stack field demonstration |
 | `workflows/validate.yml` | Reproducibility and metadata gate for pull requests |
 | `workflows/life-science-evidence.yml` | Independent verification-tool CI |
 | `knowledge/main.cwl` | Portable offline computational sub-workflow and regression fixture |
@@ -21,6 +23,14 @@ The required `validate.yml` workflow uses four actor-neutral, read-only domains:
 **LifeMonitor:** [`lifemonitor.yaml`](../lifemonitor.yaml) uses the documented root-level config path and enables repository issue checks. It leaves branch/tag tracking, registry updates and visibility unspecified so account-wide settings remain authoritative. Current enrollment evidence is maintained in the single [standards status](../docs/STANDARDS.md) record
 
 **Publication boundaries:** WorkflowHub, LifeMonitor and additional registries require evidence of actual external registrations; a passing GitHub test is not proof of enrollment
+
+## Three different customization boundaries
+
+- The Knowledge Workflow can manually select a reviewed `native` or `protein_structure` source/topic profile. Schedules always use `native`, and the `apply` job is structurally unavailable to every non-native profile
+- The Daily Self-Check custom plane means repository-owned, version-controlled checks. It has no research-profile selector and cannot approve sources or produce knowledge
+- The protein field demo resolves the reviewed `protein_structure` profile and exercises its proposal, pinned samples, external software inspection and isolated lifecycle replay. Changes to that content or method require ordinary reviewed repository changes
+
+All three use explicit configuration, but none accepts arbitrary commands, paths or unreviewed sources at dispatch time
 
 ## Queryable, replayable graph surface
 

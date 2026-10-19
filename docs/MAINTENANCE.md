@@ -31,7 +31,7 @@ The public repository documents **observable behavior** and how to reproduce it.
 
 ## Native production operation
 
-The native Knowledge Workflow is intentionally **manual/scheduled only**. A manual run is authorized through GitHub Actions on `main` with `persist=true`; otherwise the dispatcher runs read-only. The schedule retains guarded acceptance. See [Production Operations](PRODUCTION_OPERATIONS.md) for separate evidence levels and the post-push remote-HEAD verification.
+The native Knowledge Workflow is intentionally **manual/scheduled only**. Manual dispatch may select only a profile registered in `evidence/profiles/workflow-profiles.json`; an isolated profile remains read-only. A manual `native` run is authorized through GitHub Actions on `main` with `persist=true`; otherwise the dispatcher runs read-only. The schedule always resolves `native` and retains guarded acceptance. See [Production Operations](PRODUCTION_OPERATIONS.md) for separate evidence levels and the post-push remote-HEAD verification.
 
 After collection, the read-only validation job passes an immutable source + knowledge Artifact to the write job. The write job verifies both the validated Git SHA and the current remote main world-line before applying, checks candidate/knowledge/graph/receipts, stages only `data/`, verifies the remote SHA again, and pushes. A **post-push** verification confirms the actual remote main ref equals the local accepted commit. Any failure is not accepted production.
 

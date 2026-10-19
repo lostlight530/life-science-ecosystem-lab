@@ -75,8 +75,8 @@ The output contains input SHA-256, residue statistics and explicit uncertainty b
 
 ## Native GitHub Actions and persistence
 
-- [Knowledge lifecycle](../.github/workflows/life-science-knowledge.yml): scheduled weekly on Mondays at 03:23 UTC; manual `workflow_dispatch` without `persist` is a read-only observation
-- Explicit manual `persist=true` on `main` and eligible scheduled runs may write only to `data/` after all verification, write-boundary and remote-head guards
+- [Knowledge lifecycle](../.github/workflows/life-science-knowledge.yml): scheduled weekly on Mondays at 03:23 UTC using the `native` profile; manual dispatch can select the reviewed `native` or isolated `protein_structure` profile
+- Explicit manual `profile=native` plus `persist=true` on `main`, and eligible scheduled native runs, may write only to `data/` after all verification, write-boundary and remote-head guards. Isolated profiles are artifact-only even if a caller requests persistence
 - [Independent Tool CI](../.github/workflows/life-science-evidence.yml) checks the Evidence Tool; [integration CI](../.github/workflows/validate.yml) checks CWL, graph, contracts, crate and documentation
 
 Before treating a run as successful durable knowledge, inspect its actual run event, conclusion, persisted commit and artifacts; see [Understanding Verification](VERIFYING_RESULTS.md).

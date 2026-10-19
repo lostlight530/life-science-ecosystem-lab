@@ -11,7 +11,12 @@ from evidence.cli import main as evidence_main
 
 ROOT = Path(__file__).resolve().parents[1]
 EXAMPLE = ROOT / ".github/agent-handoff/example-handoff.json"
-TOPICS = {t["id"] for t in json.loads((ROOT / "evidence/profiles/topics.json").read_text())["topics"]}
+TOPICS = {
+    t["id"]
+    for t in json.loads(
+        (ROOT / "evidence/profiles/topics.json").read_text(encoding="utf-8")
+    )["topics"]
+}
 
 
 class AgentHandoffTests(unittest.TestCase):
@@ -26,7 +31,9 @@ class AgentHandoffTests(unittest.TestCase):
         self.assertEqual(self.value["authority"], "PROPOSAL_ONLY")
 
     def test_unrelated_native_lifecycle_is_not_changed(self):
-        workflow = (ROOT / ".github/workflows/life-science-knowledge.yml").read_text()
+        workflow = (
+            ROOT / ".github/workflows/life-science-knowledge.yml"
+        ).read_text(encoding="utf-8")
         self.assertIn("inputs.persist == true", workflow)
         self.assertNotIn("agent-handoff", workflow)
 

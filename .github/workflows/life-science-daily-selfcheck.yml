@@ -20,6 +20,9 @@ on:
       - "metadata/standards-status.json"
       - "docs/STANDARDS.md"
       - "evidence/daily_selfcheck.py"
+      - "evidence/daily_custom_runner.py"
+      - "tests/test_daily_custom_runner.py"
+      - "tests/test_workflow_contracts.py"
       - "tests/test_institutional_selfcheck.py"
       - "tests/test_project_selfcheck.py"
       - ".github/workflows/life-science-daily-selfcheck.yml"
@@ -34,6 +37,9 @@ on:
       - "metadata/standards-status.json"
       - "docs/STANDARDS.md"
       - "evidence/daily_selfcheck.py"
+      - "evidence/daily_custom_runner.py"
+      - "tests/test_daily_custom_runner.py"
+      - "tests/test_workflow_contracts.py"
       - "tests/test_institutional_selfcheck.py"
       - "tests/test_project_selfcheck.py"
       - ".github/workflows/life-science-daily-selfcheck.yml"
@@ -93,20 +99,9 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.12"
-      - name: Check project manifest and locally authored file digests
+      - name: Run isolated custom checks with complete failure ledger
         run: |
-          python -m evidence.daily_selfcheck project --root . --manifest checks/project/manifest.json --output build/daily-selfcheck/project-custom/file-contract.json
-      - name: Verify scientific software, public docs and accepted Git state
-        run: |
-          python -m unittest discover -s tests -v
-          python -m evidence audit-docs --root . --files evidence/profiles/docs.json --output build/daily-selfcheck/project-custom/docs-audit.json
-          python .github/scripts/check_metadata.py
-          python .github/scripts/check_rocrate.py
-          python .github/scripts/check_publication_boundary.py
-          python -m life_science_ecosystem_lab state verify --repository-root . --require-accepted
-          python -m life_science_ecosystem_lab knowledge verify --candidate data/inputs/current/candidate.json --topics evidence/profiles/topics.json --knowledge data/knowledge/current.json
-          python -m life_science_ecosystem_lab graph verify --dir data/knowledge --knowledge data/knowledge/current.json
-          python -m evidence audit-knowledge --knowledge data/knowledge/current.json --output build/daily-selfcheck/project-custom/knowledge-quality.json
+          python -m evidence.daily_custom_runner --root . --registry checks/project/daily_checks.json --output build/daily-selfcheck/project-custom/execution-report.json
       - name: Retain project evidence only
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

@@ -39,10 +39,11 @@ Prior-state validation happens **before** any accepted apply, including when the
 ## Native workflow reading guide
 
 1. Check the GitHub Actions event: PR/push CI, synthetic CWL replay, manual observation and scheduled persistence are different events
-2. Confirm the expected source revision and GitHub run conclusion
-3. Inspect `build/source-diagnostics.json`, `projection_eligible`, and machine-readable reports
-4. For durable claims, verify an actual accepted `data/` commit, current knowledge and associated receipts; **no-change, failed or conflicted runs are not new knowledge production**. `ls-knowledge state verify --repository-root . --require-accepted` rejects an empty bootstrap tree, while the ordinary state command checks only any state currently present. The strict check also binds the latest accepted graph event to the active evidence candidate, so a valid but substituted candidate cannot pass as the accepted state.
-5. Treat WorkflowHub, LifeMonitor and bio.tools as externally verified states only when a genuine registry or monitoring record exists
+2. Inspect `build/workflow-profile.json`; confirm the profile ID, authority, source/topic paths and SHA-256 values. Only `native` is persistence-eligible
+3. Confirm the expected source revision and GitHub run conclusion
+4. Inspect `build/source-diagnostics.json`, `projection_eligible`, and machine-readable reports
+5. For durable claims, verify an actual accepted `data/` commit, current knowledge and associated receipts; **no-change, failed or conflicted runs are not new knowledge production**. `ls-knowledge state verify --repository-root . --require-accepted` rejects an empty bootstrap tree, while the ordinary state command checks only any state currently present. The strict check also binds the latest accepted graph event to the active evidence candidate, so a valid but substituted candidate cannot pass as the accepted state.
+6. Treat WorkflowHub, LifeMonitor and bio.tools as externally verified states only when a genuine registry or monitoring record exists
 
 [Getting Started](GETTING_STARTED.md) · [Provenance](PROVENANCE.md) · [Maintenance](MAINTENANCE.md)
 
