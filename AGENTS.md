@@ -1,6 +1,6 @@
 # External Agent participation · optional, proposal-only
 
-This repository has **three independently callable research software assets**: native knowledge Workflow under `.github/`, the independent `ls-evidence` Tool under `evidence/`, and the independent `ls-bio` protein data-processing tool under `bio_tool/`. No agent framework, skill, model account, API key, or external scheduler is necessary to run these assets.
+This repository has **three established independently callable research software assets** and an independent experimental [software-engineering Framework](framework/README.md) at repository root: native knowledge Workflow under `.github/`, the independent `ls-evidence` Tool under `evidence/`, and the independent `ls-bio` protein data-processing tool under `bio_tool/`. The separate Framework is not an Agent runtime and has no mandatory dependency on these three assets. No agent framework, skill, model account, API key, or external scheduler is necessary to run any of them.
 
 Before working, read [Architecture](docs/ARCHITECTURE.md), [Agent collaboration](docs/AGENT_COLLABORATION.md), and [Verification boundaries](docs/VERIFYING_RESULTS.md). For durable accepted state, `data/` and its Git commit/receipts are authoritative, not an Agent answer or temporary workspace. The current native topic IDs, aliases, thresholds and approved sources belong exclusively to `evidence/profiles/topics.json` and `evidence/profiles/sources.json`.
 
