@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "PROJECT_CUSTOM_DAILY_CHECKS",
+  "checks": [
+    {
+      "id": "manifest",
+      "severity": "blocking"
+    },
+    {
+      "id": "regression",
+      "severity": "blocking"
+    },
+    {
+      "id": "documentation",
+      "severity": "blocking"
+    },
+    {
+      "id": "metadata",
+      "severity": "blocking"
+    },
+    {
+      "id": "rocrate",
+      "severity": "blocking"
+    },
+    {
+      "id": "publication_boundary",
+      "severity": "blocking"
+    },
+    {
+      "id": "accepted_state",
+      "severity": "blocking"
+    },
+    {
+      "id": "knowledge",
+      "severity": "blocking"
+    },
+    {
+      "id": "graph",
+      "severity": "blocking"
+    },
+    {
+      "id": "knowledge_quality",
+      "severity": "blocking"
+    },
+    {
+      "id": "ecosystem_preflight",
+      "severity": "advisory"
+    }
+  ]
+}
