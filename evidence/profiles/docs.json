@@ -9,6 +9,7 @@
     "README.md",
     "SECURITY.md",
     "bio_tool/README.md",
+    "docs/ADR-INDEPENDENT-LS-FRAMEWORK.md",
     "docs/AGENT_CLUSTER_RESEARCH_CASE.md",
     "docs/AGENT_COLLABORATION.md",
     "docs/AGENT_REVIEW_DECISIONS.md",
@@ -28,6 +29,7 @@
     "docs/SCOPE.md",
     "docs/STANDARDS.md",
     "docs/VERIFYING_RESULTS.md",
-    "evidence/README.md"
+    "evidence/README.md",
+    "framework/README.md"
   ]
 }

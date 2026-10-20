@@ -1,6 +1,6 @@
 # Getting started
 
-This guide is for someone who just cloned the public repository. It gives **separate starting points** for the three peer software assets. No model API key, Skills package, persistent database server or remote execution service is required.
+This guide is for someone who just cloned the public repository. It gives **separate starting points** for three established peer software assets and the experimental independent Framework. No model API key, Skills package, persistent database server or remote execution service is required.
 
 ## Prerequisites
 
@@ -73,6 +73,20 @@ ls-bio protein-pdb --input .github/bio/test/example.pdb --output build/bio-pdb.j
 
 The output contains input SHA-256, residue statistics and explicit uncertainty boundaries. Read [the Bio Tool contract](../bio_tool/README.md) before using external sequences or coordinates. The portable CWL adapters and a separate read-only pinned-source CI are in `.github/bio/` and `.github/workflows/life-science-bio.yml`.
 
+## Path E — Experimental Framework (offline, independent)
+
+The life-sciences software-engineering Framework is separately packaged from the three root commands. This synthetic contract experiment checks JSON software-artifact lineage and local SHA-256; it does not perform cross-omics scientific analysis:
+
+```sh
+python -m pip install --no-deps -e ./framework
+python -m unittest discover -s framework/tests -v
+ls-framework assess --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/assessment.json
+```
+
+Its `PASS` is only an engineering-contract verdict. See [Framework](../framework/README.md) and [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
+
+The repository pins text files to LF bytes because the fixture SHA-256 values are byte identities. The dedicated Framework workflow runs on Linux and Windows. If an older Windows checkout predates `.gitattributes`, create a fresh checkout before diagnosing digest mismatches
+
 ## Native GitHub Actions and persistence
 
 - [Knowledge lifecycle](../.github/workflows/life-science-knowledge.yml): scheduled weekly on Mondays at 03:23 UTC using the `native` profile; manual dispatch can select the reviewed `native` or isolated `protein_structure` profile
@@ -92,5 +106,6 @@ Before treating a run as successful durable knowledge, inspect its actual run ev
 | No `data/knowledge/current.json` | A real, accepted native lifecycle run has not yet persisted it |
 | FTS5 unavailable | Your Python SQLite build must include SQLite FTS5 support |
 | Inspection reports `WARN` | Review the missing/optional evidence; it is not equivalent to an error or proof |
+| Framework fixture digest mismatch on Windows | Confirm the checkout includes root `.gitattributes`; use a fresh checkout so the LF byte contract is applied |
 
 [Documentation index](README.md) · [Public Interfaces](PUBLIC_INTERFACES.md) · [Scope](SCOPE.md)

@@ -1,0 +1,64 @@
+{
+  "kind": "LS_RSE_INTEROP_BUNDLE",
+  "schema_version": "0.1.0",
+  "scope": "LIFE_SCIENCES",
+  "assets": [
+    {
+      "id": "a-genomics",
+      "domain": "genomics",
+      "kind": "synthetic-fixture",
+      "sha256": "ecdb99508373d12a402a5c183e54756b4b7e71323fa64d8e6c24d0dd07c703ae",
+      "source": {
+        "id": "fixture:genomics",
+        "version": "v1"
+      },
+      "path": "genomics.json"
+    },
+    {
+      "id": "a-imaging",
+      "domain": "microscopy",
+      "kind": "synthetic-fixture",
+      "sha256": "66de3c7c1eebde1874df546c92ebd7619eb85d96064e36225b111b4192ee2973",
+      "source": {
+        "id": "fixture:imaging",
+        "version": "v1"
+      },
+      "path": "imaging.json"
+    },
+    {
+      "id": "a-integrated",
+      "domain": "life_sciences_integrative",
+      "kind": "synthetic-software-artifact",
+      "sha256": "4dbe8bcd86dc0725d41c4b778040f4d2c428d92b817a016767dee736aefe3e17",
+      "source": {
+        "id": "fixture:integration",
+        "version": "v1"
+      },
+      "path": "combined.json"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-1",
+      "method": {
+        "id": "fixture-software-transform",
+        "version": "v1",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "inputs": [
+        "a-genomics",
+        "a-imaging"
+      ],
+      "outputs": [
+        "a-integrated"
+      ],
+      "supported_domains": [
+        "genomics",
+        "microscopy",
+        "life_sciences_integrative"
+      ],
+      "outcome": "SUCCEEDED"
+    }
+  ],
+  "claims": []
+}

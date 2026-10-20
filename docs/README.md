@@ -4,16 +4,17 @@ Choose the path matching your task. This index describes **public, reproducible 
 
 | I want to… | Read |
 | --- | --- |
-| Install and run any of the three assets from a clean checkout | [Getting Started](GETTING_STARTED.md) |
+| Install and run the three released assets or experimental Framework from a clean checkout | [Getting Started](GETTING_STARTED.md) |
 | Know what a report proves, how to reproduce it, or why a CI check passes | [Understanding Verification](VERIFYING_RESULTS.md) |
 | Run daily independent official-default observations and local project self-checks | [Daily Self-Check](DAILY_SELF_CHECK.md) |
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |
 | Run the full external Agent + protein-structure dataset/tool/graph demo | [Protein Structure Field Demo](PROTEIN_STRUCTURE_FIELD_DEMO.md) |
 | Run and verify a real guarded production acceptance | [Production Operations](PRODUCTION_OPERATIONS.md) |
-| Understand three independent assets and native state ownership | [Architecture](ARCHITECTURE.md) |
+| Understand three established assets, the independent Framework, and state ownership | [Architecture](ARCHITECTURE.md) |
 | Hand research between independent Jules/GPT/other Agents and the native assets | [Optional Agent Collaboration](AGENT_COLLABORATION.md) |
 | Review a heterogeneous Agent cohort's real public PR contributions and scientific non-claims | [Agent Cohort Research Case](AGENT_CLUSTER_RESEARCH_CASE.md) |
 | Inspect accepted, revised and unverified Agent research claims | [Agent Review Decision Ledger](AGENT_REVIEW_DECISIONS.md) |
+| Review the independent life-sciences software engineering framework | [Framework ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md) |
 | Integrate through command-line / JSONL / SARIF interfaces | [Public Interfaces](PUBLIC_INTERFACES.md) |
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |
 | Trace immutable sources, commits, and public research evidence | [Provenance](PROVENANCE.md) |
@@ -26,6 +27,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 - [Portable CWL replay](../.github/knowledge/README.md): synthetic fixture and four executable computational steps
 - [Evidence Tool](../evidence/README.md): independent CLI, optional network collection, inspection, documented validation limits
 - [Bio Tool](../bio_tool/README.md): independent bounded protein FASTA/PDB analysis and CWL adapters
+- [Framework](../framework/README.md): independent life-sciences cross-domain software contracts and adversarial tests
 
 ## Contribution and support
 

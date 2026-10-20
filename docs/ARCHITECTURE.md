@@ -1,12 +1,15 @@
 # Life Science Lab · Canonical Architecture
 
-## Three peer assets, one native execution environment
+## Three established peer assets plus an experimental independent Framework
 
 1. **Knowledge Workflow** — `.github/` is the canonical lifecycle and knowledge runtime. The GitHub Actions workflow controls scheduling, source ingestion, knowledge transformation, state recovery, conditional persistence and receipts; a CWL computational sub-workflow offers portable replay
 2. **Evidence Tool** — `evidence/` is an independent Python package and CLI for source identification, immutable provenance, diff/replay, scientific-software documentation checks and independent verdicts
 3. **Bio Tool** — `bio_tool/` is an independent Python package and CLI for bounded protein FASTA/PDB quality analysis, with portable CWL command wrappers
+4. **Framework (experimental)** — `framework/` is an independent Python distribution for *life-sciences cross-domain software engineering contracts*. It is not a Tool, a biological interpretation engine or part of the other three assets. See [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
-The three assets can be composed through explicit files and CLI calls, but **no asset's identity is defined by that call graph**
+Each established asset and the experimental Framework can operate independently and interoperate through explicit file/CLI interfaces. **No software entity's identity is defined by that call graph**. The root distribution still packages the three established assets; the Framework is installed separately
+
+The frozen `v0.4.0` repository release and its Zenodo DOI cover the three established assets. The Framework was added later as an unreleased experimental component with its own `0.1.0` package identity. Current source metadata lists all four repository components without rewriting the historical release boundary
 
 ## Native lifecycle
 
@@ -43,6 +46,8 @@ The repository's minimal `lifemonitor.yaml` enables issue checks and intentional
 ## Validation, schedules and external observers
 
 Pull-request validation is an actor-neutral repository authority plane. Four independent read-only jobs validate repository contracts, Knowledge Workflow replay, Evidence Tool behavior and the portable package. A final verdict aggregates their results without preventing any domain from starting. This makes failures complete and inspectable while preserving one strict merge decision
+
+The Framework also has an independent read-only workflow. Its original Linux check name is preserved, while an additional Windows job verifies that line endings do not invalidate byte-addressed fixtures. Root `.gitattributes` defines LF text checkout and explicit binary extensions so digest contracts are reproducible across operating systems
 
 Scheduled checks, external Bots and institutional services are separate execution planes. A Bot PR runs the same repository contracts as a human PR without an identity bypass. LifeMonitor, WorkflowHub, LS Login and other public services may observe or register released assets, but their network, authentication or registration state is never a prerequisite for local required validation. The only intentional job dependency with write authority remains native validation before guarded `data/` apply
 

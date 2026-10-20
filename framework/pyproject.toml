@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "life-sciences-rse-framework"
+version = "0.1.0"
+description = "Independent life-sciences cross-domain research software engineering contracts"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Xuanyi Jiang"}]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/framework"
+Documentation = "https://github.com/lostlight530/life-science-ecosystem-lab/blob/main/framework/README.md"
+Source = "https://github.com/lostlight530/life-science-ecosystem-lab"
+Issues = "https://github.com/lostlight530/life-science-ecosystem-lab/issues"
+
+[project.scripts]
+ls-framework = "ls_framework.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

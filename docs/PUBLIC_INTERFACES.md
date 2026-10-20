@@ -2,8 +2,8 @@
 
 [First-use commands](GETTING_STARTED.md) · [Result interpretation](VERIFYING_RESULTS.md) · [Documentation index](README.md)
 
-The repository publishes three peer software assets under one source-code and release identity.
-All three are usable by researchers and ordinary programs. None depends on a configured model, a prompt package, or an external Agent.
+The released `v0.4.0` baseline publishes three peer software assets under one source-code and release identity. The current repository also contains one separately packaged experimental Framework added after that release.
+All four current components are usable by researchers and ordinary programs. None depends on a configured model, a prompt package, or an external Agent.
 
 ## Knowledge Workflow (`.github/`)
 
@@ -46,9 +46,18 @@ The Tool never writes into the inspected research repository. It only writes the
 - Registry metadata source: `metadata/biotools-protein-audit.draft.json`, using real EDAM concepts and the maintainer-observed identifier `biotools:life-science-protein-file-audit`; independent API verification, curation status and OpenEBench evaluation are not claimed
 - No inference, folding model, molecular geometry validation, full sequence alignment or external upload; see [Bio Tool](../bio_tool/README.md)
 
+## Experimental Cross-Domain Software Framework (`framework/`)
+
+- Package and CLI: separately installed `life-sciences-rse-framework` / `ls-framework`
+- Inputs: bounded JSON bundles describing life-science software assets, local SHA-256 identities, methods, lineage, outcomes and proposal-only claims
+- Outputs: deterministic `PASS`, `FAIL` or `INDETERMINATE` engineering assessments with typed findings and explicit nonclaims
+- Cross-platform contract: text fixtures are pinned to LF bytes and tested on Linux and Windows
+- Boundary: no scientific method execution, biological inference, production `data/` writes, external registration or certification
+- Release status: experimental version `0.1.0`, not part of the frozen repository `v0.4.0` software DOI or WorkflowHub workflow version
+
 ## Composition
 
-The Knowledge Workflow may call Evidence as an external command, and independent researchers or CWL tools can call Bio Tool on supplied protein files. Evidence can inspect an unrelated repository without importing the knowledge runtime or relying on its scheduler. All three exchange explicit CLI/file contracts, with their own CI and documentation.
+The Knowledge Workflow may call Evidence as an external command, and independent researchers or CWL tools can call Bio Tool on supplied protein files. Evidence can inspect an unrelated repository without importing the knowledge runtime or relying on its scheduler. The Framework remains separately installed and may assess declared software relationships without importing any of the three released assets. Composition uses explicit CLI/file contracts rather than hidden runtime coupling.
 
 External researchers and Agents may use human- or machine-readable outputs independently. They are not an internal runtime stage and cannot promote findings to accepted knowledge without repository governance and independent verification.
 ## Common methodological contract across research examples
