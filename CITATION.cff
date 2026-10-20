@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use the Life Science Knowledge Workflow or Evidence Tool or Bio Tool, cite this software version"
+message: "If you use the released Life Science Knowledge Workflow, Evidence Tool or Bio Tool, cite this software version and DOI"
 title: "Life Science Ecosystem Lab — Knowledge Workflow, Evidence Tool and Bio Tool"
 type: software
 authors:
@@ -9,4 +9,6 @@ authors:
 repository-code: "https://github.com/lostlight530/life-science-ecosystem-lab"
 license: MIT
 version: 0.4.0
+date-released: 2026-10-18
+doi: 10.5281/zenodo.23447089
 

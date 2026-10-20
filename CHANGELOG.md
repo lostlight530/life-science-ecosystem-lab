@@ -2,6 +2,11 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Add the experimental, separately packaged Life Sciences Cross-Domain Research Software Engineering Framework with bounded lineage, authority and byte-identity contracts
+- Reject multi-asset Framework bundles that omit explicit lineage steps instead of allowing a vacuous engineering PASS
+- Pin repository text checkout to LF and verify Framework fixtures and deterministic replay on both Linux and Windows
+- Reconcile public and machine-readable records with WorkflowHub 2347.2, the current private LifeMonitor suite/test instance, Zenodo DOI 10.5281/zenodo.23447089 and the maintainer-observed OpenEBench tool record without treating any of them as scientific validation
+- Distinguish the frozen v0.4.0 three-asset release from the later unreleased Framework in citation, CodeMeta, architecture and public-interface documentation
 - Bind native and protein research executions to a closed, digest-recorded Workflow profile registry; only the native profile can reach guarded persistence
 - Preserve the daily self-check as topic-neutral repository assurance while recording complete independent check outcomes and GitHub execution identity
 - Route the protein structure field demonstration through its reviewed isolated profile without accepting arbitrary commands, paths, URLs or runtime research subjects

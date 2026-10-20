@@ -38,16 +38,18 @@ class RepositoryExperienceTests(unittest.TestCase):
                 self.assertNotRegex(data, r"(?m)^about:")
                 self.assertRegex(data, r"(?m)^\s+- type: (input|textarea|markdown)")
 
-    def test_first_use_commands_and_three_asset_identity_exist(self):
+    def test_first_use_commands_and_repository_component_identity_exist(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("ls-knowledge", readme)
         self.assertIn("ls-evidence", readme)
         self.assertIn("ls-bio", readme)
+        self.assertIn("ls-framework", readme)
         self.assertIn("docs/GETTING_STARTED.md", readme)
         self.assertIn("CITATION.cff", readme)
         self.assertTrue((ROOT / ".github/workflows/life-science-knowledge.yml").is_file())
         self.assertTrue((ROOT / "evidence/inspection.py").is_file())
         self.assertTrue((ROOT / "bio_tool/cli.py").is_file())
+        self.assertTrue((ROOT / "framework/src/ls_framework/cli.py").is_file())
         self.assertTrue((ROOT / "lifemonitor.yaml").is_file())
         self.assertFalse((ROOT / ".lifemonitor.yaml").exists())
 
@@ -55,6 +57,12 @@ class RepositoryExperienceTests(unittest.TestCase):
         value = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
         self.assertEqual(len(re.findall(r"(?im)^## Unreleased\b", value)), 1)
         self.assertIn("0.3.0", value)
+
+    def test_exact_byte_inputs_have_cross_platform_checkout_policy(self):
+        attributes = (ROOT / ".gitattributes").read_text(encoding="utf-8")
+        self.assertIn("* text=auto eol=lf", attributes)
+        self.assertIn("*.zip binary", attributes)
+        self.assertIn("*.sqlite binary", attributes)
 
 if __name__ == "__main__":
     unittest.main()

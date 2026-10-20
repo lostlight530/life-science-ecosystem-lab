@@ -13,6 +13,7 @@ This directory owns the scientific knowledge-production lifecycle, including wor
 | `workflows/protein-structure-agent-demo.yml` | Isolated protein profile, Agent proposal and full-stack field demonstration |
 | `workflows/validate.yml` | Reproducibility and metadata gate for pull requests |
 | `workflows/life-science-evidence.yml` | Independent verification-tool CI |
+| `workflows/life-science-framework.yml` | Independent Linux and Windows checks for the experimental Framework |
 | `knowledge/main.cwl` | Portable offline computational sub-workflow and regression fixture |
 | `knowledge/test/` | Workflow replay inputs |
 | `runtime/life_science_ecosystem_lab/` | Native knowledge projection, memory and lifecycle engine |
@@ -22,7 +23,9 @@ The required `validate.yml` workflow uses four actor-neutral, read-only domains:
 
 **LifeMonitor:** [`lifemonitor.yaml`](../lifemonitor.yaml) uses the documented root-level config path and enables repository issue checks. It leaves branch/tag tracking, registry updates and visibility unspecified so account-wide settings remain authoritative. Current enrollment evidence is maintained in the single [standards status](../docs/STANDARDS.md) record
 
-**Publication boundaries:** WorkflowHub, LifeMonitor and additional registries require evidence of actual external registrations; a passing GitHub test is not proof of enrollment
+**Publication boundaries:** WorkflowHub, LifeMonitor and additional registries require evidence of actual external records; a passing GitHub test is not proof of enrollment. WorkflowHub 2347.2, the private LifeMonitor object, Zenodo release DOI, bio.tools identity and OpenEBench synchronization are separate evidence objects recorded in [standards status](../docs/STANDARDS.md)
+
+**Experimental Framework:** [`../framework/`](../framework/README.md) is a separately installed software-contract package added after the frozen `v0.4.0` three-asset release. Its dedicated workflow preserves the existing Linux check and adds a Windows exact-byte replay check. It is not the WorkflowHub executable, a fourth Tool or a production writer
 
 ## Three different customization boundaries
 

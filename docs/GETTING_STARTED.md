@@ -85,6 +85,8 @@ ls-framework assess --bundle framework/fixtures/software-cross-domain.json --roo
 
 Its `PASS` is only an engineering-contract verdict. See [Framework](../framework/README.md) and [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
+The repository pins text files to LF bytes because the fixture SHA-256 values are byte identities. The dedicated Framework workflow runs on Linux and Windows. If an older Windows checkout predates `.gitattributes`, create a fresh checkout before diagnosing digest mismatches
+
 ## Native GitHub Actions and persistence
 
 - [Knowledge lifecycle](../.github/workflows/life-science-knowledge.yml): scheduled weekly on Mondays at 03:23 UTC using the `native` profile; manual dispatch can select the reviewed `native` or isolated `protein_structure` profile
@@ -104,5 +106,6 @@ Before treating a run as successful durable knowledge, inspect its actual run ev
 | No `data/knowledge/current.json` | A real, accepted native lifecycle run has not yet persisted it |
 | FTS5 unavailable | Your Python SQLite build must include SQLite FTS5 support |
 | Inspection reports `WARN` | Review the missing/optional evidence; it is not equivalent to an error or proof |
+| Framework fixture digest mismatch on Windows | Confirm the checkout includes root `.gitattributes`; use a fresh checkout so the LF byte contract is applied |
 
 [Documentation index](README.md) · [Public Interfaces](PUBLIC_INTERFACES.md) · [Scope](SCOPE.md)

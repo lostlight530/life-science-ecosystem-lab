@@ -177,6 +177,8 @@ def assess(bundle: Any, root: Path) -> dict[str, Any]:
 
             # All assets must participate in the lineage except single-asset
             # evidence bundles without computation steps.
+            if len(asset_ids) > 1 and not steps:
+                _problem(errors, "MISSING_LINEAGE_STEPS", "bundle")
             for asset in asset_ids:
                 used = asset in producers or any(
                     isinstance(s, dict) and _array(s.get("inputs"))

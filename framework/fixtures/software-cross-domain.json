@@ -7,7 +7,7 @@
       "id": "a-genomics",
       "domain": "genomics",
       "kind": "synthetic-fixture",
-      "sha256": "d5464b333635f2ff941345496edbf0929c8e00cbd4d54b2e470c95dfe7a2263e",
+      "sha256": "ecdb99508373d12a402a5c183e54756b4b7e71323fa64d8e6c24d0dd07c703ae",
       "source": {
         "id": "fixture:genomics",
         "version": "v1"
@@ -18,7 +18,7 @@
       "id": "a-imaging",
       "domain": "microscopy",
       "kind": "synthetic-fixture",
-      "sha256": "5af0466effb08e75c3010ec9937ed0810256bf114a77af0bc49b435fd7921161",
+      "sha256": "66de3c7c1eebde1874df546c92ebd7619eb85d96064e36225b111b4192ee2973",
       "source": {
         "id": "fixture:imaging",
         "version": "v1"
@@ -29,7 +29,7 @@
       "id": "a-integrated",
       "domain": "life_sciences_integrative",
       "kind": "synthetic-software-artifact",
-      "sha256": "7ea12aa1f6e0cc41c875c999093082cae19eb27bc6eab2e1a164cce2cfdc4338",
+      "sha256": "4dbe8bcd86dc0725d41c4b778040f4d2c428d92b817a016767dee736aefe3e17",
       "source": {
         "id": "fixture:integration",
         "version": "v1"

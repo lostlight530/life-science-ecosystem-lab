@@ -24,28 +24,33 @@ def verify() -> None:
     assert status['workflow']=='.github/workflows/life-science-knowledge.yml'
     assert status['tool']=='evidence/cli.py'
     workflowhub=status['workflowhub_registration']
-    assert workflowhub == {
-        'workflow_id': 2347,
-        'version': 1,
-        'workflow_type': 'Common Workflow Language',
-        'status': 'EXTERNALLY_OBSERVED',
-    }, 'WorkflowHub external record mismatch'
+    assert workflowhub['workflow_id']==2347 and workflowhub['version']==2, 'WorkflowHub external record mismatch'
+    assert workflowhub['workflow_type']=='Common Workflow Language', 'WorkflowHub workflow type mismatch'
+    assert workflowhub['doi']=='10.48546/workflowhub.workflow.2347.2', 'WorkflowHub DOI mismatch'
+    assert workflowhub['status']=='PUBLICLY_VERIFIED', 'WorkflowHub status mismatch'
     lifemonitor=status['lifemonitor_registration']
     assert lifemonitor['workflow_uuid']=='cc202b33-cd3e-48cc-8004-8e8db87bd200', 'LifeMonitor workflow UUID mismatch'
     assert lifemonitor['origin']=='local file uploaded' and lifemonitor['visibility']=='private', 'LifeMonitor record boundary mismatch'
     assert lifemonitor['evidence_basis']=='MAINTAINER_OBSERVED_AUTHENTICATED_DASHBOARD', 'LifeMonitor evidence basis mismatch'
     assert lifemonitor['suite'] == {
-        'uuid': 'fc958fb2-1a36-48df-a978-72ace9114eb9',
+        'uuid': '05f4e427-ebcc-4650-ab97-2348c0788a32',
         'name': 'GitHub Actions automated workflow tests',
         'passing': 1,
         'some_passing': 0,
         'failing': 0,
         'unavailable': 0,
     }, 'LifeMonitor suite status mismatch'
+    assert lifemonitor['test_instance']['uuid']=='18d116e5-3806-4103-950a-8b65ab75d7f4', 'LifeMonitor test instance mismatch'
+    assert lifemonitor['test_instance']['resource'].endswith('/actions/workflows/validate.yml'), 'LifeMonitor test resource mismatch'
     codemeta=json.loads((ROOT/'codemeta.json').read_text(encoding='utf-8'))
     assert codemeta.get('@type')=='SoftwareSourceCode', 'CodeMeta type mismatch'
     assert codemeta.get('softwareVersion')==version, 'CodeMeta version mismatch'
-    assert len(codemeta.get('hasPart', []))==3, 'CodeMeta three independently callable assets mismatch'
+    parts=codemeta.get('hasPart', [])
+    assert len(parts)==4, 'CodeMeta repository component inventory mismatch'
+    framework=[part for part in parts if str(part.get('@id', '')).endswith('/framework')]
+    assert framework and framework[0].get('version')=='0.1.0', 'Framework CodeMeta identity mismatch'
+    assert framework[0].get('developmentStatus')=='experimental', 'Framework maturity boundary mismatch'
+    assert '10.5281/zenodo.23447089' in cff, 'released software DOI missing from CFF'
     life_config_path = ROOT/'lifemonitor.yaml'
     assert life_config_path.is_file(), 'LifeMonitor requires the official root-level lifemonitor.yaml'
     assert not (ROOT/'.lifemonitor.yaml').exists(), 'nonstandard .lifemonitor.yaml must not coexist with the official configuration'
@@ -74,8 +79,16 @@ def verify() -> None:
         'evidence_basis': 'MAINTAINER_OBSERVED_REGISTRY_RECORD',
         'api_verification': 'NOT_INDEPENDENTLY_VERIFIED',
         'curation_status': 'NOT_INDEPENDENTLY_VERIFIED',
-        'openebench_evaluation': 'NOT_OBSERVED',
     }, 'bio.tools external record boundary mismatch'
+    openebench=status['openebench_record']
+    assert openebench['tool_id']=='life-science-protein-file-audit', 'OpenEBench tool identity mismatch'
+    assert openebench['status']=='MAINTAINER_OBSERVED_ACTIVE_RECORD', 'OpenEBench observation status mismatch'
+    assert openebench['upstream_validated']==0, 'OpenEBench validated field must remain source-accurate'
+    assert openebench['upstream_confidence_label']=='ultimate', 'OpenEBench source confidence label mismatch'
+    assert any('not an OpenEBench scientific benchmark' in item for item in openebench['limitations']), 'OpenEBench benchmark boundary missing'
+    assert status['zenodo_release']['doi']=='10.5281/zenodo.23447089', 'Zenodo DOI mismatch'
+    assert status['github_release']['source_commit']=='c09d4f3d0a8ebe28970dd511c7ab1e96f2ee0ea6', 'GitHub release source mismatch'
+    assert status['framework']=='framework/src/ls_framework/cli.py', 'Framework identity mismatch'
     assert (ROOT/'bio_tool/cli.py').is_file(), 'Bio Tool command missing'
     assert (ROOT/'LICENSE').is_file()
 if __name__=='__main__':

@@ -18,6 +18,8 @@ ls-framework assess --bundle framework/fixtures/software-cross-domain.json --roo
 
 The synthetic fixture declares a genomics input, microscopy input, and integration artifact, then checks their **local file digests**, domain declarations, method identities, lineage and path boundaries
 
+The repository pins text checkout to LF through root `.gitattributes` and runs this contract on Linux and Windows. This is required because fixture SHA-256 values identify exact bytes, not text after platform-specific newline conversion
+
 It does **not** perform a genomic/imaging analysis, authenticate any scientific sample, attest the execution of the declared method, or establish biological truth
 
 ## Input contract
@@ -28,6 +30,7 @@ One bounded JSON bundle contains exactly kind, schema_version, scope, assets, st
 - Local paths must stay inside the explicit input root and the bytes must match the SHA-256
 - An asset with no local path is a **source declaration**, not independently verified data
 - A step declares a method identifier/version/digest, inputs, outputs, supported domains and stated execution outcome
+- A bundle with multiple assets requires at least one explicit lineage step; otherwise it fails with `MISSING_LINEAGE_STEPS`
 - Step identities, reported success and method digests are **declarations**, not independent execution attestation
 - A scientific claim may be represented only as `PROPOSAL_ONLY`, never accepted by the framework
 
@@ -44,5 +47,7 @@ The report preserves canonical input digest, typed findings, bounded metrics and
 
 This proposed fourth independent *framework* entity is additive to the existing three assets and does not create a fourth Tool
 Framework contracts can be consumed by other software, but it cannot promote a proposal to approved sources, production data, third-party registration or scientific fact
+
+The Framework is not included in the repository's frozen `v0.4.0` Zenodo release or WorkflowHub Knowledge Workflow record. A future Framework release or registration would require a separate reviewed version and evidence record
 
 See [the independent ADR](../docs/ADR-INDEPENDENT-LS-FRAMEWORK.md) and independent `.github/workflows/life-science-framework.yml`

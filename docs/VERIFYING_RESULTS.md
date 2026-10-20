@@ -17,6 +17,8 @@ The required validation workflow starts four independent domains on every pull r
 
 A failed domain does not cancel or skip the other domains, so one run can expose multiple independent defects. A canceled workflow is not converted into a passing verdict. No contributor identity, GitHub App or Bot account receives a bypass. External service reachability and registry acceptance remain outside this required local verdict
 
+Framework changes additionally run the independent `standalone-framework` Linux check and `windows-cross-platform` check. The Windows check is evidence that repository line-ending policy preserves exact fixture bytes and deterministic output; it does not expand the required aggregate verdict or claim scientific portability
+
 ## Tool report decisions
 
 `ls-evidence inspect` returns **0** for PASS or WARN; **1** for FAIL; **2** for invalid usage or inspect errors. The static preflight now distinguishes root `CITATION.cff` from recognized alternative citation guides (`CITATIONS.md`, `CITATION.md`, `CITATION.txt`); finding a guide remains WARN rather than an unsupported CFF PASS. A service repository is not required to include a workflow's root RO-Crate metadata. Nested crates are not assessed by the root-level rule. Read the `status`, `findings`, `scope` and `unverified` keys in the JSON report instead of assuming exit code 0 means scientific verification. Do not report `WARN` as certified success.

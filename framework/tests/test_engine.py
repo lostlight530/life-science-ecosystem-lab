@@ -37,6 +37,13 @@ class FrameworkContractTests(unittest.TestCase):
         self.assertEqual(report["status"], "FAIL")
         self.assertIn("EMPTY_ASSET_SET", {x["code"] for x in report["errors"]})
 
+    def test_multi_asset_bundle_requires_explicit_lineage(self):
+        data = specimen()
+        data["steps"] = []
+        report = self.evaluate(data)
+        self.assertEqual(report["status"], "FAIL")
+        self.assertIn("MISSING_LINEAGE_STEPS", {x["code"] for x in report["errors"]})
+
     def test_canonical_determinism(self):
         original = specimen()
         self.assertEqual(self.evaluate(original), self.evaluate(copy.deepcopy(original)))

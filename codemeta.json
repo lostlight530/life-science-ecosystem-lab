@@ -2,7 +2,7 @@
   "@context": "https://w3id.org/codemeta/3.0",
   "@type": "SoftwareSourceCode",
   "name": "Life Science Ecosystem Lab",
-  "description": "Three independently callable research software assets: native source-grounded knowledge workflow, provenance evidence tool and bounded protein FASTA/PDB bioinformatics quality analysis",
+  "description": "Three released independently callable research software assets plus an experimental, separately packaged life-sciences software-contract framework",
   "codeRepository": "https://github.com/lostlight530/life-science-ecosystem-lab",
   "url": "https://github.com/lostlight530/life-science-ecosystem-lab",
   "license": "https://spdx.org/licenses/MIT",
@@ -27,6 +27,12 @@
     {
       "@id": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/bio_tool",
       "name": "Life Science Bio Tool"
+    },
+    {
+      "@id": "https://github.com/lostlight530/life-science-ecosystem-lab/tree/main/framework",
+      "name": "Life Sciences Cross-Domain Research Software Engineering Framework",
+      "version": "0.1.0",
+      "developmentStatus": "experimental"
     }
   ]
 }

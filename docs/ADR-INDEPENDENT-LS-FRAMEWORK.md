@@ -1,7 +1,7 @@
 # ADR: independent life-sciences cross-domain software engineering framework
 
 Date: 2026-10-19
-Status: PROPOSED FOR HUMAN REVIEW
+Status: PROPOSED FOR HUMAN REVIEW · IMPLEMENTED IN DRAFT PR
 
 ## Context
 
@@ -30,6 +30,8 @@ Do not silently revise official institutional standards, native `data/` acceptan
 8. Fail-closed bounded input, negative tests and deterministic output are mandatory
 9. Human review of methods, evidence and research contributions remains independent of software test status
 10. Independent package and CI are checked without creating hard runtime dependencies among assets
+11. Byte-addressed text fixtures use repository-pinned LF checkout and must pass on Linux and Windows
+12. A multi-asset bundle without explicit lineage steps fails closed rather than receiving a vacuous green verdict
 
 ## Research method and assessment
 
@@ -40,6 +42,8 @@ Measure detectability of software-contract violations, false positives, failures
 
 Version 0.1.0 evaluates engineering contract shape and local-file identity only
 It does not claim biological validity, scientific conclusion correctness, independent experimental replication, medical fitness or cross-domain analysis success
+
+This experimental version post-dates the frozen repository `v0.4.0` release. It is not covered by the existing Zenodo software DOI, WorkflowHub workflow DOI, LifeMonitor object, bio.tools record or OpenEBench synchronization record
 
 ## Standards relationship
 

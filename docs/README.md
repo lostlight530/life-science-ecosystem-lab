@@ -4,7 +4,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 
 | I want to… | Read |
 | --- | --- |
-| Install and run any of the three assets from a clean checkout | [Getting Started](GETTING_STARTED.md) |
+| Install and run the three released assets or experimental Framework from a clean checkout | [Getting Started](GETTING_STARTED.md) |
 | Know what a report proves, how to reproduce it, or why a CI check passes | [Understanding Verification](VERIFYING_RESULTS.md) |
 | Run daily independent official-default observations and local project self-checks | [Daily Self-Check](DAILY_SELF_CHECK.md) |
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |

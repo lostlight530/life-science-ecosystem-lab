@@ -9,6 +9,7 @@
 - Independent Tool cycle: validate the installable CLI, test isolated third-party fixtures, audit local documentation and emit a reusable machine report
 - Release review: reconcile `pyproject.toml`, `CITATION.cff`, CodeMeta, Bioschemas, RO-Crate, changelog and all public links to actual released functionality
 - External integration: record registration/enrollment states as prepared, submitted, accepted or externally verified; never infer acceptance from CI
+- Cross-platform byte contracts: keep root `.gitattributes`, fixture digests and Linux/Windows Framework checks aligned; a Linux-only green result is insufficient for exact-byte portability
 
 ## Human-readable / machine-readable surfaces
 
@@ -16,6 +17,8 @@
 | --- | --- |
 | `README.md`, `docs/`, `.github/README.md`, `evidence/README.md` | `data/knowledge/*.jsonl`, JSON artifacts, RO-Crate, Bioschemas JSON-LD |
 | Changes and reproducibility notes | Evidence JSON reports, receipts, SARIF and verified source identifiers |
+
+The machine-readable external-state authority is `metadata/standards-status.json`. Human-readable summaries must not silently outrun it, and private dashboard observations must remain distinguishable from public registry verification
 
 User-contributed research proposals, including those produced using third-party Agents, remain untrusted until independently reviewed. There is no obligatory Agent package, Skills collection, model key or hidden run dependency.
 

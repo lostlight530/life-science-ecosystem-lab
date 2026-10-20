@@ -1,8 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "software_version": "0.4.0",
   "workflow": ".github/workflows/life-science-knowledge.yml",
   "tool": "evidence/cli.py",
+  "bio_tool": "bio_tool/cli.py",
+  "framework": "framework/src/ls_framework/cli.py",
   "requirements": {
     "Workflow RO-Crate 1.1": "REQUIRED_STRUCTURAL_PREFLIGHT",
     "Workflow Testing RO-Crate 0.2": "REQUIRED_STRUCTURAL_PREFLIGHT",
@@ -12,33 +14,51 @@
     "Bioschemas FormalParameter 1.0": "DECLARED_NOT_EXTERNALLY_CERTIFIED",
     "CFF 1.2.0": "DECLARED_TESTED",
     "SPDX MIT": "DECLARED_TESTED",
-    "LifeMonitor enrollment": "EXTERNALLY_OBSERVED_LOCAL_UPLOAD",
-    "WorkflowHub registration": "EXTERNALLY_OBSERVED_WORKFLOW_2347_VERSION_1",
-    "bio.tools scope and acceptance": "EXTERNALLY_OBSERVED_REGISTRY_RECORD",
+    "CodeMeta 3.0": "DECLARED_STRUCTURAL_PREFLIGHT",
+    "WorkflowHub registration": "EXTERNALLY_VERIFIED_WORKFLOW_2347_VERSION_2",
+    "LifeMonitor enrollment": "MAINTAINER_OBSERVED_PRIVATE_LOCAL_UPLOAD",
+    "bio.tools registration": "EXTERNALLY_OBSERVED_REGISTRY_RECORD",
+    "OpenEBench tool synchronization": "EXTERNALLY_OBSERVED_ACTIVE_RECORD_NOT_BENCHMARKED",
+    "Zenodo software release": "EXTERNALLY_OBSERVED_RECORD_23447089",
     "Workflow Run RO-Crate": "CONDITIONAL_NOT_YET_CLAIMED",
     "Clinical or biological scientific validity": "NOT_APPLICABLE",
-    "CodeMeta 3.0": "DECLARED_STRUCTURAL_PREFLIGHT",
     "JSONL graph projection + SQLite FTS5": "CI_EXECUTABLE_LOCAL",
     "Independent research software inspection": "STATIC_PREFLIGHT_ONLY",
     "Independent protein FASTA / PDB bioinformatics data QA": "CI_EXECUTABLE_LOCAL",
-    "bio.tools registration": "EXTERNALLY_OBSERVED_REGISTRY_RECORD",
-    "LifeMonitor GitHub App": "INSTALLED_BOT_PR_EXTERNALLY_OBSERVED"
+    "Independent cross-domain software contract framework": "EXPERIMENTAL_CI_EXECUTABLE_LOCAL"
   },
   "global_lifemonitor_defaults": "BRANCH_TAG_TRACKING_REGISTRY_UPDATES_AND_VISIBILITY_LEFT_TO_ACCOUNT_GLOBAL_SETTINGS",
-  "notes": "The root-level LifeMonitor config only sets repository name and issue checks. The separately uploaded WTROC was observed in LifeMonitor with one passing GitHub Actions suite. This does not establish automatic WorkflowHub synchronization, scientific validity or public visibility",
-  "bio_tool": "bio_tool/cli.py",
+  "notes": "External records are related but independent objects. Registry presence, monitoring success and release archiving do not establish biological, clinical or scientific validity",
+  "github_release": {
+    "tag": "v0.4.0",
+    "source_commit": "c09d4f3d0a8ebe28970dd511c7ab1e96f2ee0ea6",
+    "release_url": "https://github.com/lostlight530/life-science-ecosystem-lab/releases/tag/v0.4.0",
+    "published_at": "2026-10-18T04:39:01Z",
+    "status": "VERIFIED_VIA_GITHUB"
+  },
+  "zenodo_release": {
+    "record_id": 23447089,
+    "doi": "10.5281/zenodo.23447089",
+    "record_url": "https://zenodo.org/records/23447089",
+    "related_tag": "v0.4.0",
+    "status": "MAINTAINER_OBSERVED_EXTERNAL_RECORD"
+  },
   "lifemonitor_repository_config": {
     "path": "lifemonitor.yaml",
     "issue_checks": "ENABLED_FOR_THIS_REPOSITORY",
     "push_overrides": "NONE",
     "visibility_override": "NONE",
-    "external_recognition": "EXTERNALLY_OBSERVED_LOCAL_UPLOAD"
+    "external_recognition": "MAINTAINER_OBSERVED_PRIVATE_LOCAL_UPLOAD"
   },
   "workflowhub_registration": {
     "workflow_id": 2347,
-    "version": 1,
+    "version": 2,
+    "version_name": "Registry-integrated release baseline — v0.4.0",
     "workflow_type": "Common Workflow Language",
-    "status": "EXTERNALLY_OBSERVED"
+    "doi": "10.48546/workflowhub.workflow.2347.2",
+    "source_commit": "c09d4f3d0a8ebe28970dd511c7ab1e96f2ee0ea6",
+    "archive_sha256": "5629a04755dd3fafd6304361266674be3db4899cacaebd54587b8e51773d9a03",
+    "status": "PUBLICLY_VERIFIED"
   },
   "biotools_registration": {
     "biotools_id": "life-science-protein-file-audit",
@@ -47,22 +67,42 @@
     "status": "EXTERNALLY_OBSERVED",
     "evidence_basis": "MAINTAINER_OBSERVED_REGISTRY_RECORD",
     "api_verification": "NOT_INDEPENDENTLY_VERIFIED",
-    "curation_status": "NOT_INDEPENDENTLY_VERIFIED",
-    "openebench_evaluation": "NOT_OBSERVED"
+    "curation_status": "NOT_INDEPENDENTLY_VERIFIED"
+  },
+  "openebench_record": {
+    "tool_id": "life-science-protein-file-audit",
+    "record_url": "https://openebench.bsc.es/tool/life-science-protein-file-audit",
+    "monitor_api_url": "https://openebench.bsc.es/monitor/tool/life-science-protein-file-audit",
+    "upstream_timestamp": "2026-10-17T22:00:06.508216148Z",
+    "observed_at": "2026-10-18T16:52:00+08:00",
+    "upstream_confidence_label": "ultimate",
+    "upstream_validated": 0,
+    "status": "MAINTAINER_OBSERVED_ACTIVE_RECORD",
+    "limitations": [
+      "Active metadata synchronization is not an OpenEBench scientific benchmark",
+      "The observed record has no tool version, repository list, publications or validation result",
+      "The upstream confidence label is preserved as source data and is not this repository's scientific confidence rating"
+    ]
   },
   "lifemonitor_registration": {
     "workflow_uuid": "cc202b33-cd3e-48cc-8004-8e8db87bd200",
+    "version": "0.4.0",
     "origin": "local file uploaded",
     "visibility": "private",
     "workflow_type": "cwl",
     "observed_on": "2026-10-18",
     "suite": {
-      "uuid": "fc958fb2-1a36-48df-a978-72ace9114eb9",
+      "uuid": "05f4e427-ebcc-4650-ab97-2348c0788a32",
       "name": "GitHub Actions automated workflow tests",
       "passing": 1,
       "some_passing": 0,
       "failing": 0,
       "unavailable": 0
+    },
+    "test_instance": {
+      "uuid": "18d116e5-3806-4103-950a-8b65ab75d7f4",
+      "name": "GitHub Actions integration validation",
+      "resource": "repos/lostlight530/life-science-ecosystem-lab/actions/workflows/validate.yml"
     },
     "evidence_basis": "MAINTAINER_OBSERVED_AUTHENTICATED_DASHBOARD",
     "limitations": [
