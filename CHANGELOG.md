@@ -2,6 +2,10 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Add opt-in strict Framework CLI abstention exit status, preserve accepted data and source evidence from accidental report overwrite, and test the corresponding negative cases
+- Normalize Framework library-relative roots and reject whitespace-only source versions; preserve independent challenge corpus and existing Tool/Workflow behavior
+- Record the newer upstream RO-Crate 1.3 versus existing pinned workflow-standard versions, and document the scope of Framework assurance without inventing external certification
+
 - Add the experimental, separately packaged Life Sciences Cross-Domain Research Software Engineering Framework with bounded lineage, authority and byte-identity contracts
 - Reject multi-asset Framework bundles that omit explicit lineage steps instead of allowing a vacuous engineering PASS
 - Pin repository text checkout to LF and verify Framework fixtures and deterministic replay on both Linux and Windows

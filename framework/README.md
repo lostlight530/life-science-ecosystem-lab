@@ -61,3 +61,11 @@ python -m ls_framework.challenge --bundle framework/fixtures/software-cross-doma
 ```
 
 Its report compares expected and actual **software-contract outcomes** and preserves case digests. A passing challenge is not a scientific benchmark, genuine cross-omics integration or an independently verified claim about biology
+
+## Strict evidence consumers and safe output boundaries
+
+The CLI by default exits 0 after either `PASS` or `INDETERMINATE`, since a well-formed abstention is an assessment result. Consumers needing affirmative software-contract checks can add `--require-pass`: `INDETERMINATE` then returns 2, `FAIL` returns 1, and `PASS` returns 0. Always parse the JSON status, not just the process exit code.
+
+The `--output` guard prevents overwriting the supplied bundle, paths inside its declared input root and, when run from checkout root, `data/` or `.git/` accepted repository paths. Other user-selected output locations are **not generally sandboxed**; write to ignored `build/` or isolated scratch. None of these commands attest method execution or biological truth.
+
+The [independent Framework assurance matrix](docs/ASSURANCE.md) complements the existing [synthetic contract challenge](docs/CONTRACT_CHALLENGE.md).

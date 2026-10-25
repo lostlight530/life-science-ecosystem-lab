@@ -14,7 +14,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Hand research between independent Jules/GPT/other Agents and the native assets | [Optional Agent Collaboration](AGENT_COLLABORATION.md) |
 | Review a heterogeneous Agent cohort's real public PR contributions and scientific non-claims | [Agent Cohort Research Case](AGENT_CLUSTER_RESEARCH_CASE.md) |
 | Inspect accepted, revised and unverified Agent research claims | [Agent Review Decision Ledger](AGENT_REVIEW_DECISIONS.md) |
-| Review the independent life-sciences software engineering framework | [Framework ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md) |
+| Review the independent life-sciences software engineering framework | [Framework ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md) · [Assurance model](../framework/docs/ASSURANCE.md) |
 | Reproduce cross-domain software contract errors and abstentions | [Framework Contract Challenge](../framework/docs/CONTRACT_CHALLENGE.md) |
 | Integrate through command-line / JSONL / SARIF interfaces | [Public Interfaces](PUBLIC_INTERFACES.md) |
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |

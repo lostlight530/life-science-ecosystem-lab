@@ -23,6 +23,12 @@ This document lists supported *software-interface mappings*, not certifications.
 | OpenEBench | Synchronized tool-monitor record | The tool ID was maintainer-observed as an active metadata record with upstream `validated=0`; this is synchronization evidence, not an OpenEBench benchmark or scientific validation |
 | Zenodo | Repository software release | DOI `10.5281/zenodo.23447089` identifies the frozen GitHub `v0.4.0` three-asset release; it is not the WorkflowHub workflow DOI and does not include the later experimental Framework |
 
+## Current external RO-Crate release versus reviewed project pins
+
+The community [RO-Crate specification index](https://www.researchobject.org/ro-crate/specification.html) identifies [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/index.html), published 2026-06-22, as the current long-term generic release (verified 2026-10-25). This repository still implements **separately reviewed** Workflow RO-Crate 1.1 and Workflow Testing RO-Crate 0.2 interfaces for its released workflow and LifeMonitor records. A generic 1.3 update does not itself authorize a WorkflowHub/LifeMonitor contract migration.
+
+The [RDA FAIR4RS Recommendation](https://doi.org/10.15497/RDA00068) and [FORCE11 software citation checklist](https://github.com/force11/force11-sciwg/blob/master/guidance/software_citation_checklist_for_developers.md) distinguish component-specific and version-specific software identities. The earlier `v0.4.0` Zenodo DOI does not encompass or certify the later experimental Framework 0.1.0. [W3C PROV-O](https://www.w3.org/TR/prov-o/) models provenance with entities, activities and agents; similarly named local JSON fields are **not** proof of interoperable PROV-O RDF or independently attested method execution.
+
 Reference documents:
 
 - [Workflow RO-Crate 1.1](https://about.workflowhub.eu/Workflow-RO-Crate/1.1/)

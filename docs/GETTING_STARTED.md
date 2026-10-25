@@ -84,7 +84,7 @@ ls-framework assess --bundle framework/fixtures/software-cross-domain.json --roo
 python -m ls_framework.challenge --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/challenge.json
 ```
 
-Its `PASS` is only an engineering-contract verdict. See [Framework](../framework/README.md) and [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
+Its `PASS` is only an engineering-contract verdict. Automation that requires a positive contract check may pass `--require-pass` so `INDETERMINATE` returns exit 2 instead of 0. Keep result files in ignored `build/`, not the input evidence directory or accepted production `data/`. See [Framework](../framework/README.md) and [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
 The repository pins text files to LF bytes because the fixture SHA-256 values are byte identities. The dedicated Framework workflow runs on Linux and Windows. If an older Windows checkout predates `.gitattributes`, create a fresh checkout before diagnosing digest mismatches
 

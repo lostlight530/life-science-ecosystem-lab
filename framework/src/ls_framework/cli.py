@@ -13,8 +13,19 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--bundle", type=Path, required=True)
     parser.add_argument("--root", type=Path)
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--require-pass", action="store_true", help="Return 2 instead of 0 for INDETERMINATE")
     args = parser.parse_args(argv)
+    output_target = None
     try:
+        input_root = (args.root or args.bundle.parent).resolve(strict=True)
+        if args.output is not None:
+            candidate = args.output.resolve()
+            checkout_root = Path.cwd().resolve()
+            if (candidate == args.bundle.resolve() or candidate.is_relative_to(input_root)
+                    or candidate.is_relative_to(checkout_root / "data")
+                    or candidate.is_relative_to(checkout_root / ".git")):
+                raise ValueError("report output cannot replace evidence or accepted repository state")
+            output_target = candidate
         data = args.bundle.read_bytes()
         if len(data) > 256_000:
             raise ValueError("bundle exceeds 256 KB")
@@ -37,11 +48,15 @@ def main(argv: list[str] | None = None) -> int:
             "not_verified": ["No engineering evidence established"],
         }
     serialized = json.dumps(report, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
-    if args.output:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(serialized, encoding="utf-8")
+    if output_target is not None:
+        output_target.parent.mkdir(parents=True, exist_ok=True)
+        output_target.write_text(serialized, encoding="utf-8")
     print(serialized, end="")
-    return 1 if report["status"] == "FAIL" else 0
+    if report["status"] == "FAIL":
+        return 1
+    if args.require_pass and report["status"] != "PASS":
+        return 2
+    return 0
 
 
 if __name__ == "__main__":

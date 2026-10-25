@@ -80,6 +80,8 @@ CITATION.cff              Citation and Zenodo DOI for the released v0.4.0 three-
 
 ## Independent Framework pilot
 
+For evidence-safe CLI output paths, strict `INDETERMINATE` handling and limits of software-versus-science assurance, consult the [independent Framework assurance matrix](framework/docs/ASSURANCE.md).
+
 The experimental [Framework](framework/README.md) is a **software-engineering** peer focused on versioned, bounded contracts across different life-science data systems. The frozen genomics/microscopy example uses synthetic JSON fixtures and tests local byte identity, declared method applicability, lineage and failure boundaries — **it performs no omics integration or scientific inference**. See [independent architecture decision](docs/ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
 It also provides an [independent synthetic contract challenge](framework/docs/CONTRACT_CHALLENGE.md), which exercises invalid inputs and correct abstention without introducing a scientific inference engine or modifying existing Workflow/Tool contracts

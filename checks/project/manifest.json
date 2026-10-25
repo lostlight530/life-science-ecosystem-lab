@@ -53,6 +53,7 @@
     "framework/tests/test_challenge.py",
     "framework/docs/CONTRACT_CHALLENGE.md",
     "docs/ADR-INDEPENDENT-LS-FRAMEWORK.md",
-    ".github/workflows/life-science-framework.yml"
+    ".github/workflows/life-science-framework.yml",
+    "framework/docs/ASSURANCE.md"
   ]
 }

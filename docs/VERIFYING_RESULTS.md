@@ -20,6 +20,12 @@ A failed domain does not cancel or skip the other domains, so one run can expose
 
 Framework changes additionally run the independent `standalone-framework` Linux check and `windows-cross-platform` check. The Windows check is evidence that repository line-ending policy preserves exact fixture bytes and deterministic output; it does not expand the required aggregate verdict or claim scientific portability
 
+## Framework evidence levels and strict abstention
+
+`ls-framework assess` defaults to exit 0 for `PASS` **or** `INDETERMINATE`; an abstention is not an affirmative verification. The optional `--require-pass` returns exit 2 for `INDETERMINATE` and 1 for `FAIL`, allowing downstream automation to refuse incomplete evidence. The JSON `status` and `not_verified` fields are authoritative within the narrow engineering contract, not scientific truth.
+
+The CLI blocks report destinations that resolve to the input bundle, inside the selected input evidence root or, when launched from checkout root, under `data/` / `.git/`. This is not a general-purpose filesystem sandbox and other explicitly selected output paths may overwrite local files. See [independent Framework assurance](../framework/docs/ASSURANCE.md).
+
 ## Tool report decisions
 
 `ls-evidence inspect` returns **0** for PASS or WARN; **1** for FAIL; **2** for invalid usage or inspect errors. The static preflight now distinguishes root `CITATION.cff` from recognized alternative citation guides (`CITATIONS.md`, `CITATION.md`, `CITATION.txt`); finding a guide remains WARN rather than an unsupported CFF PASS. A service repository is not required to include a workflow's root RO-Crate metadata. Nested crates are not assessed by the root-level rule. Read the `status`, `findings`, `scope` and `unverified` keys in the JSON report instead of assuming exit code 0 means scientific verification. Do not report `WARN` as certified success.
