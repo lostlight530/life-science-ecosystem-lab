@@ -37,7 +37,7 @@ def _id(value: Any) -> bool:
 
 
 def _text(value: Any, max_length: int = 400) -> bool:
-    return isinstance(value, str) and 0 < len(value) <= max_length and "\x00" not in value
+    return isinstance(value, str) and 0 < len(value) <= max_length and bool(value.strip()) and "\x00" not in value
 
 
 def _array(value: Any, max_length: int = MAX_ITEMS) -> bool:
@@ -71,6 +71,7 @@ def _check_local(root: Path, relative: str, digest: str, errors: list[dict[str, 
 
 def assess(bundle: Any, root: Path) -> dict[str, Any]:
     """Validate independent cross-domain software contracts; never execute inputs."""
+    root = Path(root).resolve()
     errors: list[dict[str, str]] = []
     warnings: list[dict[str, str]] = []
     checked = 0
