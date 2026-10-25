@@ -13,6 +13,9 @@ This document lists supported *software-interface mappings*, not certifications.
 | Citation File Format 1.2.0 | `CITATION.cff` | Frozen v0.4.0 three-asset software citation and Zenodo DOI |
 | CodeMeta 3.0 | `codemeta.json` | Current repository component inventory, including the later experimental Framework boundary |
 | W3C PROV-O / SKOS | Source and relationship export vocabulary guidance | Internal JSONL is not claimed to be RDF or PROV-O/SHACL conformant |
+| FAIR4RS | External research software principles for identity, interoperable interfaces and reuse | Framework's project-defined contract is not independently audited for FAIR4RS conformance |
+| ISA investigation/study/assay | External multi-omics research metadata model | Framework does not parse or validate full ISA investigations or scientific study designs |
+| GA4GH Data Repository Service (DRS) | External standard for logical data-object retrieval | Framework does not expose a DRS endpoint or claim GA4GH compliance |
 | Software Heritage SWHID | Optional immutable source object identifier | Only use real computed/archived identifiers, never invent them |
 | WorkflowHub | External public workflow record | Version 2 of WorkflowHub 2347 is publicly verified as CWL with DOI `10.48546/workflowhub.workflow.2347.2`; this does not prove automatic LifeMonitor synchronization or scientific validity |
 | LifeMonitor | Installed GitHub App + root `lifemonitor.yaml` + private local WTROC upload | Workflow `cc202b33-cd3e-48cc-8004-8e8db87bd200`, suite `05f4e427-ebcc-4650-ab97-2348c0788a32` and test instance `18d116e5-3806-4103-950a-8b65ab75d7f4` were maintainer-observed with one passing test on 2026-10-18 |

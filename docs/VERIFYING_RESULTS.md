@@ -1,6 +1,6 @@
 # Understanding verification results
 
-This project's independent Workflow and Tool produce **bounded engineering evidence**, not clinical/biological correctness or external platform certification. Determine *exactly which artifact, version, command and check* supports a statement.
+This project's independent Workflow, two Tools and separate experimental Framework produce **bounded engineering evidence**, not clinical/biological correctness or external platform certification. Determine *exactly which artifact, version, command and check* supports a statement.
 
 ## Four distinct levels
 
@@ -9,6 +9,7 @@ This project's independent Workflow and Tool produce **bounded engineering evide
 | Local Tool inspection | JSON + optional Markdown and SARIF, PASS / WARN / FAIL | A scientific conclusion, remote website reachability, full standards conformance |
 | Evidence collection/aggregation | Approved source revision, object identity, digests, diagnostics, candidate eligibility | The scientific meaning of the source documents is correct |
 | Computational knowledge replay | Deterministic knowledge JSON, source-linked JSONL and FTS5 queries on a specific input | That the synthetic fixture is a live GitHub observation or causal inference |
+| Independent Framework assessment | Exact local-byte check, method-domain declarations, typed lineage findings and synthetic adversarial cases | That method execution actually occurred, a biological sample was identified, or a scientific claim was accepted |
 | GitHub native durable lifecycle | Completed scheduled/authorized job **plus** accepted `data/` commit and state verification | That third-party registries accepted or independently reproduced the software |
 
 ## Required pull-request verdict

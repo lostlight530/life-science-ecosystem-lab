@@ -81,6 +81,7 @@ The life-sciences software-engineering Framework is separately packaged from the
 python -m pip install --no-deps -e ./framework
 python -m unittest discover -s framework/tests -v
 ls-framework assess --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/assessment.json
+python -m ls_framework.challenge --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/challenge.json
 ```
 
 Its `PASS` is only an engineering-contract verdict. See [Framework](../framework/README.md) and [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)

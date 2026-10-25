@@ -1,7 +1,10 @@
 # ADR: independent life-sciences cross-domain software engineering framework
 
-Date: 2026-10-19
-Status: PROPOSED FOR HUMAN REVIEW · IMPLEMENTED IN DRAFT PR
+Decision proposed: 2026-10-19
+Implementation merged: 2026-10-20 via PR #30 at main commit 20b3cdd03eb1df690ab26ddb2816121df3af54a7
+Status: IMPLEMENTED SOFTWARE ASSET · EXPERIMENTAL RESEARCH VALIDATION
+
+PR #29 supplied the original draft and was closed without merging. PR #30 incorporated and hardened the implementation. A merged software implementation does not constitute scientific claim acceptance or external certification
 
 ## Context
 
@@ -10,7 +13,7 @@ Cross-domain life-sciences **software engineering** requires a different indepen
 
 It is not a demand for a biology-specific inference algorithm or universal scientific truth engine
 
-## Proposed decision
+## Implemented architecture decision
 
 Introduce `framework/` at repository root as an independently installable package with its own CLI, fixtures, tests, validation workflow and versioned report structure
 The experimental Framework is a fourth independent entity **not** a fourth Tool, not a workflow, and not another scheduling infrastructure

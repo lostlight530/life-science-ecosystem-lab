@@ -51,3 +51,13 @@ Framework contracts can be consumed by other software, but it cannot promote a p
 The Framework is not included in the repository's frozen `v0.4.0` Zenodo release or WorkflowHub Knowledge Workflow record. A future Framework release or registration would require a separate reviewed version and evidence record
 
 See [the independent ADR](../docs/ADR-INDEPENDENT-LS-FRAMEWORK.md) and independent `.github/workflows/life-science-framework.yml`
+
+## Independent falsification-oriented contract challenge
+
+The [Framework Contract Challenge 001](docs/CONTRACT_CHALLENGE.md) adds reviewed synthetic negative and abstention cases to the independent Framework test suite. It checks source-byte substitution, domain/method incompatibility, incomplete lineage, cyclic dependencies, missing files, failed execution declarations and unauthorized claim promotion without touching existing Workflow/Tool code
+
+```sh
+python -m ls_framework.challenge --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework-challenge.json
+```
+
+Its report compares expected and actual **software-contract outcomes** and preserves case digests. A passing challenge is not a scientific benchmark, genuine cross-omics integration or an independently verified claim about biology
