@@ -44,6 +44,57 @@ class FrameworkContractTests(unittest.TestCase):
         self.assertEqual(report["status"], "FAIL")
         self.assertIn("MISSING_LINEAGE_STEPS", {x["code"] for x in report["errors"]})
 
+    def test_relative_root_library_api(self):
+        import os
+        relative = Path(os.path.relpath(FIXTURES, Path.cwd()))
+        result = assess(specimen(), relative)
+        self.assertEqual(result["status"], "PASS", result)
+
+    def test_whitespace_only_source_version_rejected(self):
+        bundle = specimen()
+        bundle["assets"][0]["source"]["version"] = "  "
+        report = self.evaluate(bundle)
+        self.assertEqual(report["status"], "FAIL")
+        self.assertIn("INVALID_SOURCE_DECLARATION", {x["code"] for x in report["errors"]})
+
+    def test_cli_output_cannot_overwrite_input(self):
+        path = FIXTURES / "software-cross-domain.json"
+        original = path.read_bytes()
+        r = subprocess.run(
+            [sys.executable, "-m", "ls_framework", "assess",
+             "--bundle", str(path), "--root", str(FIXTURES), "--output", str(path)],
+            capture_output=True, text=True, check=False,
+        )
+        self.assertEqual(r.returncode, 1, r.stderr)
+        self.assertEqual(json.loads(r.stdout)["status"], "FAIL")
+        self.assertEqual(path.read_bytes(), original)
+
+    def test_cli_output_cannot_overwrite_accepted_state(self):
+        accepted = FIXTURES.parents[1] / "data" / "knowledge" / "current.json"
+        original = accepted.read_bytes()
+        r = subprocess.run(
+            [sys.executable, "-m", "ls_framework", "assess",
+             "--bundle", str(FIXTURES / "software-cross-domain.json"),
+             "--root", str(FIXTURES), "--output", str(accepted)],
+            capture_output=True, text=True, check=False,
+        )
+        self.assertEqual(r.returncode, 1, r.stderr)
+        self.assertEqual(accepted.read_bytes(), original)
+
+    def test_strict_cli_exit_preserves_abstention(self):
+        bundle = specimen()
+        del bundle["assets"][0]["path"]
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp) / "bundle.json"
+            candidate.write_text(json.dumps(bundle), encoding="utf-8")
+            cmd = [sys.executable, "-m", "ls_framework", "assess",
+                   "--bundle", str(candidate), "--root", str(FIXTURES)]
+            a = subprocess.run(cmd, capture_output=True, text=True, check=False)
+            b = subprocess.run(cmd + ["--require-pass"], capture_output=True, text=True, check=False)
+            self.assertEqual(a.returncode, 0, a.stderr)
+            self.assertEqual(b.returncode, 2, b.stderr)
+            self.assertEqual(json.loads(b.stdout)["status"], "INDETERMINATE")
+
     def test_canonical_determinism(self):
         original = specimen()
         self.assertEqual(self.evaluate(original), self.evaluate(copy.deepcopy(original)))
