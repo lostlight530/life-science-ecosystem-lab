@@ -80,6 +80,9 @@ CITATION.cff              Citation and Zenodo DOI for the released v0.4.0 three-
 
 ## Independent Framework pilot
 
+[Framework assurance and falsifiability model](framework/docs/ASSURANCE.md) documents precisely what the software-contract checks prove, why scientific conclusions remain unverified, and why strict consumers should use `ls-framework assess --require-pass` rather than treating `INDETERMINATE` as a positive result.
+
+
 The experimental [Framework](framework/README.md) is a **software-engineering** peer focused on versioned, bounded contracts across different life-science data systems. The frozen genomics/microscopy example uses synthetic JSON fixtures and tests local byte identity, declared method applicability, lineage and failure boundaries — **it performs no omics integration or scientific inference**. See [independent architecture decision](docs/ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
 Its package version is `0.1.0` and it remains unreleased and unregistered as a separate external asset. The repository's `v0.4.0` Zenodo software DOI and WorkflowHub record describe the earlier released three-asset baseline and portable Knowledge Workflow, not this experimental Framework.

@@ -32,6 +32,14 @@ The four validation domains run independently and retain bounded diagnostics eve
 
 The public repository documents **observable behavior** and how to reproduce it. It does not publish internal research planning, private collaboration strategies or unsupported claims. Do not include internal documents in Git, uploaded Actions artifacts, CI logs or PR descriptions.
 
+## CI implementation versus server-side branch protection
+
+The repository-defined `validate` job aggregates four independent validation domains, including Framework regression tests through repository contracts. This is software-defined CI behavior, **not automatically GitHub-enforced merger blocking**. On 2026-10-25 the public branch metadata reported `main.protected=false`; the rulesets collection was empty. Thus merge/push restrictions are not presently evidenced by repository state.
+
+Administrator-only follow-up: check **Settings → Branches** or **Settings → Rules → Rulesets**. Require `validate` as the always-executed status check, choose PR/review and bypass restrictions appropriate for the repository, and test with a deliberately failing PR before marking enforcement VERIFIED. Do **not** require a standalone Framework job with path filters on all unrelated PRs: its check may never be scheduled for those files. GitHub documents status-check and review enforcement in [its branch protection guide](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+
+Important compatibility decision: the existing native Knowledge Workflow performs guarded direct `data/` persistence to `main`. Blocking **all** direct pushes without an explicitly reviewed authorized route can disable that existing research lifecycle. No branch settings were changed through this PR; follow-up requires appropriate repository administration and a separate acceptance test.
+
 ## Native production operation
 
 The native Knowledge Workflow is intentionally **manual/scheduled only**. Manual dispatch may select only a profile registered in `evidence/profiles/workflow-profiles.json`; an isolated profile remains read-only. A manual `native` run is authorized through GitHub Actions on `main` with `persist=true`; otherwise the dispatcher runs read-only. The schedule always resolves `native` and retains guarded acceptance. See [Production Operations](PRODUCTION_OPERATIONS.md) for separate evidence levels and the post-push remote-HEAD verification.

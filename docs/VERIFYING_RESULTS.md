@@ -19,6 +19,18 @@ A failed domain does not cancel or skip the other domains, so one run can expose
 
 Framework changes additionally run the independent `standalone-framework` Linux check and `windows-cross-platform` check. The Windows check is evidence that repository line-ending policy preserves exact fixture bytes and deterministic output; it does not expand the required aggregate verdict or claim scientific portability
 
+## Independent Framework assessment and abstention
+
+The peer `ls-framework` assesses cross-domain **software evidence contracts**, not biological truth or witnessed method execution. `PASS` covers only declared structural invariants and available verified local bytes; `INDETERMINATE` preserves incomplete, unreviewed or merely declared evidence; `FAIL` means an explicit contract violation.
+
+The CLI defaults to exit 0 on `PASS` and `INDETERMINATE` because an abstention report is still a valid completed assessment. Use `ls-framework assess --require-pass` where an automated consumer must **not** accept an indeterminate result as affirmative verification; it returns exit 2 for `INDETERMINATE`, exit 1 for `FAIL`, and exit 0 only for `PASS`. Always parse the JSON `status` rather than inferring scientific confidence from an exit code.
+
+Report destinations are guarded against replacing the input bundle, declared input-root contents and, when run from the checkout root, accepted `data/` or `.git/` paths. Other explicitly selected output paths are **not** generally sandboxed. See the [Framework assurance matrix](../framework/docs/ASSURANCE.md).
+
+## CI and GitHub merge-policy authority
+
+The internal `validate` verdict is necessary for engineering review, but it is not sufficient evidence that GitHub prevents a failing PR from merging. On 2026-10-25, GitHub exposed `main.protected=false` with no rulesets; server-side policy must be evaluated independently with administrator settings and deliberate negative-merge tests. See [Maintenance](MAINTENANCE.md).
+
 ## Tool report decisions
 
 `ls-evidence inspect` returns **0** for PASS or WARN; **1** for FAIL; **2** for invalid usage or inspect errors. The static preflight now distinguishes root `CITATION.cff` from recognized alternative citation guides (`CITATIONS.md`, `CITATION.md`, `CITATION.txt`); finding a guide remains WARN rather than an unsupported CFF PASS. A service repository is not required to include a workflow's root RO-Crate metadata. Nested crates are not assessed by the root-level rule. Read the `status`, `findings`, `scope` and `unverified` keys in the JSON report instead of assuming exit code 0 means scientific verification. Do not report `WARN` as certified success.

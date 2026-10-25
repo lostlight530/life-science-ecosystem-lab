@@ -1,7 +1,7 @@
 # ADR: independent life-sciences cross-domain software engineering framework
 
 Date: 2026-10-19
-Status: PROPOSED FOR HUMAN REVIEW · IMPLEMENTED IN DRAFT PR
+Status: IMPLEMENTED · EXPERIMENTAL (PR #30 merged 2026-10-20); scientific claims unverified
 
 ## Context
 
@@ -10,9 +10,9 @@ Cross-domain life-sciences **software engineering** requires a different indepen
 
 It is not a demand for a biology-specific inference algorithm or universal scientific truth engine
 
-## Proposed decision
+## Implemented architecture decision
 
-Introduce `framework/` at repository root as an independently installable package with its own CLI, fixtures, tests, validation workflow and versioned report structure
+PR #30 introduced `framework/` at repository root as an independently installable package with its own CLI, fixtures, tests, validation workflow and versioned report structure
 The experimental Framework is a fourth independent entity **not** a fourth Tool, not a workflow, and not another scheduling infrastructure
 Retain the existing three assets, their independent entrypoints and their read/write boundaries
 
@@ -50,3 +50,13 @@ This experimental version post-dates the frozen repository `v0.4.0` release. It 
 ISA, W3C PROV-O, ECO, RO-Crate and BioCompute are externally governed references
 They are not redefined, endorsed, or officially certified by this project
 Future adapters require explicit independent tests and version pins before their interoperability can be claimed
+
+## Accepted software change versus unresolved independent authority
+
+- [Draft PR #29](https://github.com/lostlight530/life-science-ecosystem-lab/pull/29) introduced the candidate and was closed **without merge**
+- [Merged PR #30](https://github.com/lostlight530/life-science-ecosystem-lab/pull/30) carried forward and hardened the implementation, producing `main` commit `20b3cdd03eb1df690ab26ddb2816121df3af54a7`
+- Code review and passing CI establish only a reviewed implementation; the Framework is still an experimental independent software asset, not an externally registered scientific standard
+- No old Zenodo, WorkflowHub, LifeMonitor, bio.tools or OpenEBench identifier covers this later Framework merely because the source repository is shared
+- GitHub server-enforced merge policy, acceptance of experimental scientific claims and authority to write production state are **separate** governance questions
+
+See [Framework assurance contract](../framework/docs/ASSURANCE.md) for open problems and scoped execution evidence.

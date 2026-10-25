@@ -11,6 +11,10 @@ Each established asset and the experimental Framework can operate independently 
 
 The frozen `v0.4.0` repository release and its Zenodo DOI cover the three established assets. The Framework was added later as an unreleased experimental component with its own `0.1.0` package identity. Current source metadata lists all four repository components without rewriting the historical release boundary
 
+## Framework assurance boundary
+
+The independent peer Framework checks bounded cross-life-science software artifact contracts, not biological identities or validated scientific conclusions. Reported method IDs, digests and successful outcomes remain declarations until separately attested by independent execution evidence. Framework `PASS` cannot promote a scientific claim or perform native `data/` acceptance; `INDETERMINATE` is an intentional outcome. See [Framework assurance](../framework/docs/ASSURANCE.md).
+
 ## Native lifecycle
 
 `Approved source profiles → Collect → Validate → Aggregate → Project Knowledge → Verify Knowledge → Compare to Active → Archive Superseded → Record Memory → Check World-line → Guarded Apply → Receipt`

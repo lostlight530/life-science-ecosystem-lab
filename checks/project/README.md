@@ -1,6 +1,6 @@
 # Project custom checks — repository authority only
 
-This directory holds **our own** declared repository contract: the explicit `manifest.json` inventory of the three installed research-software CLIs, native workflows, provenance rules, project publications and accepted source/data entrypoints. Its checks do not impersonate an institution or copy upstream default configuration.
+This directory holds **our own** declared repository contract: the explicit `manifest.json` inventory of the three established root-package research-software CLIs (the experimental peer Framework has a separate `ls-framework` package and independent tests), native workflows, provenance rules, project publications and accepted source/data entrypoints. Its checks do not impersonate an institution or copy upstream default configuration.
 
 The `project-custom` daily job records per-file SHA-256, entrypoint presence, local public documentation and metadata validity, fail-closed synthetic/provenance test results, current Git-accepted state and bounded independent Knowledge Quality. It never changes `data/`, external registration, source approvals or platform account settings.
 

@@ -20,6 +20,14 @@ This document lists supported *software-interface mappings*, not certifications.
 | OpenEBench | Synchronized tool-monitor record | The tool ID was maintainer-observed as an active metadata record with upstream `validated=0`; this is synchronization evidence, not an OpenEBench benchmark or scientific validation |
 | Zenodo | Repository software release | DOI `10.5281/zenodo.23447089` identifies the frozen GitHub `v0.4.0` three-asset release; it is not the WorkflowHub workflow DOI and does not include the later experimental Framework |
 
+## Upstream specification freshness versus local version pins
+
+**Public specification check on 2026-10-25:** the official [RO-Crate index](https://www.researchobject.org/ro-crate/specification.html) identifies [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/index.html), published 2026-06-22, as its current long-term release. This does not automatically replace the independently reviewed Workflow RO-Crate 1.1 and Workflow Testing RO-Crate 0.2 contracts already used by this repository and its existing external records.
+
+The [RDA FAIR4RS recommendation](https://doi.org/10.15497/RDA00068) explicitly addresses distinct identifiers for software components and versions. [FORCE11 software citation guidance](https://github.com/force11/force11-sciwg/blob/master/guidance/software_citation_checklist_for_developers.md) likewise stresses specific software-version attribution. The frozen v0.4.0 Zenodo DOI is **not** a DOI for the later experimental Framework package 0.1.0.
+
+The [W3C PROV-O recommendation](https://www.w3.org/TR/prov-o/) supplies established entity/activity/agent provenance concepts. Our Framework's current `method`, `source`, `outcome` and lineage declarations do **not** automatically become witnessed executions, authenticated laboratory specimens, PROV-O RDF, ISA-conformant exchanges or external standard certification. Any adapter or standards migration must pin the upstream version and demonstrate independently tested behavior and limitations before it can claim interoperability.
+
 Reference documents:
 
 - [Workflow RO-Crate 1.1](https://about.workflowhub.eu/Workflow-RO-Crate/1.1/)

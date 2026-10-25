@@ -48,6 +48,9 @@ The Tool never writes into the inspected research repository. It only writes the
 
 ## Experimental Cross-Domain Software Framework (`framework/`)
 
+The Framework's [assurance contract](../framework/docs/ASSURANCE.md) describes the meaning of software `PASS / FAIL / INDETERMINATE`. Use `--require-pass` to return exit 2 on `INDETERMINATE` where downstream CI needs an affirmative software-contract verdict. The CLI guards its source input root and repository `data/` report destinations when used from the checkout root, but cannot attest method execution or biological conclusions.
+
+
 - Package and CLI: separately installed `life-sciences-rse-framework` / `ls-framework`
 - Inputs: bounded JSON bundles describing life-science software assets, local SHA-256 identities, methods, lineage, outcomes and proposal-only claims
 - Outputs: deterministic `PASS`, `FAIL` or `INDETERMINATE` engineering assessments with typed findings and explicit nonclaims

@@ -2,6 +2,10 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Bound experimental Framework reports away from source inputs and accepted repository state; add optional strict INDETERMINATE exit status and adversarial tests
+- Normalize relative Framework input roots, reject whitespace-only source versions and distinguish engineering evidence from scientific validity
+- Update the merged Framework architecture decision, repository server-side branch-protection caveat and standards version-pinning guidance without changing existing Workflow or Tool implementation
+
 - Add the experimental, separately packaged Life Sciences Cross-Domain Research Software Engineering Framework with bounded lineage, authority and byte-identity contracts
 - Reject multi-asset Framework bundles that omit explicit lineage steps instead of allowing a vacuous engineering PASS
 - Pin repository text checkout to LF and verify Framework fixtures and deterministic replay on both Linux and Windows

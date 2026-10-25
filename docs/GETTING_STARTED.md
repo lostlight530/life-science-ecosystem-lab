@@ -83,7 +83,7 @@ python -m unittest discover -s framework/tests -v
 ls-framework assess --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/assessment.json
 ```
 
-Its `PASS` is only an engineering-contract verdict. See [Framework](../framework/README.md) and [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
+Its `PASS` is only an engineering-contract verdict. For strict downstream programs, append `--require-pass` and inspect the returned report status; an `INDETERMINATE` result then exits 2 rather than 0. Reports should go under ignored `build/`, not into the source fixture root or accepted `data/`. See [Framework](../framework/README.md) and [ADR](ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
 The repository pins text files to LF bytes because the fixture SHA-256 values are byte identities. The dedicated Framework workflow runs on Linux and Windows. If an older Windows checkout predates `.gitattributes`, create a fresh checkout before diagnosing digest mismatches
 

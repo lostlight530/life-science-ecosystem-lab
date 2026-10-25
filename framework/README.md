@@ -13,7 +13,7 @@ Python 3.11+, with no runtime dependencies, no LLM, no network and no upstream t
 ```sh
 python -m pip install --no-deps -e ./framework
 python -m unittest discover -s framework/tests -v
-ls-framework assess --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/assessment.json
+ls-framework assess --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework/assessment.json --require-pass
 ```
 
 The synthetic fixture declares a genomics input, microscopy input, and integration artifact, then checks their **local file digests**, domain declarations, method identities, lineage and path boundaries
@@ -51,3 +51,11 @@ Framework contracts can be consumed by other software, but it cannot promote a p
 The Framework is not included in the repository's frozen `v0.4.0` Zenodo release or WorkflowHub Knowledge Workflow record. A future Framework release or registration would require a separate reviewed version and evidence record
 
 See [the independent ADR](../docs/ADR-INDEPENDENT-LS-FRAMEWORK.md) and independent `.github/workflows/life-science-framework.yml`
+
+## CI consumers, evidence safety and abstention
+
+The default command returns exit code 0 for a well-formed `PASS` **or** `INDETERMINATE` report, 1 for `FAIL`. With `--require-pass`, an `INDETERMINATE` report exits 2 to keep incomplete evidence from being misread as affirmative verification. Always inspect the JSON status; even `PASS` does not attest method execution or scientific correctness.
+
+The `--output` destination cannot resolve to the input bundle, any location inside the declared input root, or the checkout's `data/` or `.git/` when invoked from the repository root. Store reports under ignored `build/` or a dedicated scratch folder. This guard is **not a general OS filesystem sandbox**: user-controlled output paths elsewhere can replace existing files.
+
+Read the [assurance model and falsification matrix](docs/ASSURANCE.md), including explicit limits of synthetic cross-domain fixtures and standards references.
