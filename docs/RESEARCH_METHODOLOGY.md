@@ -51,3 +51,11 @@ This is a publicly reproducible software research method, not an assertion of un
 ## Heterogeneous Agent cohort as a replaceable research case
 
 [Three actual public Agent contributions](AGENT_CLUSTER_RESEARCH_CASE.md) form a study of proposal provenance, attribution, review, correction and integration under the **same fixed eight-stage method**. This is a research-software collaboration field case; it does not prove that three authenticated independent Agent runtimes reproduced a biological ground truth. The [decision ledger](AGENT_REVIEW_DECISIONS.md) distinguishes revised technical claims, validated engineering changes, observer-only statements and remaining unknowns. The research question and falsification plan may be transferred to another domain without changing the underlying method.
+
+## Life-sciences cross-domain *software* interoperability experiment
+
+The independent [Framework](../framework/README.md) deliberately separates the subject of a software-engineering test from the biology of the example. In the first study the testable property is whether diverse life-sciences software artifacts can share a typed, bounded, versioned dependency contract
+
+DEFINE states the falsifiable interoperability failure; PIN freezes input bytes, contract and oracle versions; QUALIFY determines what was actually observed; EXECUTE invokes only the offline contract evaluator; EVALUATE compares explicit expected and observed machine statuses; AUDIT examines false acceptance, false rejection and skipped cases; REVIEW preserves authority and dissent; REPLAY compares timestamp-free reports
+
+The [synthetic mutation challenge](../framework/docs/CONTRACT_CHALLENGE.md) establishes only regression performance over hand-authored examples. If later experiments use real public omics, image or clinical-adjacent data software, they require appropriately licensed, non-sensitive, independently reviewed fixtures and domain-appropriate validation; no sample or scientific claim is promoted solely from the Framework's green contract verdict

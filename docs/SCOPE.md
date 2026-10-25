@@ -7,7 +7,7 @@
 - Versioned schemas, examples, tests, provenance, and recovery information
 - Standards-aware metadata and calibrated records for the externally verified WorkflowHub workflow, maintainer-observed private LifeMonitor enrollment, bio.tools identity, OpenEBench synchronization and Zenodo release
 - Evidence-based maintenance of repository documentation, citation and reusable Life Science infrastructure templates
-- Experimental, independent life-sciences cross-domain **software-engineering** contracts, with synthetic negative tests and no biological interpretation
+- Experimental, independent life-sciences cross-domain **software-engineering** contracts, with versioned synthetic adversarial challenges, deterministic replay, typed failures and explicit rejection/abstention, without biological interpretation
 
 ## Out of scope
 

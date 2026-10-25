@@ -82,6 +82,8 @@ CITATION.cff              Citation and Zenodo DOI for the released v0.4.0 three-
 
 The experimental [Framework](framework/README.md) is a **software-engineering** peer focused on versioned, bounded contracts across different life-science data systems. The frozen genomics/microscopy example uses synthetic JSON fixtures and tests local byte identity, declared method applicability, lineage and failure boundaries — **it performs no omics integration or scientific inference**. See [independent architecture decision](docs/ADR-INDEPENDENT-LS-FRAMEWORK.md)
 
+It also provides an [independent synthetic contract challenge](framework/docs/CONTRACT_CHALLENGE.md), which exercises invalid inputs and correct abstention without introducing a scientific inference engine or modifying existing Workflow/Tool contracts
+
 Its package version is `0.1.0` and it remains unreleased and unregistered as a separate external asset. The repository's `v0.4.0` Zenodo software DOI and WorkflowHub record describe the earlier released three-asset baseline and portable Knowledge Workflow, not this experimental Framework.
 
 ## Current capabilities and limits

@@ -69,3 +69,13 @@ A validated knowledge map is projected into JSONL topic/source entities and evid
 ## Third independent bioinformatics data-processing plane
 
 The `bio_tool/` software asset exposes `ls-bio` and CWL CommandLineTool wrappers for protein FASTA/PDB files. It has no dependency on accepted `data/`, the Evidence Tool, external Agents or native GitHub scheduling. Outputs are bounded local JSON measurements with input SHA-256 and explicit biological non-claims. The native Workflow and Evidence Tool retain their existing responsibilities and write boundaries. This addition does not change any accepted `data/` snapshot or infer a new biological knowledge edge.
+
+## Repository-level cross-domain research-software contracts
+
+The independent `framework/` owns a *software-contract assessment* boundary, separate from Knowledge Workflow lifecycle authority, Evidence Tool source collection, and Bio Tool scientific data calculation
+
+Its synthetic [contract challenge](../framework/docs/CONTRACT_CHALLENGE.md) is a reproducible adversarial verification set for declaration errors, broken object lineage, byte substitution and proper abstention. The synthetic genomics/microscopy names are metadata context, not proof of a biological integration method
+
+Integration is **optional and explicit** through versioned files or public CLI interfaces; Framework output cannot mutate source/topic registries, `data/` history, external registry status or research acceptance. No Agent identity, cross-domain scientific result, PROV-O/RO-Crate conformance or independent method-execution proof follows from a software-contract PASS
+
+External precedents relevant to this boundary include [FAIR4RS](https://doi.org/10.1038/s41597-022-01710-x), [W3C PROV-O](https://www.w3.org/TR/prov-o/) and [RO-Crate](https://www.researchobject.org/ro-crate/specification). They remain independently governed standards; our custom bundle schema is **not** an official profile of any of them

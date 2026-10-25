@@ -54,3 +54,17 @@ Failed validation uploads **diagnostics and docs-audit reports only**, when avai
 ## Partial-observation gate
 
 If an optional approved source fails at commit, tree, selected-document or blob retrieval, the collector discards that source's entire partial result and preserves an explicit diagnostic. Required sources missing all selected documents fail the collection rather than masquerading as an empty but successful observation. If an optional approved source cannot be retrieved, the Tool preserves an explicit diagnostic but marks the candidate as ineligible for automatic knowledge persistence. A transient missing source must not be silently converted into a document-deletion fact. The read-only artifacts remain inspectable for follow-up. Accepted graph snapshots and event chains are verified with repository state checks.
+
+## Peer Framework maintenance and merge authority
+
+The independently installed Framework has its own tests and Linux/Windows checks; this does not make its results interchangeable with Knowledge Workflow, Evidence Tool or Bio Tool outputs. The dedicated [synthetic challenge](../framework/docs/CONTRACT_CHALLENGE.md) must be reproducible and retained as a candidate, not transformed into accepted biological knowledge
+
+Cross-domain engineering changes should identify which interface version, input bytes, method declarations, error/abstention conditions and independent domain-specific checks were examined. Baselines and oracle expectations must be versioned and revisable. Negative outcomes and missed detections belong in the report, not in an ignored CI log
+
+### Branch protection is a separate authority plane
+
+As observed via the public GitHub branch metadata on 2026-10-25, `main.protected=false` and no active repository rulesets were returned by the available read. This is a point-in-time repository-governance observation, **not** a property of any workflow or permission to bypass checks
+
+The GitHub-native `validate` aggregate check fails when an internal domain fails, but that fact **alone does not prove** that GitHub's server will reject a direct push or PR merge. A maintainer with repository administration authority should separately enable and verify the intended branch protection/ruleset, including required status contexts, review policy and privileged bypass rules. The current connected GitHub App cannot modify repository administration settings. Do not mark that work completed from a passing Actions run
+
+Any maintenance PR that changes source declarations, metadata or documentation should preserve the frozen `v0.4.0` release identity and distinguish the later experimental Framework package version `0.1.0`; never rewrite old registry records to include new software retroactively

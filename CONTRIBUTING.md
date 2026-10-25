@@ -1,6 +1,6 @@
 # Contributing to Life Science Ecosystem Lab
 
-The repository maintains **three independent assets**, not an Agent/Skills package. Knowledge behavior belongs to [`.github/`](.github/README.md), and standalone research-software evidence inspection and source verification to [`evidence/`](evidence/README.md), and bounded bioinformatics protein file analysis to [`bio_tool/`](bio_tool/README.md). See the [documentation index](docs/README.md) before starting.
+The repository maintains **three established independent assets plus one experimental, separately installable Framework**, not an Agent/Skills package. Knowledge Workflow behavior belongs to [`.github/`](.github/README.md), independent evidence inspection to [`evidence/`](evidence/README.md), and bounded biological data processing to [`bio_tool/`](bio_tool/README.md). The peer [`framework/`](framework/README.md) evaluates life-sciences **cross-domain software-engineering contracts**, not biological conclusions. See the [documentation index](docs/README.md) before starting.
 
 ## Reproduce your proposed change
 
@@ -18,7 +18,17 @@ python .github/scripts/check_metadata.py
 python .github/scripts/check_publication_boundary.py
 ```
 
-5. Changes to CWL, GitHub Actions inputs/outputs or public descriptions must update the relevant [RO-Crate](ro-crate-metadata.json), [Bioschemas](metadata/) and documentation contracts; verify CWL with [Getting Started](docs/GETTING_STARTED.md)
+5. For independent Framework changes, also run the dedicated regression and synthetic contract challenge without modifying the existing Workflow or Tools:
+
+```sh
+python -m pip install --no-deps -e ./framework
+python -m unittest discover -s framework/tests -v
+python -m ls_framework.challenge --bundle framework/fixtures/software-cross-domain.json --root framework/fixtures --output build/framework-challenge.json
+```
+
+These tests are synthetic software-contract evidence, **not** biological or institutional verification. For scientific research proposals, preserve falsifiable questions, fixed references, failures and unresolved limitations, and keep accepted data strictly under the existing native authority
+
+6. Changes to CWL, GitHub Actions inputs/outputs or public descriptions must update the relevant [RO-Crate](ro-crate-metadata.json), [Bioschemas](metadata/) and documentation contracts; verify CWL with [Getting Started](docs/GETTING_STARTED.md)
 6. For a structural documentation change, update `docs/README.md` **and** the authoritative documentation inventory `evidence/profiles/docs.json`. CI tests require complete coverage of public Markdown guides
 
 The required validation workflow is actor-neutral. Do not add contributor-specific bypasses, blanket `continue-on-error`, or external registry/network calls as merge prerequisites. Its independent domains all run before the aggregate verdict, so address every failed domain reported by the same run rather than relying on an earlier failure to hide later checks

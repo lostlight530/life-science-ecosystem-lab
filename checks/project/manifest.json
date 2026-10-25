@@ -43,6 +43,16 @@
     "evidence/daily_custom_runner.py",
     "evidence/workflow_profiles.py",
     "tests/test_daily_custom_runner.py",
-    "tests/test_workflow_profiles.py"
+    "tests/test_workflow_profiles.py",
+    "framework/README.md",
+    "framework/pyproject.toml",
+    "framework/schemas/bundle-v0.1.0.schema.json",
+    "framework/src/ls_framework/engine.py",
+    "framework/src/ls_framework/challenge.py",
+    "framework/tests/test_engine.py",
+    "framework/tests/test_challenge.py",
+    "framework/docs/CONTRACT_CHALLENGE.md",
+    "docs/ADR-INDEPENDENT-LS-FRAMEWORK.md",
+    ".github/workflows/life-science-framework.yml"
   ]
 }
