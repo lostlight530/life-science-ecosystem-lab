@@ -5,6 +5,7 @@ import argparse
 import json
 from pathlib import Path
 from .engine import assess
+from .paths import resolve_report_target
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -18,17 +19,11 @@ def main(argv: list[str] | None = None) -> int:
     output_target = None
     try:
         input_root = (args.root or args.bundle.parent).resolve(strict=True)
-        if args.output is not None:
-            candidate = args.output.resolve()
-            checkout_root = Path.cwd().resolve()
-            if (candidate == args.bundle.resolve() or candidate.is_relative_to(input_root)
-                    or candidate.is_relative_to(checkout_root / "data")
-                    or candidate.is_relative_to(checkout_root / ".git")):
-                raise ValueError("report output cannot replace evidence or accepted repository state")
-            output_target = candidate
+        output_target = resolve_report_target(args.output, args.bundle, input_root)
         data = args.bundle.read_bytes()
         if len(data) > 256_000:
             raise ValueError("bundle exceeds 256 KB")
+
         def reject_duplicates(pairs):
             result = {}
             for key, value in pairs:
@@ -36,9 +31,17 @@ def main(argv: list[str] | None = None) -> int:
                     raise ValueError("duplicate JSON object key")
                 result[key] = value
             return result
-        bundle = json.loads(data, object_pairs_hook=reject_duplicates)
-        report = assess(bundle, (args.root or args.bundle.parent).resolve(strict=True))
-    except (OSError, ValueError, json.JSONDecodeError) as error:
+
+        def reject_nonfinite(value):
+            raise ValueError(f"non-finite JSON constant: {value}")
+
+        bundle = json.loads(
+            data,
+            object_pairs_hook=reject_duplicates,
+            parse_constant=reject_nonfinite,
+        )
+        report = assess(bundle, input_root)
+    except (OSError, ValueError, TypeError, RecursionError) as error:
         report = {
             "kind": "LS_RSE_ENGINEERING_ASSESSMENT",
             "schema_version": "0.1.0",
@@ -49,8 +52,21 @@ def main(argv: list[str] | None = None) -> int:
         }
     serialized = json.dumps(report, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
     if output_target is not None:
-        output_target.parent.mkdir(parents=True, exist_ok=True)
-        output_target.write_text(serialized, encoding="utf-8")
+        try:
+            output_target.parent.mkdir(parents=True, exist_ok=True)
+            output_target.write_text(serialized, encoding="utf-8")
+        except OSError as error:
+            report = {
+                "kind": "LS_RSE_ENGINEERING_ASSESSMENT",
+                "schema_version": "0.1.0",
+                "status": "FAIL",
+                "errors": [{"code": "OUTPUT_ERROR", "subject": type(error).__name__}],
+                "warnings": [],
+                "not_verified": ["The report could not be written to the requested output path"],
+            }
+            serialized = json.dumps(report, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
+            print(serialized, end="")
+            return 1
     print(serialized, end="")
     if report["status"] == "FAIL":
         return 1

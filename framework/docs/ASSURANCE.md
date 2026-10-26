@@ -19,7 +19,7 @@ Status: project-owned experimental contract, not a registered institutional stan
 
 `PASS` is a **software-contract** conclusion only. `FAIL` records a concrete violation. `INDETERMINATE` is correct abstention, neither proof of failure nor proof of scientific truth. A valid scientific negative finding must remain distinct from a missing experiment.
 
-`ls-framework assess` exits 0 for a completed PASS or INDETERMINATE report by default. `--require-pass` instead returns 2 for INDETERMINATE (1 for FAIL). Both the assessment CLI and the standalone synthetic challenge refuse report paths that point at the input bundle, inside its root or to repository `data/`/`.git/` when executed from the checkout root. Malformed challenge objects fail with structured diagnostics and a nonzero exit. Other output paths are not sandboxed. Use `build/` and inspect the command-specific JSON status fields.
+`ls-framework assess` exits 0 for a completed PASS or INDETERMINATE report by default. `--require-pass` instead returns 2 for INDETERMINATE (1 for FAIL). Both the assessment CLI and standalone synthetic challenge share a report-path guard that discovers Git roots from relevant ancestor paths and refuses output into the input root, repository `data/`, or `.git/`, including from checkout subdirectories. Non-finite/deeply nested JSON and output-write failures produce structured failures. This guard is not a general filesystem sandbox and does not eliminate concurrent filesystem races. Use `build/` and inspect command-specific JSON status fields.
 
 ## Pending falsifiable research, not yet demonstrated
 

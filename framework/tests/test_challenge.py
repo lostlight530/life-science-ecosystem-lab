@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -128,17 +129,67 @@ class CrossDomainChallengeTests(unittest.TestCase):
             self.assertEqual(report["mismatches"], ["INPUT_ERROR"])
             self.assertNotIn("cases", report)
 
-    def test_nonfinite_json_is_rejected_as_input_error(self):
+    def test_both_clis_protect_repository_state_from_nested_working_directory(self):
+        source_root = Path(__file__).resolve().parents[1] / "src"
         with tempfile.TemporaryDirectory() as scratch:
-            bundle = Path(scratch) / "nonfinite.json"
-            bundle.write_text('{"value": NaN}\n', encoding="utf-8")
-            proc = subprocess.run([
-                sys.executable, "-m", "ls_framework.challenge",
-                "--bundle", str(bundle), "--root", str(FIXTURES),
-            ], text=True, capture_output=True, check=False)
-            self.assertEqual(proc.returncode, 1)
-            self.assertEqual(proc.stderr, "")
-            self.assertEqual(json.loads(proc.stdout)["mismatches"], ["INPUT_ERROR"])
+            checkout = Path(scratch) / "checkout"
+            (checkout / ".git").mkdir(parents=True)
+            (checkout / "data").mkdir()
+            workdir = checkout / "framework"
+            workdir.mkdir()
+            fixtures = workdir / "fixtures"
+            shutil.copytree(FIXTURES, fixtures)
+            bundle = fixtures / BUNDLE.name
+            env = os.environ.copy()
+            env["PYTHONPATH"] = os.pathsep.join(
+                item for item in (str(source_root), env.get("PYTHONPATH", "")) if item
+            )
+
+            for module, prefix in (
+                ("ls_framework.challenge", []),
+                ("ls_framework", ["assess"]),
+            ):
+                for protected_dir in ("data", ".git"):
+                    with self.subTest(module=module, protected_dir=protected_dir):
+                        output = checkout / protected_dir / "must-not-write.json"
+                        command = [sys.executable, "-m", module, *prefix,
+                                   "--bundle", str(bundle), "--root", str(fixtures),
+                                   "--output", str(output)]
+                        proc = subprocess.run(
+                            command, cwd=workdir, env=env,
+                            text=True, capture_output=True, check=False,
+                        )
+                        self.assertEqual(proc.returncode, 1, proc.stderr)
+                        self.assertEqual(json.loads(proc.stdout)["status"], "FAIL")
+                        self.assertFalse(output.exists())
+
+    def test_nonfinite_and_deep_json_are_structured_failures(self):
+        source_root = Path(__file__).resolve().parents[1] / "src"
+        malformed_payloads = {
+            "nonfinite": '{"value": NaN}\n',
+            "deeply_nested": "[" * 2000 + "0" + "]" * 2000,
+        }
+        with tempfile.TemporaryDirectory() as scratch:
+            env = os.environ.copy()
+            env["PYTHONPATH"] = os.pathsep.join(
+                item for item in (str(source_root), env.get("PYTHONPATH", "")) if item
+            )
+            for module, prefix in (
+                ("ls_framework.challenge", []),
+                ("ls_framework", ["assess"]),
+            ):
+                for case, payload in malformed_payloads.items():
+                    with self.subTest(module=module, case=case):
+                        bundle = Path(scratch) / f"{module.replace('.', '-')}-{case}.json"
+                        bundle.write_text(payload, encoding="utf-8")
+                        command = [sys.executable, "-m", module, *prefix,
+                                   "--bundle", str(bundle), "--root", str(FIXTURES)]
+                        proc = subprocess.run(
+                            command, env=env, text=True, capture_output=True, check=False,
+                        )
+                        self.assertEqual(proc.returncode, 1, proc.stderr)
+                        self.assertEqual(proc.stderr, "")
+                        self.assertEqual(json.loads(proc.stdout)["status"], "FAIL")
 
 
 if __name__ == "__main__":

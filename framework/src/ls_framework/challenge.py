@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any, Callable
 
 from .engine import assess, canonical_digest
+from .paths import resolve_report_target
 
 Mutation = Callable[[dict[str, Any]], None]
 
@@ -152,7 +153,7 @@ def run_challenge(bundle: dict[str, Any], root: Path) -> dict[str, Any]:
             )
             correct = (observed == expected_status and
                        (expected_finding is None or expected_finding in observed_codes))
-        except (KeyError, IndexError, TypeError, ValueError):
+        except (KeyError, IndexError, TypeError, ValueError, RecursionError):
             observed = "ERROR"
             observed_codes = ["CASE_EXECUTION_ERROR"]
             correct = False
@@ -199,18 +200,11 @@ def main(argv: list[str] | None = None) -> int:
     output_target = None
     try:
         input_root = args.root.resolve(strict=True)
-        if args.output is not None:
-            candidate = args.output.resolve()
-            checkout_root = Path.cwd().resolve()
-            if (candidate == args.bundle.resolve()
-                    or candidate.is_relative_to(input_root)
-                    or candidate.is_relative_to(checkout_root / "data")
-                    or candidate.is_relative_to(checkout_root / ".git")):
-                raise ValueError("report output cannot replace evidence or accepted repository state")
-            output_target = candidate
+        output_target = resolve_report_target(args.output, args.bundle, input_root)
         payload = args.bundle.read_bytes()
         if len(payload) > 256_000:
             raise ValueError("bundle exceeds 256 KB")
+
         def no_duplicate_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
             unique: dict[str, Any] = {}
             for key, value in pairs:
@@ -218,8 +212,10 @@ def main(argv: list[str] | None = None) -> int:
                     raise ValueError("duplicate JSON object key")
                 unique[key] = value
             return unique
+
         def reject_nonfinite(value: str) -> None:
             raise ValueError(f"non-finite JSON number: {value}")
+
         bundle = json.loads(
             payload,
             object_pairs_hook=no_duplicate_keys,
@@ -233,7 +229,7 @@ def main(argv: list[str] | None = None) -> int:
         if not all(isinstance(bundle[key], list) for key in ("assets", "steps", "claims")):
             raise ValueError("bundle collections must be JSON arrays")
         result = run_challenge(bundle, input_root)
-    except (OSError, ValueError, TypeError, KeyError, IndexError):
+    except (OSError, ValueError, TypeError, KeyError, IndexError, RecursionError):
         result = {
             "kind": "LS_RSE_CONTRACT_CHALLENGE",
             "schema_version": "0.1.0",
@@ -242,8 +238,20 @@ def main(argv: list[str] | None = None) -> int:
         }
     output = json.dumps(result, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
     if output_target is not None:
-        output_target.parent.mkdir(parents=True, exist_ok=True)
-        output_target.write_text(output, encoding="utf-8")
+        try:
+            output_target.parent.mkdir(parents=True, exist_ok=True)
+            output_target.write_text(output, encoding="utf-8")
+        except OSError as error:
+            result = {
+                "kind": "LS_RSE_CONTRACT_CHALLENGE",
+                "schema_version": "0.1.0",
+                "status": "FAIL",
+                "mismatches": ["OUTPUT_ERROR"],
+                "error_type": type(error).__name__,
+            }
+            output = json.dumps(result, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
+            print(output, end="")
+            return 1
     print(output, end="")
     return 0 if result["status"] == "PASS" else 1
 
