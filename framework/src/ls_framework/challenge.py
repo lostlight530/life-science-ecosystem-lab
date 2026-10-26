@@ -142,15 +142,20 @@ def run_challenge(bundle: dict[str, Any], root: Path) -> dict[str, Any]:
     results: list[dict[str, Any]] = []
     for case_id, mutation, expected_status, expected_finding in CASES:
         candidate = copy.deepcopy(bundle)
-        if mutation is not None:
-            mutation(candidate)
-        assessment = assess(candidate, root)
-        observed = assessment["status"]
-        observed_codes = sorted(
-            {entry["code"] for entry in assessment["errors"] + assessment["warnings"]}
-        )
-        correct = (observed == expected_status and
-                   (expected_finding is None or expected_finding in observed_codes))
+        try:
+            if mutation is not None:
+                mutation(candidate)
+            assessment = assess(candidate, root)
+            observed = assessment["status"]
+            observed_codes = sorted(
+                {entry["code"] for entry in assessment["errors"] + assessment["warnings"]}
+            )
+            correct = (observed == expected_status and
+                       (expected_finding is None or expected_finding in observed_codes))
+        except (KeyError, IndexError, TypeError, ValueError):
+            observed = "ERROR"
+            observed_codes = ["CASE_EXECUTION_ERROR"]
+            correct = False
         results.append({
             "id": case_id,
             "case_bundle_sha256": canonical_digest(candidate),
@@ -191,7 +196,18 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--root", required=True, type=Path)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args(argv)
+    output_target = None
     try:
+        input_root = args.root.resolve(strict=True)
+        if args.output is not None:
+            candidate = args.output.resolve()
+            checkout_root = Path.cwd().resolve()
+            if (candidate == args.bundle.resolve()
+                    or candidate.is_relative_to(input_root)
+                    or candidate.is_relative_to(checkout_root / "data")
+                    or candidate.is_relative_to(checkout_root / ".git")):
+                raise ValueError("report output cannot replace evidence or accepted repository state")
+            output_target = candidate
         payload = args.bundle.read_bytes()
         if len(payload) > 256_000:
             raise ValueError("bundle exceeds 256 KB")
@@ -202,11 +218,22 @@ def main(argv: list[str] | None = None) -> int:
                     raise ValueError("duplicate JSON object key")
                 unique[key] = value
             return unique
-        bundle = json.loads(payload, object_pairs_hook=no_duplicate_keys)
+        def reject_nonfinite(value: str) -> None:
+            raise ValueError(f"non-finite JSON number: {value}")
+        bundle = json.loads(
+            payload,
+            object_pairs_hook=no_duplicate_keys,
+            parse_constant=reject_nonfinite,
+        )
         if not isinstance(bundle, dict):
             raise ValueError("bundle root must be JSON object")
-        result = run_challenge(bundle, args.root.resolve(strict=True))
-    except (OSError, ValueError, TypeError):
+        required_keys = {"kind", "schema_version", "scope", "assets", "steps", "claims"}
+        if set(bundle) != required_keys:
+            raise ValueError("bundle shape does not match the challenge contract")
+        if not all(isinstance(bundle[key], list) for key in ("assets", "steps", "claims")):
+            raise ValueError("bundle collections must be JSON arrays")
+        result = run_challenge(bundle, input_root)
+    except (OSError, ValueError, TypeError, KeyError, IndexError):
         result = {
             "kind": "LS_RSE_CONTRACT_CHALLENGE",
             "schema_version": "0.1.0",
@@ -214,12 +241,13 @@ def main(argv: list[str] | None = None) -> int:
             "mismatches": ["INPUT_ERROR"],
         }
     output = json.dumps(result, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
-    if args.output:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(output, encoding="utf-8")
+    if output_target is not None:
+        output_target.parent.mkdir(parents=True, exist_ok=True)
+        output_target.write_text(output, encoding="utf-8")
     print(output, end="")
     return 0 if result["status"] == "PASS" else 1
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

@@ -19,7 +19,7 @@ Status: project-owned experimental contract, not a registered institutional stan
 
 `PASS` is a **software-contract** conclusion only. `FAIL` records a concrete violation. `INDETERMINATE` is correct abstention, neither proof of failure nor proof of scientific truth. A valid scientific negative finding must remain distinct from a missing experiment.
 
-`ls-framework assess` exits 0 for a completed PASS or INDETERMINATE report by default. `--require-pass` instead returns 2 for INDETERMINATE (1 for FAIL). Report paths may not point at the input bundle, inside its root or to repository `data/`/`.git/` when executed from the checkout root. Other output paths are not sandboxed. Use `build/` and inspect JSON `status` and `not_verified`.
+`ls-framework assess` exits 0 for a completed PASS or INDETERMINATE report by default. `--require-pass` instead returns 2 for INDETERMINATE (1 for FAIL). Both the assessment CLI and the standalone synthetic challenge refuse report paths that point at the input bundle, inside its root or to repository `data/`/`.git/` when executed from the checkout root. Malformed challenge objects fail with structured diagnostics and a nonzero exit. Other output paths are not sandboxed. Use `build/` and inspect the command-specific JSON status fields.
 
 ## Pending falsifiable research, not yet demonstrated
 
@@ -34,3 +34,4 @@ Freeze independently annotated software-artifact cases from at least two life-sc
 - [FORCE11 software citation](https://github.com/force11/force11-sciwg/blob/master/guidance/software_citation_checklist_for_developers.md): precise version attribution
 
 These organizations have not certified the project-owned JSON contract. Research lifecycle remains DEFINE → PIN → QUALIFY → EXECUTE → EVALUATE → AUDIT → REVIEW → REPLAY. Framework output cannot accept native production `data/`, confer Agent identity or authorize a scientific claim.
+

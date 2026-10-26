@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import copy
 import json
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -82,6 +83,64 @@ class CrossDomainChallengeTests(unittest.TestCase):
             self.assertEqual(summary["status"], "PASS")
             self.assertEqual(summary["counts"]["mismatched"], 0)
 
+    def test_standalone_module_cli_refuses_to_overwrite_bundle(self):
+        with tempfile.TemporaryDirectory() as scratch:
+            bundle = Path(scratch) / "bundle.json"
+            bundle.write_bytes(BUNDLE.read_bytes())
+            original = bundle.read_bytes()
+            proc = subprocess.run([
+                sys.executable, "-m", "ls_framework.challenge",
+                "--bundle", str(bundle), "--root", str(FIXTURES),
+                "--output", str(bundle),
+            ], text=True, capture_output=True, check=False)
+            self.assertEqual(proc.returncode, 1)
+            self.assertEqual(bundle.read_bytes(), original)
+            self.assertEqual(json.loads(proc.stdout)["mismatches"], ["INPUT_ERROR"])
+
+    def test_standalone_module_cli_refuses_output_inside_input_root(self):
+        with tempfile.TemporaryDirectory() as scratch:
+            root = Path(scratch) / "fixtures"
+            shutil.copytree(FIXTURES, root)
+            output = root / "challenge.json"
+            proc = subprocess.run([
+                sys.executable, "-m", "ls_framework.challenge",
+                "--bundle", str(root / BUNDLE.name), "--root", str(root),
+                "--output", str(output),
+            ], text=True, capture_output=True, check=False)
+            self.assertEqual(proc.returncode, 1)
+            self.assertFalse(output.exists())
+            self.assertEqual(json.loads(proc.stdout)["mismatches"], ["INPUT_ERROR"])
+
+    def test_malformed_object_returns_structured_failure_without_traceback(self):
+        with tempfile.TemporaryDirectory() as scratch:
+            bundle = Path(scratch) / "malformed.json"
+            output = Path(scratch) / "report.json"
+            bundle.write_text("{}\n", encoding="utf-8")
+            proc = subprocess.run([
+                sys.executable, "-m", "ls_framework.challenge",
+                "--bundle", str(bundle), "--root", str(FIXTURES),
+                "--output", str(output),
+            ], text=True, capture_output=True, check=False)
+            self.assertEqual(proc.returncode, 1)
+            self.assertEqual(proc.stderr, "")
+            report = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(report["status"], "FAIL")
+            self.assertEqual(report["mismatches"], ["INPUT_ERROR"])
+            self.assertNotIn("cases", report)
+
+    def test_nonfinite_json_is_rejected_as_input_error(self):
+        with tempfile.TemporaryDirectory() as scratch:
+            bundle = Path(scratch) / "nonfinite.json"
+            bundle.write_text('{"value": NaN}\n', encoding="utf-8")
+            proc = subprocess.run([
+                sys.executable, "-m", "ls_framework.challenge",
+                "--bundle", str(bundle), "--root", str(FIXTURES),
+            ], text=True, capture_output=True, check=False)
+            self.assertEqual(proc.returncode, 1)
+            self.assertEqual(proc.stderr, "")
+            self.assertEqual(json.loads(proc.stdout)["mismatches"], ["INPUT_ERROR"])
+
 
 if __name__ == "__main__":
     unittest.main()
+

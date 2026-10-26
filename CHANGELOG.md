@@ -2,6 +2,7 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Align the standalone Framework contract challenge with the assessment CLI's evidence-safe output boundary and structured malformed-input failures
 - Add opt-in strict Framework CLI abstention exit status, preserve accepted data and source evidence from accidental report overwrite, and test the corresponding negative cases
 - Normalize Framework library-relative roots and reject whitespace-only source versions; preserve independent challenge corpus and existing Tool/Workflow behavior
 - Record the newer upstream RO-Crate 1.3 versus existing pinned workflow-standard versions, and document the scope of Framework assurance without inventing external certification
@@ -68,3 +69,4 @@
 ## 0.1.0 · 2026-10-16
 
 - Life Science pilot and workflow profile/integrity bootstrap
+

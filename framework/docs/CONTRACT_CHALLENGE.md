@@ -20,6 +20,8 @@ python -m ls_framework.challenge --bundle framework/fixtures/software-cross-doma
 
 The report includes the input digest, exact case digests, expected versus observed statuses and finding codes, missed cases, and declared nonclaims, without network calls, external LLMs, timestamps or production writes
 
+The challenge fails closed for malformed objects. Its report path cannot replace the input bundle, write inside the selected evidence root or target repository `data/` / `.git/` when invoked from the checkout root. Input-shape failures remain machine-readable and must not be interpreted as completed challenge cases
+
 ## Test design
 
 - Nominal and controlled domain-renaming cases ensure that the contract does not hard-code one assay
@@ -48,3 +50,4 @@ Subsequent research should freeze independent publicly reusable examples from di
 These are independently maintained references, not specifications or validation results issued by LS Framework. This challenge does not claim conformance to FAIR4RS, PROV-O, ISA, RO-Crate or DRS
 
 Reference selection reviewed on 2026-10-25; adoption of new external versions requires separate version pins, tests and decisions
+
