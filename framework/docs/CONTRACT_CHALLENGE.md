@@ -50,4 +50,3 @@ Subsequent research should freeze independent publicly reusable examples from di
 These are independently maintained references, not specifications or validation results issued by LS Framework. This challenge does not claim conformance to FAIR4RS, PROV-O, ISA, RO-Crate or DRS
 
 Reference selection reviewed on 2026-10-25; adoption of new external versions requires separate version pins, tests and decisions
-

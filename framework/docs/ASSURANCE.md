@@ -34,4 +34,3 @@ Freeze independently annotated software-artifact cases from at least two life-sc
 - [FORCE11 software citation](https://github.com/force11/force11-sciwg/blob/master/guidance/software_citation_checklist_for_developers.md): precise version attribution
 
 These organizations have not certified the project-owned JSON contract. Research lifecycle remains DEFINE → PIN → QUALIFY → EXECUTE → EVALUATE → AUDIT → REVIEW → REPLAY. Framework output cannot accept native production `data/`, confer Agent identity or authorize a scientific claim.
-

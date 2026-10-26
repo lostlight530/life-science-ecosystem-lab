@@ -69,4 +69,3 @@
 ## 0.1.0 · 2026-10-16
 
 - Life Science pilot and workflow profile/integrity bootstrap
-
