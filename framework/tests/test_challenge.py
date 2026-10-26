@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import copy
 import json
+import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -81,6 +83,113 @@ class CrossDomainChallengeTests(unittest.TestCase):
             summary = json.loads(output.read_text(encoding="utf-8"))
             self.assertEqual(summary["status"], "PASS")
             self.assertEqual(summary["counts"]["mismatched"], 0)
+
+    def test_standalone_module_cli_refuses_to_overwrite_bundle(self):
+        with tempfile.TemporaryDirectory() as scratch:
+            bundle = Path(scratch) / "bundle.json"
+            bundle.write_bytes(BUNDLE.read_bytes())
+            original = bundle.read_bytes()
+            proc = subprocess.run([
+                sys.executable, "-m", "ls_framework.challenge",
+                "--bundle", str(bundle), "--root", str(FIXTURES),
+                "--output", str(bundle),
+            ], text=True, capture_output=True, check=False)
+            self.assertEqual(proc.returncode, 1)
+            self.assertEqual(bundle.read_bytes(), original)
+            self.assertEqual(json.loads(proc.stdout)["mismatches"], ["INPUT_ERROR"])
+
+    def test_standalone_module_cli_refuses_output_inside_input_root(self):
+        with tempfile.TemporaryDirectory() as scratch:
+            root = Path(scratch) / "fixtures"
+            shutil.copytree(FIXTURES, root)
+            output = root / "challenge.json"
+            proc = subprocess.run([
+                sys.executable, "-m", "ls_framework.challenge",
+                "--bundle", str(root / BUNDLE.name), "--root", str(root),
+                "--output", str(output),
+            ], text=True, capture_output=True, check=False)
+            self.assertEqual(proc.returncode, 1)
+            self.assertFalse(output.exists())
+            self.assertEqual(json.loads(proc.stdout)["mismatches"], ["INPUT_ERROR"])
+
+    def test_malformed_object_returns_structured_failure_without_traceback(self):
+        with tempfile.TemporaryDirectory() as scratch:
+            bundle = Path(scratch) / "malformed.json"
+            output = Path(scratch) / "report.json"
+            bundle.write_text("{}\n", encoding="utf-8")
+            proc = subprocess.run([
+                sys.executable, "-m", "ls_framework.challenge",
+                "--bundle", str(bundle), "--root", str(FIXTURES),
+                "--output", str(output),
+            ], text=True, capture_output=True, check=False)
+            self.assertEqual(proc.returncode, 1)
+            self.assertEqual(proc.stderr, "")
+            report = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(report["status"], "FAIL")
+            self.assertEqual(report["mismatches"], ["INPUT_ERROR"])
+            self.assertNotIn("cases", report)
+
+    def test_both_clis_protect_repository_state_from_nested_working_directory(self):
+        source_root = Path(__file__).resolve().parents[1] / "src"
+        with tempfile.TemporaryDirectory() as scratch:
+            checkout = Path(scratch) / "checkout"
+            (checkout / ".git").mkdir(parents=True)
+            (checkout / "data").mkdir()
+            workdir = checkout / "framework"
+            workdir.mkdir()
+            fixtures = workdir / "fixtures"
+            shutil.copytree(FIXTURES, fixtures)
+            bundle = fixtures / BUNDLE.name
+            env = os.environ.copy()
+            env["PYTHONPATH"] = os.pathsep.join(
+                item for item in (str(source_root), env.get("PYTHONPATH", "")) if item
+            )
+
+            for module, prefix in (
+                ("ls_framework.challenge", []),
+                ("ls_framework", ["assess"]),
+            ):
+                for protected_dir in ("data", ".git"):
+                    with self.subTest(module=module, protected_dir=protected_dir):
+                        output = checkout / protected_dir / "must-not-write.json"
+                        command = [sys.executable, "-m", module, *prefix,
+                                   "--bundle", str(bundle), "--root", str(fixtures),
+                                   "--output", str(output)]
+                        proc = subprocess.run(
+                            command, cwd=workdir, env=env,
+                            text=True, capture_output=True, check=False,
+                        )
+                        self.assertEqual(proc.returncode, 1, proc.stderr)
+                        self.assertEqual(json.loads(proc.stdout)["status"], "FAIL")
+                        self.assertFalse(output.exists())
+
+    def test_nonfinite_and_deep_json_are_structured_failures(self):
+        source_root = Path(__file__).resolve().parents[1] / "src"
+        malformed_payloads = {
+            "nonfinite": '{"value": NaN}\n',
+            "deeply_nested": "[" * 2000 + "0" + "]" * 2000,
+        }
+        with tempfile.TemporaryDirectory() as scratch:
+            env = os.environ.copy()
+            env["PYTHONPATH"] = os.pathsep.join(
+                item for item in (str(source_root), env.get("PYTHONPATH", "")) if item
+            )
+            for module, prefix in (
+                ("ls_framework.challenge", []),
+                ("ls_framework", ["assess"]),
+            ):
+                for case, payload in malformed_payloads.items():
+                    with self.subTest(module=module, case=case):
+                        bundle = Path(scratch) / f"{module.replace('.', '-')}-{case}.json"
+                        bundle.write_text(payload, encoding="utf-8")
+                        command = [sys.executable, "-m", module, *prefix,
+                                   "--bundle", str(bundle), "--root", str(FIXTURES)]
+                        proc = subprocess.run(
+                            command, env=env, text=True, capture_output=True, check=False,
+                        )
+                        self.assertEqual(proc.returncode, 1, proc.stderr)
+                        self.assertEqual(proc.stderr, "")
+                        self.assertEqual(json.loads(proc.stdout)["status"], "FAIL")
 
 
 if __name__ == "__main__":

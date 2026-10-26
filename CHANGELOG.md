@@ -2,6 +2,7 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Share evidence-safe report-path resolution across both Framework CLIs, detect repository roots from ancestor paths, and return structured failures for malformed/deep JSON and output-write errors
 - Add opt-in strict Framework CLI abstention exit status, preserve accepted data and source evidence from accidental report overwrite, and test the corresponding negative cases
 - Normalize Framework library-relative roots and reject whitespace-only source versions; preserve independent challenge corpus and existing Tool/Workflow behavior
 - Record the newer upstream RO-Crate 1.3 versus existing pinned workflow-standard versions, and document the scope of Framework assurance without inventing external certification

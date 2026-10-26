@@ -20,6 +20,8 @@ python -m ls_framework.challenge --bundle framework/fixtures/software-cross-doma
 
 The report includes the input digest, exact case digests, expected versus observed statuses and finding codes, missed cases, and declared nonclaims, without network calls, external LLMs, timestamps or production writes
 
+The challenge fails closed for malformed objects. Its report path cannot replace the input bundle, write inside the selected evidence root or target a discovered repository `data/` / `.git/` tree, including when invoked from a checkout subdirectory. Non-finite and excessively nested JSON return a structured input failure; output-write failures return a structured output failure. These guards are not a general filesystem sandbox and do not eliminate concurrent filesystem races. Input-shape failures remain machine-readable and must not be interpreted as completed challenge cases
+
 ## Test design
 
 - Nominal and controlled domain-renaming cases ensure that the contract does not hard-code one assay
