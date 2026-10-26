@@ -1,0 +1,618 @@
+{
+  "algorithm_version": "1.1.0",
+  "changes": [
+    {
+      "kind": "unchanged",
+      "path": "README.md",
+      "repository": "common-workflow-language/cwl-v1.2",
+      "source_id": "cwl-standard"
+    },
+    {
+      "kind": "unchanged",
+      "path": "README.md",
+      "repository": "crs4/life_monitor",
+      "source_id": "lifemonitor"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/wfhub-setup-notes.md",
+      "repository": "crs4/life_monitor",
+      "source_id": "lifemonitor"
+    },
+    {
+      "kind": "unchanged",
+      "path": "README.md",
+      "repository": "seek4science/seek",
+      "source_id": "seek"
+    },
+    {
+      "kind": "unchanged",
+      "path": "README.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "Workflow-RO-Crate/1.1/changelog.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "Workflow-RO-Crate/1.1/index.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "developer/how-to-make-a-workflow-ro-crate.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/maintaining-your-workflow.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/registering_workflows/adding-files.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/registering_workflows/check-uploaded-workflow.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/registering_workflows/complete-workflow-metadata.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/registering_workflows/register-and-login.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/registering_workflows/registering-a-workflow.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    },
+    {
+      "kind": "unchanged",
+      "path": "docs/registering_workflows/supported-workflow-types.md",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    }
+  ],
+  "diagnostics": [],
+  "input_digest": "0fc7d508fa5afb89eb9eec424869ae107ab28ff2419f124cafe8f88e6f483005",
+  "output_digest": "06d0a853514df44d1250e29abef44c60472c52c3ad61932961f1e38d2b790968",
+  "profile_digest": "787471b78dfe37c2e63d0bbc637a747b53150590210b4bfab61d3b74aea835a3",
+  "projection_eligible": true,
+  "records": [
+    {
+      "blob_sha": "a15301297cdf5472800c2cc1c136d45bd620fcbb",
+      "collector_version": "0.3.0",
+      "commit": "979083396fee912fca8ef778174216d317338a00",
+      "content_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
+      "path": "README.md",
+      "raw_size": 343,
+      "ref": "main",
+      "repository": "common-workflow-language/cwl-v1.2",
+      "selection_rule": "cwl-standard@1.0.0",
+      "source_id": "cwl-standard",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "Hello!\n\nThis repo holds the ratified v1.2.1 of the Common Workflow Language standards and the history of its development.\n\nYou can render this using https://github.com/common-workflow-language/cwl-website/blob/main/website.sh\n\nYou may browse the CWL v1.2.1 standards online at https://w3id.org/cwl/v1.2/ (a.k.a https://www.commonwl.org/v1.2 )\n",
+      "tree_sha": "87409dd7d56367bd19c950338f577d38f424b507",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "19e65eb271f944a9ab45e3581fa11cea29894468",
+      "collector_version": "0.3.0",
+      "commit": "7649406c11c5c04eebc5ca61926f5dbe30469c82",
+      "content_sha256": "4449a4880e577aca474c11a615e66c8afc6bcd2daa8eaf7f2893f7cea99321ff",
+      "path": "README.md",
+      "raw_size": 2356,
+      "ref": "master",
+      "repository": "crs4/life_monitor",
+      "selection_rule": "lifemonitor@1.0.0",
+      "source_id": "lifemonitor",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "[![main workflow](https://github.com/crs4/life_monitor/actions/workflows/main.yaml/badge.svg)](https://github.com/crs4/life_monitor/actions/workflows/main.yaml)\n[![docs workflow](https://github.com/crs4/life_monitor/actions/workflows/docs.yaml/badge.svg)](https://github.com/crs4/life_monitor/actions/workflows/docs.yaml)\n\n\n<div align=\"center\" style=\"text-align: center; margin-top: 50px;\">\n<img src=\"/docs/life_monitor_logo.png\" alt=\"Life-Monitor logo\"\n     width=\"300px\" style=\"margin-top: 50px;\" align=\"center\" />\n</div>\n\n<br/>\n<br/>\n\nLifeMonitor is a testing and monitoring service for computational\nworkflows. Head over to the [LifeMonitor web\nsite](https://crs4.github.io/life_monitor) for more information and instructions.\n\n\n## Getting Started\n\nYou can easily set up your own ready-to-use LifeMonitor instance using the\ndocker-compose deployment we distribute with this repository. A `Makefile`\nprovides you with the basic actions necessary to manage the deployment.\nType `make help` to list the available options.\n\nYou can get a development / testing deployment of LifeMonitor with the\nfollowing commands:\n\n0. `docker network create life_monitor`, to create the Docker network;\n1. `make start`, to start the main LifeMonitor services;\n2. `make start-aux-services`, to start the preconfigured instances of WorkflowHub and Jenkins.\n\nTo register the WorkflowHub instance with LifeMonitor, run:\n\n```\ndocker-compose exec lm /bin/bash -c \"flask registry add seek seek ehukdECYQNmXxgJslBqNaJ2J4lPtoX_GADmLNztE8MI DuKar5qYdteOrB-eTN4F5qYSp-YrgvAJbz1yMyoVGrk https://seek:3000 --redirect-uris https://seek:3000\"\n```\n\nYou should now have the following services up and running:\n\n* **LifeMonitor** @ https://localhost:8443\n* **WorkflowHub** @ https://seek:3000\n* **Jenkins** @ http://localhost:8080\n\nFor additional information, please refer to the [LifeMonitor administration\nguide](https://crs4.github.io/life_monitor/lm_admin_guide).\n\n\n<br><br><br>\n<div align=\"center\" style=\"text-align: center;\">\n  <div><b style=\"font-size: larger\">Acknowledgements</b></div>\n  <div>\n    Life Monitor is being developed as part of the <a href=\"https://www.eosc-life.eu/\">EOSC-Life project</a>.\n  </div>\n  <img alt=\"EOSC-Life, CRS4, BBMRI-ERIC Logos\"\n       src=\"https://github.com/crs4/life_monitor/raw/master/docs/footer-logo.svg\"\n\t   width=\"350\" align=\"center\"/>\n</div>\n",
+      "tree_sha": "8bf8d130ff763b67aec86b7ef1271f700444ff14",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "ffb760643ac7c96ee79e8bd42511e75e728ac0b8",
+      "collector_version": "0.3.0",
+      "commit": "7649406c11c5c04eebc5ca61926f5dbe30469c82",
+      "content_sha256": "3a65eaaef45a4b4e7cbe41483f34c0600b0df55278c293d624ebb6f480acdd0e",
+      "path": "docs/wfhub-setup-notes.md",
+      "raw_size": 2156,
+      "ref": "master",
+      "repository": "crs4/life_monitor",
+      "selection_rule": "lifemonitor@1.0.0",
+      "source_id": "lifemonitor",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "\n# Bringing up WorkflowHub with HTTPS configuration\n\nIn this example we're going to use the same self-signed certificates generated\nby our Makefile, which we're going to mount on `/nginx/certs` on the\nWorkflowHub Docker container.\n\nApply the following modifications to the WorkflowHub `nginx.conf` file:\n\n\n```diff\n@@ -63,7 +63,10 @@ http {\n         # gzip_http_version 1.1;\n \n         server {\n-               listen 3000;\n+               listen 3000 ssl default_server;\n+               ssl_certificate /nginx/certs/lm.crt;\n+               ssl_certificate_key /nginx/certs/lm.key;\n                root /seek/public;\n                client_max_body_size 2G;\n                location / {\n@@ -72,6 +75,7 @@ http {\n                     proxy_set_header   X-Real-IP $remote_addr;\n                     proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;\n                     proxy_set_header   X-Forwarded-Host $server_name;\n+                    proxy_set_header   X-Forwarded-Proto $scheme;\n                }\n                 location ^~ /(assets)/  {\n                                gzip_static on;\n```\n\nYou can change `docker/nginx.conf` on the WorkflowHub git repo (currently on\nthe \"workflow\" branch of https://github.com/seek4science/seek) and rebuild the\nimage locally, or overwrite the `/etc/nginx` dir on the WorkflowHub container\nwith a bind mount. For instance, suppose you have copied the contents of\n`/etc/nginx` from the WorkflowHub container to `/tmp/etc_nginx`. Also suppose\nour certificates are on `/tmp/certs`. Finally, we're going to map `lm.org` (the\nhostname in the self-signed certificates) to the physical host's (internal) IP\naddress (you can get it with `ifconfig` on Linux): suppose this is\n`192.168.1.167`. We're going to run WorkflowHub on a single Docker container,\nand put it on a network called `seek_default`.\n\n```\ndocker network create seek_default\ndocker run -d --network seek_default -p 3000:3000 \\\n  -v /tmp/etc_nginx:/etc/nginx:ro -v /tmp/certs:/nginx/certs:ro \\\n  --add-host lm.org:192.168.1.167 --name wfhub fairdom/seek:workflow\n```\n\nAlso add a `192.168.1.167 lm.org` entry to the physical host's `/etc/hosts`.\n",
+      "tree_sha": "8bf8d130ff763b67aec86b7ef1271f700444ff14",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "4e275794c59642694d77328219c673d305d19975",
+      "collector_version": "0.3.0",
+      "commit": "e47e21f6517ae0a0808c18b733ec7bdbea64e593",
+      "content_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
+      "path": "README.md",
+      "raw_size": 2905,
+      "ref": "main",
+      "repository": "seek4science/seek",
+      "selection_rule": "seek@1.0.0",
+      "source_id": "seek",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "[![Build Status](https://github.com/seek4science/seek/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/seek4science/seek/actions/workflows/tests.yml)\n[![DOI](https://zenodo.org/badge/20803285.svg)](https://zenodo.org/badge/latestdoi/20803285)\n\n# FAIRDOM-SEEK\n\n## License\n\nCopyright © 2009-2026, University of Manchester and HITS gGmbH\n\n[BSD 3-clause](BSD-LICENSE)\n\n## About FAIRDOM-SEEK\n\nThe FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets,models or simulations, processes and research outcomes. It preserves associations between them, along with information about the people and organisations involved.\nUnderpinning SEEK is the ISA infrastructure, a standard format for describing how individual experiments are aggregated into wider studies and investigations. Within SEEK, ISA has been extended and is configurable to allow the structure to be used outside of Biology.\n\nFAIRDOM-SEEK is incorporating semantic technology allowing sophisticated queries over the data, yet without getting in the way of your users.\n\nFor an example of FAIRDOM-SEEK please visit our [Demo](http://demo.seek4science.org/).\n\nTo see FAIRDOM-SEEK being used for real science, as part of [FAIRDOM](http://fair-dom.org) please visit [FAIRDOMHub](http://fairdomhub.org). Examples include: \n\n- [FAIRDOMHub](https://fairdomhub.org/)\n- [WorkflowHub](https://workflowhub.eu/)\n- [DataHub](https://datahub.elixir-belgium.org/)\n- [IBISBAKHub](https://hub.ibisba.eu/)\n- [NextSEEK](https://fair-dom.org/fairdom-in-use/nextseek)\n\nFor more information please visit: [SEEK for Science](http://www.seek4science.org/)\n\n## FAIRDOM\n\nFAIRDOM-SEEK is being developed and funded as part of the FAIRDOM initiative.\nFor more information please visit: [FAIRDOM](http://fair-dom.org).\n\n\n## Installation\n\nWe recommend installing FAIRDOM-SEEK on Debian or Ubuntu.\n\nTo install the latest release please visit:\n[SEEK install guide](http://docs.seek4science.org/tech/install)\n\nFor details about other distributions and installing on macOS please visit:\n[Other distributions guide](http://docs.seek4science.org/tech/other-distributions)\n\nThe documentation is available in its own repository: [seek-documentation](https://github.com/seek4science/seek-documentation).\n\n## Contacting Us\n\nFor details about how to contact us, to raise bugs or offer suggestion, please visit [Contacting Us](http://docs.seek4science.org/contacting_us)\n\n## Contributing to FAIRDOM-SEEK\n\nIn general :\n\n1. Fork it ( https://github.com/seek4science/seek/fork )\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am 'Add some feature'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create a new Pull Request\n\nFor more details on how and what you can contribute to SEEK please visit [Contributing](http://docs.seek4science.org/contributing)\n",
+      "tree_sha": "8b2c03daeb64e7394bd25b8c74ea61bfe4bc1d19",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "54ff7cf6803482b62251d33abef4163048f08ce0",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "32257751262457e7c82a6d175838bebae44c4c4086cafc872774cd4a6ac8c47f",
+      "path": "README.md",
+      "raw_size": 251,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "[![theme badge](https://img.shields.io/badge/ELIXIR%20toolkit%20theme-jekyll-blue?color=0d6efd)](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme)\n\nThis is the repository for the WorkflowHub info website hosted at: https://about.workflowhub.eu/\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "fa1d20a6176b1e81a752719514ecb07a7bf1f905",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "9e6e0a75f802dbc7649bd26c44aa1a4a60dfcd1dba932818e45b6fa4b6650da8",
+      "path": "Workflow-RO-Crate/1.1/changelog.md",
+      "raw_size": 1376,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "# Changelog\n\n## 1.1.0\n\n* Updated examples and Profile Crate to align with RO-Crate 1.3 ([#83](https://github.com/workflowhub-eu/about/pull/83/files)) ([#86](https://github.com/workflowhub-eu/about/pull/86))\n* Profile conformance should now be declared on the root data entity (inherited from [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/root-data-entity.html#ro-crate-metadata-descriptor)) ([#83](https://github.com/workflowhub-eu/about/pull/83/files))\n* Clarified that additional types may be included for the main workflow ([#87](https://github.com/workflowhub-eu/about/pull/87))\n* Added guidance for describing workflow parameters & steps (aligned with the [Workflow Run Crate profile](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/)) ([#87](https://github.com/workflowhub-eu/about/pull/87))\n* Added backward compatibility notes, including updates to IRI mappings for the Bioschemas terms `ComputationalWorkflow`, `FormalParameter`, `input`, and `output` in the [RO-Crate 1.3 JSON-LD context](https://www.researchobject.org/ro-crate/specification/1.3/context.jsonld).\n\n## Compatibility table\n\n| RO-Crate version | Compatible Workflow RO-Crate version |\n| --- | --- |\n| 1.1 | 1.0 |\n| 1.2 | None |\n| 1.3 | 1.1 |\n| later minor versions | 1.1, unless context changes are made that affect terms used in this profile |\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "7e2800c286310fe19773e0823c73f73551813c51",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
+      "path": "Workflow-RO-Crate/1.1/index.md",
+      "raw_size": 16477,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: Workflow RO-Crate profile 1.1\n---\n<!--  https://signposting.org/FAIR/  markup --->\n\n<link href=\"https://w3id.org/workflowhub/workflow-ro-crate/1.1\" rel=\"cite-as\" />\n\n<link href=\"https://www.researchobject.org/ro-crate/specification/1.3/profiles\" rel=\"type\"  />\n<link href=\"http://purl.org/dc/terms/Standard\" rel=\"type\"  />\n<link href=\"https://schema.org/CreativeWork\" rel=\"type\"  />\n\n<link href=\"https://spdx.org/licenses/BSD-3-Clause\" rel=\"license\"  />\n\n<link href=\"https://orcid.org/0000-0002-0048-3300\" rel=\"author\"  />\n<link href=\"https://orcid.org/0000-0003-3156-2105\" rel=\"author\"  />\n<link href=\"https://orcid.org/0000-0003-2130-0865\" rel=\"author\"  />\n<link href=\"https://orcid.org/0000-0001-9842-9718\" rel=\"author\"  />\n<link href=\"https://orcid.org/0000-0002-0035-6475\" rel=\"author\"  />\n<link href=\"https://orcid.org/0000-0001-8271-5429\" rel=\"author\"  />\n\n<link href=\"ro-crate-metadata.json\" rel=\"describedby\" type='application/ld+json; profile=\"https://w3id.org/ro/crate\"' />\n<link href=\"ro-crate-metadata.jsonld\" rel=\"describedby\" type='application/ld+json; profile=\"https://w3id.org/ro/crate\"'  />\n<link href=\"ro-crate-preview.html\" rel=\"describedby\" type='text/html'  />\n\n<!-- repeat of hasPart in RO-Crate -->\n<link href=\"index.html\" rel=\"item\"  />\n<link href=\"licenses/\" rel=\"item\" />\n<link href=\"languages/\" rel=\"item\" />\n<link href=\"example/\" rel=\"item\" />\n<link href=\"https://w3id.org/ro/crate/1.3/context\" rel=\"item\" />\n<link href=\"https://pypi.org/project/rocrate/\" rel=\"item\" />\n<link href=\"https://github.com/inab/WfExS-backend/\" rel=\"item\" />\n<link href=\"https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263\" rel=\"item\" />\n<link href=\"https://workflowhub.eu/\" rel=\"item\" />\n<link href=\"https://bioschemas.org/terms/ComputationalWorkflow\" rel=\"item\" />\n<link href=\"https://bioschemas.org/terms/FormalParameter\" rel=\"item\" />\n<link href=\"http://schema.org/HowTo\" rel=\"item\" />\n<link href=\"http://schema.org/ImageObject\" rel=\"item\" />\n<link href=\"https://github.com/KockataEPich/CheckMyCrate/blob/master/CheckMyCrate/profile_library/ro_crate_1.1_basic.json\" rel=\"item\" />\n<link href=\"https://github.com/crs4/rocrate-validator/tree/develop/rocrate_validator/profiles/workflow-ro-crate/\" rel=\"item\" />\n\n![Workflow RO-Crate]({{ '/assets/img/ro-crate-workflow.svg' | relative_url }}){: height=\"300px\" width=\"300px\"}\n\n* Authors:\n  - Finn Bacall <https://orcid.org/0000-0002-0048-3300>\n  - Alan R Williams <https://orcid.org/0000-0003-3156-2105>\n  - Stuart Owen <https://orcid.org/0000-0003-2130-0865>\n  - Stian Soiland-Reyes <https://orcid.org/0000-0001-9842-9718>\n  - Eli Chadwick <https://orcid.org/0000-0002-0035-6475>\n  - Simone Leo <https://orcid.org/0000-0001-8271-5429>\n* Title: Workflow RO-Crate profile 1.1\n* Publisher: [WorkflowHub community](https://w3id.org/workflowhub/)\n* Permalink: <https://w3id.org/workflowhub/workflow-ro-crate/1.1> (this version)\n  <https://w3id.org/workflowhub/workflow-ro-crate/> (latest version)\n* Version: [1.1.0](https://github.com/workflowhub-eu/about/releases/tag/workflow-ro-crate-1.1.0)\n* [Profile Crate `ro-crate-metadata.json`](ro-crate-metadata.json)\n  - [Profile Crate preview](ro-crate-preview.html)\n* [Example RO-Crate `ro-crate-metadata.json`](example/ro-crate-metadata.json)\n  - [Example RO-Crate profile preview](example/ro-crate-preview.html)\n\nPlease leave any suggestions and comments here: <https://github.com/seek4science/seek/issues/183>\n\n_Workflow RO-Crate_ is a specialization of [_RO-Crate_](https://researchobject.github.io/ro-crate/) for packaging an executable workflow with all necessary documentation. It extends the more general [Bioschemas ComputationalWorkflow profile](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE).\n\nWorkflowHub uses _Workflow RO-Crate_ as an exchange format for users to upload a packaged workflow.\n\n## Extension profiles\n\nSeveral extensions of Workflow RO-Crate exists:\n\n* [Workflow Testing RO-Crate](https://w3id.org/ro/wftest) defines test infrastructure recognized by [LifeMonitor](https://lifemonitor.eu/)\n* The [Workflow Run Crate](https://w3id.org/ro/wfrun/workflow) profile extends Workflow RO-Crate to describe *workflow run provenance*, documenting execution of a workflow.\n* [Five Safes RO-Crate](https://w3id.org/5s-crate/) refers to Workflow RO-Crate for the purpose of workflow execution in a distributed trusted research environment (TRE)\n\n \n## Concepts\n\nThis section uses terminology from the [RO-Crate 1.3 specification](https://w3id.org/ro/crate/1.3).\n\n### Context\n\nThe _Crate_ JSON-LD MUST be valid according to [RO-Crate 1.3](https://w3id.org/ro/crate/1.3) or later minor version, and SHOULD use the corresponding version of the RO-Crate `@context` - such as <https://w3id.org/ro/crate/1.3/context> for RO-Crate 1.3.\n\n### Declaring Profile Conformance\n\nThe [Root Data Entity](https://www.researchobject.org/ro-crate/specification/1.3/root-data-entity.html#direct-properties-of-the-root-data-entity) `conformsTo` SHOULD be an array that contains at least <https://w3id.org/workflowhub/workflow-ro-crate/1.1>.\n\n\n\n### Main Workflow\n\nThe _Crate_ MUST contain a _Main Workflow_ data entity whose types MUST include `File`, `SoftwareSourceCode` and `ComputationalWorkflow`.\n\nThe _Crate_ MUST refer to the _Main Workflow_ via `mainEntity`.\n\nThe _Main Workflow_ MUST refer to its type via `programmingLanguage`.\n\n**Tip**: See [RO-Crate specification on Workflows and Scripts](https://www.researchobject.org/ro-crate/specification/1.3/workflows.html) for details.\n\n**Note**: The IRI mapping for `ComputationalWorkflow` was updated in the [RO-Crate 1.3 JSON-LD context](https://www.researchobject.org/ro-crate/specification/1.3/context.jsonld), along with other Bioschemas terms - see [Backward compatibility](#backward-compatibility) for details.\n\n### Main Workflow CWL Description\n\nThe _Crate_ MAY contain a data entity of type `[\"File\", \"SoftwareSourceCode\", \"HowTo\"]` as the _Main Workflow CWL Description_.\n\nA _Main Workflow CWL Description_ SHOULD have `https://w3id.org/workflowhub/workflow-ro-crate#cwl` as its `programmingLanguage` with a corresponding [contextual entity](#cwl).\n\nIf _Main Workflow CWL Description_ is present, the _Main Workflow_ MUST refer to it the via `subjectOf`.\n\n### Main Workflow Diagram\n\nThe _Crate_ MAY contain a _Main Workflow Diagram_, indicated as a data entity of type `[\"File\", \"ImageObject\"]`.\n\nIf  _Main Workflow Diagram_ is present, the _Main Workflow_ MUST refer to it via `image`.\n\n### Main Workflow Steps\n\nIndividual steps of the _Main Workflow_ MAY be described in the crate, in addition to the description of the workflow as a whole. Each step MUST be represented as a `HowToStep`, and the workflow MUST reference any `HowToStep` instances that represent its steps via `step`. Each `HowToStep` instance MAY indicate its position in the execution order via `position`. In addition to `File`, `SoftwareSourceCode` and `ComputationalWorkflow`, a workflow that points to step metadata via `step` MUST have a type of `HowTo`.\n\n### Crate\n\nThe _Crate_ MUST specify a `license`. The license is assumed to apply to any content of the crate, unless overriden by `license` on individual `File` entities.\n\nThe _Crate_ SHOULD contain a File `README.md` at the root level. If present, it SHOULD be `about` the _Crate_ `./` and SHOULD have `text/markdown` as its `encodingFormat`.\n\nThe _Crate_ MAY contain a Dataset (directory) data entity of type `[\"Dataset\"]` with identifier `test/` to hold tests.\n\nThe _Crate_ MAY contain a Dataset (directory) data entity of type `[\"Dataset\"]` with identifier `examples/` to hold examples.\n\n### Bioschemas Computational Workflow profile\n\nThe `ComputationalWorkflow` description of the _Main Workflow_ SHOULD comply with [Bioschemas ComputationalWorkflow profile](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) version 1.0 or later.  \n\nConformance with the Bioschemas profile SHOULD be indicated with a `conformsTo` on the _Main Workflow_ entity.\n\nWorkflows can have multiple input and output parameter slots that have to be mapped to actual files, directories or other values (e.g., a string or a number) before they can be executed. It is OPTIONAL to define such entities for a `ComputationalWorkflow`. If included, parameter definitions MUST be provided as `FormalParameter` entities and referenced from the `ComputationalWorkflow` via `input` and `output`.\n\n**Tip**: See [RO-Crate 1.3: Complying with Bioschemas Computational Workflow profile](https://www.researchobject.org/ro-crate/specification/1.3/workflows.html#complying-with-bioschemas-computational-workflow-profile)\n\n\n## Backward compatibility\n\nThis section is aimed at implementers of Workflow RO-Crate who wish to support both current and previous versions of the profile.\n\nIn RO-Crates conforming to Workflow RO-Crate 1.0 and RO-Crate 1.1, <https://w3id.org/workflowhub/workflow-ro-crate/1.1> MAY be included in `conformsTo` on the [Metadata File Descriptor](https://www.researchobject.org/ro-crate/specification/1.3/root-data-entity.html#ro-crate-metadata-file-descriptor) rather than the Root Data Entity.\n\nWhen reading crates conforming to multiple versions of RO-Crate, be aware that IRI mappings for Bioschemas terms were updated in the RO-Crate context between 1.1 and 1.3. The changes are shown in the table below:\n\n| Term | RO-Crate 1.3 context (latest) | RO-Crate 1.2 context | RO-Crate 1.1 context |\n| --- | --- | --- | --- |\n| ComputationalWorkflow | <https://bioschemas.org/terms/ComputationalWorkflow> | https://bioschemas.org/ComputationalWorkflow | https://bioschemas.org/ComputationalWorkflow |\n| FormalParameter | <https://bioschemas.org/terms/FormalParameter> | https://bioschemas.org/FormalParameter | https://bioschemas.org/FormalParameter |\n| input | <https://bioschemas.org/terms/input> | https://bioschemas.org/properties/input | https://bioschemas.org/ComputationalWorkflow#input |\n| output | <https://bioschemas.org/terms/output> | https://bioschemas.org/properties/output | https://bioschemas.org/ComputationalWorkflow#output |\n\nNote that `ComputationalWorkflow` and `FormalParameter` did not have IRI changes between 1.1 and 1.2, whereas `input` and `output` had IRI changes between all three versions.\n\nImplementers should further note:\n\n* The terms `FormalParameter`, `input` and `output` were not mentioned in version 1.0 of this profile, but some conforming crates and implementations may use them, as they are referenced in both the [RO-Crate specification](https://www.researchobject.org/ro-crate/specification/1.3/workflows.html#describing-inputs-and-outputs) and the [Workflow Run Crate profile](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/).\n* While RO-Crate 1.2 was never formally supported by the Workflow RO-Crate profile, there may nonetheless be crates which declare conformance to both RO-Crate 1.2 and Workflow RO-Crate, and therefore use the RO-Crate 1.2 context mappings.\n\n### Compatibility table\n\n| RO-Crate version | Compatible Workflow RO-Crate version |\n| --- | --- |\n| 1.1 | 1.0 |\n| 1.2 | None |\n| 1.3 | 1.1 |\n| later minor versions | 1.1, unless context changes are made that affect terms used in this profile |\n\n\n## Appendix\n\n### WorkflowHub-specific Features/Requirements\n\n#### File Format\n\nThe Workflow RO-Crate MUST be zipped, and SHOULD have the file extension `.crate.zip` to be recognized by WorkflowHub. \n\nThe `ro-crate-metadata.json` file SHOULD be directly in the root of the zip archive, so that the whole Zip becomes the _RO-Crate Root_.\n\n#### Extracted Metadata\n\nWorkflowHub will extract and expose the following properties from the Crate entity (`./`) in `ro-crate-metadata.json`:\n\n* `name` - This will be shown as the title of the workflow.\n* `description` - This will be shown as the description of the workflow. \nIf it is not present, but a `README.md` file is available in the root of the crate, that will be rendered instead.\n* `author` - These will be shown as \"creators\" of the workflow.\n* `license` - See below.\n* `keywords` - These will be shown as \"tags\", and can be filtered over.\n\nIf the _Main Workflow CWL Description_ is present it will be parsed and the inputs, outputs and steps will be listed on the workflow's page in the Hub.\n\nIf the _Main Workflow Diagram_ is present, it will also be rendered on the page.\n\n#### Supported Workflow Types\n\nWorkflowHub currently supports the following *core* workflow types: CWL, Galaxy, KNIME, Nextflow and Snakemake. Core workflow types are those that WorkflowHub can extract metadata from.\n\nIn addition to core workflow types, there are many other user-defined workflow types.\n\nThe workflow type should be declared in a contextual entity and referred to from the _Main Workflow_'s `programmingLanguage`.\n\nThe full list of supported workflow types, as `ComputerLanguage` objects in JSON-LD, can be found here: <https://workflowhub.eu/workflow_classes.jsonld>\n\nJSON-LD for the core types are listed below:\n\n##### CWL\n```json\n{\n  \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate#cwl\",\n  \"@type\": \"ComputerLanguage\",\n  \"name\": \"Common Workflow Language\",\n  \"alternateName\": \"CWL\",\n  \"identifier\": {\n    \"@id\": \"https://w3id.org/cwl/v1.2/\"\n  },\n  \"url\": {\n    \"@id\": \"https://www.commonwl.org/\"\n  }\n}\n```\n\n##### Galaxy\n```json\n{\n  \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate#galaxy\",\n  \"@type\": \"ComputerLanguage\",\n  \"name\": \"Galaxy\",\n  \"identifier\": {\n    \"@id\": \"https://galaxyproject.org/\"\n  },\n  \"url\": {\n    \"@id\": \"https://galaxyproject.org/\"\n  }\n}\n```\n\n##### KNIME\n```json\n{\n  \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate#knime\",\n  \"@type\": \"ComputerLanguage\",\n  \"name\": \"KNIME\",\n  \"identifier\": {\n    \"@id\": \"https://www.knime.com/\"\n  },\n  \"url\": {\n    \"@id\": \"https://www.knime.com/\"\n  }\n}\n```\n\n##### Nextflow\n```json\n{\n  \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate#nextflow\",\n  \"@type\": \"ComputerLanguage\",\n  \"name\": \"Nextflow\",\n  \"identifier\": {\n    \"@id\": \"https://www.nextflow.io/\"\n  },\n  \"url\": {\n    \"@id\": \"https://www.nextflow.io/\"\n  }\n}\n```\n\n##### Snakemake\n```json\n{\n  \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate#snakemake\",\n  \"@type\": \"ComputerLanguage\",\n  \"name\": \"Snakemake\",\n  \"identifier\": {\n    \"@id\": \"https://doi.org/10.1093/bioinformatics/bts480\"\n  },\n  \"url\": {\n    \"@id\": \"https://snakemake.readthedocs.io\"\n  }\n}\n```\n\n#### Supported Licenses\n\nWorkflowHub supports [SPDX licenses](https://spdx.org/licenses/), either as a URL or identifier.\n\n#### ro-crate-metadata.json Example\n\nA minimal example of _Workflow RO-Crate_ metadata, containing a CWL workflow, an SVG diagram of that workflow and a README file.\n\n```json\n{\n  \"@context\": \"https://w3id.org/ro/crate/1.3/context\",\n  \"@graph\": [\n    {\n      \"@id\": \"ro-crate-metadata.json\",\n      \"@type\": \"CreativeWork\",\n      \"about\": {\n        \"@id\": \"./\"\n      },\n      \"conformsTo\": [\n        { \"@id\": \"https://w3id.org/ro/crate/1.3\"},\n      ]\n    },\n    {\n      \"@id\": \"ro-crate-preview.html\",\n      \"@type\": \"CreativeWork\",\n      \"about\": {\n        \"@id\": \"./\"\n      }\n    },\n    {\n      \"@id\": \"./\",\n      \"@type\": \"Dataset\",\n      \"name\": \"Example Workflow\",\n      \"description\": \"An example workflow RO-Crate\",\n      \"license\": \"Apache-2.0\",\n      \"conformsTo\": { \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate/1.1\"},\n      \"mainEntity\": {\n        \"@id\": \"example_workflow.cwl\"\n      },\n      \"hasPart\": [\n        {\n          \"@id\": \"example_workflow.cwl\"\n        },\n        {\n          \"@id\": \"diagram.svg\"\n        },\n        {\n          \"@id\": \"README.md\"\n        }\n      ]\n    },\n    {\n      \"@id\": \"example_workflow.cwl\",\n      \"@type\": [\n        \"File\",\n        \"SoftwareSourceCode\",\n        \"ComputationalWorkflow\"\n      ],\n      \"programmingLanguage\": {\n        \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate#cwl\"\n      },\n      \"name\": \"Example Workflow\",\n      \"image\": {\n        \"@id\": \"diagram.svg\"\n      }\n    },\n    {\n      \"@id\": \"diagram.svg\",\n      \"name\": \"Example Workflow Diagram\",\n      \"@type\": [\n        \"File\",\n        \"ImageObject\"\n      ]\n    },\n    {\n      \"@id\": \"README.md\",\n      \"@type\": \"File\",\n      \"about\": \"./\",\n      \"encodingFormat\": \"text/markdown\"\n    },\n    {\n      \"@id\": \"https://w3id.org/workflowhub/workflow-ro-crate#cwl\",\n      \"@type\": \"ComputerLanguage\",\n      \"name\": \"Common Workflow Language\",\n      \"alternateName\": \"CWL\",\n      \"identifier\": \"https://w3id.org/cwl/v1.2/\",\n      \"url\": \"https://www.commonwl.org/\"\n    }\n  ]\n}\n```\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "bf039c5c5d607812fbf0e115abcc8fbeb906aae4",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "708bfed302a020ab1563d304bee3cf22eb10577f2571737bcdbe21de14b22a06",
+      "path": "developer/how-to-make-a-workflow-ro-crate.md",
+      "raw_size": 1972,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: How to make a workflow RO-crate\nredirect_from: /how-to-make-a-workflow-ro-crate/\n---\n\nMore info about workflow RO-crate specification can be found in our [Workflow-RO-Crate](/Workflow-RO-Crate/) section.\n\n## 1. Using the WorkflowHub website\n\nThe most convenient way to make a workflow RO-crate at this moment is by making use of WorkflowHub capabilities. The website is able to generate RO-crates based on an uploaded/referenced workflow file and some general metadata that is requested through a form.  After the workflow is [registered](/docs/registering-a-workflow) for more info about this topic) it is possible to download the RO-crate with the download button. \n\nThe generated RO-crate, basically a zip file, will contain these elements:\n\n- **JSONLD file**: JSONLD serving machine-readable metadata including: \n  - Author\n  - Contents and structure\n  - Project\n  - Original URL\n  - License\n  - Publisher\n  - Date Published\n  - creativeWorkStatus\n  - Programming Language\n  - Based on\n  \n  The metadata properties are based on the [BioSchemas workflow profile](https://bioschemas.org/profiles/Workflow)  .\n\n- **HTML file**: A web page serving the metadata in a human-readable way.\n  - Original URL\n  - Author (creators)\n  - License\n  - Contents\n\n- **Main Workflow file**: The workflow file itself, if uploaded.\n\n- **Main Workflow Diagram (optional)**: A diagram visualizing the steps in the workflow, if uploaded or generated from CWL.\n\n- **Main Workflow CWL Description (optional)**: This file can be included if supplied by the user.\n\n## 2. Making one offline yourself\n\nWe are working on a python package at this moment to wrap your own RO-crates. This will allow you to not be bounded by the file limitations of the WorkflowHub website (workflow + CWL abstract and/or diagram), and will make it possible to automate the RO-Crate generation.\nThe python package can be found in [ResearchObject/ro-crate-py](https://github.com/ResearchObject/ro-crate-py).\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "b2ff4347c5d8acf4a1dda02930e5656954b462f9",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "00285b9e2aa20590c5747d9b1fab4e8ca5fb87b5eb64572a480dc37a3a600f36",
+      "path": "docs/maintaining-your-workflow.md",
+      "raw_size": 1838,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: Maintaining a registered workflow entry\ndescription: How to maintain a workflow on WorkflowHub, including updating metadata and creating new versions.\npage_id: maintaining\nredirect_from: /Updating-a-registered-workflow/\n---\n\n\n## Before you get started\n\nBefore you update a registered workflow, you need to ensure that you:\n\n1. Are [logged into](/docs/logging-in) WorkflowHub,\n2. Have the rights to change the workflow, and\n3. Are on the workflow page of the workflow\n\n\n## Updating metadata\n\nGo to the `Actions` dropdown menu and click `Edit Workflow` to change the metadata of the registered workflow. Note that updates made in the metadata will not affect the metadata in the RO-crate, yet (upcoming feature).\n\n\n## Updating the main workflow file\n\nVersioning of workflows is supported, but is still experimental. \n\nThe feature is better known as **Upload a new version** in the `Actions` dropdown menu and is detached from changes in the metadata. Note that at this moment it is not possible to update the optionally uploaded CWL abstract and/or diagram, meaning that these can become out of sync if the main workflow file is updated.\nWe are planning a total overhaul of the versioning any time soon.\n\n\n## Making your workflows FAIR\n\n* The Workflows Community Initiative maintains [a list of publications relating to FAIR computational workflows](https://workflows.community/groups/fair/bibliography/).\n* [A Decade of FAIR – and what next? Q&A on FAIR workflows with the Netherlands X-omics Initiative](https://gigasciencejournal.com/blog/fair-workflows/)\n* [Ten quick tips for building FAIR workflows](https://doi.org/10.1371/journal.pcbi.1011369)\n*de Visser C, Johansson LF, Kulkarni P, Mei H, Neerincx P, Joeri van der Velde K, et al. (2023) Ten quick tips for building FAIR workflows. PLoS Comput Biol 19(9): e1011369.*\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "3d9f227eddd637b807a926bade04c6dccb84732b",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "c344f71a09398bd45ade67bfa7c0b1321ccb6e72b10466dd6679cfff273e787a",
+      "path": "docs/registering_workflows/adding-files.md",
+      "raw_size": 4745,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: Adding workflow files\n---\n\nOnce you have either clicked on the `Contribute` button, or selected `Workflow` from the `Create` drop down menu at the top of the page, a wizard will present four options for registering a workflow and its associated files:\n\n* [Upload / import a local file](#local)\n* [Upload / import using a remote file URL](#remote-url)\n* [Importing a Git repository](#git)\n* [Upload / Import a Workflow Research Object Crate (RO-Crate)](#ro-crate)\n\n{% include callout.html type=\"tip\" content=\"It is recommended to import from a remote URL or Git repository (including remote RO-Crates), as WorkflowHub is intended to be a hub for finding workflows, not an archive for storing them.\" %}\n\n\n## Upload / import a local file {#local}\n\n1. Select your local workflow file using the `Browse…` button\n2. Pick your [workflow type](/docs/registering_workflows/supported-workflow-types) - if your workflow type is not included in the list you can select `Other` or add a `New workflow type` using the available button.\n3. Optional: add in a [Abstract CWL](/docs/glossary#abstract-cwl) using the `Browse…` button\n4. Optional: add in a [Diagram file](/docs/glossary#diagram) using the `Browse…` button\n5. Click the `Register` button\n\n![Select your local file, then select Workflow type. In Abstract CWL either upload from local file or remote URL, same for Diagram. Then click Register.]({{ '/images/registration-03-new-workflow-local.png' | relative_url }} \"New workflow tab for uploading / importing local files\")\n\n_Fig 2. New workflow tab for uploading / importing local files._\n\n\n## Upload / import using a remote file URL {#remote-url}\n\n1. Add your remote file URL - click `Test` to check the URL\n2. Pick your workflow type - if your workflow type is not included in the list you can select Other or add a `New workflow type` using the available button.\n3. Optional: add a remote URL for the Abstract CWL  - click `Test` to check the URL\n4. Optional: add a remote URL for the Diagram file  - click `Test` to check the URL\n5. Click the `Register` button\n\n![Fill in your remote file URL, then select Workflow type. In Abstract CWL set remote URL, same for Diagram. Then click Register.]({{ '/images/registration-04-new-workflow-remote.png' | relative_url }} \"New workflow tab for importing from a remote URL\")\n\n_Fig 3. New workflow tab for importing files from a remote URL._\n\n\n## Importing a Git repository URL {#git}\n\n1. Add your Git repository URL  e.g. `https://github.com/username/repository_name`\n2. Click the `Register` button\n\n\n![Add your git URL, then click Register.]({{ '/images/registration-05-new-workflow-git.png' | relative_url }} \"New workflow tab for importing from a git repository (e.g. GitHub, GitLab)\")\n\n_Fig 4. New workflow tab for importing files from a git repository (e.g. GitHub, GitLab)._\n\n3. When you have selected to import a specific Git repository URL (i.e. by clicking `Register`) you will be prompted to specify either a repository:\n     - Branch, or\n     - Release tag\n4. Once you click `Register` again, you will gain access to a drop down list of the files in the repository - pick the [`main executable workflow file`](/docs/glossary#main-workflow):\n     - For a NextFlow workflow for example, this would be the <code>.nf</code> file\n     - For a series of bash scripts, this would be the first <code>.sh</code> file or the <code>README.md</code> file\n5. You can now pick additional optional files as well:\n     - [Abstract CWL](/docs/glossary#abstract-cwl)\n     - [Diagram file](/docs/glossary#diagram)\n6. Click `Continue` to proceed to the metadata stage\n\n![First select branch or a release tag, then use drop down list to select the main executable workflow file. Add any optional files before clicking Continue]({{ '/images/registration-07-select-branch.png' | relative_url }} \"Selecting a target branch or release tag as well as the main executable and optional files during Git repository import.\")\n\n_Fig 5. Selecting a target branch or release tag as well as the main executable and optional files during Git repository import._\n\n\n## Upload / Import a Workflow RO-Crate {#ro-crate}\n\n1. Add an [RO-Crate](https://about.workflowhub.eu/Workflow-RO-Crate/) zip file, either via:\n    1. A local file upload using the `Browse…` button, or\n    2. By adding a remote file URL - click `Test` to check the URL\n2. Click the `Register` button\n\n![For the zipped RO-Crate, either upload your local file or fill in remote URL, then click Register]({{ '/images/registration-06-new-workflow-ro-crate.png' | relative_url }} \"New workflow tab for importing files using a Research Object Crate (RO-Crate).\")\n\n_Fig 6. New workflow tab for importing files using a Research Object Crate (RO-Crate)._\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "701094a455cc2ddbca27f99732e0646e4e5ecf5a",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "95c45dc401ea160827d9fa691d41bdbe94e8d14332347305f59ee86af7b7c838",
+      "path": "docs/registering_workflows/check-uploaded-workflow.md",
+      "raw_size": 1097,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: Finalising workflow registration\n---\n\n## Check workflow metadata accuracy and completeness\n\n* Make sure that all the metadata you filled in previously is shown properly and is correct (**Fig 10**). \n* WorkflowHub generates an RO-Crate based on these files and the metadata you filled in while registering the workflow. \n* Click `Download RO-Crate` to check whether the metadata files (`ro-crate-metadata.json` and `ro-crate-preview.html`) are correctly generated.\n\n![check your workflow: Add new files or perform actions (new versions, edits, deletions). Check Description, Creators, Submitter, Tags, Attributions. Inspect files.]({{ '/images/registration-11-check-workflow.png' | relative_url }} \"Sections to be checked upon workflow registration completion\")\n\n\n## Real workflow example\n\nThe figure below shows a real world workflow for [Cheminformatics](https://workflowhub.eu/workflows/18) registered on WorkflowHub.\n\n![Cheminformatics - XCChem combined.]({{ '/images/registration-12-published.png' | relative_url }} \"Real world Cheminformatics workflow registered on WorkflowHub\")\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "d55141973e830cd5c253dc08ff6aa4cb4962bd44",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "c27542d4d93e6c37d2af21444ddd4d1fd0bb1b166ad280879b2ac534355797a1",
+      "path": "docs/registering_workflows/complete-workflow-metadata.md",
+      "raw_size": 1673,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: Complete workflow metadata\n---\n\nThe next page is a form that gathers the necessary [metadata](/docs/metadata-list) that will be enclosed in the WorkflowHub entry. This metadata will also be included in the RO-Crate metadata for the workflow, which is automatically generated when the workflow is submitted.\n\n\n## Metadata part A\n\n1. Add a workflow `Title`\n2. Check the imported `Description` text, and edit if needed\n\n\n![Add a workflow title, then revise the imported Description text]({{ '/images/registration-08-metadata.png' | relative_url }} \"Metadata collection page for a new workflow\")\n\n_Fig 7. Metadata collection page for a new workflow (part A)._\n\n\n## Metadata part B\n\n{:start=\"3\"}\n\n3. Add other [metadata](/docs/metadata-list), including:\n     - `Maturity`\n     - `Teams`\n4. Add / update `Licence` information\n5. Set sharing conditions for the workflow, including for the public and the submitting Team(s)\n6. Add `Tags` and `Creators` (see <strong>Fig 8.</strong>)\n\n\n![Add Creators]({{ '/images/registration-09-creator.jpg' | relative_url }} \"Workflow Creator metadata section\")\n\n_Fig 8. Workflow Creator metadata section._\n\n{:start=\"7\"}\n\n7. Associate any relevant presentations, documents or files with the workflow\n8. Click `Register` one final time to complete the workflow registration process\n\n\n![Add other metadata, license information. Set sharing conditions, add tags and creators. Associate presentations, documents, files with workflow. Then click Register]({{ '/images/registration-10-metadata-collection.png' | relative_url }} \"Metadata collection page for a new workflow\")\n\n_Fig 9. Metadata collection page for a new workflow (part B)._\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "d9a5e46edf5c5046edb83da41849b4b244b18318",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "17eec7fed9721b0d66108a2ef95eb9f67e71f0d8635409e83db03080bb04f2c7",
+      "path": "docs/registering_workflows/register-and-login.md",
+      "raw_size": 586,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle:  Register and login to contribute to WorkflowHub\n---\n\n\n\n1. Go to the WorkflowHub homepage and either [register](https://workflowhub.eu/signup) or [log-in](https://workflowhub.eu/login)\n2. Return to the main page of WorkflowHub and either click on the `Contribute` button, or select `Workflow` from the `Create` drop down menu at the top of the page (see **Fig 1**).\n\n![In WorkflowHub, click Create, Workflow or alternatively Contribute]({{ '/images/registration-02-contribute.png' | relative_url }} \"The WorkflowHub landing page\")\n\n_Figure 1: The WorkflowHub landing page._\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "8e06599ec2108ee1ad18d84eeffa232167a7bacb",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "2ce47811d2780a2add18c0bc15ea771ff52aa477a97ab9981e65a4e0d88dde31",
+      "path": "docs/registering_workflows/registering-a-workflow.md",
+      "raw_size": 1315,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: Registering a workflow on WorkflowHub\ndescription: A guide to the steps required for workflow import, metadata annotation, and registration.\npage_id: registering\ntoc: false\nredirect_from: \n  - /docs/registering-a-workflow/\n  - /registering-workflows/\n  - /Registering-an-existing-Workflow-RO-Crate/\n  - /How-to-register-your-workflow(s)-in-WorkflowHub/\n  - /Registering-a-workflow-with-a-diagram-and-abstract-CWL/\n---\n\n\nTo create a registered workflow entry on WorkflowHub, you need to follow these five steps (links to additional information are provided):\n\n1. [Register](https://workflowhub.eu/signup) and / or [log-in](https://workflowhub.eu/login),\n2. Make sure you are a member of a Team ([more info here](/docs/join-create-teams-spaces)),\n3. Use the WorkflowHub registration wizard to [import and add a workflow file](/docs/registering_workflows/adding-files),\n4. [Add relevant metadata](/docs/registering_workflows/complete-workflow-metadata), and\n5. [Review the entry and finalise registration](/docs/registering_workflows/check-uploaded-workflow)\n\n![Remote files URLs, Git Repository, Local Files, Zipped RO-Crate are Imported, then Register workflow, Add Metadata and Finalize Registration with review]({{ '/images/registration-01-overview-02.png' | relative_url }} \"Registration Overview\")\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    },
+    {
+      "blob_sha": "a971ba8770e8059ffae75adca4d4e8086cd1f8cf",
+      "collector_version": "0.3.0",
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "content_sha256": "a05f7dc28462c35c8c0297e12f79a2ebd834f17099f8bd840a7f56cb0af77942",
+      "path": "docs/registering_workflows/supported-workflow-types.md",
+      "raw_size": 695,
+      "ref": "master",
+      "repository": "workflowhub-eu/about",
+      "selection_rule": "workflowhub@1.0.0",
+      "source_id": "workflowhub",
+      "source_registry": "life-science-approved-github-sources",
+      "text": "---\ntitle: Supported workflow types \n---\n\nIt is possible to upload workflows of any type (e.g. bash scripts), either by labelling these workflows as `Other` during registration, or by [proposing a new type](https://workflowhub.eu/workflow_classes/new).\n\nThe following workflow types are tested to work well with WorkflowHub:\n\n* Galaxy (`.ga`)\n* Common Workflow Language (`.cwl`)\n* Nextflow (`.nf`)\n* SnakeMake (`.snake`)\n* KNIME (`.knwf`)\n\n{% include callout.html type=\"note\" content=\"Note that it is only possible to automatically generate a diagram for CWL workflows.\" %}\n\n![workflow types](https://user-images.githubusercontent.com/253413/161697871-5fe87d4f-3067-4647-a10b-ec3466816e8b.png)\n",
+      "tree_sha": "f0a2deebc48b395d22f52b6c062616923e3c22a5",
+      "trust": "primary"
+    }
+  ],
+  "run_id": "0fc7d508fa5afb89-787471b78dfe37c2",
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "commit": "979083396fee912fca8ef778174216d317338a00",
+      "repository": "common-workflow-language/cwl-v1.2",
+      "source_id": "cwl-standard"
+    },
+    {
+      "commit": "7649406c11c5c04eebc5ca61926f5dbe30469c82",
+      "repository": "crs4/life_monitor",
+      "source_id": "lifemonitor"
+    },
+    {
+      "commit": "e47e21f6517ae0a0808c18b733ec7bdbea64e593",
+      "repository": "seek4science/seek",
+      "source_id": "seek"
+    },
+    {
+      "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+      "repository": "workflowhub-eu/about",
+      "source_id": "workflowhub"
+    }
+  ],
+  "topics": [
+    {
+      "contributions": [
+        {
+          "matched_aliases": [
+            "cwl"
+          ],
+          "path": "README.md",
+          "repository": "common-workflow-language/cwl-v1.2",
+          "source_id": "cwl-standard"
+        },
+        {
+          "matched_aliases": [
+            "bioschemas",
+            "ro-crate"
+          ],
+          "path": "Workflow-RO-Crate/1.1/changelog.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "bioschemas",
+            "cwl",
+            "provenance",
+            "ro-crate"
+          ],
+          "path": "Workflow-RO-Crate/1.1/index.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "bioschemas",
+            "cwl",
+            "ro-crate"
+          ],
+          "path": "developer/how-to-make-a-workflow-ro-crate.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "cwl",
+            "ro-crate"
+          ],
+          "path": "docs/maintaining-your-workflow.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "cwl",
+            "ro-crate"
+          ],
+          "path": "docs/registering_workflows/adding-files.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate"
+          ],
+          "path": "docs/registering_workflows/check-uploaded-workflow.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate"
+          ],
+          "path": "docs/registering_workflows/complete-workflow-metadata.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate"
+          ],
+          "path": "docs/registering_workflows/registering-a-workflow.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "cwl"
+          ],
+          "path": "docs/registering_workflows/supported-workflow-types.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        }
+      ],
+      "match_count": 10,
+      "topic_id": "research-object-metadata"
+    },
+    {
+      "contributions": [
+        {
+          "matched_aliases": [
+            "lifemonitor",
+            "monitoring",
+            "testing"
+          ],
+          "path": "README.md",
+          "repository": "crs4/life_monitor",
+          "source_id": "lifemonitor"
+        },
+        {
+          "matched_aliases": [
+            "status"
+          ],
+          "path": "README.md",
+          "repository": "seek4science/seek",
+          "source_id": "seek"
+        },
+        {
+          "matched_aliases": [
+            "lifemonitor",
+            "testing"
+          ],
+          "path": "Workflow-RO-Crate/1.1/index.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        }
+      ],
+      "match_count": 3,
+      "topic_id": "workflow-monitoring"
+    },
+    {
+      "contributions": [
+        {
+          "matched_aliases": [
+            "workflow"
+          ],
+          "path": "README.md",
+          "repository": "common-workflow-language/cwl-v1.2",
+          "source_id": "cwl-standard"
+        },
+        {
+          "matched_aliases": [
+            "registry",
+            "workflow"
+          ],
+          "path": "README.md",
+          "repository": "crs4/life_monitor",
+          "source_id": "lifemonitor"
+        },
+        {
+          "matched_aliases": [
+            "workflow"
+          ],
+          "path": "docs/wfhub-setup-notes.md",
+          "repository": "crs4/life_monitor",
+          "source_id": "lifemonitor"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "Workflow-RO-Crate/1.1/changelog.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "Workflow-RO-Crate/1.1/index.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "developer/how-to-make-a-workflow-ro-crate.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "docs/maintaining-your-workflow.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "docs/registering_workflows/adding-files.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "registration",
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "docs/registering_workflows/check-uploaded-workflow.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "registration",
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "docs/registering_workflows/complete-workflow-metadata.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "workflow"
+          ],
+          "path": "docs/registering_workflows/register-and-login.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "registration",
+            "ro-crate",
+            "workflow"
+          ],
+          "path": "docs/registering_workflows/registering-a-workflow.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        },
+        {
+          "matched_aliases": [
+            "registration",
+            "workflow"
+          ],
+          "path": "docs/registering_workflows/supported-workflow-types.md",
+          "repository": "workflowhub-eu/about",
+          "source_id": "workflowhub"
+        }
+      ],
+      "match_count": 13,
+      "topic_id": "workflow-registration"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "change_kind": "DOCUMENT_TEXT_UNCHANGED",
-  "current_knowledge_digest": "787bcbdda25b84e8eb00eec1ede7daa93c36f316cbca0b5e20dbd566f9f68421",
-  "previous_knowledge_digest": "b968d7ab41e1f6932bd6026e1b50442bf70682f904ff34a8bc5bc084cec1d74d",
+  "current_knowledge_digest": "945a3406a5164af276c208c3f51b2ff8bfd61b4793f0a69d0f257e065d84c174",
+  "previous_knowledge_digest": "787bcbdda25b84e8eb00eec1ede7daa93c36f316cbca0b5e20dbd566f9f68421",
   "record_count": 15,
   "schema_version": "1.0.0",
-  "source_bundle": "06d0a853514df44d1250e29abef44c60472c52c3ad61932961f1e38d2b790968",
+  "source_bundle": "0a20ce4241936354cd07b2cc361eeabed744997af37e603dbe9d711d5e6d9830",
   "topic_count": 3,
   "topic_transitions": [
     {
@@ -16,7 +16,7 @@
     {
       "current_coverage": "MULTI_SOURCE",
       "previous_coverage": "MULTI_SOURCE",
-      "state": "UNCHANGED",
+      "state": "UPDATED",
       "topic_id": "workflow-monitoring"
     },
     {

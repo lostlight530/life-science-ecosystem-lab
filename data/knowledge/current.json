@@ -1,7 +1,7 @@
 {
-  "evidence_bundle_digest": "06d0a853514df44d1250e29abef44c60472c52c3ad61932961f1e38d2b790968",
+  "evidence_bundle_digest": "0a20ce4241936354cd07b2cc361eeabed744997af37e603dbe9d711d5e6d9830",
   "kind": "EXTRACTIVE_WORKFLOW_KNOWLEDGE_MAP",
-  "knowledge_digest": "787bcbdda25b84e8eb00eec1ede7daa93c36f316cbca0b5e20dbd566f9f68421",
+  "knowledge_digest": "945a3406a5164af276c208c3f51b2ff8bfd61b4793f0a69d0f257e065d84c174",
   "knowledge_graph": {
     "edges": [
       {
@@ -74,7 +74,7 @@
         "evidence_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
         "from": "topic:workflow-monitoring",
         "relation": "SOURCE_MATCH",
-        "to": "github:seek4science/seek@e47e21f6517ae0a0808c18b733ec7bdbea64e593:README.md"
+        "to": "github:seek4science/seek@65b13b4b5675d64c50a8ab87d675033ca07a70b5:README.md"
       },
       {
         "evidence_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
@@ -179,7 +179,7 @@
         "repository": "crs4/life_monitor"
       },
       {
-        "id": "github:seek4science/seek@e47e21f6517ae0a0808c18b733ec7bdbea64e593:README.md",
+        "id": "github:seek4science/seek@65b13b4b5675d64c50a8ab87d675033ca07a70b5:README.md",
         "kind": "source-document",
         "repository": "seek4science/seek"
       },
@@ -411,7 +411,7 @@
           "url": "https://github.com/crs4/life_monitor/blob/7649406c11c5c04eebc5ca61926f5dbe30469c82/README.md"
         },
         {
-          "commit": "e47e21f6517ae0a0808c18b733ec7bdbea64e593",
+          "commit": "65b13b4b5675d64c50a8ab87d675033ca07a70b5",
           "content_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
           "excerpt": "[![Build Status](https://github.com/seek4science/seek/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/seek4science/seek/actions/workflows/tests.yml) [![DOI](https://zenodo.org/badge/20803285.svg)](https://zenodo.org/badge/latestdoi/20803285)",
           "matched_aliases": [
@@ -420,7 +420,7 @@
           "path": "README.md",
           "repository": "seek4science/seek",
           "source_id": "seek",
-          "url": "https://github.com/seek4science/seek/blob/e47e21f6517ae0a0808c18b733ec7bdbea64e593/README.md"
+          "url": "https://github.com/seek4science/seek/blob/65b13b4b5675d64c50a8ab87d675033ca07a70b5/README.md"
         },
         {
           "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
