@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Separate Bio Tool's observed FASTA/PDB byte-level report from software inspection and synthetic Framework outcomes in the public verification matrix; reconcile Framework's shared checkout-ancestor report-path guard with its actual tested CLI behavior
+- Record the RO-Crate 1.3 Bioschemas context mapping and Workflow Run RO-Crate 0.6 compatibility boundary without migrating pinned Workflow/Testing RO-Crate contracts, and document cross-component evidence/authority limits with regression checks
+
 - Close the repository-wide public Markdown audit gap: include Agent handoff, PR template, institutional/project self-check and independent Framework assurance/challenge guides in the governed document inventory and automatically check future additions
 - Correct the historical LifeMonitor configuration filename in institutional boundary documentation and the five-level evidence-verification heading, without changing native Workflows, Tools or accepted production data
 

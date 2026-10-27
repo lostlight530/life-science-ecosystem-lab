@@ -34,6 +34,29 @@ class RepositoryExperienceTests(unittest.TestCase):
         report = audit_documents(ROOT, stored["documents"])
         self.assertEqual(report.issues, (), "\n".join(report.issues))
 
+    def test_public_evidence_guide_keeps_peer_proofs_and_refusal_guard_distinct(self):
+        guide = (ROOT / "docs/VERIFYING_RESULTS.md").read_text(encoding="utf-8")
+        self.assertIn("## Six independent evidence surfaces", guide)
+        for expected in (
+            "| Local Tool inspection |",
+            "| Evidence collection/aggregation |",
+            "| Computational knowledge replay |",
+            "| Bio Tool data audit |",
+            "| Independent Framework assessment |",
+            "| GitHub native durable lifecycle |",
+        ):
+            with self.subTest(surface=expected):
+                self.assertIn(expected, guide)
+        self.assertIn("python -m ls_framework.challenge", guide)
+        self.assertIn("including when launched from a checkout subdirectory", guide)
+        self.assertNotIn("when launched from checkout root", guide)
+        standards = (ROOT / "docs/STANDARDS.md").read_text(encoding="utf-8")
+        self.assertIn("Workflow Run RO-Crate 0.6 is not Workflow Testing RO-Crate 0.2", standards)
+        self.assertIn("https://bioschemas.org/terms/", standards)
+        provenance = (ROOT / "docs/PROVENANCE.md").read_text(encoding="utf-8")
+        for asset in ("Knowledge Workflow", "Evidence Tool", "Bio Tool", "Experimental Framework", "External Agent"):
+            self.assertIn(asset, provenance)
+
     def test_github_issue_forms_have_required_keys_and_safe_fields(self):
         forms = sorted((ROOT / ".github/ISSUE_TEMPLATE").glob("*.yml"))
         self.assertGreaterEqual(len(forms), 3)
