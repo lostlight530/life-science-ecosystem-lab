@@ -11,16 +11,23 @@ from evidence.documentation import audit_documents
 
 ROOT = Path(__file__).resolve().parents[1]
 
-PUBLIC_DOCS = {
-    "README.md", "AGENTS.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md",
-    ".github/README.md", ".github/knowledge/README.md", "evidence/README.md",
-    "bio_tool/README.md", "framework/README.md"
-}
+# Every public Markdown surface is audited, not just docs/ and root guides.
+# Deliberately enumerate owned documentation directories; do not traverse
+# downloaded fixtures, ignored scratch, virtualenvs or accepted research data.
+PUBLIC_DOC_DIRS = (
+    ".", ".github", ".github/knowledge", ".github/agent-handoff",
+    "docs", "evidence", "bio_tool", "framework", "framework/docs",
+    "checks/institutional", "checks/project",
+)
 
 class RepositoryExperienceTests(unittest.TestCase):
     def test_public_documentation_inventory_is_complete(self):
-        expected = PUBLIC_DOCS | {p.relative_to(ROOT).as_posix()
-                                   for p in (ROOT / "docs").glob("*.md")}
+        expected = {
+            path.relative_to(ROOT).as_posix()
+            for directory in PUBLIC_DOC_DIRS
+            for path in (ROOT / directory).glob("*.md")
+            if path.is_file()
+        }
         stored = json.loads((ROOT / "evidence/profiles/docs.json").read_text(encoding="utf-8"))
         self.assertEqual(stored["schema_version"], "1.0.0")
         self.assertEqual(stored["documents"], sorted(expected))

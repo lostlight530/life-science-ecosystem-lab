@@ -2,7 +2,7 @@
 
 This project's independent Workflow, two Tools and separate experimental Framework produce **bounded engineering evidence**, not clinical/biological correctness or external platform certification. Determine *exactly which artifact, version, command and check* supports a statement.
 
-## Four distinct levels
+## Five distinct evidence levels
 
 | Evidence level | Observable result | Does **not** establish |
 | --- | --- | --- |

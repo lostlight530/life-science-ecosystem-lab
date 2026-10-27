@@ -2,13 +2,18 @@
   "schema_version": "1.0.0",
   "documents": [
     ".github/README.md",
+    ".github/agent-handoff/SOP.md",
+    ".github/agent-handoff/TASK_TEMPLATE.md",
     ".github/knowledge/README.md",
+    ".github/pull_request_template.md",
     "AGENTS.md",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "README.md",
     "SECURITY.md",
     "bio_tool/README.md",
+    "checks/institutional/README.md",
+    "checks/project/README.md",
     "docs/ADR-INDEPENDENT-LS-FRAMEWORK.md",
     "docs/AGENT_CLUSTER_RESEARCH_CASE.md",
     "docs/AGENT_COLLABORATION.md",
@@ -30,6 +35,8 @@
     "docs/STANDARDS.md",
     "docs/VERIFYING_RESULTS.md",
     "evidence/README.md",
-    "framework/README.md"
+    "framework/README.md",
+    "framework/docs/ASSURANCE.md",
+    "framework/docs/CONTRACT_CHALLENGE.md"
   ]
 }
