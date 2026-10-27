@@ -27,6 +27,14 @@ This document lists supported *software-interface mappings*, not certifications.
 
 The community [RO-Crate specification index](https://www.researchobject.org/ro-crate/specification.html) identifies [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/index.html), published 2026-06-22, as the current long-term generic release (verified 2026-10-25). This repository still implements **separately reviewed** Workflow RO-Crate 1.1 and Workflow Testing RO-Crate 0.2 interfaces for its released workflow and LifeMonitor records. A generic 1.3 update does not itself authorize a WorkflowHub/LifeMonitor contract migration.
 
+### Compatibility watch: generic crates, workflow profiles and run evidence
+
+The [RO-Crate 1.3 release notes](https://www.researchobject.org/ro-crate/blog/2026-06-23/announcing-ro-crate-1-3) explicitly change the JSON-LD context bindings for `ComputationalWorkflow`, `FormalParameter`, `input` and `output` to `https://bioschemas.org/terms/`. A context change affects the expanded RDF term identities used by consumers; it must not be treated as a cosmetic version-string edit or retroactively applied to the archived `v0.4.0` crate. These namespace changes alone do not establish that this repository's pinned files failed their declared earlier-version preflight.
+
+The [Workflow Run RO-Crate changelog](https://www.researchobject.org/workflow-run-crate/profiles/changelog.html) documents its **0.6** profiles (2026-09-07) against generic RO-Crate **1.3** and Workflow RO-Crate **1.1**. **Workflow Run RO-Crate 0.6 is not Workflow Testing RO-Crate 0.2**: run provenance and declared CI test suites are different evidence objects. This repository currently claims the latter's bounded structural test metadata, not a newly verified Workflow Run RO-Crate 0.6 artifact or independent execution attestation.
+
+Any future migration must first pin the target generic context and specific profile together, inspect expanded term mappings, build and validate a versioned candidate on frozen inputs, check WorkflowHub/LifeMonitor consumer behavior as an **external** acceptance question, and obtain normal review before changing released descriptors. Existing accepted `data/`, registered archives and DOIs remain historical objects; a local preflight or green CI cannot rewrite their past versions.
+
 The [RDA FAIR4RS Recommendation](https://doi.org/10.15497/RDA00068) and [FORCE11 software citation checklist](https://github.com/force11/force11-sciwg/blob/master/guidance/software_citation_checklist_for_developers.md) distinguish component-specific and version-specific software identities. The earlier `v0.4.0` Zenodo DOI does not encompass or certify the later experimental Framework 0.1.0. [W3C PROV-O](https://www.w3.org/TR/prov-o/) models provenance with entities, activities and agents; similarly named local JSON fields are **not** proof of interoperable PROV-O RDF or independently attested method execution.
 
 Reference documents:
@@ -39,6 +47,7 @@ Reference documents:
 - [Software Heritage SWHID](https://docs.softwareheritage.org/devel/swh-model/persistent-identifiers.html)
 
 Do not replace GitHub Actions as the native scheduler just to meet external WorkflowHub conventions. External workflow registration should instead describe the actual portable executable and its test relationship honestly.
+
 ## Local readiness and external acceptance
 
 Use `ls-evidence audit-ecosystem --root . --output build/interop.json` before considering external services. This command never logs in or changes a public registry. The existing RO-Crate root identifies the native GitHub Actions lifecycle while the portable CWL sub-workflow is a separate entity: a standalone `.crate.zip` with executable CWL as the **main workflow** is built reproducibly by `.github/scripts/build_portable_workflow_crate.py` and tested in CI. Local readiness remains distinct from the external records listed below.

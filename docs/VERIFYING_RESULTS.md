@@ -2,13 +2,14 @@
 
 This project's independent Workflow, two Tools and separate experimental Framework produce **bounded engineering evidence**, not clinical/biological correctness or external platform certification. Determine *exactly which artifact, version, command and check* supports a statement.
 
-## Five distinct evidence levels
+## Six independent evidence surfaces
 
 | Evidence level | Observable result | Does **not** establish |
 | --- | --- | --- |
 | Local Tool inspection | JSON + optional Markdown and SARIF, PASS / WARN / FAIL | A scientific conclusion, remote website reachability, full standards conformance |
 | Evidence collection/aggregation | Approved source revision, object identity, digests, diagnostics, candidate eligibility | The scientific meaning of the source documents is correct |
 | Computational knowledge replay | Deterministic knowledge JSON, source-linked JSONL and FTS5 queries on a specific input | That the synthetic fixture is a live GitHub observation or causal inference |
+| Bio Tool data audit | Deterministic protein FASTA amino-acid composition and ambiguity counts, or first-model PDB observed C-alpha residue inventory, plus input SHA-256 | Sequence correctness, folding accuracy, molecular geometry, biological interpretation or clinical suitability |
 | Independent Framework assessment | Exact local-byte check, method-domain declarations, typed lineage findings and synthetic adversarial cases | That method execution actually occurred, a biological sample was identified, or a scientific claim was accepted |
 | GitHub native durable lifecycle | Completed scheduled/authorized job **plus** accepted `data/` commit and state verification | That third-party registries accepted or independently reproduced the software |
 
@@ -24,7 +25,7 @@ Framework changes additionally run the independent `standalone-framework` Linux 
 
 `ls-framework assess` defaults to exit 0 for `PASS` **or** `INDETERMINATE`; an abstention is not an affirmative verification. The optional `--require-pass` returns exit 2 for `INDETERMINATE` and 1 for `FAIL`, allowing downstream automation to refuse incomplete evidence. The JSON `status` and `not_verified` fields are authoritative within the narrow engineering contract, not scientific truth.
 
-The CLI blocks report destinations that resolve to the input bundle, inside the selected input evidence root or, when launched from checkout root, under `data/` / `.git/`. This is not a general-purpose filesystem sandbox and other explicitly selected output paths may overwrite local files. See [independent Framework assurance](../framework/docs/ASSURANCE.md).
+Both `ls-framework assess` and `python -m ls_framework.challenge` use the shared report-path guard. It rejects destinations replacing the input bundle, lying inside the selected input evidence root, or targeting a discovered Git checkout's `data/` / `.git/`. Git roots are discovered from ancestors of the current working directory, input root, bundle and destination, including when launched from a checkout subdirectory. This is a refusal guard, **not** a general filesystem sandbox; other output paths and concurrent filesystem races remain outside its assurance. See [independent Framework assurance](../framework/docs/ASSURANCE.md).
 
 ## Tool report decisions
 
