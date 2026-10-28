@@ -53,8 +53,7 @@ def main(argv: list[str] | None = None) -> int:
     serialized = json.dumps(report, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
     if output_target is not None:
         try:
-            output_target.parent.mkdir(parents=True, exist_ok=True)
-            output_target.write_text(serialized, encoding="utf-8")
+            write_report_atomically(output_target, serialized)
         except OSError as error:
             report = {
                 "kind": "LS_RSE_ENGINEERING_ASSESSMENT",
