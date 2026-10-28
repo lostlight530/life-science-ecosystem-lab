@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any, Callable
 
 from .engine import assess, canonical_digest
-from .paths import resolve_report_target
+from .paths import resolve_report_target, write_report_atomically
 
 Mutation = Callable[[dict[str, Any]], None]
 
