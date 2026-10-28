@@ -6,6 +6,9 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
+
+from ls_framework.paths import write_report_atomically
 
 from ls_framework import assess, canonical_digest
 
