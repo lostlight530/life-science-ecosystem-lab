@@ -40,7 +40,7 @@ One bounded JSON bundle contains exactly kind, schema_version, scope, assets, st
 - `FAIL`: malformed, unsafe or contradictory software contract, or failed local-byte verification
 - `INDETERMINATE`: unverifiable external declarations, unfinished/failed steps, or proposed scientific claims
 
-The report preserves canonical input digest, typed findings, bounded metrics and explicit nonclaims
+The report preserves canonical input digest, typed findings, bounded metrics and explicit nonclaims. The `declared_cross_domain_steps` metric counts steps whose **input and output asset domains combined** contain more than one distinct reviewed domain, including a single-input transformation into a different output domain. This counts **declared contracts**, not independently attested executions, scientific integrations, or successful biological methods. A step with `FAILED`, `UNKNOWN` or `NOT_RUN` outcome can still be counted as declared while the overall assessment abstains.
 `PASS` is never scientific validity, verified method execution or authority to write `data/`
 
 ## Governance
