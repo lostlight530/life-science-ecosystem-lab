@@ -165,7 +165,10 @@ def assess(bundle: Any, root: Path) -> dict[str, Any]:
                 related = {str(asset_ids[x]["domain"]) for x in inputs + outputs}
                 if not related.issubset(set(supported)):
                     _problem(errors, "METHOD_DOMAIN_MISMATCH", sid)
-                if len({str(asset_ids[x]["domain"]) for x in inputs}) > 1:
+                # This is a declaration-level metric: a one-input transform can
+                # cross domains when its output belongs to another domain.
+                # No step outcome is independently execution-attested here.
+                if len(related) > 1:
                     integrated += 1
                 for output in outputs:
                     if output in producers:
