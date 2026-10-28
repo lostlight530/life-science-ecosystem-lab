@@ -29,6 +29,39 @@ class FrameworkContractTests(unittest.TestCase):
         self.assertEqual(r["metrics"]["domains"], ["genomics", "life_sciences_integrative", "microscopy"])
         self.assertTrue(r["not_verified"])
 
+    def test_declared_cross_domain_steps_include_output_domain(self):
+        # Both input assets share a domain; only the output changes domain.
+        # A multi-input-only counter would silently report zero here.
+        bundle = specimen()
+        bundle["assets"][1]["domain"] = "genomics"
+        report = self.evaluate(bundle)
+        self.assertEqual(report["status"], "PASS", report)
+        self.assertEqual(report["metrics"]["declared_cross_domain_steps"], 1)
+
+        # A one-input cross-domain transform is also a cross-domain contract.
+        bundle["assets"] = [bundle["assets"][0], bundle["assets"][2]]
+        bundle["steps"][0]["inputs"] = ["a-genomics"]
+        report = self.evaluate(bundle)
+        self.assertEqual(report["status"], "PASS", report)
+        self.assertEqual(report["metrics"]["declared_cross_domain_steps"], 1)
+
+        # Multiple assets or ports alone do not imply multiple domains.
+        for asset in bundle["assets"]:
+            asset["domain"] = "genomics"
+        bundle["steps"][0]["supported_domains"] = ["genomics"]
+        report = self.evaluate(bundle)
+        self.assertEqual(report["status"], "PASS", report)
+        self.assertEqual(report["metrics"]["declared_cross_domain_steps"], 0)
+
+    def test_declared_cross_domain_metric_is_not_execution_attestation(self):
+        bundle = specimen()
+        bundle["steps"][0]["outcome"] = "UNKNOWN"
+        report = self.evaluate(bundle)
+        self.assertEqual(report["status"], "INDETERMINATE", report)
+        self.assertEqual(report["metrics"]["declared_cross_domain_steps"], 1)
+        self.assertIn("NON_SUCCESSFUL_EXECUTION_RECORDED",
+                      {item["code"] for item in report["warnings"]})
+
     def test_empty_asset_bundle_is_not_valid_evidence(self):
         data = specimen()
         data["assets"] = []
