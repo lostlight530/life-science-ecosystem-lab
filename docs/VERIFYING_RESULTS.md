@@ -62,3 +62,22 @@ Prior-state validation happens **before** any accepted apply, including when the
 `ls-evidence audit-knowledge` performs an offline and bounded structural audit. Its digest and graph checks are not independent extraction verification: a newly recalculated digest can authenticate the bytes of a fabricated fragment without authenticating the external passage. Use `knowledge verify` with the fixed candidate and topic registry for source-text derivation, then separately review scientific relevance. The optional labeled set measures selection performance only on precisely those supplied cases; an unlabeled run returns null precision/recall. Source revision changes with unchanged selected text never imply scientific novelty.
 
 A separate read-only `life-science-continuity.yml` schedule can observe accepted Git state without acquiring write permission. Its success proves a single check at the recorded Git revision, not multiple-week production durability. The original production lifecycle alone owns allowed `data/` writes.
+
+## Research claim decisions are not executable verdicts
+
+The [research claim review contract](RESEARCH_METHODOLOGY.md) distinguishes software correctness, evidence integrity, method suitability and scientific validity. Passing one does **not** imply the others.
+
+| Evidence available | Defensible statement | Not supported by that evidence |
+| --- | --- | --- |
+| One CLI check and its regression tests pass | The named software behavior passed at the identified code/input revision | The method is suitable for every research question |
+| Git object, digest and path match | The specified bytes and provenance are internally consistent | The source author's biological interpretation is true |
+| A domain-specific controlled comparison succeeds | A bounded metric was observed against a named reference and protocol | Generalized accuracy or independent replication outside the sample |
+| Two Agent narratives agree | Their written assertions agree within the stated window | Authenticated independent runtimes or scientific consensus |
+| A workflow or software registry shows a version | A platform exposed that record at a dated observation | Peer review, scientific approval or authorization for sensitive data |
+| Two catalog/monitor response fields differ | A dated comparison found a difference | Importer failure or loss of the upstream data |
+
+For quantitative evidence retain numerator, denominator, unit, observation window, sampling criteria, nulls and missingness, uncertainty and excluded attempts. A reported zero is not interchangeable with missing or unavailable data. Preserve negative controls, abstentions and contradictory evidence.
+
+Human-review prose such as **PROPOSED**, **ENGINEERING_VERIFIED**, **SCIENTIFICALLY_EVALUATED**, **REVISED**, **NO_FINDINGS** and **BLOCKED** does not add executable status values. Actual CLI, CI and native production outcomes remain defined by the existing machine reports and Git receipts. A PR merge accepts a code/document change, not automatically every scientific assertion in its discussion.
+
+See [cross-infrastructure provenance reconciliation](PROVENANCE.md) for a two-clock upstream/downstream procedure. An inaccessible external API during a documentation review is an unresolved observation, not proof the service is offline.
