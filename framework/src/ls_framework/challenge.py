@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any, Callable
 
 from .engine import assess, canonical_digest
-from .paths import resolve_report_target
+from .paths import resolve_report_target, write_report_atomically
 
 Mutation = Callable[[dict[str, Any]], None]
 
@@ -239,8 +239,7 @@ def main(argv: list[str] | None = None) -> int:
     output = json.dumps(result, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
     if output_target is not None:
         try:
-            output_target.parent.mkdir(parents=True, exist_ok=True)
-            output_target.write_text(output, encoding="utf-8")
+            write_report_atomically(output_target, output)
         except OSError as error:
             result = {
                 "kind": "LS_RSE_CONTRACT_CHALLENGE",
