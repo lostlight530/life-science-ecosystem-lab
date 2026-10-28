@@ -68,3 +68,22 @@ As observed via the public GitHub branch metadata on 2026-10-25, `main.protected
 The GitHub-native `validate` aggregate check fails when an internal domain fails, but that fact **alone does not prove** that GitHub's server will reject a direct push or PR merge. A maintainer with repository administration authority should separately enable and verify the intended branch protection/ruleset, including required status contexts, review policy and privileged bypass rules. The current connected GitHub App cannot modify repository administration settings. Do not mark that work completed from a passing Actions run
 
 Any maintenance PR that changes source declarations, metadata or documentation should preserve the frozen `v0.4.0` release identity and distinguish the later experimental Framework package version `0.1.0`; never rewrite old registry records to include new software retroactively
+
+## Documentation-only research-governance reviews
+
+A claim-review or cross-infrastructure provenance correction may tighten **review expectations** without modifying executable capabilities. Cold-start from current remote main, enumerate proposed changed files and protect the following existing production and executable contracts when the change is explicitly documentation-only: .github/workflows/, .github/runtime/, .github/knowledge/, evidence/, bio_tool/, framework/src/, framework/tests/, data/, registered source/topic profiles, frozen release metadata and CI fixtures.
+
+A prose policy must not silently create a new parser status, mandatory CI check, model/Agent runtime dependency, external login, data acceptance gate or repository writer. A research method described in Markdown is not implemented software until an actual independently tested and reviewed change supplies that capability.
+
+Review repeated observations according to their **actual changes**, not the number of tasks executed:
+
+- Identical relevant evidence: use the existing no-meaningful-delta or no-findings discipline; do not generate a research event to maintain a streak
+- Source revision changed but selected content did not: retain the revision and avoid claiming a new scientific finding
+- Source text, scientific method or reference changed: re-evaluate the affected claim with pinned versions and a method-specific comparator
+- Required source, control or comparator unavailable: preserve a bounded blocked/indeterminate report, not a fabricated negative scientific result
+- New independent counterevidence: retain the previous version, correction, dissent and responsible human review
+- Third-party catalog and monitor disagree: compare original field and observation times without rewriting accepted production data or the external account
+
+For external standard updates, pin the generic RO-Crate version, specific Workflow/Testing/Run profile, JSON-LD term mappings and consumer behavior **as separate review objects**. Do not retroactively migrate archived v0.4.0 crates, DOIs or accepted receipts merely because a newer upstream version exists.
+
+A documentation-only merge record should include base/head SHAs, exact changed-file inventory, official reference URLs and observation dates, CI outcomes, final main SHA and remaining unknowns. Green documentation CI establishes consistency of these public contracts, **not** a newly certified scientific result.

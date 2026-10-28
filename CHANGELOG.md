@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Define review-only falsification, claim admission and cross-domain evidence obligations within the existing eight-stage methodology, without adding executable gates
+- Clarify source/downstream registry timestamp and identity reconciliation, historical bio.tools/OpenEBench observation limits, and related verification/maintenance/contribution boundaries; preserve all Workflow, Tool, Framework, accepted data and archived releases
+
 - Separate Bio Tool's observed FASTA/PDB byte-level report from software inspection and synthetic Framework outcomes in the public verification matrix; reconcile Framework's shared checkout-ancestor report-path guard with its actual tested CLI behavior
 - Record the RO-Crate 1.3 Bioschemas context mapping and Workflow Run RO-Crate 0.6 compatibility boundary without migrating pinned Workflow/Testing RO-Crate contracts, and document cross-component evidence/authority limits with regression checks
 

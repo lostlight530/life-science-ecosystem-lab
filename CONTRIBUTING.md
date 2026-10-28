@@ -41,3 +41,11 @@ The required validation workflow is actor-neutral. Do not add contributor-specif
 - Maintainers accept source and state changes under independent provenance, world-line and write-boundary checks, not merely because a proposed solution runs
 
 [Verification results](docs/VERIFYING_RESULTS.md) · [Maintenance and privacy](docs/MAINTENANCE.md) · [Security](SECURITY.md)
+
+## Research and cross-registry review obligations
+
+When proposing a scientific-method or provenance clarification, specify the **exact falsifiable claim** and the alternatives it must discriminate. Distinguish software correctness, evidence integrity, method suitability and scientific evaluation as four separate responsibilities. Use the [research methodology review contract](docs/RESEARCH_METHODOLOGY.md) for bounded outcomes and the [cross-platform provenance worksheet](docs/PROVENANCE.md) for upstream/downstream source comparisons.
+
+Include fixed source and method identities, direct observation times, input bytes or digests, control cases, measurement units, numerator/denominator where relevant, excluded/missing cases, failures, replay boundaries and a responsible reviewer. Preserve disagreements and negative results. Agent-proposed text or schema-valid handoffs remain proposals, not identity attestation or automatic scientific approval.
+
+A documentation-only change must keep the existing Workflow, Evidence Tool, Bio Tool, experimental Framework runtime, source/topic registries, accepted data and historical release metadata unmodified. Verify the **actual** PR check conclusions before merging; do not install an extra external-service or Agent gate to make a prose obligation look executable.
