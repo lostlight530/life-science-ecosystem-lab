@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Correct the independent experimental Framework's `declared_cross_domain_steps` measurement to include input-to-output domain transitions, add positive/negative and unknown-outcome regression cases, and clarify that the metric describes declarations rather than execution attestation; no existing Workflow, Evidence Tool, Bio Tool or accepted state was changed
+- Recheck the separate GitHub branch-protection/ruleset evidence as a dated observation rather than claiming that green CI enforces server-side policy
+
 - Define review-only falsification, claim admission and cross-domain evidence obligations within the existing eight-stage methodology, without adding executable gates
 - Clarify source/downstream registry timestamp and identity reconciliation, historical bio.tools/OpenEBench observation limits, and related verification/maintenance/contribution boundaries; preserve all Workflow, Tool, Framework, accepted data and archived releases
 
