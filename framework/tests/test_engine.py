@@ -93,6 +93,27 @@ class FrameworkContractTests(unittest.TestCase):
         self.assertEqual(report["status"], "FAIL")
         self.assertIn("INVALID_SOURCE_DECLARATION", {x["code"] for x in report["errors"]})
 
+    def test_atomic_report_preserves_prior_result_on_replace_error(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            report = root / "assessment.json"
+            report.write_text("previous complete report\n", encoding="utf-8")
+            with patch("ls_framework.paths.os.replace", side_effect=OSError("injected")):
+                with self.assertRaises(OSError):
+                    write_report_atomically(report, "replacement report\n")
+            self.assertEqual(report.read_text(encoding="utf-8"),
+                             "previous complete report\n")
+            self.assertEqual(list(root.glob(".assessment.json.*.tmp")), [])
+
+    def test_atomic_report_overwrites_completed_report_deterministically(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            report = root / "assessment.json"
+            write_report_atomically(report, "first result\n")
+            write_report_atomically(report, "second result\n")
+            self.assertEqual(report.read_bytes(), b"second result\n")
+            self.assertEqual(list(root.glob(".assessment.json.*.tmp")), [])
+
     def test_cli_output_cannot_overwrite_input(self):
         path = FIXTURES / "software-cross-domain.json"
         original = path.read_bytes()
