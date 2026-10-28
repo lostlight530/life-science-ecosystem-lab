@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 from .engine import assess
-from .paths import resolve_report_target
+from .paths import resolve_report_target, write_report_atomically
 
 
 def main(argv: list[str] | None = None) -> int:
