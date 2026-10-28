@@ -13,7 +13,7 @@ ls-knowledge --help
 ls-bio --help
 ```
 
-One Python distribution intentionally supplies **three independent commands**; it is not two separately published PyPI packages.
+One root Python distribution intentionally supplies **three independent commands**; they are not three separately published PyPI packages. The optional experimental Framework has its own separate Python distribution and install command in Path E.
 
 ## Path A — Evidence Tool only (offline)
 
