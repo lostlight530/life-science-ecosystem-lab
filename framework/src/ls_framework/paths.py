@@ -71,3 +71,28 @@ def resolve_report_target(
             )
 
     return target
+
+
+def write_report_atomically(target: Path, content: str) -> None:
+    """Replace a report only after a complete same-directory temporary write.
+
+    This protects against ordinary write/replace failures, not power loss,
+    concurrent writers, or malicious filesystem changes.
+    """
+    target.parent.mkdir(parents=True, exist_ok=True)
+    staged: str | None = None
+    try:
+        descriptor, staged = tempfile.mkstemp(
+            prefix=f".{target.name}.", suffix=".tmp", dir=target.parent,
+        )
+        with os.fdopen(descriptor, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(staged, target)
+    finally:
+        if staged is not None:
+            try:
+                os.unlink(staged)
+            except FileNotFoundError:
+                pass
