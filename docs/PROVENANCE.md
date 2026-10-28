@@ -32,3 +32,54 @@ An evidence identifier proves only the object and operation it names. Keep each 
 For a cross-component research statement, reviewers should record which row produced each piece of evidence, the immutable revision or bytes actually checked, and the remaining gap between **observation**, **software validation**, **method suitability**, **independent scientific evaluation**, **human approval**, and **external registration**. These are different proof obligations, not a score to add together. The stable lifecycle is [DEFINE → PIN → QUALIFY → EXECUTE → EVALUATE → AUDIT → REVIEW → REPLAY](RESEARCH_METHODOLOGY.md). `PROPOSAL_ONLY`, `INDETERMINATE`, failures and negative findings must remain retrievable without being promoted to accepted `data/`.
 
 The [FAIR4RS v1.0 Recommendation](https://doi.org/10.15497/RDA00068) motivates version-specific research-software identities; [W3C PROV-O](https://www.w3.org/TR/prov-o/) supplies a provenance vocabulary. The table above is a **project-owned review contract**, not a PROV-O serialization, FAIR4RS conformance certification or externally adopted standard.
+
+## Cross-infrastructure metadata and identity reconciliation
+
+Scientific software distribution and monitoring systems are different authorities. Each owns its own identifier, version semantics, update clock, permission model and evidence. An upstream catalog, downstream index, workflow registration, monitoring run, immutable software release and researcher's login must never be represented by a single unqualified status.
+
+### Independent objects to preserve
+
+| Object | Minimum observation | Boundary |
+| --- | --- | --- |
+| GitHub release | Tag, immutable commit, release time, software scope and artifact identity | A mutable main-branch ZIP is not a frozen version |
+| Zenodo record | Concept versus version DOI, record/revision, downloadable archive and actual release relationship | Software archive is neither a peer-reviewed article nor a scientific result |
+| WorkflowHub | Workflow ID **and version**, DOI, registered executable and source-version link | Portable CWL does not replace native GitHub Actions or prove biological validation |
+| LifeMonitor | Workflow, suite, test instance, observation time, visibility and observed test status | Private dashboard, enrollment and one passing test do not prove public certification or durable uptime |
+| bio.tools | Tool ID, captured source fields, version, reported update time, provenance of API result | Catalog inclusion or its own validation flags do not constitute scientific benchmarking |
+| OpenEBench | Exact monitor URL, tool ID, response fields and source time, independently observed retrieval time | Active metadata monitoring is not a published scientific benchmark |
+| LS Login or another identity provider | Authentication and authorization facts for an identified service at a dated observation | Identity linkage does not establish institutional affiliation or rights to publish |
+
+Different platform IDs may describe related but **not identical** versioned objects. Record the exact relationship (catalogs, references, archives, tests or monitors) and evidence for that relation. Do not equate citation identifiers, Git SHA, WorkflowHub DOI and private monitoring UUID.
+
+### Two-sided observation worksheet (not a new machine format)
+
+For source-to-downstream metadata comparison, a reviewer should record:
+
+- Upstream and downstream provider, canonical URL, object identifier and version (or **unknown**)
+- Actual retrieval time in UTC **for each request separately**, transport result and permission scope
+- Platform-reported update/time fields **verbatim**, with their stated or unknown semantics
+- Original non-sensitive JSON response or byte digest and the exact observed field set
+- Field mapping, transformation or filtering evidence, distinguishing missing, null, empty and unsupported fields
+- Differences, conflicting observations, access failures, competing explanations and unresolved uncertainty
+- Review decision: matching, differing, unmapped or inconclusive, with the next observation criterion
+
+**Retrieval time, source update time, downstream embedded timestamp and archival creation time are different clocks.** A downstream value older than an upstream value supports a time-bounded discrepancy, not a conclusion that its importer is broken or that the upstream record vanished. Recheck raw fields before attributing drift to cache, batch cadence, mapping or permissions.
+
+### Dated LS cross-platform case, not a live status claim
+
+The repository's [machine-readable standards snapshot](../metadata/standards-status.json) contains a **2026-10-18 maintainer-observed** bio.tools record and OpenEBench metadata-monitoring record for the same tool ID. At that observation, OpenEBench carried an older description and empty credits/publications/repositories fields while the upstream bio.tools record had been updated. This is a historical field-difference observation; its cause was not demonstrated.
+
+The corresponding reference endpoints are [bio.tools API](https://bio.tools/api/tool/life-science-protein-file-audit) and [OpenEBench monitor API](https://openebench.bsc.es/monitor/tool/life-science-protein-file-audit). **Neither API supplied a directly verified October 29, 2026 response in this review.** No current synchronization result, importer schedule, curator acceptance or new benchmark is asserted. Failed access is not silently replaced by an old cache or search summary.
+
+The [WorkflowHub workflow version 2](https://workflowhub.eu/workflows/2347?version=2), the repository [LifeMonitor configuration guide](https://lifemonitor.eu/lm_wft_best_practices_github_app) and the archived v0.4.0 software release are related but independently governed objects. The project-level lifemonitor.yaml may override account-wide settings for explicit fields; its presence is not test evidence or permission to alter global defaults. The later experimental Framework was not part of the frozen v0.4.0 release.
+
+### Investigation without unauthorized mutation
+
+1. Pin both object identities and retrieval times; collect lawful non-sensitive responses or their exact digests
+2. Compare only documented comparable fields, retaining unknown and null separately
+3. Review service-authored schema and importer documentation **before** asserting a cause
+4. Keep contradictory reports, temporary HTTP failures and zero/absent distinctions, without inventing an outage or scientific finding
+5. If necessary, request explanation from the platform owning the record, preserving the reply as correspondence rather than a completed data migration
+6. Submit a reviewed project observation if reproducible; do not mutate the live registry or accepted data/ based only on an external difference
+
+This policy uses the entity/activity/agent distinction described in [W3C PROV-O](https://www.w3.org/TR/prov-o/) and component/version provenance concerns emphasized by [FAIR4RS](https://doi.org/10.15497/RDA00068). It does not claim RDF serialization, standards certification or that external systems adopt LS-specific review vocabulary.
