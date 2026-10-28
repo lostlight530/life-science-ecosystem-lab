@@ -10,7 +10,7 @@ Status: project-owned experimental contract, not a registered institutional stan
 | --- | --- | --- |
 | Software envelope | Bounded JSON shape, allowed IDs and domain strings | Independent community-schema certification |
 | Digital identity | SHA-256 of available local bytes within the selected input root | Actual biological specimen identity and upstream source authenticity |
-| Software relationships | Known references, no cycles/duplicate producers, multi-asset lineage | Genuine biological or causal relationship |
+| Software relationships | Known references, no cycles/duplicate producers, multi-asset lineage; declared cross-domain step count uses the union of input **and** output asset domains | Genuine biological or causal relationship, or executed integration |
 | Method declarations | Version/digest shape and declared input/output domains | Execution attestation, algorithm correctness or method suitability |
 | Uncertainty | Typed PASS/FAIL/INDETERMINATE with proposal-only scientific claims | Reviewed scientific truth and external registration |
 | Replay | Deterministic report and Linux/Windows byte-oriented tests | Experimental replication or valid cross-domain biological inference |

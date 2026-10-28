@@ -63,7 +63,7 @@ Cross-domain engineering changes should identify which interface version, input 
 
 ### Branch protection is a separate authority plane
 
-As observed via the public GitHub branch metadata on 2026-10-25, `main.protected=false` and no active repository rulesets were returned by the available read. This is a point-in-time repository-governance observation, **not** a property of any workflow or permission to bypass checks
+As observed via the public GitHub branch metadata on 2026-10-25 and **rechecked on 2026-10-29** against `main` at `6c93ff269b18ba62cf186ea63baf53721fb2217a`, `main.protected=false` and the repository rulesets endpoint returned `[]`. The observation concerns the server-side policy read, not the CI implementation. Check current [branch metadata](https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/branches/main) and [repository rulesets](https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/rulesets) again before treating these values as current. This is a point-in-time repository-governance observation, **not** a property of any workflow or permission to bypass checks
 
 The GitHub-native `validate` aggregate check fails when an internal domain fails, but that fact **alone does not prove** that GitHub's server will reject a direct push or PR merge. A maintainer with repository administration authority should separately enable and verify the intended branch protection/ruleset, including required status contexts, review policy and privileged bypass rules. The current connected GitHub App cannot modify repository administration settings. Do not mark that work completed from a passing Actions run
 
