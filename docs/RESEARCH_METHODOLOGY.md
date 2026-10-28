@@ -59,3 +59,64 @@ The independent [Framework](../framework/README.md) deliberately separates the s
 DEFINE states the falsifiable interoperability failure; PIN freezes input bytes, contract and oracle versions; QUALIFY determines what was actually observed; EXECUTE invokes only the offline contract evaluator; EVALUATE compares explicit expected and observed machine statuses; AUDIT examines false acceptance, false rejection and skipped cases; REVIEW preserves authority and dissent; REPLAY compares timestamp-free reports
 
 The [synthetic mutation challenge](../framework/docs/CONTRACT_CHALLENGE.md) establishes only regression performance over hand-authored examples. If later experiments use real public omics, image or clinical-adjacent data software, they require appropriately licensed, non-sensitive, independently reviewed fixtures and domain-appropriate validation; no sample or scientific claim is promoted solely from the Framework's green contract verdict
+
+## Claim admission and falsification review — non-executable policy
+
+The fixed eight-stage methodology is not a promise that every domain supports the same biological measurements. The following is a **human-review protocol**, not a new CLI, schema, CI gate, research result or delegation of approval authority.
+
+### Claim review record
+
+Before judging a substantive proposition, identify all of its independently reviewable parts:
+
+| Field | What must be stated | Invalid substitute |
+| --- | --- | --- |
+| Exact claim | Proposition, scope, subject/population, observation period and proposed non-claim | Calling a whole Agent or repository verified |
+| Falsifier | A plausible contrary observation and an alternative explanation | Treating a passing CI job as the scientific hypothesis |
+| Frozen inputs | Source identity, exact object, byte digest, version, license and inclusion/exclusion rule | A mutable branch as a frozen scientific input |
+| Method | Algorithm, version, parameters, intended operating range and prerequisites | A method name with no suitability check |
+| Execution | Who or what ran which version, on which surface, with identified outputs | An Agent narrative in lieu of an execution record |
+| Evaluation | Baseline, independent reference, metric, unit, denominator, uncertainty and negative controls | Cherry-picked successful output without a comparator |
+| Decision | Reviewer, reasoning, dissent, limitations, exact outcome and authority | Schema-valid Handoff interpreted as scientific approval |
+| Replay | Which bytes and decisions can be independently repeated, and which cannot | Reproducing JSON serialization as scientific replication |
+
+A negative or inconclusive result can be scientifically useful. A case that lacks an appropriate reference may be sound research documentation while its scientific inference remains unsupported.
+
+### Four orthogonal proof obligations
+
+| Obligation | What it checks | What it does not prove |
+| --- | --- | --- |
+| **Software correctness** | An implementation respects declared input/output, status, failure and deterministic tests on identified inputs | Its algorithm is suitable for the scientific question |
+| **Evidence integrity** | Identified objects, digests, provenance, receipts and transformations are consistent and inspectable | The source author is correct or the method was appropriate |
+| **Method suitability** | Sampling, assumptions, measurement design, controls and known bias fit the specific question | The observed scientific result has already been independently reproduced |
+| **Scientific validity** | Domain-relevant comparison, a justified reference, limitations, uncertainty and falsification actually support a bounded scientific proposition | A general biological conclusion, clinical use or permanent certification |
+
+These are independent proof obligations, **not** additive scores. In particular, a syntactically valid Git SHA is not a verified Git object; a valid FASTA/PDB file is not a correct fold; a source-linked topic match is not a biological causal relationship; successful Framework output is not proof that a declared external computation happened.
+
+### Review language and state mapping
+
+The following are **prose labels for decisions, not implemented machine enums**:
+
+- **PROPOSED:** explicit falsifiable question and protocol; no accepted result
+- **OBSERVED:** dated source or execution evidence with scope and provenance
+- **ENGINEERING_VERIFIED:** the identified code/evidence contract passed on pinned inputs, no scientific inference
+- **SCIENTIFICALLY_EVALUATED:** a domain-appropriate comparison was performed; positive, negative and inconclusive outcomes remain possible
+- **REVIEW_ACCEPTED_WITH_SCOPE:** an authorized review accepted an exact bounded statement, not the Agent as a permanent trusted authority
+- **REVISED / CONTRADICTED:** a prior assertion was revised or refuted, preserving original and correction
+- **INDETERMINATE / BLOCKED:** required source, comparator, method or execution evidence is unavailable or inadequate
+- **NO_FINDINGS:** the declared bounded inquiry ended without a supported finding, and without manufacturing a new result
+
+The existing production **APPLIED** outcome concerns Git-accepted knowledge state, not scientific endorsement. External registry **ACCEPTED** is a status belonging to that service. Neither is an alias of REVIEW_ACCEPTED_WITH_SCOPE.
+
+### Evaluation design, controls and stopping
+
+Before examining experimental outcomes, specify unit of analysis (source document, file, repository, version, run, sample or independently observed Agent contribution), comparator, explicit pass/fail or abstention criteria, treatment of missing data and conditions for stopping. For a ratio, preserve **numerator and denominator**; for a repeated-run statistic, preserve window, successful, failed, timed-out, canceled, no-change and superseded attempts separately.
+
+A corrupted digest is a valid negative control for an integrity checker, **not** proof that a biological hypothesis failed. A deliberately malformed FASTA/PDB input tests parser rejection, not model accuracy. Two agreeing Agent texts demonstrate agreement of statements, not independently authenticated execution or independent scientific replication.
+
+An experiment must be allowed to stop with BLOCKED, NO_FINDINGS or an inconclusive decision. Do not expand a dataset, select a different metric or invent a repository change merely to maintain apparent research continuity. Preserve conflicting observations and reviewer disagreement. Distinguish hypothesis development from the versioned protocol used to evaluate a particular hypothesis.
+
+### Cross-domain transferability experiment
+
+To test that this method genuinely transfers, hold the eight review stages and authority rules constant while varying domain data, algorithms, expected failures and measurement methods. Report what is invariant, what requires domain adaptation, and which limitations invalidate a proposed transfer. Compare error classification, refusal behavior, provenance recoverability and **independent review of exact scoped claims**, not matching JSON key names alone.
+
+This review policy is project-owned. External [FAIR4RS v1.0](https://doi.org/10.15497/RDA00068) recommends version-specific research software identities and detailed provenance, while [W3C PROV-O](https://www.w3.org/TR/prov-o/) distinguishes entities, activities and agents. Neither reference accredits LS or makes these Markdown review labels an implemented formal standard.
