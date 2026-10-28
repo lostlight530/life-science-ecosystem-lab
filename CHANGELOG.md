@@ -2,6 +2,9 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Make both independently installed Framework CLI reports use sibling temporary files and atomic destination replacement, preserving an existing report on ordinary write/replacement failure and cleaning up staging files; verify via isolated regression and Linux/Windows CI without changing the three established assets
+- Correct Getting Started's stale two-package description: three root CLI entrypoints share one distribution while the experimental Framework remains separately packaged
+
 - Correct the independent experimental Framework's `declared_cross_domain_steps` measurement to include input-to-output domain transitions, add positive/negative and unknown-outcome regression cases, and clarify that the metric describes declarations rather than execution attestation; no existing Workflow, Evidence Tool, Bio Tool or accepted state was changed
 - Recheck the separate GitHub branch-protection/ruleset evidence as a dated observation rather than claiming that green CI enforces server-side policy
 
