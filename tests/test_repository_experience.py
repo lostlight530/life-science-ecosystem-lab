@@ -5,6 +5,7 @@ CWL, remote GitHub collection or Agent integration is configured.
 """
 import json
 import re
+import tomllib
 import unittest
 from pathlib import Path
 from evidence.documentation import audit_documents
@@ -56,6 +57,26 @@ class RepositoryExperienceTests(unittest.TestCase):
         provenance = (ROOT / "docs/PROVENANCE.md").read_text(encoding="utf-8")
         for asset in ("Knowledge Workflow", "Evidence Tool", "Bio Tool", "Experimental Framework", "External Agent"):
             self.assertIn(asset, provenance)
+
+    def test_first_use_package_count_and_frozen_release_boundary(self):
+        root_package = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+        framework_package = tomllib.loads(
+            (ROOT / "framework/pyproject.toml").read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            set(root_package["project"]["scripts"]),
+            {"ls-knowledge", "ls-evidence", "ls-bio"},
+        )
+        self.assertEqual(
+            set(framework_package["project"]["scripts"]), {"ls-framework"}
+        )
+        self.assertNotEqual(
+            root_package["project"]["name"], framework_package["project"]["name"]
+        )
+        guide = (ROOT / "docs/GETTING_STARTED.md").read_text(encoding="utf-8")
+        self.assertIn("three independent commands", guide)
+        self.assertIn("separate Python distribution", guide)
+        self.assertNotIn("not two separately published PyPI packages", guide)
 
     def test_github_issue_forms_have_required_keys_and_safe_fields(self):
         forms = sorted((ROOT / ".github/ISSUE_TEMPLATE").glob("*.yml"))
