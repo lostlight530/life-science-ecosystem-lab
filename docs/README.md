@@ -10,6 +10,8 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |
 | Run the full external Agent + protein-structure dataset/tool/graph demo | [Protein Structure Field Demo](PROTEIN_STRUCTURE_FIELD_DEMO.md) |
 | Run and verify a real guarded production acceptance | [Production Operations](PRODUCTION_OPERATIONS.md) |
+| Trace the repository from the original pilot, all PRs, native accepted events and external evidence to the present cutoff | [Origin-to-Present History](REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Frozen API Census](provenance/README.md) |
+| Inspect falsifiable open claims, limitations, rejected/unused changes and next verification criteria | [Open Claim Register](CLAIM_VERIFICATION_GAPS.md) |
 | Understand three established assets, the independent Framework, and state ownership | [Architecture](ARCHITECTURE.md) |
 | Hand research between independent Jules/GPT/other Agents and the native assets | [Optional Agent Collaboration](AGENT_COLLABORATION.md) |
 | Review a heterogeneous Agent cohort's real public PR contributions and scientific non-claims | [Agent Cohort Research Case](AGENT_CLUSTER_RESEARCH_CASE.md) |

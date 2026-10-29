@@ -2,6 +2,8 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Reconstruct independently verifiable LS provenance from the original 2026-10-16 Git root through all 234 reachable main commits, 42 PRs (including 2 unmerged), 531 historical Actions runs (including failures and cancellations), three accepted production snapshots and externally owned release/registry statuses. Archive three frozen read-only GitHub API datasets with an offline consistency regression, preserve the February Jules precursor as **historically attributed but not independently attested**, and record unresolved claims without changing Workflow, Tool, Framework implementations, CI definitions or production data
+
 - Characterize native acceptance semantics with synthetic, disposable-root regression: bootstrap change-label reclassification can produce a distinct accepted Knowledge envelope despite stable selected text, while a subsequent identical observation yields `NO_MEANINGFUL_DELTA` with no receipt/event; upstream-Commit-only movement remains a separate provenance transition. Record the code-level mechanism without changing existing Workflow/Tool/Framework implementations, production state or governing policy
 
 - Record a pinned, independently replayable three-accept native production continuity field audit (October 17/19/26), distinguishing selected document content hashes, upstream Git revisions, candidate bookkeeping, event identities and Git commits; explicitly retain a metadata-only idempotence question without changing Workflow, Tools or accepted data

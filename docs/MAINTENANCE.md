@@ -4,6 +4,8 @@
 
 ## Repository maintenance
 
+For a complete, frozen baseline of the repository's actual evolution, review [the origin-to-present audit](REPOSITORY_HISTORY_AND_PROVENANCE.md), [three raw GitHub history collections](provenance/README.md) and [remaining falsification questions](CLAIM_VERIFICATION_GAPS.md). These files are a historical research observation, **not** the native accepted `data/` ledger or a substitute for future remote cold starts. When new evidence arrives, append a separately dated source-backed observation instead of silently rewriting the historical snapshot or inferring scientific truth from CI activity.
+
 - Pull requests: run code regression, offline CWL replay, graph JSONL reconstruction and Tool inspection tests before merging
 - Periodic knowledge cycle: read only approved sources, verify source identities, build knowledge and graph projections, compare to active knowledge, accept verified meaningful changes only
 - Independent Tool cycle: validate the installable CLI, test isolated third-party fixtures, audit local documentation and emit a reusable machine report
