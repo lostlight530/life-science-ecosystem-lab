@@ -19,6 +19,8 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Integrate through command-line / JSONL / SARIF interfaces | [Public Interfaces](PUBLIC_INTERFACES.md) |
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |
 | Trace immutable sources, commits, and public research evidence | [Provenance](PROVENANCE.md) |
+| Replay cross-asset evidence, negative controls, and claim-level decisions | [Evidence Replay Protocol](EVIDENCE_REPLAY_PROTOCOL.md) |
+| Review incompatible external standards, registry versions, and independent service observations | [Interoperability Review](INTEROPERABILITY_REVIEW.md) |
 | Check external standards and registration readiness | [Standards](STANDARDS.md) |
 | Maintain the repository safely and understand the publication boundary | [Maintenance](MAINTENANCE.md) |
 
