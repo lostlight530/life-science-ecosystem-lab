@@ -43,6 +43,8 @@ Set `PYTHONPATH=.github/runtime:.` and install the editable project (or use `ls-
 
 Do not infer scientific validity, clinical correctness, third-party standards certification, WorkflowHub registration, LifeMonitor enrollment or live execution of external scientific workflows
 
+For three concrete production accepts, linked GitHub runs, receipt/commit checks, stable selected-text comparison and no-delta ambiguity, consult the [Native Continuity Field Audit](NATIVE_CONTINUITY_FIELD_AUDIT.md). It is a historical field observation, **not** a reason to re-run `persist=true` or alter accepted data.
+
 ## Security and retention boundaries
 
 - Only `validate` uses `contents: read`; the separate guarded `apply` job uses `contents: write`
