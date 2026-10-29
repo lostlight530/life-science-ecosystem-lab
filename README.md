@@ -104,6 +104,10 @@ Standards-facing descriptors exist for CWL, RO-Crate, Bioschemas, CFF and CodeMe
 
 The stable research lifecycle—define, pin, qualify, execute, evaluate, audit, review and replay—applies across replaceable scientific examples, not just the existing protein-data demonstration. See [Research Methodology](docs/RESEARCH_METHODOLOGY.md) and `ls-evidence validate-research-case` for a domain-neutral, proposal-only evidence envelope. File-format parsers and individual scientific algorithms are examples of the method, not its scientific or ecosystem limits.
 
+## Independent replay and external evidence review
+
+The [cross-asset evidence replay protocol](docs/EVIDENCE_REPLAY_PROTOCOL.md) supplies runnable read-only examples, negative and unavailable controls, a falsifiable transferability study design, and an explicit claim-review worksheet without changing any existing runtime. The [external interoperability review](docs/INTEROPERABILITY_REVIEW.md) separates current upstream RO-Crate profile versions, frozen repository/registry records, service permissions and independently observed metadata changes. These are research review guides, not new CI gates, software releases or external certifications.
+
 ## Ongoing verification
 
 The read-only [continuity check](.github/workflows/life-science-continuity.yml) validates the accepted Git-backed state independently of the production scheduler. The Evidence Tool also offers bounded offline `audit-knowledge` for reproducibility and cross-version selection changes and `audit-ecosystem` for local standards readiness. A reproducible CWL-main archive including all three source assets can be created using `.github/scripts/build_portable_workflow_crate.py`. None of these actions implies external platform registration or scientific verification.
