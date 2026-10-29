@@ -52,7 +52,7 @@ To reproduce the query, preserve the exact knowledge input and the `entities.jso
 
 Prior-state validation happens **before** any accepted apply, including when the new evidence is unchanged. An invalid old ledger, current snapshot or latest receipt produces `EXISTING_STATE_INVALID_NO_APPLY`, not a new success or an implicit repair. Logical dates are validated as canonical calendar dates and snapshot IDs are bound to their input/profile digests.
 
-An independently reconstructed [three-run native continuity field audit](NATIVE_CONTINUITY_FIELD_AUDIT.md) shows why two committed `DOCUMENT_TEXT_UNCHANGED` events are not equivalent to `NO_MEANINGFUL_DELTA`, and why a new upstream Git revision need not imply altered selected text or scientific novelty. The October 19 metadata-only acceptance remains an open policy/implementation question, not a confirmed defect.
+An independently reconstructed [three-run native continuity field audit](NATIVE_CONTINUITY_FIELD_AUDIT.md) shows why two committed `DOCUMENT_TEXT_UNCHANGED` events are not equivalent to `NO_MEANINGFUL_DELTA`, and why a new upstream Git revision need not imply altered selected text or scientific novelty. The October 19 metadata-only acceptance's **implementation cause is established**: bootstrap `changes[]` reclassification changes the candidate output digest and hence the accepted Knowledge object, so the three-part `NO_MEANINGFUL_DELTA` guard fails. Whether this bookkeeping transition *should* count as a meaningful accepted event remains an explicit **policy question**, not a confirmed runtime defect. An isolated synthetic regression now characterizes both reclassification and stable-repeat behavior.
 
 ## Native workflow reading guide
 

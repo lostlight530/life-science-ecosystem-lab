@@ -43,7 +43,7 @@ Set `PYTHONPATH=.github/runtime:.` and install the editable project (or use `ls-
 
 Do not infer scientific validity, clinical correctness, third-party standards certification, WorkflowHub registration, LifeMonitor enrollment or live execution of external scientific workflows
 
-For three concrete production accepts, linked GitHub runs, receipt/commit checks, stable selected-text comparison and no-delta ambiguity, consult the [Native Continuity Field Audit](NATIVE_CONTINUITY_FIELD_AUDIT.md). It is a historical field observation, **not** a reason to re-run `persist=true` or alter accepted data.
+For three concrete production accepts, linked GitHub runs, receipt/commit checks, stable selected-text comparison and no-delta ambiguity, consult the [Native Continuity Field Audit](NATIVE_CONTINUITY_FIELD_AUDIT.md). It is a historical field observation, **not** a reason to re-run `persist=true` or alter accepted data. The current `NO_MEANINGFUL_DELTA` gate requires (1) equal candidate `input_digest`, (2) equal `profile_digest`, and (3) equal accepted and proposed Knowledge objects when Knowledge is supplied. An identical selected-text digest alone does not meet this gate: a bootstrap change-classification transition changes the candidate output digest and Knowledge identity even with unchanged source text. See the separate temporary-root regression in `tests/test_native_acceptance_causality.py` for the corresponding stable-repeat no-write control.
 
 ## Security and retention boundaries
 
