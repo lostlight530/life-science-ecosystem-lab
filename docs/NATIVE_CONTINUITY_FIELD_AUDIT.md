@@ -41,7 +41,19 @@ At the latest accepted revision, `data/knowledge/graph-manifest.json` declares *
 
 The single upstream revision shift on October 26 was `seek4science/seek` from `e47e21f6517ae0a0808c18b733ec7bdbea64e593` to `65b13b4b5675d64c50a8ab87d675033ca07a70b5`. The selected `seek/README.md` content digest remained equal. This supports **provenance/revision movement without a selected-document text change**, not evidence of an altered scientific method or biological result.
 
-The October 19 event is more subtle: the selected source text and upstream revisions were the same as October 17, but the candidate bookkeeping moved from initial unknown baseline to observed unchanged, and the evidence/knowledge digests changed. The source/API observations establish an actual extra acceptance event; they **do not alone establish** whether that event was required by the intended `NO_MEANINGFUL_DELTA` policy or whether an avoidable bookkeeping-induced accept occurred. That question needs a separate predeclared no-change contract and an isolated replay at pinned historical software versions. Do **not** silently relabel the committed event as `NO_MEANINGFUL_DELTA`, rewrite accepted `data/`, or claim a confirmed implementation defect from two unequal candidate files.
+### Source-level causal explanation of the October 19 acceptance
+
+This mechanism can now be traced directly through the **current reviewed implementations**, rather than only inferred from recorded objects:
+
+1. `evidence/aggregation.py::aggregate_evidence()` sets `changes[].kind=unknown_baseline` when no previous candidate is supplied. On the next native scheduled observation, `--previous data/inputs/current/candidate.json` supplies the accepted prior candidate and the unchanged 15 selected texts are labeled `unchanged`
+2. `aggregate_evidence()` computes `input_digest` from canonical selected **records**, but computes `output_digest` from the complete candidate envelope, **including** `changes[]`. Thus October 17 and October 19 have the same input/profile digests and different candidate output digests
+3. `.github/runtime/life_science_ecosystem_lab/knowledge.py::build_knowledge()` embeds `candidate.output_digest` as `evidence_bundle_digest` in Knowledge and signs the full Knowledge object. Even with identical extracted source text, October 19's Knowledge object is unequal to October 17's Knowledge object
+4. `.github/runtime/life_science_ecosystem_lab/lifecycle/orchestrator.py::apply_lifecycle()` returns `NO_MEANINGFUL_DELTA` only when **all three** hold: active `input_digest` equals the candidate input digest; active `profile_digest` equals the new profile digest; and the prior accepted Knowledge object equals the supplied Knowledge object (when one is supplied)
+5. On October 19 the third predicate failed: the implementation therefore issued `APPLIED` with the *descriptive* `DOCUMENT_TEXT_UNCHANGED` change kind and wrote an execution-specific receipt/event. This is **expected under the existing software predicate**, not an unexplained failure of GitHub Actions
+
+Once the `unchanged` change labels themselves stabilize, a repeat with identical selected records, profile and Knowledge takes the **no-delta** path and does not write another receipt/event. The new [isolated regression](../tests/test_native_acceptance_causality.py) characterizes both this transition and the provenance-only revision path **using synthetic records and a temporary data root**, without modifying production state.
+
+The **engineering cause** of October 19's event is now explained, but the **policy question remains open**: should a bootstrap bookkeeping reclassification that changes a candidate envelope but not selected texts or upstream commits qualify as a meaningful durable acceptance? Changing that policy would require a separate authorized runtime change, migration/replay analysis and governance review. Do **not** silently relabel the historical receipt as `NO_MEANINGFUL_DELTA`, rewrite accepted `data/`, or claim scientific novelty from the event.
 
 The Oct 26 `data/memories/current.json` marks `workflow-monitoring` as `UPDATED` while all three topics still have `MULTI_SOURCE` coverage. A status transition in extractive knowledge metadata is **not** a measurement of new scientific findings.
 
@@ -109,13 +121,21 @@ The workflow at the two scheduled-run input commits declares `23 3 * * 1` (Monda
 
 GitHub also documents that [push events caused by the workflow's `GITHUB_TOKEN` normally do not start new push workflows](https://docs.github.com/en/actions/concepts/security/github_token). Thus an accepted data commit must be checked through its own run, remote Git revision, receipt, event chain and **separately observed** post-acceptance checks; do not assume every data-only write automatically re-triggered the ordinary push CI.
 
+Read-only synthetic regression focused on the three-gate acceptance predicate:
+
+~~~sh
+python -m unittest discover -s tests -p 'test_native_acceptance_causality.py' -v
+~~~
+
+This test exercises the existing implementation on disposable input and temporary accepted state. It is **not** a re-execution of the historical network acquisition and does not change the native schedule or its authority.
+
 The three accepted events are evidence of **real continuity**, not exhaustive proof of long-term reliability, idempotence on identical candidate metadata, failure recovery, third-party monitoring, domain transfer or scientific validity. A next no-delta field audit should freeze the exact current candidate/profile/runtime, keep run/attempt and stored outputs separate, execute read-only or isolated comparisons and retain both a positive and negative control before requesting any code or governance change.
 
 ## 6 — Decision and authority
 
 **Supported:** three distinct accepted native Git snapshots, two real scheduled accepts, one manual initial accept, three linked stored events, 15 stable selected document contents across these accepts, and an upstream SEEK revision-only change in the last interval.
 
-**Unresolved:** whether the October 19 metadata-only acceptance is intentionally meaningful; whether all other scheduled and failed runs meet durability goals; why the scheduled runs began hours after their nominal cron; how historical artifacts compare byte-for-byte after their 14-day retention; and whether any independent scientific oracle supports a domain claim.
+**Resolved at implementation level, not policy level:** the October 19 metadata-only acceptance follows the three-predicate no-delta guard and envelope-to-knowledge digest propagation. **Unresolved:** whether a bootstrap metadata-only acceptance should remain intentionally meaningful; whether all other scheduled and failed runs meet durability goals; why the scheduled runs began hours after their nominal cron; how historical artifacts compare byte-for-byte after their 14-day retention; and whether any independent scientific oracle supports a domain claim.
 
 **Not claimed:** newly discovered biology, an externally certified workflow, completion of a cross-domain benchmark, automatic external service metadata synchronization, or a new software behavior from this documentation.
 

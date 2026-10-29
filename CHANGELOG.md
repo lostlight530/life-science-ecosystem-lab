@@ -2,6 +2,8 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Characterize native acceptance semantics with synthetic, disposable-root regression: bootstrap change-label reclassification can produce a distinct accepted Knowledge envelope despite stable selected text, while a subsequent identical observation yields `NO_MEANINGFUL_DELTA` with no receipt/event; upstream-Commit-only movement remains a separate provenance transition. Record the code-level mechanism without changing existing Workflow/Tool/Framework implementations, production state or governing policy
+
 - Record a pinned, independently replayable three-accept native production continuity field audit (October 17/19/26), distinguishing selected document content hashes, upstream Git revisions, candidate bookkeeping, event identities and Git commits; explicitly retain a metadata-only idempotence question without changing Workflow, Tools or accepted data
 
 - Add read-only cross-asset evidence replay instructions, explicitly scoped falsification/negative controls and a transferability review worksheet without modifying existing Workflow, Tool, Bio Tool, Framework runtime, CI fixtures or accepted production data
