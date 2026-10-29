@@ -17,6 +17,8 @@ This repository is a **research software engineering methodology demonstrator**,
 
 The **eight stage names and required audit boundaries remain invariant**. Domain adapters, algorithms, datasets, measurable properties and examples vary. A method may fail or be inapplicable in a given case; reasons and evidence must be retained rather than overwritten with `PASS`.
 
+The [cross-asset evidence replay protocol](EVIDENCE_REPLAY_PROTOCOL.md) turns these method stages into a concrete, read-only multi-asset validation and negative-control worksheet. It remains distinct from new executable gates, formal scientific acceptance or a demonstrated generalization benchmark.
+
 ## Three independently callable software assets
 
 - **Knowledge Workflow** manages approved-source ingestion, extractive graph, longitudinal state transitions, receipts and Git-backed replay. Its `data/` acceptance is never delegated to a research case.

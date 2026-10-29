@@ -2,6 +2,8 @@
 
 This project's independent Workflow, two Tools and separate experimental Framework produce **bounded engineering evidence**, not clinical/biological correctness or external platform certification. Determine *exactly which artifact, version, command and check* supports a statement.
 
+For an end-to-end **read-only replay with negative controls and claim-level review fields**, see [Cross-asset evidence replay](EVIDENCE_REPLAY_PROTOCOL.md). For cross-service identity, version and standards compatibility, see [Interoperability review](INTEROPERABILITY_REVIEW.md). These guides add no new executable guarantee.
+
 ## Six independent evidence surfaces
 
 | Evidence level | Observable result | Does **not** establish |

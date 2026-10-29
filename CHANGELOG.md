@@ -2,6 +2,10 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Add read-only cross-asset evidence replay instructions, explicitly scoped falsification/negative controls and a transferability review worksheet without modifying existing Workflow, Tool, Bio Tool, Framework runtime, CI fixtures or accepted production data
+- Publish a dated, official-source-linked interoperability review of generic RO-Crate 1.3, Workflow RO-Crate 1.1, Workflow Testing 0.2, Workflow Run 0.6 and independent external registry/monitor identity; leave unavailable October 29 live object responses unclaimed
+- Register the new public guides in the governed documentation inventory and link them from existing entrypoints
+
 - Make both independently installed Framework CLI reports use sibling temporary files and atomic destination replacement, preserving an existing report on ordinary write/replacement failure and cleaning up staging files; verify via isolated regression and Linux/Windows CI without changing the three established assets
 - Correct Getting Started's stale two-package description: three root CLI entrypoints share one distribution while the experimental Framework remains separately packaged
 
