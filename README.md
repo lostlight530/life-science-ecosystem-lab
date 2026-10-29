@@ -11,6 +11,10 @@ This open-source repository contains **three established independently callable 
 | [Bio Tool](bio_tool/README.md) | `ls-bio` independently / CWL wrappers | Real protein FASTA/PDB file analysis and bounded JSON results |
 | [Framework — experimental](framework/README.md) | Separate `pip install -e ./framework` / `ls-framework` | Life-science cross-domain software-contract and lineage assessment, not biological interpretation |
 
+## From original pilot to independently audited research software
+
+The [origin-to-present repository reconstruction](docs/REPOSITORY_HISTORY_AND_PROVENANCE.md) follows the independently observed October 16, 2026 Git creation through the [full frozen historical census](docs/provenance/README.md) of 234 main-reachable commits, 42 PRs and 531 Actions run objects at the October 30 Asia/Shanghai cutoff. The [open-claim register](docs/CLAIM_VERIFICATION_GAPS.md) preserves unmerged/failed/cancelled evidence, external-service uncertainty and the separately attributed February 15–16 precursor without backdating the LS repository. This is an evidence snapshot, not a new execution requirement or scientific certification.
+
 ## Heterogeneous Agent cohort research
 
 [**谁说 Agent 集群不可以科研？ — An auditable multi-Agent research case**](docs/AGENT_CLUSTER_RESEARCH_CASE.md) documents three externally submitted contributions (local IDE, cloud observer, desktop Codex), their GitHub reviews, accepted corrections and evidentiary limits. [Decision ledger](docs/AGENT_REVIEW_DECISIONS.md) preserves the difference between a claim, its correction, code acceptance and independent scientific proof. Multiple Agent contributions are inspectable, but Agent runtime identity and independent scientific reproduction are not inferred from a shared Git account.
