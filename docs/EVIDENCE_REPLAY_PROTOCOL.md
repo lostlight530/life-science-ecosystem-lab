@@ -105,7 +105,7 @@ Declare a comparator and expected status **before** looking at outcomes. Mutated
 | Agent self-description alone | Identity/run independence remains unverified | Agent research did not occur |
 | Two registry fields diverge | Dated discrepancy with field-mapping uncertainty | Importer malfunction or scientific failure |
 
-For longitudinal claims, compare **separate real native runs** and keep event, outcome, attempt, validated SHA, accepted receipt, remote Git commit and time window per run. Count success, failed, cancelled, no-change and superseded attempts separately. A synthetic second apply in an isolated directory is not a second production event.
+For a **completed** longitudinal field comparison of three native accepted runs, including a metadata-only acceptance ambiguity and a provenance-only upstream revision, see [Native Continuity Field Audit](NATIVE_CONTINUITY_FIELD_AUDIT.md). For longitudinal claims, compare **separate real native runs** and keep event, outcome, attempt, validated SHA, accepted receipt, remote Git commit and time window per run. Count success, failed, cancelled, no-change and superseded attempts separately. A synthetic second apply in an isolated directory is not a second production event.
 
 ## 5 — An experiment on method transfer that may fail
 

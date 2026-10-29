@@ -20,6 +20,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |
 | Trace immutable sources, commits, and public research evidence | [Provenance](PROVENANCE.md) |
 | Replay cross-asset evidence, negative controls, and claim-level decisions | [Evidence Replay Protocol](EVIDENCE_REPLAY_PROTOCOL.md) |
+| Inspect three actual Git-backed production accepts and the no-change/provenance distinction | [Native Continuity Field Audit](NATIVE_CONTINUITY_FIELD_AUDIT.md) |
 | Review incompatible external standards, registry versions, and independent service observations | [Interoperability Review](INTEROPERABILITY_REVIEW.md) |
 | Check external standards and registration readiness | [Standards](STANDARDS.md) |
 | Maintain the repository safely and understand the publication boundary | [Maintenance](MAINTENANCE.md) |

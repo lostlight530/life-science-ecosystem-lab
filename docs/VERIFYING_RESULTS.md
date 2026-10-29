@@ -52,6 +52,8 @@ To reproduce the query, preserve the exact knowledge input and the `entities.jso
 
 Prior-state validation happens **before** any accepted apply, including when the new evidence is unchanged. An invalid old ledger, current snapshot or latest receipt produces `EXISTING_STATE_INVALID_NO_APPLY`, not a new success or an implicit repair. Logical dates are validated as canonical calendar dates and snapshot IDs are bound to their input/profile digests.
 
+An independently reconstructed [three-run native continuity field audit](NATIVE_CONTINUITY_FIELD_AUDIT.md) shows why two committed `DOCUMENT_TEXT_UNCHANGED` events are not equivalent to `NO_MEANINGFUL_DELTA`, and why a new upstream Git revision need not imply altered selected text or scientific novelty. The October 19 metadata-only acceptance remains an open policy/implementation question, not a confirmed defect.
+
 ## Native workflow reading guide
 
 1. Check the GitHub Actions event: PR/push CI, synthetic CWL replay, manual observation and scheduled persistence are different events

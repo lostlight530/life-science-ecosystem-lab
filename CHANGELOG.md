@@ -2,6 +2,8 @@
 
 ## Unreleased · current working tree (package metadata 0.4.0)
 
+- Record a pinned, independently replayable three-accept native production continuity field audit (October 17/19/26), distinguishing selected document content hashes, upstream Git revisions, candidate bookkeeping, event identities and Git commits; explicitly retain a metadata-only idempotence question without changing Workflow, Tools or accepted data
+
 - Add read-only cross-asset evidence replay instructions, explicitly scoped falsification/negative controls and a transferability review worksheet without modifying existing Workflow, Tool, Bio Tool, Framework runtime, CI fixtures or accepted production data
 - Publish a dated, official-source-linked interoperability review of generic RO-Crate 1.3, Workflow RO-Crate 1.1, Workflow Testing 0.2, Workflow Run 0.6 and independent external registry/monitor identity; leave unavailable October 29 live object responses unclaimed
 - Register the new public guides in the governed documentation inventory and link them from existing entrypoints
