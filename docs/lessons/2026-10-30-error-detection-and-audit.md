@@ -76,3 +76,7 @@ These are reusable **research-process hypotheses and safeguards**, not a claim t
 - If independent biological or cross-domain test cases show the methods inapplicable, preserve the negative transfer result rather than lowering standards to manufacture success
 
 This page is **append-only learning**, not a runtime instruction, institutional standard, agent identity attestation, acceptance receipt, publication approval or proxy for `data/` truth
+
+## New self-falsification case: a green archival PR can still be quantitatively wrong
+
+An independent follow-up on the same archived observations found **134 incorrect historical run labels**, caused by joining mutable display names using only a stable GitHub workflow ID, and **two incorrect medians**, caused by not independently sorting the entire scheduled-run group. See [the source-graded erratum](../provenance/RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md). This is neither a platform outage nor a biological computation failure: it is an error in *our own evidence transformation*. The correct response is to retain the flawed dated index as historical evidence, publish exact Run-ID-based corrections and predeclare new offline assertions rather than erase the discrepancy.

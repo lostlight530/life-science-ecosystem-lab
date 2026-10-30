@@ -59,3 +59,7 @@ python -m unittest discover -s tests -p 'test_provenance_observation_reconciliat
 The first test deliberately asserts the **old** 234 / 42 / 531 census; the second asserts the **dated new** 235 / 43 / 531 and calculates the old/new run-ID set difference. Neither test calls GitHub, edits `data/`, certifies institutions, or triggers a native production apply.
 
 **Change boundary:** docs and a separate offline test only. No workflow YAML, installed Tools, Framework implementation, source/topic registry, existing frozen archives, accepted `data/`, account settings or external institutional objects were changed in this research update.
+
+## Independently discovered run-name identity defect and numerical correction
+
+A subsequent audit found that the compact index's `workflow_names` dictionary conflated historical names for the same workflow ID, **mislabeling 134 of the 531 run rows**, without changing their Run IDs or outcomes. The [independent per-run correction](run-name-attribution-audit-2026-10-30.json) and [auditable erratum](RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md) restore time-specific labels, while preserving the original index and its negative evidence. The same review recomputed two incorrect medians in the daily-quality report (correct: 342.01 and 302.41 minutes). This illustrates that successful CI can coexist with a false temporal join or arithmetic claim.

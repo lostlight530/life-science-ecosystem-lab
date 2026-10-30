@@ -29,6 +29,8 @@
 
 These are **new observations**, not retroactive edits of the original twelve claims or a change in production authority. The associated [public lessons](lessons/2026-10-30-error-detection-and-audit.md) are anonymized process records.
 
+| L16 · temporal attribution and descriptive statistics | [Independent 2026-10-30 erratum](provenance/RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md) finds 134 run-name labels derived from the wrong historical name and two wrong medians despite green CI | Retain per-Run temporal names and recompute every reported median from raw group members; review external oracle independence | Workflow ID means immutable display name, or passing structure tests proves all report math |
+
 ## Decision rights and four incompatible truth levels
 
 **Software correctness:** versioned code, actual test runner, meaningful negative controls and exact machine status. Passing is bounded by the tested contract
