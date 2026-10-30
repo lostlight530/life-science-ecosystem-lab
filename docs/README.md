@@ -10,6 +10,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |
 | Run the full external Agent + protein-structure dataset/tool/graph demo | [Protein Structure Field Demo](PROTEIN_STRUCTURE_FIELD_DEMO.md) |
 | Run and verify a real guarded production acceptance | [Production Operations](PRODUCTION_OPERATIONS.md) |
+| Review independently discovered 134-run name attribution and schedule-median errors | [Run-name/Median Erratum](provenance/RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md) |
 | Trace the repository from the original pilot, all PRs, native accepted events and external evidence to the present cutoff | [Origin-to-Present History](REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Frozen API Census](provenance/README.md) |
 | Reconcile the initial GitHub census with later run disappearance, PR #43 and revised denominator | [Origin-to-Current Reconciliation](provenance/RECONCILIATION_2026-10-30.md) · [Machine-readable reconciliation](provenance/action-run-reconciliation-2026-10-30.json) |
 | Review each local day of native GitHub scheduling, self-checks and real Knowledge accepts | [Daily Native Workflow Quality](provenance/NATIVE_DAILY_QUALITY_2026-10-30.md) · [Daily JSON ledger](provenance/native-daily-quality-2026-10-30.json) |

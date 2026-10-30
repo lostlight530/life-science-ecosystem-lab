@@ -4,6 +4,8 @@
 
 **Observation cutoff:** `2026-10-30T00:49:52.775Z` UTC = 2026-10-30 Asia/Shanghai, before 01:41 UTC on October 30. **Current reference main:** `ae1ac9c1e42ca707b1f44f5cc46b15c787b05899`. Time grouping is **Asia/Shanghai**, not UTC, and recorded `created_at` is the API-visible run time, not a verified workflow-dispatch, queue or runner start clock.
 
+**Correction following independent review:** Two median values in this report were originally incorrect despite green structural CI. The source 28-run ledger was unchanged; see the [separate per-run identity and statistics erratum](RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md). The corrected medians are 342.01 minutes (two native Monday runs) and 302.41 minutes (twelve two-plane daily checks).
+
 ## Research question and falsifiers
 
 Can independently tracked native scheduled runs (a) actually occur and complete with evidence, (b) respect distinct read/write authorities, (c) be observed against their declared schedule, and (d) avoid confusing operational success with accepted Knowledge or scientific novelty?
@@ -17,9 +19,9 @@ Can independently tracked native scheduled runs (a) actually occur and complete 
 
 | Workflow | Configured nominal UTC cadence | Observed successes | Offset from nominal schedule | Observed offset median |
 | --- | --- | ---: | ---: | ---: |
-| Knowledge production | weekly Monday 03:23 UTC | 2 / 2 | 340.25–343.77 min | 340.25 min |
+| Knowledge production | weekly Monday 03:23 UTC | 2 / 2 | 340.25–343.77 min | 342.01 min |
 | Knowledge continuity | daily 04:17 UTC | 13 / 13 | 261.12–400.25 min | 311.38 min |
-| Dual-plane self-check | daily 01:41 UTC | 12 / 12 | 287.17–358.95 min | 295.77 min |
+| Dual-plane self-check | daily 01:41 UTC | 12 / 12 | 287.17–358.95 min | 302.41 min |
 | Bio QA | weekly Friday 02:19 UTC | 1 / 1 | 314.35–314.35 min | 314.35 min |
 
 All 28 observed scheduled runs have final `success` and their Run Job lists were separately inspected as successful: native Knowledge `validate + apply`; daily self-check independent `Institutional defaults + Project custom`; continuity `verify`; weekly Bio `offline + pinned-field`. This is a **review observation**, not an immutable copy of all per-job logs. At the snapshot there were **no observed failures** among these 28 scheduled run objects. Missing/unlisted runs are outside this denominator.

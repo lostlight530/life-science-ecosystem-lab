@@ -48,3 +48,7 @@ Source distinctions: Git commits are version objects; PRs are proposed/reviewed 
 **Known omissions:** inaccessible branches/forks, deleted or unavailable runs, expired Actions artifacts, private account records, unverified February predecessor sources, third-party API responses unavailable during this session, all future runs and the publishing PR itself. The snapshot is a dated lower-scoped observation of **what GitHub returned**, not a permanent full reconstruction of every unpublished operation.
 
 [Native accepted-state evidence](../NATIVE_CONTINUITY_FIELD_AUDIT.md) · [External interoperability](../INTEROPERABILITY_REVIEW.md)
+
+## Independently reviewed erratum for the second observation
+
+The [historical workflow-name and median erratum](RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md) documents **134 mislabeled compact-index rows** from collapsing different run names under one workflow ID, and corrects two reported schedule medians. The original index remains unchanged; the [new per-run source-graded correction](run-name-attribution-audit-2026-10-30.json) must be used when a historically precise workflow name is required.
