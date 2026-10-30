@@ -60,3 +60,11 @@ The [post-merge record](POST_MERGE_RECHECK_2026-10-30.md) (source main `56ac4a90
 ## Later completed October 30 schedule observation
 
 The [post-schedule read-only closeout](POST_SCHEDULE_OBSERVATION_2026-10-30.md) was observed **after** the three scheduled jobs for the local October 30 calendar date returned. It pins pre-review main `5da107dfe8521fbf2a1a2f5653ce6aea23bfc1dc`, reconciles the 547 previous Run IDs with 563 currently visible IDs (**16 new, 0 missing in this specific comparison**), and independently verifies the observed 31 scheduled workflow results against **48 successful Jobs**. Current visible outcomes were 522 success, 41 cancelled and no currently visible failure; the earlier frozen eight failures must **not** be erased. The new report also preserves Bio's `WARN_UNCERTAIN_RESIDUES`, nominal-cron versus API-created-time differences, three unchanged accepted Knowledge Receipts, and current external-object retrieval limitations. All original frozen API snapshots and correction artifacts remain unchanged; this page is an index, not accepted `data/`.
+
+### Offline 563-run identity replay (post-schedule additive evidence)
+
+The subsequent [16-run machine delta](post-schedule-observation-2026-10-30.json) and [independent offline replay test](../../tests/test_post_schedule_provenance_replay.py) check the 531 → 547 → 563 **exact unique Run-ID population**, outcomes and trigger totals, the 28 + 3 observed scheduled Runs, 43 + 5 observed scheduled Jobs, and four independently re-sorted cron-versus-`created_at` medians. The [post-schedule narrative](POST_SCHEDULE_OBSERVATION_2026-10-30.md) remains the human-readable companion. The precise original post-schedule API-request time was not saved, so the JSON explicitly uses `observed_at_utc: null`; it does not invent a timestamp or retroactively modify the frozen source observations. The re-fetched source fields do not attest to deleted run history, runner-log byte retention, scientific accuracy or a new accepted `data/` event.
+
+```sh
+python -m unittest discover -s tests -p 'test_post_schedule_provenance_replay.py' -v
+```
