@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "SOURCE_GRADED_APPEND_ONLY_NATIVE_MEDIAN_CORRECTION",
+  "source": "native-daily-quality-2026-10-30.json",
+  "created_at_utc": "2026-10-30T01:58:02.643Z",
+  "original_source_unchanged": true,
+  "source_run_count": 28,
+  "groups": {
+    "Verify accepted life-science knowledge continuity": {
+      "observed_count": 13,
+      "old_published_median_minutes": 311.38,
+      "corrected_median_minutes": 311.38
+    },
+    "Daily research self-check — Institutional defaults and project custom": {
+      "observed_count": 12,
+      "old_published_median_minutes": 295.77,
+      "corrected_median_minutes": 302.41
+    },
+    "Life Science Knowledge Workflow — Native Lifecycle": {
+      "observed_count": 2,
+      "old_published_median_minutes": 340.25,
+      "corrected_median_minutes": 342.01
+    },
+    "Life Science Bio Tool — Independent Data Processing": {
+      "observed_count": 1,
+      "old_published_median_minutes": 314.35,
+      "corrected_median_minutes": 314.35
+    }
+  },
+  "limits": [
+    "Median independently sorted over full scheduled-run rows; manual and PR runs excluded",
+    "Nominal cron versus API run created_at is an observed timestamp offset, not verified queue latency or an availability SLA"
+  ]
+}
