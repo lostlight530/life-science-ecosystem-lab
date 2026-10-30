@@ -22,3 +22,13 @@ At each observation, record UTC time, reference main SHA, complete pagination, e
 Use independent tests as falsifiers. Rejected or unknown outcomes belong in the evidence record. Do not equate an Agent self-description with verified execution, a passing test with science, or an external registry link with certification.
 
 **Outcome:** a reusable evidence-governance case study and additive archival correction, not a claim of biological discovery, external institutional approval, full historical Runner-log recovery or an implemented change to any core software asset.
+
+## Later same-day scheduled closeout — independently observed October 30
+
+The later [31-run / 563-visible-Run closeout](../provenance/POST_SCHEDULE_OBSERVATION_2026-10-30.md) is a **new observation** after the archived partial-day cutoff, not a retroactive correction to it. The exact previous 547 Run IDs all remain visible with unchanged terminal states and 16 additional successful Runs; previously archived eight failed Runs remain historical negative evidence. A set difference is more informative than equating two total counts.
+
+The October 30 schedule contains **three actually executed workflows**: independent institutional/project Jobs, Bio offline plus pinned-field Jobs, and accepted-Knowledge continuity. Their Job lists were independently retrieved rather than inferred from the parent green badge. The Bio offline job had a **FASTA uncertainty warning** despite success, while the pinned-field job reported six processed pinned examples; neither should be silently reclassified as a biological result, nor equated with a separate seven-object identity-audit population.
+
+Across the now-observed 31 scheduled Runs, there are 48 successful scheduled Jobs, **not** 48 science experiments or 48 Knowledge acceptances. Recomputed median nominal-cron-to-API-created offsets differ from earlier 28-run medians because the sample population changed, not because a prior correction should be undone. The last same-day observation does not establish the GitHub scheduler's internal queue timing, a guaranteed event-delivery rate, or the cause of missing historical Run objects.
+
+A direct source read confirmed that the public WorkflowHub record still represents a registered portable CWL workflow, while same-day direct retrieval of the bio.tools, OpenEBench monitoring and Zenodo object pages was unavailable in this observation. Preserve these statuses as **independently observed / UNKNOWN**, not as an artificial platform-to-platform consistency verdict. With three existing accepted Receipts and no new accepted write, the defensible closeout for production is **NO_CHANGE_REQUIRED**.
