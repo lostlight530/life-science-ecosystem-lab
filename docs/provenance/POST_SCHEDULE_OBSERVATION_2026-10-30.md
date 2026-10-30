@@ -1,6 +1,6 @@
 # Same-day post-schedule provenance closeout — 2026-10-30
 
-[Earlier frozen census](README.md) · [Previous 547-run observation](POST_MERGE_RECHECK_2026-10-30.md) · [Historical daily ledger](NATIVE_DAILY_QUALITY_2026-10-30.md) · [Public lessons](../lessons/2026-10-30-evidence-census-and-runtime-quality.md)
+[Earlier frozen census](README.md) · [Previous 547-run observation](POST_MERGE_RECHECK_2026-10-30.md) · [Historical daily ledger](NATIVE_DAILY_QUALITY_2026-10-30.md) · [Public lessons](../lessons/2026-10-30-evidence-census-and-runtime-quality.md) · [Source-graded 16-run JSON delta](post-schedule-observation-2026-10-30.json) · [Offline 563-run replay](../../tests/test_post_schedule_provenance_replay.py)
 
 **Evidence grade:** project-owned, read-only GitHub API and selected Job-log observation · **Observed date:** 2026-10-30 UTC, after the last returned scheduled event at `10:54:39Z`; **precise API-request wall-clock time not captured** · **Pinned pre-review main:** [`5da107dfe8521fbf2a1a2f5653ce6aea23bfc1dc`](https://github.com/lostlight530/life-science-ecosystem-lab/commit/5da107dfe8521fbf2a1a2f5653ce6aea23bfc1dc)
 
@@ -24,6 +24,9 @@ The 16 newly visible Runs, oldest to newest, grouped by trigger:
 | schedule | 41021830497, 41027958936, 41044195993 | 3 success |
 
 Each Run can be re-fetched at `https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/<id>`. An exact Run ID, its `event`, `path`, `created_at`, `head_sha`, `conclusion` and `run_attempt` must be read together: a workflow's current title is not its historical title.
+
+
+**Independent replay added after this observation:** the [machine-readable delta](post-schedule-observation-2026-10-30.json) preserves exactly the 16 previously enumerated new Runs with their original public Run IDs, workflow paths, events, timestamps, code HEADs, attempts and conclusions, alongside the three new scheduled Job sets and limited non-sensitive log markers. The [offline regression](../../tests/test_post_schedule_provenance_replay.py) reconstructs the prior 531 → 547 → 563 Run-ID union, event/conclusion distributions, scheduled Job totals and four cadence medians from the archived rows. It cannot regenerate historical API responses or original runner logs; the original retrieval's precise wall-clock timestamp was **not persisted** and remains `null`, not a manufactured timestamp. The historical frozen files are not modified.
 
 ## Native daily closing observations and Job evidence
 
