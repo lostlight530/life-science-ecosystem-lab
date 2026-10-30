@@ -1,0 +1,813 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "OBSERVED_NATIVE_GITHUB_SCHEDULED_WORKFLOW_QUALITY",
+  "observed_at_utc": "2026-10-30T00:49:52.775Z",
+  "source_run_index": "actions-visible-index-2026-10-30.json",
+  "repo": "lostlight530/life-science-ecosystem-lab",
+  "observation_timezone": "Asia/Shanghai",
+  "scheduled_run_count": 28,
+  "scheduled_success_count": 28,
+  "workflow_class_summary": {
+    "Life Science Knowledge Workflow — Native Lifecycle": {
+      "nominal_cron_utc": "03:23",
+      "frequency": "weekly Monday",
+      "run_count": 2,
+      "success_count": 2,
+      "observed_offset_min": 340.25,
+      "observed_offset_max": 343.77,
+      "observed_offset_median": 340.25
+    },
+    "Verify accepted life-science knowledge continuity": {
+      "nominal_cron_utc": "04:17",
+      "frequency": "daily",
+      "run_count": 13,
+      "success_count": 13,
+      "observed_offset_min": 261.12,
+      "observed_offset_max": 400.25,
+      "observed_offset_median": 311.38
+    },
+    "Daily research self-check — Institutional defaults and project custom": {
+      "nominal_cron_utc": "01:41",
+      "frequency": "daily",
+      "run_count": 12,
+      "success_count": 12,
+      "observed_offset_min": 287.17,
+      "observed_offset_max": 358.95,
+      "observed_offset_median": 295.77
+    },
+    "Life Science Bio Tool — Independent Data Processing": {
+      "nominal_cron_utc": "02:19",
+      "frequency": "weekly Friday",
+      "run_count": 1,
+      "success_count": 1,
+      "observed_offset_min": 314.35,
+      "observed_offset_max": 314.35,
+      "observed_offset_median": 314.35
+    }
+  },
+  "daily_observation": [
+    {
+      "day_asia_shanghai": "2026-10-16",
+      "scheduled_run_ids": [],
+      "scheduled_run_count": 0,
+      "scheduled_success_count": 0,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "NO_SCHEDULED_RUN_OBSERVED_ON_LOCAL_DATE; CHECK_WORKFLOW_CREATION_AND_EXPECTATIONS"
+    },
+    {
+      "day_asia_shanghai": "2026-10-17",
+      "scheduled_run_ids": [
+        39018100269
+      ],
+      "scheduled_run_count": 1,
+      "scheduled_success_count": 1,
+      "native_manual_run_ids": [
+        38995485443
+      ],
+      "native_production_acceptance_run_ids": [
+        38995485443
+      ],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-18",
+      "scheduled_run_ids": [
+        39104619997,
+        39113275640
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-19",
+      "scheduled_run_ids": [
+        39212240189,
+        39227185707,
+        39234388500
+      ],
+      "scheduled_run_count": 3,
+      "scheduled_success_count": 3,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [
+        39227185707
+      ],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-20",
+      "scheduled_run_ids": [
+        39381392189,
+        39401074752
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-21",
+      "scheduled_run_ids": [
+        39556259140,
+        39576864291
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-22",
+      "scheduled_run_ids": [
+        39734820988,
+        39755679098
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-23",
+      "scheduled_run_ids": [
+        39911716174,
+        39918537642,
+        39931669556
+      ],
+      "scheduled_run_count": 3,
+      "scheduled_success_count": 3,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-24",
+      "scheduled_run_ids": [
+        40070323977,
+        40079984160
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-25",
+      "scheduled_run_ids": [
+        40170677920,
+        40179710305
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-26",
+      "scheduled_run_ids": [
+        40282973703,
+        40297059874,
+        40305966236
+      ],
+      "scheduled_run_count": 3,
+      "scheduled_success_count": 3,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [
+        40297059874
+      ],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-27",
+      "scheduled_run_ids": [
+        40463449543,
+        40484158969
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-28",
+      "scheduled_run_ids": [
+        40649970391,
+        40673890368
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-29",
+      "scheduled_run_ids": [
+        40836887893,
+        40861584405
+      ],
+      "scheduled_run_count": 2,
+      "scheduled_success_count": 2,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "OBSERVED_SCHEDULED_RUNS; NOT_SCIENTIFIC_OUTPUT_COUNT"
+    },
+    {
+      "day_asia_shanghai": "2026-10-30",
+      "scheduled_run_ids": [],
+      "scheduled_run_count": 0,
+      "scheduled_success_count": 0,
+      "native_manual_run_ids": [],
+      "native_production_acceptance_run_ids": [],
+      "note": "PARTIAL_DAY_BEFORE_01_41_UTC_DAILY_CRON; ABSENCE_IS_NOT_FAILURE"
+    }
+  ],
+  "scheduled_runs": [
+    {
+      "id": 39018100269,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-17T08:38:07Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-17",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 261.12,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39104619997,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-18T06:36:06Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-18",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 295.1,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39113275640,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-18T08:54:43Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-18",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 277.72,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39212240189,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-19T06:50:22Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-19",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 309.37,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39227185707,
+      "workflow": "Life Science Knowledge Workflow — Native Lifecycle",
+      "event": "schedule",
+      "created_at_utc": "2026-10-19T09:03:15Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-19",
+      "nominal_cron_utc": "03:23",
+      "offset_from_nominal_minutes": 340.25,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "validate",
+          "conclusion": "success"
+        },
+        {
+          "name": "apply",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39234388500,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-19T10:01:15Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-19",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 344.25,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39381392189,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-20T06:36:46Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-20",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 295.77,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39401074752,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-20T09:29:45Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-20",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 312.75,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39556259140,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-21T06:34:32Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-21",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 293.53,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39576864291,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-21T09:25:38Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-21",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 308.63,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39734820988,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-22T06:34:47Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-22",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 293.78,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39755679098,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-22T09:28:23Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-22",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 311.38,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39911716174,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-23T06:28:43Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-23",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 287.72,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39918537642,
+      "workflow": "Life Science Bio Tool — Independent Data Processing",
+      "event": "schedule",
+      "created_at_utc": "2026-10-23T07:33:21Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-23",
+      "nominal_cron_utc": "02:19",
+      "offset_from_nominal_minutes": 314.35,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "offline",
+          "conclusion": "success"
+        },
+        {
+          "name": "pinned-field",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 39931669556,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-23T09:24:47Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-23",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 307.78,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40070323977,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-24T06:28:10Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-24",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 287.17,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40079984160,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-24T08:56:23Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-24",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 279.38,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40170677920,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-25T06:52:44Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-25",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 311.73,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40179710305,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-25T09:12:50Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-25",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 295.83,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40282973703,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-26T06:58:36Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-26",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 317.6,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40297059874,
+      "workflow": "Life Science Knowledge Workflow — Native Lifecycle",
+      "event": "schedule",
+      "created_at_utc": "2026-10-26T09:06:46Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-26",
+      "nominal_cron_utc": "03:23",
+      "offset_from_nominal_minutes": 343.77,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "validate",
+          "conclusion": "success"
+        },
+        {
+          "name": "apply",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40305966236,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-26T10:15:22Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-26",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 358.37,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40463449543,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-27T06:50:03Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-27",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 309.05,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40484158969,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-27T09:52:54Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-27",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 335.9,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40649970391,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-28T07:25:23Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-28",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 344.38,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40673890368,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-28T10:39:45Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-28",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 382.75,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40836887893,
+      "workflow": "Daily research self-check — Institutional defaults and project custom",
+      "event": "schedule",
+      "created_at_utc": "2026-10-29T07:39:57Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-29",
+      "nominal_cron_utc": "01:41",
+      "offset_from_nominal_minutes": 358.95,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    },
+    {
+      "id": 40861584405,
+      "workflow": "Verify accepted life-science knowledge continuity",
+      "event": "schedule",
+      "created_at_utc": "2026-10-29T10:57:15Z",
+      "conclusion": "success",
+      "logical_observation_day_asia_shanghai": "2026-10-29",
+      "nominal_cron_utc": "04:17",
+      "offset_from_nominal_minutes": 400.25,
+      "verified_jobs_from_job_list": [
+        {
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "jobs_verification_scope": "Individual GitHub workflow-run jobs endpoint was checked in this review; job data not an independently archived raw log"
+    }
+  ],
+  "native_manual_run": {
+    "id": 38995485443,
+    "workflow": "Life Science Knowledge Workflow — Native Lifecycle",
+    "event": "workflow_dispatch",
+    "created_at_utc": "2026-10-17T02:34:56Z",
+    "conclusion": "success"
+  },
+  "accepted_native_execution_receipts": [
+    {
+      "run_id": 38995485443,
+      "event": "workflow_dispatch",
+      "logical_date": "2026-10-17",
+      "receipt": "data/receipts/gh-38995485443-1.json",
+      "accepted_commit": "b2d1d31f715275823f7ea0440d0a14a552f35e2a",
+      "change_kind": "INITIAL_SNAPSHOT"
+    },
+    {
+      "run_id": 39227185707,
+      "event": "schedule",
+      "logical_date": "2026-10-19",
+      "receipt": "data/receipts/gh-39227185707-1.json",
+      "accepted_commit": "6fc2c8266fcfe3655b4e8df704817b5f14",
+      "change_kind": "DOCUMENT_TEXT_UNCHANGED"
+    },
+    {
+      "run_id": 40297059874,
+      "event": "schedule",
+      "logical_date": "2026-10-26",
+      "receipt": "data/receipts/gh-40297059874-1.json",
+      "accepted_commit": "25722539226349079cda66a5390185c2399d174c",
+      "change_kind": "DOCUMENT_TEXT_UNCHANGED"
+    }
+  ],
+  "limitations": [
+    "GitHub scheduled run created_at is not dispatch/enqueue/runner pickup trace; cron offsets do not establish why delays occurred",
+    "Completion count is not expected-run coverage unless historical workflow activation and cron version are established",
+    "Success means GitHub Actions jobs finished successfully, not biological truth or scientific novelty",
+    "October 30 Asia/Shanghai is incomplete at the observation cutoff",
+    "All 28 scheduled-run job result lists were inspected during this review, but raw logs are not archived here",
+    "Source SHA/commit and dataset identity remain in the canonical existing Git receipts and run endpoints"
+  ]
+}

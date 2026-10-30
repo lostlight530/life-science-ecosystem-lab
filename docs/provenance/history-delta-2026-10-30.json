@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "PROJECT_OWNED_HISTORY_APPEND_ONLY_DELTA",
+  "observed_date_utc": "2026-10-30",
+  "repo": "lostlight530/life-science-ecosystem-lab",
+  "previous_frozen_main": "05ab6b2dc98dfe13581b5ae1bedcd11a58dbbb77",
+  "current_observed_main": "ae1ac9c1e42ca707b1f44f5cc46b15c787b05899",
+  "previous_main_reachable_commits": 234,
+  "current_main_reachable_commits": 235,
+  "new_commits": [
+    {
+      "sha": "ae1ac9c1e42ca707b1f44f5cc46b15c787b05899",
+      "date": "2026-10-29T16:34:33Z",
+      "parents": [
+        "05ab6b2dc98dfe13581b5ae1bedcd11a58dbbb77"
+      ],
+      "subject": "docs(research): pin complete LS repository history and negative evidence (#43)",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/commit/ae1ac9c1e42ca707b1f44f5cc46b15c787b05899"
+    }
+  ],
+  "previous_pr_count": 42,
+  "current_pr_count": 43,
+  "new_prs": [
+    {
+      "number": 43,
+      "title": "docs(research): reconstruct and preserve full LS provenance from first day",
+      "created_at": "2026-10-29T16:32:43Z",
+      "merged_at": "2026-10-29T16:34:34Z",
+      "merge_commit_sha": "ae1ac9c1e42ca707b1f44f5cc46b15c787b05899",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/pull/43"
+    }
+  ],
+  "total_pr_merged": 41,
+  "total_pr_closed_without_merge": 2,
+  "root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "source_urls": [
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=2",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=3",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/pulls?state=all&per_page=100"
+  ],
+  "limit": "Only GitHub visible main-reachable commits and PRs; no private predecessor proof"
+}

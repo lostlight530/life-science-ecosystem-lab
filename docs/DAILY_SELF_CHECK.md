@@ -75,3 +75,7 @@ PYTHONPATH=.github/runtime:. python -m evidence.daily_custom_runner --root . --r
 ```
 
 The original institutional/public job, its fixed allowlist, `NOT_RUN_OFFLINE` behavior and project/official separation remain unchanged. The runner reports actual `observed_at`, tested SHA, Git ref, head/base refs, workflow ref and run identifiers where available; it deliberately does not infer the nominal scheduled start from the cron expression. GitHub Actions' scheduled run creation time, observation timestamp and intended cron time require separate measurements for delay analysis. No check result is committed as a new accepted research event.
+
+## Dated longitudinal audit (separate from configuration)
+
+The [2026-10-16 to 2026-10-30 native daily quality ledger](provenance/NATIVE_DAILY_QUALITY_2026-10-30.md) records each actually visible scheduled self-check and continuity run with its GitHub Run ID, local day, observed UTC creation time and final outcome. It confirms **twelve observed scheduled two-plane self-check executions**, all completed successfully within that observation; it does **not** claim twelve independent scientific productions, uninterrupted expected scheduling, or independently verified institution availability. The October 30 observation preceded the next nominal daily cron and is therefore explicitly partial. No schedule or check implementation is changed by this documentation note.
