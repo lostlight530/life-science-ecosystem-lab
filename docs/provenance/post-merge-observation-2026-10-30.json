@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "POST_MERGE_GITHUB_API_ACTIONS_DELTA",
+  "repo": "lostlight530/life-science-ecosystem-lab",
+  "observed_at_utc": "2026-10-30T01:57:45.729Z",
+  "reference_main_sha": "56ac4a9065d8f0ff60da6eadadfdbe44a2d26615",
+  "earlier_snapshot": "actions-visible-index-2026-10-30.json",
+  "earlier_count": 531,
+  "current_count": 547,
+  "new_count": 16,
+  "previous_ids_absent": [],
+  "previous_id_event_or_outcome_changes": [],
+  "current_conclusions": {
+    "cancelled": 41,
+    "success": 506
+  },
+  "current_events": {
+    "pull_request": 259,
+    "push": 256,
+    "schedule": 28,
+    "workflow_dispatch": 4
+  },
+  "source_urls": [
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=2",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=3",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=4",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=5",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=6"
+  ],
+  "new_run_records": [
+    {
+      "id": 40983926830,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "event": "push",
+      "created_at_utc": "2026-10-30T01:07:28Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "56ac4a9065d8f0ff60da6eadadfdbe44a2d26615",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40983926830"
+    },
+    {
+      "id": 40983926822,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "event": "push",
+      "created_at_utc": "2026-10-30T01:07:28Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "56ac4a9065d8f0ff60da6eadadfdbe44a2d26615",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40983926822"
+    },
+    {
+      "id": 40983926784,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "event": "push",
+      "created_at_utc": "2026-10-30T01:07:28Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "56ac4a9065d8f0ff60da6eadadfdbe44a2d26615",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40983926784"
+    },
+    {
+      "id": 40983770268,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T01:05:55Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "1d4e24835a699eb41c5b16762819d316f98976f7",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40983770268"
+    },
+    {
+      "id": 40983769934,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T01:05:55Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "1d4e24835a699eb41c5b16762819d316f98976f7",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40983769934"
+    },
+    {
+      "id": 40983769877,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T01:05:55Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "1d4e24835a699eb41c5b16762819d316f98976f7",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40983769877"
+    },
+    {
+      "id": 40983759410,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "event": "push",
+      "created_at_utc": "2026-10-30T01:05:49Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "1d4e24835a699eb41c5b16762819d316f98976f7",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40983759410"
+    },
+    {
+      "id": 40982892141,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "event": "push",
+      "created_at_utc": "2026-10-30T00:57:20Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "ab56cd79f5532623c2043f5b18f744b159f39aa3",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982892141"
+    },
+    {
+      "id": 40982892007,
+      "workflow_id": 387401113,
+      "observed_workflow_name": "Daily research self-check — Institutional defaults and project custom",
+      "event": "push",
+      "created_at_utc": "2026-10-30T00:57:20Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "ab56cd79f5532623c2043f5b18f744b159f39aa3",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982892007"
+    },
+    {
+      "id": 40982891979,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "event": "push",
+      "created_at_utc": "2026-10-30T00:57:20Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "ab56cd79f5532623c2043f5b18f744b159f39aa3",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982891979"
+    },
+    {
+      "id": 40982891959,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "event": "push",
+      "created_at_utc": "2026-10-30T00:57:20Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "ab56cd79f5532623c2043f5b18f744b159f39aa3",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982891959"
+    },
+    {
+      "id": 40982774757,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T00:56:11Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "855be0516ed94aa54977ccc4b081675e874d33b1",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982774757"
+    },
+    {
+      "id": 40982774740,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T00:56:11Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "855be0516ed94aa54977ccc4b081675e874d33b1",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982774740"
+    },
+    {
+      "id": 40982774726,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T00:56:11Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "855be0516ed94aa54977ccc4b081675e874d33b1",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982774726"
+    },
+    {
+      "id": 40982774718,
+      "workflow_id": 387401113,
+      "observed_workflow_name": "Daily research self-check — Institutional defaults and project custom",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T00:56:11Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "855be0516ed94aa54977ccc4b081675e874d33b1",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982774718"
+    },
+    {
+      "id": 40982731698,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "event": "push",
+      "created_at_utc": "2026-10-30T00:55:45Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "855be0516ed94aa54977ccc4b081675e874d33b1",
+      "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/40982731698"
+    }
+  ],
+  "last_main_push_job_sample": {
+    "40983926830": [
+      {
+        "name": "offline",
+        "conclusion": "success"
+      },
+      {
+        "name": "pinned-field",
+        "conclusion": "skipped"
+      }
+    ],
+    "40983926822": [
+      {
+        "name": "Verify evidence CLI, source contracts and docs",
+        "conclusion": "success"
+      }
+    ],
+    "40983926784": [
+      {
+        "name": "Portable package",
+        "conclusion": "success"
+      },
+      {
+        "name": "Knowledge Workflow",
+        "conclusion": "success"
+      },
+      {
+        "name": "Repository contracts",
+        "conclusion": "success"
+      },
+      {
+        "name": "Evidence Tool",
+        "conclusion": "success"
+      },
+      {
+        "name": "validate",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "provenance_limits": [
+    "This is public API visibility at one UTC instant, not proof of all historical executions",
+    "Missing older historical failures remain in the separately frozen first observation",
+    "Scheduled success is not an expected-run availability percentage",
+    "Jobs with skipped conclusion are not completed field checks",
+    "No actors, contact details, private run logs or raw private prompts stored"
+  ]
+}
