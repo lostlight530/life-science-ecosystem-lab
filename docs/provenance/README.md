@@ -14,6 +14,19 @@ This is a **project-authored, non-production, read-only GitHub API observation**
 
 Every JSON includes `observed_at_utc`, `reference_main_sha`, `source_urls`, `returned_count` and explicit `provenance_limit`; unique IDs and the parent-closed main DAG are checked in the independent [offline archive test](../../tests/test_repository_provenance_archive.py). These files are stored under `docs/provenance/`, **not** the production-authoritative `data/`.
 
+## Later append-only reconciliation · 2026-10-30
+
+The initial three JSON objects above are frozen at the original cutoff and **must not** be overwritten. The [subsequent reconciliation](RECONCILIATION_2026-10-30.md) and [daily run quality](NATIVE_DAILY_QUALITY_2026-10-30.md) add versioned observations rather than editing those observations. New complementary files:
+
+- [History delta](history-delta-2026-10-30.json): one additional main commit and PR #43, resulting in 235 commits / 43 PRs on the pre-update main
+- [Later 531-run compact index](actions-visible-index-2026-10-30.json): no actor identity fields, each unique visible run with observed event/date/status
+- [Set reconciliation](action-run-reconciliation-2026-10-30.json): eight previous failures absent from new API results, eight newer runs, three separately classified lower-grade observations
+- [Daily native quality ledger](native-daily-quality-2026-10-30.json): 15 Shanghai calendar days and 28 scheduled-run Job checks, with accepted Knowledge writes distinguished from read-only checks
+- [Offline reconstruction test](../../tests/test_provenance_observation_reconciliation.py): verifies both snapshots and the derived daily schedule without network access
+- [Privacy-minimized methodological lessons](../lessons/2026-10-30-error-detection-and-audit.md): falsifiable error classes and evidence tier boundaries
+
+A current API total is an observation-specific count, not an all-time verdict. Missing run records are **not** evidence of a specific deletion actor or motive.
+
 ## Offline, read-only repeat
 
 ~~~sh

@@ -19,6 +19,16 @@
 | L11 · research materials and retention | Tracked source-cited Knowledge state and finite-retention CI Artifacts | Check original license, re-acquisition rights, byte identity and artifact availability before republication | Assume all public source text is freely republishable or that temporary artifacts exist forever |
 | L12 · distinct CI/production semantics | Three native accepted Git commits; [GitHub token-trigger rules](https://docs.github.com/en/actions/concepts/security/github_token) generally prevent recursive push CI | Verify each run, `data/` receipt, Git state and independently observed CI rather than inferring triggers | Equate a green PR check to a completed production write |
 
+## Addendum · subsequent 2026-10-30 observation, separate from the original pinned cutoff
+
+| ID | Additional dated observation | Remains falsifiable / unresolved |
+| --- | --- | --- |
+| L13 · historical Actions availability | [Two-census reconciliation](provenance/RECONCILIATION_2026-10-30.md) finds eight old failure IDs absent from 531 currently visible runs; three other previously inspected failures have no durable raw-log copy | Request exact IDs again with independent credentials and retain authorized original logs where possible; no evidence yet identifies deletion actor, reason or mechanism |
+| L14 · schedule-to-run-clock offset | [28-run daily ledger](provenance/NATIVE_DAILY_QUALITY_2026-10-30.md) observes successful scheduled runs but nominal cron offsets of several hours across workflows | Historical activation, queue entry, dispatcher and runner timing are not established; a current successful-run list is not expected-cadence coverage |
+| L15 · failure taxonomy | A single document-inventory assertion was observed across eleven failing Jobs, comprising one omission and one excess-entry defect pattern | Recover original vanished logs for independent recheck; repeated failures and shared oracles are not independent scientific replications |
+
+These are **new observations**, not retroactive edits of the original twelve claims or a change in production authority. The associated [public lessons](lessons/2026-10-30-error-detection-and-audit.md) are anonymized process records.
+
 ## Decision rights and four incompatible truth levels
 
 **Software correctness:** versioned code, actual test runner, meaningful negative controls and exact machine status. Passing is bounded by the tested contract

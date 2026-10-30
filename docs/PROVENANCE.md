@@ -2,6 +2,8 @@
 
 The [origin-to-present historical reconstruction](REPOSITORY_HISTORY_AND_PROVENANCE.md) and [frozen GitHub REST API census](provenance/README.md) cover all 42 PR outcomes, 234 reachable main commits and 531 publicly returned run records at a precise observation cutoff. Their JSON snapshots are **project-authored, non-production historical evidence**: they do not replace Git objects, accepted `data/`, external institution records, expired Actions artifacts, direct scientific observations or reviewer authority. The [open claim/falsifier register](CLAIM_VERIFICATION_GAPS.md) keeps unknown, negative and unmerged evidence independently visible.
 
+A [later append-only reconciliation](provenance/RECONCILIATION_2026-10-30.md) records an observed difference between two dated Actions API snapshots, including disappeared historical failures and an independent [daily native quality ledger](provenance/NATIVE_DAILY_QUALITY_2026-10-30.md). The original census is deliberately not rewritten. Per-run absence from a later API response is not evidence of its deletion mechanism or actor, and no retired-run metadata can substitute for missing original Job logs.
+
 Each product must preserve the source identity needed to reproduce its result
 
 Minimum evidence includes the repository, immutable commit, source path, content digest, schema version, validation command, and final status
