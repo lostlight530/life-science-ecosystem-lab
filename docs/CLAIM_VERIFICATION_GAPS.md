@@ -59,3 +59,17 @@ These are **subsequent source-graded corrections**, not retroactive edits to the
 | L13, disappeared Run objects | Exact Run ID / frozen source comparison remains auditable after current live HTTP 404 | Ownership decisions to clear runs are ordinary platform lifecycle operations; no actor, motive or mechanism is derivable from 404 alone |
 
 The [offline causal-case replay](../tests/test_failure_causal_replay.py) verifies stored case consistency and synthetic positive/negative equality controls, **not** an authenticated replay of inaccessible remote runner logs. A human-controlled failure-record retention decision must not be mislabeled as scientific evidence suppression. The open research question is whether the *causal conclusion* survives a source-level falsification test.
+
+## Addendum · 2026-10-31 independent root-to-current full-population replay
+
+This is a new `bc33c75efeee341194f1d2eec804565ed58a90bb`-pinned observation with a bracketed UTC window, **not** a rewrite of the initial Oct 29 source ledger. The [complete normalized 242-Commit / 50-PR / 598-Run census](provenance/FULL_HISTORY_REPLAY_2026-10-31.md) validates all previous 587 Run IDs against current API fields and retains the frozen eight failures, two original inaccurate medians and 134 old workflow-name attributions. No new scientific claim, Knowledge acceptance or new external authorization is established
+
+| Open claim | Source-backed observation | Additional required authority |
+| --- | --- | --- |
+| L05 / L13 — historic Run availability | 598 currently visible objects, all previous 587 IDs unchanged; separate earlier 531-row snapshot contains 8 absent failures | Recover lawful original runner-log evidence or explicit authenticated deletion/audit record before causal attribution; never turn current API zero failures into an all-time success rate |
+| L14 / L16 — scheduler timestamp statistics | 31 completed scheduled Runs, 48 successful Jobs, independently recomputed cron-to-created medians across four workflows | Exact dispatcher, queue, dropped event and activation data before claiming scheduler reliability or outage |
+| L06 — external registries | Publicly indexed WorkflowHub version 2 metadata; direct current bio.tools/OpenEBench/Zenodo objects not retrievable in this session | Separately pin provider-local original bytes and clocks, never infer external scientific approval |
+| L17 — server-side branch governance | GitHub `main.protected=false`, public Rulesets `[]`; branch-protection GET returned `403` for connected integration | A separately authorized admin must read or configure and verify required merge checks, review rules and bypass allowances; green CI alone does not enforce it |
+| L18 — completed research evidence | Only three unchanged production Knowledge Receipts despite 598 visible Runs, plus Bio file audit without independent biological oracle | New domain-controlled validation and independent reference truth before promoting a substantive scientific proposition |
+
+The [offline independent replay](../tests/test_full_history_census_replay.py) intentionally asserts previous frozen Git Blob identities and accepted `data/` byte integrity; a CI PASS is a bounded software/evidence check, **not** scientific authenticity
