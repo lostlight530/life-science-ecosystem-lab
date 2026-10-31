@@ -1,0 +1,377 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "APPEND_ONLY_POST_REVIEW_GITHUB_ACTIONS_DELTA",
+  "repo": "lostlight530/life-science-ecosystem-lab",
+  "observation_date_asia_shanghai": "2026-10-31",
+  "observed_at_utc": null,
+  "observation_clock_limitation": "Exact HTTP request UTC instant was not persisted; records were retrieved during the 2026-10-31 Asia/Shanghai review. Do not backdate to commit or runner times.",
+  "reference_main_sha": "1fe2fb530de3e62b7ca27e7493909313f733f934",
+  "previous_sources": [
+    "actions-visible-index-2026-10-30.json",
+    "post-merge-observation-2026-10-30.json",
+    "post-schedule-observation-2026-10-30.json"
+  ],
+  "previous_count": 563,
+  "current_count": 587,
+  "old_run_ids_missing": [],
+  "old_run_event_or_conclusion_changes": [],
+  "new_count": 24,
+  "page_lengths": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    87
+  ],
+  "source_urls": [
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=2",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=3",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=4",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=5",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=6"
+  ],
+  "current_events": {
+    "push": 282,
+    "pull_request": 270,
+    "schedule": 31,
+    "workflow_dispatch": 4
+  },
+  "current_conclusions": {
+    "success": 546,
+    "cancelled": 41
+  },
+  "new_events": {
+    "push": 16,
+    "pull_request": 8
+  },
+  "new_conclusions": {
+    "success": 24
+  },
+  "new_run_records": [
+    {
+      "id": 41074022957,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:42:36Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "d2e89627f5b9577bf35ba9bfae29a3958c651e06"
+    },
+    {
+      "id": 41074085450,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:43:02Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "6e187d7fa869d8ee0ef5cac6297b804745eac1f9"
+    },
+    {
+      "id": 41074120631,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:43:16Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "dafb0b2f5571c064a3b5b3fa1945f0641405402c"
+    },
+    {
+      "id": 41074203556,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "path": ".github/workflows/validate.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T14:43:49Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "dafb0b2f5571c064a3b5b3fa1945f0641405402c"
+    },
+    {
+      "id": 41074203581,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T14:43:49Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "dafb0b2f5571c064a3b5b3fa1945f0641405402c"
+    },
+    {
+      "id": 41074361509,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:44:52Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "20ef76346b553906360ec05598fd4239eca4aa22"
+    },
+    {
+      "id": 41074361575,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "path": ".github/workflows/validate.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:44:52Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "20ef76346b553906360ec05598fd4239eca4aa22"
+    },
+    {
+      "id": 41075412690,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:51:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "b00df29a61e11e722064ab3d98796bd165fe0a6c"
+    },
+    {
+      "id": 41075575152,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:52:56Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "77e99c7362b4481aa083a75d7548a542383dacb3"
+    },
+    {
+      "id": 41075676186,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:53:36Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "d9b9b821f10dc6cdee7fa6122bb1bba34c761001"
+    },
+    {
+      "id": 41075724547,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:53:56Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "0b4fa378a2172f605b328765eb6d923758255b02"
+    },
+    {
+      "id": 41075866685,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "path": ".github/workflows/life-science-bio.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T14:54:53Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "0b4fa378a2172f605b328765eb6d923758255b02"
+    },
+    {
+      "id": 41075866705,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T14:54:53Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "0b4fa378a2172f605b328765eb6d923758255b02"
+    },
+    {
+      "id": 41075866852,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "path": ".github/workflows/validate.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-30T14:54:53Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "0b4fa378a2172f605b328765eb6d923758255b02"
+    },
+    {
+      "id": 41076008415,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "path": ".github/workflows/life-science-bio.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:55:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "928aa525551822be7b33061ea70f169ea0961970"
+    },
+    {
+      "id": 41076008481,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:55:51Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "928aa525551822be7b33061ea70f169ea0961970"
+    },
+    {
+      "id": 41076008497,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "path": ".github/workflows/validate.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-30T14:55:51Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "928aa525551822be7b33061ea70f169ea0961970"
+    },
+    {
+      "id": 41155123896,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-31T01:23:30Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "30db1fc116ba32b7b4929679cc9054112421fd9e"
+    },
+    {
+      "id": 41155149675,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "path": ".github/workflows/validate.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-31T01:23:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "30db1fc116ba32b7b4929679cc9054112421fd9e"
+    },
+    {
+      "id": 41155149703,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-31T01:23:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "30db1fc116ba32b7b4929679cc9054112421fd9e"
+    },
+    {
+      "id": 41155149722,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "path": ".github/workflows/life-science-bio.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-10-31T01:23:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "30db1fc116ba32b7b4929679cc9054112421fd9e"
+    },
+    {
+      "id": 41155229252,
+      "workflow_id": 386580410,
+      "observed_workflow_name": "Validate life-science workflow and evidence contracts",
+      "path": ".github/workflows/validate.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-31T01:24:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "1fe2fb530de3e62b7ca27e7493909313f733f934"
+    },
+    {
+      "id": 41155229294,
+      "workflow_id": 386937908,
+      "observed_workflow_name": "Life Science Evidence Tool — Independent Verification",
+      "path": ".github/workflows/life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-31T01:24:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "1fe2fb530de3e62b7ca27e7493909313f733f934"
+    },
+    {
+      "id": 41155229298,
+      "workflow_id": 387352311,
+      "observed_workflow_name": "Life Science Bio Tool — Independent Data Processing",
+      "path": ".github/workflows/life-science-bio.yml",
+      "event": "push",
+      "created_at_utc": "2026-10-31T01:24:50Z",
+      "conclusion": "success",
+      "attempt": 1,
+      "head_sha": "1fe2fb530de3e62b7ca27e7493909313f733f934"
+    }
+  ],
+  "repository_pre_pr": {
+    "main_sha": "1fe2fb530de3e62b7ca27e7493909313f733f934",
+    "main_reachable_commits": 241,
+    "pr_objects": 49,
+    "pr_merged": 47,
+    "pr_closed_not_merged": [
+      29,
+      32
+    ],
+    "open_prs": 0,
+    "tracked_blob_files": 243,
+    "release_tags": [
+      "v0.4.0"
+    ]
+  },
+  "scheduled_jobs_independently_rechecked": {
+    "scheduled_runs": 31,
+    "successful_scheduled_runs": 31,
+    "successful_jobs": 48,
+    "job_classes": {
+      "continuity": 14,
+      "dual_daily_selfcheck": 26,
+      "weekly_knowledge": 4,
+      "friday_bio": 4
+    },
+    "recent_run_ids": [
+      41021830497,
+      41027958936,
+      41044195993
+    ],
+    "recent_job_ids": [
+      123950680737,
+      123950681053,
+      123970504971,
+      123970505218,
+      124024107327
+    ],
+    "warning": "WARN_UNCERTAIN_RESIDUES",
+    "bio_field_marker": "VERIFIED_PINNED_BLOBS_AND_ANALYZED_BIO_DATA 6",
+    "continuity_marker": "KNOWLEDGE_QUALITY_PASS",
+    "source_grade": "DIRECT_RUN_JOBS_AND_SELECTED_JOB_LOGS"
+  },
+  "accepted_production_receipts": [
+    "data/receipts/gh-38995485443-1.json",
+    "data/receipts/gh-39227185707-1.json",
+    "data/receipts/gh-40297059874-1.json"
+  ],
+  "historical_negative_archive": "action-runs-2026-10-30.json (older frozen 531 includes 8 failed and 40 cancelled; not part of current visible population)",
+  "scientific_status": "NO_NEW_SCIENTIFIC_CLAIM",
+  "production_status": "NO_CHANGE_REQUIRED",
+  "limits": [
+    "No exact request wall clock archived",
+    "GitHub visible listing cannot reconstruct deleted/expired runs or prove expected cron delivery",
+    "Scheduled 31/48 is an observed numerator, not uptime or scientific result",
+    "GitHub Run success is not third-party scientific acceptance",
+    "No external private agent execution was attested",
+    "Public third-party page access can be cached or blocked",
+    "This is a pre-PR snapshot and does not count its own new checks"
+  ]
+}
