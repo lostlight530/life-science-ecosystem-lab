@@ -68,3 +68,7 @@ The subsequent [16-run machine delta](post-schedule-observation-2026-10-30.json)
 ```sh
 python -m unittest discover -s tests -p 'test_post_schedule_provenance_replay.py' -v
 ```
+
+## Later causal source reconstruction · 2026-10-31
+
+[Independent failure causal audit](FAILURE_CAUSAL_REPLAY_2026-10-31.md) · [Privacy-minimized JSON](failure-causal-replay-2026-10-31.json) · [Offline regression](../../tests/test_failure_causal_replay.py). This is a separately dated source-level reconstruction: eight failed Git heads violate the same historical document-inventory contract, while PR #43 supplies an inverse excess-entry case and correction; public February predecessor Git/Run evidence is distinguishable from unverified private Jules execution. This addition neither replaces frozen archives nor changes production Knowledge.

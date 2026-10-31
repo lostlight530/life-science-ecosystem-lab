@@ -46,3 +46,16 @@ External institutional registration and permission are **another authority**: on
 The invariant **DEFINE → PIN → QUALIFY → EXECUTE → EVALUATE → AUDIT → REVIEW → REPLAY** method applies to these individual claim reviews; outcomes and source IDs must stay distinct. New decisions require an independently inspectable source/revision, negative control, reviewer authority and falsification condition. This Markdown cannot change software or data acceptance.
 
 [Verification runbooks](EVIDENCE_REPLAY_PROTOCOL.md) · [Open standards review](INTEROPERABILITY_REVIEW.md) · [Production authority](PRODUCTION_OPERATIONS.md)
+
+## Addendum · 2026-10-31 causal attribution, owner retention and predecessor evidence
+
+These are **subsequent source-graded corrections**, not retroactive edits to the October 29 frozen L01/L05/L13/L15 observations.
+
+| Claim | New support | Residual negative/unknown |
+| --- | --- | --- |
+| L01, predecessor engineering existence | [Public cross-repository Git/PR and two native run summaries](provenance/FAILURE_CAUSAL_REPLAY_2026-10-31.md) independently place Knowledge JSONL/learner work and distinct Brain Workflows in another repository on February 15–17 | Shared Git/byte lineage into LS, original private Jules task execution, original Job logs and exact scheduling failure cause still unverified |
+| L05/L15, eight historical failures | **8/8** archived failure head SHAs have reconstructible public Markdown/manifest exact-set violations using an unchanged historical test and Evidence Workflow blob; [PR #40](https://github.com/lostlight530/life-science-ecosystem-lab/pull/40) restores equality | Lost original job logs still cannot be read verbatim, so do not claim each runner traceback was independently restored |
+| L15, additional three failed observations | [PR #43](https://github.com/lostlight530/life-science-ecosystem-lab/pull/43) first over-includes nested `docs/provenance/README.md` (42 actual / 43 declared), then corrects the manifest to 42 / 42; subsequent CI succeeds | Three previous failed Run observations lack durable original logs and must not each be assigned an invented job-specific traceback |
+| L13, disappeared Run objects | Exact Run ID / frozen source comparison remains auditable after current live HTTP 404 | Ownership decisions to clear runs are ordinary platform lifecycle operations; no actor, motive or mechanism is derivable from 404 alone |
+
+The [offline causal-case replay](../tests/test_failure_causal_replay.py) verifies stored case consistency and synthetic positive/negative equality controls, **not** an authenticated replay of inaccessible remote runner logs. A human-controlled failure-record retention decision must not be mislabeled as scientific evidence suppression. The open research question is whether the *causal conclusion* survives a source-level falsification test.

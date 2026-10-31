@@ -89,3 +89,11 @@ Review repeated observations according to their **actual changes**, not the numb
 For external standard updates, pin the generic RO-Crate version, specific Workflow/Testing/Run profile, JSON-LD term mappings and consumer behavior **as separate review objects**. Do not retroactively migrate archived v0.4.0 crates, DOIs or accepted receipts merely because a newer upstream version exists.
 
 A documentation-only merge record should include base/head SHAs, exact changed-file inventory, official reference URLs and observation dates, CI outcomes, final main SHA and remaining unknowns. Green documentation CI establishes consistency of these public contracts, **not** a newly certified scientific result.
+
+## Causal-failure investigation and privacy-safe cleanup (2026-10-31)
+
+When GitHub CI fails, **identify the exact violated contract before adding checks or counting incidents**. For repeated failures, pin the per-Run head SHA and historical test/workflow blob, reconstruct inputs against the frozen oracle, classify source grades, and verify the minimum correction against a positive and a negative control. Classify absent original logs as `UNKNOWN` rather than manufacturing a traceback. Use [the eight-stage causal methodology](RESEARCH_METHODOLOGY.md) and [the October 31 source-level investigation](provenance/FAILURE_CAUSAL_REPLAY_2026-10-31.md).
+
+The maintainer controls cleanup of completed Actions runs; repository-owned audit evidence should be purpose-limited, privacy-minimized and falsifiable, rather than retaining private session information, secrets, agent task URLs or entire logs. A disappeared Run ID proves only a difference in current visibility at a stated observation time. Do not infer deletion motives, GitHub operational fault or uninterrupted service from that fact.
+
+Pre-review documentation changes by comparing the **direct-child** Markdown set in `PUBLIC_DOC_DIRS` to `evidence/profiles/docs.json`; new nested files under `docs/provenance/` do not automatically belong to the direct-child inventory. Do not weaken the fail-closed equality assertion to make an intermediate commit green. The related regression adds neither an Action schedule nor a production executor.
