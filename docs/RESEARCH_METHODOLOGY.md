@@ -19,6 +19,35 @@ The **eight stage names and required audit boundaries remain invariant**. Domain
 
 The [cross-asset evidence replay protocol](EVIDENCE_REPLAY_PROTOCOL.md) turns these method stages into a concrete, read-only multi-asset validation and negative-control worksheet. It remains distinct from new executable gates, formal scientific acceptance or a demonstrated generalization benchmark.
 
+### Failure causality and post-retention replay — project review contract (2026-10-31)
+
+**Goal:** explain and test *why* a particular failure occurred. Accumulating red CI counts or demanding permanent retention of every historical run is not the research result. A maintainer may clean up completed GitHub Actions runs; the audit may retain only privacy-minimized, source-graded findings sufficient to reproduce the decisive failure mechanism. An unavailable Run/log does not imply a malicious deletion, GitHub outage or falsified previous observation.
+
+Apply the unchanged eight stages to a **causal case** rather than to a dashboard percentage:
+
+| Stage | Required failure investigation |
+| --- | --- |
+| DEFINE | Name the exact failed claim/contract, unit of analysis, expected outcome and plausible competing causes |
+| PIN | Freeze the triggering Git SHA, *historical* source files, test/oracle version, known Run/attempt IDs and observation clocks |
+| QUALIFY | Grade surviving raw Git trees, API snapshots, runner logs, retrospective notes and private/third-party assertions **separately** |
+| EXECUTE | Recreate the smallest contradicting input at the pinned revision or use explicit synthetic controls when original logs cannot be obtained |
+| EVALUATE | Compare counterexamples and repaired controls **under the same oracle**; distinguish repeated failures from independent defect types |
+| AUDIT | Record source identity, exact transformations, disappearing/expired evidence and privacy omissions without changing frozen archives |
+| REVIEW | Permit **REVISED**, **BLOCKED** or **UNKNOWN** when causes remain underdetermined; human owners decide retention, production and scientific claims |
+| REPLAY | Recompute the narrow invariant offline, record what needs network/old logs, and detect regressions without mandatory model/API access |
+
+A credible correction requires (a) an immutable counterexample, (b) the invariant that rejects it, (c) the smallest change restoring that invariant, (d) an unchanged-or-versioned oracle, and (e) explicit residual uncertainty. If an original Runner log is lost but historical tree + manifest + test can be checked, describe that as **deterministic source-level causal reconstruction**, not verbatim runner-log attestation or scientific replication.
+
+**Separation of concerns:** a document-inventory failure tests a repository contract, not Bio Tool computation; a source-linked Knowledge `APPLIED` does not prove scientific novelty; a CI green after correction proves the bounded engineering check; and two errors of opposite polarity under one equality test are not independent scientific discoveries.
+
+For specific, independently reconstructed historical negative and positive controls, see [the 2026-10-31 causal field audit](provenance/FAILURE_CAUSAL_REPLAY_2026-10-31.md) and [offline synthetic/archival test](../tests/test_failure_causal_replay.py). This prose does not grant an Agent execution identity, new CI gate, production write, external certification or mandatory historical Run retention.
+
+#### Time-varying identities, statistics and cross-repository predecessor claims
+
+A GitHub workflow numeric ID can keep its identity while its **display name changes**; use the run-specific name at its observation time and never join a single current name across an archive. Recompute medians from the complete sorted group, preserving members, unit, scope, clock and original error. An old snapshot and later correction should remain distinguishable and source graded.
+
+For predecessor claims, independent public Git/PR/Run evidence from a *different repository* can support the existence of earlier engineering activity, but cannot alone establish a common Git ancestor, identical code lineage, private Jules task execution or Agent identity. Similar-looking workflow filenames also need exact path distinction (`brain-evolution.yml` is not `brain_evolution.yml`). Protect private task URLs, account details, email addresses, tokens, raw logs, and user/Agent identifiers unnecessary to the claim; keep only public object IDs, bounded technical paths, digests and statuses required for an audit.
+
 ## Three independently callable software assets
 
 - **Knowledge Workflow** manages approved-source ingestion, extractive graph, longitudinal state transitions, receipts and Git-backed replay. Its `data/` acceptance is never delegated to a research case.

@@ -141,3 +141,15 @@ Official public specifications checked separately: [RO-Crate 1.3](https://www.re
 [Open questions and falsification criteria](CLAIM_VERIFICATION_GAPS.md) · [Frozen source APIs and replay](provenance/README.md) · [External release/standards boundaries](INTEROPERABILITY_REVIEW.md)
 
 > **Cutoff policy:** these archival JSON data are immutable, project-owned observations as of 2026-10-29T16:24:03.499Z UTC. New commits/PRs/Actions after this time (including the PR adding these files) need a **separately dated** snapshot. They must not silently rewrite the original census or accepted production `data/`.
+
+## Addendum · 2026-10-31 cross-repository antecedent upgrade, without retroactive Git ancestry
+
+The preceding **October 29 frozen census and its February attribution** are unchanged source-specific observations. A separate [causal and predecessor review](provenance/FAILURE_CAUSAL_REPLAY_2026-10-31.md) obtained directly addressable **public Git/PR/Actions evidence** from `lostlight530/welcome-to-github`:
+
+- [Welcome PR #21](https://github.com/lostlight530/welcome-to-github/pull/21), merged 2026-02-15, contains append-only knowledge schema/learner changes with Jules task attribution; [PR #22](https://github.com/lostlight530/welcome-to-github/pull/22) adds the hyphenated Brain Workflow
+- [Welcome PR #30](https://github.com/lostlight530/welcome-to-github/pull/30) introduces the *separate* underscore-named Harvester Workflow; [PR #40](https://github.com/lostlight530/welcome-to-github/pull/40) records an **unproven scheduling diagnosis** for that workflow
+- [Native schedule Run 22047521121](https://github.com/lostlight530/welcome-to-github/actions/runs/22047521121) verifies success for `.github/workflows/brain-evolution.yml` on February 16; [native manual Run 22090424419](https://github.com/lostlight530/welcome-to-github/actions/runs/22090424419) verifies `.github/workflows/brain_evolution.yml` on February 17. Original Job log retrieval returned HTTP 410; metadata summaries remain observable
+
+**Revised scope:** predecessor **engineering activity** is no longer merely a historical author assertion, but specific private Jules runtime actions, root causes of scheduling anomalies, byte-for-byte code transfer and direct Git lineage into LS remain **unverified**. GitHub/PR attribution is not a cryptographic Agent-runtime attestation. The LS Git root is still October 16, 2026. Cross-repository history is included only as relevant public evidence; no source repo files, CI settings, historical archives or sensitive task identifiers were changed.
+
+The same review independently reconstructs all eight October 29 recorded failed LS Evidence Tool heads from their historical Git tree + docs manifest, then checks both a repair and an opposite-polarity excess-entry counterexample. Those defects are documentation-inventory contract violations, not eight or eleven independent scientific or Bio Tool failures. Logs of disappeared Runs cannot be recreated by narrative. See [the review and privacy-minimized machine data](provenance/FAILURE_CAUSAL_REPLAY_2026-10-31.md) for exact scope and falsifiers.

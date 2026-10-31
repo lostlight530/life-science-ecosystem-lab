@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "PROJECT_OWNED_PRIVACY_MINIMIZED_CAUSAL_REPLAY",
+  "logical_review_date_asia_shanghai": "2026-10-31",
+  "baselined_main_commit": "928aa525551822be7b33061ea70f169ea0961970",
+  "utc_observed_at": null,
+  "qualification": "Retrospective read-only examination of immutable Git objects and dated previous-run archives; no new original runner-log attestation; the exact API query wall-clock was not frozen",
+  "invariant_test_blob_sha": "4ab741a26d1f9aaf592029427f5b127e951336c8",
+  "invariant_evidence_workflow_blob_sha": "0b6d4d99adbb9bd552fcbd0cf47378b12388004b",
+  "controlled_inventory_path": "evidence/profiles/docs.json",
+  "directory_selection": "Fixed PUBLIC_DOC_DIRS, direct-child glob('*.md') and exact sorted-set equality in tests/test_repository_experience.py",
+  "failed_cases": [
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "2402f64ff8ddc35e6c8bf0596ec7ca1fd57d9fec",
+      "archived_failure_run_id": 40907559247,
+      "expected_public_document_count": 38,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "ada828cec3218d9c15969c864f9fdab37abafa18",
+      "archived_failure_run_id": 40907729879,
+      "expected_public_document_count": 39,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md",
+        "docs/INTEROPERABILITY_REVIEW.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "9467431d60794691ebb236144b48089ec6290f75",
+      "archived_failure_run_id": 40907800054,
+      "expected_public_document_count": 39,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md",
+        "docs/INTEROPERABILITY_REVIEW.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "605d7d76fc6b7f7fd108dfbdd0851ab7803cc455",
+      "archived_failure_run_id": 40907810044,
+      "expected_public_document_count": 39,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md",
+        "docs/INTEROPERABILITY_REVIEW.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "a9d1f107beb01236e36a31d694e12857d8a74a10",
+      "archived_failure_run_id": 40907818486,
+      "expected_public_document_count": 39,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md",
+        "docs/INTEROPERABILITY_REVIEW.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "dea3993fb574f80c14b44b6a38ae123fc5f229e9",
+      "archived_failure_run_id": 40907827214,
+      "expected_public_document_count": 39,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md",
+        "docs/INTEROPERABILITY_REVIEW.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "29fbb406f09f4cd759e0f9ede2ccb090a7c5d673",
+      "archived_failure_run_id": 40907834368,
+      "expected_public_document_count": 39,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md",
+        "docs/INTEROPERABILITY_REVIEW.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT",
+      "git_commit_sha": "36bedd5b2f26ce863308acb936f2525a6d60638c",
+      "archived_failure_run_id": 40907843653,
+      "expected_public_document_count": 39,
+      "manifest_document_count": 37,
+      "manifest_blob_sha": "dc288726933beab5956d7bbd50954a25ea10ff99",
+      "missing_from_manifest": [
+        "docs/EVIDENCE_REPLAY_PROTOCOL.md",
+        "docs/INTEROPERABILITY_REVIEW.md"
+      ],
+      "excess_in_manifest": [],
+      "source_grade": "ARCHIVED_RUN_ID_AND_INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    }
+  ],
+  "repair_cases": [
+    {
+      "case": "OMITTED_PUBLIC_DOCUMENT_REPAIRED",
+      "git_commit_sha": "a2755a3be47f54f7a1c9ce3629b9f6112316cd5f",
+      "expected_public_document_count": 39,
+      "manifest_document_count": 39,
+      "manifest_blob_sha": "1934541ba8360b1437768ab96cd79649245fb974",
+      "missing_from_manifest": [],
+      "excess_in_manifest": [],
+      "source_grade": "INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "EXTRA_UNSCANNED_DOCUMENT",
+      "git_commit_sha": "b03b45bca42a3528380092a077c142f76696e605",
+      "expected_public_document_count": 42,
+      "manifest_document_count": 43,
+      "manifest_blob_sha": "e617facd3c81a84b389e2c2c05309224735f50f0",
+      "missing_from_manifest": [],
+      "excess_in_manifest": [
+        "docs/provenance/README.md"
+      ],
+      "source_grade": "INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    },
+    {
+      "case": "EXTRA_UNSCANNED_DOCUMENT_REPAIRED",
+      "git_commit_sha": "1af56cd8c18ac59f9099166b329b1ae964b8fecf",
+      "expected_public_document_count": 42,
+      "manifest_document_count": 42,
+      "manifest_blob_sha": "9cdb0dadbc3069acadf738b541bd6ef10529ea87",
+      "missing_from_manifest": [],
+      "excess_in_manifest": [],
+      "source_grade": "INDEPENDENT_HISTORICAL_GIT_TREE_MANIFEST_RECONSTRUCTION"
+    }
+  ],
+  "additional_failed_run_observations": [
+    {
+      "id": 40912577732,
+      "source_grade": "PREVIOUS_SESSION_OBSERVATION_NO_RETAINED_ORIGINAL_JOB_LOG"
+    },
+    {
+      "id": 40912637281,
+      "source_grade": "PREVIOUS_SESSION_OBSERVATION_NO_RETAINED_ORIGINAL_JOB_LOG"
+    },
+    {
+      "id": 40912637202,
+      "source_grade": "PREVIOUS_SESSION_OBSERVATION_NO_RETAINED_ORIGINAL_JOB_LOG"
+    }
+  ],
+  "cross_repository_predecessor": {
+    "repo": "lostlight530/welcome-to-github",
+    "engineering_prs": [
+      21,
+      22,
+      30,
+      40,
+      41
+    ],
+    "native_execution_summaries": [
+      {
+        "run_id": 22047521121,
+        "event": "schedule",
+        "workflow_path": ".github/workflows/brain-evolution.yml",
+        "job": "daily-evolution",
+        "conclusion": "success",
+        "utc_created_at": "2026-02-16T01:55:09Z"
+      },
+      {
+        "run_id": 22090424419,
+        "event": "workflow_dispatch",
+        "workflow_path": ".github/workflows/brain_evolution.yml",
+        "job": "evolve-and-harvest",
+        "conclusion": "success",
+        "utc_created_at": "2026-02-17T08:00:23Z"
+      }
+    ],
+    "scope_limit": "Original Jules private task execution, historical job-log bytes, scheduler root cause and code-level LS Git ancestry not attested"
+  },
+  "privacy": {
+    "retained_fields": "Public immutable Git SHAs, relevant file paths, public PR and workflow run IDs, versioned status and time fields only",
+    "excluded": "Personal email, private task IDs and URLs, raw runner logs, account tokens, private session messages and unneeded actor metadata"
+  },
+  "legacy_sources": [
+    "docs/provenance/action-runs-2026-10-30.json",
+    "docs/provenance/action-run-reconciliation-2026-10-30.json",
+    "docs/provenance/RECONCILIATION_2026-10-30.md",
+    "docs/provenance/RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md"
+  ],
+  "limits": [
+    "Historical Git tree versus manifest mismatch is reconstructed; exact inaccessible failure Job log lines are not independently recovered",
+    "Repeated runs share one declared failing contract, not distinct scientific replicates",
+    "Repository-owned archive is not institutional certification or external Agent runtime attestation",
+    "One scheduled success in the predecessor does not prove other scheduled workflows ran successfully",
+    "Run visibility and owner-directed cleanup cannot determine an actor or motive"
+  ]
+}
