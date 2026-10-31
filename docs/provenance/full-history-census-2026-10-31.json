@@ -7,9 +7,9 @@
  "observed_at_utc": null,
  "observed_window_utc": {
   "started_at": "2026-10-31T06:48:12Z",
-  "finished_at": null
+  "finished_at": "2026-10-31T06:49:02Z"
  },
- "observation_clock_note": "Bracketed actual UTC window, start captured before source reads; finish recorded in subsequent append-safe file update. Do not substitute Git created_at as HTTP request time.",
+ "observation_clock_note": "UTC capture window is externally bracketed from 06:48:12 before API reads through 06:49:02 after normalized JSON publication. This is a bounded read/publication interval, not the exact individual API request clock.",
  "reference_main": "bc33c75efeee341194f1d2eec804565ed58a90bb",
  "repository_created_at_utc": "2026-10-16T10:35:54Z",
  "git_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
