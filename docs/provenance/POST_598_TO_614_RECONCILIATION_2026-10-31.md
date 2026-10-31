@@ -23,7 +23,7 @@ PIN old `docs/provenance/full-history-census-2026-10-31.json` at `bc33c75efeee34
 | Accepted Knowledge Receipts / events | 3 / 3 | **3 / 3** | No new `APPLIED` entry |
 | Input archives / Release objects | 2 / 1 | **2 / 1** | No new archive, Release or DOI justified |
 
-All 16 new exact IDs, Run-specific workflow names (from path, not retroactive ID-name join), source commit SHA, event and UTC timestamps are preserved in the machine file. The nine non-scheduled Evidence/CI push checks plus other PR #51 checks are **software execution evidence**, not research-result instances.
+All 16 new exact IDs, Run-specific workflow path basenames (not retroactively inferred display names), source commit SHA, event and UTC timestamps are preserved in the machine file. The 11 additional push and three additional PR checks are **software execution evidence**, not research-result instances.
 
 ## AUDIT: daily native schedule and Job evidence
 
