@@ -16,7 +16,7 @@ PIN the unchanged previous 598-row [root-to-current census](full-history-census-
 | --- | ---: | ---: | --- |
 | Main-reachable Git commits | 243 | **244** | PR #52 merge commit; root stays `00009a38bc136a7c245270770b005e4e102a870d` |
 | Public PR objects | 51 | **52** | 50 merged, two closed-unmerged (#29, #32), zero open |
-| Tracked Git blobs | 251 | **255** | Untruncated current tree, 49 additional tree entries; no accepted `data/` mutation |
+| Tracked Git blobs | 251 | **255** | Untruncated current tree has 255 Git blobs and 49 directory objects; no accepted `data/` mutation |
 | Workflow definitions | 9 | **9** | Actions are execution infrastructure, not research-software products |
 | Currently visible Actions Runs | 614 | **628** | All 614 previous IDs retained; 14 new, completed success |
 | Current visible conclusions | 573 success / 41 cancelled / 0 failed | **587 / 41 / 0** | 8 earlier archived failed Runs remain historical negatives |
