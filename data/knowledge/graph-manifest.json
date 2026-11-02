@@ -1,8 +1,8 @@
 {
-  "entities_sha256": "ff4670ac806e05eb6cff95e2f4b0106ae5cff4678203d6b96462c7d765b37e19",
+  "entities_sha256": "d8e057a95a049136fd1b790b8603748cbcaa8e34e56b74fee2914fd648b55f71",
   "entity_count": 17,
-  "knowledge_digest": "945a3406a5164af276c208c3f51b2ff8bfd61b4793f0a69d0f257e065d84c174",
+  "knowledge_digest": "5ca0d845cde252c4c8b040c886049535305d8513039c462a36227ae7e8c4dbdd",
   "relation_count": 26,
-  "relations_sha256": "fd39a63bbfa69b3b5b54d9dcc08bd6df57fcc291061695fd4bc736daebe5233e",
+  "relations_sha256": "7361154cc39e679e85bee06baf547c50a51e9f4cda80b905dadb21e9c1705fd7",
   "schema_version": "1.0.0"
 }
