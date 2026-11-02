@@ -59,8 +59,15 @@ class Post598RunDeltaTests(unittest.TestCase):
         self.assertEqual(self.current["accepted_state_reconciliation"]["new_applied_receipts"], 0)
         receipts = list((ROOT / "data/receipts").glob("gh-*.json"))
         events = (ROOT / "data/knowledge/events.jsonl").read_text(encoding="utf-8").splitlines()
-        self.assertEqual(len(receipts), 3)
-        self.assertEqual(len(events), 3)
+        # This dated observation recorded three receipts, not a permanent cap on data/.
+        self.assertGreaterEqual(len(receipts), 3)
+        self.assertGreaterEqual(len(events), 3)
+        historical = {"gh-38995485443-1", "gh-39227185707-1",
+                      "gh-40297059874-1"}
+        self.assertTrue(historical.issubset({p.stem for p in receipts}))
+        self.assertEqual([json.loads(s)["run_id"] for s in events[:3]],
+                         ["gh-38995485443-1", "gh-39227185707-1",
+                          "gh-40297059874-1"])
         for event in events:
             self.assertEqual(json.loads(event)["outcome"], "APPLIED")
         self.assertEqual(self.current["historical_negative"]["original_frozen_failed_runs"], 8)

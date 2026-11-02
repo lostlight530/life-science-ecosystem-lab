@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "GITHUB_READ_ONLY_RUN_DELTA",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-02",
+  "exact_http_read_timestamp_utc": null,
+  "observation_clock_note": "Exact HTTP request timestamp not captured by the connector; run created_at is a source event timestamp, not observation time. Fixed source cutoff precedes the present PR.",
+  "observed_source_main": "b11c4be4e45e1d5560b431563efa82ad23bdfd3b",
+  "parent_archive": "post-628-to-640-observation-2026-11-02.json",
+  "previous_visible_total": 640,
+  "source_url": "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page={1..7}",
+  "page_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    53
+  ],
+  "api_total_count": 653,
+  "old_ids_retained": 640,
+  "old_ids_missing": [],
+  "new_count": 13,
+  "new_run_columns": [
+    "run_id",
+    "workflow_path_basename",
+    "event",
+    "created_at_utc",
+    "head_sha",
+    "conclusion"
+  ],
+  "new_runs": [
+    [
+      41445992506,
+      "life-science-continuity.yml",
+      "schedule",
+      "2026-11-02T12:35:49Z",
+      "b11c4be4e45e1d5560b431563efa82ad23bdfd3b",
+      "success"
+    ],
+    [
+      41436556408,
+      "life-science-knowledge.yml",
+      "schedule",
+      "2026-11-02T11:24:14Z",
+      "d339e4d9dcac8b4b5e1ee215dde0edcbf775dc1b",
+      "success"
+    ],
+    [
+      41412197104,
+      "life-science-daily-selfcheck.yml",
+      "schedule",
+      "2026-11-02T08:19:20Z",
+      "d339e4d9dcac8b4b5e1ee215dde0edcbf775dc1b",
+      "success"
+    ],
+    [
+      41360764432,
+      "life-science-bio.yml",
+      "push",
+      "2026-11-01T23:10:10Z",
+      "d339e4d9dcac8b4b5e1ee215dde0edcbf775dc1b",
+      "success"
+    ],
+    [
+      41360764431,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-01T23:10:10Z",
+      "d339e4d9dcac8b4b5e1ee215dde0edcbf775dc1b",
+      "success"
+    ],
+    [
+      41360764311,
+      "validate.yml",
+      "push",
+      "2026-11-01T23:10:10Z",
+      "d339e4d9dcac8b4b5e1ee215dde0edcbf775dc1b",
+      "success"
+    ],
+    [
+      41360674360,
+      "validate.yml",
+      "pull_request",
+      "2026-11-01T23:09:09Z",
+      "0bde2a5d85d2d19660b78a00fe783e428c243807",
+      "success"
+    ],
+    [
+      41360674221,
+      "life-science-bio.yml",
+      "pull_request",
+      "2026-11-01T23:09:09Z",
+      "0bde2a5d85d2d19660b78a00fe783e428c243807",
+      "success"
+    ],
+    [
+      41360674141,
+      "life-science-evidence.yml",
+      "pull_request",
+      "2026-11-01T23:09:09Z",
+      "0bde2a5d85d2d19660b78a00fe783e428c243807",
+      "success"
+    ],
+    [
+      41360647948,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-01T23:08:51Z",
+      "0bde2a5d85d2d19660b78a00fe783e428c243807",
+      "success"
+    ],
+    [
+      41360604582,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-01T23:08:21Z",
+      "198b250130068478496d586c09410e8f4409e891",
+      "success"
+    ],
+    [
+      41360568997,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-01T23:07:56Z",
+      "7251a09f74e1515e8342697ae1b8dfa901c77960",
+      "success"
+    ],
+    [
+      41360502222,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-01T23:07:10Z",
+      "a01038f1668dd628589620ecb7bb1c06a618ee13",
+      "success"
+    ]
+  ],
+  "visible_events": {
+    "push": 326,
+    "pull_request": 285,
+    "schedule": 38,
+    "workflow_dispatch": 4
+  },
+  "visible_conclusions": {
+    "success": 612,
+    "cancelled": 41,
+    "failure": 0
+  },
+  "new_events": {
+    "push": 7,
+    "pull_request": 3,
+    "schedule": 3
+  },
+  "new_conclusions": {
+    "success": 13
+  },
+  "scheduled_by_workflow": {
+    "life-science-bio.yml": 2,
+    "life-science-continuity.yml": 17,
+    "life-science-daily-selfcheck.yml": 16,
+    "life-science-knowledge.yml": 3
+  },
+  "jobs_new_schedules": [
+    {
+      "run_id": 41412197104,
+      "jobs": [
+        {
+          "id": 125167547440,
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success",
+          "artifact_id": 13126330538
+        },
+        {
+          "id": 125167547883,
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success",
+          "artifact_id": 13126410336
+        }
+      ],
+      "custom_checks_success": 11
+    },
+    {
+      "run_id": 41436556408,
+      "jobs": [
+        {
+          "id": 125247644288,
+          "name": "validate",
+          "conclusion": "success",
+          "python_tests": 208
+        },
+        {
+          "id": 125247871605,
+          "name": "apply",
+          "conclusion": "success"
+        }
+      ],
+      "artifact_id": 13137050662,
+      "artifact_zip_sha256": "2beb065d3ba57431ff9f97009dea3cbf15148144c66d733d88584dab33e03e96",
+      "accepted_execution_id": "gh-41436556408-1",
+      "accepted_commit": "b11c4be4e45e1d5560b431563efa82ad23bdfd3b",
+      "change_kind": "DOCUMENT_TEXT_UNCHANGED"
+    },
+    {
+      "run_id": 41445992506,
+      "jobs": [
+        {
+          "id": 125279081588,
+          "name": "verify",
+          "conclusion": "success",
+          "artifact_id": 13142895813
+        }
+      ],
+      "knowledge_quality": "KNOWLEDGE_QUALITY_PASS"
+    }
+  ],
+  "bio_job_gate": {
+    "pr_run_id": 41360674221,
+    "pr_pinned_field": "success",
+    "merged_main_push_run_id": 41360764432,
+    "offline": "success",
+    "pinned_field": "skipped"
+  },
+  "production": {
+    "accepted_receipts": 4,
+    "event_lines": 4,
+    "archived_candidates": 3,
+    "approved_sources": 4,
+    "selected_documents": 15,
+    "topics": 3,
+    "graph_entities": 17,
+    "source_match_relations": 26,
+    "latest_receipt": "data/receipts/gh-41436556408-1.json",
+    "current_candidate_blob": "56470445c99378c2b3108f71961a1b5d86f8c0ce",
+    "events_blob": "f299c165ff2f9b4fbbee5049aef61acb1630466f",
+    "latest_change_kind": "DOCUMENT_TEXT_UNCHANGED"
+  },
+  "repository_census": {
+    "main_reachable_commits": 247,
+    "prs_total": 54,
+    "prs_merged": 52,
+    "prs_closed_unmerged": [
+      29,
+      32
+    ],
+    "prs_open": 0,
+    "tracked_blobs": 265,
+    "workflows": 9,
+    "releases": [
+      "v0.4.0",
+      "v0.5.0"
+    ],
+    "main": "b11c4be4e45e1d5560b431563efa82ad23bdfd3b"
+  },
+  "negative_and_unknown": {
+    "historical_failed_runs_in_older_archive": 8,
+    "historical_temporal_name_corrections": 134,
+    "historical_schedule_median_corrections": 2,
+    "cron_to_created_offset_minutes": {
+      "daily_selfcheck": 398.33,
+      "weekly_knowledge": 481.23,
+      "continuity": 498.82
+    },
+    "scheduler_root_cause": "UNKNOWN",
+    "prior_2026_11_01_one_hour_api_runner_clock_conflict": "UNRESOLVED",
+    "action_node20_to24_deprecation_warning": "OBSERVED_NONFATAL",
+    "external_registry_parity": "UNKNOWN",
+    "scientific_new_claim": "NONE_VERIFIED"
+  },
+  "decision": {
+    "scientific_assets": "NO_CHANGE_REQUIRED",
+    "framework": "NO_CHANGE_REQUIRED",
+    "actions": "NO_CHANGE_REQUIRED",
+    "production_data": "NATIVE_APPLIED_BY_SCHEDULE_NOT_MANUALLY_EDITED",
+    "public_provenance": "APPEND_ONLY",
+    "tests": "FIX_FROZEN_SNAPSHOT_LIVE_STATE_COUPLING",
+    "release_doi": "NO_CHANGE_REQUIRED"
+  }
+}
