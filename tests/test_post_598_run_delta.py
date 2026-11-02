@@ -66,7 +66,8 @@ class Post598RunDeltaTests(unittest.TestCase):
                       "gh-40297059874-1"}
         self.assertTrue(historical.issubset({p.stem for p in receipts}))
         self.assertEqual([json.loads(s)["run_id"] for s in events[:3]],
-                         sorted(historical, key=lambda x: [38995485443, 39227185707, 40297059874].index(int(x.split("-")[1]))))
+                         ["gh-38995485443-1", "gh-39227185707-1",
+                          "gh-40297059874-1"])
         for event in events:
             self.assertEqual(json.loads(event)["outcome"], "APPLIED")
         self.assertEqual(self.current["historical_negative"]["original_frozen_failed_runs"], 8)
