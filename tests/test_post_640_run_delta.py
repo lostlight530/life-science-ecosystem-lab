@@ -7,7 +7,11 @@ No network, external research, or model execution is required.
 from collections import Counter
 from pathlib import Path
 import json
+import shutil
+import tempfile
 import unittest
+
+from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
 
 ROOT = Path(__file__).resolve().parents[1]
 P = ROOT / "docs" / "provenance"
@@ -101,6 +105,35 @@ class Post640RunDeltaTests(unittest.TestCase):
         self.assertTrue((ROOT / "data/inputs/archive/2026/11"
                         / "4a9aeb43c99dadb6-787471b78dfe37c2-0a20ce424193.json")
                         .is_file())
+
+    def test_latest_accepted_state_is_verified_not_just_present(self):
+        # This test is deliberately evaluated against the moving real data/
+        # independently from the old, frozen API population.
+        report = verify_state(StateRoots(ROOT), require_accepted=True)
+        self.assertTrue(report.valid, report.errors)
+
+    def test_receipt_tamper_fails_closed_in_isolated_copy(self):
+        # Negative control: never modify real, accepted data/.
+        with tempfile.TemporaryDirectory() as directory:
+            isolated = Path(directory)
+            shutil.copytree(ROOT / "data", isolated / "data")
+            roots = StateRoots(isolated)
+            baseline = verify_state(roots, require_accepted=True)
+            self.assertTrue(baseline.valid, baseline.errors)
+            events = (isolated / "data/knowledge/events.jsonl").read_text(
+                encoding="utf-8").splitlines()
+            latest = json.loads(events[-1])
+            receipt_path = isolated / "data" / "receipts" / (latest["run_id"] + ".json")
+            receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+            receipt["output_digest"] = "0" * 64
+            receipt_path.write_text(
+                json.dumps(receipt, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8")
+            invalid = verify_state(roots, require_accepted=True)
+            self.assertFalse(invalid.valid)
+            self.assertIn(
+                "latest accepted receipt does not match graph event",
+                invalid.errors)
 
     def test_historical_negative_provenance_remains_visible(self):
         d = self.current["negative_and_unknown"]
