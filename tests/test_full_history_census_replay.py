@@ -178,9 +178,17 @@ class FullOriginHistoryReplay(unittest.TestCase):
         self.assertEqual(x["repository_tree"]["tracked_blobs"], 247)
         self.assertFalse(x["repository_tree"]["tree_truncated"])
         self.assertEqual(len(x["repository_tree"]["workflow_paths"]), 9)
+        # A separate Git Tree API read at the original fixed commit verified
+        # historical mutable-path SHA identities; it does not freeze today's data/.
+        pins = read("historical-production-tree-guards-2026-11-02.json")
+        frozen = pins["cutoffs"]["full_history"]
+        self.assertEqual(frozen["commit"], x["reference_main"])
+        self.assertEqual(set(frozen["blobs"]), set(guards["production"]))
         for category in ("production", "frozen_sources"):
             for path, expected_sha in guards[category].items():
                 self.assertEqual(len(expected_sha), 40)
+                if category == "production":
+                    self.assertEqual(frozen["blobs"][path], expected_sha, path)
                 # Frozen provenance and the three immutable receipts retain byte identity.
                 # Mutable current knowledge / graph / event files may advance
                 # after a later accepted native production event.

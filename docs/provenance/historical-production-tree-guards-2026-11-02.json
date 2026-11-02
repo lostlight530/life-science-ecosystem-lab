@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "GIT_TREE_CROSS_TIME_BLOB_GUARD",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "purpose": "Independently re-read historical git trees; compare the immutable 2026-10-31 and 640-Run source-cutoff production blob SHA guards without misapplying them to mutable current data",
+  "method": "GitHub Git Tree API, recursive/untruncated, path and Git Blob SHA exact-match",
+  "observation_day_asia_shanghai": "2026-11-02",
+  "exact_http_request_timestamp_utc": null,
+  "timestamp_reason": "connector did not expose an independent request clock; Git commit refs identify the historical trees",
+  "cutoffs": {
+    "full_history": {
+      "commit": "bc33c75efeee341194f1d2eec804565ed58a90bb",
+      "blobs": {
+        "data/inputs/current/candidate.json": "3f162bb9ac9f286351d7cdbb09130727da504846",
+        "data/knowledge/current.json": "5af8d9729468659891c9835e7a2251ba90500c00",
+        "data/knowledge/entities.jsonl": "80ced661a7c41008e9ec7bf734264b9ec74bfd07",
+        "data/knowledge/relations.jsonl": "563f54203494a6c15c3fc52502443f54a5b48c1c",
+        "data/knowledge/graph-manifest.json": "514d551b589380484de04bf5093d149ffe3b793a",
+        "data/knowledge/events.jsonl": "f95b740267935e97ab3bbeae1133c80564945cdd",
+        "data/memories/current.json": "65f43981b310e3609cb1fe49660a2ee923e0d16d",
+        "data/receipts/gh-38995485443-1.json": "2f0a9edb075da5ff74f9b1fabc23631c2366105d",
+        "data/receipts/gh-39227185707-1.json": "a542228cb4b2b5ee9c6c001f2b80a3b0a229897a",
+        "data/receipts/gh-40297059874-1.json": "2b1367891e2f9c0e3cc9b68d39ff1fd2af4ab877"
+      }
+    },
+    "post_628": {
+      "commit": "efc8355c130cbb54111f3a0907fdec79f116a122",
+      "blobs": {
+        "data/inputs/current/candidate.json": "3f162bb9ac9f286351d7cdbb09130727da504846",
+        "data/knowledge/current.json": "5af8d9729468659891c9835e7a2251ba90500c00",
+        "data/knowledge/entities.jsonl": "80ced661a7c41008e9ec7bf734264b9ec74bfd07",
+        "data/knowledge/relations.jsonl": "563f54203494a6c15c3fc52502443f54a5b48c1c",
+        "data/knowledge/graph-manifest.json": "514d551b589380484de04bf5093d149ffe3b793a",
+        "data/knowledge/events.jsonl": "f95b740267935e97ab3bbeae1133c80564945cdd",
+        "data/memories/current.json": "65f43981b310e3609cb1fe49660a2ee923e0d16d",
+        "data/receipts/gh-38995485443-1.json": "2f0a9edb075da5ff74f9b1fabc23631c2366105d",
+        "data/receipts/gh-39227185707-1.json": "a542228cb4b2b5ee9c6c001f2b80a3b0a229897a",
+        "data/receipts/gh-40297059874-1.json": "2b1367891e2f9c0e3cc9b68d39ff1fd2af4ab877"
+      }
+    }
+  },
+  "boundary": "Frozen source and historical receipt local bytes are still hashed offline. Current mutable production correctness is separately verified with native state verify and negative tamper control. A pinned tree SHA comparison is not a direct recreation of past execution or biological truth."
+}

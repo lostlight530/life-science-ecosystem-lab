@@ -99,7 +99,12 @@ class Post628RunDeltaTests(unittest.TestCase):
     def test_exact_git_blob_guards_and_historical_negatives(self):
         guards = self.latest["production_reconciliation"]["git_blob_guards"]
         self.assertEqual(len(guards), 10)
+        pins = load("historical-production-tree-guards-2026-11-02.json")
+        historical = pins["cutoffs"]["post_628"]
+        self.assertEqual(historical["commit"], self.latest["observed_source_main"])
+        self.assertEqual(set(historical["blobs"]), set(guards))
         for path, expected in guards.items():
+            self.assertEqual(historical["blobs"][path], expected, path)
             raw = (ROOT / path).read_bytes()
             blob = b"blob " + str(len(raw)).encode("ascii") + b"\0" + raw
             if path.startswith("data/receipts/"):
