@@ -77,7 +77,13 @@ class Post614RunDeltaTests(unittest.TestCase):
         receipts = list((ROOT / "data" / "receipts").glob("gh-*.json"))
         events = (ROOT / "data" / "knowledge" / "events.jsonl").read_text(
             encoding="utf-8").splitlines()
-        self.assertEqual((len(receipts), len(events)), (3, 3))
+        # The 628-Run observation has three accepted events at its cutoff;
+        # later native production must not invalidate the frozen record.
+        self.assertGreaterEqual(len(receipts), 3)
+        self.assertGreaterEqual(len(events), 3)
+        self.assertEqual([json.loads(s)["run_id"] for s in events[:3]],
+                         ["gh-38995485443-1", "gh-39227185707-1",
+                          "gh-40297059874-1"])
         self.assertTrue(all(json.loads(e)["outcome"] == "APPLIED" for e in events))
         self.assertEqual(self.latest["accepted_reconciliation"]["new_applied_receipts"], 0)
 
