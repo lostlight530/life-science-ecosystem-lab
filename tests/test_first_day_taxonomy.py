@@ -8,6 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import subprocess
 import unittest
 
 from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
@@ -65,6 +66,45 @@ class CompleteHistoryClassificationTests(unittest.TestCase):
         self.assertTrue(any(r["role"] ==
                             "STRUCTURAL_PLACEHOLDER_NOT_ACCEPTED_RESULT"
                             for r in rows))
+
+    def test_post_baseline_live_paths_have_reviewed_canonical_categories(self):
+        """Cover later tracked paths without changing the 274-file frozen source ledger."""
+        raw = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT)
+        tracked = set(raw.decode("utf-8").rstrip("\0").split("\0"))
+        frozen = {row["path"] for row in self.files["files"]}
+        self.assertTrue(frozen <= tracked)
+        newer = tracked - frozen
+        # Dedicated additive evidence directories and regressions can grow.
+        # A new root outside these categories requires explicit governance.
+        categories = {
+            "docs/provenance/": "HISTORICAL_PROVENANCE",
+            "docs/taxonomy/": "HISTORICAL_PROVENANCE",
+            "docs/lessons/": "PUBLIC_RESEARCH_LESSONS",
+            "tests/": "VALIDATION_AND_REGRESSION",
+        }
+        assigned = {}
+        for path in sorted(newer):
+            matches = [label for prefix, label in categories.items()
+                       if path.startswith(prefix)]
+            self.assertEqual(len(matches), 1, f"UNCLASSIFIED_NEW_PATH: {path}")
+            assigned[path] = matches[0]
+        # The nine genuinely new paths since the PR #58 source cutoff.
+        expected_since_cutoff = {
+            "docs/provenance/POST_673_TO_684_RECONCILIATION_2026-11-03.md",
+            "docs/provenance/post-673-to-684-observation-2026-11-03.json",
+            "docs/taxonomy/CORRECTION_REGISTER_2026-11-03.md",
+            "docs/taxonomy/README.md",
+            "docs/taxonomy/commit-register-2026-11-03.json",
+            "docs/taxonomy/file-register-2026-11-03.json",
+            "docs/taxonomy/pr-register-2026-11-03.json",
+            "docs/taxonomy/workflow-register-2026-11-03.json",
+            "tests/test_first_day_taxonomy.py",
+        }
+        self.assertTrue(expected_since_cutoff <= assigned.keys())
+        self.assertEqual(len(expected_since_cutoff), 9)
+        self.assertTrue(all(assigned[p] == (
+            "VALIDATION_AND_REGRESSION" if p.startswith("tests/")
+            else "HISTORICAL_PROVENANCE") for p in expected_since_cutoff))
 
     def test_actual_frozen_bytes_still_match_pre_review_git_blob_guards(self):
         # Do not compare living README/docs headings to old Git blob SHAs.

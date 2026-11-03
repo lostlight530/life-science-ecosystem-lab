@@ -57,6 +57,24 @@ Formal Knowledge accepted state at this cutoff contains **four execution-specifi
 
 Public GitHub branch metadata still reported **main.protected=false** and Rulesets **[]** in this source review. All-green CI is a tested engineering practice, not proof of server-enforced branch protection. Current third-party registry synchronization, certain log-access failures and scheduler clock root causes remain UNKNOWN.
 
+### Live file classification after the original source cutoff · 2026-11-03
+
+The original 274/274 file register is frozen at `94f5f0875e7f590846781e5557912730bc482221`, and must **not** be overwritten or reinterpreted as the latest tree. The separately checked [post-PR #59 main `ad49fe8fee372197fd17a341d56fb0a4483e9cd8`](https://github.com/lostlight530/life-science-ecosystem-lab/commit/ad49fe8fee372197fd17a341d56fb0a4483e9cd8) contains **283 tracked Git Blobs**: 274 original path identities plus the following nine added paths. These are the additional **path identities**, not proof of nine new research results; changed contents of older paths remain versioned by Git as normal.
+
+| Post-cutoff tracked path | Canonical primary category |
+| --- | --- |
+| `docs/provenance/POST_673_TO_684_RECONCILIATION_2026-11-03.md` | HISTORICAL_PROVENANCE |
+| `docs/provenance/post-673-to-684-observation-2026-11-03.json` | HISTORICAL_PROVENANCE |
+| `docs/taxonomy/CORRECTION_REGISTER_2026-11-03.md` | HISTORICAL_PROVENANCE |
+| `docs/taxonomy/README.md` | HISTORICAL_PROVENANCE |
+| `docs/taxonomy/commit-register-2026-11-03.json` | HISTORICAL_PROVENANCE |
+| `docs/taxonomy/file-register-2026-11-03.json` | HISTORICAL_PROVENANCE |
+| `docs/taxonomy/pr-register-2026-11-03.json` | HISTORICAL_PROVENANCE |
+| `docs/taxonomy/workflow-register-2026-11-03.json` | HISTORICAL_PROVENANCE |
+| `tests/test_first_day_taxonomy.py` | VALIDATION_AND_REGRESSION |
+
+The [offline taxonomy regression](../../tests/test_first_day_taxonomy.py) now checks all **tracked** paths against the frozen baseline and requires each post-cutoff addition to fall into an explicit reviewed classification family: dated provenance, taxonomy, public lessons or tests. An addition outside these families requires updating the review policy rather than silently accepting an unclassified new root. This is a **living classification rule**, not a retroactive renaming of immutable Git history or a promise that the live count stays at 283.
+
 ### Current public documentation coverage correction
 
 The source-pinned 274-file inventory above is retained as an immutable historical cutoff. A subsequent review of the newer Git tree identified **26 additional Markdown records** under `docs/lessons/`, `docs/provenance/` and `docs/taxonomy/` that were absent from the existing `evidence/profiles/docs.json` completeness list. The repository now classifies these existing records within its public lesson / historical-provenance categories and includes them in the maintained documentation manifest, with an independent CI inventory and local-link check. This changes **documentation audit coverage**, not the source Git Blob identities, accepted `data/` or historical counts. A current file list must still be obtained from the live Git tree rather than extending the old 274 denominator by assumption.
