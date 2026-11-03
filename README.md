@@ -13,7 +13,7 @@ This open-source repository contains **three established independently callable 
 
 ## From original pilot to independently audited research software
 
-The [2026-10-30 origin-to-current reconciliation](docs/provenance/RECONCILIATION_2026-10-30.md), [daily native workflow quality record](docs/provenance/NATIVE_DAILY_QUALITY_2026-10-30.md), and [privacy-minimized research engineering lessons](docs/lessons/2026-10-30-error-detection-and-audit.md) preserve later observations without overwriting earlier failures. The [origin-to-present repository reconstruction](docs/REPOSITORY_HISTORY_AND_PROVENANCE.md) follows the independently observed October 16, 2026 Git creation through the [full frozen historical census](docs/provenance/README.md) of 234 main-reachable commits, 42 PRs and 531 Actions run objects at the October 30 Asia/Shanghai cutoff. The [open-claim register](docs/CLAIM_VERIFICATION_GAPS.md) preserves unmerged/failed/cancelled evidence, external-service uncertainty and the separately attributed February 15–16 precursor without backdating the LS repository. This is an evidence snapshot, not a new execution requirement or scientific certification.
+The [initial October 30 root-to-cutoff reconstruction](docs/REPOSITORY_HISTORY_AND_PROVENANCE.md) correctly records **234 commits / 42 PR objects / 531 visible Runs at its historical cutoff**; it is not a permanently live total. The [full first-day-to-November-3 classification](docs/taxonomy/README.md) pins a later **250 main-reachable Commit / 57 PR / 274 tracked-blob** census at source main [94f5f087](https://github.com/lostlight530/life-science-ecosystem-lab/commit/94f5f0875e7f590846781e5557912730bc482221), while the [additive provenance registry](docs/provenance/README.md) reaches a separate **684-visible-Run** cutoff. The LS Git root is October 16, 2026; the February 15–17 engineering antecedent belongs to an independent predecessor repository. The accepted Knowledge state had four Receipts and four chained events at this source cutoff. These separate versioned evidence surfaces do not constitute independent scientific verification or current third-party certification.
 
 ## Heterogeneous Agent cohort research
 
@@ -72,7 +72,10 @@ bio_tool/                 Independent protein FASTA/PDB analysis package
 framework/                Independent experimental cross-domain software engineering package
 data/                     Git-tracked accepted inputs, graph, memory and receipts
 metadata/                 Public Bioschemas descriptors and standards-status data
-docs/                     User guides, scope, interfaces, architecture and provenance
+docs/                     Current methods, scope, interfaces and governance
+  taxonomy/               Canonical classifications, full original-ID registers and corrections
+  provenance/             Dated Git/PR/Actions frozen observations, corrections and indices
+  lessons/                Public failure modes and reproducible engineering experience
 tests/                    Executable regression and integration contracts
 ro-crate-metadata.json    Workflow and testing research-object metadata
 codemeta.json             Current repository component inventory, including the experimental Framework boundary
@@ -80,7 +83,7 @@ CITATION.cff              Citation and Zenodo DOI for the released v0.4.0 three-
 .gitattributes            Cross-platform LF and binary rules for reproducible byte verification
 ```
 
-[Optional external Agent handoff](docs/AGENT_COLLABORATION.md) · [Documentation index](docs/README.md) · [Public interfaces](docs/PUBLIC_INTERFACES.md) · [Understanding verification](docs/VERIFYING_RESULTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
+[Canonical history naming / classification](docs/taxonomy/README.md) · [Optional external Agent handoff](docs/AGENT_COLLABORATION.md) · [Documentation index](docs/README.md) · [Public interfaces](docs/PUBLIC_INTERFACES.md) · [Understanding verification](docs/VERIFYING_RESULTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
 ## Independent Framework pilot
 

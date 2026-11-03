@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "CURRENT_NATIVE_ACTIONS_ROLE_REGISTER",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "source_main_commit": "94f5f0875e7f590846781e5557912730bc482221",
+  "git_root": "00009a38bc136a7c245270770b005e4e102a870d",
+  "source_authority": "PUBLIC_GITHUB_API_READONLY",
+  "observation_assembled_at_utc": "2026-11-03T03:24:57.137Z",
+  "per_http_request_clock_utc": null,
+  "clock_limit": "Assembly clock is not an independently captured timestamp for each REST request. Later PR checks/merge are outside the frozen source.",
+  "workflow_definition_count": 9,
+  "workflows": [
+    {
+      "path": ".github/workflows/life-science-knowledge.yml",
+      "current_definition_category": "KNOWLEDGE_WORKFLOW_NATIVE",
+      "trigger_summary": "SCHEDULE_WEEKLY_UTC_MONDAY_03_23",
+      "job_names_or_gates": [
+        "validate_readonly",
+        "apply_guarded_data_write"
+      ],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/life-science-evidence.yml",
+      "current_definition_category": "EVIDENCE_TOOL_CI",
+      "trigger_summary": "PUSH_PR_MANUAL",
+      "job_names_or_gates": [
+        "evidence_verification"
+      ],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/life-science-bio.yml",
+      "current_definition_category": "BIO_TOOL_QA",
+      "trigger_summary": "SCHEDULE_WEEKLY_UTC_FRIDAY_02_19_AND_PR_PUSH",
+      "job_names_or_gates": [
+        "offline",
+        "pinned-field_conditionally_skipped_on_push"
+      ],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/life-science-continuity.yml",
+      "current_definition_category": "ACCEPTED_DATA_INTEGRITY_CHECK",
+      "trigger_summary": "SCHEDULE_DAILY_UTC_04_17",
+      "job_names_or_gates": [
+        "verify"
+      ],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/life-science-daily-selfcheck.yml",
+      "current_definition_category": "INSTITUTIONAL_AND_PROJECT_INDEPENDENT_CHECKS",
+      "trigger_summary": "SCHEDULE_DAILY_UTC_01_41",
+      "job_names_or_gates": [
+        "institutional-defaults",
+        "project-custom"
+      ],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/life-science-framework.yml",
+      "current_definition_category": "EXPERIMENTAL_FRAMEWORK_CI",
+      "trigger_summary": "PUSH_PR_MANUAL",
+      "job_names_or_gates": [
+        "standalone-framework",
+        "windows-cross-platform"
+      ],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/life-science-live-evidence.yml",
+      "current_definition_category": "READONLY_FIELD_DRILL",
+      "trigger_summary": "MANUAL_OR_EVENT_GATED_VERIFY_CODE_FOR_CURRENT_TRIGGERS",
+      "job_names_or_gates": [],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/protein-structure-agent-demo.yml",
+      "current_definition_category": "READONLY_RESEARCH_FIELD_CASE",
+      "trigger_summary": "MANUAL_OR_EVENT_GATED_VERIFY_CODE_FOR_CURRENT_TRIGGERS",
+      "job_names_or_gates": [],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "current_definition_category": "INTEGRATED_REPOSITORY_CI",
+      "trigger_summary": "PUSH_PR_MANUAL",
+      "job_names_or_gates": [
+        "repository-contracts",
+        "knowledge-workflow",
+        "evidence-tool",
+        "portable-package",
+        "gate-verdict"
+      ],
+      "naming_scope": "CURRENT_DEFINITION_NOT_RETROACTIVE_RUN_NAME"
+    }
+  ],
+  "nonclaims": [
+    "Nine Actions are not nine research software assets",
+    "Native scheduler and external Agents have independent execution authority",
+    "A green Run may include skipped conditional Jobs; historical Run name requires its own event-time source"
+  ]
+}

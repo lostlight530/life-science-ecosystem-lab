@@ -4,14 +4,15 @@ Choose the path matching your task. This index describes **public, reproducible 
 
 | I want to… | Read |
 | --- | --- |
-| Install and run the three released assets or experimental Framework from a clean checkout | [Getting Started](GETTING_STARTED.md) |
+| Install and run the three established callable assets and optional experimental Framework from a clean checkout | [Getting Started](GETTING_STARTED.md) |
 | Know what a report proves, how to reproduce it, or why a CI check passes | [Understanding Verification](VERIFYING_RESULTS.md) |
 | Run daily independent official-default observations and local project self-checks | [Daily Self-Check](DAILY_SELF_CHECK.md) |
 | Inspect actual public GitHub sources and two third-party research software projects | [Read-only Field Drill](LIVE_EVIDENCE_DRILL.md) |
 | Run the full external Agent + protein-structure dataset/tool/graph demo | [Protein Structure Field Demo](PROTEIN_STRUCTURE_FIELD_DEMO.md) |
 | Run and verify a real guarded production acceptance | [Production Operations](PRODUCTION_OPERATIONS.md) |
 | Review independently discovered 134-run name attribution and schedule-median errors | [Run-name/Median Erratum](provenance/RUN_NAME_AND_MEDIAN_ERRATUM_2026-10-30.md) |
-| Trace the repository from the original pilot, all PRs, native accepted events and external evidence to the present cutoff | [Origin-to-Present History](REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Frozen API Census](provenance/README.md) |
+| Review complete main Git ancestry, all historical PRs and every tracked baseline file by standardized category | [Full-history taxonomy](taxonomy/README.md) · [Canonical name/correction register](taxonomy/CORRECTION_REGISTER_2026-11-03.md) |
+| Review the original source-pinned first-day-to-October-30 Git/PR/Actions reconstruction | [Dated origin study](REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Additive provenance index](provenance/README.md) |
 | Reconcile the initial GitHub census with later run disappearance, PR #43 and revised denominator | [Origin-to-Current Reconciliation](provenance/RECONCILIATION_2026-10-30.md) · [Machine-readable reconciliation](provenance/action-run-reconciliation-2026-10-30.json) |
 | Review each local day of native GitHub scheduling, self-checks and real Knowledge accepts | [Daily Native Workflow Quality](provenance/NATIVE_DAILY_QUALITY_2026-10-30.md) · [Daily JSON ledger](provenance/native-daily-quality-2026-10-30.json) |
 | Reuse privacy-minimized error-detection and scientific audit experience | [Engineering Research Lessons — 2026-10-30](lessons/2026-10-30-error-detection-and-audit.md) |
@@ -27,7 +28,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Understand the research scope and scientific non-claims | [Scope](SCOPE.md) |
 | Trace immutable sources, commits, and public research evidence | [Provenance](PROVENANCE.md) |
 | Replay cross-asset evidence, negative controls, and claim-level decisions | [Evidence Replay Protocol](EVIDENCE_REPLAY_PROTOCOL.md) |
-| Inspect three actual Git-backed production accepts and the no-change/provenance distinction | [Native Continuity Field Audit](NATIVE_CONTINUITY_FIELD_AUDIT.md) |
+| Inspect the historical three-acceptance field audit (later formal acceptances have their own receipts) | [Native Continuity Field Audit](NATIVE_CONTINUITY_FIELD_AUDIT.md) |
 | Review incompatible external standards, registry versions, and independent service observations | [Interoperability Review](INTEROPERABILITY_REVIEW.md) |
 | Check external standards and registration readiness | [Standards](STANDARDS.md) |
 | Maintain the repository safely and understand the publication boundary | [Maintenance](MAINTENANCE.md) |

@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "GITHUB_READ_ONLY_RUN_DELTA",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-03",
+  "observed_source_main": "94f5f0875e7f590846781e5557912730bc482221",
+  "previous_visible_total": 673,
+  "api_total_count": 684,
+  "page_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    84
+  ],
+  "previous_archive": "post-653-to-673-observation-2026-11-03.json",
+  "old_ids_retained": 673,
+  "old_ids_missing": [],
+  "new_count": 11,
+  "new_run_columns": [
+    "run_id",
+    "workflow_basename",
+    "event",
+    "created_at_utc",
+    "head_sha",
+    "conclusion"
+  ],
+  "new_runs": [
+    [
+      41570981796,
+      "validate.yml",
+      "push",
+      "2026-11-03T03:14:15Z",
+      "94f5f0875e7f590846781e5557912730bc482221",
+      "success"
+    ],
+    [
+      41570981662,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:14:15Z",
+      "94f5f0875e7f590846781e5557912730bc482221",
+      "success"
+    ],
+    [
+      41570981659,
+      "life-science-bio.yml",
+      "push",
+      "2026-11-03T03:14:15Z",
+      "94f5f0875e7f590846781e5557912730bc482221",
+      "success"
+    ],
+    [
+      41570836491,
+      "validate.yml",
+      "pull_request",
+      "2026-11-03T03:12:52Z",
+      "3d7734c8697365989cfc3ddb899c8ea9a4cc0330",
+      "success"
+    ],
+    [
+      41570836480,
+      "life-science-bio.yml",
+      "pull_request",
+      "2026-11-03T03:12:52Z",
+      "3d7734c8697365989cfc3ddb899c8ea9a4cc0330",
+      "success"
+    ],
+    [
+      41570836428,
+      "life-science-evidence.yml",
+      "pull_request",
+      "2026-11-03T03:12:52Z",
+      "3d7734c8697365989cfc3ddb899c8ea9a4cc0330",
+      "success"
+    ],
+    [
+      41570756588,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:12:04Z",
+      "3d7734c8697365989cfc3ddb899c8ea9a4cc0330",
+      "success"
+    ],
+    [
+      41570714295,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:11:40Z",
+      "138bdb0940e5e97c7fe1a8c060bf55c02e898d3d",
+      "success"
+    ],
+    [
+      41570653940,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:11:04Z",
+      "12c8c78c8746ee6d726460b4aeb7ad35ff0da0c9",
+      "success"
+    ],
+    [
+      41570611425,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:10:38Z",
+      "fab85a96679b3c82b52799ae994959682fb955a7",
+      "success"
+    ],
+    [
+      41570485006,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:09:26Z",
+      "88389c9c74a85c440cb0e5913c121ab0a79d9b3b",
+      "success"
+    ]
+  ],
+  "new_events": {
+    "push": 8,
+    "pull_request": 3
+  },
+  "new_conclusions": {
+    "success": 11
+  },
+  "visible_events": {
+    "push": 348,
+    "pull_request": 294,
+    "schedule": 38,
+    "workflow_dispatch": 4
+  },
+  "visible_conclusions": {
+    "success": 643,
+    "cancelled": 41,
+    "failure": 0
+  },
+  "jobs": {
+    "source": "11 direct GitHub latest-attempt Run Jobs API responses",
+    "new_run_jobs": 21,
+    "new_success": 20,
+    "new_skipped": 1,
+    "new_failed": 0,
+    "records": [
+      {
+        "run_id": 41570981796,
+        "success_names": [
+          "Knowledge Workflow",
+          "Evidence Tool",
+          "Portable package",
+          "Repository contracts",
+          "validate"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570981662,
+        "success_names": [
+          "Verify evidence CLI, source contracts and docs"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570981659,
+        "success_names": [
+          "offline"
+        ],
+        "skipped_names": [
+          "pinned-field"
+        ]
+      },
+      {
+        "run_id": 41570836491,
+        "success_names": [
+          "Repository contracts",
+          "Knowledge Workflow",
+          "Evidence Tool",
+          "Portable package",
+          "validate"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570836480,
+        "success_names": [
+          "offline",
+          "pinned-field"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570836428,
+        "success_names": [
+          "Verify evidence CLI, source contracts and docs"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570756588,
+        "success_names": [
+          "Verify evidence CLI, source contracts and docs"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570714295,
+        "success_names": [
+          "Verify evidence CLI, source contracts and docs"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570653940,
+        "success_names": [
+          "Verify evidence CLI, source contracts and docs"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570611425,
+        "success_names": [
+          "Verify evidence CLI, source contracts and docs"
+        ],
+        "skipped_names": []
+      },
+      {
+        "run_id": 41570485006,
+        "success_names": [
+          "Verify evidence CLI, source contracts and docs"
+        ],
+        "skipped_names": []
+      }
+    ],
+    "post_merge_bio_gate": {
+      "run_id": 41570981659,
+      "offline": "success",
+      "pinned_field": "skipped"
+    },
+    "pre_merge_bio_gate": {
+      "run_id": 41570836480,
+      "offline": "success",
+      "pinned_field": "success"
+    }
+  },
+  "repository_census": {
+    "main_reachable_commits": 250,
+    "prs_total": 57,
+    "prs_merged": 55,
+    "closed_unmerged": [
+      29,
+      32
+    ],
+    "tracked_git_blobs": 274,
+    "workflows": 9,
+    "releases": [
+      "v0.4.0",
+      "v0.5.0"
+    ]
+  },
+  "native_state": {
+    "accepted_receipts": 4,
+    "accepted_events": 4,
+    "archived_candidates": 3,
+    "latest_accepted_run_id": "gh-41436556408-1",
+    "last_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "no_new_scientific_result": true
+  },
+  "observation_assembled_at_utc": "2026-11-03T03:26:44.114Z",
+  "exact_http_request_clock_utc": null,
+  "unknowns": [
+    "Individual API request timestamps were not independently captured",
+    "Missing earlier Run causes, schedule queue-time semantics and third-party synchronization not independently resolved"
+  ],
+  "qualification": "The new classification PR and its later CI are outside this frozen 684-Run denominator; existing historical negative records remain immutable"
+}

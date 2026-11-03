@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased · current working tree (package metadata 0.4.0)
+## Unreleased source changes · root package metadata 0.4.0 (independent GitHub Release clocks)
+
+- Reconstruct and classify the complete public LS Git history from its October 16 root through 250 main-reachable commits, 57 PR objects and 274 tracked blobs at a fixed source SHA; normalize nine Action roles and the additive 684-Run cutoff while preserving original immutable names and source denominators. Correct misleading living document titles and navigation without editing native assets, Framework, formal data/, schedules, old evidence or external metadata. This is documentation/verification classification, not a new scientific result or release. Existing GitHub v0.5.0 tag and v0.4.0 package metadata are distinct versioned objects.
 
 - Strengthen the invariant eight-stage methodology with failure-to-cause replay, independent historical Git tree/manifest counterexamples, unchanged-or-versioned contract oracles and explicit confidence bounds; correct predecessor engineering attribution with privacy-minimized cross-repository Git/Actions sources, distinguish two identically themed but separate February Workflows, and add offline negative/positive-case regression. No production `data/`, instrumented Tool, Framework, Action schedule, institutional record or historical frozen archive is modified
 

@@ -1,6 +1,8 @@
-# Frozen 2026-10-30 GitHub provenance census
+# Provenance evidence registry — dated source cutoffs and correction history
 
-[Full origin-to-present history](../REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Open claims](../CLAIM_VERIFICATION_GAPS.md) · [Provenance and authorities](../PROVENANCE.md)
+[Full-first-day classification](../taxonomy/README.md) · [Original 2026-10-30 historical reconstruction](../REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Open claims](../CLAIM_VERIFICATION_GAPS.md) · [Evidence authority](../PROVENANCE.md)
+
+This is a **living index of separately frozen historical observations**, not a claim that the original October 30 denominator still describes current GitHub reality. Preserve original JSON, original source names, historical failures and correction history. The first section below belongs to the original October 30 bounded observation only.
 
 **Observed:** `2026-10-29T16:24:03.499Z` UTC / 2026-10-30 Asia/Shanghai · **Reference main:** [`05ab6b2dc98dfe13581b5ae1bedcd11a58dbbb77`](https://github.com/lostlight530/life-science-ecosystem-lab/commit/05ab6b2dc98dfe13581b5ae1bedcd11a58dbbb77)
 
@@ -104,3 +106,9 @@ This new pre-PR source cutoff preserves all 640 prior Run identities and adds 13
 [Source-graded 653 → 673 reconciliation](POST_653_TO_673_RECONCILIATION_2026-11-03.md) · [20-Run machine-readable delta](post-653-to-673-observation-2026-11-03.json) · [Independent offline falsifier](../../tests/test_post_653_run_delta.py) · [Public operational lesson](../lessons/2026-11-03-native-success-is-not-universal-execution.md)
 
 All 653 previously frozen identities remain visible in the new seven-page API census; 20 additional successful PR-related Runs yield 673 visible Runs (632 success / 41 cancelled), with no new scheduled or accepted production events in the bounded observation. All 38 visible scheduled Runs have 59 directly checked successful Jobs. The 20 new PR-related Runs have 36 successful and two conditionally skipped Jobs. Native accepted Knowledge remains four Receipts and four linked events; no novel biological result or third-party scientific certification is established. Earlier failures, PR #55's unavailable intermediate Run IDs, clock uncertainties, unprotected main settings and external synchronization limits remain separately recorded. This frozen cutoff predates its own publishing PR and follow-up CI.
+
+## 2026-11-03 · Post-PR #57 673 → 684, and complete first-day classification
+
+[New 11-Run/21-Job source evidence](post-673-to-684-observation-2026-11-03.json) · [Source-cutoff reconciliation](POST_673_TO_684_RECONCILIATION_2026-11-03.md) · [Complete 250/57/274 classification](../taxonomy/README.md) · [Historic name correction register](../taxonomy/CORRECTION_REGISTER_2026-11-03.md)
+
+Every earlier 673 Run ID remains visible in the new source collection. Eleven new successful PR #57 development/PR/merged-main Runs include 20 successful Jobs and one conditionally skipped Bio Job. The 684-Run cutoff does not include the subsequent classification PR and its CI; original frozen observations remain untouched.
