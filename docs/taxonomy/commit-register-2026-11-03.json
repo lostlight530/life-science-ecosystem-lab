@@ -1,0 +1,2549 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "MAIN_REACHABLE_COMMIT_ANCESTRY_WITH_SUBJECT_CLASSIFICATION",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "source_main_commit": "94f5f0875e7f590846781e5557912730bc482221",
+  "git_root": "00009a38bc136a7c245270770b005e4e102a870d",
+  "source_authority": "PUBLIC_GITHUB_API_READONLY",
+  "observation_assembled_at_utc": "2026-11-03T03:24:57.137Z",
+  "per_http_request_clock_utc": null,
+  "clock_limit": "Assembly clock is not an independently captured timestamp for each REST request. Later PR checks/merge are outside the frozen source.",
+  "source_url": "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?sha=94f5f0875e7f590846781e5557912730bc482221&per_page=100&page={1..3}",
+  "page_counts": [
+    100,
+    100,
+    50
+  ],
+  "commit_total": 250,
+  "parent_closed": true,
+  "root_count": 1,
+  "classification_basis": "COMMIT_TIMESTAMP_AND_SUBJECT_NOT_DIFF_VERIFIED",
+  "commits": [
+    {
+      "sha": "94f5f0875e7f590846781e5557912730bc482221",
+      "parents": [
+        "22d6965e7236e058680fca529e8fc98faa17d5d9"
+      ],
+      "committed_at_utc": "2026-11-03T03:14:12Z",
+      "subject": "docs(test): reconcile 653→673 Runs and native quality (#57)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "22d6965e7236e058680fca529e8fc98faa17d5d9",
+      "parents": [
+        "a06b2a656948336ddc780e6c307f5db3d8fc8738"
+      ],
+      "committed_at_utc": "2026-11-02T13:27:40Z",
+      "subject": "test(provenance): restore historical SHA checks and live-state tamper gate (#56)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "a06b2a656948336ddc780e6c307f5db3d8fc8738",
+      "parents": [
+        "b11c4be4e45e1d5560b431563efa82ad23bdfd3b"
+      ],
+      "committed_at_utc": "2026-11-02T13:06:13Z",
+      "subject": "test(provenance): reconcile fourth accepted state and frozen 653-Run history (#55)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "b11c4be4e45e1d5560b431563efa82ad23bdfd3b",
+      "parents": [
+        "d339e4d9dcac8b4b5e1ee215dde0edcbf775dc1b"
+      ],
+      "committed_at_utc": "2026-11-02T11:25:03Z",
+      "subject": "data: persist verified workflow knowledge snapshot",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "NATIVE_DATA_WRITE_REQUIRES_RECEIPT_CORROBORATION"
+    },
+    {
+      "sha": "d339e4d9dcac8b4b5e1ee215dde0edcbf775dc1b",
+      "parents": [
+        "efc8355c130cbb54111f3a0907fdec79f116a122"
+      ],
+      "committed_at_utc": "2026-11-01T23:10:07Z",
+      "subject": "docs(test): append 628-to-640 Run and Job provenance (#54)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "efc8355c130cbb54111f3a0907fdec79f116a122",
+      "parents": [
+        "3afea285b3660f9482c935c13160705eecfb332a"
+      ],
+      "committed_at_utc": "2026-11-01T11:31:56Z",
+      "subject": "docs(test): reconcile 614-to-628 Runs and Nov 1 native evidence (#53)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3afea285b3660f9482c935c13160705eecfb332a",
+      "parents": [
+        "e6e42076dfda6ff955a7d6f07ab9fc914d7d9151"
+      ],
+      "committed_at_utc": "2026-10-31T15:15:21Z",
+      "subject": "docs(test): reconcile Oct 31 native Runs and evidence quality (#52)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e6e42076dfda6ff955a7d6f07ab9fc914d7d9151",
+      "parents": [
+        "bc33c75efeee341194f1d2eec804565ed58a90bb"
+      ],
+      "committed_at_utc": "2026-10-31T06:52:50Z",
+      "subject": "test(provenance): independently replay LS root-to-current history and 598 Runs (#51)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "bc33c75efeee341194f1d2eec804565ed58a90bb",
+      "parents": [
+        "1fe2fb530de3e62b7ca27e7493909313f733f934"
+      ],
+      "committed_at_utc": "2026-10-31T06:28:21Z",
+      "subject": "docs(research): append verified Oct 31 evidence delta and offline replay (#50)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "1fe2fb530de3e62b7ca27e7493909313f733f934",
+      "parents": [
+        "928aa525551822be7b33061ea70f169ea0961970"
+      ],
+      "committed_at_utc": "2026-10-31T01:24:46Z",
+      "subject": "docs(research): verify failure causes and cross-repo predecessor evidence (#49)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "928aa525551822be7b33061ea70f169ea0961970",
+      "parents": [
+        "20ef76346b553906360ec05598fd4239eca4aa22"
+      ],
+      "committed_at_utc": "2026-10-30T14:55:46Z",
+      "subject": "test(provenance): replay post-schedule 563-run source population (#48)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "20ef76346b553906360ec05598fd4239eca4aa22",
+      "parents": [
+        "5da107dfe8521fbf2a1a2f5653ce6aea23bfc1dc"
+      ],
+      "committed_at_utc": "2026-10-30T14:44:49Z",
+      "subject": "docs(research): close Oct 30 native schedule with append-only provenance (#47)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5da107dfe8521fbf2a1a2f5653ce6aea23bfc1dc",
+      "parents": [
+        "56ac4a9065d8f0ff60da6eadadfdbe44a2d26615"
+      ],
+      "committed_at_utc": "2026-10-30T02:01:15Z",
+      "subject": "docs(research): append public 547-run observation and native quality correction (#46)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "56ac4a9065d8f0ff60da6eadadfdbe44a2d26615",
+      "parents": [
+        "ab56cd79f5532623c2043f5b18f744b159f39aa3"
+      ],
+      "committed_at_utc": "2026-10-30T01:07:24Z",
+      "subject": "test(research): preserve temporal Run-name identity and correct cadence medians (#45)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ab56cd79f5532623c2043f5b18f744b159f39aa3",
+      "parents": [
+        "ae1ac9c1e42ca707b1f44f5cc46b15c787b05899"
+      ],
+      "committed_at_utc": "2026-10-30T00:57:17Z",
+      "subject": "docs(research): audit native daily quality and preserve provenance conflicts (#44)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ae1ac9c1e42ca707b1f44f5cc46b15c787b05899",
+      "parents": [
+        "05ab6b2dc98dfe13581b5ae1bedcd11a58dbbb77"
+      ],
+      "committed_at_utc": "2026-10-29T16:34:33Z",
+      "subject": "docs(research): pin complete LS repository history and negative evidence (#43)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "05ab6b2dc98dfe13581b5ae1bedcd11a58dbbb77",
+      "parents": [
+        "c5126947b50ec8805342a72fa8adafe457a6c6f0"
+      ],
+      "committed_at_utc": "2026-10-29T16:19:22Z",
+      "subject": "test(research): establish native no-delta causality (#42)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "c5126947b50ec8805342a72fa8adafe457a6c6f0",
+      "parents": [
+        "a2755a3be47f54f7a1c9ce3629b9f6112316cd5f"
+      ],
+      "committed_at_utc": "2026-10-29T16:13:05Z",
+      "subject": "docs(research): independently verify native production continuity (#41)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "a2755a3be47f54f7a1c9ce3629b9f6112316cd5f",
+      "parents": [
+        "e496c87f97796d214ce4dd8746e2d31c6d48ba09"
+      ],
+      "committed_at_utc": "2026-10-29T16:05:10Z",
+      "subject": "docs(research): evidence replay and standards boundary review (#40)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e496c87f97796d214ce4dd8746e2d31c6d48ba09",
+      "parents": [
+        "773918c9fe427abf371d872b2beb62a4a7dfe305"
+      ],
+      "committed_at_utc": "2026-10-28T17:47:00Z",
+      "subject": "fix(framework): preserve complete audit reports on write failures (#39)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "FRAMEWORK_SUBJECT_LABEL"
+    },
+    {
+      "sha": "773918c9fe427abf371d872b2beb62a4a7dfe305",
+      "parents": [
+        "6c93ff269b18ba62cf186ea63baf53721fb2217a"
+      ],
+      "committed_at_utc": "2026-10-28T17:00:55Z",
+      "subject": "fix(framework): count declared cross-domain transitions (#38)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "FRAMEWORK_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6c93ff269b18ba62cf186ea63baf53721fb2217a",
+      "parents": [
+        "43b1a6b59dd1809e19bff686142ffe56cfe00dfb"
+      ],
+      "committed_at_utc": "2026-10-28T16:53:45Z",
+      "subject": "docs: clarify LS scientific claim and cross-registry evidence gates (#37)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "43b1a6b59dd1809e19bff686142ffe56cfe00dfb",
+      "parents": [
+        "5f47e0689ad86f5beea4782737d6cfe9b82e3503"
+      ],
+      "committed_at_utc": "2026-10-27T15:54:56Z",
+      "subject": "docs(test): reconcile cross-asset evidence and crate version contracts (#36)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5f47e0689ad86f5beea4782737d6cfe9b82e3503",
+      "parents": [
+        "e59c2e34f0da6212ac326da0b930e7309e4ceed2"
+      ],
+      "committed_at_utc": "2026-10-27T15:23:59Z",
+      "subject": "docs(test): cover all public LS contracts in repository audit (#35)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e59c2e34f0da6212ac326da0b930e7309e4ceed2",
+      "parents": [
+        "25722539226349079cda66a5390185c2399d174c"
+      ],
+      "committed_at_utc": "2026-10-26T16:44:34Z",
+      "subject": "fix(framework): unify safe report path handling (#34)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "FRAMEWORK_SUBJECT_LABEL"
+    },
+    {
+      "sha": "25722539226349079cda66a5390185c2399d174c",
+      "parents": [
+        "c1d58b52f35fe31c475c4cec3c78f1178d66eab8"
+      ],
+      "committed_at_utc": "2026-10-26T09:07:14Z",
+      "subject": "data: persist verified workflow knowledge snapshot",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "NATIVE_DATA_WRITE_REQUIRES_RECEIPT_CORROBORATION"
+    },
+    {
+      "sha": "c1d58b52f35fe31c475c4cec3c78f1178d66eab8",
+      "parents": [
+        "4609be9fa844977a2bda8dd82bcf3d3a2f0b5ec3"
+      ],
+      "committed_at_utc": "2026-10-25T10:59:40Z",
+      "subject": "fix(framework): safe evidence reporting and strict cross-domain assurance (#33)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "FRAMEWORK_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4609be9fa844977a2bda8dd82bcf3d3a2f0b5ec3",
+      "parents": [
+        "20b3cdd03eb1df690ab26ddb2816121df3af54a7"
+      ],
+      "committed_at_utc": "2026-10-25T10:50:24Z",
+      "subject": "feat(framework): falsifiable cross-domain contract challenge and repository governance (#31)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "FRAMEWORK_SUBJECT_LABEL"
+    },
+    {
+      "sha": "20b3cdd03eb1df690ab26ddb2816121df3af54a7",
+      "parents": [
+        "be72fe68f4ed98b58321319ce1d6a7df9c2100ee"
+      ],
+      "committed_at_utc": "2026-10-20T07:41:42Z",
+      "subject": "fix(framework): harden repository-wide evidence contracts (#30)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "FRAMEWORK_SUBJECT_LABEL"
+    },
+    {
+      "sha": "be72fe68f4ed98b58321319ce1d6a7df9c2100ee",
+      "parents": [
+        "6fc2c8266fcfe3655b4e8df704817b5a40fb5f14"
+      ],
+      "committed_at_utc": "2026-10-19T14:24:29Z",
+      "subject": "feat: harden three workflow execution boundaries (#28)",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6fc2c8266fcfe3655b4e8df704817b5a40fb5f14",
+      "parents": [
+        "c09d4f3d0a8ebe28970dd511c7ab1e96f2ee0ea6"
+      ],
+      "committed_at_utc": "2026-10-19T09:03:41Z",
+      "subject": "data: persist verified workflow knowledge snapshot",
+      "era": "FRAMEWORK_AND_CONTRACT_REFINEMENT",
+      "subject_label": "NATIVE_DATA_WRITE_REQUIRES_RECEIPT_CORROBORATION"
+    },
+    {
+      "sha": "c09d4f3d0a8ebe28970dd511c7ab1e96f2ee0ea6",
+      "parents": [
+        "d2a6ec6e943f0b8888e007053ddb0d3d9be47367",
+        "ca9b70a02c30b4c796f06e58fe70efb81943899d"
+      ],
+      "committed_at_utc": "2026-10-18T04:25:14Z",
+      "subject": "Merge pull request #27 from lostlight530/agent/metadata-sync-20261018",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ca9b70a02c30b4c796f06e58fe70efb81943899d",
+      "parents": [
+        "d2a6ec6e943f0b8888e007053ddb0d3d9be47367"
+      ],
+      "committed_at_utc": "2026-10-18T03:45:30Z",
+      "subject": "docs: sync workflow and bio.tools metadata",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d2a6ec6e943f0b8888e007053ddb0d3d9be47367",
+      "parents": [
+        "98c46c6d4d472626b51b673b415add61e919bf35",
+        "9deb79cbd55ca2e5caf4d3fc3ca5ef19a484c02e"
+      ],
+      "committed_at_utc": "2026-10-18T03:11:25Z",
+      "subject": "Merge pull request #26 from lostlight530/agent/lifemonitor-wftest-20261018",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "9deb79cbd55ca2e5caf4d3fc3ca5ef19a484c02e",
+      "parents": [
+        "98c46c6d4d472626b51b673b415add61e919bf35"
+      ],
+      "committed_at_utc": "2026-10-18T03:08:13Z",
+      "subject": "fix: align LifeMonitor workflow test metadata",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "98c46c6d4d472626b51b673b415add61e919bf35",
+      "parents": [
+        "211da385826d9407af0002a34c2d113eac0249cd",
+        "4d6a53304e38806944988b15d8352721a22e8e0a"
+      ],
+      "committed_at_utc": "2026-10-17T13:37:15Z",
+      "subject": "Merge pull request #25 from lostlight530/agent/gate-isolation-20261017",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4d6a53304e38806944988b15d8352721a22e8e0a",
+      "parents": [
+        "211da385826d9407af0002a34c2d113eac0249cd"
+      ],
+      "committed_at_utc": "2026-10-17T13:25:40Z",
+      "subject": "ci: isolate required validation domains",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "211da385826d9407af0002a34c2d113eac0249cd",
+      "parents": [
+        "1db35a6118815fc0779397390dc7e0fcfab29d48",
+        "c120ad99b7a6c85b049da40f592048ce09e7dd7f"
+      ],
+      "committed_at_utc": "2026-10-17T07:50:37Z",
+      "subject": "Merge pull request #24 from lostlight530/fix/lifemonitor-config-isolation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "c120ad99b7a6c85b049da40f592048ce09e7dd7f",
+      "parents": [
+        "d4907a8ec979a0dd4a9971aad408a410442ad217"
+      ],
+      "committed_at_utc": "2026-10-17T07:40:19Z",
+      "subject": "docs: point portable workflow guide to official LifeMonitor config",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d4907a8ec979a0dd4a9971aad408a410442ad217",
+      "parents": [
+        "75bfef6d303ccc9ffca277f13cf44d82383e841a"
+      ],
+      "committed_at_utc": "2026-10-17T07:40:16Z",
+      "subject": "docs: point Knowledge Workflow guide to official LifeMonitor config",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "75bfef6d303ccc9ffca277f13cf44d82383e841a",
+      "parents": [
+        "7156d7dd654733cab13b241af0ae4c641e872ade"
+      ],
+      "committed_at_utc": "2026-10-17T07:40:13Z",
+      "subject": "test: align repository experience with LifeMonitor config path",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7156d7dd654733cab13b241af0ae4c641e872ade",
+      "parents": [
+        "57f29d76547e5df196d82a2522d20f870c4759d8"
+      ],
+      "committed_at_utc": "2026-10-17T07:36:52Z",
+      "subject": "docs: clarify LifeMonitor account-global settings remain authoritative",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "57f29d76547e5df196d82a2522d20f870c4759d8",
+      "parents": [
+        "474fcf3b517432b0a722fe14da27f2746b2e80eb"
+      ],
+      "committed_at_utc": "2026-10-17T07:36:49Z",
+      "subject": "docs: clarify LifeMonitor config recognition remains unverified",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "474fcf3b517432b0a722fe14da27f2746b2e80eb",
+      "parents": [
+        "fda49ed325fa8809a5c0c36150f3b29fb03d1ba9"
+      ],
+      "committed_at_utc": "2026-10-17T07:36:47Z",
+      "subject": "test: fix workflow permission contract assertion",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "fda49ed325fa8809a5c0c36150f3b29fb03d1ba9",
+      "parents": [
+        "6197b96b1c2ddec0451494d8db6aaf43c72aa7d6"
+      ],
+      "committed_at_utc": "2026-10-17T07:35:23Z",
+      "subject": "docs: document isolated self-check contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6197b96b1c2ddec0451494d8db6aaf43c72aa7d6",
+      "parents": [
+        "39b41f87b95442d78e30aa36adc8c2701af6d0dc"
+      ],
+      "committed_at_utc": "2026-10-17T07:35:20Z",
+      "subject": "test: enforce independent institutional and project self-check jobs",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "39b41f87b95442d78e30aa36adc8c2701af6d0dc",
+      "parents": [
+        "0d1fa65a3c4c643b560b674e66c6b399c96c45b4"
+      ],
+      "committed_at_utc": "2026-10-17T07:34:51Z",
+      "subject": "test: replace mixed self-check tests with isolated plane suites",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0d1fa65a3c4c643b560b674e66c6b399c96c45b4",
+      "parents": [
+        "0517b4bb52b07a34247209ebe71face4b5652e5b"
+      ],
+      "committed_at_utc": "2026-10-17T07:34:48Z",
+      "subject": "test: isolate project custom contract tests",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0517b4bb52b07a34247209ebe71face4b5652e5b",
+      "parents": [
+        "a14735e238faf9c69262db66f046a591463da136"
+      ],
+      "committed_at_utc": "2026-10-17T07:34:46Z",
+      "subject": "test: isolate institutional reference contract tests",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "a14735e238faf9c69262db66f046a591463da136",
+      "parents": [
+        "21af4bbf312560afced4aca49b64eb4cabe703f5"
+      ],
+      "committed_at_utc": "2026-10-17T07:33:51Z",
+      "subject": "fix: isolate institutional self-check from project contract tests",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "21af4bbf312560afced4aca49b64eb4cabe703f5",
+      "parents": [
+        "7d55f02ba6b48810f29752d65b778e499084fb32"
+      ],
+      "committed_at_utc": "2026-10-17T07:33:33Z",
+      "subject": "fix: correct regex escaping in LifeMonitor config contract",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7d55f02ba6b48810f29752d65b778e499084fb32",
+      "parents": [
+        "e3de0c7998e5eda2eca543781e6fec4ed8b90719"
+      ],
+      "committed_at_utc": "2026-10-17T07:32:56Z",
+      "subject": "docs: record LifeMonitor config policy and verification boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e3de0c7998e5eda2eca543781e6fec4ed8b90719",
+      "parents": [
+        "de8502068781c564759a7e501ab2f1cff169c73b"
+      ],
+      "committed_at_utc": "2026-10-17T07:32:53Z",
+      "subject": "docs: distinguish LifeMonitor local config from external enrollment",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "de8502068781c564759a7e501ab2f1cff169c73b",
+      "parents": [
+        "f151c7b665cff288cab2f647076a4d5c00042a0b"
+      ],
+      "committed_at_utc": "2026-10-17T07:32:50Z",
+      "subject": "docs: clarify repository-scoped LifeMonitor config ownership",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f151c7b665cff288cab2f647076a4d5c00042a0b",
+      "parents": [
+        "97dfb5c26994ba3ba365329340b793b41fd89674"
+      ],
+      "committed_at_utc": "2026-10-17T07:32:47Z",
+      "subject": "fix: track the official LifeMonitor config path in project manifest",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "97dfb5c26994ba3ba365329340b793b41fd89674",
+      "parents": [
+        "1ec6ae61cf1b626efb942003c5bf65998ad12006"
+      ],
+      "committed_at_utc": "2026-10-17T07:32:45Z",
+      "subject": "fix: validate repository-scoped LifeMonitor config without global overrides",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "1ec6ae61cf1b626efb942003c5bf65998ad12006",
+      "parents": [
+        "f92fd977e11e49887dedfef7ac3734a849fd321d"
+      ],
+      "committed_at_utc": "2026-10-17T07:32:14Z",
+      "subject": "fix: validate LifeMonitor config against official filename and scoped settings",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f92fd977e11e49887dedfef7ac3734a849fd321d",
+      "parents": [
+        "2580cfaaf469a5653742b36095b2e939cb0d3f60"
+      ],
+      "committed_at_utc": "2026-10-17T07:30:56Z",
+      "subject": "fix: remove nonstandard LifeMonitor config filename",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "2580cfaaf469a5653742b36095b2e939cb0d3f60",
+      "parents": [
+        "1db35a6118815fc0779397390dc7e0fcfab29d48"
+      ],
+      "committed_at_utc": "2026-10-17T07:30:53Z",
+      "subject": "fix: use LifeMonitor's documented root config filename",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "1db35a6118815fc0779397390dc7e0fcfab29d48",
+      "parents": [
+        "e3a98e689b13c1742694d194f877a59724818dbd",
+        "4cdf11c48ea3f76365785272bd4cd396761956aa"
+      ],
+      "committed_at_utc": "2026-10-17T05:50:07Z",
+      "subject": "Merge PR #23: daily institutional-default and project-custom self-checks",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4cdf11c48ea3f76365785272bd4cd396761956aa",
+      "parents": [
+        "28c105abe09e377e98c040d60ad53a1c356a2415"
+      ],
+      "committed_at_utc": "2026-10-17T05:49:00Z",
+      "subject": "test(selfcheck): forbid fictional institution approvals and unreviewed project asset expansion",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "28c105abe09e377e98c040d60ad53a1c356a2415",
+      "parents": [
+        "823d2e65298de7891f3dec4ac75d8285472a0d08"
+      ],
+      "committed_at_utc": "2026-10-17T05:48:29Z",
+      "subject": "fix(selfcheck): keep check-plane READMEs out of existing public docs manifest",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "823d2e65298de7891f3dec4ac75d8285472a0d08",
+      "parents": [
+        "676b4df07829307f19fe8ef83736ea9890f917d0"
+      ],
+      "committed_at_utc": "2026-10-17T05:47:30Z",
+      "subject": "fix(selfcheck): harden isolated default/custom verification and link daily documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "676b4df07829307f19fe8ef83736ea9890f917d0",
+      "parents": [
+        "e743cd526ce8fb44324077c27107331795ec694b"
+      ],
+      "committed_at_utc": "2026-10-17T05:47:28Z",
+      "subject": "fix(selfcheck): harden isolated default/custom verification and link daily documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e743cd526ce8fb44324077c27107331795ec694b",
+      "parents": [
+        "7a0cfd063f321977f4f620836e17b482c9ee0361"
+      ],
+      "committed_at_utc": "2026-10-17T05:47:25Z",
+      "subject": "fix(selfcheck): harden isolated default/custom verification and link daily documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7a0cfd063f321977f4f620836e17b482c9ee0361",
+      "parents": [
+        "231ba975ed63d0f4086da7495fcc4baf2a2f15fb"
+      ],
+      "committed_at_utc": "2026-10-17T05:47:20Z",
+      "subject": "fix(selfcheck): harden isolated default/custom verification and link daily documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "231ba975ed63d0f4086da7495fcc4baf2a2f15fb",
+      "parents": [
+        "dfef45df6710828147c2901c66302f52253cdf70"
+      ],
+      "committed_at_utc": "2026-10-17T05:47:18Z",
+      "subject": "fix(selfcheck): harden isolated default/custom verification and link daily documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "dfef45df6710828147c2901c66302f52253cdf70",
+      "parents": [
+        "4392c21c5c520f1c1b32b7c24ea91a50c9e5708d"
+      ],
+      "committed_at_utc": "2026-10-17T05:47:15Z",
+      "subject": "fix(selfcheck): harden isolated default/custom verification and link daily documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4392c21c5c520f1c1b32b7c24ea91a50c9e5708d",
+      "parents": [
+        "2651506b7aee6fe738fa9cd12cdd64b537ce4c55"
+      ],
+      "committed_at_utc": "2026-10-17T05:46:52Z",
+      "subject": "docs(selfcheck): specify separate daily institutional public and project-owned verification planes",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "2651506b7aee6fe738fa9cd12cdd64b537ce4c55",
+      "parents": [
+        "ba1bb10a56626d0d9318925311a2183b9053dbc7"
+      ],
+      "committed_at_utc": "2026-10-17T05:46:25Z",
+      "subject": "test(selfcheck): enforce institutional/project physical separation and fail-closed custom contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ba1bb10a56626d0d9318925311a2183b9053dbc7",
+      "parents": [
+        "52cfe0a4c78dadd3edfd1aed4f4b761bce4bf915"
+      ],
+      "committed_at_utc": "2026-10-17T05:46:01Z",
+      "subject": "ci(selfcheck): schedule daily isolated institutional public checks and full project contract audits",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "52cfe0a4c78dadd3edfd1aed4f4b761bce4bf915",
+      "parents": [
+        "6be89c93b154f50798f8fc909d71beb868a39a88"
+      ],
+      "committed_at_utc": "2026-10-17T05:45:32Z",
+      "subject": "fix(selfcheck): forbid any institutional default file inside project-owned manifest",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6be89c93b154f50798f8fc909d71beb868a39a88",
+      "parents": [
+        "8624942632fda52db91472df4b7001f1225c366c"
+      ],
+      "committed_at_utc": "2026-10-17T05:45:23Z",
+      "subject": "feat(selfcheck): separate official institutional pointers from repository-owned custom checks",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "8624942632fda52db91472df4b7001f1225c366c",
+      "parents": [
+        "d5a449c1b868ceea0934f3e9c8a078f0560866e5"
+      ],
+      "committed_at_utc": "2026-10-17T05:45:21Z",
+      "subject": "feat(selfcheck): separate official institutional pointers from repository-owned custom checks",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d5a449c1b868ceea0934f3e9c8a078f0560866e5",
+      "parents": [
+        "242449d1579a616fa0111d6e0292e6fee0dd9155"
+      ],
+      "committed_at_utc": "2026-10-17T05:45:19Z",
+      "subject": "feat(selfcheck): separate official institutional pointers from repository-owned custom checks",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "242449d1579a616fa0111d6e0292e6fee0dd9155",
+      "parents": [
+        "54766916c2ce8d1a5838985dcd4ed012e7cc46f8"
+      ],
+      "committed_at_utc": "2026-10-17T05:45:17Z",
+      "subject": "feat(selfcheck): separate official institutional pointers from repository-owned custom checks",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "54766916c2ce8d1a5838985dcd4ed012e7cc46f8",
+      "parents": [
+        "e3a98e689b13c1742694d194f877a59724818dbd"
+      ],
+      "committed_at_utc": "2026-10-17T05:44:47Z",
+      "subject": "feat(selfcheck): add separate institutional public observation and offline project contract engines",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e3a98e689b13c1742694d194f877a59724818dbd",
+      "parents": [
+        "9abac79df8546ad465e569dd673bae11017afd34",
+        "48d0fb2a907b36cd069de839abcb6ee57b175c04"
+      ],
+      "committed_at_utc": "2026-10-17T05:31:16Z",
+      "subject": "Merge PR #22: 谁说 Agent 集群不可以科研？",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "48d0fb2a907b36cd069de839abcb6ee57b175c04",
+      "parents": [
+        "3f4bc0c39c88f7417dc1fe7abe8f243dd9209f08"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:54Z",
+      "subject": "test(docs): audit archived Agent cohort study and review decision records",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3f4bc0c39c88f7417dc1fe7abe8f243dd9209f08",
+      "parents": [
+        "482ae982af6704e1c455cdac963dad1e4c30a74a"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:44Z",
+      "subject": "docs(agent): integrate falsifiable cohort field study, decision ledger and self-declared identity boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "482ae982af6704e1c455cdac963dad1e4c30a74a",
+      "parents": [
+        "bd71a9c6381acc96c4c01f008840aef61d66124e"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:42Z",
+      "subject": "docs(agent): integrate falsifiable cohort field study, decision ledger and self-declared identity boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "bd71a9c6381acc96c4c01f008840aef61d66124e",
+      "parents": [
+        "5f4b68322dc1b82958c0471cb0367907e28b5b34"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:39Z",
+      "subject": "docs(agent): integrate falsifiable cohort field study, decision ledger and self-declared identity boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5f4b68322dc1b82958c0471cb0367907e28b5b34",
+      "parents": [
+        "498afc1b66442c850b9d245a1a6e1e2fcf5a6b4b"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:36Z",
+      "subject": "docs(agent): integrate falsifiable cohort field study, decision ledger and self-declared identity boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "498afc1b66442c850b9d245a1a6e1e2fcf5a6b4b",
+      "parents": [
+        "3e2dd7559317f512c6a6c3717716df029e90122f"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:33Z",
+      "subject": "docs(agent): integrate falsifiable cohort field study, decision ledger and self-declared identity boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3e2dd7559317f512c6a6c3717716df029e90122f",
+      "parents": [
+        "e0220cae36dbecf282ae7cd593354b0d19ebba42"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:31Z",
+      "subject": "docs(agent): integrate falsifiable cohort field study, decision ledger and self-declared identity boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e0220cae36dbecf282ae7cd593354b0d19ebba42",
+      "parents": [
+        "c99808f2093fb7190b2a0a88ba1cb91ed4bd884f"
+      ],
+      "committed_at_utc": "2026-10-17T05:29:01Z",
+      "subject": "docs(evidence): add sourced Agent claim decision ledger without conflating revision, rejection and acceptance",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "c99808f2093fb7190b2a0a88ba1cb91ed4bd884f",
+      "parents": [
+        "7bc0cd95fa402295ae47bb87e1a03814a86b50f0"
+      ],
+      "committed_at_utc": "2026-10-17T05:28:39Z",
+      "subject": "docs(research): document auditable heterogeneous Agent cohort as a falsifiable collaborative research case",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7bc0cd95fa402295ae47bb87e1a03814a86b50f0",
+      "parents": [
+        "0ddb587409bd21730c29d8156ee1c1ede8457aa8"
+      ],
+      "committed_at_utc": "2026-10-17T05:27:52Z",
+      "subject": "test(agent): prove optional cross-domain attribution never self-certifies execution identity",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0ddb587409bd21730c29d8156ee1c1ede8457aa8",
+      "parents": [
+        "f5ea58f1a44ebacd692c2f8836445e7daf7e8690"
+      ],
+      "committed_at_utc": "2026-10-17T05:27:50Z",
+      "subject": "test(agent): prove optional cross-domain attribution never self-certifies execution identity",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f5ea58f1a44ebacd692c2f8836445e7daf7e8690",
+      "parents": [
+        "e82d3e2b5a1ae119db2a9fd3733ce168d6f03499"
+      ],
+      "committed_at_utc": "2026-10-17T05:27:40Z",
+      "subject": "feat(agent): accept optional untrusted proposer label without changing research authority",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e82d3e2b5a1ae119db2a9fd3733ce168d6f03499",
+      "parents": [
+        "4c8c8a6591fd1507026a583fd9c636dc0adde0b2"
+      ],
+      "committed_at_utc": "2026-10-17T05:27:38Z",
+      "subject": "feat(agent): accept optional untrusted proposer label without changing research authority",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4c8c8a6591fd1507026a583fd9c636dc0adde0b2",
+      "parents": [
+        "9abac79df8546ad465e569dd673bae11017afd34"
+      ],
+      "committed_at_utc": "2026-10-17T05:27:27Z",
+      "subject": "feat(agent): add strictly self-declared optional origin label without authentication claims",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "9abac79df8546ad465e569dd673bae11017afd34",
+      "parents": [
+        "3c5b44c23fce47d96b82defd306f489485c390ec",
+        "b5b5eddafac99e93f61694cf11d03561f489841c"
+      ],
+      "committed_at_utc": "2026-10-17T05:26:40Z",
+      "subject": "Merge PR #20: preserve Qi cross-agent longitudinal observation with audited boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "b5b5eddafac99e93f61694cf11d03561f489841c",
+      "parents": [
+        "46e3a55e77a1e0f12b3685f43c6b3bd7864a1e7a",
+        "3c5b44c23fce47d96b82defd306f489485c390ec"
+      ],
+      "committed_at_utc": "2026-10-17T05:25:32Z",
+      "subject": "merge(main): integrate Qi observation record with attribution, evidence caveats and current docs contract",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3c5b44c23fce47d96b82defd306f489485c390ec",
+      "parents": [
+        "336afcb217f1f6afe684a7b0c2fc93ae67170634",
+        "28ad6aa1325eb77d77f857b6442e83924cd78dfd"
+      ],
+      "committed_at_utc": "2026-10-17T05:25:01Z",
+      "subject": "Merge PR #19: preserve Clinder cross-agent observations with calibrated review",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "28ad6aa1325eb77d77f857b6442e83924cd78dfd",
+      "parents": [
+        "f2b258440ca4c639568caf9330cb266ec6555c09",
+        "336afcb217f1f6afe684a7b0c2fc93ae67170634"
+      ],
+      "committed_at_utc": "2026-10-17T05:24:03Z",
+      "subject": "merge(main): preserve Clinder observations with maintainer evidence notes and current documentation contract",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "46e3a55e77a1e0f12b3685f43c6b3bd7864a1e7a",
+      "parents": [
+        "d272f55c756582cebe9cbbf69afaf428cf78aabb"
+      ],
+      "committed_at_utc": "2026-10-17T05:23:42Z",
+      "subject": "docs(agent): append maintainer verification and uncertainty note to PR #20 observations",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f2b258440ca4c639568caf9330cb266ec6555c09",
+      "parents": [
+        "393437236fc8867b95da4d6793838d3727eb0cd3"
+      ],
+      "committed_at_utc": "2026-10-17T05:23:39Z",
+      "subject": "docs(agent): append maintainer verification and uncertainty note to PR #19 observations",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "336afcb217f1f6afe684a7b0c2fc93ae67170634",
+      "parents": [
+        "fad2ca9daae0d769a9cb9828e1fbe2226ae846b8",
+        "186ac1b914a2234e77a071505389e8936c0f3543"
+      ],
+      "committed_at_utc": "2026-10-17T05:22:47Z",
+      "subject": "Merge PR #21: Codex three-asset public contracts and evidence boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "186ac1b914a2234e77a071505389e8936c0f3543",
+      "parents": [
+        "cf6d6e78ea9967eaeb0c12453a92b72d1f25ebf6"
+      ],
+      "committed_at_utc": "2026-10-17T05:12:46Z",
+      "subject": "chore: preserve repository line endings",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "cf6d6e78ea9967eaeb0c12453a92b72d1f25ebf6",
+      "parents": [
+        "fad2ca9daae0d769a9cb9828e1fbe2226ae846b8"
+      ],
+      "committed_at_utc": "2026-10-17T05:11:11Z",
+      "subject": "docs: align three-asset public contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d272f55c756582cebe9cbbf69afaf428cf78aabb",
+      "parents": [
+        "6e0bfc199063dd0e4ce89ceb9b193bef621ef634"
+      ],
+      "committed_at_utc": "2026-10-17T04:55:50Z",
+      "subject": "docs(qi): register QI_OBSERVATIONS.md in the public documentation audit",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "393437236fc8867b95da4d6793838d3727eb0cd3",
+      "parents": [
+        "3c3264cb868bc9f30becc2f6cd25dff670efc026"
+      ],
+      "committed_at_utc": "2026-10-17T04:52:57Z",
+      "subject": "docs: register CLINDER_OBSERVATIONS.md in public documentation inventory",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6e0bfc199063dd0e4ce89ceb9b193bef621ef634",
+      "parents": [
+        "fad2ca9daae0d769a9cb9828e1fbe2226ae846b8"
+      ],
+      "committed_at_utc": "2026-10-17T04:52:21Z",
+      "subject": "docs(qi): record-only cross-agent observation of the 12-hour recognition loop",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3c3264cb868bc9f30becc2f6cd25dff670efc026",
+      "parents": [
+        "fad2ca9daae0d769a9cb9828e1fbe2226ae846b8"
+      ],
+      "committed_at_utc": "2026-10-17T04:46:54Z",
+      "subject": "docs: add Clinder cross-agent observations (record only, not for merge)",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "fad2ca9daae0d769a9cb9828e1fbe2226ae846b8",
+      "parents": [
+        "57f328acbcf051a44c2ba1c376952af57a84c68e",
+        "5c1790dc49320970368158078e84ff33c0648211"
+      ],
+      "committed_at_utc": "2026-10-17T04:42:21Z",
+      "subject": "Merge PR #18: reusable scientific research methodology contract",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5c1790dc49320970368158078e84ff33c0648211",
+      "parents": [
+        "03a3f18756e3840b1d631ce20c06b4b69711cafa"
+      ],
+      "committed_at_utc": "2026-10-17T04:41:16Z",
+      "subject": "test(docs): register cross-domain research methodology guide in public documentation audit",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "03a3f18756e3840b1d631ce20c06b4b69711cafa",
+      "parents": [
+        "3f929c681ecd4b34886cc29bdca62bbe8b076967"
+      ],
+      "committed_at_utc": "2026-10-17T04:41:08Z",
+      "subject": "docs: prioritize transferable research methodology over individual example algorithms",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3f929c681ecd4b34886cc29bdca62bbe8b076967",
+      "parents": [
+        "429c49c90ef243a44ff836869328d276f719be81"
+      ],
+      "committed_at_utc": "2026-10-17T04:41:06Z",
+      "subject": "docs: prioritize transferable research methodology over individual example algorithms",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "429c49c90ef243a44ff836869328d276f719be81",
+      "parents": [
+        "5d4b3b965bc83f14e5e3872b6576867af3a94c94"
+      ],
+      "committed_at_utc": "2026-10-17T04:41:03Z",
+      "subject": "docs: prioritize transferable research methodology over individual example algorithms",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5d4b3b965bc83f14e5e3872b6576867af3a94c94",
+      "parents": [
+        "0af28133822b9e239d872b7cb9e7b91192779858"
+      ],
+      "committed_at_utc": "2026-10-17T04:41:01Z",
+      "subject": "docs: prioritize transferable research methodology over individual example algorithms",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0af28133822b9e239d872b7cb9e7b91192779858",
+      "parents": [
+        "0ecd38d716a815c380c13eda05254b7e21bb78f5"
+      ],
+      "committed_at_utc": "2026-10-17T04:40:24Z",
+      "subject": "docs(research): define stable eight-stage methodology and interchangeable scientific case studies",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0ecd38d716a815c380c13eda05254b7e21bb78f5",
+      "parents": [
+        "fb20bf0aeab8caa93ea026392930f6e3a06dc86e"
+      ],
+      "committed_at_utc": "2026-10-17T04:39:53Z",
+      "subject": "test(methodology): cross-domain contract reuse, bounded evidence, authority and anti-self-certification",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "fb20bf0aeab8caa93ea026392930f6e3a06dc86e",
+      "parents": [
+        "cdc25440744c22eb25ed83478182edfe9170c046"
+      ],
+      "committed_at_utc": "2026-10-17T04:39:26Z",
+      "subject": "feat(evidence): provide domain-neutral proposal research-case validation CLI",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "cdc25440744c22eb25ed83478182edfe9170c046",
+      "parents": [
+        "0c7f669931152b777dac93e85325072fe80c3408"
+      ],
+      "committed_at_utc": "2026-10-17T04:39:15Z",
+      "subject": "feat(methodology): add domain-neutral reproducibility and research review envelope",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0c7f669931152b777dac93e85325072fe80c3408",
+      "parents": [
+        "d52c5d115a078f3622d1c07554dec832fcf76e2e"
+      ],
+      "committed_at_utc": "2026-10-17T04:38:20Z",
+      "subject": "refactor: keep exemplar-specific numeric analysis out of the stable research methodology core",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d52c5d115a078f3622d1c07554dec832fcf76e2e",
+      "parents": [
+        "57f328acbcf051a44c2ba1c376952af57a84c68e"
+      ],
+      "committed_at_utc": "2026-10-17T04:37:32Z",
+      "subject": "feat(research): add bounded numeric research table QA for independent scientific assay data",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "57f328acbcf051a44c2ba1c376952af57a84c68e",
+      "parents": [
+        "272f6dfb5f805a180f9c2d7004ca7288591278e9",
+        "50781d73d3bb519131cfcbc6cc65b58be231a87d"
+      ],
+      "committed_at_utc": "2026-10-17T04:34:58Z",
+      "subject": "Merge PR #17: externally reviewed Agent handoff provenance contract",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "50781d73d3bb519131cfcbc6cc65b58be231a87d",
+      "parents": [
+        "7d6990572275e5cfa9ce5f8270f3a2e2ecaf5ac4"
+      ],
+      "committed_at_utc": "2026-10-17T04:33:41Z",
+      "subject": "test(agent): reject stale/absent baselines and verify trusted reviewer CLI gate",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7d6990572275e5cfa9ce5f8270f3a2e2ecaf5ac4",
+      "parents": [
+        "06f44fb7a167fac31d49ae0bf5ea9d0ecac83ad5"
+      ],
+      "committed_at_utc": "2026-10-17T04:33:28Z",
+      "subject": "docs(agent): require independent base observation before claiming current-state review",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "06f44fb7a167fac31d49ae0bf5ea9d0ecac83ad5",
+      "parents": [
+        "99f6b98b1157e0a5c16893b9e0dc19856b22b3a4"
+      ],
+      "committed_at_utc": "2026-10-17T04:33:25Z",
+      "subject": "docs(agent): require independent base observation before claiming current-state review",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "99f6b98b1157e0a5c16893b9e0dc19856b22b3a4",
+      "parents": [
+        "9801bdda7045a9418f6104174b6721b2cadb0083"
+      ],
+      "committed_at_utc": "2026-10-17T04:33:22Z",
+      "subject": "docs(agent): require independent base observation before claiming current-state review",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "9801bdda7045a9418f6104174b6721b2cadb0083",
+      "parents": [
+        "7dc19539d33eb7fbfe455d6f600a31436e028536"
+      ],
+      "committed_at_utc": "2026-10-17T04:33:10Z",
+      "subject": "feat(evidence): gate Agent handoff on optional independently observed reviewer base SHA",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7dc19539d33eb7fbfe455d6f600a31436e028536",
+      "parents": [
+        "c659255f361d0df711f135623d3e9976a334aea9"
+      ],
+      "committed_at_utc": "2026-10-17T04:32:59Z",
+      "subject": "fix(agent): distinguish untrusted anchor shape from trusted reviewer baseline equality",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "c659255f361d0df711f135623d3e9976a334aea9",
+      "parents": [
+        "809be73fed2c452a9edbc5cd02e08a8809336eac"
+      ],
+      "committed_at_utc": "2026-10-17T04:10:16Z",
+      "subject": "feat: machine-checkable world-line anchor for external Agent handoff proposals",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "272f6dfb5f805a180f9c2d7004ca7288591278e9",
+      "parents": [
+        "809be73fed2c452a9edbc5cd02e08a8809336eac",
+        "85be8f0de26563dcfac92f0424b5011bd74b46f0"
+      ],
+      "committed_at_utc": "2026-10-17T04:08:21Z",
+      "subject": "Merge pull request #16: introduce independent protein Bio Tool and portable research software interoperability",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "85be8f0de26563dcfac92f0424b5011bd74b46f0",
+      "parents": [
+        "42e69f05de03ec04cc25d3fb7ae4f420e8b6c6a8"
+      ],
+      "committed_at_utc": "2026-10-17T04:07:05Z",
+      "subject": "ci(release): publish tested portable CWL-main RO-Crate as retrievable verification artifact",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "42e69f05de03ec04cc25d3fb7ae4f420e8b6c6a8",
+      "parents": [
+        "0daf682f1b67fd6966409ee77c19bed9d2dbd5d4"
+      ],
+      "committed_at_utc": "2026-10-17T04:06:46Z",
+      "subject": "fix(ci): use isolated PEP 517 backend for standalone RO-Crate package install",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0daf682f1b67fd6966409ee77c19bed9d2dbd5d4",
+      "parents": [
+        "d63565d2cecb001405667ed183538bc5c5ad2533"
+      ],
+      "committed_at_utc": "2026-10-17T04:04:58Z",
+      "subject": "ci(crate): independently unpack, install and execute shipped CWL workflow and Bio Tool",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d63565d2cecb001405667ed183538bc5c5ad2533",
+      "parents": [
+        "01bbbd16753db5c12098d354a518fec8423f127f"
+      ],
+      "committed_at_utc": "2026-10-17T04:04:39Z",
+      "subject": "docs: reconcile three independently callable assets across public contributor and agent interfaces",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "01bbbd16753db5c12098d354a518fec8423f127f",
+      "parents": [
+        "429c388132c71b77535a09770363f88fb4cc0f52"
+      ],
+      "committed_at_utc": "2026-10-17T04:04:37Z",
+      "subject": "docs: reconcile three independently callable assets across public contributor and agent interfaces",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "429c388132c71b77535a09770363f88fb4cc0f52",
+      "parents": [
+        "7240fa237567fb4cc7422ab7798b310db6c33eb3"
+      ],
+      "committed_at_utc": "2026-10-17T04:04:35Z",
+      "subject": "docs: reconcile three independently callable assets across public contributor and agent interfaces",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7240fa237567fb4cc7422ab7798b310db6c33eb3",
+      "parents": [
+        "4288312dc843154b36d4a03d677767683d65c56f"
+      ],
+      "committed_at_utc": "2026-10-17T04:04:32Z",
+      "subject": "docs: reconcile three independently callable assets across public contributor and agent interfaces",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4288312dc843154b36d4a03d677767683d65c56f",
+      "parents": [
+        "41afbb95400d0c21833ff2e6e335061c48f79b79"
+      ],
+      "committed_at_utc": "2026-10-17T04:04:30Z",
+      "subject": "docs: reconcile three independently callable assets across public contributor and agent interfaces",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "41afbb95400d0c21833ff2e6e335061c48f79b79",
+      "parents": [
+        "9127e037c89b2f9d4bcff17af2a5abedffed2646"
+      ],
+      "committed_at_utc": "2026-10-17T04:03:06Z",
+      "subject": "test(bio): verify pinned Git tree/blob provenance before molecular processing and raw-data minimization",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "9127e037c89b2f9d4bcff17af2a5abedffed2646",
+      "parents": [
+        "686e13bf814489480ee35616cb50a180cd07fd3a"
+      ],
+      "committed_at_utc": "2026-10-17T04:02:25Z",
+      "subject": "ci(bio): require real immutable external protein FASTA/PDB processing on review",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "686e13bf814489480ee35616cb50a180cd07fd3a",
+      "parents": [
+        "a2919ccf4bbc808e42d7d3d8641a67dc48bb2c10"
+      ],
+      "committed_at_utc": "2026-10-17T04:02:03Z",
+      "subject": "test: bind Bio Tool to reproducible CWL fixtures and externally accurate metadata",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "a2919ccf4bbc808e42d7d3d8641a67dc48bb2c10",
+      "parents": [
+        "4a0ff341bb46dac0963adee2fdf926d4ebbd6978"
+      ],
+      "committed_at_utc": "2026-10-17T04:02:00Z",
+      "subject": "test: bind Bio Tool to reproducible CWL fixtures and externally accurate metadata",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4a0ff341bb46dac0963adee2fdf926d4ebbd6978",
+      "parents": [
+        "464a4bd5fea3ec3a31c81354a0b21f348e0cf375"
+      ],
+      "committed_at_utc": "2026-10-17T04:01:58Z",
+      "subject": "test: bind Bio Tool to reproducible CWL fixtures and externally accurate metadata",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "464a4bd5fea3ec3a31c81354a0b21f348e0cf375",
+      "parents": [
+        "5d7ee2cd4c825453685056272fe6da66e1787a30"
+      ],
+      "committed_at_utc": "2026-10-17T04:01:55Z",
+      "subject": "test: bind Bio Tool to reproducible CWL fixtures and externally accurate metadata",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5d7ee2cd4c825453685056272fe6da66e1787a30",
+      "parents": [
+        "1a2e0e76337d13de9af2320cc9fc6b13de5d9875"
+      ],
+      "committed_at_utc": "2026-10-17T04:01:38Z",
+      "subject": "fix(bio): fail closed on malformed or nonfinite PDB atom coordinates",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "1a2e0e76337d13de9af2320cc9fc6b13de5d9875",
+      "parents": [
+        "19b4fa0364c2ec809a0af160e15ab4fe35cc55f4"
+      ],
+      "committed_at_utc": "2026-10-17T04:01:22Z",
+      "subject": "fix(bio-cwl): run reference runner with typed EDAM-aware CWL jobs",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "19b4fa0364c2ec809a0af160e15ab4fe35cc55f4",
+      "parents": [
+        "8c9462a7129d3620cd50d647a62cdc865370254a"
+      ],
+      "committed_at_utc": "2026-10-17T04:01:20Z",
+      "subject": "fix(bio-cwl): declare EDAM file format in runnable reference job",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "8c9462a7129d3620cd50d647a62cdc865370254a",
+      "parents": [
+        "036efef7fa2d42982cc1431047e05219983606d4"
+      ],
+      "committed_at_utc": "2026-10-17T04:01:18Z",
+      "subject": "fix(bio-cwl): declare EDAM file format in runnable reference job",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "036efef7fa2d42982cc1431047e05219983606d4",
+      "parents": [
+        "9c9db6b388549d2967f3e07b6638205024da1ae0"
+      ],
+      "committed_at_utc": "2026-10-17T04:00:55Z",
+      "subject": "docs: align public three-asset research software interface and external registry boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "9c9db6b388549d2967f3e07b6638205024da1ae0",
+      "parents": [
+        "5f062678380349f8bd3a27b976ecde41ae33a5ec"
+      ],
+      "committed_at_utc": "2026-10-17T04:00:53Z",
+      "subject": "docs: align public three-asset research software interface and external registry boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5f062678380349f8bd3a27b976ecde41ae33a5ec",
+      "parents": [
+        "573e1b8505a244718aca5dadf8d8960ea6893a90"
+      ],
+      "committed_at_utc": "2026-10-17T04:00:50Z",
+      "subject": "docs: align public three-asset research software interface and external registry boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "573e1b8505a244718aca5dadf8d8960ea6893a90",
+      "parents": [
+        "afef069e860f0cbc63275be1a1ba15da0ff97de0"
+      ],
+      "committed_at_utc": "2026-10-17T04:00:48Z",
+      "subject": "docs: align public three-asset research software interface and external registry boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "afef069e860f0cbc63275be1a1ba15da0ff97de0",
+      "parents": [
+        "055a963b965fd5555383283d5645be3687597fca"
+      ],
+      "committed_at_utc": "2026-10-17T04:00:46Z",
+      "subject": "docs: align public three-asset research software interface and external registry boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "055a963b965fd5555383283d5645be3687597fca",
+      "parents": [
+        "890e2ef6889a7d8ff5bbaed1a08d68a09ef01699"
+      ],
+      "committed_at_utc": "2026-10-17T04:00:44Z",
+      "subject": "docs: align public three-asset research software interface and external registry boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "890e2ef6889a7d8ff5bbaed1a08d68a09ef01699",
+      "parents": [
+        "8c411aafbd535ca6b74df1f187efe5706405d273"
+      ],
+      "committed_at_utc": "2026-10-17T03:59:43Z",
+      "subject": "feat(crate): describe and package all three independent research software assets",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "8c411aafbd535ca6b74df1f187efe5706405d273",
+      "parents": [
+        "4f0563f7fc201a69d914a014a23512fce4cc1110"
+      ],
+      "committed_at_utc": "2026-10-17T03:59:40Z",
+      "subject": "feat(crate): describe and package all three independent research software assets",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4f0563f7fc201a69d914a014a23512fce4cc1110",
+      "parents": [
+        "38ce35f97431f6de78212a3440e7fee7d2d216f5"
+      ],
+      "committed_at_utc": "2026-10-17T03:59:37Z",
+      "subject": "feat(crate): describe and package all three independent research software assets",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "38ce35f97431f6de78212a3440e7fee7d2d216f5",
+      "parents": [
+        "de4ba66a06c28f08c882ecf435f42957942e7269"
+      ],
+      "committed_at_utc": "2026-10-17T03:59:12Z",
+      "subject": "ci(bio): independently run FASTA/PDB CLI, CWL replay and read-only pinned external bio-data audit",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "de4ba66a06c28f08c882ecf435f42957942e7269",
+      "parents": [
+        "5488a115e16dce2cc601ddaf05dc2a572565bbe3"
+      ],
+      "committed_at_utc": "2026-10-17T03:58:48Z",
+      "subject": "feat(bio): verify pinned external FASTA/PDB Git blobs and analyze without republishing source data",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5488a115e16dce2cc601ddaf05dc2a572565bbe3",
+      "parents": [
+        "f4fcb3b619825d9e1f8317b655514030c4850d2a"
+      ],
+      "committed_at_utc": "2026-10-17T03:58:06Z",
+      "subject": "test(bio): add minimal non-copyrighted offline FASTA/PDB fixtures",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f4fcb3b619825d9e1f8317b655514030c4850d2a",
+      "parents": [
+        "7eafb44a12dcd1e93fedd63a12377d00e3befa06"
+      ],
+      "committed_at_utc": "2026-10-17T03:58:04Z",
+      "subject": "test(bio): add minimal non-copyrighted offline FASTA/PDB fixtures",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7eafb44a12dcd1e93fedd63a12377d00e3befa06",
+      "parents": [
+        "e7f656d9cec4fb6644cc2cebe294225c44d558c4"
+      ],
+      "committed_at_utc": "2026-10-17T03:57:40Z",
+      "subject": "feat(bio): add portable CWL adapters and third-asset user documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e7f656d9cec4fb6644cc2cebe294225c44d558c4",
+      "parents": [
+        "e3c61a20b94280101161ff1b63576fc460cb66c1"
+      ],
+      "committed_at_utc": "2026-10-17T03:57:38Z",
+      "subject": "feat(bio): add portable CWL adapters and third-asset user documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e3c61a20b94280101161ff1b63576fc460cb66c1",
+      "parents": [
+        "46bedde26ab9d6cc261e8c663f1dc11e1e7efaa9"
+      ],
+      "committed_at_utc": "2026-10-17T03:57:36Z",
+      "subject": "feat(bio): add portable CWL adapters and third-asset user documentation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "46bedde26ab9d6cc261e8c663f1dc11e1e7efaa9",
+      "parents": [
+        "0f21e958172f658fd8ec908e65364a83b40215ce"
+      ],
+      "committed_at_utc": "2026-10-17T03:56:41Z",
+      "subject": "feat(bio): publish distinct Bioschemas research data processing tool identity",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0f21e958172f658fd8ec908e65364a83b40215ce",
+      "parents": [
+        "d033feea2f805cfcdc8bcaba35e3c0f3a4a9c4bc"
+      ],
+      "committed_at_utc": "2026-10-17T03:56:39Z",
+      "subject": "feat(bio): draft bio.tools registry payload with verified EDAM operations and biological I/O",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d033feea2f805cfcdc8bcaba35e3c0f3a4a9c4bc",
+      "parents": [
+        "c26c683ce3ee7d14fd1d86a261ff22adc3049f43"
+      ],
+      "committed_at_utc": "2026-10-17T03:56:04Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "c26c683ce3ee7d14fd1d86a261ff22adc3049f43",
+      "parents": [
+        "cbeac7b42166adbcbfee5d714c61806b18d6a655"
+      ],
+      "committed_at_utc": "2026-10-17T03:56:01Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "cbeac7b42166adbcbfee5d714c61806b18d6a655",
+      "parents": [
+        "dd190f153cb7174348d832fdf6fd91326d8235ed"
+      ],
+      "committed_at_utc": "2026-10-17T03:55:59Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "dd190f153cb7174348d832fdf6fd91326d8235ed",
+      "parents": [
+        "1c395397124c7d0fba9dba2f3362f98d9391006a"
+      ],
+      "committed_at_utc": "2026-10-17T03:55:57Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "1c395397124c7d0fba9dba2f3362f98d9391006a",
+      "parents": [
+        "f8052b8b483e9131595e3a471b1fe029b3363251"
+      ],
+      "committed_at_utc": "2026-10-17T03:55:54Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f8052b8b483e9131595e3a471b1fe029b3363251",
+      "parents": [
+        "8d86b7e10947d06cfbce32a9cceb97a4bf6d3dfe"
+      ],
+      "committed_at_utc": "2026-10-17T03:55:51Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "8d86b7e10947d06cfbce32a9cceb97a4bf6d3dfe",
+      "parents": [
+        "0a7670adc7cb7e97ce8d0b01af75534bd52ae9b1"
+      ],
+      "committed_at_utc": "2026-10-17T03:55:49Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0a7670adc7cb7e97ce8d0b01af75534bd52ae9b1",
+      "parents": [
+        "314f734b57fd3a30bc730bbdc7ade1eef6580945"
+      ],
+      "committed_at_utc": "2026-10-17T03:55:46Z",
+      "subject": "feat(release): synchronize three-asset v0.4.0 metadata contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "314f734b57fd3a30bc730bbdc7ade1eef6580945",
+      "parents": [
+        "1da5ea9094995fda1a7cc6ad1e8aa23d3e481f07"
+      ],
+      "committed_at_utc": "2026-10-17T03:55:09Z",
+      "subject": "test(bio): verify real FASTA/PDB parsing, deterministic reports and fail-closed input boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "1da5ea9094995fda1a7cc6ad1e8aa23d3e481f07",
+      "parents": [
+        "df982daf4e83f120adbab100f3a10e93adef83e7"
+      ],
+      "committed_at_utc": "2026-10-17T03:54:33Z",
+      "subject": "feat(bio): support python -m bio_tool",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "df982daf4e83f120adbab100f3a10e93adef83e7",
+      "parents": [
+        "956bebbeac6273942bc3e7ec668f032fc6bedf4f"
+      ],
+      "committed_at_utc": "2026-10-17T03:54:31Z",
+      "subject": "feat(bio): initialize independent bioinformatics package",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "956bebbeac6273942bc3e7ec668f032fc6bedf4f",
+      "parents": [
+        "b892e859aae89cfd761e84b290b87f9e4341edb5"
+      ],
+      "committed_at_utc": "2026-10-17T03:54:29Z",
+      "subject": "feat(bio): add independently callable ls-bio CLI",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "b892e859aae89cfd761e84b290b87f9e4341edb5",
+      "parents": [
+        "809be73fed2c452a9edbc5cd02e08a8809336eac"
+      ],
+      "committed_at_utc": "2026-10-17T03:54:14Z",
+      "subject": "feat(bio): implement bounded FASTA composition and PDB C-alpha sequence audits",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "809be73fed2c452a9edbc5cd02e08a8809336eac",
+      "parents": [
+        "72c08b8a0779e665cf04fc7eda85f370593395b5",
+        "6faf61844923abbac523da60c57e0686c8072109"
+      ],
+      "committed_at_utc": "2026-10-17T03:46:23Z",
+      "subject": "Merge LifeMonitor GitHub App configuration preflight",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6faf61844923abbac523da60c57e0686c8072109",
+      "parents": [
+        "012a48e42bb3478501307a20fa8b4b786b85ab74"
+      ],
+      "committed_at_utc": "2026-10-17T03:44:22Z",
+      "subject": "fix(lifemonitor): inherit global all-branch/tag tracking and omit unapproved registry overrides",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "012a48e42bb3478501307a20fa8b4b786b85ab74",
+      "parents": [
+        "72c08b8a0779e665cf04fc7eda85f370593395b5"
+      ],
+      "committed_at_utc": "2026-10-17T03:42:08Z",
+      "subject": "Fix 'Missing LifeMonitor configuration file'",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "72c08b8a0779e665cf04fc7eda85f370593395b5",
+      "parents": [
+        "3b6e71c454c4639d0d532dd7b7880ad8e5ed3e48",
+        "cfe5897ada16e82496f389008fb0173a60e538e4"
+      ],
+      "committed_at_utc": "2026-10-17T03:40:39Z",
+      "subject": "Merge pull request #14 from feat/knowledge-quality-continuity-20261017",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "cfe5897ada16e82496f389008fb0173a60e538e4",
+      "parents": [
+        "ee1b8c4afe69a269eaaaba89c34f73112399891e"
+      ],
+      "committed_at_utc": "2026-10-17T03:39:54Z",
+      "subject": "docs: document portable workflow package and GitHub App enrollment boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ee1b8c4afe69a269eaaaba89c34f73112399891e",
+      "parents": [
+        "20bfb63cab7bcdbe3407ff31c09018186eb83408"
+      ],
+      "committed_at_utc": "2026-10-17T03:39:52Z",
+      "subject": "docs: document portable workflow package and GitHub App enrollment boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "20bfb63cab7bcdbe3407ff31c09018186eb83408",
+      "parents": [
+        "09d61f5271176513116e3d1fc6a851add9336b4f"
+      ],
+      "committed_at_utc": "2026-10-17T03:39:24Z",
+      "subject": "ci: verify reproducible CWL-first package and ecosystem preflight",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "09d61f5271176513116e3d1fc6a851add9336b4f",
+      "parents": [
+        "20ed08b114d43ad534d2d3a7243cb285f2964260"
+      ],
+      "committed_at_utc": "2026-10-17T03:39:21Z",
+      "subject": "ci: verify reproducible CWL-first package and ecosystem preflight",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "20ed08b114d43ad534d2d3a7243cb285f2964260",
+      "parents": [
+        "d0e8718d96973fb7d60ee2757aba1e7bc6d5ea2f"
+      ],
+      "committed_at_utc": "2026-10-17T03:39:12Z",
+      "subject": "fix: load crate file manifest reliably for script and standalone test execution",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d0e8718d96973fb7d60ee2757aba1e7bc6d5ea2f",
+      "parents": [
+        "4e653f2d9ea2a61437a8a6ddf389eb718c618555"
+      ],
+      "committed_at_utc": "2026-10-17T03:39:03Z",
+      "subject": "test: reproducible portable CWL crate main identity and no accepted data leakage",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4e653f2d9ea2a61437a8a6ddf389eb718c618555",
+      "parents": [
+        "8234a8cf78785475f065e48c7cc231e46695ab62"
+      ],
+      "committed_at_utc": "2026-10-17T03:38:54Z",
+      "subject": "fix: include existing referenced public metadata entities in portable archive",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "8234a8cf78785475f065e48c7cc231e46695ab62",
+      "parents": [
+        "2741db060dd109796ac3842ce816456d743b7add"
+      ],
+      "committed_at_utc": "2026-10-17T03:38:41Z",
+      "subject": "feat: create deterministic CWL-main portable Workflow RO-Crate without production corpus",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "2741db060dd109796ac3842ce816456d743b7add",
+      "parents": [
+        "ac60df3642cbaa778e84e173457c47ec1758e26a"
+      ],
+      "committed_at_utc": "2026-10-17T03:37:34Z",
+      "subject": "docs: reflect verified initial production and add non-authoritative audit entrypoints",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ac60df3642cbaa778e84e173457c47ec1758e26a",
+      "parents": [
+        "2b8d007c3c3cf2473fed80aea1c1099e508c20a6"
+      ],
+      "committed_at_utc": "2026-10-17T03:37:25Z",
+      "subject": "docs: document evidence quality interfaces and distinct external registry requirements",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "2b8d007c3c3cf2473fed80aea1c1099e508c20a6",
+      "parents": [
+        "15b17b8decd88c3441618aacf321ef394798f6fa"
+      ],
+      "committed_at_utc": "2026-10-17T03:37:22Z",
+      "subject": "docs: document evidence quality interfaces and distinct external registry requirements",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "15b17b8decd88c3441618aacf321ef394798f6fa",
+      "parents": [
+        "b9c7c268eb5426ab82617900ba58b24b29522ff5"
+      ],
+      "committed_at_utc": "2026-10-17T03:37:20Z",
+      "subject": "docs: document evidence quality interfaces and distinct external registry requirements",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "b9c7c268eb5426ab82617900ba58b24b29522ff5",
+      "parents": [
+        "caa14b0a5c452183291245077da8c6676872a57b"
+      ],
+      "committed_at_utc": "2026-10-17T03:37:00Z",
+      "subject": "test: keep local interoperability and external acceptance statuses separate",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "caa14b0a5c452183291245077da8c6676872a57b",
+      "parents": [
+        "df7586c717c269e016c9c913348d510e798cf377"
+      ],
+      "committed_at_utc": "2026-10-17T03:36:53Z",
+      "subject": "feat(evidence): expose external ecosystem readiness preflight",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "df7586c717c269e016c9c913348d510e798cf377",
+      "parents": [
+        "f8d7aa72258a2a3d0acdcbddbd73914b72781941"
+      ],
+      "committed_at_utc": "2026-10-17T03:36:43Z",
+      "subject": "feat(evidence): assess external interoperability readiness without claiming enrollment",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f8d7aa72258a2a3d0acdcbddbd73914b72781941",
+      "parents": [
+        "6bf9b9b7955ef2cb80256c439269879320d5cfa7"
+      ],
+      "committed_at_utc": "2026-10-17T03:35:58Z",
+      "subject": "ci: exercise offline knowledge quality contract in life-science-evidence.yml",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6bf9b9b7955ef2cb80256c439269879320d5cfa7",
+      "parents": [
+        "95b94fe66512e85ca9d953f7e6d00ebc693b6475"
+      ],
+      "committed_at_utc": "2026-10-17T03:35:56Z",
+      "subject": "ci: exercise offline knowledge quality contract in life-science-knowledge.yml",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "95b94fe66512e85ca9d953f7e6d00ebc693b6475",
+      "parents": [
+        "2a028cff4409a5a43f0ce1b00e5388be3ae833c1"
+      ],
+      "committed_at_utc": "2026-10-17T03:35:53Z",
+      "subject": "ci: exercise offline knowledge quality contract in validate.yml",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "2a028cff4409a5a43f0ce1b00e5388be3ae833c1",
+      "parents": [
+        "d8687c2c7a8f46e3a8265d35432996f5d81eb1ae"
+      ],
+      "committed_at_utc": "2026-10-17T03:35:43Z",
+      "subject": "ci: periodically verify accepted knowledge continuity without state writes or live-source republishing",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "d8687c2c7a8f46e3a8265d35432996f5d81eb1ae",
+      "parents": [
+        "abd886af991b94ac626a8debf34d296897ff6041"
+      ],
+      "committed_at_utc": "2026-10-17T03:35:26Z",
+      "subject": "test: verify quality audit corruption, revision-only change and bounded relevance scoring",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "abd886af991b94ac626a8debf34d296897ff6041",
+      "parents": [
+        "565ffd8f26bd28949afb8505dfded30828a0ca08"
+      ],
+      "committed_at_utc": "2026-10-17T03:35:09Z",
+      "subject": "feat(evidence): expose offline knowledge audit CLI with explicit inputs",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "565ffd8f26bd28949afb8505dfded30828a0ca08",
+      "parents": [
+        "3b6e71c454c4639d0d532dd7b7880ad8e5ed3e48"
+      ],
+      "committed_at_utc": "2026-10-17T03:34:52Z",
+      "subject": "feat(evidence): add bounded cross-version source-linked knowledge quality audit",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3b6e71c454c4639d0d532dd7b7880ad8e5ed3e48",
+      "parents": [
+        "4e4635d5363718008ee0e77bbb0218abd1be1e09",
+        "e4f81ea85070acff922ec903c76a732d0fb7365f"
+      ],
+      "committed_at_utc": "2026-10-17T03:12:10Z",
+      "subject": "Merge pull request #13 from lostlight530/docs/protein-structure-field-evidence-20261017",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e4f81ea85070acff922ec903c76a732d0fb7365f",
+      "parents": [
+        "4e4635d5363718008ee0e77bbb0218abd1be1e09"
+      ],
+      "committed_at_utc": "2026-10-17T03:11:19Z",
+      "subject": "evidence: archive the verified protein Agent Tool Workflow run with independently computed artifact hashes",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4e4635d5363718008ee0e77bbb0218abd1be1e09",
+      "parents": [
+        "71f99f808c4845c0c8a0f585937426cb33195dc4",
+        "5c5f9e76e889849b7c3f35233a4fbf3607382646"
+      ],
+      "committed_at_utc": "2026-10-17T03:09:19Z",
+      "subject": "Merge pull request #12 from lostlight530/experiment/protein-structure-20261017",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5c5f9e76e889849b7c3f35233a4fbf3607382646",
+      "parents": [
+        "2fcf2f0787c5a0c879615ff6f7c3ac54774187a3"
+      ],
+      "committed_at_utc": "2026-10-17T03:07:52Z",
+      "subject": "fix: valid hyphenated GitHub discovery topic and token-aware advisory search",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "2fcf2f0787c5a0c879615ff6f7c3ac54774187a3",
+      "parents": [
+        "f4e1c78ebedbcdc44272b39a7c3aef213f8aab94"
+      ],
+      "committed_at_utc": "2026-10-17T03:05:59Z",
+      "subject": "docs(test): fully document real protein structure Agent Tool Workflow field demo and guard the boundaries",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f4e1c78ebedbcdc44272b39a7c3aef213f8aab94",
+      "parents": [
+        "6f399540fc3e068258169299bf0a62783006b477"
+      ],
+      "committed_at_utc": "2026-10-17T03:03:59Z",
+      "subject": "ci: run live protein Agent Tool CWL and isolated lifecycle research demonstration",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6f399540fc3e068258169299bf0a62783006b477",
+      "parents": [
+        "3d6cdbabb7249edec3eb7ab73614857ca839b108"
+      ],
+      "committed_at_utc": "2026-10-17T03:02:53Z",
+      "subject": "feat: verify and summarize real external Agent, Tool, graph search, CWL and isolated lifecycle evidence",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3d6cdbabb7249edec3eb7ab73614857ca839b108",
+      "parents": [
+        "875c39fedeefeccde9fda305c3f95c4ec6e54910"
+      ],
+      "committed_at_utc": "2026-10-17T03:02:27Z",
+      "subject": "feat: independently verify pinned protein FASTA PDB and input JSON Git objects without running prediction",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "875c39fedeefeccde9fda305c3f95c4ec6e54910",
+      "parents": [
+        "71f99f808c4845c0c8a0f585937426cb33195dc4"
+      ],
+      "committed_at_utc": "2026-10-17T03:01:47Z",
+      "subject": "research: external Agent proposal and pinned protein prediction source and sample profiles",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "71f99f808c4845c0c8a0f585937426cb33195dc4",
+      "parents": [
+        "b2d1d31f715275823f7ea0440d0a14a552f35e2a",
+        "48f6bec767c58573e2d1b6b3306fa9016447ff85"
+      ],
+      "committed_at_utc": "2026-10-17T02:56:02Z",
+      "subject": "Merge pull request #11 from lostlight530/feat/optional-agent-research-handoff",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "48f6bec767c58573e2d1b6b3306fa9016447ff85",
+      "parents": [
+        "42dbadd4df11d51ce6b7bbac8ad08dc9432c3b24"
+      ],
+      "committed_at_utc": "2026-10-17T02:54:55Z",
+      "subject": "fix: malformed or bracketed URL must fail agent handoff validation cleanly",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "42dbadd4df11d51ce6b7bbac8ad08dc9432c3b24",
+      "parents": [
+        "a9a8b75c1508156a1f35b39d9ee6304e848be10b"
+      ],
+      "committed_at_utc": "2026-10-17T02:54:45Z",
+      "subject": "test: prove independent Evidence Tool CLI validates sample handoff without acceptance",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "a9a8b75c1508156a1f35b39d9ee6304e848be10b",
+      "parents": [
+        "285c6bdb5928ec65280ae284c36f6b305ac6f856"
+      ],
+      "committed_at_utc": "2026-10-17T02:54:31Z",
+      "subject": "test: inventory root AGENTS.md as a public agent interoperability entrypoint",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "285c6bdb5928ec65280ae284c36f6b305ac6f856",
+      "parents": [
+        "6e13a156ea7a76377abafd49811cda75efbf2cc0"
+      ],
+      "committed_at_utc": "2026-10-17T02:54:18Z",
+      "subject": "docs: integrate optional agent handoff with public navigation and cache hygiene",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6e13a156ea7a76377abafd49811cda75efbf2cc0",
+      "parents": [
+        "3e3b72fbddad0e1f03ea80ed8f4ec5b979c3de6b"
+      ],
+      "committed_at_utc": "2026-10-17T02:53:54Z",
+      "subject": "feat: expose proposal-only Agent handoff validation through independent Evidence Tool CLI",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3e3b72fbddad0e1f03ea80ed8f4ec5b979c3de6b",
+      "parents": [
+        "affe5b9c008a2cfce6a3b8379e3cb351c2b49caf"
+      ],
+      "committed_at_utc": "2026-10-17T02:53:38Z",
+      "subject": "docs: define three execution planes and non-authoritative external Agent handoff",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "affe5b9c008a2cfce6a3b8379e3cb351c2b49caf",
+      "parents": [
+        "3f3bfd909566604fa50b9841cb6732785e8d6e6a"
+      ],
+      "committed_at_utc": "2026-10-17T02:53:03Z",
+      "subject": "docs: optional external Agent research SOP, task template and example handoff",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3f3bfd909566604fa50b9841cb6732785e8d6e6a",
+      "parents": [
+        "b2d1d31f715275823f7ea0440d0a14a552f35e2a"
+      ],
+      "committed_at_utc": "2026-10-17T02:52:08Z",
+      "subject": "feat: validate optional external agent evidence proposals without production authority",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "b2d1d31f715275823f7ea0440d0a14a552f35e2a",
+      "parents": [
+        "edf667abe44788f026b2cf21d12c03adc97df2b8"
+      ],
+      "committed_at_utc": "2026-10-17T02:35:23Z",
+      "subject": "data: persist verified workflow knowledge snapshot",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "NATIVE_DATA_WRITE_REQUIRES_RECEIPT_CORROBORATION"
+    },
+    {
+      "sha": "edf667abe44788f026b2cf21d12c03adc97df2b8",
+      "parents": [
+        "7863cc77ab0ccba0a9c058835e36f87c9e8bd34a",
+        "e6faa79d062289e573b20de3b497edfc3b0fe612"
+      ],
+      "committed_at_utc": "2026-10-17T02:31:10Z",
+      "subject": "Merge pull request #10 from lostlight530/ops/field-cycle-20261017",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e6faa79d062289e573b20de3b497edfc3b0fe612",
+      "parents": [
+        "75b3af1e4641db201afd3cf161fc846785679d2a"
+      ],
+      "committed_at_utc": "2026-10-17T02:30:12Z",
+      "subject": "test: independently recompute real GitHub Artifact report checksums",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "75b3af1e4641db201afd3cf161fc846785679d2a",
+      "parents": [
+        "407be403dbcd9d53ec701a49bcbe4a5191159de8"
+      ],
+      "committed_at_utc": "2026-10-17T02:29:59Z",
+      "subject": "evidence: link audited real report bytes to indexed source run",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "407be403dbcd9d53ec701a49bcbe4a5191159de8",
+      "parents": [
+        "6d8ff6fc1a8fc189c41ecf0a00815a6d21d02862"
+      ],
+      "committed_at_utc": "2026-10-17T02:29:52Z",
+      "subject": "evidence: archive real workflow monitoring inspection findings",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6d8ff6fc1a8fc189c41ecf0a00815a6d21d02862",
+      "parents": [
+        "351aedcf7ab27ea14b25572aa08e500ea0082306"
+      ],
+      "committed_at_utc": "2026-10-17T02:29:43Z",
+      "subject": "evidence: archive real read-only RNA-seq inspection findings",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "351aedcf7ab27ea14b25572aa08e500ea0082306",
+      "parents": [
+        "dcc839d8df0f3cd811449ec6c66d4868dd07284c"
+      ],
+      "committed_at_utc": "2026-10-17T02:29:26Z",
+      "subject": "fix: correct real external inspection report hashes from GitHub artifact",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "dcc839d8df0f3cd811449ec6c66d4868dd07284c",
+      "parents": [
+        "6016180147b3724b79039a98b6d3d78828a69df9"
+      ],
+      "committed_at_utc": "2026-10-17T02:27:45Z",
+      "subject": "fix: retain manual-only production authorization and verify pushed remote state",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6016180147b3724b79039a98b6d3d78828a69df9",
+      "parents": [
+        "7863cc77ab0ccba0a9c058835e36f87c9e8bd34a"
+      ],
+      "committed_at_utc": "2026-10-17T02:25:22Z",
+      "subject": "ops: stage first approved native live knowledge cycle with guarded write boundary",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7863cc77ab0ccba0a9c058835e36f87c9e8bd34a",
+      "parents": [
+        "ff1f13c18fffe895a45385e3dd48444aea9be282",
+        "380cf1c8bf65abdc21d66fbba57af26207a6bdb4"
+      ],
+      "committed_at_utc": "2026-10-17T02:16:08Z",
+      "subject": "Merge pull request #9 from lostlight530/experiment/live-evidence-20261017",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "380cf1c8bf65abdc21d66fbba57af26207a6bdb4",
+      "parents": [
+        "6c79e1a8901bc4ed6085491842d3488ca6fddca4"
+      ],
+      "committed_at_utc": "2026-10-17T02:15:09Z",
+      "subject": "fix: register live field drill runbook in required documentation audit inventory",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "6c79e1a8901bc4ed6085491842d3488ca6fddca4",
+      "parents": [
+        "8eb9666be87a0cdf72ac8d4e8a8374187bfde612"
+      ],
+      "committed_at_utc": "2026-10-17T02:14:21Z",
+      "subject": "docs: archive measured real-world source and external software evidence with run provenance",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "8eb9666be87a0cdf72ac8d4e8a8374187bfde612",
+      "parents": [
+        "e836946655b471ea3f0961a8169e840151d770a6"
+      ],
+      "committed_at_utc": "2026-10-17T02:12:22Z",
+      "subject": "fix: ground citation and root RO-Crate diagnostics in real research repositories",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "e836946655b471ea3f0961a8169e840151d770a6",
+      "parents": [
+        "dc206e95906279567b04b0ae841685d5a999dd20"
+      ],
+      "committed_at_utc": "2026-10-17T02:10:07Z",
+      "subject": "ci: exercise real upstream source collection and independent external software inspection read-only",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "dc206e95906279567b04b0ae841685d5a999dd20",
+      "parents": [
+        "ff1f13c18fffe895a45385e3dd48444aea9be282"
+      ],
+      "committed_at_utc": "2026-10-17T02:09:31Z",
+      "subject": "feat: report real-world source and third-party inspection findings without copying source text",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ff1f13c18fffe895a45385e3dd48444aea9be282",
+      "parents": [
+        "55c4206e4fc6397fbe33470f23b6763a6dbdfc69",
+        "9421df7333e0b6a24d05286a2ce40229ae3538f9"
+      ],
+      "committed_at_utc": "2026-10-17T02:01:16Z",
+      "subject": "Merge pull request #8 from lostlight530/fix/ls-preapply-integrity-and-path-contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "9421df7333e0b6a24d05286a2ce40229ae3538f9",
+      "parents": [
+        "55c4206e4fc6397fbe33470f23b6763a6dbdfc69"
+      ],
+      "committed_at_utc": "2026-10-17T02:00:00Z",
+      "subject": "fix: reject forged identity and corrupted baselines before durable lifecycle apply",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "55c4206e4fc6397fbe33470f23b6763a6dbdfc69",
+      "parents": [
+        "3dc50bc7631202c5383f189328b65ac472e05b74",
+        "9752ec950242869e34eca449708c6384cabe17ee"
+      ],
+      "committed_at_utc": "2026-10-17T01:44:39Z",
+      "subject": "Merge pull request #7 from lostlight530/fix/ls-execution-identity-lifecycle-evidence",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "9752ec950242869e34eca449708c6384cabe17ee",
+      "parents": [
+        "46d05de729997dd3b9fbbea340a640a42c9fe30d"
+      ],
+      "committed_at_utc": "2026-10-17T01:44:00Z",
+      "subject": "fix: bind accepted evidence snapshot to latest verified graph event",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "46d05de729997dd3b9fbbea340a640a42c9fe30d",
+      "parents": [
+        "5405d5c36f86453c7ead2a2c0363f9fcedfcb26f"
+      ],
+      "committed_at_utc": "2026-10-17T01:42:56Z",
+      "subject": "fix: fail closed on partial optional-source retrieval and reject empty required sources",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "5405d5c36f86453c7ead2a2c0363f9fcedfcb26f",
+      "parents": [
+        "f2930743283291a38402f0291fe82e5724ff06ac"
+      ],
+      "committed_at_utc": "2026-10-17T01:41:15Z",
+      "subject": "test: assert explicit execution receipt identity for CLI invocation",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "TEST_SUBJECT_LABEL"
+    },
+    {
+      "sha": "f2930743283291a38402f0291fe82e5724ff06ac",
+      "parents": [
+        "178c7c7dbcb5d55a807d16941fb6a27cbcc01ef9"
+      ],
+      "committed_at_utc": "2026-10-17T01:40:37Z",
+      "subject": "docs: reconcile public identity, delta and live-production evidence contracts",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "178c7c7dbcb5d55a807d16941fb6a27cbcc01ef9",
+      "parents": [
+        "3dc50bc7631202c5383f189328b65ac472e05b74"
+      ],
+      "committed_at_utc": "2026-10-17T01:40:10Z",
+      "subject": "fix: isolate execution attempts from knowledge snapshot identity and enforce accepted-state checks",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "3dc50bc7631202c5383f189328b65ac472e05b74",
+      "parents": [
+        "36b5664ba2a96812d2e59f360de8c4d7fa346470"
+      ],
+      "committed_at_utc": "2026-10-17T01:11:35Z",
+      "subject": "docs: first-user navigation, verified issue forms and dual-asset usability",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "DOCS_SUBJECT_LABEL"
+    },
+    {
+      "sha": "36b5664ba2a96812d2e59f360de8c4d7fa346470",
+      "parents": [
+        "7a0a7aac2f1ac738483481c8c90eb7274ef154c8"
+      ],
+      "committed_at_utc": "2026-10-17T01:00:16Z",
+      "subject": "fix: reject degraded sources and verify durable graph state",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FIX_SUBJECT_LABEL"
+    },
+    {
+      "sha": "7a0a7aac2f1ac738483481c8c90eb7274ef154c8",
+      "parents": [
+        "4da98face909e7218c42ff6f5ef35782a4165e15"
+      ],
+      "committed_at_utc": "2026-10-17T00:57:13Z",
+      "subject": "feat: integrated Life Science graph workflow and independent evidence inspection",
+      "era": "THREE_ASSETS_AND_METHOD",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "4da98face909e7218c42ff6f5ef35782a4165e15",
+      "parents": [
+        "18b91a27c09f85ab8c28a6d3a500908ca0216877"
+      ],
+      "committed_at_utc": "2026-10-16T17:23:25Z",
+      "subject": "feat: Life Science native knowledge workflow and independent evidence tool",
+      "era": "PILOT_CREATION",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "18b91a27c09f85ab8c28a6d3a500908ca0216877",
+      "parents": [
+        "23e104fdb92b4221a90e1ead745dfa2cd40b1c99"
+      ],
+      "committed_at_utc": "2026-10-16T16:35:11Z",
+      "subject": "feat: 为什么还要熬夜？让 Workflow 知识可复现、Evidence 可复核",
+      "era": "PILOT_CREATION",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "23e104fdb92b4221a90e1ead745dfa2cd40b1c99",
+      "parents": [
+        "97b69f5f0d2d8a1bc91a11f7b47c53a66f2d2962"
+      ],
+      "committed_at_utc": "2026-10-16T10:44:16Z",
+      "subject": "feat: honor the February 15–16 workflow origin with an LS pilot (#1)",
+      "era": "PILOT_CREATION",
+      "subject_label": "FEATURE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "97b69f5f0d2d8a1bc91a11f7b47c53a66f2d2962",
+      "parents": [
+        "00009a38bc136a7c245270770b005e4e102a870d"
+      ],
+      "committed_at_utc": "2026-10-16T10:38:17Z",
+      "subject": "chore: initialize Life Science Ecosystem Lab",
+      "era": "PILOT_CREATION",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    },
+    {
+      "sha": "00009a38bc136a7c245270770b005e4e102a870d",
+      "parents": [],
+      "committed_at_utc": "2026-10-16T10:35:56Z",
+      "subject": "Initial commit",
+      "era": "PILOT_CREATION",
+      "subject_label": "OTHER_SUBJECT_LABEL"
+    }
+  ],
+  "nonclaims": [
+    "This is default-branch reachable ancestry, not all commits from every branch or external predecessor",
+    "Commit subjects/eras are descriptive grouping only; proof of an accepted scientific state requires data receipt/event/actual native run",
+    "Cross-repository February 2026 precedent is not in this October 2026 ancestry"
+  ]
+}
