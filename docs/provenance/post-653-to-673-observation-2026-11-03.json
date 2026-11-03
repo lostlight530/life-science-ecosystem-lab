@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "GITHUB_READ_ONLY_RUN_DELTA",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-03",
+  "exact_http_read_timestamp_utc": null,
+  "observation_assembled_at_utc": "2026-11-03T03:09:22.200Z",
+  "clock_note": "The assembling clock is not a per-page HTTP request timestamp. GitHub run.created_at is an event timestamp, not runner start, queue latency or observation time. Subsequent PR/CI records lie outside this fixed 673-Run observation.",
+  "observed_source_main": "22d6965e7236e058680fca529e8fc98faa17d5d9",
+  "parent_archive": "post-640-to-653-observation-2026-11-02.json",
+  "source_url": "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page={1..7}",
+  "page_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    73
+  ],
+  "api_total_count": 673,
+  "previous_visible_total": 653,
+  "prior_census_parts": [
+    598,
+    16,
+    14,
+    12,
+    13
+  ],
+  "old_ids_retained": 653,
+  "old_ids_missing": [],
+  "new_run_columns": [
+    "run_id",
+    "workflow_basename",
+    "event",
+    "created_at_utc",
+    "head_sha",
+    "conclusion"
+  ],
+  "new_runs": [
+    [
+      41453175179,
+      "life-science-bio.yml",
+      "push",
+      "2026-11-02T13:27:43Z",
+      "22d6965e7236e058680fca529e8fc98faa17d5d9",
+      "success"
+    ],
+    [
+      41453175120,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:27:43Z",
+      "22d6965e7236e058680fca529e8fc98faa17d5d9",
+      "success"
+    ],
+    [
+      41453175001,
+      "validate.yml",
+      "push",
+      "2026-11-02T13:27:42Z",
+      "22d6965e7236e058680fca529e8fc98faa17d5d9",
+      "success"
+    ],
+    [
+      41453009000,
+      "life-science-bio.yml",
+      "pull_request",
+      "2026-11-02T13:26:31Z",
+      "504214a484150d782e6d8f9a0041be559e8bfc30",
+      "success"
+    ],
+    [
+      41453008954,
+      "validate.yml",
+      "pull_request",
+      "2026-11-02T13:26:31Z",
+      "504214a484150d782e6d8f9a0041be559e8bfc30",
+      "success"
+    ],
+    [
+      41453008885,
+      "life-science-evidence.yml",
+      "pull_request",
+      "2026-11-02T13:26:31Z",
+      "504214a484150d782e6d8f9a0041be559e8bfc30",
+      "success"
+    ],
+    [
+      41452994517,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:26:25Z",
+      "504214a484150d782e6d8f9a0041be559e8bfc30",
+      "success"
+    ],
+    [
+      41450087725,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:06:17Z",
+      "a06b2a656948336ddc780e6c307f5db3d8fc8738",
+      "success"
+    ],
+    [
+      41450087395,
+      "validate.yml",
+      "push",
+      "2026-11-02T13:06:17Z",
+      "a06b2a656948336ddc780e6c307f5db3d8fc8738",
+      "success"
+    ],
+    [
+      41450087249,
+      "life-science-bio.yml",
+      "push",
+      "2026-11-02T13:06:17Z",
+      "a06b2a656948336ddc780e6c307f5db3d8fc8738",
+      "success"
+    ],
+    [
+      41449867754,
+      "life-science-evidence.yml",
+      "pull_request",
+      "2026-11-02T13:04:44Z",
+      "4f12bc4aeb9f9a71e42a48eb57834f032fd43300",
+      "success"
+    ],
+    [
+      41449867703,
+      "life-science-bio.yml",
+      "pull_request",
+      "2026-11-02T13:04:44Z",
+      "4f12bc4aeb9f9a71e42a48eb57834f032fd43300",
+      "success"
+    ],
+    [
+      41449867509,
+      "validate.yml",
+      "pull_request",
+      "2026-11-02T13:04:44Z",
+      "4f12bc4aeb9f9a71e42a48eb57834f032fd43300",
+      "success"
+    ],
+    [
+      41449815154,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:04:20Z",
+      "4f12bc4aeb9f9a71e42a48eb57834f032fd43300",
+      "success"
+    ],
+    [
+      41449808670,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:04:17Z",
+      "8208de2c78c8e38a32a92c81a313f66a035987cb",
+      "success"
+    ],
+    [
+      41449753165,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:03:53Z",
+      "187e459f546ebd72ffbb4a1c9a831370e18b04ae",
+      "success"
+    ],
+    [
+      41449747269,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:03:50Z",
+      "b185a7b2721b336c361ce54c452d4aa2b135e277",
+      "success"
+    ],
+    [
+      41449593178,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:02:43Z",
+      "aada889ce26226c4513c93870fbf8a552cb1b210",
+      "success"
+    ],
+    [
+      41449507900,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:02:04Z",
+      "6457d314704746d6c5c7d7c75c7392c03a3f1b2c",
+      "success"
+    ],
+    [
+      41449377384,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-02T13:01:07Z",
+      "d6aa0d6d00b04d77b8a4187d518fa68835dff6bb",
+      "success"
+    ]
+  ],
+  "new_conclusions": {
+    "success": 20
+  },
+  "new_events": {
+    "push": 14,
+    "pull_request": 6
+  },
+  "visible_conclusions": {
+    "success": 632,
+    "cancelled": 41
+  },
+  "visible_events": {
+    "push": 340,
+    "pull_request": 291,
+    "schedule": 38,
+    "workflow_dispatch": 4
+  },
+  "scheduled_by_workflow": {
+    "life-science-continuity.yml": 17,
+    "life-science-knowledge.yml": 3,
+    "life-science-daily-selfcheck.yml": 16,
+    "life-science-bio.yml": 2
+  },
+  "jobs": {
+    "scheduled_run_count": 38,
+    "scheduled_jobs_checked": 59,
+    "scheduled_job_success": 59,
+    "scheduled_job_failed": 0,
+    "scheduled_job_skipped": 0,
+    "new_run_jobs_checked": 38,
+    "new_run_job_success": 36,
+    "new_run_job_skipped": 2,
+    "new_run_job_failed": 0,
+    "new_main_bio_push_ids": [
+      41450087249,
+      41453175179
+    ],
+    "new_main_bio_pinned_field": "skipped",
+    "new_pr_bio_pinned_field": "success",
+    "evidence_basis": "Direct latest-attempt GitHub per-Run Jobs API response for each of 38 scheduled and 20 new Runs; job IDs not all copied into this compact census"
+  },
+  "production": {
+    "accepted_receipts": 4,
+    "events": 4,
+    "archived_candidates": 3,
+    "latest_run_id": "gh-41436556408-1",
+    "latest_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "latest_accepted_commit": "b11c4be4e45e1d5560b431563efa82ad23bdfd3b",
+    "approved_sources": 4,
+    "selected_documents": 15,
+    "topics": 3,
+    "graph_entities": 17,
+    "relations_source_match": 26,
+    "current_candidate_git_blob_sha": "56470445c99378c2b3108f71961a1b5d86f8c0ce",
+    "events_git_blob_sha": "f299c165ff2f9b4fbbee5049aef61acb1630466f"
+  },
+  "repository_census": {
+    "main_reachable_commits": 249,
+    "prs_total": 56,
+    "prs_merged": 54,
+    "prs_open": 0,
+    "prs_closed_not_merged": [
+      29,
+      32
+    ],
+    "tracked_git_blobs": 270,
+    "workflows": 9,
+    "releases": [
+      "v0.4.0",
+      "v0.5.0"
+    ],
+    "source_main": "22d6965e7236e058680fca529e8fc98faa17d5d9",
+    "branch_protection_enabled": false,
+    "public_rulesets": 0
+  },
+  "negative_evidence": {
+    "archived_2026_10_30_failed_runs": 8,
+    "currently_visible_failed_runs": 0,
+    "three_previously_documented_pr55_intermediate_failures": [
+      41449357390,
+      41449363257,
+      41449370818
+    ],
+    "direct_retry_of_these_three": "404_NOT_FOUND",
+    "cause_or_removal_operator": "UNKNOWN",
+    "prior_workflow_name_errata_rows": 134,
+    "prior_median_errata": 2,
+    "november_1_api_runner_clock_conflict": "UNRESOLVED",
+    "november_3_daily_schedule_by_early_observation": "NOT_YET_VISIBLE_NOT_PROVEN_MISSED"
+  },
+  "external_state": {
+    "workflowhub_workflow_2347": "PUBLIC_WEB_PAGE_SHOWS_VERSION_2_V0.4.0_WORK_IN_PROGRESS_WITH_TESTS_PASSING",
+    "lifemonitor": "NO_NEW_AUTHENTICATED_OBSERVATION",
+    "bio_tools": "CURRENT_API_NOT_INDEPENDENTLY_READ",
+    "openebench": "CURRENT_API_NOT_INDEPENDENTLY_READ",
+    "zenodo": "CURRENT_API_NOT_INDEPENDENTLY_READ"
+  },
+  "decision": {
+    "scientific_assets": "NO_CHANGE_REQUIRED",
+    "framework": "NO_CHANGE_REQUIRED",
+    "native_workflow": "NO_CHANGE_REQUIRED",
+    "accepted_data": "NO_MANUAL_CHANGE",
+    "observed_research_claims": "NO_NEW_VERIFIED_CLAIM",
+    "public_provenance": "APPEND_ONLY",
+    "release_doi": "NO_CHANGE_REQUIRED"
+  }
+}
