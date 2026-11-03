@@ -12,6 +12,7 @@ All original Git Commit SHAs, PR numbers/titles, Run identifiers, accepted data 
 | PR #29 and #32 shown alongside merged changes | CLOSED_UNMERGED | Preserve explicit negative/disposition records |
 | Three released independent packages or four mature scientific assets | THREE_CALLABLE_ASSETS_PLUS_EXPERIMENTAL_FRAMEWORK | Root Python package shares three CLI entry points; Framework independently packaged; GitHub releases separate |
 | Nine Actions represented as nine research assets | GITHUB_NATIVE_INFRASTRUCTURE | Current nine Workflow names and distinct jobs in the YAML register |
+| 26 nested public Markdown records omitted from `evidence/profiles/docs.json` and the CI completeness directory list | NESTED_PUBLIC_DOC_AUDIT_GAP | Register all 26 dated lessons, provenance and taxonomy guides; expand offline CI inventory and local link audit, without changing any frozen evidence payload |
 | Historical docs/provenance/README heading “Frozen 2026-10-30 ...” | LIVING_EVIDENCE_INDEX | Correct current heading only, preserve original first October 30 census and link |
 | 234 commits / 42 PRs / 531 Runs represented as current | FROZEN_2026_10_30_BASELINE | Keep old numbers with cutoff; separate latest 250/57/274 and later 684 visible Runs |
 | Origin-to-present historical guide treated as a perpetually live report | DATE_SCOPED_ORIGIN_RECONSTRUCTION | Keep stable path, original first-day source and explicit later index |

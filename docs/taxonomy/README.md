@@ -57,6 +57,10 @@ Formal Knowledge accepted state at this cutoff contains **four execution-specifi
 
 Public GitHub branch metadata still reported **main.protected=false** and Rulesets **[]** in this source review. All-green CI is a tested engineering practice, not proof of server-enforced branch protection. Current third-party registry synchronization, certain log-access failures and scheduler clock root causes remain UNKNOWN.
 
+### Current public documentation coverage correction
+
+The source-pinned 274-file inventory above is retained as an immutable historical cutoff. A subsequent review of the newer Git tree identified **26 additional Markdown records** under `docs/lessons/`, `docs/provenance/` and `docs/taxonomy/` that were absent from the existing `evidence/profiles/docs.json` completeness list. The repository now classifies these existing records within its public lesson / historical-provenance categories and includes them in the maintained documentation manifest, with an independent CI inventory and local-link check. This changes **documentation audit coverage**, not the source Git Blob identities, accepted `data/` or historical counts. A current file list must still be obtained from the live Git tree rather than extending the old 274 denominator by assumption.
+
 ## REVIEW → REPLAY · Naming governance
 
 1. Preserve original Git identities, historical PR/Run names, published links, immutable archived reports, accepted production bytes and provider-owned IDs

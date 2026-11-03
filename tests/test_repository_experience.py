@@ -17,7 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 # downloaded fixtures, ignored scratch, virtualenvs or accepted research data.
 PUBLIC_DOC_DIRS = (
     ".", ".github", ".github/knowledge", ".github/agent-handoff",
-    "docs", "evidence", "bio_tool", "framework", "framework/docs",
+    "docs", "docs/lessons", "docs/provenance", "docs/taxonomy",
+    "evidence", "bio_tool", "framework", "framework/docs",
     "checks/institutional", "checks/project",
 )
 
@@ -32,6 +33,13 @@ class RepositoryExperienceTests(unittest.TestCase):
         stored = json.loads((ROOT / "evidence/profiles/docs.json").read_text(encoding="utf-8"))
         self.assertEqual(stored["schema_version"], "1.0.0")
         self.assertEqual(stored["documents"], sorted(expected))
+        # Historical observations and newly classified guides must be audited too.
+        # A top-level-only glob silently missed all three nested directories.
+        for subdir in ("docs/lessons/", "docs/provenance/", "docs/taxonomy/"):
+            with self.subTest(subdir=subdir):
+                nested = {p for p in expected if p.startswith(subdir)}
+                self.assertTrue(nested, subdir)
+                self.assertTrue(nested <= set(stored["documents"]))
         report = audit_documents(ROOT, stored["documents"])
         self.assertEqual(report.issues, (), "\n".join(report.issues))
 
