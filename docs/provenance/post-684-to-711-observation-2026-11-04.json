@@ -1,0 +1,440 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "GITHUB_READ_ONLY_RUN_DELTA",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-04",
+  "observed_source_main": "0728c19d32492d2932bffbab9045e7aeedcbd667",
+  "previous_archive": "post-673-to-684-observation-2026-11-03.json",
+  "previous_visible_total": 684,
+  "api_total_count": 711,
+  "page_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    11
+  ],
+  "previous_id_count_retained": 684,
+  "previous_ids_absent": [],
+  "new_count": 27,
+  "new_run_columns": [
+    "run_id",
+    "workflow_basename",
+    "event",
+    "created_at_utc",
+    "head_sha",
+    "conclusion",
+    "attempt"
+  ],
+  "new_runs": [
+    [
+      41632276154,
+      "life-science-continuity.yml",
+      "schedule",
+      "2026-11-03T12:01:44Z",
+      "0728c19d32492d2932bffbab9045e7aeedcbd667",
+      "success",
+      1
+    ],
+    [
+      41604262360,
+      "life-science-daily-selfcheck.yml",
+      "schedule",
+      "2026-11-03T08:34:18Z",
+      "0728c19d32492d2932bffbab9045e7aeedcbd667",
+      "success",
+      1
+    ],
+    [
+      41576421787,
+      "validate.yml",
+      "push",
+      "2026-11-03T04:09:16Z",
+      "0728c19d32492d2932bffbab9045e7aeedcbd667",
+      "success",
+      1
+    ],
+    [
+      41576421767,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:09:16Z",
+      "0728c19d32492d2932bffbab9045e7aeedcbd667",
+      "success",
+      1
+    ],
+    [
+      41576421725,
+      "life-science-bio.yml",
+      "push",
+      "2026-11-03T04:09:16Z",
+      "0728c19d32492d2932bffbab9045e7aeedcbd667",
+      "success",
+      1
+    ],
+    [
+      41576302762,
+      "validate.yml",
+      "pull_request",
+      "2026-11-03T04:08:04Z",
+      "70995d0d05e8f2037a1b8c3bb11acde87b6c6057",
+      "success",
+      1
+    ],
+    [
+      41576302737,
+      "life-science-bio.yml",
+      "pull_request",
+      "2026-11-03T04:08:04Z",
+      "70995d0d05e8f2037a1b8c3bb11acde87b6c6057",
+      "success",
+      1
+    ],
+    [
+      41576302532,
+      "life-science-evidence.yml",
+      "pull_request",
+      "2026-11-03T04:08:04Z",
+      "70995d0d05e8f2037a1b8c3bb11acde87b6c6057",
+      "success",
+      1
+    ],
+    [
+      41576268327,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:07:44Z",
+      "70995d0d05e8f2037a1b8c3bb11acde87b6c6057",
+      "success",
+      1
+    ],
+    [
+      41576231173,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:07:22Z",
+      "c3e73be991f257f08e2a68e0af7726576504f4ff",
+      "success",
+      1
+    ],
+    [
+      41575989806,
+      "life-science-bio.yml",
+      "push",
+      "2026-11-03T04:05:04Z",
+      "ad49fe8fee372197fd17a341d56fb0a4483e9cd8",
+      "success",
+      1
+    ],
+    [
+      41575989790,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:05:04Z",
+      "ad49fe8fee372197fd17a341d56fb0a4483e9cd8",
+      "success",
+      1
+    ],
+    [
+      41575989769,
+      "validate.yml",
+      "push",
+      "2026-11-03T04:05:04Z",
+      "ad49fe8fee372197fd17a341d56fb0a4483e9cd8",
+      "success",
+      1
+    ],
+    [
+      41575886687,
+      "life-science-bio.yml",
+      "pull_request",
+      "2026-11-03T04:04:01Z",
+      "17f06055ecd03eea9f386a705c395dd08ed76624",
+      "success",
+      1
+    ],
+    [
+      41575886653,
+      "life-science-evidence.yml",
+      "pull_request",
+      "2026-11-03T04:04:01Z",
+      "17f06055ecd03eea9f386a705c395dd08ed76624",
+      "success",
+      1
+    ],
+    [
+      41575886645,
+      "validate.yml",
+      "pull_request",
+      "2026-11-03T04:04:01Z",
+      "17f06055ecd03eea9f386a705c395dd08ed76624",
+      "success",
+      1
+    ],
+    [
+      41575840675,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:03:33Z",
+      "17f06055ecd03eea9f386a705c395dd08ed76624",
+      "success",
+      1
+    ],
+    [
+      41575835890,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:03:31Z",
+      "08ddcf5330d6ab6cc91010f79919ec823e829e65",
+      "success",
+      1
+    ],
+    [
+      41575831455,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:03:28Z",
+      "4794c3cc4852fab9822e0175fc94d3991d5e463a",
+      "success",
+      1
+    ],
+    [
+      41575795214,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T04:03:08Z",
+      "449fb9d54c618793552a0a0e5991b43e287fbb27",
+      "success",
+      1
+    ],
+    [
+      41573113868,
+      "life-science-bio.yml",
+      "push",
+      "2026-11-03T03:35:28Z",
+      "a528241a3e86a48496eb81e5df895e98762a27fb",
+      "success",
+      1
+    ],
+    [
+      41573113832,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:35:28Z",
+      "a528241a3e86a48496eb81e5df895e98762a27fb",
+      "success",
+      1
+    ],
+    [
+      41573113559,
+      "validate.yml",
+      "push",
+      "2026-11-03T03:35:28Z",
+      "a528241a3e86a48496eb81e5df895e98762a27fb",
+      "success",
+      1
+    ],
+    [
+      41573009904,
+      "life-science-bio.yml",
+      "pull_request",
+      "2026-11-03T03:34:27Z",
+      "1ad6d3056129761da1b131b6dbdbeee6c93b12fd",
+      "success",
+      1
+    ],
+    [
+      41573009835,
+      "life-science-evidence.yml",
+      "pull_request",
+      "2026-11-03T03:34:27Z",
+      "1ad6d3056129761da1b131b6dbdbeee6c93b12fd",
+      "success",
+      1
+    ],
+    [
+      41573009819,
+      "validate.yml",
+      "pull_request",
+      "2026-11-03T03:34:27Z",
+      "1ad6d3056129761da1b131b6dbdbeee6c93b12fd",
+      "success",
+      1
+    ],
+    [
+      41572967817,
+      "life-science-evidence.yml",
+      "push",
+      "2026-11-03T03:34:03Z",
+      "1ad6d3056129761da1b131b6dbdbeee6c93b12fd",
+      "success",
+      1
+    ]
+  ],
+  "new_events": {
+    "push": 16,
+    "pull_request": 9,
+    "schedule": 2
+  },
+  "new_conclusions": {
+    "success": 27
+  },
+  "visible_events": {
+    "push": 364,
+    "pull_request": 303,
+    "schedule": 40,
+    "workflow_dispatch": 4
+  },
+  "visible_conclusions": {
+    "success": 670,
+    "cancelled": 41,
+    "failure": 0
+  },
+  "new_job_census": {
+    "source": "27 GitHub latest-attempt per-Run jobs responses; read-only",
+    "total": 54,
+    "success": 51,
+    "skipped": 3,
+    "failure": 0,
+    "cancelled": 0,
+    "pinned_field_skipped_push_run_ids": [
+      41573113868,
+      41575989806,
+      41576421725
+    ],
+    "pinned_field_success_pr_run_ids": [
+      41573009904,
+      41575886687,
+      41576302737
+    ],
+    "conditional_gate": "life-science-bio.yml pinned-field excluded on push by workflow if-condition"
+  },
+  "scheduled_delta": [
+    {
+      "run_id": 41604262360,
+      "workflow": "life-science-daily-selfcheck.yml",
+      "event": "schedule",
+      "created_at_utc": "2026-11-03T08:34:18Z",
+      "nominal_cron_utc": "2026-11-03T01:41:00Z",
+      "cron_to_api_created_seconds": 24798,
+      "jobs": [
+        [
+          "125810091885",
+          "Project custom — three assets and accepted evidence",
+          "success"
+        ],
+        [
+          "125810092196",
+          "Institutional defaults — public read-only observations",
+          "success"
+        ]
+      ],
+      "log_observation": "PROJECT_CUSTOM_DAILY_EXECUTION PASS; INSTITUTIONAL_PUBLIC_DEFAULTS_SELF_CHECK PUBLIC_HTTP_READ_ONLY; does not certify remote institutions",
+      "artifacts": [
+        {
+          "id": 13214669224,
+          "name": "project-custom",
+          "github_reported_zip_sha256": "53abf8e698aabc65a85c8daf2f119ef0a18b9ae990a9f5586697d532a71d7e90"
+        },
+        {
+          "id": 13215048896,
+          "name": "institutional-defaults",
+          "github_reported_zip_sha256": "986a014a3239a1c80a77ae39e7d9dc1009f8dfa0bf105a88f571c795fe924d5b"
+        }
+      ]
+    },
+    {
+      "run_id": 41632276154,
+      "workflow": "life-science-continuity.yml",
+      "event": "schedule",
+      "created_at_utc": "2026-11-03T12:01:44Z",
+      "nominal_cron_utc": "2026-11-03T04:17:00Z",
+      "cron_to_api_created_seconds": 27884,
+      "jobs": [
+        [
+          "125904557356",
+          "verify",
+          "success"
+        ]
+      ],
+      "log_observation": "State, knowledge, and graph verify succeeded; KNOWLEDGE_QUALITY_PASS",
+      "artifacts": [
+        {
+          "id": 13228223974,
+          "name": "accepted-knowledge-continuity",
+          "github_reported_zip_sha256": "17b1939f7d5014494eceed55e5fed3a69ab546615e2865f1abd807c555c8cf2d"
+        }
+      ]
+    }
+  ],
+  "repository_census": {
+    "main_reachable_commits": 253,
+    "git_ancestry_parent_closed": true,
+    "git_root": "00009a38bc136a7c245270770b005e4e102a870d",
+    "prs_total": 60,
+    "merged_prs": 58,
+    "closed_unmerged": [
+      29,
+      32
+    ],
+    "open_prs": 0,
+    "tracked_blobs": 283,
+    "actions_yaml": 9,
+    "github_releases": [
+      "v0.4.0",
+      "v0.5.0"
+    ],
+    "main_protected": false
+  },
+  "native_state": {
+    "accepted_receipts": 4,
+    "linked_applied_events": 4,
+    "candidate_archives": 3,
+    "last_accepted_execution_id": "gh-41436556408-1",
+    "last_accepted_logical_date": "2026-11-02",
+    "last_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "source_match_relations": 26,
+    "graph_entities": 17,
+    "new_accepted_event_in_this_delta": false
+  },
+  "historical_negative": {
+    "frozen_2026_10_30_failed_runs": 8,
+    "currently_visible_failed_runs": 0,
+    "three_pr55_intermediate_failures": "historically documented; currently unavailable on direct fetch",
+    "cause_of_unavailable_runs": "UNKNOWN"
+  },
+  "external_registry_current_status": "UNKNOWN_NOT_INFERRED_FROM_LOCAL_CI",
+  "source_urls": [
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=2",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=3",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=4",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=5",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=6",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=7",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=8",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/pulls?state=all&per_page=100",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=2",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=3",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/git/trees/main?recursive=1"
+  ],
+  "exact_individual_api_request_timestamps_utc": null,
+  "assembled_time_is_not_attested_http_time": true,
+  "observational_limits": [
+    "GitHub visible Run population is not immutable all-time history",
+    "The 27 new Job results were fetched by Run ID; overall counts cannot attest original runner bytes after artifacts expire",
+    "GitHub API created_at minus cron is NOT runner queue time and cannot establish a scheduler root cause",
+    "Artifact hashes and IDs are GitHub-reported; ZIP bytes were not independently downloaded and rehashed in this review",
+    "Original dated archive records remain unchanged; publishing this review will generate later CI runs",
+    "Provider registry activation, private Agent execution and scientific truth were not independently verified"
+  ],
+  "decision": {
+    "operational_delta": "NEW_NATIVE_SCHEDULE_EVIDENCE_WITH_LARGE_NOMINAL_CRON_OFFSETS",
+    "scientific_status": "NO_NEW_VERIFIED_SCIENTIFIC_CLAIM",
+    "production_status": "NO_CHANGE_REQUIRED"
+  }
+}

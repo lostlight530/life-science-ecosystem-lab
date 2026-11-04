@@ -112,3 +112,10 @@ All 653 previously frozen identities remain visible in the new seven-page API ce
 [New 11-Run/21-Job source evidence](post-673-to-684-observation-2026-11-03.json) · [Source-cutoff reconciliation](POST_673_TO_684_RECONCILIATION_2026-11-03.md) · [Complete 250/57/274 classification](../taxonomy/README.md) · [Historic name correction register](../taxonomy/CORRECTION_REGISTER_2026-11-03.md)
 
 Every earlier 673 Run ID remains visible in the new source collection. Eleven new successful PR #57 development/PR/merged-main Runs include 20 successful Jobs and one conditionally skipped Bio Job. The 684-Run cutoff does not include the subsequent classification PR and its CI; original frozen observations remain untouched.
+
+
+## 2026-11-04 · Post-684 to 711 native Run and scheduled-Job audit
+
+[New 27-Run GitHub-source delta](post-684-to-711-observation-2026-11-04.json) · [Human-readable analysis](POST_684_TO_711_RECONCILIATION_2026-11-04.md) · [Independent offline test](../../tests/test_post_684_run_delta.py) · [Public falsifiable lesson](../lessons/2026-11-04-cron-offset-observation-and-conditional-jobs.md)
+
+At the pinned pre-publication `main=0728c19d32492d2932bffbab9045e7aeedcbd667`, all 684 prior source-derived Run IDs remained visible and 27 new successes appeared, for 711 visible Runs (670 success / 41 cancelled). The 27 new Runs had 51 successful and three conditionally skipped Jobs; the two new scheduled Runs had three successful Jobs, with substantial *nominal cron → API created_at* offsets whose causal mechanism remains UNKNOWN. Current formal Knowledge acceptance remains four Receipts and four linked events, with no new scientific result or registry approval. The frozen historical failures and earlier evidence are preserved; subsequent reporting PR/CI activity is outside this cutoff.
