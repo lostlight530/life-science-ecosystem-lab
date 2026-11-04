@@ -1,0 +1,15 @@
+# Public research lesson · scheduling observation is not execution attribution (2026-11-04)
+
+[Source-pinned 684→711 evidence](../provenance/post-684-to-711-observation-2026-11-04.json) · [Run and acceptance analysis](../provenance/POST_684_TO_711_RECONCILIATION_2026-11-04.md) · [Offline falsifier](../../tests/test_post_684_run_delta.py)
+
+**Observed, not inferred:** across the new 27 GitHub Actions Runs, 51 Jobs succeeded and three Bio `pinned-field` Jobs were skipped by their known `push` event guard. Both new scheduled runs were successful, with nominal-cron-to-API-created offsets of **06:53:18** and **07:44:44**. Source Job IDs and GitHub-reported Artifact IDs/digests are bound to the frozen JSON. The formal Knowledge acceptance ledger remained four `APPLIED` events and Receipts, most recent 2026-11-02.
+
+**Failure mode — measuring the wrong clock.** A cron declaration is a scheduled intent. GitHub `created_at` is when the Run object appears in the API; a Job start is an additional clock; the program's own logical date is yet another. Subtracting `cron` from `created_at` is a legitimate *observation*, but labeling the result `queue_duration`, `runner_start_delay`, `GitHub outage` or `missed execution` requires evidence not available here. Record both timestamps and their UTC zone, preserve unknown causality, and use subsequent dated observations before considering schedule changes.
+
+**Failure mode — run-level success hides conditional non-execution.** A Bio Run can be successful with `offline=success` and `pinned-field=skipped`; on PR events the field Job ran and passed. The correct join key is `Run ID + attempt + Job ID`, not the Run's green badge or a current workflow name projected backward.
+
+**Failure mode — collapsing correction and science.** A source-pinned method or a current graph can verify as consistent even when no additional biological relation, experimental observation or benchmark result has been produced. Four accepted state transitions do not mean four independent science results. External Agent self-attribution, public institutional endpoint reachability and third-party registry acceptance are separate proof obligations.
+
+**Correction method:** replay the exact frozen prior Run-ID set, re-fetch all current pages, compare identity sets before totals, read latest-attempt Job outcomes, retain conditional skips, calculate cron deltas without inferring platform internals, verify `data/` independently, and append a date-scoped record. Never rewrite old negative snapshots or edit formal accepted data to match a retrospective report.
+
+**Falsifiers and residual unknowns:** the offline regression checks unique IDs, arithmetic, conditional Job classification, the production ledger shape and exact source cutoffs. It cannot certify the historical GitHub service logs, independently rehash downloaded Artifact ZIPs, identify an operator behind currently unavailable Run records, authenticate an Agent's runtime, or prove institutional/scientific recognition. A later run with a different offset does not retroactively invalidate this date-scoped observation.
