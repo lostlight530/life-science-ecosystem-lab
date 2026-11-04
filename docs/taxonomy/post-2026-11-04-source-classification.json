@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "GITHUB_MAIN_SOURCE_CLASSIFICATION_ADDENDUM",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_date_asia_shanghai": "2026-11-04",
+  "main_source_cutoff_sha": "991914541fc3f56b8da00b4a3b91cb0dd71572d1",
+  "frozen_baseline_main_sha": "94f5f0875e7f590846781e5557912730bc482221",
+  "root_commit_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "frozen_registers": {
+    "main_commits": 250,
+    "prs": 57,
+    "tracked_files": 274,
+    "workflow_definitions": 9
+  },
+  "observed_main_census": {
+    "main_reachable_commits": 254,
+    "prs_total": 61,
+    "prs_merged": 59,
+    "prs_closed_unmerged": [
+      29,
+      32
+    ],
+    "prs_open": 0,
+    "tracked_files": 287,
+    "workflow_definitions": 9,
+    "tree_truncated": false
+  },
+  "post_baseline_files": [
+    {
+      "path": "docs/lessons/2026-11-04-cron-offset-observation-and-conditional-jobs.md",
+      "git_blob_sha": "0e1cd66144e1cb2541d618e11fa71403f9b14b61",
+      "category": "PUBLIC_RESEARCH_LESSONS",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/provenance/POST_673_TO_684_RECONCILIATION_2026-11-03.md",
+      "git_blob_sha": "03c1c0220515e95c024a4607c078e3491ee298ce",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/provenance/POST_684_TO_711_RECONCILIATION_2026-11-04.md",
+      "git_blob_sha": "435fa008da6f17ed1fedae9dd17758d1ee92d6bf",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/provenance/post-673-to-684-observation-2026-11-03.json",
+      "git_blob_sha": "d2d4c58c920a5732d9cb135e8284c41d122e5bc7",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/provenance/post-684-to-711-observation-2026-11-04.json",
+      "git_blob_sha": "e9eacc75fcad4a9d51c9cb8c48d1ee811055b596",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/taxonomy/CORRECTION_REGISTER_2026-11-03.md",
+      "git_blob_sha": "34bc62b1806e8fe451d677ed3ad31d22917e59cd",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/taxonomy/README.md",
+      "git_blob_sha": "00f032a843f781a7f09a4fd48e5a86c8d401e63e",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/taxonomy/commit-register-2026-11-03.json",
+      "git_blob_sha": "c9479f41e5a376f6d889b8f2dbf6d115857794bf",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/taxonomy/file-register-2026-11-03.json",
+      "git_blob_sha": "65f8e27fcdaddc34b944f1f68b53bc41836ee970",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/taxonomy/pr-register-2026-11-03.json",
+      "git_blob_sha": "fd086086c4096d0fc7acf0bedafc7ec29ef2b7fc",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "docs/taxonomy/workflow-register-2026-11-03.json",
+      "git_blob_sha": "988484ace5b2b367f5ab1d24277ef606204cf1ec",
+      "category": "HISTORICAL_PROVENANCE",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "tests/test_first_day_taxonomy.py",
+      "git_blob_sha": "207d5f9f9922cdb19b43997dbe8947503da9865f",
+      "category": "VALIDATION_AND_REGRESSION",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    },
+    {
+      "path": "tests/test_post_684_run_delta.py",
+      "git_blob_sha": "9c568886f1a21e7622b4e8f7d2763d093dfd395f",
+      "category": "VALIDATION_AND_REGRESSION",
+      "source_scope": "FILE_BLOB_AT_PINNED_CUTOFF_NOT_LIVE_IMMUTABILITY"
+    }
+  ],
+  "post_baseline_main_commits": [
+    {
+      "sha": "991914541fc3f56b8da00b4a3b91cb0dd71572d1",
+      "parents": [
+        "0728c19d32492d2932bffbab9045e7aeedcbd667"
+      ],
+      "committed_at_utc": "2026-11-04T05:02:54Z",
+      "subject": "docs(test): reconcile 684→711 GitHub Runs and Nov 3 native quality (#61)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "0728c19d32492d2932bffbab9045e7aeedcbd667",
+      "parents": [
+        "ad49fe8fee372197fd17a341d56fb0a4483e9cd8"
+      ],
+      "committed_at_utc": "2026-11-03T04:09:13Z",
+      "subject": "test(taxonomy): classify all current post-baseline file paths",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "ad49fe8fee372197fd17a341d56fb0a4483e9cd8",
+      "parents": [
+        "a528241a3e86a48496eb81e5df895e98762a27fb"
+      ],
+      "committed_at_utc": "2026-11-03T04:05:01Z",
+      "subject": "fix(docs): audit nested research lessons, provenance and taxonomy",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    },
+    {
+      "sha": "a528241a3e86a48496eb81e5df895e98762a27fb",
+      "parents": [
+        "94f5f0875e7f590846781e5557912730bc482221"
+      ],
+      "committed_at_utc": "2026-11-03T03:35:24Z",
+      "subject": "docs(test): classify full LS root history and public naming (#58)",
+      "era": "HISTORY_AUDIT_AND_NATIVE_CONTINUITY",
+      "subject_label": "PROVENANCE_SUBJECT_LABEL"
+    }
+  ],
+  "post_baseline_prs": [
+    {
+      "number": 58,
+      "original_title": "docs(test): classify every LS Git ancestor, PR, tracked file and native workflow",
+      "canonical_category": "RESEARCH_GOVERNANCE_REPLAY",
+      "created_at_utc": "2026-11-03T03:34:24Z",
+      "merged_at_utc": "2026-11-03T03:35:25Z",
+      "disposition": "MERGED",
+      "head_sha": "1ad6d3056129761da1b131b6dbdbeee6c93b12fd",
+      "classification_source": "PR_TITLE_AND_PUBLIC_METADATA_ONLY",
+      "agent_identity_attested": false
+    },
+    {
+      "number": 59,
+      "original_title": "fix(docs): classify and audit all nested LS provenance and research Markdown",
+      "canonical_category": "RESEARCH_GOVERNANCE_REPLAY",
+      "created_at_utc": "2026-11-03T04:03:58Z",
+      "merged_at_utc": "2026-11-03T04:05:01Z",
+      "disposition": "MERGED",
+      "head_sha": "17f06055ecd03eea9f386a705c395dd08ed76624",
+      "classification_source": "PR_TITLE_AND_PUBLIC_METADATA_ONLY",
+      "agent_identity_attested": false
+    },
+    {
+      "number": 60,
+      "original_title": "test(taxonomy): classify all post-baseline files and guard future paths",
+      "canonical_category": "RESEARCH_GOVERNANCE_REPLAY",
+      "created_at_utc": "2026-11-03T04:08:00Z",
+      "merged_at_utc": "2026-11-03T04:09:13Z",
+      "disposition": "MERGED",
+      "head_sha": "70995d0d05e8f2037a1b8c3bb11acde87b6c6057",
+      "classification_source": "PR_TITLE_AND_PUBLIC_METADATA_ONLY",
+      "agent_identity_attested": false
+    },
+    {
+      "number": 61,
+      "original_title": "docs(test): reconcile 684→711 GitHub Runs and Nov 3 native quality",
+      "canonical_category": "RESEARCH_GOVERNANCE_REPLAY",
+      "created_at_utc": "2026-11-04T05:00:16Z",
+      "merged_at_utc": "2026-11-04T05:02:54Z",
+      "disposition": "MERGED",
+      "head_sha": "15556f935eb4319b1523e60e1cae3b67f02bfbbf",
+      "classification_source": "PR_TITLE_AND_PUBLIC_METADATA_ONLY",
+      "agent_identity_attested": false
+    }
+  ],
+  "baseline_workflow_paths_unchanged": true,
+  "actions": {
+    "frozen_prior_visible_run_ids": 711,
+    "observed_current_visible_run_ids": 721,
+    "visible_event_counts": {
+      "push": 371,
+      "pull_request": 306,
+      "schedule": 40,
+      "workflow_dispatch": 4
+    },
+    "visible_conclusion_counts": {
+      "success": 680,
+      "cancelled": 41,
+      "failure": 0
+    },
+    "previous_711_ids_retained": 711,
+    "previous_711_ids_missing": [],
+    "new_current_run_columns": [
+      "run_id",
+      "workflow_basename",
+      "event",
+      "created_at_utc",
+      "head_sha",
+      "conclusion"
+    ],
+    "new_current_runs": [
+      [
+        41776829783,
+        "life-science-bio.yml",
+        "push",
+        "2026-11-04T05:02:57Z",
+        "991914541fc3f56b8da00b4a3b91cb0dd71572d1",
+        "success"
+      ],
+      [
+        41776829685,
+        "life-science-evidence.yml",
+        "push",
+        "2026-11-04T05:02:57Z",
+        "991914541fc3f56b8da00b4a3b91cb0dd71572d1",
+        "success"
+      ],
+      [
+        41776829648,
+        "validate.yml",
+        "push",
+        "2026-11-04T05:02:57Z",
+        "991914541fc3f56b8da00b4a3b91cb0dd71572d1",
+        "success"
+      ],
+      [
+        41776554277,
+        "validate.yml",
+        "pull_request",
+        "2026-11-04T05:00:19Z",
+        "15556f935eb4319b1523e60e1cae3b67f02bfbbf",
+        "success"
+      ],
+      [
+        41776554218,
+        "life-science-bio.yml",
+        "pull_request",
+        "2026-11-04T05:00:19Z",
+        "15556f935eb4319b1523e60e1cae3b67f02bfbbf",
+        "success"
+      ],
+      [
+        41776554160,
+        "life-science-evidence.yml",
+        "pull_request",
+        "2026-11-04T05:00:19Z",
+        "15556f935eb4319b1523e60e1cae3b67f02bfbbf",
+        "success"
+      ],
+      [
+        41776508098,
+        "life-science-evidence.yml",
+        "push",
+        "2026-11-04T04:59:55Z",
+        "15556f935eb4319b1523e60e1cae3b67f02bfbbf",
+        "success"
+      ],
+      [
+        41776490172,
+        "life-science-evidence.yml",
+        "push",
+        "2026-11-04T04:59:43Z",
+        "81c96b1ec6ca1fcb1f5f965a2ea85f0b5b98c39d",
+        "success"
+      ],
+      [
+        41776258148,
+        "life-science-evidence.yml",
+        "push",
+        "2026-11-04T04:57:12Z",
+        "7018c300550b5c2796ae2bee7c73cd471c644c82",
+        "success"
+      ],
+      [
+        41776213577,
+        "life-science-evidence.yml",
+        "push",
+        "2026-11-04T04:56:45Z",
+        "a7a2af66ea79516500d3932c427cd8c06836323b",
+        "success"
+      ]
+    ],
+    "previously_seen_pre_pr_failure_run_ids_currently_404": [
+      41776345499,
+      41776379847,
+      41776461093
+    ],
+    "previously_observed_visible_run_total": 724,
+    "previous_observation_grade": "PRIOR_IN_CONVERSATION_PUBLIC_GITHUB_API_NOT_AN_IMMUTABLE_REPOSITORY_JSON",
+    "current_missing_failure_cause": "UNKNOWN",
+    "eight_original_2026_10_30_historical_failures_preserved": true,
+    "three_separate_pr55_failures_preserved": true,
+    "requested_api_paths": [
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=1",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=2",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=3",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=4",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=5",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=6",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=7",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=8"
+    ]
+  },
+  "accepted_production": {
+    "receipt_count": 4,
+    "applied_event_count": 4,
+    "archived_candidates": 3,
+    "last_accepted": "gh-41436556408-1",
+    "latest_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "source_match_edges": 26,
+    "entities": 17,
+    "source_scope": "REPORTED_FROM_CURRENT_MAIN_NOT_NEW_PRODUCTION_WRITE"
+  },
+  "source_endpoints": {
+    "git_tree": "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/git/trees/main?recursive=1",
+    "commits": [
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=1",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=2",
+      "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=3"
+    ],
+    "prs": "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/pulls?state=all&per_page=100",
+    "source_main": "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits/991914541fc3f56b8da00b4a3b91cb0dd71572d1"
+  },
+  "exact_per_http_request_timestamp_utc": null,
+  "limits": [
+    "All counts pin the named pre-publication main and observed Actions visibility, not future GitHub state",
+    "Main reachable ancestor count excludes all non-main feature-branch commits",
+    "PR metadata and titles do not attest to Agent runtime identity",
+    "The three 404 failures were observed failing in earlier API reads but their current absence has no verified cause",
+    "A success Run is not an all-Jobs-executed claim; the 711-Run predecessor includes conditional Job skips",
+    "External institution status, clinical/biological truth and private-agent execution not inferred from source taxonomy",
+    "Do not rewrite the original 250/57/274 frozen ledgers to 254/61/287"
+  ]
+}
