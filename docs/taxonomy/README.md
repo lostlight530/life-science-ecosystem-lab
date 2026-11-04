@@ -88,3 +88,10 @@ The source-pinned 274-file inventory above is retained as an immutable historica
 5. Use the [independent offline contract tests](../../tests/test_first_day_taxonomy.py), full native CI, PR review and a final remote main check
 
 The fixed method is **DEFINE → PIN → QUALIFY → EXECUTE → EVALUATE → AUDIT → REVIEW → REPLAY**. Categorizing a historical Commit or PR does not assert every research stage occurred or was scientifically accepted.
+
+
+### 2026-11-04 · Current-main closure beyond the 250/57/274 frozen baseline
+
+[New dated source overlay](POST_2026-11-04_SOURCE_CLASSIFICATION.md) · [machine register](post-2026-11-04-source-classification.json) · [offline regression](../../tests/test_post_2026_11_04_taxonomy.py)
+
+At pre-publication `main=991914541fc3f56b8da00b4a3b91cb0dd71572d1`, the full Git-root-to-current taxonomy is **254 main-reachable commits / 61 PRs / 287 tracked paths / nine native Workflow definitions**. The additive manifest explicitly classifies four Commit identities, four PRs and 13 post-baseline paths without modifying the original frozen 250/57/274 ledgers. All prior 711 frozen Run IDs remain visible in a separate 721-Run read; three additional previously observed development failures now return 404 and are preserved as negative evidence with `UNKNOWN` cause. This is a dated source observation, not a permanent assertion that these counters will not change.
