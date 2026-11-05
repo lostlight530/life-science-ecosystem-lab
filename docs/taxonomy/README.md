@@ -95,3 +95,9 @@ The fixed method is **DEFINE → PIN → QUALIFY → EXECUTE → EVALUATE → AU
 [New dated source overlay](POST_2026-11-04_SOURCE_CLASSIFICATION.md) · [machine register](post-2026-11-04-source-classification.json) · [offline regression](../../tests/test_post_2026_11_04_taxonomy.py)
 
 At pre-publication `main=991914541fc3f56b8da00b4a3b91cb0dd71572d1`, the full Git-root-to-current taxonomy is **254 main-reachable commits / 61 PRs / 287 tracked paths / nine native Workflow definitions**. The additive manifest explicitly classifies four Commit identities, four PRs and 13 post-baseline paths without modifying the original frozen 250/57/274 ledgers. All prior 711 frozen Run IDs remain visible in a separate 721-Run read; three additional previously observed development failures now return 404 and are preserved as negative evidence with `UNKNOWN` cause. This is a dated source observation, not a permanent assertion that these counters will not change.
+
+## 2026-11-05 · Full first-day-to-current Git Tree file lifecycle
+
+[Complete 294-current + 47 historical-only file register](full-file-lifecycle-2026-11-05.json) · [Human review and nonclaims](FULL_FILE_LIFECYCLE_2026-11-05.md) · [Offline regression](../../tests/test_full_file_lifecycle_2026_11_05.py) · [Public lesson](../lessons/2026-11-05-historical-paths-and-byte-identity.md)
+
+At pinned `main=18c33998a78ff64537d993bd7d7408c5a5da0cf3`, 256 parent-closed main-reachable Commits correspond to 235 distinct read-only Git Tree states, 294 current tracked paths and 47 historical-only paths (341 observed unique path names). Earlier 274+13 dated file registers are preserved; ten living file contents changed since those cutoffs, while 19 historical-only Blob contents exactly match a currently tracked path. No legacy file is automatically resurrected, no science claim promoted and no formal `data/` accepted state modified. The publishing PR's own files belong to the next cutoff.

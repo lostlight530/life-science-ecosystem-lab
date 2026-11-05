@@ -49,3 +49,9 @@ Choose the path matching your task. This index describes **public, reproducible 
 **State ownership:** Git-tracked `data/` only after a validated and accepted native run. Neither screenshots, documentation, an Agent reply nor passing static tests are authoritative accepted knowledge.
 
 [Research Methodology](RESEARCH_METHODOLOGY.md) documents invariant scientific workflow and evidence stages and explains why domain-specific demonstrations are replaceable rather than the project's central research objective.
+
+## First-day-to-current repository file history
+
+[Source-pinned complete file lifecycle classification](taxonomy/FULL_FILE_LIFECYCLE_2026-11-05.md) · [Machine-readable Commit/Tree/PR/path identities](taxonomy/full-file-lifecycle-2026-11-05.json) · [Why historical-only files are not missing production files](lessons/2026-11-05-historical-paths-and-byte-identity.md)
+
+Use the dated audit to distinguish current tracked files, retired historical path names, byte-identical relocated content, changed living documents and immutable source snapshots. It is a Git history and engineering-quality record, not a biological or institutional certification.
