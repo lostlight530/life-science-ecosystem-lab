@@ -125,3 +125,9 @@ At the pinned pre-publication `main=0728c19d32492d2932bffbab9045e7aeedcbd667`, a
 [Source-pinned nine-Run JSON](post-721-to-730-observation-2026-11-05.json) · [Analysis](POST_721_TO_730_RECONCILIATION_2026-11-05.md) · [Regression](../../tests/test_post_721_run_delta.py) · [Lesson](../lessons/2026-11-05-cron-jobs-evidence-boundaries.md)
 
 The Nov 5 read-only census found all 721 previously frozen Runs retained and nine new successful Runs, including two scheduled checks and 20 Jobs (19 success, one conditional Bio skip). Current API visibility is 730 Runs, not all-time immutable history. Two nominal cron-to-created offsets remain observation-only with UNKNOWN cause; four accepted Knowledge events, original negative evidence, external provider authority and scientific nonclaims remain unchanged. This publishing PR's own CI belongs to a later cutoff.
+
+## 2026-11-05 · Complete historical file-path and blob-identity audit
+
+[Full source-pinned 256-Commit / 235-Tree / 294-current / 47-historical-only file audit](../taxonomy/FULL_FILE_LIFECYCLE_2026-11-05.md) · [Machine-readable complete register](../taxonomy/full-file-lifecycle-2026-11-05.json) · [Offline falsifier](../../tests/test_full_file_lifecycle_2026_11_05.py)
+
+This is an additive **file-identity provenance** review, independent from the dated 721→730 Run review. Historical-only paths are not missing current production, and 19 exact Git Blob reuses are byte-level matches, not proven semantic migrations. Git version identity, external Agent identity, native acceptance, and institutional scientific validity remain separate objects. The original historical baselines, errors and correction history are not rewritten.
