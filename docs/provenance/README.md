@@ -119,3 +119,9 @@ Every earlier 673 Run ID remains visible in the new source collection. Eleven ne
 [New 27-Run GitHub-source delta](post-684-to-711-observation-2026-11-04.json) · [Human-readable analysis](POST_684_TO_711_RECONCILIATION_2026-11-04.md) · [Independent offline test](../../tests/test_post_684_run_delta.py) · [Public falsifiable lesson](../lessons/2026-11-04-cron-offset-observation-and-conditional-jobs.md)
 
 At the pinned pre-publication `main=0728c19d32492d2932bffbab9045e7aeedcbd667`, all 684 prior source-derived Run IDs remained visible and 27 new successes appeared, for 711 visible Runs (670 success / 41 cancelled). The 27 new Runs had 51 successful and three conditionally skipped Jobs; the two new scheduled Runs had three successful Jobs, with substantial *nominal cron → API created_at* offsets whose causal mechanism remains UNKNOWN. Current formal Knowledge acceptance remains four Receipts and four linked events, with no new scientific result or registry approval. The frozen historical failures and earlier evidence are preserved; subsequent reporting PR/CI activity is outside this cutoff.
+
+## 2026-11-05 · 721 → 730 visible GitHub Runs and Nov 4 native scheduling
+
+[Source-pinned nine-Run JSON](post-721-to-730-observation-2026-11-05.json) · [Analysis](POST_721_TO_730_RECONCILIATION_2026-11-05.md) · [Regression](../../tests/test_post_721_run_delta.py) · [Lesson](../lessons/2026-11-05-cron-jobs-evidence-boundaries.md)
+
+The Nov 5 read-only census found all 721 previously frozen Runs retained and nine new successful Runs, including two scheduled checks and 20 Jobs (19 success, one conditional Bio skip). Current API visibility is 730 Runs, not all-time immutable history. Two nominal cron-to-created offsets remain observation-only with UNKNOWN cause; four accepted Knowledge events, original negative evidence, external provider authority and scientific nonclaims remain unchanged. This publishing PR's own CI belongs to a later cutoff.

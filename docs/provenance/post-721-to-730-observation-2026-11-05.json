@@ -1,0 +1,330 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "GITHUB_READ_ONLY_RUN_DELTA",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-05",
+  "source_cutoff_main": "b21e453b3580ec5dc7450ee4fa1a986a51d522c6",
+  "previous_source": "docs/taxonomy/post-2026-11-04-source-classification.json",
+  "prior_visible_ids": 721,
+  "previous_ids_retained": 721,
+  "previous_ids_missing": [],
+  "page_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    30
+  ],
+  "current_visible_runs": 730,
+  "current_visible_conclusions": {
+    "success": 689,
+    "cancelled": 41,
+    "failure": 0
+  },
+  "current_visible_events": {
+    "push": 375,
+    "pull_request": 309,
+    "schedule": 42,
+    "workflow_dispatch": 4
+  },
+  "new_runs": [
+    {
+      "run_id": 41827751347,
+      "workflow": "life-science-continuity.yml",
+      "event": "schedule",
+      "created_at_utc": "2026-11-04T12:15:47Z",
+      "head_sha": "b21e453b3580ec5dc7450ee4fa1a986a51d522c6",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126566731175,
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run_id": 41796192635,
+      "workflow": "life-science-daily-selfcheck.yml",
+      "event": "schedule",
+      "created_at_utc": "2026-11-04T08:00:20Z",
+      "head_sha": "b21e453b3580ec5dc7450ee4fa1a986a51d522c6",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126460757531,
+          "name": "Project custom — three assets and accepted evidence",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126460757790,
+          "name": "Institutional defaults — public read-only observations",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run_id": 41779069740,
+      "workflow": "life-science-bio.yml",
+      "event": "push",
+      "created_at_utc": "2026-11-04T05:24:35Z",
+      "head_sha": "b21e453b3580ec5dc7450ee4fa1a986a51d522c6",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126406175654,
+          "name": "offline",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126406177366,
+          "name": "pinned-field",
+          "conclusion": "skipped"
+        }
+      ]
+    },
+    {
+      "run_id": 41779069675,
+      "workflow": "validate.yml",
+      "event": "push",
+      "created_at_utc": "2026-11-04T05:24:35Z",
+      "head_sha": "b21e453b3580ec5dc7450ee4fa1a986a51d522c6",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126406175316,
+          "name": "Evidence Tool",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126406175564,
+          "name": "Knowledge Workflow",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126406175599,
+          "name": "Portable package",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126406175612,
+          "name": "Repository contracts",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126406332250,
+          "name": "validate",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run_id": 41779069648,
+      "workflow": "life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-11-04T05:24:35Z",
+      "head_sha": "b21e453b3580ec5dc7450ee4fa1a986a51d522c6",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126406174557,
+          "name": "Verify evidence CLI, source contracts and docs",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run_id": 41778963928,
+      "workflow": "validate.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-11-04T05:23:36Z",
+      "head_sha": "f3b2fade20938368e41f8d4b695252772d51b4c2",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126405852403,
+          "name": "Evidence Tool",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126405852616,
+          "name": "Repository contracts",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126405852628,
+          "name": "Knowledge Workflow",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126405852667,
+          "name": "Portable package",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126406005728,
+          "name": "validate",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run_id": 41778963873,
+      "workflow": "life-science-bio.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-11-04T05:23:36Z",
+      "head_sha": "f3b2fade20938368e41f8d4b695252772d51b4c2",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126405852446,
+          "name": "offline",
+          "conclusion": "success"
+        },
+        {
+          "job_id": 126405852675,
+          "name": "pinned-field",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run_id": 41778963871,
+      "workflow": "life-science-evidence.yml",
+      "event": "pull_request",
+      "created_at_utc": "2026-11-04T05:23:36Z",
+      "head_sha": "f3b2fade20938368e41f8d4b695252772d51b4c2",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126405852209,
+          "name": "Verify evidence CLI, source contracts and docs",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run_id": 41778908804,
+      "workflow": "life-science-evidence.yml",
+      "event": "push",
+      "created_at_utc": "2026-11-04T05:23:03Z",
+      "head_sha": "f3b2fade20938368e41f8d4b695252772d51b4c2",
+      "attempt": 1,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "job_id": 126405676030,
+          "name": "Verify evidence CLI, source contracts and docs",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "new_job_counts": {
+    "total": 20,
+    "success": 19,
+    "skipped": 1,
+    "failure": 0,
+    "cancelled": 0
+  },
+  "scheduled_observations": [
+    {
+      "run_id": 41796192635,
+      "nominal_cron_utc": "2026-11-04T01:41:00Z",
+      "created_at_utc": "2026-11-04T08:00:20Z",
+      "cron_to_created_seconds": 22760
+    },
+    {
+      "run_id": 41827751347,
+      "nominal_cron_utc": "2026-11-04T04:17:00Z",
+      "created_at_utc": "2026-11-04T12:15:47Z",
+      "cron_to_created_seconds": 28727
+    }
+  ],
+  "scheduled_github_reported_artifacts": [
+    {
+      "run_id": 41796192635,
+      "artifact_id": 13305123572,
+      "name": "project-custom",
+      "github_reported_zip_sha256": "sha256:29bc40785a8a36c134f7f299022de57148603202f3f1b6bd3105a6b5dde321e4"
+    },
+    {
+      "run_id": 41796192635,
+      "artifact_id": 13305078688,
+      "name": "institutional-defaults",
+      "github_reported_zip_sha256": "sha256:119dc68ac8aba5c84ab0313a16ee7e01f681791f263495b918561631f04730d7"
+    },
+    {
+      "run_id": 41827751347,
+      "artifact_id": 13320720224,
+      "name": "accepted-knowledge-continuity",
+      "github_reported_zip_sha256": "sha256:6bb0acbb1acee7a23fce05d8a587883272cc061eba615ac39a7df5ceb7bd7b4d"
+    }
+  ],
+  "main_history": {
+    "main_reachable_parent_closed_commits": 255,
+    "root": "00009a38bc136a7c245270770b005e4e102a870d",
+    "prs_total": 62,
+    "prs_merged": 60,
+    "prs_closed_unmerged": [
+      29,
+      32
+    ],
+    "prs_open": 0,
+    "tracked_blobs": 290,
+    "workflow_definitions": 9
+  },
+  "accepted_state": {
+    "receipts": 4,
+    "events": 4,
+    "archived_candidates": 3,
+    "last_run": "gh-41436556408-1",
+    "last_logical_date": "2026-11-02",
+    "last_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "new_apply": false,
+    "entities": 17,
+    "source_match_edges": 26
+  },
+  "negative_evidence": {
+    "prior_failed_runs_not_erased": true,
+    "rechecked_api_404_run_ids": [
+      41776345499,
+      41776379847,
+      41776461093
+    ],
+    "explanation_for_404": "UNKNOWN"
+  },
+  "source_references": [
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=2",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=3",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=4",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=5",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=6",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=7",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=8"
+  ],
+  "limitations": {
+    "per_request_observation_utc": "UNKNOWN",
+    "artifact_digests": "GITHUB_REPORTED_NOT_INDEPENDENTLY_BYTE_VERIFIED",
+    "run_created_at": "NOT_RUNNER_QUEUE_DELAY",
+    "external_provider_latest": "NOT_VERIFIED",
+    "agent_execution_identity": "NOT_ATTESTED"
+  },
+  "decision": {
+    "operations": "OBSERVED_OPERATIONAL_DELTA",
+    "assets_and_formal_data": "NO_CHANGE_REQUIRED",
+    "science": "NO_NEW_VERIFIED_SCIENTIFIC_CLAIM"
+  }
+}
