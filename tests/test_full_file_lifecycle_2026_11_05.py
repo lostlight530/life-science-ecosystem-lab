@@ -17,7 +17,8 @@ def read(path):
 
 def git_blob(path):
     b=path.read_bytes()
-    return hashlib.sha1(("blob %d\\0"%len(b)).encode("ascii")+b).hexdigest()
+    header=b"blob "+str(len(b)).encode("ascii")+bytes((0,))
+    return hashlib.sha1(header+b).hexdigest()
 
 class FullFirstDayFileLifecycleTests(unittest.TestCase):
     @classmethod
