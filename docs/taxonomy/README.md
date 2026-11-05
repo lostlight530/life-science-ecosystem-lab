@@ -101,3 +101,9 @@ At pre-publication `main=991914541fc3f56b8da00b4a3b91cb0dd71572d1`, the full Git
 [Complete 294-current + 47 historical-only file register](full-file-lifecycle-2026-11-05.json) · [Human review and nonclaims](FULL_FILE_LIFECYCLE_2026-11-05.md) · [Offline regression](../../tests/test_full_file_lifecycle_2026_11_05.py) · [Public lesson](../lessons/2026-11-05-historical-paths-and-byte-identity.md)
 
 At pinned `main=18c33998a78ff64537d993bd7d7408c5a5da0cf3`, 256 parent-closed main-reachable Commits correspond to 235 distinct read-only Git Tree states, 294 current tracked paths and 47 historical-only paths (341 observed unique path names). Earlier 274+13 dated file registers are preserved; ten living file contents changed since those cutoffs, while 19 historical-only Blob contents exactly match a currently tracked path. No legacy file is automatically resurrected, no science claim promoted and no formal `data/` accepted state modified. The publishing PR's own files belong to the next cutoff.
+
+## 2026-11-05 · Publishing-PR file lineage follow-through
+
+[Post-PR64 298-path source cutoff and 20-Run/46-Job evidence](../provenance/POST_730_TO_750_RECONCILIATION_2026-11-05.md) · [Machine delta](../provenance/post-730-to-750-observation-2026-11-05.json)
+
+The source-pinned earlier full register has 294 current paths and 47 historical-only paths at 256 Commits. Following PR #64, main `c2ac76e630e11d723a15a56b5c36d0118fdbe491` has 257 root-reachable Commits, 64 PRs (62 merged), 298 tracked files, four new paths, four living index/registration changes and zero deleted paths. This additive source cutoff is distinct from the earlier full Tree ledger and does not overwrite frozen history, accept new Knowledge, or retroactively remove four failed early PR checks

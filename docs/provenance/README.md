@@ -131,3 +131,9 @@ The Nov 5 read-only census found all 721 previously frozen Runs retained and nin
 [Full source-pinned 256-Commit / 235-Tree / 294-current / 47-historical-only file audit](../taxonomy/FULL_FILE_LIFECYCLE_2026-11-05.md) · [Machine-readable complete register](../taxonomy/full-file-lifecycle-2026-11-05.json) · [Offline falsifier](../../tests/test_full_file_lifecycle_2026_11_05.py)
 
 This is an additive **file-identity provenance** review, independent from the dated 721→730 Run review. Historical-only paths are not missing current production, and 19 exact Git Blob reuses are byte-level matches, not proven semantic migrations. Git version identity, external Agent identity, native acceptance, and institutional scientific validity remain separate objects. The original historical baselines, errors and correction history are not rewritten.
+
+## 2026-11-05 · After PR #64, 730 → 750 Actions and complete file-source delta
+
+[20-Run/46-Job machine ledger](post-730-to-750-observation-2026-11-05.json) · [Source and failure review](POST_730_TO_750_RECONCILIATION_2026-11-05.md) · [Offline regression](../../tests/test_post_730_run_delta.py)
+
+At source-pinned post-merge main `c2ac76e630e11d723a15a56b5c36d0118fdbe491`, exactly one main Commit and four new paths extend the complete prior Git file lineage: 256→257 Commits, 294→298 tracked files, 47 prior historical-only paths retained. The 730 earlier Run IDs all remain visible among 750, with 20 new Runs and 46 Jobs (39 success, five failure, two conditional skip). Four genuine PR #64 development failures came from a repaired Git Blob NUL-header hashing test; no archived byte rewrite or new scientific acceptance is inferred. All earlier snapshots and formal `data/` remain unchanged
