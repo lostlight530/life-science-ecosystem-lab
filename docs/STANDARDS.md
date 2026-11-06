@@ -12,6 +12,7 @@ This document lists supported *software-interface mappings*, not certifications.
 | Bioschemas | `metadata/bioschemas-*.jsonld` | Separately named workflow and tool identities; self-description is not third-party certification |
 | Citation File Format 1.2.0 | `CITATION.cff` | Frozen v0.4.0 three-asset software citation and Zenodo DOI |
 | CodeMeta 3.0 | `codemeta.json` | Current repository component inventory, including the later experimental Framework boundary |
+| OSF Registrations / preregistration (research-plan service, **not** a software interface standard) | `docs/registration/` — project-authored planning documents | **LOCAL_PREPARATION_ONLY / NOT_SUBMITTED**; OSF alone owns its required form, account review, timestamp, updates and Registration identifiers. GitHub metadata, WorkflowHub and Zenodo are different registries |
 | W3C PROV-O / SKOS | Source and relationship export vocabulary guidance | Internal JSONL is not claimed to be RDF or PROV-O/SHACL conformant |
 | FAIR4RS | External research software principles for identity, interoperable interfaces and reuse | Framework's project-defined contract is not independently audited for FAIR4RS conformance |
 | ISA investigation/study/assay | External multi-omics research metadata model | Framework does not parse or validate full ISA investigations or scientific study designs |
