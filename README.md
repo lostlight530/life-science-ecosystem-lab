@@ -13,7 +13,7 @@ This open-source repository contains **three established independently callable 
 
 ## From original pilot to independently audited research software
 
-The [initial October 30 root-to-cutoff reconstruction](docs/REPOSITORY_HISTORY_AND_PROVENANCE.md) correctly records **234 commits / 42 PR objects / 531 visible Runs at its historical cutoff**; it is not a permanently live total. The [full first-day-to-November-3 classification](docs/taxonomy/README.md) pins a later **250 main-reachable Commit / 57 PR / 274 tracked-blob** census at source main [94f5f087](https://github.com/lostlight530/life-science-ecosystem-lab/commit/94f5f0875e7f590846781e5557912730bc482221), while the [additive provenance registry](docs/provenance/README.md) reaches a separate **684-visible-Run** cutoff. The LS Git root is October 16, 2026; the February 15–17 engineering antecedent belongs to an independent predecessor repository. The accepted Knowledge state had four Receipts and four chained events at this source cutoff. These separate versioned evidence surfaces do not constitute independent scientific verification or current third-party certification.
+The [initial October 30 root-to-cutoff reconstruction](docs/REPOSITORY_HISTORY_AND_PROVENANCE.md) correctly records **234 commits / 42 PR objects / 531 visible Runs at its historical cutoff**; it is not a permanently live total. The [full first-day classification](docs/taxonomy/README.md) pins an earlier **250 main-reachable Commit / 57 PR / 274 tracked-blob** census at source main [94f5f087](https://github.com/lostlight530/life-science-ecosystem-lab/commit/94f5f0875e7f590846781e5557912730bc482221). A later [complete-source file disposition audit](docs/taxonomy/CURRENT_FILE_DISPOSITION_2026-11-07.md) fixes the **2026-11-06 remote main** at 259 root-reachable Commits, 66 PRs and 305 tracked files; earlier [Actions snapshots](docs/provenance/README.md) retain their separate Run-ID populations and negative evidence, rather than pretending to be today's live totals. The LS Git root is October 16, 2026; the February 15–17 engineering antecedent belongs to an independent predecessor repository. The accepted Knowledge state had four Receipts and four chained events at this source cutoff. These separate versioned evidence surfaces do not constitute independent scientific verification or current third-party certification.
 
 ## Heterogeneous Agent cohort research
 
@@ -76,6 +76,7 @@ docs/                     Current methods, scope, interfaces and governance
   taxonomy/               Canonical classifications, full original-ID registers and corrections
   provenance/             Dated Git/PR/Actions frozen observations, corrections and indices
   lessons/                Public failure modes and reproducible engineering experience
+  registration/           Project-owned OSF readiness crosswalk and study-specific draft, not an approved registration
 tests/                    Executable regression and integration contracts
 ro-crate-metadata.json    Workflow and testing research-object metadata
 codemeta.json             Current repository component inventory, including the experimental Framework boundary
@@ -83,7 +84,7 @@ CITATION.cff              Citation and Zenodo DOI for the released v0.4.0 three-
 .gitattributes            Cross-platform LF and binary rules for reproducible byte verification
 ```
 
-[Canonical history naming / classification](docs/taxonomy/README.md) · [Optional external Agent handoff](docs/AGENT_COLLABORATION.md) · [Documentation index](docs/README.md) · [Public interfaces](docs/PUBLIC_INTERFACES.md) · [Understanding verification](docs/VERIFYING_RESULTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
+[Complete current file disposition](docs/taxonomy/CURRENT_FILE_DISPOSITION_2026-11-07.md) · [OSF registration preparation (not submitted)](docs/registration/README.md) · [Canonical history naming / classification](docs/taxonomy/README.md) · [Optional external Agent handoff](docs/AGENT_COLLABORATION.md) · [Documentation index](docs/README.md) · [Public interfaces](docs/PUBLIC_INTERFACES.md) · [Understanding verification](docs/VERIFYING_RESULTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
 ## Independent Framework pilot
 
