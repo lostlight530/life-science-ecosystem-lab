@@ -107,3 +107,9 @@ At pinned `main=18c33998a78ff64537d993bd7d7408c5a5da0cf3`, 256 parent-closed mai
 [Post-PR64 298-path source cutoff and 20-Run/46-Job evidence](../provenance/POST_730_TO_750_RECONCILIATION_2026-11-05.md) · [Machine delta](../provenance/post-730-to-750-observation-2026-11-05.json)
 
 The source-pinned earlier full register has 294 current paths and 47 historical-only paths at 256 Commits. Following PR #64, main `c2ac76e630e11d723a15a56b5c36d0118fdbe491` has 257 root-reachable Commits, 64 PRs (62 merged), 298 tracked files, four new paths, four living index/registration changes and zero deleted paths. This additive source cutoff is distinct from the earlier full Tree ledger and does not overwrite frozen history, accept new Knowledge, or retroactively remove four failed early PR checks
+
+## 2026-11-07 · Full current-main file disposition and OSF registration-preparation boundary
+
+[All 305 current paths / 47 historical-only identity comparison](current-main-file-disposition-2026-11-07.json) · [Human review and cleanup decisions](CURRENT_FILE_DISPOSITION_2026-11-07.md) · [OSF Registration preparation](../registration/README.md) · [Offline falsifier](../../tests/test_registration_and_file_governance.py)
+
+New cold-start source `main=5965f81d133623ea01cd826f25a5c1e48770b6fa` (after PR #66): 259 origin-reachable Commits, 66 PRs (64 merged), 305 tracked files. Earlier 294-blob source labels are inherited without rewriting that frozen register, 11 post-source paths are classified, and all 78 Markdown files are currently registered. Of 47 historical-only paths, none reappears. File-name scan found no safely deletable tracked temporary/cache items; accepted `data/`, frozen evidence, fixtures and explicit draft metadata are retained. OSF preregistration is a case-specific external research plan, not a reason to rewrite or delete Git history. This paragraph is a **dated cutoff**, not a promise that future main will still have 305 tracked files
