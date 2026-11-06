@@ -142,7 +142,6 @@
       "size": 127,
       "primary_category": "BUILD_AND_REPOSITORY_CONFIG",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -152,7 +151,6 @@
       "size": 1257,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -162,7 +160,6 @@
       "size": 3540,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -172,7 +169,6 @@
       "size": 3757,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -182,7 +178,6 @@
       "size": 1650,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -192,7 +187,6 @@
       "size": 621,
       "primary_category": "BIO_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -202,7 +196,6 @@
       "size": 607,
       "primary_category": "BIO_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -212,7 +205,6 @@
       "size": 98,
       "primary_category": "BIO_TOOL",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -222,7 +214,6 @@
       "size": 180,
       "primary_category": "BIO_TOOL",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -232,7 +223,6 @@
       "size": 89,
       "primary_category": "BIO_TOOL",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -242,7 +232,6 @@
       "size": 85,
       "primary_category": "BIO_TOOL",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -252,7 +241,6 @@
       "size": 970,
       "primary_category": "REPOSITORY_GOVERNANCE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -262,7 +250,6 @@
       "size": 746,
       "primary_category": "REPOSITORY_GOVERNANCE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -272,7 +259,6 @@
       "size": 581,
       "primary_category": "REPOSITORY_GOVERNANCE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -282,7 +268,6 @@
       "size": 2513,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -292,7 +277,6 @@
       "size": 3504,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -302,7 +286,6 @@
       "size": 149,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -312,7 +295,6 @@
       "size": 449,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -322,7 +304,6 @@
       "size": 508,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -332,7 +313,6 @@
       "size": 357,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -342,7 +322,6 @@
       "size": 540,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -352,7 +331,6 @@
       "size": 1019,
       "primary_category": "REPOSITORY_GOVERNANCE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -362,7 +340,6 @@
       "size": 4491,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -372,7 +349,6 @@
       "size": 96,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -382,7 +358,6 @@
       "size": 49,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -392,7 +367,6 @@
       "size": 7849,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -402,7 +376,6 @@
       "size": 10617,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -412,7 +385,6 @@
       "size": 1361,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -422,7 +394,6 @@
       "size": 5833,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -432,7 +403,6 @@
       "size": 42,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -442,7 +412,6 @@
       "size": 842,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -452,7 +421,6 @@
       "size": 8177,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -462,7 +430,6 @@
       "size": 7037,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -472,7 +439,6 @@
       "size": 2126,
       "primary_category": "KNOWLEDGE_WORKFLOW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -482,7 +448,6 @@
       "size": 5479,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -492,7 +457,6 @@
       "size": 2627,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -502,7 +466,6 @@
       "size": 7195,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -512,7 +475,6 @@
       "size": 1896,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -522,7 +484,6 @@
       "size": 1918,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -532,7 +493,6 @@
       "size": 824,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -542,7 +502,6 @@
       "size": 5012,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -552,7 +511,6 @@
       "size": 6206,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -562,7 +520,6 @@
       "size": 7242,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -572,7 +529,6 @@
       "size": 1198,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -582,7 +538,6 @@
       "size": 4096,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -592,7 +547,6 @@
       "size": 1782,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -602,7 +556,6 @@
       "size": 4372,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -612,7 +565,6 @@
       "size": 3269,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -622,7 +574,6 @@
       "size": 3820,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -632,7 +583,6 @@
       "size": 7433,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -642,7 +592,6 @@
       "size": 4877,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -652,7 +601,6 @@
       "size": 7579,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -662,7 +610,6 @@
       "size": 11953,
       "primary_category": "GITHUB_NATIVE_INFRASTRUCTURE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -672,7 +619,6 @@
       "size": 188,
       "primary_category": "BUILD_AND_REPOSITORY_CONFIG",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -682,7 +628,6 @@
       "size": 4289,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -692,7 +637,6 @@
       "size": 60,
       "primary_category": "BIO_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -702,7 +646,6 @@
       "size": 79,
       "primary_category": "BIO_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -712,7 +655,6 @@
       "size": 1467,
       "primary_category": "BIO_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -722,7 +664,6 @@
       "size": 5430,
       "primary_category": "BIO_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -732,7 +673,6 @@
       "size": 7458,
       "primary_category": "BIO_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -742,7 +682,6 @@
       "size": 3066,
       "primary_category": "BIO_TOOL",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -752,7 +691,6 @@
       "size": 13282,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -762,7 +700,6 @@
       "size": 1190,
       "primary_category": "OFFICIAL_REFERENCE_OBSERVATION",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -772,7 +709,6 @@
       "size": 2604,
       "primary_category": "OFFICIAL_REFERENCE_OBSERVATION",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -782,7 +718,6 @@
       "size": 860,
       "primary_category": "PROJECT_CUSTOM_CHECKS",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -792,7 +727,6 @@
       "size": 1967,
       "primary_category": "PROJECT_CUSTOM_CHECKS",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -802,7 +736,6 @@
       "size": 3913,
       "primary_category": "PROJECT_CUSTOM_CHECKS",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -812,7 +745,6 @@
       "size": 521,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -822,7 +754,6 @@
       "size": 1530,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -832,7 +763,6 @@
       "size": 5298,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -842,7 +772,6 @@
       "size": 1,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "STRUCTURAL_PLACEHOLDER_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -852,7 +781,6 @@
       "size": 61496,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -862,7 +790,6 @@
       "size": 61601,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -872,7 +799,6 @@
       "size": 61496,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -882,7 +808,6 @@
       "size": 1,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "STRUCTURAL_PLACEHOLDER_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -892,7 +817,6 @@
       "size": 61496,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -902,7 +826,6 @@
       "size": 1,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "STRUCTURAL_PLACEHOLDER_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -912,7 +835,6 @@
       "size": 33003,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -922,7 +844,6 @@
       "size": 10768,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -932,7 +853,6 @@
       "size": 1735,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -942,7 +862,6 @@
       "size": 347,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -952,7 +871,6 @@
       "size": 9718,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -962,7 +880,6 @@
       "size": 1,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "STRUCTURAL_PLACEHOLDER_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -972,7 +889,6 @@
       "size": 957,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -982,7 +898,6 @@
       "size": 1,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "STRUCTURAL_PLACEHOLDER_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -992,7 +907,6 @@
       "size": 896,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1002,7 +916,6 @@
       "size": 903,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1012,7 +925,6 @@
       "size": 903,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1022,7 +934,6 @@
       "size": 903,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "ACCEPTED_STATE_OR_SUPPORTING_PRODUCTION_LAYOUT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1032,7 +943,6 @@
       "size": 1,
       "primary_category": "ACCEPTED_PRODUCTION_STATE",
       "review_disposition": "STRUCTURAL_PLACEHOLDER_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1042,7 +952,6 @@
       "size": 4050,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1052,7 +961,6 @@
       "size": 8319,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1062,7 +970,6 @@
       "size": 7864,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1072,7 +979,6 @@
       "size": 5220,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1082,7 +988,6 @@
       "size": 9524,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1092,7 +997,6 @@
       "size": 13193,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1102,7 +1006,6 @@
       "size": 4798,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1112,7 +1015,6 @@
       "size": 9205,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1122,7 +1024,6 @@
       "size": 12884,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1132,7 +1033,6 @@
       "size": 8098,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1142,7 +1042,6 @@
       "size": 13876,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1152,7 +1051,6 @@
       "size": 11527,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1162,7 +1060,6 @@
       "size": 5632,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1172,7 +1069,6 @@
       "size": 4397,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1182,7 +1078,6 @@
       "size": 3384,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1192,7 +1087,6 @@
       "size": 2604,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1202,7 +1096,6 @@
       "size": 3299,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1212,7 +1105,6 @@
       "size": 4476,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1222,7 +1114,6 @@
       "size": 3548,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1232,7 +1123,6 @@
       "size": 3244,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1242,7 +1132,6 @@
       "size": 3125,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1252,7 +1141,6 @@
       "size": 1922,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1262,7 +1150,6 @@
       "size": 2449,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1272,7 +1159,6 @@
       "size": 1669,
       "primary_category": "PUBLIC_RESEARCH_LESSONS",
       "review_disposition": "PUBLIC_LESSON_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1282,7 +1168,6 @@
       "size": 4197,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1292,7 +1177,6 @@
       "size": 16103,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1302,7 +1186,6 @@
       "size": 15984,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1312,7 +1195,6 @@
       "size": 5391,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1322,7 +1204,6 @@
       "size": 7799,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1332,7 +1213,6 @@
       "size": 11965,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1342,7 +1222,6 @@
       "size": 5895,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1352,7 +1231,6 @@
       "size": 294411,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1362,7 +1240,6 @@
       "size": 45116,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1372,7 +1249,6 @@
       "size": 123306,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1382,7 +1258,6 @@
       "size": 10128,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1392,7 +1267,6 @@
       "size": 9199,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1402,7 +1276,6 @@
       "size": 12230,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1412,7 +1285,6 @@
       "size": 243139,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1422,7 +1294,6 @@
       "size": 2930,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1432,7 +1303,6 @@
       "size": 1923,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1442,7 +1312,6 @@
       "size": 11231,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1452,7 +1321,6 @@
       "size": 29510,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1462,7 +1330,6 @@
       "size": 1268,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1472,7 +1339,6 @@
       "size": 6965,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1482,7 +1348,6 @@
       "size": 8052,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1492,7 +1357,6 @@
       "size": 8522,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1502,7 +1366,6 @@
       "size": 8689,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1512,7 +1375,6 @@
       "size": 9364,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1522,7 +1384,6 @@
       "size": 3545,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1532,7 +1393,6 @@
       "size": 6972,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1542,7 +1402,6 @@
       "size": 7201,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1552,7 +1411,6 @@
       "size": 6733,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1562,7 +1420,6 @@
       "size": 6065,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1572,7 +1429,6 @@
       "size": 8004,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1582,7 +1438,6 @@
       "size": 7270,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1592,7 +1447,6 @@
       "size": 10575,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1602,7 +1456,6 @@
       "size": 6926,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1612,7 +1465,6 @@
       "size": 8602,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1622,7 +1474,6 @@
       "size": 9196,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1632,7 +1483,6 @@
       "size": 7258,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1642,7 +1492,6 @@
       "size": 8049,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1652,7 +1501,6 @@
       "size": 6430,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1662,7 +1510,6 @@
       "size": 11995,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1672,7 +1519,6 @@
       "size": 9507,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1682,7 +1528,6 @@
       "size": 20038,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1692,7 +1537,6 @@
       "size": 41397,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1702,7 +1546,6 @@
       "size": 9771,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1712,7 +1555,6 @@
       "size": 13499,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1722,7 +1564,6 @@
       "size": 9581,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1732,7 +1573,6 @@
       "size": 24525,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1742,7 +1582,6 @@
       "size": 22416,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": true
     },
@@ -1752,7 +1591,6 @@
       "size": 9154,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1762,7 +1600,6 @@
       "size": 4363,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1772,7 +1609,6 @@
       "size": 131881,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "DATED_PROVENANCE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1782,7 +1618,6 @@
       "size": 6054,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1792,7 +1627,6 @@
       "size": 5869,
       "primary_category": "AGENT_PROPOSAL_AND_REVIEW",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1802,7 +1636,6 @@
       "size": 6946,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": true
     },
@@ -1812,7 +1645,6 @@
       "size": 30866,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1822,7 +1654,6 @@
       "size": 18500,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1832,7 +1663,6 @@
       "size": 1414,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1842,7 +1672,6 @@
       "size": 11598,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1852,7 +1681,6 @@
       "size": 98592,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1862,7 +1690,6 @@
       "size": 6077,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1872,7 +1699,6 @@
       "size": 69925,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1882,7 +1708,6 @@
       "size": 8133,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1892,7 +1717,6 @@
       "size": 202731,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -1902,7 +1726,6 @@
       "size": 5161,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1912,7 +1735,6 @@
       "size": 13577,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1922,7 +1744,6 @@
       "size": 28274,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1932,7 +1753,6 @@
       "size": 13455,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": true
     },
@@ -1942,7 +1762,6 @@
       "size": 4093,
       "primary_category": "HISTORICAL_PROVENANCE",
       "review_disposition": "SOURCE_PINNED_TAXONOMY_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1952,7 +1771,6 @@
       "size": 12979,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1962,7 +1780,6 @@
       "size": 226,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1972,7 +1789,6 @@
       "size": 48,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1982,7 +1798,6 @@
       "size": 8085,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -1992,7 +1807,6 @@
       "size": 1085,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2002,7 +1816,6 @@
       "size": 5102,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2012,7 +1825,6 @@
       "size": 10453,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2022,7 +1834,6 @@
       "size": 3919,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2032,7 +1843,6 @@
       "size": 9399,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2042,7 +1852,6 @@
       "size": 13144,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2052,7 +1861,6 @@
       "size": 2115,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2062,7 +1870,6 @@
       "size": 2753,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2072,7 +1879,6 @@
       "size": 2026,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2082,7 +1888,6 @@
       "size": 153,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2092,7 +1897,6 @@
       "size": 398,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2102,7 +1906,6 @@
       "size": 3378,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "BOUNDED_FIELD_OBSERVATION_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2112,7 +1915,6 @@
       "size": 3234,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "BOUNDED_FIELD_OBSERVATION_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2122,7 +1924,6 @@
       "size": 1306,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "BOUNDED_FIELD_OBSERVATION_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2132,7 +1933,6 @@
       "size": 1317,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "BOUNDED_FIELD_OBSERVATION_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2142,7 +1942,6 @@
       "size": 3414,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2152,7 +1951,6 @@
       "size": 8083,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2162,7 +1960,6 @@
       "size": 5250,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2172,7 +1969,6 @@
       "size": 12259,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2182,7 +1978,6 @@
       "size": 1477,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2192,7 +1987,6 @@
       "size": 570,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2202,7 +1996,6 @@
       "size": 4793,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2212,7 +2005,6 @@
       "size": 3699,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": true
     },
@@ -2222,7 +2014,6 @@
       "size": 3038,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2232,7 +2023,6 @@
       "size": 2158,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2242,7 +2032,6 @@
       "size": 1145,
       "primary_category": "SCIENTIFIC_FIELD_CASE",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2252,7 +2041,6 @@
       "size": 1685,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2262,7 +2050,6 @@
       "size": 1331,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2272,7 +2059,6 @@
       "size": 861,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2282,7 +2068,6 @@
       "size": 1096,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2292,7 +2077,6 @@
       "size": 681,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2302,7 +2086,6 @@
       "size": 6815,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2312,7 +2095,6 @@
       "size": 9029,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2322,7 +2104,6 @@
       "size": 1092,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2332,7 +2113,6 @@
       "size": 1048,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2342,7 +2122,6 @@
       "size": 943,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2352,7 +2131,6 @@
       "size": 548,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2362,7 +2140,6 @@
       "size": 5227,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2372,7 +2149,6 @@
       "size": 5922,
       "primary_category": "EVIDENCE_TOOL",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2382,7 +2158,6 @@
       "size": 4345,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2392,7 +2167,6 @@
       "size": 4550,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2402,7 +2176,6 @@
       "size": 46,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2412,7 +2185,6 @@
       "size": 37,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2422,7 +2194,6 @@
       "size": 36,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2432,7 +2203,6 @@
       "size": 1561,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2442,7 +2212,6 @@
       "size": 842,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2452,7 +2221,6 @@
       "size": 6429,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2462,7 +2230,6 @@
       "size": 5855,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2472,7 +2239,6 @@
       "size": 165,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2482,7 +2248,6 @@
       "size": 48,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2492,7 +2257,6 @@
       "size": 10100,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2502,7 +2266,6 @@
       "size": 3052,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2512,7 +2275,6 @@
       "size": 11919,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2522,7 +2284,6 @@
       "size": 3232,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2532,7 +2293,6 @@
       "size": 9364,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2542,7 +2302,6 @@
       "size": 11882,
       "primary_category": "EXPERIMENTAL_FRAMEWORK",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2552,7 +2311,6 @@
       "size": 1070,
       "primary_category": "BUILD_AND_REPOSITORY_CONFIG",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2562,7 +2320,6 @@
       "size": 416,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2572,7 +2329,6 @@
       "size": 1620,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2582,7 +2338,6 @@
       "size": 1588,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2592,7 +2347,6 @@
       "size": 2446,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2602,7 +2356,6 @@
       "size": 2829,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "UNSUBMITTED_DRAFT_PRESERVE_WITH_STATUS",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2612,7 +2365,6 @@
       "size": 5451,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2622,7 +2374,6 @@
       "size": 1255,
       "primary_category": "BUILD_AND_REPOSITORY_CONFIG",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2632,7 +2383,6 @@
       "size": 13800,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "LIVING_PUBLIC_GUIDANCE_MAINTAIN",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2642,7 +2392,6 @@
       "size": 13694,
       "primary_category": "EXTERNAL_INTEROPERABILITY_AND_IDENTITY",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2652,7 +2401,6 @@
       "size": 1223,
       "primary_category": "PUBLIC_GOVERNANCE_AND_METHOD",
       "review_disposition": "VERSIONED_SOURCE_OR_PROJECT_CONTRACT_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2662,7 +2410,6 @@
       "size": 3,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2672,7 +2419,6 @@
       "size": 29,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2682,7 +2428,6 @@
       "size": 8828,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2692,7 +2437,6 @@
       "size": 3819,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2702,7 +2446,6 @@
       "size": 6299,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2712,7 +2455,6 @@
       "size": 5378,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2722,7 +2464,6 @@
       "size": 2105,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2732,7 +2473,6 @@
       "size": 1498,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2742,7 +2482,6 @@
       "size": 1841,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2752,7 +2491,6 @@
       "size": 4663,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2762,7 +2500,6 @@
       "size": 5681,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2772,7 +2509,6 @@
       "size": 11485,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2782,7 +2518,6 @@
       "size": 7493,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -2792,7 +2527,6 @@
       "size": 12768,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2802,7 +2536,6 @@
       "size": 3382,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2812,7 +2545,6 @@
       "size": 2828,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2822,7 +2554,6 @@
       "size": 844,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2832,7 +2563,6 @@
       "size": 1172,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2842,7 +2572,6 @@
       "size": 6190,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2852,7 +2581,6 @@
       "size": 3473,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2862,7 +2590,6 @@
       "size": 3247,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2872,7 +2599,6 @@
       "size": 5288,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2882,7 +2608,6 @@
       "size": 2591,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2892,7 +2617,6 @@
       "size": 2929,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2902,7 +2626,6 @@
       "size": 6684,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2912,7 +2635,6 @@
       "size": 4247,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2922,7 +2644,6 @@
       "size": 6013,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2932,7 +2653,6 @@
       "size": 7436,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2942,7 +2662,6 @@
       "size": 7918,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2952,7 +2671,6 @@
       "size": 6425,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2962,7 +2680,6 @@
       "size": 6518,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2972,7 +2689,6 @@
       "size": 4536,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -2982,7 +2698,6 @@
       "size": 5032,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -2992,7 +2707,6 @@
       "size": 4734,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "NEW_PATH_RULE_REVIEWED",
       "content_changed_since_2026_11_05": false
     },
@@ -3002,7 +2716,6 @@
       "size": 3192,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3012,7 +2725,6 @@
       "size": 4416,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3022,7 +2734,6 @@
       "size": 9287,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3032,7 +2743,6 @@
       "size": 5988,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3042,7 +2752,6 @@
       "size": 2003,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3052,7 +2761,6 @@
       "size": 3287,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3062,7 +2770,6 @@
       "size": 6099,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3072,7 +2779,6 @@
       "size": 589,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3082,7 +2788,6 @@
       "size": 2425,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3092,7 +2797,6 @@
       "size": 6396,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3102,7 +2806,6 @@
       "size": 4880,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3112,7 +2815,6 @@
       "size": 7667,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3122,7 +2824,6 @@
       "size": 3748,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3132,7 +2833,6 @@
       "size": 12177,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3142,7 +2842,6 @@
       "size": 3753,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3152,7 +2851,6 @@
       "size": 6640,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3162,7 +2860,6 @@
       "size": 1075,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3172,7 +2869,6 @@
       "size": 2221,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     },
@@ -3182,7 +2878,6 @@
       "size": 884,
       "primary_category": "VALIDATION_AND_REGRESSION",
       "review_disposition": "TEST_OR_FIXTURE_PRESERVE",
-      "baseline": "",
       "source_grade": "CARRIED_FROM_REVIEWED_FROZEN_CLASSIFICATION",
       "content_changed_since_2026_11_05": false
     }
