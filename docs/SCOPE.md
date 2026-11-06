@@ -16,7 +16,7 @@
 - Processing of credentials, personal health information, or controlled data
 - Claims of registry acceptance or monitoring before external verification
 - New dataset publication, paper publication or citation-impact analysis; the existing software and workflow DOIs are recorded only as verified identities
-- Changes to the existing eleven-repository system
+- Changes to independently governed repositories outside this laboratory (their current count and status must be checked at source)
 
 Example records are synthetic fixtures for software verification and are not a scientific dataset
 
