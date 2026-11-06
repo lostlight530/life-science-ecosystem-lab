@@ -86,6 +86,7 @@ class FullFirstDayFileLifecycleTests(unittest.TestCase):
         categories={"docs/provenance/":"HISTORICAL_PROVENANCE",
                     "docs/taxonomy/":"HISTORICAL_PROVENANCE",
                     "docs/lessons/":"PUBLIC_RESEARCH_LESSONS",
+                    "docs/registration/": "RESEARCH_REGISTRATION_PREPARATION",
                     "tests/":"VALIDATION_AND_REGRESSION"}
         for r in rows:
             self.assertTrue(r["category"] and r["role"])
