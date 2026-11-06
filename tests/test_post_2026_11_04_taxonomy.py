@@ -74,6 +74,7 @@ class LiveTaxonomyAddendumTests(unittest.TestCase):
             "docs/provenance/": "HISTORICAL_PROVENANCE",
             "docs/taxonomy/": "HISTORICAL_PROVENANCE",
             "docs/lessons/": "PUBLIC_RESEARCH_LESSONS",
+            "docs/registration/": "RESEARCH_REGISTRATION_PREPARATION",
             "tests/": "VALIDATION_AND_REGRESSION",
         }
         for x in newer:
