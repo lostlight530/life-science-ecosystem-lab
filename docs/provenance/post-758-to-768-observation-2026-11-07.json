@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "POST_758_TO_768_GITHUB_OBSERVATION_AND_UNMERGED_PR_BOUNDARY",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-07",
+  "observed_at_utc": null,
+  "collection_limit": "Live per-request acquisition timestamps not captured; GitHub created_at is source metadata, not observation time",
+  "source_main_sha": "5965f81d133623ea01cd826f25a5c1e48770b6fa",
+  "source_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "git_scope": {
+    "main_reachable_commits": 259,
+    "tracked_blob_paths": 305,
+    "pull_requests": 67,
+    "merged_prs": 64,
+    "closed_unmerged_prs": [
+      29,
+      32,
+      67
+    ],
+    "open_prs": 0,
+    "release_tags": [
+      "v0.4.0",
+      "v0.5.0"
+    ]
+  },
+  "action_census": {
+    "previous_snapshot": "docs/provenance/post-750-to-758-observation-2026-11-06.json",
+    "previous_visible": 758,
+    "retained_prior_ids": 758,
+    "missing_prior_ids": [],
+    "new_count": 10,
+    "current_visible": 768,
+    "source_page_counts": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      68
+    ],
+    "current_conclusions": {
+      "success": 727,
+      "cancelled": 41
+    },
+    "current_events": {
+      "push": 396,
+      "pull_request": 321,
+      "schedule": 47,
+      "workflow_dispatch": 4
+    },
+    "new_run_jobs": {
+      "count": 20,
+      "success": 19,
+      "skipped": 1,
+      "failed": 0
+    },
+    "new_runs": [
+      {
+        "id": 42201128815,
+        "event": "push",
+        "workflow_name": "Life Science Evidence Tool — Independent Verification",
+        "branch": "audit/2026-11-06-visible-run-correction",
+        "head_sha": "d52fcb83e8db0d57ab67405d195a03db29488692",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127836392643,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42201172853,
+        "event": "pull_request",
+        "workflow_name": "Validate life-science workflow and evidence contracts",
+        "branch": "audit/2026-11-06-visible-run-correction",
+        "head_sha": "d52fcb83e8db0d57ab67405d195a03db29488692",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127836538545,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836538713,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836538847,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836538958,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836749463,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42201172659,
+        "event": "pull_request",
+        "workflow_name": "Life Science Evidence Tool — Independent Verification",
+        "branch": "audit/2026-11-06-visible-run-correction",
+        "head_sha": "d52fcb83e8db0d57ab67405d195a03db29488692",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127836537320,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42201172569,
+        "event": "pull_request",
+        "workflow_name": "Life Science Bio Tool — Independent Data Processing",
+        "branch": "audit/2026-11-06-visible-run-correction",
+        "head_sha": "d52fcb83e8db0d57ab67405d195a03db29488692",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127836537003,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836537341,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42201310035,
+        "event": "push",
+        "workflow_name": "Life Science Bio Tool — Independent Data Processing",
+        "branch": "main",
+        "head_sha": "5965f81d133623ea01cd826f25a5c1e48770b6fa",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127836985085,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836986669,
+            "conclusion": "skipped"
+          }
+        ]
+      },
+      {
+        "id": 42201309921,
+        "event": "push",
+        "workflow_name": "Life Science Evidence Tool — Independent Verification",
+        "branch": "main",
+        "head_sha": "5965f81d133623ea01cd826f25a5c1e48770b6fa",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127836983776,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42201309805,
+        "event": "push",
+        "workflow_name": "Validate life-science workflow and evidence contracts",
+        "branch": "main",
+        "head_sha": "5965f81d133623ea01cd826f25a5c1e48770b6fa",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127836984753,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836985131,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836985306,
+            "conclusion": "success"
+          },
+          {
+            "id": 127836985312,
+            "conclusion": "success"
+          },
+          {
+            "id": 127837211742,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42215956253,
+        "event": "schedule",
+        "workflow_name": "Verify accepted life-science knowledge continuity",
+        "branch": "main",
+        "head_sha": "5965f81d133623ea01cd826f25a5c1e48770b6fa",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 127885893622,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42249767693,
+        "event": "push",
+        "workflow_name": "Life Science Evidence Tool — Independent Verification",
+        "branch": "maintenance/2026-11-07-osf-registration-and-file-governance",
+        "head_sha": "9ccbef2fed5537ecc0faa09b1ac8c8bef2c1001d",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 128001449182,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 42251678739,
+        "event": "push",
+        "workflow_name": "Life Science Evidence Tool — Independent Verification",
+        "branch": "maintenance/2026-11-07-osf-registration-and-file-governance",
+        "head_sha": "435bccaefae5b97dbcc3d5f20075d8ac79b83376",
+        "conclusion": "success",
+        "attempt": 1,
+        "jobs": [
+          {
+            "id": 128008112181,
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "schedule": {
+    "prior_verified_runs": 46,
+    "prior_verified_success_jobs": 72,
+    "current_visible_runs": 47,
+    "additional_continuity_run_id": 42215956253,
+    "additional_continuity_job_id": 127885893622,
+    "additional_success_jobs": 1,
+    "cross_cutoff_success_jobs": 73,
+    "nov6_continuity_nominal_utc": "2026-11-06T04:17:00Z",
+    "nov6_continuity_created_utc": "2026-11-06T12:12:59Z",
+    "nominal_to_created_seconds": 28559,
+    "scheduling_cause": "UNKNOWN",
+    "nov7_schedule_claim": "NOT_YET_CONFIRMED_AT_THIS_CUTOFF"
+  },
+  "accepted_state": {
+    "receipts": 4,
+    "chained_events": 4,
+    "archived_candidates": 3,
+    "latest_applied_run_id": "gh-41436556408-1",
+    "latest_logical_date": "2026-11-02",
+    "graph_nodes": 17,
+    "source_match_relations": 26,
+    "new_production_acceptance": false
+  },
+  "governance": {
+    "pr66": {
+      "number": 66,
+      "merged": true,
+      "merge_sha": "5965f81d133623ea01cd826f25a5c1e48770b6fa"
+    },
+    "pr67": {
+      "number": 67,
+      "merged": false,
+      "state": "closed",
+      "closed_at_utc": "2026-11-06T16:21:39Z",
+      "head_sha": "435bccaefae5b97dbcc3d5f20075d8ac79b83376",
+      "changed_files": 16,
+      "review_submissions": 0,
+      "observed_pr_comments": 0,
+      "closure_reason": "UNKNOWN",
+      "title_claim": "CLOSED — out-of-scope OSF additions and unverified file governance"
+    },
+    "nonclaims": [
+      "Closed PR branch evidence is not main-accepted change",
+      "No new data acceptance or biological discovery",
+      "Current visible success does not erase historical failed runs",
+      "Cron-to-created differences do not measure runner queue time",
+      "External registry approval, OSF registration and platform synchronization not established"
+    ]
+  }
+}
