@@ -107,3 +107,9 @@ At pinned `main=18c33998a78ff64537d993bd7d7408c5a5da0cf3`, 256 parent-closed mai
 [Post-PR64 298-path source cutoff and 20-Run/46-Job evidence](../provenance/POST_730_TO_750_RECONCILIATION_2026-11-05.md) · [Machine delta](../provenance/post-730-to-750-observation-2026-11-05.json)
 
 The source-pinned earlier full register has 294 current paths and 47 historical-only paths at 256 Commits. Following PR #64, main `c2ac76e630e11d723a15a56b5c36d0118fdbe491` has 257 root-reachable Commits, 64 PRs (62 merged), 298 tracked files, four new paths, four living index/registration changes and zero deleted paths. This additive source cutoff is distinct from the earlier full Tree ledger and does not overwrite frozen history, accept new Knowledge, or retroactively remove four failed early PR checks
+
+## 2026-11-07 · Complete source-pinned current file governance and zero-deletion review
+
+[309-current + 47-historical-only disposition](COMPLETE_FILE_GOVERNANCE_2026-11-07.md) · [All 260 Commit, 239 Tree, 68 PR and 309 path identities](full-repository-disposition-2026-11-07.json) · [Independent replay](../../tests/test_full_repository_disposition_2026_11_07.py)
+
+At source-pinned main `363d977fa17fe368fe9db1fd28c46aba7285cd84`, the complete earlier 294 current paths remain, 15 new paths are classified into existing dated documentation/tests families, four living files changed versioned content and no frozen accepted data or historical JSON changed. All 47 historically absent paths remain absent, and four newer nontruncated Git Trees introduce no additional interim-only paths. Current 80 public Markdown paths match exactly the docs registry. No tracked garbage/cache or case-collision candidate warrants deletion; six protected `data/.gitkeep`-family structural placeholders are retained. This dated file-governance observation does not replace earlier Git/PR/Run corrections, claim scientific validity, clean private scratch or accept OSF proposal-only material

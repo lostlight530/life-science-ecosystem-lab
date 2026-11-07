@@ -55,3 +55,9 @@ Choose the path matching your task. This index describes **public, reproducible 
 [Source-pinned complete file lifecycle classification](taxonomy/FULL_FILE_LIFECYCLE_2026-11-05.md) · [Machine-readable Commit/Tree/PR/path identities](taxonomy/full-file-lifecycle-2026-11-05.json) · [Why historical-only files are not missing production files](lessons/2026-11-05-historical-paths-and-byte-identity.md)
 
 Use the dated audit to distinguish current tracked files, retired historical path names, byte-identical relocated content, changed living documents and immutable source snapshots. It is a Git history and engineering-quality record, not a biological or institutional certification.
+
+## 2026-11-07 · Current file classification and safe cleanup gate
+
+[Complete 309-path source-pinned governance report](taxonomy/COMPLETE_FILE_GOVERNANCE_2026-11-07.md) · [Machine-readable full Commit/Tree/PR/current/historical path register](taxonomy/full-repository-disposition-2026-11-07.json) · [Reproducible regression](../tests/test_full_repository_disposition_2026_11_07.py)
+
+The older 2026-11-05 294-current/47-historical-only audit remains frozen. This newer review finds no Git-tracked temporary files to safely delete, retains accepted `data/`, original negative evidence and six structural placeholders, and classifies all currently tracked paths without renaming historical published filenames. Branch-only proposals, Action caches and external provider state have separate governance

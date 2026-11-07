@@ -129,3 +129,5 @@ python .github/scripts/check_publication_boundary.py
 ```
 
 The software is MIT licensed. Cite the released baseline recorded in [CITATION.cff](CITATION.cff). The experimental Framework is not part of that frozen `v0.4.0` release. Never submit credentials, private research material or health/person-level data to public issues, Actions artifacts or PRs. The [public maintenance policy](docs/MAINTENANCE.md) explains the security and publication boundary.
+
+**Latest source-pinned file governance (2026-11-07):** [complete 309-current/47-historical-only classification, naming and safe-deletion review](docs/taxonomy/COMPLETE_FILE_GOVERNANCE_2026-11-07.md). Historical snapshots above remain correct at their own cutoffs; the latest file audit finds no source-backed tracked garbage to delete and does not change accepted research data or external registration status
