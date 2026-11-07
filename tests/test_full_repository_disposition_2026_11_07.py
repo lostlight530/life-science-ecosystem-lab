@@ -73,7 +73,7 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
         self.assertEqual(d["removed_prior_paths"], [])
         for path, rec in old.items():
             self.assertEqual(now[path]["category"], rec["category"])
-        changes = set(d["changed_prior_files"])
+        changes = {item["path"] for item in d["changed_prior_files"]}
         self.assertEqual(len(changes), 4)
         self.assertEqual({x["path"] for x in d["changed_prior_files"]},
                          {"docs/README.md", "docs/provenance/README.md",
