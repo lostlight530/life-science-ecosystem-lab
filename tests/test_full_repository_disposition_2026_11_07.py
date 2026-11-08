@@ -126,9 +126,20 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
         tracked = set(subprocess.check_output(["git", "ls-files"], cwd=ROOT, text=True).splitlines())
         pinned = {x["path"] for x in d["current_files"]["rows"]}
         self.assertTrue(pinned <= tracked)
+        # This is a dated snapshot: preserve every old Blob and accepted data byte,
+        # but do not reject correctly governed research notes added after its cutoff.
+        extra = tracked - pinned
         allowed_extra = {NEW_REPORT, NEW_JSON, NEW_TEST}
-        self.assertTrue((tracked - pinned) <= allowed_extra | {
-            "docs/lessons/2026-11-07-cleanup-and-retention-evidence.md"})
+        later_research = {
+            p for p in extra
+            if (p.startswith("docs/provenance/") and p.endswith((".md", ".json")))
+            or (p.startswith("docs/lessons/") and p.endswith(".md"))
+            or (p.startswith("docs/taxonomy/") and p.endswith((".md", ".json")))
+            or (p.startswith("tests/") and p.endswith(".py"))
+        }
+        self.assertTrue(extra <= allowed_extra | later_research,
+                        "Unexpected post-cutoff tracked files: "
+                        + str(sorted(extra - allowed_extra - later_research)))
         md = {p for p in tracked if p.endswith(".md")}
         docs = set(read(ROOT / "evidence/profiles/docs.json")["documents"])
         self.assertEqual(md, docs)

@@ -61,3 +61,9 @@ Use the dated audit to distinguish current tracked files, retired historical pat
 [Complete 309-path source-pinned governance report](taxonomy/COMPLETE_FILE_GOVERNANCE_2026-11-07.md) · [Machine-readable full Commit/Tree/PR/current/historical path register](taxonomy/full-repository-disposition-2026-11-07.json) · [Reproducible regression](../tests/test_full_repository_disposition_2026_11_07.py)
 
 The older 2026-11-05 294-current/47-historical-only audit remains frozen. This newer review finds no Git-tracked temporary files to safely delete, retains accepted `data/`, original negative evidence and six structural placeholders, and classifies all currently tracked paths without renaming historical published filenames. Branch-only proposals, Action caches and external provider state have separate governance
+
+## 2026-11-08 · Native 768→788 Job and schedule observation
+
+[Source-pinned Run/Job reconciliation](provenance/POST_768_TO_788_RECONCILIATION_2026-11-08.md) · [Machine observation](provenance/post-768-to-788-observation-2026-11-08.json) · [Offline verifier](../tests/test_post_768_run_delta.py) · [Failure-mode lesson](lessons/2026-11-08-green-checks-are-not-scientific-acceptance.md)
+
+This dated appendix observes 20 additional successful Runs, 42 Jobs with two conditional Bio skips, Nov 7–8 daily self-check and continuity Jobs, unmodified four accepted Knowledge Receipts and unresolved scheduler causality. It preserves all older frozen source and negative-evidence archives without claiming new scientific data, external acceptance or provider status
