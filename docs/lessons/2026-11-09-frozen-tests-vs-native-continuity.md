@@ -11,3 +11,5 @@
 **Clock and causality:** November 9's self-check, Knowledge and continuity Runs were created 06:58:54, 08:23:49 and 08:42:53 after nominal cron respectively. These are Run creation offsets, not measured queue times; without causal evidence the reason remains **UNKNOWN**
 
 **Governance:** historical disappeared failures, unmerged PRs, external registry assertions and earlier reports stay available for review. Fix the frozen-versus-live test contract via PR and passing CI rather than force-pushing, rewriting Git history, changing production schedulers or manufacturing new findings
+
+**CI-discovered second-order failure:** a dated first-day file-governance test also compared the moving accepted `candidate.json` to its frozen SHA and rejected new, valid Receipt/archive files as unclassified. A strict test-only allowlist should be derived from independently verified current events, corresponding `APPLIED` Receipts, and each prior Candidate archive, not from unbounded `data/**` wildcards. The failed PR CI is preserved as negative test evidence, separate from the frozen 798-Run source population

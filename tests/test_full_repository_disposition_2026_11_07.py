@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 import unittest
+from accepted_production_history import authorized_native_append_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 TAX = ROOT / "docs" / "taxonomy"
@@ -137,9 +138,10 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
             or (p.startswith("docs/taxonomy/") and p.endswith((".md", ".json")))
             or (p.startswith("tests/") and p.endswith(".py"))
         }
-        self.assertTrue(extra <= allowed_extra | later_research,
+        production_append = authorized_native_append_paths(ROOT)
+        self.assertTrue(extra <= allowed_extra | later_research | production_append,
                         "Unexpected post-cutoff tracked files: "
-                        + str(sorted(extra - allowed_extra - later_research)))
+                        + str(sorted(extra - allowed_extra - later_research - production_append)))
         md = {p for p in tracked if p.endswith(".md")}
         docs = set(read(ROOT / "evidence/profiles/docs.json")["documents"])
         self.assertEqual(md, docs)
