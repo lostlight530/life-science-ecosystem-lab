@@ -65,7 +65,8 @@ class Post750RunDeltaTests(unittest.TestCase):
         self.assertTrue(all(r["previous_conclusion"]=="failure" and r["current_get"]=="HTTP_404" for r in a["prior_ids_missing"]))
         self.assertEqual(self.d["native_state"]["receipts"],4)
         self.assertFalse(self.d["native_state"]["new_production_acceptance"])
-        self.assertEqual(len(list((ROOT/"data"/"receipts").glob("gh-*.json"))),4)
+        self.assertGreaterEqual(len(list((ROOT/"data"/"receipts").glob("gh-*.json"))),4)
+        self.assertTrue((ROOT/"data"/"receipts"/"gh-41436556408-1.json").is_file())
 
     def test_daily_and_periodic_job_boundaries(self):
         s=self.d["scheduled"]

@@ -63,9 +63,13 @@ class Post758RunDeltaTests(unittest.TestCase):
         self.assertEqual((n["receipts"], n["chained_events"], n["archived_candidates"]),
                          (4, 4, 3))
         self.assertFalse(n["new_production_acceptance"])
-        self.assertEqual(len(list((ROOT / "data" / "receipts").glob("gh-*.json"))), 4)
-        self.assertEqual(len((ROOT / "data" / "knowledge" / "events.jsonl")
-                             .read_text(encoding="utf-8").splitlines()), 4)
+        # Four receipts/events describe this frozen cutoff, not a permanent cap.
+        self.assertGreaterEqual(len(list((ROOT / "data" / "receipts").glob("gh-*.json"))), 4)
+        events = (ROOT / "data" / "knowledge" / "events.jsonl").read_text(encoding="utf-8").splitlines()
+        self.assertGreaterEqual(len(events), 4)
+        self.assertEqual([json.loads(line)["run_id"] for line in events[:4]],
+                         ["gh-38995485443-1", "gh-39227185707-1",
+                          "gh-40297059874-1", "gh-41436556408-1"])
 
     def test_unmerged_branch_not_promoted_and_docs_tracked(self):
         g = self.new["governance"]
