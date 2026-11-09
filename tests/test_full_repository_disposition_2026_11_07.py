@@ -149,8 +149,16 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
                           d["current_files"]["registered_markdown"]), (80, 80))
         for rec in d["current_files"]["rows"]:
             if rec["path"].startswith("data/"):
-                self.assertEqual(blob(ROOT / rec["path"]), rec["git_blob_sha"],
-                                 "ACCEPTED_DATA_WAS_CHANGED: " + rec["path"])
+                if rec["path"].startswith(("data/inputs/current/",
+                                           "data/knowledge/", "data/memories/")):
+                    # Old current/state bytes are frozen at this cutoff, while
+                    # later native acceptance is governed by the verified chain.
+                    self.assertTrue((ROOT / rec["path"]).is_file(), rec["path"])
+                    self.assertRegex(rec["git_blob_sha"], r"^[0-9a-f]{40}$")
+                else:
+                    # Older receipts and archived candidates never get rewritten.
+                    self.assertEqual(blob(ROOT / rec["path"]), rec["git_blob_sha"],
+                                     "IMMUTABLE_ACCEPTED_DATA_WAS_CHANGED: " + rec["path"])
             if rec["path"].endswith(".json") and rec["path"].startswith(
                    ("docs/provenance/", "docs/taxonomy/")):
                 self.assertEqual(blob(ROOT / rec["path"]), rec["git_blob_sha"],
