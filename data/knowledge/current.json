@@ -1,14 +1,14 @@
 {
-  "evidence_bundle_digest": "e0541fe471796868d121494485301d0f7b9811ff5211f448291f1961c6323bcb",
+  "evidence_bundle_digest": "a6d8a83fe15e89266311e446a07096f2127fae77598f64c183e56bf0e27ccbb9",
   "kind": "EXTRACTIVE_WORKFLOW_KNOWLEDGE_MAP",
-  "knowledge_digest": "5ca0d845cde252c4c8b040c886049535305d8513039c462a36227ae7e8c4dbdd",
+  "knowledge_digest": "089b328725bca57fb91500ed3eeafe2d38878a6a16bf9a70fe73cd16db3a8750",
   "knowledge_graph": {
     "edges": [
       {
         "evidence_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:common-workflow-language/cwl-v1.2@c02bdc7cda6a525e464f4d9f7f78bb39430ad424:README.md"
+        "to": "github:common-workflow-language/cwl-v1.2@b359998838f48ed5f60307d500a39ed3deb5b7da:README.md"
       },
       {
         "evidence_sha256": "9e6e0a75f802dbc7649bd26c44aa1a4a60dfcd1dba932818e45b6fa4b6650da8",
@@ -74,7 +74,7 @@
         "evidence_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
         "from": "topic:workflow-monitoring",
         "relation": "SOURCE_MATCH",
-        "to": "github:seek4science/seek@0fb16ee16fb004cdfb959a3cef16003269580971:README.md"
+        "to": "github:seek4science/seek@766000e3a4b82c12844e87bfc13e4195a35bd19a:README.md"
       },
       {
         "evidence_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
@@ -86,7 +86,7 @@
         "evidence_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:common-workflow-language/cwl-v1.2@c02bdc7cda6a525e464f4d9f7f78bb39430ad424:README.md"
+        "to": "github:common-workflow-language/cwl-v1.2@b359998838f48ed5f60307d500a39ed3deb5b7da:README.md"
       },
       {
         "evidence_sha256": "4449a4880e577aca474c11a615e66c8afc6bcd2daa8eaf7f2893f7cea99321ff",
@@ -164,7 +164,7 @@
     "method": "typed evidence links, not inferred biological relationships",
     "nodes": [
       {
-        "id": "github:common-workflow-language/cwl-v1.2@c02bdc7cda6a525e464f4d9f7f78bb39430ad424:README.md",
+        "id": "github:common-workflow-language/cwl-v1.2@b359998838f48ed5f60307d500a39ed3deb5b7da:README.md",
         "kind": "source-document",
         "repository": "common-workflow-language/cwl-v1.2"
       },
@@ -179,7 +179,7 @@
         "repository": "crs4/life_monitor"
       },
       {
-        "id": "github:seek4science/seek@0fb16ee16fb004cdfb959a3cef16003269580971:README.md",
+        "id": "github:seek4science/seek@766000e3a4b82c12844e87bfc13e4195a35bd19a:README.md",
         "kind": "source-document",
         "repository": "seek4science/seek"
       },
@@ -261,7 +261,7 @@
       "fragment_count": 10,
       "fragments": [
         {
-          "commit": "c02bdc7cda6a525e464f4d9f7f78bb39430ad424",
+          "commit": "b359998838f48ed5f60307d500a39ed3deb5b7da",
           "content_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
           "excerpt": "You may browse the CWL v1.2.1 standards online at https://w3id.org/cwl/v1.2/ (a.k.a https://www.commonwl.org/v1.2 )",
           "matched_aliases": [
@@ -270,7 +270,7 @@
           "path": "README.md",
           "repository": "common-workflow-language/cwl-v1.2",
           "source_id": "cwl-standard",
-          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/c02bdc7cda6a525e464f4d9f7f78bb39430ad424/README.md"
+          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/b359998838f48ed5f60307d500a39ed3deb5b7da/README.md"
         },
         {
           "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
@@ -411,7 +411,7 @@
           "url": "https://github.com/crs4/life_monitor/blob/7649406c11c5c04eebc5ca61926f5dbe30469c82/README.md"
         },
         {
-          "commit": "0fb16ee16fb004cdfb959a3cef16003269580971",
+          "commit": "766000e3a4b82c12844e87bfc13e4195a35bd19a",
           "content_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
           "excerpt": "[![Build Status](https://github.com/seek4science/seek/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/seek4science/seek/actions/workflows/tests.yml) [![DOI](https://zenodo.org/badge/20803285.svg)](https://zenodo.org/badge/latestdoi/20803285)",
           "matched_aliases": [
@@ -420,7 +420,7 @@
           "path": "README.md",
           "repository": "seek4science/seek",
           "source_id": "seek",
-          "url": "https://github.com/seek4science/seek/blob/0fb16ee16fb004cdfb959a3cef16003269580971/README.md"
+          "url": "https://github.com/seek4science/seek/blob/766000e3a4b82c12844e87bfc13e4195a35bd19a/README.md"
         },
         {
           "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
@@ -444,7 +444,7 @@
       "fragment_count": 13,
       "fragments": [
         {
-          "commit": "c02bdc7cda6a525e464f4d9f7f78bb39430ad424",
+          "commit": "b359998838f48ed5f60307d500a39ed3deb5b7da",
           "content_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
           "excerpt": "This repo holds the ratified v1.2.1 of the Common Workflow Language standards and the history of its development.",
           "matched_aliases": [
@@ -453,7 +453,7 @@
           "path": "README.md",
           "repository": "common-workflow-language/cwl-v1.2",
           "source_id": "cwl-standard",
-          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/c02bdc7cda6a525e464f4d9f7f78bb39430ad424/README.md"
+          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/b359998838f48ed5f60307d500a39ed3deb5b7da/README.md"
         },
         {
           "commit": "7649406c11c5c04eebc5ca61926f5dbe30469c82",

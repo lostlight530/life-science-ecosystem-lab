@@ -93,15 +93,15 @@
     }
   ],
   "diagnostics": [],
-  "input_digest": "1600ff5eb782121fbfe6eb85891dac25217feb8433049ed9a383ae34baa76dce",
-  "output_digest": "e0541fe471796868d121494485301d0f7b9811ff5211f448291f1961c6323bcb",
+  "input_digest": "f2c5bba131d905bd83d40f9842ef5a7b029a32cf738bc0ed21762180cbc8f9c4",
+  "output_digest": "a6d8a83fe15e89266311e446a07096f2127fae77598f64c183e56bf0e27ccbb9",
   "profile_digest": "787471b78dfe37c2e63d0bbc637a747b53150590210b4bfab61d3b74aea835a3",
   "projection_eligible": true,
   "records": [
     {
       "blob_sha": "a15301297cdf5472800c2cc1c136d45bd620fcbb",
       "collector_version": "0.3.0",
-      "commit": "c02bdc7cda6a525e464f4d9f7f78bb39430ad424",
+      "commit": "b359998838f48ed5f60307d500a39ed3deb5b7da",
       "content_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
       "path": "README.md",
       "raw_size": 343,
@@ -111,7 +111,7 @@
       "source_id": "cwl-standard",
       "source_registry": "life-science-approved-github-sources",
       "text": "Hello!\n\nThis repo holds the ratified v1.2.1 of the Common Workflow Language standards and the history of its development.\n\nYou can render this using https://github.com/common-workflow-language/cwl-website/blob/main/website.sh\n\nYou may browse the CWL v1.2.1 standards online at https://w3id.org/cwl/v1.2/ (a.k.a https://www.commonwl.org/v1.2 )\n",
-      "tree_sha": "573c90722b9ba035c4433e9b8d8a78bbdfe50832",
+      "tree_sha": "ee95c989836b08199d235f5e524b260f2312890b",
       "trust": "primary"
     },
     {
@@ -149,7 +149,7 @@
     {
       "blob_sha": "4e275794c59642694d77328219c673d305d19975",
       "collector_version": "0.3.0",
-      "commit": "0fb16ee16fb004cdfb959a3cef16003269580971",
+      "commit": "766000e3a4b82c12844e87bfc13e4195a35bd19a",
       "content_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
       "path": "README.md",
       "raw_size": 2905,
@@ -159,7 +159,7 @@
       "source_id": "seek",
       "source_registry": "life-science-approved-github-sources",
       "text": "[![Build Status](https://github.com/seek4science/seek/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/seek4science/seek/actions/workflows/tests.yml)\n[![DOI](https://zenodo.org/badge/20803285.svg)](https://zenodo.org/badge/latestdoi/20803285)\n\n# FAIRDOM-SEEK\n\n## License\n\nCopyright © 2009-2026, University of Manchester and HITS gGmbH\n\n[BSD 3-clause](BSD-LICENSE)\n\n## About FAIRDOM-SEEK\n\nThe FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets,models or simulations, processes and research outcomes. It preserves associations between them, along with information about the people and organisations involved.\nUnderpinning SEEK is the ISA infrastructure, a standard format for describing how individual experiments are aggregated into wider studies and investigations. Within SEEK, ISA has been extended and is configurable to allow the structure to be used outside of Biology.\n\nFAIRDOM-SEEK is incorporating semantic technology allowing sophisticated queries over the data, yet without getting in the way of your users.\n\nFor an example of FAIRDOM-SEEK please visit our [Demo](http://demo.seek4science.org/).\n\nTo see FAIRDOM-SEEK being used for real science, as part of [FAIRDOM](http://fair-dom.org) please visit [FAIRDOMHub](http://fairdomhub.org). Examples include: \n\n- [FAIRDOMHub](https://fairdomhub.org/)\n- [WorkflowHub](https://workflowhub.eu/)\n- [DataHub](https://datahub.elixir-belgium.org/)\n- [IBISBAKHub](https://hub.ibisba.eu/)\n- [NextSEEK](https://fair-dom.org/fairdom-in-use/nextseek)\n\nFor more information please visit: [SEEK for Science](http://www.seek4science.org/)\n\n## FAIRDOM\n\nFAIRDOM-SEEK is being developed and funded as part of the FAIRDOM initiative.\nFor more information please visit: [FAIRDOM](http://fair-dom.org).\n\n\n## Installation\n\nWe recommend installing FAIRDOM-SEEK on Debian or Ubuntu.\n\nTo install the latest release please visit:\n[SEEK install guide](http://docs.seek4science.org/tech/install)\n\nFor details about other distributions and installing on macOS please visit:\n[Other distributions guide](http://docs.seek4science.org/tech/other-distributions)\n\nThe documentation is available in its own repository: [seek-documentation](https://github.com/seek4science/seek-documentation).\n\n## Contacting Us\n\nFor details about how to contact us, to raise bugs or offer suggestion, please visit [Contacting Us](http://docs.seek4science.org/contacting_us)\n\n## Contributing to FAIRDOM-SEEK\n\nIn general :\n\n1. Fork it ( https://github.com/seek4science/seek/fork )\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am 'Add some feature'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create a new Pull Request\n\nFor more details on how and what you can contribute to SEEK please visit [Contributing](http://docs.seek4science.org/contributing)\n",
-      "tree_sha": "ecb4bc296056da697b9ffc46818ea02f3e82899d",
+      "tree_sha": "a3116555421f8767ebc9e0cb01bed62660744746",
       "trust": "primary"
     },
     {
@@ -339,11 +339,11 @@
       "trust": "primary"
     }
   ],
-  "run_id": "1600ff5eb782121f-787471b78dfe37c2",
+  "run_id": "f2c5bba131d905bd-787471b78dfe37c2",
   "schema_version": "1.0.0",
   "sources": [
     {
-      "commit": "c02bdc7cda6a525e464f4d9f7f78bb39430ad424",
+      "commit": "b359998838f48ed5f60307d500a39ed3deb5b7da",
       "repository": "common-workflow-language/cwl-v1.2",
       "source_id": "cwl-standard"
     },
@@ -353,7 +353,7 @@
       "source_id": "lifemonitor"
     },
     {
-      "commit": "0fb16ee16fb004cdfb959a3cef16003269580971",
+      "commit": "766000e3a4b82c12844e87bfc13e4195a35bd19a",
       "repository": "seek4science/seek",
       "source_id": "seek"
     },
