@@ -102,7 +102,7 @@ class Post768AuditTests(unittest.TestCase):
         self.assertEqual([json.loads(line)["run_id"] for line in raw_lines[:4]],
                          original_ids)
         def git_blob_sha(payload):
-            return sha1(b"blob " + str(len(payload)).encode() + b"\\0" + payload).hexdigest()
+            return sha1(b"blob " + str(len(payload)).encode() + b"\0" + payload).hexdigest()
         # Exact original bytes remain verifiable as the prefix of the append-only ledger.
         frozen_ledger = "".join(raw_lines[:4]).encode("utf-8")
         self.assertEqual(git_blob_sha(frozen_ledger), a["event_ledger_blob_sha"])
