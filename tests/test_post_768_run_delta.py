@@ -90,16 +90,31 @@ class Post768AuditTests(unittest.TestCase):
         self.assertEqual((a["receipts"], a["chained_events"], a["archived_candidates"]),
                          (4, 4, 3))
         self.assertFalse(a["new_production_acceptance"])
-        self.assertEqual(len(list((ROOT/"data/receipts").glob("gh-*.json"))), 4)
-        self.assertEqual(len((ROOT/"data/knowledge/events.jsonl").read_text(encoding="utf-8").splitlines()), 4)
-        import hashlib
-        for name,sha in (("data/knowledge/events.jsonl", a["event_ledger_blob_sha"]),
-                         ("data/knowledge/current.json", a["accepted_knowledge_blob_sha"]),
-                         ("data/knowledge/graph-manifest.json", a["graph_manifest_blob_sha"]),
-                         ("data/receipts/gh-41436556408-1.json", a["latest_receipt_blob_sha"])):
-            blob=(ROOT/name).read_bytes()
-            actual=hashlib.sha1(b"blob "+str(len(blob)).encode()+bytes((0,))+blob).hexdigest()
-            self.assertEqual(actual, sha, name)
+        # Frozen cutoff facts stay four, while subsequent legitimate native runs append.
+        from hashlib import sha1
+        receipts = list((ROOT/"data/receipts").glob("gh-*.json"))
+        self.assertGreaterEqual(len(receipts), 4)
+        raw_lines = (ROOT/"data/knowledge/events.jsonl").read_text(
+            encoding="utf-8").splitlines(keepends=True)
+        self.assertGreaterEqual(len(raw_lines), 4)
+        original_ids = ["gh-38995485443-1", "gh-39227185707-1",
+                        "gh-40297059874-1", "gh-41436556408-1"]
+        self.assertEqual([json.loads(line)["run_id"] for line in raw_lines[:4]],
+                         original_ids)
+        def git_blob_sha(payload):
+            return sha1(b"blob " + str(len(payload)).encode() + b"\0" + payload).hexdigest()
+        # Exact original bytes remain verifiable as the prefix of the append-only ledger.
+        frozen_ledger = "".join(raw_lines[:4]).encode("utf-8")
+        self.assertEqual(git_blob_sha(frozen_ledger), a["event_ledger_blob_sha"])
+        old_receipt = ROOT/"data/receipts/gh-41436556408-1.json"
+        self.assertEqual(git_blob_sha(old_receipt.read_bytes()),
+                         a["latest_receipt_blob_sha"])
+        # Historical mutable knowledge/manifest digests are pinned in the
+        # observation, not asserted against a newer accepted data/ tree.
+        for key, path in (("accepted_knowledge_blob_sha", "data/knowledge/current.json"),
+                          ("graph_manifest_blob_sha", "data/knowledge/graph-manifest.json")):
+            self.assertEqual(len(a[key]), 40)
+            self.assertTrue((ROOT/path).is_file(), path)
 
     def test_method_and_doc_boundaries(self):
         a = self.a

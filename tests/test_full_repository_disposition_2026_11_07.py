@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 import unittest
+from accepted_production_history import authorized_native_append_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 TAX = ROOT / "docs" / "taxonomy"
@@ -137,9 +138,10 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
             or (p.startswith("docs/taxonomy/") and p.endswith((".md", ".json")))
             or (p.startswith("tests/") and p.endswith(".py"))
         }
-        self.assertTrue(extra <= allowed_extra | later_research,
+        production_append = authorized_native_append_paths(ROOT)
+        self.assertTrue(extra <= allowed_extra | later_research | production_append,
                         "Unexpected post-cutoff tracked files: "
-                        + str(sorted(extra - allowed_extra - later_research)))
+                        + str(sorted(extra - allowed_extra - later_research - production_append)))
         md = {p for p in tracked if p.endswith(".md")}
         docs = set(read(ROOT / "evidence/profiles/docs.json")["documents"])
         self.assertEqual(md, docs)
@@ -147,8 +149,16 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
                           d["current_files"]["registered_markdown"]), (80, 80))
         for rec in d["current_files"]["rows"]:
             if rec["path"].startswith("data/"):
-                self.assertEqual(blob(ROOT / rec["path"]), rec["git_blob_sha"],
-                                 "ACCEPTED_DATA_WAS_CHANGED: " + rec["path"])
+                if rec["path"].startswith(("data/inputs/current/",
+                                           "data/knowledge/", "data/memories/")):
+                    # Old current/state bytes are frozen at this cutoff, while
+                    # later native acceptance is governed by the verified chain.
+                    self.assertTrue((ROOT / rec["path"]).is_file(), rec["path"])
+                    self.assertRegex(rec["git_blob_sha"], r"^[0-9a-f]{40}$")
+                else:
+                    # Older receipts and archived candidates never get rewritten.
+                    self.assertEqual(blob(ROOT / rec["path"]), rec["git_blob_sha"],
+                                     "IMMUTABLE_ACCEPTED_DATA_WAS_CHANGED: " + rec["path"])
             if rec["path"].endswith(".json") and rec["path"].startswith(
                    ("docs/provenance/", "docs/taxonomy/")):
                 self.assertEqual(blob(ROOT / rec["path"]), rec["git_blob_sha"],

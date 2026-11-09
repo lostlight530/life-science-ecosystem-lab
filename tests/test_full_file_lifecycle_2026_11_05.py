@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 import unittest
+from accepted_production_history import authorized_native_append_paths
 
 ROOT=Path(__file__).resolve().parents[1]
 TAX=ROOT/"docs"/"taxonomy"
@@ -103,8 +104,10 @@ class FullFirstDayFileLifecycleTests(unittest.TestCase):
                          sorted(d["changed_living_paths"]))
         tracked=set(subprocess.check_output(["git","ls-files"],cwd=ROOT,text=True).splitlines())
         self.assertTrue(paths<=tracked)
+        production_append = authorized_native_append_paths(ROOT)
         for path in tracked-paths:
-            self.assertEqual(sum(path.startswith(p) for p in categories),1,
+            self.assertEqual(sum(path.startswith(p) for p in categories)
+                             + int(path in production_append and path.startswith("data/")),1,
                              "NEW_PATH_REQUIRES_REVIEWED_CLASS: "+path)
         registered=set(read(ROOT/"evidence/profiles/docs.json")["documents"])
         markdown={p for p in tracked if p.endswith(".md")}

@@ -10,6 +10,7 @@ import subprocess
 import unittest
 
 from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
+from accepted_production_history import authorized_native_append_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 TAX = ROOT / "docs" / "taxonomy"
@@ -80,9 +81,12 @@ class LiveTaxonomyAddendumTests(unittest.TestCase):
             self.assertEqual([cat for prefix, cat in category_prefixes.items()
                               if x["path"].startswith(prefix)], [x["category"]])
             self.assertEqual(len(x["git_blob_sha"]), 40)
+        production_append = authorized_native_append_paths(ROOT)
         for path in sorted(tracked - old - named):
             matched = [cat for prefix, cat in category_prefixes.items()
                        if path.startswith(prefix)]
+            if path in production_append and path.startswith("data/"):
+                matched.append("ACCEPTED_PRODUCTION_STATE")
             self.assertEqual(len(matched), 1, "UNCLASSIFIED_NEW_PATH: " + path)
         self.assertEqual(len(self.wf["workflows"]), 9)
         self.assertEqual({x["path"] for x in self.wf["workflows"]},
@@ -121,11 +125,15 @@ class LiveTaxonomyAddendumTests(unittest.TestCase):
     def test_accepted_data_independent_and_public_document_registered(self):
         self.assertTrue(verify_state(StateRoots(ROOT), require_accepted=True).valid)
         receipts = list((ROOT / "data/receipts").glob("gh-*.json"))
-        self.assertEqual(len(receipts), 4)
+        self.assertGreaterEqual(len(receipts), 4)
         lines = [json.loads(x) for x in
                  (ROOT / "data/knowledge/events.jsonl").read_text(encoding="utf-8").splitlines()
                  if x.strip()]
-        self.assertEqual(len(lines), 4)
+        self.assertGreaterEqual(len(lines), 4)
+        self.assertEqual([x["run_id"] for x in lines[:4]],
+                         ["gh-38995485443-1", "gh-39227185707-1",
+                          "gh-40297059874-1", "gh-41436556408-1"])
+        authorized_native_append_paths(ROOT)
         docs = load(ROOT / "evidence/profiles/docs.json")["documents"]
         self.assertIn("docs/taxonomy/POST_2026-11-04_SOURCE_CLASSIFICATION.md", docs)
 

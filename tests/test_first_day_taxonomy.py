@@ -12,6 +12,7 @@ import subprocess
 import unittest
 
 from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
+from accepted_production_history import authorized_native_append_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 TAX = ROOT / "docs" / "taxonomy"
@@ -82,10 +83,13 @@ class CompleteHistoryClassificationTests(unittest.TestCase):
             "docs/lessons/": "PUBLIC_RESEARCH_LESSONS",
             "tests/": "VALIDATION_AND_REGRESSION",
         }
+        accepted_append = authorized_native_append_paths(ROOT)
         assigned = {}
         for path in sorted(newer):
             matches = [label for prefix, label in categories.items()
                        if path.startswith(prefix)]
+            if path in accepted_append and path.startswith("data/"):
+                matches.append("ACCEPTED_PRODUCTION_STATE")
             self.assertEqual(len(matches), 1, f"UNCLASSIFIED_NEW_PATH: {path}")
             assigned[path] = matches[0]
         # The nine genuinely new paths since the PR #58 source cutoff.
@@ -107,16 +111,22 @@ class CompleteHistoryClassificationTests(unittest.TestCase):
             else "HISTORICAL_PROVENANCE") for p in expected_since_cutoff))
 
     def test_actual_frozen_bytes_still_match_pre_review_git_blob_guards(self):
-        # Do not compare living README/docs headings to old Git blob SHAs.
-        # Historical JSON and formally accepted data remain immutable.
+        # Accepted current/knowledge files are deliberately mutable across
+        # native cycles; original Receipts and input archives are immutable.
         frozen = [r for r in self.files["files"]
                   if r["path"].startswith("data/")
                   or (r["path"].startswith("docs/provenance/")
                       and r["path"].endswith(".json"))]
         self.assertGreaterEqual(len(frozen), 40)
+        authorized_native_append_paths(ROOT)
         for row in frozen:
-            self.assertEqual(blob_sha(ROOT / row["path"]),
-                             row["git_blob_sha"], row["path"])
+            path = row["path"]
+            if path.startswith(("data/inputs/current/", "data/knowledge/",
+                                "data/memories/")):
+                self.assertTrue((ROOT / path).is_file(), path)
+                self.assertRegex(row["git_blob_sha"], r"^[a-f0-9]{40}$")
+            else:
+                self.assertEqual(blob_sha(ROOT / path), row["git_blob_sha"], path)
 
     def test_all_pr_origins_and_dispositions_are_preserved(self):
         rows = self.prs["prs"]

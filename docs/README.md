@@ -67,3 +67,9 @@ The older 2026-11-05 294-current/47-historical-only audit remains frozen. This n
 [Source-pinned Run/Job reconciliation](provenance/POST_768_TO_788_RECONCILIATION_2026-11-08.md) · [Machine observation](provenance/post-768-to-788-observation-2026-11-08.json) · [Offline verifier](../tests/test_post_768_run_delta.py) · [Failure-mode lesson](lessons/2026-11-08-green-checks-are-not-scientific-acceptance.md)
 
 This dated appendix observes 20 additional successful Runs, 42 Jobs with two conditional Bio skips, Nov 7–8 daily self-check and continuity Jobs, unmodified four accepted Knowledge Receipts and unresolved scheduler causality. It preserves all older frozen source and negative-evidence archives without claiming new scientific data, external acceptance or provider status
+
+## 2026-11-09 · Fifth accepted Knowledge lifecycle and 788→798 native evidence
+
+[Source-pinned Run/Job and acceptance audit](provenance/POST_788_TO_798_RECONCILIATION_2026-11-09.md) · [Machine ledger](provenance/post-788-to-798-observation-2026-11-09.json) · [Regression](../tests/test_post_788_run_delta.py) · [Failure-mode lesson](lessons/2026-11-09-frozen-tests-vs-native-continuity.md)
+
+Ten additional visible Runs (21 successful Jobs, one expected conditional Bio skip) and a real fifth native Knowledge acceptance require separating immutable historical audit expectations from the evolving accepted `data/` state. The project retains prior failure and correction records, all scientific nonclaims and independent external-provider authority

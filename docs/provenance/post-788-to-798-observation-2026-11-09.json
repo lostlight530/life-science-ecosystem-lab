@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "POST_788_TO_798_GITHUB_RUN_JOB_SCHEDULE_AND_NATIVE_ACCEPTANCE_OBSERVATION",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-09",
+  "observed_at_utc": null,
+  "collection_limit": "Individual API acquisition timestamps were not recorded. GitHub Run created_at is not observer time, dispatch time or runner queue time. Live repository state is source-pinned; past missing failed Runs are retained in frozen archives.",
+  "source_main_sha": "a1918caeabbd23bc962e9c0c8e05e67a2d0be479",
+  "source_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "source_tree_sha": "d0a1eda4aa1da38f6fb1f9da8f23e621812b1cfd",
+  "git_scope": {
+    "previous_main": "503c340f9d5d4b34b8aacb6df6fd680567445b00",
+    "compare_ahead_by": 2,
+    "main_reachable_commits": 263,
+    "tracked_blob_paths": 318,
+    "pull_requests": 70,
+    "merged_prs": 67,
+    "closed_unmerged_prs": [
+      29,
+      32,
+      67
+    ],
+    "open_prs": 0,
+    "new_merged_prs": [
+      70
+    ],
+    "native_data_commit": "a1918caeabbd23bc962e9c0c8e05e67a2d0be479",
+    "release_tags": [
+      "v0.4.0",
+      "v0.5.0"
+    ],
+    "main_branch_protected": false,
+    "repository_rulesets": []
+  },
+  "action_census": {
+    "previous_snapshot": "docs/provenance/post-768-to-788-observation-2026-11-08.json",
+    "previous_visible": 788,
+    "retained_prior_ids": 788,
+    "missing_prior_ids": [],
+    "new_count": 10,
+    "current_visible": 798,
+    "source_page_counts": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      98
+    ],
+    "current_conclusions": {
+      "success": 757,
+      "cancelled": 41
+    },
+    "current_events": {
+      "schedule": 54,
+      "push": 410,
+      "pull_request": 330,
+      "workflow_dispatch": 4
+    },
+    "new_run_jobs": {
+      "count": 22,
+      "success": 21,
+      "skipped": 1,
+      "failed": 0
+    },
+    "new_runs": [
+      {
+        "id": 42496690023,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "branch": "audit/2026-11-08-768-to-788-native-evidence",
+        "head_sha": "76f340f0995e8dbbd36bda77efc1d6d64d1870cb",
+        "created_at_utc": "2026-11-08T15:48:46Z",
+        "jobs": [
+          {
+            "id": 128780445472,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42496731464,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "event": "pull_request",
+        "branch": "audit/2026-11-08-768-to-788-native-evidence",
+        "head_sha": "76f340f0995e8dbbd36bda77efc1d6d64d1870cb",
+        "created_at_utc": "2026-11-08T15:49:16Z",
+        "jobs": [
+          {
+            "id": 128780567248,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42496731547,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "event": "pull_request",
+        "branch": "audit/2026-11-08-768-to-788-native-evidence",
+        "head_sha": "76f340f0995e8dbbd36bda77efc1d6d64d1870cb",
+        "created_at_utc": "2026-11-08T15:49:16Z",
+        "jobs": [
+          {
+            "id": 128780567545,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780567821,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42496731632,
+        "name": "Validate life-science workflow and evidence contracts",
+        "event": "pull_request",
+        "branch": "audit/2026-11-08-768-to-788-native-evidence",
+        "head_sha": "76f340f0995e8dbbd36bda77efc1d6d64d1870cb",
+        "created_at_utc": "2026-11-08T15:49:16Z",
+        "jobs": [
+          {
+            "id": 128780567866,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780568169,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780568224,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780568225,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780666469,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42496847866,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "branch": "main",
+        "head_sha": "1cf4bd3074f39ea069e3ec04f4db0345259553f7",
+        "created_at_utc": "2026-11-08T15:50:40Z",
+        "jobs": [
+          {
+            "id": 128780915652,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42496847941,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "event": "push",
+        "branch": "main",
+        "head_sha": "1cf4bd3074f39ea069e3ec04f4db0345259553f7",
+        "created_at_utc": "2026-11-08T15:50:40Z",
+        "jobs": [
+          {
+            "id": 128780916178,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780917619,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42496848029,
+        "name": "Validate life-science workflow and evidence contracts",
+        "event": "push",
+        "branch": "main",
+        "head_sha": "1cf4bd3074f39ea069e3ec04f4db0345259553f7",
+        "created_at_utc": "2026-11-08T15:50:40Z",
+        "jobs": [
+          {
+            "id": 128780916175,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780916382,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780916392,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 128780916472,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 128781013001,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42587589778,
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "event": "schedule",
+        "branch": "main",
+        "head_sha": "1cf4bd3074f39ea069e3ec04f4db0345259553f7",
+        "created_at_utc": "2026-11-09T08:39:54Z",
+        "jobs": [
+          {
+            "id": 129061029003,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 129061029242,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42611716908,
+        "name": "Life Science Knowledge Workflow — Native Lifecycle",
+        "event": "schedule",
+        "branch": "main",
+        "head_sha": "1cf4bd3074f39ea069e3ec04f4db0345259553f7",
+        "created_at_utc": "2026-11-09T11:46:49Z",
+        "jobs": [
+          {
+            "id": 129141520154,
+            "name": "validate",
+            "conclusion": "success"
+          },
+          {
+            "id": 129141662446,
+            "name": "apply",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      },
+      {
+        "id": 42621610650,
+        "name": "Verify accepted life-science knowledge continuity",
+        "event": "schedule",
+        "branch": "main",
+        "head_sha": "a1918caeabbd23bc962e9c0c8e05e67a2d0be479",
+        "created_at_utc": "2026-11-09T12:59:53Z",
+        "jobs": [
+          {
+            "id": 129174927218,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ],
+        "attempt": 1,
+        "conclusion": "success"
+      }
+    ]
+  },
+  "schedule": {
+    "previous_verified_runs": 51,
+    "previous_verified_success_jobs": 79,
+    "added_runs": 3,
+    "added_success_jobs": 5,
+    "current_visible_runs": 54,
+    "cross_cutoff_verified_success_jobs": 84,
+    "new_scheduled_runs": [
+      {
+        "run_id": 42587589778,
+        "nominal_utc": "2026-11-09T01:41:00Z",
+        "created_utc": "2026-11-09T08:39:54Z",
+        "offset_seconds": 25134,
+        "job_ids": [
+          129061029003,
+          129061029242
+        ],
+        "artifact_ids": [
+          13659757610,
+          13659752736
+        ]
+      },
+      {
+        "run_id": 42611716908,
+        "nominal_utc": "2026-11-09T03:23:00Z",
+        "created_utc": "2026-11-09T11:46:49Z",
+        "offset_seconds": 30229,
+        "job_ids": [
+          129141520154,
+          129141662446
+        ],
+        "artifact_ids": [
+          13670323575
+        ]
+      },
+      {
+        "run_id": 42621610650,
+        "nominal_utc": "2026-11-09T04:17:00Z",
+        "created_utc": "2026-11-09T12:59:53Z",
+        "offset_seconds": 31373,
+        "job_ids": [
+          129174927218
+        ],
+        "artifact_ids": [
+          13676387700
+        ]
+      }
+    ],
+    "latest_project_job_result": "11 bounded custom checks PASS (manifest, regression, documentation, metadata, RO-Crate, publication boundary, accepted state, knowledge, graph, knowledge quality, ecosystem preflight)",
+    "latest_institutional_job_result": "PUBLIC_HTTP_READ_ONLY; job success is not external approval, registration or universal endpoint uptime",
+    "latest_native_job_result": "validate and apply success; guarded main push and final WORLD_LINE_OK; DOCUMENT_TEXT_UNCHANGED APPLIED",
+    "latest_continuity_job_result": "state is valid; knowledge provenance verified; 17 source-linked entities, 26 SOURCE_MATCH relations, 5 events; KNOWLEDGE_QUALITY_PASS",
+    "nominal_to_created_cause": "UNKNOWN"
+  },
+  "accepted_state": {
+    "previous_receipts": 4,
+    "previous_events": 4,
+    "previous_archive_candidates": 3,
+    "receipts": 5,
+    "chained_events": 5,
+    "archived_candidates": 4,
+    "latest_receipt": "data/receipts/gh-42611716908-1.json",
+    "latest_receipt_blob_sha": "054b2f8421faf93bad38f6febe024f97cb439b98",
+    "event_ledger_blob_sha_at_cutoff": "d916bcba6352691741156403379df50465fb8e83",
+    "latest_event_sha256": "5f964aa3b75275a6d6101d37b94fab7327f053b822619475814b301cf47320a0",
+    "previous_event_sha256": "34919f9c21a162ab938859880a920871e4e71df7b0c3a8276a4f0530d8a8dbaf",
+    "execution_id": "gh-42611716908-1",
+    "run_id": 42611716908,
+    "logical_date": "2026-11-09",
+    "change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "outcome": "APPLIED",
+    "validated_head": "1cf4bd3074f39ea069e3ec04f4db0345259553f7",
+    "accepted_git_commit": "a1918caeabbd23bc962e9c0c8e05e67a2d0be479",
+    "archived_previous_candidate": "data/inputs/archive/2026/11/1600ff5eb782121f-787471b78dfe37c2-e0541fe47179.json",
+    "knowledge_digest": "089b328725bca57fb91500ed3eeafe2d38878a6a16bf9a70fe73cd16db3a8750",
+    "entities": 17,
+    "source_match_relations": 26,
+    "new_scientific_claims_verified": 0
+  },
+  "negative_evidence": {
+    "historical_disappeared_failed_run_ids": [
+      42010968246,
+      42010981438,
+      42010981442,
+      42010981547
+    ],
+    "historical_disappearance_cause": "UNKNOWN",
+    "other_frozen_failures": "RETAIN_PREVIOUS_ARCHIVES",
+    "new_failed_runs": 0,
+    "conditional_bio_push_skips": [
+      42496847941
+    ],
+    "nonfatal_node_deprecation_warnings": "OBSERVED_NOT_JOB_FAILURE",
+    "scheduler_offset_cause": "UNKNOWN",
+    "historical_test_gate": "FROZEN_4_RECEIPT_ASSERTIONS_NO_LONGER_MATCH_MOVING_DATA"
+  },
+  "external_registry_boundaries": {
+    "workflowhub": "PUBLIC_VERSION_2_V0.4.0_WORK_IN_PROGRESS_NOT_SCIENTIFIC_CERTIFICATION",
+    "github_release": "V0.5.0_SEPARATE_OBJECT",
+    "biotools": "NOT_DIRECTLY_REVERIFIED",
+    "openebench": "NOT_DIRECTLY_REVERIFIED",
+    "zenodo": "NOT_DIRECTLY_REVERIFIED",
+    "lifemonitor": "NOT_DIRECTLY_REVERIFIED",
+    "osf": "PR67_CLOSED_UNMERGED"
+  },
+  "disposition": {
+    "kind": "MATERIAL_NATIVE_ACCEPTANCE_AND_DOCUMENTATION_TEST_GATE_CORRECTION",
+    "approved_sources_modified": false,
+    "knowledge_workflow_modified": false,
+    "evidence_tool_modified": false,
+    "bio_tool_modified": false,
+    "framework_modified": false,
+    "workflow_schedules_modified": false,
+    "accepted_data_manually_modified": false,
+    "external_provider_state_modified": false,
+    "scientific_claim_promoted": false
+  },
+  "source_urls": [
+    "https://github.com/lostlight530/life-science-ecosystem-lab/commit/a1918caeabbd23bc962e9c0c8e05e67a2d0be479",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/pull/70",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42587589778",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42611716908",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42621610650",
+    "https://workflowhub.eu/workflows/2347?version=2"
+  ]
+}
