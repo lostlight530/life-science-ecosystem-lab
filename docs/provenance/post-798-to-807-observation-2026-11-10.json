@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "POST_798_TO_807_GITHUB_RUN_JOB_SCHEDULE_AND_REPAIR_ACCEPTANCE_OBSERVATION",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_asia_shanghai": "2026-11-10",
+  "observed_at_utc": null,
+  "collection_limit": "Individual API acquisition timestamps were not recorded. GitHub Run created_at is not observer time, dispatch time or runner queue time. Current API visibility is not immutable lifetime history. Four failed PR #71 Runs preserved in the preceding report now return 404 and remain negative evidence with unknown disappearance cause.",
+  "source_main_sha": "7008c32d0224aa0fdbe25bbc4614d4988f212669",
+  "source_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "source_tree_sha": "f615e0e7e913c13b8177625092a7a796f36a5ae9",
+  "git_scope": {
+    "previous_main": "a1918caeabbd23bc962e9c0c8e05e67a2d0be479",
+    "compare_ahead_by": 1,
+    "main_reachable_commits": 264,
+    "tracked_blob_paths": 323,
+    "pull_requests": 71,
+    "merged_prs": 68,
+    "closed_unmerged_prs": [
+      29,
+      32,
+      67
+    ],
+    "open_prs": 0,
+    "new_merged_prs": [
+      71
+    ],
+    "release_tags": [
+      "v0.4.0",
+      "v0.5.0"
+    ],
+    "main_branch_protected": false,
+    "repository_rulesets": []
+  },
+  "action_census": {
+    "previous_snapshot": "docs/provenance/post-788-to-798-observation-2026-11-09.json",
+    "previous_visible": 798,
+    "retained_prior_ids": 798,
+    "missing_prior_ids": [],
+    "new_count": 9,
+    "current_visible": 807,
+    "source_page_counts": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      7
+    ],
+    "current_conclusions": {
+      "success": 766,
+      "cancelled": 41
+    },
+    "current_events": {
+      "schedule": 56,
+      "push": 414,
+      "pull_request": 333,
+      "workflow_dispatch": 4
+    },
+    "new_run_jobs": {
+      "count": 20,
+      "success": 19,
+      "skipped": 1,
+      "failed": 0
+    },
+    "new_runs": [
+      {
+        "id": 42818454449,
+        "name": "Verify accepted life-science knowledge continuity",
+        "event": "schedule",
+        "branch": "main",
+        "head_sha": "7008c32d0224aa0fdbe25bbc4614d4988f212669",
+        "created_at_utc": "2026-11-10T12:45:23Z",
+        "updated_at_utc": "2026-11-10T12:45:35Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129837491547,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42818454449"
+      },
+      {
+        "id": 42785634316,
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "event": "schedule",
+        "branch": "main",
+        "head_sha": "7008c32d0224aa0fdbe25bbc4614d4988f212669",
+        "created_at_utc": "2026-11-10T08:49:21Z",
+        "updated_at_utc": "2026-11-10T08:49:35Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129726005471,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 129726005909,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42785634316"
+      },
+      {
+        "id": 42650065492,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "event": "push",
+        "branch": "main",
+        "head_sha": "7008c32d0224aa0fdbe25bbc4614d4988f212669",
+        "created_at_utc": "2026-11-09T15:58:48Z",
+        "updated_at_utc": "2026-11-09T15:59:12Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129273712016,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 129273714940,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42650065492"
+      },
+      {
+        "id": 42650065402,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "branch": "main",
+        "head_sha": "7008c32d0224aa0fdbe25bbc4614d4988f212669",
+        "created_at_utc": "2026-11-09T15:58:48Z",
+        "updated_at_utc": "2026-11-09T15:59:07Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129273711445,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42650065402"
+      },
+      {
+        "id": 42650065171,
+        "name": "Validate life-science workflow and evidence contracts",
+        "event": "push",
+        "branch": "main",
+        "head_sha": "7008c32d0224aa0fdbe25bbc4614d4988f212669",
+        "created_at_utc": "2026-11-09T15:58:48Z",
+        "updated_at_utc": "2026-11-09T15:59:23Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129273710190,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 129273710519,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 129273710703,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 129273711030,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 129273967242,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42650065171"
+      },
+      {
+        "id": 42649841330,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "event": "pull_request",
+        "branch": "audit/2026-11-09-788-to-798-native-continuity",
+        "head_sha": "17441ff48fd3391ddc68b9b53a73b3d7b7fe7d11",
+        "created_at_utc": "2026-11-09T15:57:24Z",
+        "updated_at_utc": "2026-11-09T15:58:02Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129272913672,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 129272913892,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42649841330"
+      },
+      {
+        "id": 42649841329,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "event": "pull_request",
+        "branch": "audit/2026-11-09-788-to-798-native-continuity",
+        "head_sha": "17441ff48fd3391ddc68b9b53a73b3d7b7fe7d11",
+        "created_at_utc": "2026-11-09T15:57:24Z",
+        "updated_at_utc": "2026-11-09T15:57:40Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129272901046,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42649841329"
+      },
+      {
+        "id": 42649841279,
+        "name": "Validate life-science workflow and evidence contracts",
+        "event": "pull_request",
+        "branch": "audit/2026-11-09-788-to-798-native-continuity",
+        "head_sha": "17441ff48fd3391ddc68b9b53a73b3d7b7fe7d11",
+        "created_at_utc": "2026-11-09T15:57:24Z",
+        "updated_at_utc": "2026-11-09T15:58:04Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129272901489,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 129272902002,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 129272902062,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 129272902071,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 129273222735,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42649841279"
+      },
+      {
+        "id": 42649832401,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "branch": "audit/2026-11-09-788-to-798-native-continuity",
+        "head_sha": "17441ff48fd3391ddc68b9b53a73b3d7b7fe7d11",
+        "created_at_utc": "2026-11-09T15:57:21Z",
+        "updated_at_utc": "2026-11-09T15:57:38Z",
+        "attempt": 1,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129272870035,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42649832401"
+      }
+    ]
+  },
+  "schedule": {
+    "previous_verified_runs": 54,
+    "previous_verified_success_jobs": 84,
+    "added_runs": 2,
+    "added_success_jobs": 3,
+    "current_visible_runs": 56,
+    "cross_cutoff_verified_success_jobs": 87,
+    "new_scheduled_runs": [
+      {
+        "run_id": 42785634316,
+        "nominal_utc": "2026-11-10T01:41:00Z",
+        "created_utc": "2026-11-10T08:49:21Z",
+        "offset_seconds": 25701,
+        "job_ids": [
+          129726005471,
+          129726005909
+        ],
+        "artifact_ids": [
+          13749051740,
+          13749511464
+        ]
+      },
+      {
+        "run_id": 42818454449,
+        "nominal_utc": "2026-11-10T04:17:00Z",
+        "created_utc": "2026-11-10T12:45:23Z",
+        "offset_seconds": 30503,
+        "job_ids": [
+          129837491547
+        ],
+        "artifact_ids": [
+          13764388947
+        ]
+      }
+    ],
+    "latest_project_job_result": "11 bounded custom checks PASS (manifest, regression, documentation, metadata, RO-Crate, publication boundary, accepted state, knowledge, graph, knowledge quality, ecosystem preflight)",
+    "latest_institutional_job_result": "PUBLIC_HTTP_READ_ONLY; network negatives remain inconclusive rather than official outage claims",
+    "latest_continuity_job_result": "state valid; knowledge provenance verified; 17 entities, 26 relations, 5 events; KNOWLEDGE_QUALITY_PASS",
+    "bio_quality_result": "PR repair ran pinned-field and offline Jobs successfully; merged-main push ran offline successfully and conditionally skipped pinned-field as designed; no Tuesday scheduled Bio event was expected from the Friday 02:19 UTC contract",
+    "nominal_to_created_cause": "UNKNOWN"
+  },
+  "accepted_state": {
+    "previous_receipts": 5,
+    "previous_events": 5,
+    "previous_archive_candidates": 4,
+    "receipts": 5,
+    "chained_events": 5,
+    "archived_candidates": 4,
+    "latest_receipt": "data/receipts/gh-42611716908-1.json",
+    "latest_receipt_blob_sha": "054b2f8421faf93bad38f6febe024f97cb439b98",
+    "event_ledger_blob_sha_at_cutoff": "d916bcba6352691741156403379df50465fb8e83",
+    "latest_event_sha256": "5f964aa3b75275a6d6101d37b94fab7327f053b822619475814b301cf47320a0",
+    "execution_id": "gh-42611716908-1",
+    "logical_date": "2026-11-09",
+    "change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "outcome": "APPLIED",
+    "knowledge_digest": "089b328725bca57fb91500ed3eeafe2d38878a6a16bf9a70fe73cd16db3a8750",
+    "entities": 17,
+    "source_match_relations": 26,
+    "new_scientific_claims_verified": 0
+  },
+  "negative_evidence": {
+    "preceding_report": "docs/provenance/POST_788_TO_798_RECONCILIATION_2026-11-09.md",
+    "failed_post_cutoff_run_ids_now_404": [
+      42648743634,
+      42648814068,
+      42648814253,
+      42648814000
+    ],
+    "failed_post_cutoff_cause": "Historical tests compared moving accepted state to frozen four-Receipt assumptions and initially lacked classifications for valid native append paths",
+    "current_404_disappearance_cause": "UNKNOWN",
+    "repair_head": "17441ff48fd3391ddc68b9b53a73b3d7b7fe7d11",
+    "repair_visible_runs": [
+      42649832401,
+      42649841279,
+      42649841329,
+      42649841330
+    ],
+    "interpretation": "Later successful repair and merged-main Runs do not erase or reclassify the preserved failed gate evidence"
+  },
+  "external_registry_boundaries": {
+    "github_releases": [
+      "v0.4.0",
+      "v0.5.0"
+    ],
+    "repository_recorded_workflowhub": "2347 version 2",
+    "independently_reverified_in_this_observation": [],
+    "status": "UNKNOWN_OUTSIDE_GITHUB",
+    "nonclaim": "GitHub CI, metadata, DOI or registry presence does not establish biological validity, external certification or current provider authorization"
+  },
+  "disposition": {
+    "status": "NO_MATERIAL_SCIENTIFIC_CHANGE",
+    "documentation_update_required": true,
+    "accepted_data_manually_modified": false,
+    "workflow_or_tool_modified": false,
+    "schedule_modified": false,
+    "scientific_claim_promoted": false,
+    "release_or_registration_created": false
+  },
+  "source_urls": [
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/branches/main",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/commits?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/pulls?state=all&per_page=100",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/releases?per_page=100",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=1",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=2",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=3",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=4",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=5",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=6",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=7",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=8",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs?per_page=100&page=9",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42818454449/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42785634316/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42650065492/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42650065402/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42650065171/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42649841330/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42649841329/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42649841279/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42649832401/jobs",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42648743634",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42648814068",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42648814253",
+    "https://api.github.com/repos/lostlight530/life-science-ecosystem-lab/actions/runs/42648814000",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/tree/7008c32d0224aa0fdbe25bbc4614d4988f212669/data",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/pull/71"
+  ]
+}
