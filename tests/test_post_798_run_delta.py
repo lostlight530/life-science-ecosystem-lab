@@ -128,7 +128,7 @@ class Post798AuditTests(unittest.TestCase):
         self.assertEqual(set(n["repair_visible_runs"]),
                          {42649832401, 42649841279,
                           42649841329, 42649841330})
-        self.assertIn("failed Runs", n["interpretation"])
+        self.assertIn("failed gate evidence", n["interpretation"])
 
     def test_git_governance_and_public_docs(self):
         g = self.current["git_scope"]
