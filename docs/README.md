@@ -44,7 +44,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 
 ## Contribution and support
 
-[Contribution guide](../CONTRIBUTING.md) · [Issue forms](../.github/ISSUE_TEMPLATE/) · [Security reporting](../SECURITY.md) · [Changelog](../CHANGELOG.md)
+[Open Research](../OPEN_RESEARCH.md) · [Research Template](../RESEARCH_TEMPLATE.md) · [Contribution guide](../CONTRIBUTING.md) · [Code of Conduct](../CODE_OF_CONDUCT.md) · [Issue forms](../.github/ISSUE_TEMPLATE/) · [Security reporting](../SECURITY.md) · [Changelog](../CHANGELOG.md)
 
 **State ownership:** Git-tracked `data/` only after a validated and accepted native run. Neither screenshots, documentation, an Agent reply nor passing static tests are authoritative accepted knowledge.
 
