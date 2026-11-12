@@ -1,6 +1,6 @@
 # Contributing to Life Science Ecosystem Lab
 
-The repository maintains **three established independent assets plus one experimental, separately installable Framework**, not an Agent/Skills package. Knowledge Workflow behavior belongs to [`.github/`](.github/README.md), independent evidence inspection to [`evidence/`](evidence/README.md), and bounded biological data processing to [`bio_tool/`](bio_tool/README.md). The peer [`framework/`](framework/README.md) evaluates life-sciences **cross-domain software-engineering contracts**, not biological conclusions. See the [documentation index](docs/README.md) before starting.
+The repository maintains **three established independent assets plus one experimental, separately installable Framework**, not an Agent/Skills package. Knowledge Workflow behavior belongs to [`.github/`](.github/README.md), independent evidence inspection to [`evidence/`](evidence/README.md), and bounded biological data processing to [`bio_tool/`](bio_tool/README.md). The peer [`framework/`](framework/README.md) evaluates life-sciences **cross-domain software-engineering contracts**, not biological conclusions. See the [documentation index](docs/README.md) before starting. All participation in repository public spaces follows the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Reproduce your proposed change
 
