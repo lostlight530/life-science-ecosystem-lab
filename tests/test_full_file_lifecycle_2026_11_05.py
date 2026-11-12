@@ -29,6 +29,10 @@ class FullFirstDayFileLifecycleTests(unittest.TestCase):
         cls.overlay=read(TAX/"post-2026-11-04-source-classification.json")
         cls.comm=read(TAX/"commit-register-2026-11-03.json")
         cls.pr=read(TAX/"pr-register-2026-11-03.json")
+        cls.exact_path_categories = {
+            row["path"]: row["category"]
+            for row in read(TAX/"current-exact-path-classifications.json")["entries"]
+        }
 
     def test_main_commit_ancestry_and_tree_identity(self):
         d=self.obs
@@ -99,6 +103,8 @@ class FullFirstDayFileLifecycleTests(unittest.TestCase):
             else:
                 matches=[c for prefix,c in categories.items()
                          if r["path"].startswith(prefix)]
+                if r["path"] in self.exact_path_categories:
+                    matches.append(self.exact_path_categories[r["path"]])
                 self.assertEqual(matches,[r["category"]])
         self.assertEqual(sorted(r["path"] for r in rows if "frozen_blob_sha" in r),
                          sorted(d["changed_living_paths"]))
@@ -106,9 +112,10 @@ class FullFirstDayFileLifecycleTests(unittest.TestCase):
         self.assertTrue(paths<=tracked)
         production_append = authorized_native_append_paths(ROOT)
         for path in tracked-paths:
-            self.assertEqual(sum(path.startswith(p) for p in categories)
-                             + int(path in production_append and path.startswith("data/")),1,
-                             "NEW_PATH_REQUIRES_REVIEWED_CLASS: "+path)
+            matches = (sum(path.startswith(p) for p in categories)
+                       + int(path in self.exact_path_categories)
+                       + int(path in production_append and path.startswith("data/")))
+            self.assertEqual(matches,1,"NEW_PATH_REQUIRES_REVIEWED_CLASS: "+path)
         registered=set(read(ROOT/"evidence/profiles/docs.json")["documents"])
         markdown={p for p in tracked if p.endswith(".md")}
         self.assertEqual(markdown,registered)
