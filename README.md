@@ -1,5 +1,7 @@
 # Life Science Ecosystem Lab
 
+[Open Research / 开放科研](./OPEN_RESEARCH.md) · [Research Template / 科研模板](./RESEARCH_TEMPLATE.md) · [Contributing](./CONTRIBUTING.md) · [Code of Conduct](./CODE_OF_CONDUCT.md) · [Security](./SECURITY.md)
+
 **Three established independent research-software assets plus one experimental independent cross-domain software engineering Framework**
 
 This open-source repository contains **three established independently callable research-software assets**, plus a separately packaged, experimental **Life Sciences Cross-Domain Software Engineering Framework**. Each can be tested independently and combined through explicit public file/CLI contracts. GitHub Actions operates the Knowledge Workflow; it is the native execution environment for that asset, not a fourth asset. External Agents and human research are independent collaborators, **not runtime requirements**.
