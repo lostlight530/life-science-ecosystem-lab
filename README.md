@@ -71,7 +71,7 @@ Run from the cloned **repository root** with Python 3.11+. The CWL replay is off
 | Repository archive `v0.5.0` | [Version DOI 10.5281/zenodo.23839899](https://doi.org/10.5281/zenodo.23839899) | The three established assets plus the separately packaged experimental Framework `0.1.0` |
 | Repository software family | [Concept DOI 10.5281/zenodo.23447088](https://doi.org/10.5281/zenodo.23447088) | All repository versions |
 
-`CITATION.cff` remains on the v0.4.0 three-asset citation target; it is not silently rewritten to the broader v0.5.0 repository archive. See [Release and Archival Policy](RELEASE_POLICY.md) for the exact GitHub tag, source commit, DOI roles, and `main` versus archive boundary.
+`CITATION.cff` remains on the v0.4.0 three-asset citation target; it is not silently rewritten to the broader v0.5.0 repository archive. The two version DOIs identify different immutable scopes, while the current `main` branch remains an evolving repository state.
 
 ## How the repository is organized
 
@@ -90,7 +90,6 @@ tests/                    Executable regression and integration contracts
 ro-crate-metadata.json    Workflow and testing research-object metadata
 codemeta.json             Current repository component inventory, including the experimental Framework boundary
 CITATION.cff              Citation and version DOI for the released v0.4.0 three-asset baseline
-RELEASE_POLICY.md         Repository v0.5.0 archive, concept/version DOI roles and mainline boundary
 .gitattributes            Cross-platform LF and binary rules for reproducible byte verification
 ```
 
