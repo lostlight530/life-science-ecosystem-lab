@@ -29,6 +29,10 @@ class LiveTaxonomyAddendumTests(unittest.TestCase):
         cls.commits = load(TAX / "commit-register-2026-11-03.json")
         cls.prs = load(TAX / "pr-register-2026-11-03.json")
         cls.wf = load(TAX / "workflow-register-2026-11-03.json")
+        cls.exact_path_categories = {
+            row["path"]: row["category"]
+            for row in load(TAX / "current-exact-path-classifications.json")["entries"]
+        }
 
     def test_main_parent_closure_through_day_one(self):
         self.assertEqual(self.delta["main_source_cutoff_sha"], CURRENT)
@@ -85,6 +89,8 @@ class LiveTaxonomyAddendumTests(unittest.TestCase):
         for path in sorted(tracked - old - named):
             matched = [cat for prefix, cat in category_prefixes.items()
                        if path.startswith(prefix)]
+            if path in self.exact_path_categories:
+                matched.append(self.exact_path_categories[path])
             if path in production_append and path.startswith("data/"):
                 matched.append("ACCEPTED_PRODUCTION_STATE")
             self.assertEqual(len(matched), 1, "UNCLASSIFIED_NEW_PATH: " + path)
