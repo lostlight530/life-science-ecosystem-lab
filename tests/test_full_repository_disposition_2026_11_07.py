@@ -28,10 +28,6 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
     def setUpClass(cls):
         cls.r = read(ROOT / NEW_JSON)
         cls.old = read(TAX / "full-file-lifecycle-2026-11-05.json")
-        cls.exact_path_categories = {
-            row["path"]: row["category"]
-            for row in read(TAX / "current-exact-path-classifications.json")["entries"]
-        }
 
     def test_pinned_all_commit_tree_and_pr_identities(self):
         r = self.r
@@ -134,7 +130,7 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
         # This is a dated snapshot: preserve every old Blob and accepted data byte,
         # but do not reject correctly governed research notes added after its cutoff.
         extra = tracked - pinned
-        allowed_extra = {NEW_REPORT, NEW_JSON, NEW_TEST} | set(self.exact_path_categories)
+        allowed_extra = {NEW_REPORT, NEW_JSON, NEW_TEST}
         later_research = {
             p for p in extra
             if (p.startswith("docs/provenance/") and p.endswith((".md", ".json")))

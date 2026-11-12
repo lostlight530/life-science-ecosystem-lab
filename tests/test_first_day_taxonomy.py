@@ -39,10 +39,6 @@ class CompleteHistoryClassificationTests(unittest.TestCase):
         cls.prs = load(TAX / "pr-register-2026-11-03.json")
         cls.workflows = load(TAX / "workflow-register-2026-11-03.json")
         cls.latest = load(PROV / "post-673-to-684-observation-2026-11-03.json")
-        cls.exact_path_categories = {
-            row["path"]: row["category"]
-            for row in load(TAX / "current-exact-path-classifications.json")["entries"]
-        }
 
     def test_frozen_baseline_scopes_are_explicit(self):
         for ledger in (self.files, self.commits, self.prs, self.workflows):
@@ -92,8 +88,6 @@ class CompleteHistoryClassificationTests(unittest.TestCase):
         for path in sorted(newer):
             matches = [label for prefix, label in categories.items()
                        if path.startswith(prefix)]
-            if path in self.exact_path_categories:
-                matches.append(self.exact_path_categories[path])
             if path in accepted_append and path.startswith("data/"):
                 matches.append("ACCEPTED_PRODUCTION_STATE")
             self.assertEqual(len(matches), 1, f"UNCLASSIFIED_NEW_PATH: {path}")
