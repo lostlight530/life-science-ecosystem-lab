@@ -1,0 +1,2130 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "POST_807_TO_849_GITHUB_NATIVE_RUN_JOB_RESEARCH_QUALITY_OBSERVATION",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_day_shanghai": "2026-11-13",
+  "observed_at_utc": "2026-11-12T17:05:11.163Z",
+  "per_request_acquisition_times": null,
+  "source_main_sha": "4bc0ad701f2a9f7ebae4e4aecf1d7aa7e867334d",
+  "source_tree_sha": "e449d35488fe3a663650dd71b106bc3f02ced96c",
+  "source_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "git_scope": {
+    "main_reachable_commits": 295,
+    "tracked_blobs": 327,
+    "workflow_yamls": 9,
+    "pr_count": 74,
+    "merged_pr_count": 71,
+    "closed_unmerged_prs": [
+      29,
+      32,
+      67
+    ],
+    "open_pr_count": 0,
+    "main_branch_protected": false,
+    "rulesets_independently_reverified": false,
+    "releases": [
+      "v0.4.0",
+      "v0.5.0"
+    ],
+    "new_merged_prs": [
+      72,
+      73,
+      74
+    ]
+  },
+  "actions": {
+    "previous_snapshot": "docs/provenance/post-798-to-807-observation-2026-11-10.json",
+    "previous_visible": 807,
+    "retained_old_ids": 807,
+    "missing_old_ids": [],
+    "current_visible": 849,
+    "page_counts": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      49
+    ],
+    "current_visible_run_ids": [
+      43222080700,
+      43214237391,
+      43214237175,
+      43214236784,
+      43214060796,
+      43214060577,
+      43214060474,
+      43214041368,
+      43213412423,
+      43213412395,
+      43213407593,
+      43213407530,
+      43212135321,
+      43212135231,
+      43212135222,
+      43211178835,
+      43211178718,
+      43211178643,
+      43210983531,
+      43210940107,
+      43210940033,
+      43210940013,
+      43210932734,
+      43210925792,
+      43210854941,
+      43208446748,
+      43208433892,
+      43208429918,
+      43208416429,
+      43207462784,
+      43207046232,
+      43207039276,
+      43186230480,
+      43016063251,
+      42986640895,
+      42839729344,
+      42839729331,
+      42839729320,
+      42839465993,
+      42839465597,
+      42839465594,
+      42839455719,
+      42818454449,
+      42785634316,
+      42650065492,
+      42650065402,
+      42650065171,
+      42649841330,
+      42649841329,
+      42649841279,
+      42649832401,
+      42621610650,
+      42611716908,
+      42587589778,
+      42496848029,
+      42496847941,
+      42496847866,
+      42496731632,
+      42496731547,
+      42496731464,
+      42496690023,
+      42475429538,
+      42460920843,
+      42369007585,
+      42369007482,
+      42369007432,
+      42368938301,
+      42368938295,
+      42368938291,
+      42368933925,
+      42366998260,
+      42352695753,
+      42343880966,
+      42343880964,
+      42343880958,
+      42343813706,
+      42343813682,
+      42343813651,
+      42343772342,
+      42343769852,
+      42343672701,
+      42251678739,
+      42249767693,
+      42215956253,
+      42201310035,
+      42201309921,
+      42201309805,
+      42201172853,
+      42201172659,
+      42201172569,
+      42201128815,
+      42194936143,
+      42188093525,
+      42030165535,
+      42030165484,
+      42030165466,
+      42030003879,
+      42030003872,
+      42030003707,
+      42029890542,
+      42029882284,
+      42029875858,
+      42029665099,
+      42027562052,
+      42011214974,
+      42011214672,
+      42011214655,
+      42011069911,
+      42011069898,
+      42011069834,
+      42011062219,
+      41994924429,
+      41974846510,
+      41974846396,
+      41974846328,
+      41974741240,
+      41974741068,
+      41974740968,
+      41974733403,
+      41827751347,
+      41796192635,
+      41779069740,
+      41779069675,
+      41779069648,
+      41778963928,
+      41778963873,
+      41778963871,
+      41778908804,
+      41776829783,
+      41776829685,
+      41776829648,
+      41776554277,
+      41776554218,
+      41776554160,
+      41776508098,
+      41776490172,
+      41776258148,
+      41776213577,
+      41632276154,
+      41604262360,
+      41576421787,
+      41576421767,
+      41576421725,
+      41576302762,
+      41576302737,
+      41576302532,
+      41576268327,
+      41576231173,
+      41575989806,
+      41575989790,
+      41575989769,
+      41575886687,
+      41575886653,
+      41575886645,
+      41575840675,
+      41575835890,
+      41575831455,
+      41575795214,
+      41573113868,
+      41573113832,
+      41573113559,
+      41573009904,
+      41573009835,
+      41573009819,
+      41572967817,
+      41570981796,
+      41570981662,
+      41570981659,
+      41570836491,
+      41570836480,
+      41570836428,
+      41570756588,
+      41570714295,
+      41570653940,
+      41570611425,
+      41570485006,
+      41453175179,
+      41453175120,
+      41453175001,
+      41453009000,
+      41453008954,
+      41453008885,
+      41452994517,
+      41450087725,
+      41450087395,
+      41450087249,
+      41449867754,
+      41449867703,
+      41449867509,
+      41449815154,
+      41449808670,
+      41449753165,
+      41449747269,
+      41449593178,
+      41449507900,
+      41449377384,
+      41445992506,
+      41436556408,
+      41412197104,
+      41360764432,
+      41360764431,
+      41360764311,
+      41360674360,
+      41360674221,
+      41360674141,
+      41360647948,
+      41360604582,
+      41360568997,
+      41360502222,
+      41302294001,
+      41302293913,
+      41302293885,
+      41302202102,
+      41302202062,
+      41302202028,
+      41302143326,
+      41302117588,
+      41302099885,
+      41302059364,
+      41302025790,
+      41301951633,
+      41301526739,
+      41287694940,
+      41217120626,
+      41213974075,
+      41213974054,
+      41213974025,
+      41213885329,
+      41213885229,
+      41213885167,
+      41213850214,
+      41213823767,
+      41213820788,
+      41213817368,
+      41213814579,
+      41192786481,
+      41180826289,
+      41178366302,
+      41178366106,
+      41178366078,
+      41178303604,
+      41178303561,
+      41178303554,
+      41178284053,
+      41178279435,
+      41178275006,
+      41178247125,
+      41178243372,
+      41178174974,
+      41178147145,
+      41178116356,
+      41176743761,
+      41176743735,
+      41176743734,
+      41176685742,
+      41176685591,
+      41176685567,
+      41176681579,
+      41176679237,
+      41176648497,
+      41176645129,
+      41176641293,
+      41155229298,
+      41155229294,
+      41155229252,
+      41155149722,
+      41155149703,
+      41155149675,
+      41155123896,
+      41076008497,
+      41076008481,
+      41076008415,
+      41075866852,
+      41075866705,
+      41075866685,
+      41075724547,
+      41075676186,
+      41075575152,
+      41075412690,
+      41074361575,
+      41074361509,
+      41074203581,
+      41074203556,
+      41074120631,
+      41074085450,
+      41074022957,
+      41044195993,
+      41027958936,
+      41021830497,
+      40989228036,
+      40989227397,
+      40989226904,
+      40989114537,
+      40989114409,
+      40989114345,
+      40989069050,
+      40989065010,
+      40989038921,
+      40989004247,
+      40989000787,
+      40988916876,
+      40988897136,
+      40983926830,
+      40983926822,
+      40983926784,
+      40983770268,
+      40983769934,
+      40983769877,
+      40983759410,
+      40982892141,
+      40982892007,
+      40982891979,
+      40982891959,
+      40982774757,
+      40982774740,
+      40982774726,
+      40982774718,
+      40982731698,
+      40912940173,
+      40912940116,
+      40912940014,
+      40912747695,
+      40912747555,
+      40912747485,
+      40912737378,
+      40912637465,
+      40910420964,
+      40910420696,
+      40910420624,
+      40910251284,
+      40910251195,
+      40910251174,
+      40910194284,
+      40909380515,
+      40909380514,
+      40909195572,
+      40909195460,
+      40909148720,
+      40909098288,
+      40908061863,
+      40908061834,
+      40908061692,
+      40907906400,
+      40907906299,
+      40907906155,
+      40907854436,
+      40861584405,
+      40836887893,
+      40738980357,
+      40738979852,
+      40738979303,
+      40738978982,
+      40738803706,
+      40738803347,
+      40738803115,
+      40738803109,
+      40738760560,
+      40738633136,
+      40738623769,
+      40738616360,
+      40731599870,
+      40731599665,
+      40731599653,
+      40731410970,
+      40731410960,
+      40731410948,
+      40731353610,
+      40731344773,
+      40731336940,
+      40730444763,
+      40730444664,
+      40730299946,
+      40730299834,
+      40730201759,
+      40730187890,
+      40730179670,
+      40730123361,
+      40730117351,
+      40730108947,
+      40673890368,
+      40649970391,
+      40535717944,
+      40535717801,
+      40535717602,
+      40535717227,
+      40535536108,
+      40535536074,
+      40535535983,
+      40535535972,
+      40535420653,
+      40530585896,
+      40530585753,
+      40530585725,
+      40530585666,
+      40530396247,
+      40530396238,
+      40530396195,
+      40530396154,
+      40530322462,
+      40484158969,
+      40463449543,
+      40362028074,
+      40362027990,
+      40362027963,
+      40361445181,
+      40361445065,
+      40361445051,
+      40361435848,
+      40358276316,
+      40358276256,
+      40358276189,
+      40358072458,
+      40357349801,
+      40305966236,
+      40297059874,
+      40282973703,
+      40187014388,
+      40187014291,
+      40187014245,
+      40187014244,
+      40186948066,
+      40186948053,
+      40186948043,
+      40186948036,
+      40186924197,
+      40186870093,
+      40186505660,
+      40186413603,
+      40186413589,
+      40186413563,
+      40186413520,
+      40186305298,
+      40186305268,
+      40186305257,
+      40186305237,
+      40186277661,
+      40179710305,
+      40170677920,
+      40079984160,
+      40070323977,
+      39931669556,
+      39918537642,
+      39911716174,
+      39755679098,
+      39734820988,
+      39576864291,
+      39556259140,
+      39401074752,
+      39388206911,
+      39388206888,
+      39388206875,
+      39388206864,
+      39388206851,
+      39381392189,
+      39349970175,
+      39349969940,
+      39349969933,
+      39349969899,
+      39349969852,
+      39349921115,
+      39279680912,
+      39279680884,
+      39279680872,
+      39279680862,
+      39279222641,
+      39279222630,
+      39279222625,
+      39279222622,
+      39279213951,
+      39279213852,
+      39279213730,
+      39279213679,
+      39279211867,
+      39279202531,
+      39279202514,
+      39279202499,
+      39279202323,
+      39279200202,
+      39278268554,
+      39278268372,
+      39277865465,
+      39277865455,
+      39268670713,
+      39268670675,
+      39268670669,
+      39268670602,
+      39268449208,
+      39268449207,
+      39268449166,
+      39268449165,
+      39268442880,
+      39261535624,
+      39261535592,
+      39261535587,
+      39261535584,
+      39261454375,
+      39261454092,
+      39261454057,
+      39261453973,
+      39261443944,
+      39260799775,
+      39260773333,
+      39234388500,
+      39227185707,
+      39212240189,
+      39188032520,
+      39113275640,
+      39104619997,
+      39103619774,
+      39097824046,
+      39097025466,
+      39097025364,
+      39097025358,
+      39097025339,
+      39094861635,
+      39094861614,
+      39094861591,
+      39094861586,
+      39094787207,
+      39092921456,
+      39092740162,
+      39092740148,
+      39092740142,
+      39092740134,
+      39092617553,
+      39092617493,
+      39092617486,
+      39092617485,
+      39092595990,
+      39037314256,
+      39037314183,
+      39037314174,
+      39037314156,
+      39036547649,
+      39036547539,
+      39036547526,
+      39036547522,
+      39036527062,
+      39018100269,
+      39015148525,
+      39015148345,
+      39015148327,
+      39015148303,
+      39014507323,
+      39014507189,
+      39014507172,
+      39014507139,
+      39014501407,
+      39007705678,
+      39007705661,
+      39007705642,
+      39007705634,
+      39007641521,
+      39007641517,
+      39007641505,
+      39007641470,
+      39007638351,
+      39007611094,
+      39007611071,
+      39007611046,
+      39007611042,
+      39007486846,
+      39007383903,
+      39006562443,
+      39006562269,
+      39006562262,
+      39006495635,
+      39006495627,
+      39006495621,
+      39006470787,
+      39006350779,
+      39006348156,
+      39006338502,
+      39006335432,
+      39006324552,
+      39006277467,
+      39006277460,
+      39006216620,
+      39006216412,
+      39006213678,
+      39006179203,
+      39006179155,
+      39006125223,
+      39006125215,
+      39006122640,
+      39006101552,
+      39006101548,
+      39006099812,
+      39006099782,
+      39006098645,
+      39006096661,
+      39006045370,
+      39006045347,
+      39006045343,
+      39005437191,
+      39005437168,
+      39005437150,
+      39005434672,
+      39005360382,
+      39005360349,
+      39005360315,
+      39005339909,
+      39004399228,
+      39004399130,
+      39004396939,
+      39004222612,
+      39004222611,
+      39004219577,
+      39003568028,
+      39003568016,
+      39003568009,
+      39003509522,
+      39003509497,
+      39003509454,
+      39003498967,
+      39003410121,
+      39003381995,
+      39003371127,
+      39003107706,
+      39003107620,
+      39003107615,
+      39003030865,
+      39003030860,
+      39003030859,
+      39003027454,
+      39003016239,
+      39003016212,
+      39003016207,
+      39003014342,
+      39003013583,
+      39003013551,
+      39003013546,
+      39002997772,
+      39002997771,
+      39002997770,
+      39002995201,
+      39002987605,
+      39002987601,
+      39002987592,
+      39002983799,
+      39001574113,
+      39001574069,
+      39001574067,
+      39001553476,
+      39001434116,
+      39001434114,
+      39001434102,
+      39001357244,
+      39001357218,
+      39001357216,
+      39001338225,
+      39001338159,
+      39001338146,
+      39001223067,
+      39001223035,
+      39001204585,
+      39001204456,
+      39001204442,
+      39001201749,
+      39001199673,
+      39001196976,
+      39001196523,
+      39001196450,
+      39001196439,
+      39001194763,
+      39001107849,
+      39001107719,
+      39001107718,
+      39001104443,
+      39001063847,
+      39001063823,
+      39001063787,
+      39001041308,
+      39001041235,
+      39001041087,
+      39001036430,
+      39001036183,
+      39001036133,
+      39001036110,
+      39001013883,
+      39001013732,
+      39001013686,
+      39000996623,
+      39000996605,
+      39000996602,
+      39000992286,
+      39000992144,
+      39000992078,
+      39000965305,
+      39000965276,
+      39000963583,
+      39000961101,
+      39000959752,
+      39000959727,
+      39000959724,
+      39000958987,
+      39000956028,
+      39000954388,
+      39000954381,
+      39000952868,
+      39000950613,
+      39000896486,
+      39000896468,
+      39000878922,
+      39000703306,
+      39000701281,
+      39000665980,
+      39000611730,
+      39000059942,
+      38999932752,
+      38999794597,
+      38999701888,
+      38999701842,
+      38999701841,
+      38999652508,
+      38999652504,
+      38999649999,
+      38999647057,
+      38999621233,
+      38999621219,
+      38999619696,
+      38999612796,
+      38999612786,
+      38999600867,
+      38999600770,
+      38999598124,
+      38999591385,
+      38999591342,
+      38999577904,
+      38999577842,
+      38999514009,
+      38999514005,
+      38999508010,
+      38999498023,
+      38999495426,
+      38999493220,
+      38999471788,
+      38999463710,
+      38999452862,
+      38999409134,
+      38999373689,
+      38999355711,
+      38999337162,
+      38997876703,
+      38997876594,
+      38997832615,
+      38997832572,
+      38997823365,
+      38997690779,
+      38997690700,
+      38997603653,
+      38997603648,
+      38997600043,
+      38997600001,
+      38997498654,
+      38997498526,
+      38997481054,
+      38997480747,
+      38997345669,
+      38997201170,
+      38996836363,
+      38996836345,
+      38996777084,
+      38996776935,
+      38996761880,
+      38996751614,
+      38996738253,
+      38996647674,
+      38996588268,
+      38995485443,
+      38995255350,
+      38995239302,
+      38995239288,
+      38995170544,
+      38995170363,
+      38995166672,
+      38995153785,
+      38995153775,
+      38995150336,
+      38995146030,
+      38995145919,
+      38995144310,
+      38995138091,
+      38995138051,
+      38995134824,
+      38995119991,
+      38995119958,
+      38995116992,
+      38995015511,
+      38995015491,
+      38995012391,
+      38994883142,
+      38994883042,
+      38994860455,
+      38994256148,
+      38994256140,
+      38994190128,
+      38994190120,
+      38994186677,
+      38994186628,
+      38994160058,
+      38994132739,
+      38994004639,
+      38994004566,
+      38993852474,
+      38993262783,
+      38993262667,
+      38993206380,
+      38993206316,
+      38993167007,
+      38992142315,
+      38992142256,
+      38992101593,
+      38992101571,
+      38992099266,
+      38992029186,
+      38992029174,
+      38992025681,
+      38991914998,
+      38991914981,
+      38991911626,
+      38989801599,
+      38989801552,
+      38989759513,
+      38989759501,
+      38989755366,
+      38988946619,
+      38988946596,
+      38988882283,
+      38988882268,
+      38988877789,
+      38988718745,
+      38988718694,
+      38988657677,
+      38988657634,
+      38988639376,
+      38939317313,
+      38939317187,
+      38939221638,
+      38939221596,
+      38939178242,
+      38938858222,
+      38938814359,
+      38938648335,
+      38938602394,
+      38933118177,
+      38932991854,
+      38889196925,
+      38889128519
+    ],
+    "current_conclusions": {
+      "success": 798,
+      "cancelled": 51
+    },
+    "current_events": {
+      "schedule": 60,
+      "push": 431,
+      "pull_request": 354,
+      "workflow_dispatch": 4
+    },
+    "new_count": 42,
+    "new_conclusions": {
+      "success": 32,
+      "cancelled": 10
+    },
+    "new_events": {
+      "schedule": 4,
+      "push": 17,
+      "pull_request": 21
+    },
+    "new_job_total": 103,
+    "new_job_conclusions": {
+      "success": 73,
+      "skipped": 3,
+      "cancelled": 26,
+      "failure": 1
+    },
+    "new_runs": [
+      {
+        "id": 43222080700,
+        "name": "Verify accepted life-science knowledge continuity",
+        "path": ".github/workflows/life-science-continuity.yml",
+        "event": "schedule",
+        "run_attempt": 1,
+        "head_sha": "4bc0ad701f2a9f7ebae4e4aecf1d7aa7e867334d",
+        "created_at_utc": "2026-11-12T12:53:31Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131195836989,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43222080700"
+      },
+      {
+        "id": 43214237391,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "4bc0ad701f2a9f7ebae4e4aecf1d7aa7e867334d",
+        "created_at_utc": "2026-11-12T12:01:57Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131169277601,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43214237391"
+      },
+      {
+        "id": 43214237175,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "4bc0ad701f2a9f7ebae4e4aecf1d7aa7e867334d",
+        "created_at_utc": "2026-11-12T12:01:56Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131169277867,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131169278263,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131169278298,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131169278327,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131169504454,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43214237175"
+      },
+      {
+        "id": 43214236784,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "4bc0ad701f2a9f7ebae4e4aecf1d7aa7e867334d",
+        "created_at_utc": "2026-11-12T12:01:56Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131169276509,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 131169278364,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43214236784"
+      },
+      {
+        "id": 43214060796,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "aa10365f8a0da805589131914b0acd9fc89a5250",
+        "created_at_utc": "2026-11-12T12:00:47Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131168686663,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131168687168,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131168687194,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131168687364,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131168921869,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43214060796"
+      },
+      {
+        "id": 43214060577,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "aa10365f8a0da805589131914b0acd9fc89a5250",
+        "created_at_utc": "2026-11-12T12:00:47Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131168685578,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43214060577"
+      },
+      {
+        "id": 43214060474,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "aa10365f8a0da805589131914b0acd9fc89a5250",
+        "created_at_utc": "2026-11-12T12:00:47Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131168686508,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 131168686624,
+            "name": "pinned-field",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43214060474"
+      },
+      {
+        "id": 43214041368,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "aa10365f8a0da805589131914b0acd9fc89a5250",
+        "created_at_utc": "2026-11-12T12:00:40Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131168624955,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43214041368"
+      },
+      {
+        "id": 43213412423,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "e24f60321092627d4aaae1ed69a9d2e6faf32367",
+        "created_at_utc": "2026-11-12T11:56:13Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131166483068,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43213412423"
+      },
+      {
+        "id": 43213412395,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "e24f60321092627d4aaae1ed69a9d2e6faf32367",
+        "created_at_utc": "2026-11-12T11:56:13Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131166489267,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131166489631,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131166489687,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131166489709,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131166740237,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43213412395"
+      },
+      {
+        "id": 43213407593,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "668c1cb59d3dd8a36635684f253488dc02dd69ea",
+        "created_at_utc": "2026-11-12T11:56:11Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131166466445,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43213407593"
+      },
+      {
+        "id": 43213407530,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "668c1cb59d3dd8a36635684f253488dc02dd69ea",
+        "created_at_utc": "2026-11-12T11:56:11Z",
+        "conclusion": "cancelled",
+        "jobs": [
+          {
+            "id": 131166466627,
+            "name": "Knowledge Workflow",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131166467083,
+            "name": "Repository contracts",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131166467103,
+            "name": "Evidence Tool",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131166467240,
+            "name": "Portable package",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131166488933,
+            "name": "validate",
+            "conclusion": "cancelled"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43213407530"
+      },
+      {
+        "id": 43212135321,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "1f040b92d3b177c481d4f6ebb964bc921de9f383",
+        "created_at_utc": "2026-11-12T11:47:17Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131162159151,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43212135321"
+      },
+      {
+        "id": 43212135231,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "1f040b92d3b177c481d4f6ebb964bc921de9f383",
+        "created_at_utc": "2026-11-12T11:47:17Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131162159004,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131162159373,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131162159608,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131162159631,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131162421124,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43212135231"
+      },
+      {
+        "id": 43212135222,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "1f040b92d3b177c481d4f6ebb964bc921de9f383",
+        "created_at_utc": "2026-11-12T11:47:17Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131162158807,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 131162160738,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43212135222"
+      },
+      {
+        "id": 43211178835,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "31fc564d171e8c586f81317fed30726b48ce5e0c",
+        "created_at_utc": "2026-11-12T11:40:33Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158881424,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158881710,
+            "name": "pinned-field",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43211178835"
+      },
+      {
+        "id": 43211178718,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "31fc564d171e8c586f81317fed30726b48ce5e0c",
+        "created_at_utc": "2026-11-12T11:40:33Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158881103,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158881345,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158881489,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158881521,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131159111445,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43211178718"
+      },
+      {
+        "id": 43211178643,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "31fc564d171e8c586f81317fed30726b48ce5e0c",
+        "created_at_utc": "2026-11-12T11:40:33Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158880868,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43211178643"
+      },
+      {
+        "id": 43210983531,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "31fc564d171e8c586f81317fed30726b48ce5e0c",
+        "created_at_utc": "2026-11-12T11:39:10Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158213526,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210983531"
+      },
+      {
+        "id": 43210940107,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "76a08707b4bf9f8a9841e5f16c546639b6d2846f",
+        "created_at_utc": "2026-11-12T11:38:51Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158096728,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158096877,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158096935,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158097096,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158334763,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210940107"
+      },
+      {
+        "id": 43210940033,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "76a08707b4bf9f8a9841e5f16c546639b6d2846f",
+        "created_at_utc": "2026-11-12T11:38:51Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158171048,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 131158171576,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210940033"
+      },
+      {
+        "id": 43210940013,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "76a08707b4bf9f8a9841e5f16c546639b6d2846f",
+        "created_at_utc": "2026-11-12T11:38:51Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158059389,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210940013"
+      },
+      {
+        "id": 43210932734,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "76a08707b4bf9f8a9841e5f16c546639b6d2846f",
+        "created_at_utc": "2026-11-12T11:38:47Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131158032935,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210932734"
+      },
+      {
+        "id": 43210925792,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "944bad7824fdcc1af634c8398ee29c770bc45c25",
+        "created_at_utc": "2026-11-12T11:38:44Z",
+        "conclusion": "cancelled",
+        "jobs": [
+          {
+            "id": 131158019596,
+            "name": "Knowledge Workflow",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131158019943,
+            "name": "Evidence Tool",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131158020003,
+            "name": "Portable package",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131158020186,
+            "name": "Repository contracts",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131158096749,
+            "name": "validate",
+            "conclusion": "cancelled"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210925792"
+      },
+      {
+        "id": 43210854941,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "4e177dedc95ac78131d40d0f2508748551ad465a",
+        "created_at_utc": "2026-11-12T11:38:13Z",
+        "conclusion": "cancelled",
+        "jobs": [
+          {
+            "id": 131157764631,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131157765073,
+            "name": "Repository contracts",
+            "conclusion": "failure"
+          },
+          {
+            "id": 131157765110,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131157765168,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131157966340,
+            "name": "validate",
+            "conclusion": "cancelled"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210854941"
+      },
+      {
+        "id": 43208446748,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "bd7edfe64911c0147075b69c180088895e1c29d9",
+        "created_at_utc": "2026-11-12T11:21:28Z",
+        "conclusion": "cancelled",
+        "jobs": [],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43208446748"
+      },
+      {
+        "id": 43208433892,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "7aa5acd21462b6fc9c80f523c009399ef04c2fe4",
+        "created_at_utc": "2026-11-12T11:21:22Z",
+        "conclusion": "cancelled",
+        "jobs": [],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43208433892"
+      },
+      {
+        "id": 43208429918,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "ae97c81b8a0949049bdc54feb87c348c4ceb6194",
+        "created_at_utc": "2026-11-12T11:21:21Z",
+        "conclusion": "cancelled",
+        "jobs": [],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43208429918"
+      },
+      {
+        "id": 43208416429,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "adbd8c408964e8580d91865e8768d73341fbb5ed",
+        "created_at_utc": "2026-11-12T11:21:15Z",
+        "conclusion": "cancelled",
+        "jobs": [
+          {
+            "id": 131149389500,
+            "name": "Portable package",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131149389950,
+            "name": "Knowledge Workflow",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131149389954,
+            "name": "Repository contracts",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131149390050,
+            "name": "Evidence Tool",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131149560948,
+            "name": "validate",
+            "conclusion": "cancelled"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43208416429"
+      },
+      {
+        "id": 43207462784,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "09f91069a2775504e35b79d63337073ba2711d83",
+        "created_at_utc": "2026-11-12T11:14:44Z",
+        "conclusion": "cancelled",
+        "jobs": [
+          {
+            "id": 131146152328,
+            "name": "Portable package",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131146152713,
+            "name": "Knowledge Workflow",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131146152717,
+            "name": "Repository contracts",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131146152802,
+            "name": "Evidence Tool",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131146291805,
+            "name": "validate",
+            "conclusion": "cancelled"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43207462784"
+      },
+      {
+        "id": 43207046232,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "5d72ca395e1c710b5fd95bac063fb1e5a3a459f5",
+        "created_at_utc": "2026-11-12T11:11:54Z",
+        "conclusion": "cancelled",
+        "jobs": [],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43207046232"
+      },
+      {
+        "id": 43207039276,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "947818f04c8ea1f3fd3abbac41d149fe25fb5f83",
+        "created_at_utc": "2026-11-12T11:11:51Z",
+        "conclusion": "cancelled",
+        "jobs": [
+          {
+            "id": 131144723582,
+            "name": "Evidence Tool",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131144723925,
+            "name": "Knowledge Workflow",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131144724059,
+            "name": "Portable package",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131144724111,
+            "name": "Repository contracts",
+            "conclusion": "cancelled"
+          },
+          {
+            "id": 131144768732,
+            "name": "validate",
+            "conclusion": "cancelled"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43207039276"
+      },
+      {
+        "id": 43186230480,
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "event": "schedule",
+        "run_attempt": 1,
+        "head_sha": "ae87d9442b75495b96df6999cbbc554185207a93",
+        "created_at_utc": "2026-11-12T08:50:19Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 131073955197,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          },
+          {
+            "id": 131073955910,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43186230480"
+      },
+      {
+        "id": 43016063251,
+        "name": "Verify accepted life-science knowledge continuity",
+        "path": ".github/workflows/life-science-continuity.yml",
+        "event": "schedule",
+        "run_attempt": 1,
+        "head_sha": "ae87d9442b75495b96df6999cbbc554185207a93",
+        "created_at_utc": "2026-11-11T11:56:21Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 130507313447,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43016063251"
+      },
+      {
+        "id": 42986640895,
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "event": "schedule",
+        "run_attempt": 1,
+        "head_sha": "ae87d9442b75495b96df6999cbbc554185207a93",
+        "created_at_utc": "2026-11-11T08:23:24Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 130409281438,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          },
+          {
+            "id": 130409281672,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42986640895"
+      },
+      {
+        "id": 42839729344,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "ae87d9442b75495b96df6999cbbc554185207a93",
+        "created_at_utc": "2026-11-10T14:59:35Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129911422967,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42839729344"
+      },
+      {
+        "id": 42839729331,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "ae87d9442b75495b96df6999cbbc554185207a93",
+        "created_at_utc": "2026-11-10T14:59:35Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129911423376,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 129911423406,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 129911423516,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 129911423538,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 129911684993,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42839729331"
+      },
+      {
+        "id": 42839729320,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "ae87d9442b75495b96df6999cbbc554185207a93",
+        "created_at_utc": "2026-11-10T14:59:35Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129911423164,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 129911425923,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42839729320"
+      },
+      {
+        "id": 42839465993,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "69c3119c837805a2d469fee86e8b08a6f97f18ef",
+        "created_at_utc": "2026-11-10T14:58:01Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129910478157,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42839465993"
+      },
+      {
+        "id": 42839465597,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "69c3119c837805a2d469fee86e8b08a6f97f18ef",
+        "created_at_utc": "2026-11-10T14:58:01Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129910478737,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 129910479039,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42839465597"
+      },
+      {
+        "id": 42839465594,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "run_attempt": 1,
+        "head_sha": "69c3119c837805a2d469fee86e8b08a6f97f18ef",
+        "created_at_utc": "2026-11-10T14:58:01Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129910478564,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 129910478738,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 129910478836,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 129910479316,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 129910756606,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42839465594"
+      },
+      {
+        "id": 42839455719,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "run_attempt": 1,
+        "head_sha": "69c3119c837805a2d469fee86e8b08a6f97f18ef",
+        "created_at_utc": "2026-11-10T14:57:57Z",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 129910440989,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ],
+        "url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/42839455719"
+      }
+    ]
+  },
+  "schedule": {
+    "basis": "UTC cron vs GitHub Run created_at only; dispatch, queue and runner latency causes not established",
+    "new_runs": [
+      {
+        "id": 42986640895,
+        "workflow": ".github/workflows/life-science-daily-selfcheck.yml",
+        "day_shanghai": "2026-11-11",
+        "nominal_utc": "2026-11-11T01:41:00Z",
+        "created_utc": "2026-11-11T08:23:24Z",
+        "offset_seconds": 24144,
+        "jobs": [
+          {
+            "id": 130409281438,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          },
+          {
+            "id": 130409281672,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43016063251,
+        "workflow": ".github/workflows/life-science-continuity.yml",
+        "day_shanghai": "2026-11-11",
+        "nominal_utc": "2026-11-11T04:17:00Z",
+        "created_utc": "2026-11-11T11:56:21Z",
+        "offset_seconds": 27561,
+        "jobs": [
+          {
+            "id": 130507313447,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43186230480,
+        "workflow": ".github/workflows/life-science-daily-selfcheck.yml",
+        "day_shanghai": "2026-11-12",
+        "nominal_utc": "2026-11-12T01:41:00Z",
+        "created_utc": "2026-11-12T08:50:19Z",
+        "offset_seconds": 25759,
+        "jobs": [
+          {
+            "id": 131073955197,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          },
+          {
+            "id": 131073955910,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43222080700,
+        "workflow": ".github/workflows/life-science-continuity.yml",
+        "day_shanghai": "2026-11-12",
+        "nominal_utc": "2026-11-12T04:17:00Z",
+        "created_utc": "2026-11-12T12:53:31Z",
+        "offset_seconds": 30991,
+        "jobs": [
+          {
+            "id": 131195836989,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ],
+    "offset_cause": "UNKNOWN",
+    "daily_selfcheck_cron": "41 1 * * *",
+    "continuity_cron": "17 4 * * *",
+    "knowledge_cron": "23 3 * * 1",
+    "bio_cron": "19 2 * * 5"
+  },
+  "accepted_state": {
+    "receipts": 5,
+    "events": 5,
+    "archives": 4,
+    "last_execution_id": "gh-42611716908-1",
+    "last_logical_date": "2026-11-09",
+    "last_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "last_outcome": "APPLIED",
+    "new_accepted_writes": 0,
+    "selected_documents": 15,
+    "sources": 4,
+    "topics": 3,
+    "entities": 17,
+    "source_match_relations": 26,
+    "knowledge_digest": "089b328725bca57fb91500ed3eeafe2d38878a6a16bf9a70fe73cd16db3a8750",
+    "latest_continuity_run_id": 43222080700,
+    "latest_continuity_status": "state is valid / knowledge provenance verified / KNOWLEDGE_QUALITY_PASS",
+    "last_daily_selfcheck_run_id": 43186230480,
+    "latest_project_custom_checks_passed": 11,
+    "institutional_mode": "PUBLIC_HTTP_READ_ONLY",
+    "new_scientific_conclusions_verified": 0
+  },
+  "negative_evidence": {
+    "cancelled_run_with_failed_job": 43210854941,
+    "failed_job": "Repository contracts",
+    "failure_reconstruction": "Four file-governance tests rejected unclassified RELEASE_POLICY.md on an intermediate PR head",
+    "aggregate_run_conclusion": "cancelled",
+    "job_conclusion": "failure",
+    "final_repair_pr": 74,
+    "final_repair_main_sha": "4bc0ad701f2a9f7ebae4e4aecf1d7aa7e867334d",
+    "earlier_failed_runs_404": "Retained in older dated correction ledgers; cause UNKNOWN",
+    "cancelled_run_causes": "UNKNOWN",
+    "node_warnings": "Node.js 20 deprecation / Node.js 24 forced on hosted runner; nonfatal on checked success Jobs",
+    "institutional_external_attestation": "NOT_PERFORMED"
+  },
+  "disposition": {
+    "status": "ADDITIVE_EVIDENCE_AND_OFFLINE_TEST_REVIEW_ONLY",
+    "changes_permitted": [
+      "docs/provenance/",
+      "docs/lessons/",
+      "tests/",
+      "evidence/profiles/docs.json"
+    ],
+    "changed_native_workflows": false,
+    "changed_three_assets": false,
+    "changed_framework": false,
+    "changed_accepted_data": false,
+    "created_release_or_doi": false,
+    "changed_external_providers": false,
+    "promoted_scientific_claim": false
+  },
+  "source_urls": [
+    "https://github.com/lostlight530/life-science-ecosystem-lab/commit/4bc0ad701f2a9f7ebae4e4aecf1d7aa7e867334d",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/pull/72",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/pull/73",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/pull/74",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43210854941",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43186230480",
+    "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43222080700"
+  ]
+}
