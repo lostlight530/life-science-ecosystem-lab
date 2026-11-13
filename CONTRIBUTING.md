@@ -33,6 +33,12 @@ These tests are synthetic software-contract evidence, **not** biological or inst
 
 The required validation workflow is actor-neutral. Do not add contributor-specific bypasses, blanket `continue-on-error`, or external registry/network calls as merge prerequisites. Its independent domains all run before the aggregate verdict, so address every failed domain reported by the same run rather than relying on an earlier failure to hide later checks
 
+### 中文贡献与引用核对 / Bilingual evidence and version review
+
+涉及长期数据或软件版本的 PR 应给出资产范围、准确修订号、实际测试与退出状态、原始／派生证据、引用版本及未测范围；不要把一次模型输出当作独立复现，不要公开私人或个人级生物医学资料；README 修改不授权更改已经接受的 `data/` 和旧 Actions 结果
+
+Contributions affecting longitudinal evidence or releases must identify asset scope, exact revision, actual test/exit state, raw versus derived evidence, cited version and untested limits. Model output is not independent reproduction; do not publish private or person-level biomedical information. README edits do not authorize modifying accepted `data/` or historical runs
+
 ## Review boundaries
 
 - PR tests and static inspection cannot establish biological truth, full external standards certification, publication or registry acceptance

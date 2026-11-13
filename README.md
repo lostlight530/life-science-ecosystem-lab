@@ -73,6 +73,16 @@ Run from the cloned **repository root** with Python 3.11+. The CWL replay is off
 
 `CITATION.cff` remains on the v0.4.0 three-asset citation target; it is not silently rewritten to the broader v0.5.0 repository archive. The two version DOIs identify different immutable scopes, while the current `main` branch remains an evolving repository state.
 
+### 软件版本与长期数据 / Software citation and longitudinal provenance
+
+**中文**：本仓的 Knowledge Workflow、Evidence Tool、Bio Tool 三项独立资产与实验性 Framework 不应混为一个能力对象；`CITATION.cff` 的 0.4.0 与 version DOI `10.5281/zenodo.23447089` 是三资产基线；GitHub `v0.5.0` 与 version DOI `10.5281/zenodo.23839899` 包含后续实验性 Framework；concept DOI `10.5281/zenodo.23447088` 是软件家族；包版本、Framework 版本和 Release 版本有独立生命周期，不能为统一展示而擅自修改
+
+**English**: The three established assets and experimental Framework have separate scopes. CFF 0.4.0 and version DOI `10.5281/zenodo.23447089` name the three-asset baseline; GitHub v0.5.0 and version DOI `10.5281/zenodo.23839899` identify the later repository archive containing the Framework; concept DOI `10.5281/zenodo.23447088` names the software family. Package, Framework and release versions have independent clocks
+
+**中文数据边界**：阶段展示必须区分冻结 Git 快照、main 当前提交、Actions 可见运行数、聚合 observation 和 `data/` 已接受状态；保留各自的时间截止点和原始分母，不把历史统计写成当前实时值
+
+**English data boundary**: Stage displays keep frozen Git snapshots, current main, Actions-visible run counts, aggregated observations and accepted `data/` states separate, each with its own cutoff and denominator; historical counts are not live figures
+
 ## How the repository is organized
 
 ```text

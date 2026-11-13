@@ -2,6 +2,10 @@
 
 This repository has **three established independently callable research software assets** and an independent experimental [software-engineering Framework](framework/README.md) at repository root: native knowledge Workflow under `.github/`, the independent `ls-evidence` Tool under `evidence/`, and the independent `ls-bio` protein data-processing tool under `bio_tool/`. The separate Framework is not an Agent runtime and has no mandatory dependency on these three assets. No agent framework, skill, model account, API key, or external scheduler is necessary to run any of them.
 
+**中文 Agent 责任边界**：Agent 可提出代码与科研建议，但不能自行批准新来源、提交生产状态或认证外部科研结果；Knowledge、Evidence、Bio 和实验性 Framework 独立拥有执行合同；当前可接受状态来自 `data/` 的来源版本和回执，不应从历史页面或模型叙述推断
+
+**English authority boundary:** Agent proposals do not grant registry admission, production writes or scientific certification. Asset contracts and accepted `data/` receipts own actual state; historical dashboard counts do not substitute for current source revisions
+
 Before assuming a current repository state from old reports, consult the [source-pinned full-history classification and correction register](docs/taxonomy/README.md), then distinguish the [dated full Git/PR/Actions provenance census](docs/provenance/README.md) and [origin-to-present reconstruction](docs/REPOSITORY_HISTORY_AND_PROVENANCE.md) from **current remote main** and accepted `data/`. [Open claims](docs/CLAIM_VERIFICATION_GAPS.md) retain unmerged changes, failed/cancelled runs, predecessor uncertainties and institutional status limits. Historical snapshot documents have **no** execution, registry, approval or production-write authority.
 
 Before working, read [Architecture](docs/ARCHITECTURE.md), [Agent collaboration](docs/AGENT_COLLABORATION.md), and [Verification boundaries](docs/VERIFYING_RESULTS.md). For durable accepted state, `data/` and its Git commit/receipts are authoritative, not an Agent answer or temporary workspace. The current native topic IDs, aliases, thresholds and approved sources belong exclusively to `evidence/profiles/topics.json` and `evidence/profiles/sources.json`.
