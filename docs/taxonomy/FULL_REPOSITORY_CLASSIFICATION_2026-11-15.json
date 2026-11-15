@@ -4,13 +4,13 @@
   "repository": "lostlight530/life-science-ecosystem-lab",
   "review_day_asia_shanghai": "2026-11-15",
   "source_main_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
-  "source_tree_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+  "source_tree_sha": null,
   "source_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
   "prior_register": "docs/taxonomy/full-repository-disposition-2026-11-07.json",
   "scope": {
     "tracked_files": 331,
     "category_counts": {
-      "BUILD_AND_REPOSITORY_CONFIG": 6,
+      "BUILD_AND_REPOSITORY_CONFIG": 4,
       "REPOSITORY_GOVERNANCE": 4,
       "KNOWLEDGE_WORKFLOW": 19,
       "AGENT_PROPOSAL_AND_REVIEW": 10,
@@ -20,7 +20,7 @@
       "EXTERNAL_INTEROPERABILITY_AND_IDENTITY": 11,
       "OFFICIAL_REFERENCE_OBSERVATION": 2,
       "PROJECT_CUSTOM_CHECKS": 3,
-      "ACCEPTED_PRODUCTION_STATE": 20,
+      "ACCEPTED_PRODUCTION_STATE": 22,
       "EXPERIMENTAL_FRAMEWORK": 18,
       "SCIENTIFIC_FIELD_CASE": 9,
       "HISTORICAL_PROVENANCE": 68,
@@ -738,7 +738,7 @@
       "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "bytes": 1,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "STRUCTURAL_PLACEHOLDER_NOT_ACCEPTED_RESULT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -747,7 +747,7 @@
       "git_blob_sha": "f7980f9498bdd99a3658d991eb7af497d8adfcc7",
       "bytes": 61496,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "ACCEPTED_ARCHIVED_INPUT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -756,7 +756,7 @@
       "git_blob_sha": "1061ca785ff24318a6f7b515bb2a51dc20195b29",
       "bytes": 61601,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "ACCEPTED_ARCHIVED_INPUT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -764,8 +764,8 @@
       "path": "data/inputs/archive/2026/11/1600ff5eb782121f-787471b78dfe37c2-e0541fe47179.json",
       "git_blob_sha": "56470445c99378c2b3108f71961a1b5d86f8c0ce",
       "bytes": 61496,
-      "category": "BUILD_AND_REPOSITORY_CONFIG",
-      "role": "Repository configuration or support artifact",
+      "category": "ACCEPTED_PRODUCTION_STATE",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -774,7 +774,7 @@
       "git_blob_sha": "3f162bb9ac9f286351d7cdbb09130727da504846",
       "bytes": 61496,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "ACCEPTED_ARCHIVED_INPUT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -783,7 +783,7 @@
       "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "bytes": 1,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "STRUCTURAL_PLACEHOLDER_NOT_ACCEPTED_RESULT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -792,7 +792,7 @@
       "git_blob_sha": "33b18ea4d08702b534ec91bcb0af2d6204adcea5",
       "bytes": 61496,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "CURRENT_ACCEPTED_GIT_STATE",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -801,7 +801,7 @@
       "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "bytes": 1,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "STRUCTURAL_PLACEHOLDER_NOT_ACCEPTED_RESULT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -810,7 +810,7 @@
       "git_blob_sha": "3d437d021a905cb09d34dd2793131582f9df1d15",
       "bytes": 33003,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "CURRENT_ACCEPTED_GIT_STATE",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -819,7 +819,7 @@
       "git_blob_sha": "8feb548993362b7ded5e3e5f3f2e616ed751d857",
       "bytes": 10768,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "CURRENT_ACCEPTED_GIT_STATE",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -828,7 +828,7 @@
       "git_blob_sha": "d916bcba6352691741156403379df50465fb8e83",
       "bytes": 2186,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "ACCEPTED_APPEND_ONLY_EVENT_LEDGER",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -837,7 +837,7 @@
       "git_blob_sha": "1bc9a52b6bb641d4803bacedbf0cdf5dbe014dc9",
       "bytes": 347,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "CURRENT_ACCEPTED_GIT_STATE",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -846,7 +846,7 @@
       "git_blob_sha": "68a08784a932be2b350477569ff9d1aae0d4b365",
       "bytes": 9718,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "CURRENT_ACCEPTED_GIT_STATE",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -855,7 +855,7 @@
       "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "bytes": 1,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "STRUCTURAL_PLACEHOLDER_NOT_ACCEPTED_RESULT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -864,7 +864,7 @@
       "git_blob_sha": "13b13df7c8cd26a86e3c92abcc0b2ca2a1e60ab3",
       "bytes": 957,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "CURRENT_ACCEPTED_GIT_STATE",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -873,7 +873,7 @@
       "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "bytes": 1,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "STRUCTURAL_PLACEHOLDER_NOT_ACCEPTED_RESULT",
+      "role": "Execution-specific production acceptance receipt",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -882,7 +882,7 @@
       "git_blob_sha": "2f0a9edb075da5ff74f9b1fabc23631c2366105d",
       "bytes": 896,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "IMMUTABLE_ACCEPTED_EXECUTION_RECEIPT",
+      "role": "Execution-specific production acceptance receipt",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -891,7 +891,7 @@
       "git_blob_sha": "a542228cb4b2b5ee9c6c001f2b80a3b0a229897a",
       "bytes": 903,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "IMMUTABLE_ACCEPTED_EXECUTION_RECEIPT",
+      "role": "Execution-specific production acceptance receipt",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -900,7 +900,7 @@
       "git_blob_sha": "2b1367891e2f9c0e3cc9b68d39ff1fd2af4ab877",
       "bytes": 903,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "IMMUTABLE_ACCEPTED_EXECUTION_RECEIPT",
+      "role": "Execution-specific production acceptance receipt",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -909,7 +909,7 @@
       "git_blob_sha": "f99e6ac839c0e6b004ea8cfcd205a39ed33b5593",
       "bytes": 903,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "IMMUTABLE_ACCEPTED_EXECUTION_RECEIPT",
+      "role": "Execution-specific production acceptance receipt",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -917,8 +917,8 @@
       "path": "data/receipts/gh-42611716908-1.json",
       "git_blob_sha": "054b2f8421faf93bad38f6febe024f97cb439b98",
       "bytes": 903,
-      "category": "BUILD_AND_REPOSITORY_CONFIG",
-      "role": "Repository configuration or support artifact",
+      "category": "ACCEPTED_PRODUCTION_STATE",
+      "role": "Execution-specific production acceptance receipt",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -927,7 +927,7 @@
       "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "bytes": 1,
       "category": "ACCEPTED_PRODUCTION_STATE",
-      "role": "STRUCTURAL_PLACEHOLDER_NOT_ACCEPTED_RESULT",
+      "role": "Archived source Candidate/input; retained production provenance",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1161,7 +1161,7 @@
       "git_blob_sha": "84d65241d154ae763631a6b0a1d0065af222d4ae",
       "bytes": 11527,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1170,7 +1170,7 @@
       "git_blob_sha": "a278cc25baa1b17e1b6ab9cd8e8b5c4d8e946d26",
       "bytes": 5632,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1179,7 +1179,7 @@
       "git_blob_sha": "51c870a9feb7649aa8ad0384722fc6be124b4395",
       "bytes": 4397,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1188,7 +1188,7 @@
       "git_blob_sha": "ff4959c712ac54704db0017df2c9b7f542b3f5b5",
       "bytes": 3384,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1197,7 +1197,7 @@
       "git_blob_sha": "91cbdbc14f37e7a70cc1b7acec899db051fa78a7",
       "bytes": 2604,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1206,7 +1206,7 @@
       "git_blob_sha": "c34e7fa9f53f3e49545a5463262df93c255bd071",
       "bytes": 3299,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1215,7 +1215,7 @@
       "git_blob_sha": "ded8d17c00021ff2b41cbf16637830016138ee4d",
       "bytes": 4476,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1224,7 +1224,7 @@
       "git_blob_sha": "214b95572510b32cbf4cffda562056ae50c1869f",
       "bytes": 3548,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1233,7 +1233,7 @@
       "git_blob_sha": "a917b4133af40627923b26db63271eabfb99f0dc",
       "bytes": 3244,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1242,7 +1242,7 @@
       "git_blob_sha": "0e1cd66144e1cb2541d618e11fa71403f9b14b61",
       "bytes": 3125,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "PUBLIC_RESEARCH_DOCUMENTATION",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1251,7 +1251,7 @@
       "git_blob_sha": "8fea8a3c79ab78e1fd705491ba30f0a9949bed82",
       "bytes": 1922,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "PUBLIC_RESEARCH_DOCUMENTATION",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1260,7 +1260,7 @@
       "git_blob_sha": "736e2d9e74c423bd3c4f1bb43470a6a046f5cb2e",
       "bytes": 2449,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1269,7 +1269,7 @@
       "git_blob_sha": "410e2c1fccd914317af00e529bfe0f1aa6da6e56",
       "bytes": 1669,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1278,7 +1278,7 @@
       "git_blob_sha": "494878ffee49aaeb1a340589ab171b59cff01811",
       "bytes": 2119,
       "category": "PUBLIC_RESEARCH_LESSONS",
-      "role": "REVIEWED_PUBLIC_LESSON_NOT_SCIENCE",
+      "role": "Reviewed reusable method, failure mode or correction",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1323,7 +1323,7 @@
       "git_blob_sha": "df526e176a1e171208d4af7722fa587fec3016b3",
       "bytes": 10128,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1332,7 +1332,7 @@
       "git_blob_sha": "b313b9672b262e3e66f00197cdb9851025a78fc7",
       "bytes": 12230,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1341,7 +1341,7 @@
       "git_blob_sha": "2869191618a99f4c8fa61742fadd7c29d449a023",
       "bytes": 11231,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1350,7 +1350,7 @@
       "git_blob_sha": "67f1cb50ca1a3c89f2dc5e82980fead2468cfbe1",
       "bytes": 6965,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1359,7 +1359,7 @@
       "git_blob_sha": "d14f5362dd0902091953ee9a6353d9cf2b885322",
       "bytes": 8052,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1368,7 +1368,7 @@
       "git_blob_sha": "d1d104a7a4d1f78fbfc63064e4dab6e31cfd423e",
       "bytes": 8522,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1377,7 +1377,7 @@
       "git_blob_sha": "a0ede7b90dc9c47ae10680cec8d50bd02a115be4",
       "bytes": 8689,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1386,7 +1386,7 @@
       "git_blob_sha": "77b491eeff891bb30d13f77878a811ecc204f88a",
       "bytes": 9364,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1395,7 +1395,7 @@
       "git_blob_sha": "03c1c0220515e95c024a4607c078e3491ee298ce",
       "bytes": 3545,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1404,7 +1404,7 @@
       "git_blob_sha": "435fa008da6f17ed1fedae9dd17758d1ee92d6bf",
       "bytes": 6972,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1413,7 +1413,7 @@
       "git_blob_sha": "4b3533b76f388886adac9734adfd71036c374841",
       "bytes": 7201,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1422,7 +1422,7 @@
       "git_blob_sha": "56ed6b87d1b5458f34a9dd07161e4a63280467ea",
       "bytes": 6733,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1431,7 +1431,7 @@
       "git_blob_sha": "6e6299f2a68edaa50bdcd42188a656d52dfaad20",
       "bytes": 6065,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1440,7 +1440,7 @@
       "git_blob_sha": "bd005105946d3876de3584a19e7ea2c69a1a5767",
       "bytes": 6594,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1485,7 +1485,7 @@
       "git_blob_sha": "b421752cf4b4b129077956139ece7948b2f9466b",
       "bytes": 8004,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1494,7 +1494,7 @@
       "git_blob_sha": "d5d25bb4838c84b644742780d07981392ec2be05",
       "bytes": 7270,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1503,7 +1503,7 @@
       "git_blob_sha": "95e175b1b88e635d9e65a9255f4d212311d4be9d",
       "bytes": 10575,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1512,7 +1512,7 @@
       "git_blob_sha": "6d8f3cc7a8457456f55812c439c9d3aac10a19b7",
       "bytes": 29047,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "LIVING_INDEX_OF_DATE_PINNED_SOURCES",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1521,7 +1521,7 @@
       "git_blob_sha": "b1262da0523042f7fc3627d5c4301925aaade023",
       "bytes": 9154,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1530,7 +1530,7 @@
       "git_blob_sha": "0dcab357d92b0aeeb15479c20cc44baf2f9207d9",
       "bytes": 4363,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_SCOPED_HISTORICAL_INTERPRETATION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1539,7 +1539,7 @@
       "git_blob_sha": "a19726ead85d04240e4961d294cb77f92c7e61bc",
       "bytes": 5895,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1548,7 +1548,7 @@
       "git_blob_sha": "18bbb284df1eea4a2b881f878f3f0141760f03f4",
       "bytes": 294411,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1557,7 +1557,7 @@
       "git_blob_sha": "67b8ff863f325fc69c92c3fec15135a6f2914a0f",
       "bytes": 45116,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1566,7 +1566,7 @@
       "git_blob_sha": "760504958d7cef170acff62b0ccc1deae1081a90",
       "bytes": 123306,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1575,7 +1575,7 @@
       "git_blob_sha": "d5c174f318bf66b3987de009f77ba5b11099e6ff",
       "bytes": 9199,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1584,7 +1584,7 @@
       "git_blob_sha": "7dfee19f87d588cde2de947c0e9d79838013c372",
       "bytes": 243139,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1593,7 +1593,7 @@
       "git_blob_sha": "32743a28e83de3382beb67bc077ca894ec2a1b40",
       "bytes": 2930,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1602,7 +1602,7 @@
       "git_blob_sha": "0a2cb881b3484fd339bc1972ea449c324c7560a3",
       "bytes": 1923,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1611,7 +1611,7 @@
       "git_blob_sha": "780b9b84a67274db819ca723695f54143b136fcc",
       "bytes": 29510,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1620,7 +1620,7 @@
       "git_blob_sha": "f3c1b05088a0ef246671276551452555701795c1",
       "bytes": 1268,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1629,7 +1629,7 @@
       "git_blob_sha": "58bafba884edf2531e339f50be6522fe28033a1d",
       "bytes": 6926,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1638,7 +1638,7 @@
       "git_blob_sha": "d9d5566c47d234ebe669486402ef2dcc2c170989",
       "bytes": 8602,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1647,7 +1647,7 @@
       "git_blob_sha": "5e40baf0edc0f4d873678b2030a5745d822ac9ec",
       "bytes": 9196,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1656,7 +1656,7 @@
       "git_blob_sha": "3e69d5e16775746a50bbb33387f619a027b172bc",
       "bytes": 7258,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1665,7 +1665,7 @@
       "git_blob_sha": "66f22b1baa80233dac3e25374b56553f932e91da",
       "bytes": 8049,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1674,7 +1674,7 @@
       "git_blob_sha": "d2d4c58c920a5732d9cb135e8284c41d122e5bc7",
       "bytes": 6430,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1683,7 +1683,7 @@
       "git_blob_sha": "e9eacc75fcad4a9d51c9cb8c48d1ee811055b596",
       "bytes": 11995,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1692,7 +1692,7 @@
       "git_blob_sha": "47c8e8e8d2de72c17ace3608274d0a9f3232e30a",
       "bytes": 9507,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1701,7 +1701,7 @@
       "git_blob_sha": "c42d7b95a4aefe4d690aa70ab1489882ca2bf664",
       "bytes": 20038,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1710,7 +1710,7 @@
       "git_blob_sha": "99dfa528c686c8857b2633ba556ad4199deaa939",
       "bytes": 41397,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1719,7 +1719,7 @@
       "git_blob_sha": "a9f5656859fc0e4fae6f2e63c8526d870ed17b43",
       "bytes": 8649,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1764,7 +1764,7 @@
       "git_blob_sha": "cb604fd639e1ea19e4f2e3d8ba350a7cbe8ab2aa",
       "bytes": 9771,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1773,7 +1773,7 @@
       "git_blob_sha": "d00d3915067db04456a2aa4f1a575f4f24589774",
       "bytes": 13499,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1782,7 +1782,7 @@
       "git_blob_sha": "ff2d47828e53f8b0329c1fccb7abcd8216a9b4a6",
       "bytes": 9581,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1791,7 +1791,7 @@
       "git_blob_sha": "ceb1ffbdf3f6d206f86825b98ee7a2e758b8e7cd",
       "bytes": 24525,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1800,7 +1800,7 @@
       "git_blob_sha": "978f22fac45812080f5a6a1961194db0d2b197d7",
       "bytes": 131881,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1818,7 +1818,7 @@
       "git_blob_sha": "34bc62b1806e8fe451d677ed3ad31d22917e59cd",
       "bytes": 6077,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1827,7 +1827,7 @@
       "git_blob_sha": "cbebaaa1806a97476925f214a1e5310f1611ff5e",
       "bytes": 8133,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATE_PINNED_OBSERVATION_OR_CORRECTION",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1836,7 +1836,7 @@
       "git_blob_sha": "ee9501b9d2260db2385242c7c509298f0e373468",
       "bytes": 5161,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1845,7 +1845,7 @@
       "git_blob_sha": "a91db718df4d4f94e2ba8c5ac5d4b2d572d3e5e4",
       "bytes": 14632,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1854,7 +1854,7 @@
       "git_blob_sha": "c9479f41e5a376f6d889b8f2dbf6d115857794bf",
       "bytes": 98592,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1863,7 +1863,7 @@
       "git_blob_sha": "65f8e27fcdaddc34b944f1f68b53bc41836ee970",
       "bytes": 69925,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1872,7 +1872,7 @@
       "git_blob_sha": "979671882f7991da789646e570946420153cf0d7",
       "bytes": 202731,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1890,7 +1890,7 @@
       "git_blob_sha": "701bcc599ed8bb538c84b171fab5d2e5a72abe40",
       "bytes": 13577,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1899,7 +1899,7 @@
       "git_blob_sha": "fd086086c4096d0fc7acf0bedafc7ec29ef2b7fc",
       "bytes": 28274,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -1908,7 +1908,7 @@
       "git_blob_sha": "988484ace5b2b367f5ab1d24277ef606204cf1ec",
       "bytes": 4093,
       "category": "HISTORICAL_PROVENANCE",
-      "role": "DATED_NON_PRODUCTION_EVIDENCE",
+      "role": "Versioned source-pinned evidence or classification",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2520,7 +2520,7 @@
       "git_blob_sha": "1c409c0f075a60745cdfc95b098cb734dda3e8dc",
       "bytes": 3323,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "Independent offline verifier",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -2529,7 +2529,7 @@
       "git_blob_sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
       "bytes": 3,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2538,7 +2538,7 @@
       "git_blob_sha": "5b3afe6bafa06a7f2eff008f23cfdaffa9ba6fb8",
       "bytes": 29,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2547,7 +2547,7 @@
       "git_blob_sha": "7df56ba2e45763b441eb8ff29d0dad452412ca57",
       "bytes": 8828,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2556,7 +2556,7 @@
       "git_blob_sha": "1332bf85549d64c6c7d90b630700eb6ce65b456a",
       "bytes": 3819,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2565,7 +2565,7 @@
       "git_blob_sha": "128bea6cf5da639a9b423774df607ea7ee673827",
       "bytes": 6299,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2574,7 +2574,7 @@
       "git_blob_sha": "8bf0cd298f6858862ccbf47b18be689036842255",
       "bytes": 5378,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2583,7 +2583,7 @@
       "git_blob_sha": "1cacef02d07049701793228418804739390033e5",
       "bytes": 2105,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2592,7 +2592,7 @@
       "git_blob_sha": "f7d0f3493d807093a7b67a3a15ec74bc13e791ea",
       "bytes": 1498,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2601,7 +2601,7 @@
       "git_blob_sha": "1f3c075bed5cf2274ecf93ed7ddb4accf4d95204",
       "bytes": 1841,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2610,7 +2610,7 @@
       "git_blob_sha": "16e5b84dd592cbc03871ae6b3a7e6184468db76a",
       "bytes": 4663,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2619,7 +2619,7 @@
       "git_blob_sha": "b145dfb60a9ede8592190f2b7deff246a41a5b0e",
       "bytes": 5681,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2628,7 +2628,7 @@
       "git_blob_sha": "0822bff1a4af4e69aa2f7195bcda03fb7242bed4",
       "bytes": 12072,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2637,7 +2637,7 @@
       "git_blob_sha": "c1d90189c8633edbc8845c0abecd7a8a2e1b8e0d",
       "bytes": 7720,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2646,7 +2646,7 @@
       "git_blob_sha": "e47a2bb4742d2e2bf771bda93bdb96ee5596742b",
       "bytes": 12768,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2655,7 +2655,7 @@
       "git_blob_sha": "8abd70358b547201dd8298db7cff63bcc97e4e2e",
       "bytes": 9506,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "Independent offline verifier",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -2664,7 +2664,7 @@
       "git_blob_sha": "42f3963b11e0d5f43846483bfb43ec55df02ab26",
       "bytes": 3382,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2673,7 +2673,7 @@
       "git_blob_sha": "68e9bf8ce972ffffbefff858e6843958b67c338b",
       "bytes": 2828,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2682,7 +2682,7 @@
       "git_blob_sha": "cc1cdf9765ab597e9b755c1ac3bae6ab129f73b1",
       "bytes": 844,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2691,7 +2691,7 @@
       "git_blob_sha": "cb391ccd159ca8a09020a55b39e5c0e71ca24cb8",
       "bytes": 3473,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2700,7 +2700,7 @@
       "git_blob_sha": "692a8f2f5f148b0bfd3971242ddcf8b2226235b7",
       "bytes": 1172,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2709,7 +2709,7 @@
       "git_blob_sha": "64f476616cef41c07cf4a6d0ac4700be91737ebc",
       "bytes": 6190,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2718,7 +2718,7 @@
       "git_blob_sha": "f283ee82260f560be17e527e3a49b0394d8224f0",
       "bytes": 3247,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2727,7 +2727,7 @@
       "git_blob_sha": "921c06e3ed5aa29051d5cfe6308c348c65d30e8a",
       "bytes": 5288,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2736,7 +2736,7 @@
       "git_blob_sha": "77319ca42178276aaa7bb62b46a533cd3697bc3f",
       "bytes": 2591,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2745,7 +2745,7 @@
       "git_blob_sha": "e55838c992ed7d8dfd4b3dd9b5f7f2ff85537ada",
       "bytes": 2929,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2754,7 +2754,7 @@
       "git_blob_sha": "0157c976a6fe84be3908ed9c5f2bff511eba2554",
       "bytes": 7202,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2763,7 +2763,7 @@
       "git_blob_sha": "8cd9a19c252194765c7e826c47c339531c60ac0b",
       "bytes": 4247,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2772,7 +2772,7 @@
       "git_blob_sha": "3cfed79222b466a6bd7e18378eab2bacf074962f",
       "bytes": 6013,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2781,7 +2781,7 @@
       "git_blob_sha": "87b17c7acdbbd75c9b1b401f05f10333cafa9ec1",
       "bytes": 7436,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2790,7 +2790,7 @@
       "git_blob_sha": "88bb4c5fb1512e58bec713e888efe5bda36e7e8c",
       "bytes": 7918,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2799,7 +2799,7 @@
       "git_blob_sha": "07e6e0f96f5fff4c089ebecb1499c4549eb7369e",
       "bytes": 6425,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2808,7 +2808,7 @@
       "git_blob_sha": "9c568886f1a21e7622b4e8f7d2763d093dfd395f",
       "bytes": 6518,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2817,7 +2817,7 @@
       "git_blob_sha": "5ac73f85679f9a7f0230dcab632c7885c1f98b98",
       "bytes": 4536,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2826,7 +2826,7 @@
       "git_blob_sha": "dacd73db11d6934e7f896d569986ea5765ffcb5d",
       "bytes": 5484,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2835,7 +2835,7 @@
       "git_blob_sha": "01fb6262359de6900c4c9fbbf583910fb7cc4446",
       "bytes": 4825,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2844,7 +2844,7 @@
       "git_blob_sha": "b790130222485d91da8550e59d8fa1a1876e8e0a",
       "bytes": 4761,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2853,7 +2853,7 @@
       "git_blob_sha": "e3288106752dbd844de40f3836ea4bac52cfa917",
       "bytes": 7613,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "Independent offline verifier",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -2862,7 +2862,7 @@
       "git_blob_sha": "6dfa5bc36158d82c552160352bf4ed6f2ad068e1",
       "bytes": 7248,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "Independent offline verifier",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -2871,7 +2871,7 @@
       "git_blob_sha": "dc84353dbf89b2f091cf59b963cebcaa32005424",
       "bytes": 8095,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "Independent offline verifier",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -2880,7 +2880,7 @@
       "git_blob_sha": "5e4d97fc8a4efa22952c8c608989b416bf4e688d",
       "bytes": 5317,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "Independent offline verifier",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "path-family-review-2026-11-15"
     },
@@ -2889,7 +2889,7 @@
       "git_blob_sha": "6a60270a47f1a533c2845ce7a4d060f4f47f2312",
       "bytes": 3192,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2898,7 +2898,7 @@
       "git_blob_sha": "48ebaeff0a3494c39840fef7a4f0cb820ced15e9",
       "bytes": 4416,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2907,7 +2907,7 @@
       "git_blob_sha": "8d9c50411cbe2a9005499d9034f91748e0392adc",
       "bytes": 9287,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2916,7 +2916,7 @@
       "git_blob_sha": "dd8db013f41e09a20b7df460330763bbab9a8896",
       "bytes": 5988,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2925,7 +2925,7 @@
       "git_blob_sha": "8a5780a96b96f3fdb2ea2cfdac003379af8a6621",
       "bytes": 2003,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2934,7 +2934,7 @@
       "git_blob_sha": "8b34b2a1cb60846bb0e156169314f6ce3991641e",
       "bytes": 3287,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2943,7 +2943,7 @@
       "git_blob_sha": "51d74c33aba69e1e6584dde6d76e4283fcbd7f24",
       "bytes": 6099,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2952,7 +2952,7 @@
       "git_blob_sha": "7afc355fdf042e585d5aef54c8eb35235a871dfe",
       "bytes": 589,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2961,7 +2961,7 @@
       "git_blob_sha": "0671dae9474ed4c555936b9825a1d3d4fc4185ef",
       "bytes": 2425,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2970,7 +2970,7 @@
       "git_blob_sha": "68948d18e6d7b620c94e9e42dfa302929dd9279c",
       "bytes": 6396,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2979,7 +2979,7 @@
       "git_blob_sha": "47fb9c3252965dae295183fd85f73ead468d0b02",
       "bytes": 4880,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2988,7 +2988,7 @@
       "git_blob_sha": "3ef6dfd4d2e9bb0f40fb18f32de7dc17358dd969",
       "bytes": 7667,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -2997,7 +2997,7 @@
       "git_blob_sha": "2151939d3f33c2e169a48ccf34eefc98b75187ef",
       "bytes": 3748,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -3006,7 +3006,7 @@
       "git_blob_sha": "6c4afe8834f521716e0ded3380c12d11d0d19273",
       "bytes": 12177,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -3015,7 +3015,7 @@
       "git_blob_sha": "bde0c310331da43a0822dc6e4ef22e065d083e93",
       "bytes": 3753,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -3024,7 +3024,7 @@
       "git_blob_sha": "5a709e29b7d1e082852072bc82df2d70ce4af455",
       "bytes": 6640,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -3033,7 +3033,7 @@
       "git_blob_sha": "f8ac4b11692fb83aa665ba72aab470d7b734c540",
       "bytes": 1075,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -3042,7 +3042,7 @@
       "git_blob_sha": "cf43ecc011bb8c2c145c86198feac35db08636f6",
       "bytes": 2221,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     },
@@ -3051,7 +3051,7 @@
       "git_blob_sha": "70371f590a677b32f7abb35a5499a5995ddea3fe",
       "bytes": 884,
       "category": "VALIDATION_AND_REGRESSION",
-      "role": "OFFLINE_OR_CI_VALIDATION",
+      "role": "Independent offline verifier or regression support",
       "disposition": "RETAIN",
       "basis": "inherited-2026-11-07"
     }
@@ -3060,5 +3060,6 @@
     "Current main Tree only, not every historical Tree or branch.",
     "Does not reconstruct all Run IDs or Job results.",
     "Does not establish provider status or scientific truth."
-  ]
+  ],
+  "tree_identity_note": "The repository tree-list response returned the main commit SHA in its top-level sha field; canonical tree SHA was not independently extracted in this classification build, so it is intentionally left null."
 }
