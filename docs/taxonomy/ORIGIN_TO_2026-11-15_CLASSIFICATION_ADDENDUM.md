@@ -10,7 +10,7 @@ Git root: 00009a38bc136a7c245270770b005e4e102a870d (2026-10-16)
 
 Current main: f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5 (2026-11-15 cutoff)
 
-Tree: f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5
+Tree SHA: UNKNOWN — the tree-list wrapper returned the main Commit SHA in its top-level sha field; no independent canonical Tree SHA was captured, so it is intentionally not asserted.
 
 Current tracked paths: 331, all listed with Git Blob SHA, byte size, category, role and RETAIN disposition in the companion JSON.
 
