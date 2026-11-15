@@ -151,3 +151,9 @@ python .github/scripts/check_publication_boundary.py
 The software is MIT licensed. Cite the released baseline recorded in [CITATION.cff](CITATION.cff). The experimental Framework is not part of that frozen `v0.4.0` release. Never submit credentials, private research material or health/person-level data to public issues, Actions artifacts or PRs. The [public maintenance policy](docs/MAINTENANCE.md) explains the security and publication boundary.
 
 **Latest source-pinned file governance (2026-11-07):** [complete 309-current/47-historical-only classification, naming and safe-deletion review](docs/taxonomy/COMPLETE_FILE_GOVERNANCE_2026-11-07.md). Historical snapshots above remain correct at their own cutoffs; the latest file audit finds no source-backed tracked garbage to delete and does not change accepted research data or external registration status
+
+## 2026-11-15 · Verified first-day-to-current source classification and reusable failure lessons
+
+[Complete root-to-November-15 Git/PR/File/Actions classification](docs/taxonomy/FULL_HISTORY_CLASSIFICATION_2026-11-15.md) · [299-Commit / 76-PR / 331-current + 53 historical-only path / 868-Run evidence ledger](docs/taxonomy/full-history-classification-2026-11-15.json) · [849→868 native quality and Job evidence](docs/provenance/POST_849_TO_868_RECONCILIATION_2026-11-15.md) · [Evidence-backed research software failure atlas](docs/lessons/2026-11-15-generalizable-research-software-failure-catalog.md)
+
+These are **date-scoped, additive GitHub source observations**, not a replacement for frozen v0.4.0/v0.5.0 publication, the three independent assets, experimental Framework, accepted native data, external provider identity or biological truth. Previous errors, correction history and historical names remain inspectable.

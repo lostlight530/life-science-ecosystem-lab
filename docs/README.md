@@ -73,3 +73,9 @@ This dated appendix observes 20 additional successful Runs, 42 Jobs with two con
 [Source-pinned Run/Job and acceptance audit](provenance/POST_788_TO_798_RECONCILIATION_2026-11-09.md) · [Machine ledger](provenance/post-788-to-798-observation-2026-11-09.json) · [Regression](../tests/test_post_788_run_delta.py) · [Failure-mode lesson](lessons/2026-11-09-frozen-tests-vs-native-continuity.md)
 
 Ten additional visible Runs (21 successful Jobs, one expected conditional Bio skip) and a real fifth native Knowledge acceptance require separating immutable historical audit expectations from the evolving accepted `data/` state. The project retains prior failure and correction records, all scientific nonclaims and independent external-provider authority
+
+## November 15, 2026 · Current source census and generalizable scientific-software errors
+
+[Complete first-day→Nov15 classification](taxonomy/FULL_HISTORY_CLASSIFICATION_2026-11-15.md) · [Machine Git/PR/File/Run source census](taxonomy/full-history-classification-2026-11-15.json) · [849→868 Run/Job delta](provenance/POST_849_TO_868_RECONCILIATION_2026-11-15.md) · [Evidence-backed failure atlas: 30 patterns](lessons/2026-11-15-generalizable-research-software-failure-catalog.md) · [Independent offline verifier](../tests/test_full_history_classification_2026_11_15.py)
+
+All historical reports remain pinned to their own source cutoff. New public classification covers 299 main-reachable Commits, 76 PRs, 331 current Blob paths, 53 historical-only path witnesses and 868 API-visible Run IDs, without rewriting past files, external provider status, native asset contracts or accepted `data/`.
