@@ -1,0 +1,694 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "POST_849_TO_868_ACTIONS_RUN_JOB_IDENTITY_DELTA",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_logical_day_asia_shanghai": "2026-11-15",
+  "source_main_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+  "source_prior_archive": "docs/provenance/post-807-to-849-observation-2026-11-13.json",
+  "per_http_request_acquisition_timestamps": null,
+  "source_scope": "complete currently-visible nine-page GitHub REST Runs + latest-attempt Jobs of every new Run; no replay of expired source logs",
+  "actions": {
+    "previous_visible": 849,
+    "current_visible": 868,
+    "old_ids_retained": 849,
+    "old_ids_missing": [],
+    "new_count": 19,
+    "previous_conclusions": {
+      "success": 798,
+      "cancelled": 51
+    },
+    "current_conclusions": {
+      "success": 817,
+      "cancelled": 51
+    },
+    "previous_events": {
+      "schedule": 60,
+      "push": 431,
+      "pull_request": 354,
+      "workflow_dispatch": 4
+    },
+    "current_events": {
+      "pull_request": 359,
+      "push": 438,
+      "workflow_dispatch": 4,
+      "schedule": 67
+    },
+    "new_events": {
+      "push": 7,
+      "pull_request": 5,
+      "schedule": 7
+    },
+    "new_conclusions": {
+      "success": 19
+    },
+    "new_latest_attempt_job_count": 41,
+    "new_latest_attempt_job_conclusions": {
+      "success": 40,
+      "skipped": 1
+    },
+    "new_runs": [
+      {
+        "id": 43266245587,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-12T17:08:31Z",
+        "head_sha": "dd7bd11e88d43ed747f0bd8e3f1ab5ae5d5ec6aa",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43266245587",
+        "jobs": [
+          {
+            "id": 131350468061,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43266333727,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-12T17:09:01Z",
+        "head_sha": "dd7bd11e88d43ed747f0bd8e3f1ab5ae5d5ec6aa",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43266333727",
+        "jobs": [
+          {
+            "id": 131350777349,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131350777670,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131350777727,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131350777915,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131351099505,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43266333950,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "pull_request",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-12T17:09:01Z",
+        "head_sha": "dd7bd11e88d43ed747f0bd8e3f1ab5ae5d5ec6aa",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43266333950",
+        "jobs": [
+          {
+            "id": 131350777773,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 131350778307,
+            "name": "pinned-field",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43266333964,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "pull_request",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-12T17:09:01Z",
+        "head_sha": "dd7bd11e88d43ed747f0bd8e3f1ab5ae5d5ec6aa",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43266333964",
+        "jobs": [
+          {
+            "id": 131350777379,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43266573460,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-12T17:10:22Z",
+        "head_sha": "e86170cea73920ebc0d1638cf8f874e6cf53ec68",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43266573460",
+        "jobs": [
+          {
+            "id": 131351609794,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43266573648,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "push",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-12T17:10:22Z",
+        "head_sha": "e86170cea73920ebc0d1638cf8f874e6cf53ec68",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43266573648",
+        "jobs": [
+          {
+            "id": 131351613714,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 131351616613,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ]
+      },
+      {
+        "id": 43266573667,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "push",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-12T17:10:22Z",
+        "head_sha": "e86170cea73920ebc0d1638cf8f874e6cf53ec68",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43266573667",
+        "jobs": [
+          {
+            "id": 131351612333,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131351612814,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131351612868,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131351613017,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131351988251,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43395693337,
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "event": "schedule",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T08:45:15Z",
+        "head_sha": "e86170cea73920ebc0d1638cf8f874e6cf53ec68",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43395693337",
+        "jobs": [
+          {
+            "id": 131785921855,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          },
+          {
+            "id": 131785922137,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43402043543,
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "path": ".github/workflows/life-science-bio.yml",
+        "event": "schedule",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T09:31:36Z",
+        "head_sha": "e86170cea73920ebc0d1638cf8f874e6cf53ec68",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43402043543",
+        "jobs": [
+          {
+            "id": 131807010697,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 131807011034,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43413802772,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T11:02:27Z",
+        "head_sha": "9975158e1be80ef535d39af1c52bffd6d6999b90",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43413802772",
+        "jobs": [
+          {
+            "id": 131846548762,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43413812624,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "pull_request",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T11:02:31Z",
+        "head_sha": "9975158e1be80ef535d39af1c52bffd6d6999b90",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43413812624",
+        "jobs": [
+          {
+            "id": 131846582561,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131846583183,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131846583197,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131846583258,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131846813681,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43413812829,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "pull_request",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T11:02:31Z",
+        "head_sha": "9975158e1be80ef535d39af1c52bffd6d6999b90",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43413812829",
+        "jobs": [
+          {
+            "id": 131846583456,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43420295903,
+        "name": "Validate life-science workflow and evidence contracts",
+        "path": ".github/workflows/validate.yml",
+        "event": "push",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T11:50:50Z",
+        "head_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43420295903",
+        "jobs": [
+          {
+            "id": 131868305578,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 131868305827,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 131868305837,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 131868305964,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 131868514776,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43420296029,
+        "name": "Life Science Evidence Tool — Independent Verification",
+        "path": ".github/workflows/life-science-evidence.yml",
+        "event": "push",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T11:50:50Z",
+        "head_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43420296029",
+        "jobs": [
+          {
+            "id": 131868305276,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43424281460,
+        "name": "Verify accepted life-science knowledge continuity",
+        "path": ".github/workflows/life-science-continuity.yml",
+        "event": "schedule",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-13T12:20:11Z",
+        "head_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43424281460",
+        "jobs": [
+          {
+            "id": 131881727304,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43573703106,
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "event": "schedule",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-14T08:00:18Z",
+        "head_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43573703106",
+        "jobs": [
+          {
+            "id": 132383286509,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 132383286611,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43590779143,
+        "name": "Verify accepted life-science knowledge continuity",
+        "path": ".github/workflows/life-science-continuity.yml",
+        "event": "schedule",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-14T11:35:45Z",
+        "head_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43590779143",
+        "jobs": [
+          {
+            "id": 132434814613,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43694578292,
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "event": "schedule",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-15T08:27:15Z",
+        "head_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43694578292",
+        "jobs": [
+          {
+            "id": 132752176345,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 132752176538,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43711715966,
+        "name": "Verify accepted life-science knowledge continuity",
+        "path": ".github/workflows/life-science-continuity.yml",
+        "event": "schedule",
+        "conclusion": "success",
+        "status": "completed",
+        "run_attempt": 1,
+        "created_at_utc": "2026-11-15T12:01:18Z",
+        "head_sha": "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+        "html_url": "https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/43711715966",
+        "jobs": [
+          {
+            "id": 132804494550,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "scheduled": {
+    "nominal_definition": "current main workflow cron; UTC schedule to GitHub Run created_at, not queue latency",
+    "new_runs": [
+      {
+        "run_id": 43395693337,
+        "workflow_path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "nominal_utc": "2026-11-13T01:41:00Z",
+        "created_utc": "2026-11-13T08:45:15Z",
+        "offset_seconds": 25455,
+        "logical_day_shanghai": "2026-11-13",
+        "latest_attempt_jobs": [
+          {
+            "id": 131785921855,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          },
+          {
+            "id": 131785922137,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43402043543,
+        "workflow_path": ".github/workflows/life-science-bio.yml",
+        "nominal_utc": "2026-11-13T02:19:00Z",
+        "created_utc": "2026-11-13T09:31:36Z",
+        "offset_seconds": 25956,
+        "logical_day_shanghai": "2026-11-13",
+        "latest_attempt_jobs": [
+          {
+            "id": 131807010697,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 131807011034,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43424281460,
+        "workflow_path": ".github/workflows/life-science-continuity.yml",
+        "nominal_utc": "2026-11-13T04:17:00Z",
+        "created_utc": "2026-11-13T12:20:11Z",
+        "offset_seconds": 28991,
+        "logical_day_shanghai": "2026-11-13",
+        "latest_attempt_jobs": [
+          {
+            "id": 131881727304,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43573703106,
+        "workflow_path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "nominal_utc": "2026-11-14T01:41:00Z",
+        "created_utc": "2026-11-14T08:00:18Z",
+        "offset_seconds": 22758,
+        "logical_day_shanghai": "2026-11-14",
+        "latest_attempt_jobs": [
+          {
+            "id": 132383286509,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 132383286611,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43590779143,
+        "workflow_path": ".github/workflows/life-science-continuity.yml",
+        "nominal_utc": "2026-11-14T04:17:00Z",
+        "created_utc": "2026-11-14T11:35:45Z",
+        "offset_seconds": 26325,
+        "logical_day_shanghai": "2026-11-14",
+        "latest_attempt_jobs": [
+          {
+            "id": 132434814613,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43694578292,
+        "workflow_path": ".github/workflows/life-science-daily-selfcheck.yml",
+        "nominal_utc": "2026-11-15T01:41:00Z",
+        "created_utc": "2026-11-15T08:27:15Z",
+        "offset_seconds": 24375,
+        "logical_day_shanghai": "2026-11-15",
+        "latest_attempt_jobs": [
+          {
+            "id": 132752176345,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 132752176538,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43711715966,
+        "workflow_path": ".github/workflows/life-science-continuity.yml",
+        "nominal_utc": "2026-11-15T04:17:00Z",
+        "created_utc": "2026-11-15T12:01:18Z",
+        "offset_seconds": 27858,
+        "logical_day_shanghai": "2026-11-15",
+        "latest_attempt_jobs": [
+          {
+            "id": 132804494550,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ],
+    "all_schedule_runs_since_origin": 67,
+    "expected_daily_selfcheck_dates": "2026-10-18..2026-11-15",
+    "expected_continuity_dates": "2026-10-17..2026-11-15",
+    "knowledge_mondays": [
+      "2026-10-19",
+      "2026-10-26",
+      "2026-11-02",
+      "2026-11-09"
+    ],
+    "bio_fridays": [
+      "2026-10-23",
+      "2026-10-30",
+      "2026-11-06",
+      "2026-11-13"
+    ],
+    "causal_status": "UNKNOWN"
+  },
+  "accepted_state": {
+    "receipts": 5,
+    "events": 5,
+    "archives": 4,
+    "last_receipt": "gh-42611716908-1",
+    "new_applied_events": 0,
+    "no_scientific_claim_verified": true
+  },
+  "negative_evidence": {
+    "older_cancelled_run_contains_failed_job": 43210854941,
+    "failed_job": "Repository contracts",
+    "historical_missing_failed_runs": "retain prior frozen source archives; causes UNKNOWN",
+    "new_nonexecution": {
+      "run_id": 43266573648,
+      "job_name": "pinned-field",
+      "conclusion": "skipped",
+      "event": "push"
+    }
+  },
+  "nonclaims": [
+    "Zero visible failed parent Runs does not imply zero failed Jobs",
+    "Current success cannot erase historical failed observations",
+    "All 7 newly scheduled Runs succeeded at Run grain and their 11 Jobs succeeded, but no provider uptime is attested",
+    "No new Bio scientific conclusion or externally accepted registration"
+  ]
+}
