@@ -1,5 +1,20 @@
 # Maintainer Decision Ledger — Cross-Agent Research Evidence
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** 跨 Agent 研究提案的接受、纠偏、拒绝和未知结论应保留原始证据与审查理由，不能把赞誉替代审核
+
+**Original English title:** Maintainer Decision Ledger — Cross-Agent Research Evidence
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| Interpretation and amendment rules | 证据与限界条件 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 This is an auditable *review-decision history*, not a rejection tally, source of biological ground truth or independently certified identity registry. Records cite original GitHub changes; original author texts are retained and separate, with caveats where needed. Statuses apply to **specific claims and changes**, not entire Agent reputations.
 
 | Source | Assessed claim or change | Decision class | Evidence / reason |

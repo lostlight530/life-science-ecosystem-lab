@@ -1,5 +1,24 @@
 # LS Framework Contract Challenge 001
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** 合成突变的反例检验仅支持 hand-authored 软件合同回归，需另行设计有统计效力的独立领域实验
+
+**Original English title:** LS Framework Contract Challenge 001
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| Falsifiable hypothesis | 可证伪命题 |
+| Independent execution | 实际独立执行条件 |
+| Test design | 测试设计 |
+| Current evaluation limits | 当前结果的局限 |
+| Standards references and ownership | 证据与限界条件 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 Status: **synthetic software-engineering challenge**, not a scientific benchmark or a verified integration of genomics/imaging pipelines
 
 ## Falsifiable hypothesis

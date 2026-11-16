@@ -1,5 +1,25 @@
 # Life Sciences Cross-Domain Research Software Engineering Framework
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** 独立的 0.1.0 Framework 验证软件工程的输入、关系、版本和失败类型，不提供科学真值认证
+
+**Original English title:** Life Sciences Cross-Domain Research Software Engineering Framework
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| Independent installation | 独立安装 |
+| Input contract | 输入合同 |
+| Output contract | 输出合同 |
+| Governance | 证据与限界条件 |
+| Independent falsification-oriented contract challenge | 证据与限界条件 |
+| Strict evidence consumers and safe output boundaries | 证据与限界条件 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 **Experimental independent software-engineering framework · v0.1.0**
 
 This is the repository-root `framework/` peer, not part of `evidence/`, `bio_tool/`, or the native Knowledge Workflow runtime

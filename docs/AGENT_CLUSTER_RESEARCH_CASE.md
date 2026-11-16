@@ -1,5 +1,25 @@
 # 谁说 Agent 集群不可以科研？ — An Auditable Heterogeneous-Agent Research Collaboration Case
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** 真实 PR 贡献和提案来源可以接受 GitHub 对象审计，但自报 Agent 身份不能证明独立 runtime 身份
+
+**Original English title:** 谁说 Agent 集群不可以科研？ — An Auditable Heterogeneous-Agent Research Collaboration Case
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| Frozen public evidence / provenance | 冻结的公开证据 |
+| Same research method, three unlike contributions | 证据与限界条件 |
+| Findings and dispositions, not applause counts | 具体发现与处置而非赞数 |
+| Concrete reproducible gates | 证据与限界条件 |
+| How this hypothesis could fail | 证据与限界条件 |
+| Maintainer summary | 维护者结论 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 > **Question, not slogan:** Can multiple agents working across different execution surfaces contribute falsifiable, inspectable research-software knowledge under one stable method contract? The rhetorical title does not imply any particular person claimed agents cannot conduct research.
 >
 > **Scope:** This is a documented open-source **research collaboration process** and a field test of governance/reproducibility methods. It is not a three-way independent reproduction of protein quality predictions, a novel biological discovery, or authentication of individual agent runtimes.

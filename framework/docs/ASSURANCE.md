@@ -1,5 +1,23 @@
 # Independent LS Framework: software engineering assurance matrix
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** Assurance 的 PASS、FAIL、INDETERMINATE 与真实科学方法执行是不同类型状态，独立测试不等于科研认可
+
+**Original English title:** Independent LS Framework: software engineering assurance matrix
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| Scope and tested evidence | 证据与限界条件 |
+| Consumer safety | 下游使用边界 |
+| Pending falsifiable research, not yet demonstrated | 证据与限界条件 |
+| External references only | 证据与限界条件 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 Status: project-owned experimental contract, not a registered institutional standard or scientific truth engine
 
 ## Scope and tested evidence

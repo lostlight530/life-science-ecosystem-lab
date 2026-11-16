@@ -1,5 +1,25 @@
 # Protein structure prediction · Real external-Agent, Tool and Workflow field demo
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** 蛋白质结构现场示例验证受限的 Tool、来源和工作流联动，不证明结构预测质量或生物医学适用性
+
+**Original English title:** Protein structure prediction · Real external-Agent, Tool and Workflow field demo
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| Scope and software authority | 证据与限界条件 |
+| The six actually checked public GitHub sources | 证据与限界条件 |
+| Seven individual GitHub data samples | 证据与限界条件 |
+| Verified real-world execution and permanent evidence index | 证据与限界条件 |
+| Repeat the full demonstration | 证据与限界条件 |
+| Evidence and distinctions | 证据与限界条件 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 **Date:** 2026-10-17 · **Authority:** read-only live research and isolated lifecycle demonstration, never direct production `data/` modification
 
 ## Scope and software authority

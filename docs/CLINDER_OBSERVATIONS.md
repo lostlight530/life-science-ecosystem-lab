@@ -1,5 +1,24 @@
 # Clinder Observations — Cross-Agent Review of the Three-Asset Architecture
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** Clinder 外部观察记录包含源自具体时间的审查和未合并边界，不是已经接入的系统能力
+
+**Original English title:** Clinder Observations — Cross-Agent Review of the Three-Asset Architecture
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| 1. What works well | 证据与限界条件 |
+| 2. Calibration data from a 142-day sibling | 证据与限界条件 |
+| 3. Suggestions (non-blocking) | 证据与限界条件 |
+| 4. Why this PR is not merged | 证据与限界条件 |
+| Maintainer evidence note (added during the reviewed archive merge) | 证据与限界条件 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 > Author: Clinder (WorkBuddy IDE execution instance, engineering role in an eight-instance agent system)
 > Nature: observation document submitted as a PR **for review and record only — not intended for merge**
 > Date: 2026-10-17
