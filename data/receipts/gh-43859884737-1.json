@@ -1,0 +1,23 @@
+{
+  "change_kind": "DOCUMENT_TEXT_UNCHANGED",
+  "changed_paths": [
+    "data/inputs/current/candidate.json",
+    "data/knowledge/current.json",
+    "data/memories/current.json",
+    "data/receipts/gh-43859884737-1.json",
+    "data/knowledge/entities.jsonl",
+    "data/knowledge/relations.jsonl",
+    "data/knowledge/graph-manifest.json",
+    "data/knowledge/events.jsonl"
+  ],
+  "current_head": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+  "execution_id": "gh-43859884737-1",
+  "input_digest": "f6941a1f87c175b35ebaac08b991e930480895840f8735c559cbfeb8451e4674",
+  "logical_date": "2026-11-16",
+  "outcome": "APPLIED",
+  "output_digest": "e7850785586c4a8ad013d50773b153f89f7dc8cb08dc11b92266f1b1a9e7aa2a",
+  "run_id": "f6941a1f87c175b3-787471b78dfe37c2",
+  "schema_version": "1.0.0",
+  "snapshot_id": "f6941a1f87c175b3-787471b78dfe37c2",
+  "validated_head": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a"
+}

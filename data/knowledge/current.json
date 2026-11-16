@@ -1,68 +1,68 @@
 {
-  "evidence_bundle_digest": "a6d8a83fe15e89266311e446a07096f2127fae77598f64c183e56bf0e27ccbb9",
+  "evidence_bundle_digest": "e7850785586c4a8ad013d50773b153f89f7dc8cb08dc11b92266f1b1a9e7aa2a",
   "kind": "EXTRACTIVE_WORKFLOW_KNOWLEDGE_MAP",
-  "knowledge_digest": "089b328725bca57fb91500ed3eeafe2d38878a6a16bf9a70fe73cd16db3a8750",
+  "knowledge_digest": "f02a6be3296e4221ee93e2e2a606ad2fa0bfe714d00ef2aec39577a5cc579a71",
   "knowledge_graph": {
     "edges": [
       {
         "evidence_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:common-workflow-language/cwl-v1.2@b359998838f48ed5f60307d500a39ed3deb5b7da:README.md"
+        "to": "github:common-workflow-language/cwl-v1.2@f049263fc4e4d40f13c606ed932f10dcf2154b63:README.md"
       },
       {
         "evidence_sha256": "9e6e0a75f802dbc7649bd26c44aa1a4a60dfcd1dba932818e45b6fa4b6650da8",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:Workflow-RO-Crate/1.1/changelog.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:Workflow-RO-Crate/1.1/changelog.md"
       },
       {
         "evidence_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:Workflow-RO-Crate/1.1/index.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:Workflow-RO-Crate/1.1/index.md"
       },
       {
         "evidence_sha256": "708bfed302a020ab1563d304bee3cf22eb10577f2571737bcdbe21de14b22a06",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:developer/how-to-make-a-workflow-ro-crate.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:developer/how-to-make-a-workflow-ro-crate.md"
       },
       {
         "evidence_sha256": "00285b9e2aa20590c5747d9b1fab4e8ca5fb87b5eb64572a480dc37a3a600f36",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/maintaining-your-workflow.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/maintaining-your-workflow.md"
       },
       {
         "evidence_sha256": "c344f71a09398bd45ade67bfa7c0b1321ccb6e72b10466dd6679cfff273e787a",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/adding-files.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/adding-files.md"
       },
       {
         "evidence_sha256": "95c45dc401ea160827d9fa691d41bdbe94e8d14332347305f59ee86af7b7c838",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/check-uploaded-workflow.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/check-uploaded-workflow.md"
       },
       {
         "evidence_sha256": "c27542d4d93e6c37d2af21444ddd4d1fd0bb1b166ad280879b2ac534355797a1",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/complete-workflow-metadata.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/complete-workflow-metadata.md"
       },
       {
         "evidence_sha256": "2ce47811d2780a2add18c0bc15ea771ff52aa477a97ab9981e65a4e0d88dde31",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/registering-a-workflow.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/registering-a-workflow.md"
       },
       {
         "evidence_sha256": "a05f7dc28462c35c8c0297e12f79a2ebd834f17099f8bd840a7f56cb0af77942",
         "from": "topic:research-object-metadata",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/supported-workflow-types.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/supported-workflow-types.md"
       },
       {
         "evidence_sha256": "4449a4880e577aca474c11a615e66c8afc6bcd2daa8eaf7f2893f7cea99321ff",
@@ -74,19 +74,19 @@
         "evidence_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
         "from": "topic:workflow-monitoring",
         "relation": "SOURCE_MATCH",
-        "to": "github:seek4science/seek@766000e3a4b82c12844e87bfc13e4195a35bd19a:README.md"
+        "to": "github:seek4science/seek@d2d7ea5136e34759cb48a1ae6cd4c35877074214:README.md"
       },
       {
         "evidence_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
         "from": "topic:workflow-monitoring",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:Workflow-RO-Crate/1.1/index.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:Workflow-RO-Crate/1.1/index.md"
       },
       {
         "evidence_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:common-workflow-language/cwl-v1.2@b359998838f48ed5f60307d500a39ed3deb5b7da:README.md"
+        "to": "github:common-workflow-language/cwl-v1.2@f049263fc4e4d40f13c606ed932f10dcf2154b63:README.md"
       },
       {
         "evidence_sha256": "4449a4880e577aca474c11a615e66c8afc6bcd2daa8eaf7f2893f7cea99321ff",
@@ -104,67 +104,67 @@
         "evidence_sha256": "9e6e0a75f802dbc7649bd26c44aa1a4a60dfcd1dba932818e45b6fa4b6650da8",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:Workflow-RO-Crate/1.1/changelog.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:Workflow-RO-Crate/1.1/changelog.md"
       },
       {
         "evidence_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:Workflow-RO-Crate/1.1/index.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:Workflow-RO-Crate/1.1/index.md"
       },
       {
         "evidence_sha256": "708bfed302a020ab1563d304bee3cf22eb10577f2571737bcdbe21de14b22a06",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:developer/how-to-make-a-workflow-ro-crate.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:developer/how-to-make-a-workflow-ro-crate.md"
       },
       {
         "evidence_sha256": "00285b9e2aa20590c5747d9b1fab4e8ca5fb87b5eb64572a480dc37a3a600f36",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/maintaining-your-workflow.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/maintaining-your-workflow.md"
       },
       {
         "evidence_sha256": "c344f71a09398bd45ade67bfa7c0b1321ccb6e72b10466dd6679cfff273e787a",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/adding-files.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/adding-files.md"
       },
       {
         "evidence_sha256": "95c45dc401ea160827d9fa691d41bdbe94e8d14332347305f59ee86af7b7c838",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/check-uploaded-workflow.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/check-uploaded-workflow.md"
       },
       {
         "evidence_sha256": "c27542d4d93e6c37d2af21444ddd4d1fd0bb1b166ad280879b2ac534355797a1",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/complete-workflow-metadata.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/complete-workflow-metadata.md"
       },
       {
         "evidence_sha256": "17eec7fed9721b0d66108a2ef95eb9f67e71f0d8635409e83db03080bb04f2c7",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/register-and-login.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/register-and-login.md"
       },
       {
         "evidence_sha256": "2ce47811d2780a2add18c0bc15ea771ff52aa477a97ab9981e65a4e0d88dde31",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/registering-a-workflow.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/registering-a-workflow.md"
       },
       {
         "evidence_sha256": "a05f7dc28462c35c8c0297e12f79a2ebd834f17099f8bd840a7f56cb0af77942",
         "from": "topic:workflow-registration",
         "relation": "SOURCE_MATCH",
-        "to": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/supported-workflow-types.md"
+        "to": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/supported-workflow-types.md"
       }
     ],
     "method": "typed evidence links, not inferred biological relationships",
     "nodes": [
       {
-        "id": "github:common-workflow-language/cwl-v1.2@b359998838f48ed5f60307d500a39ed3deb5b7da:README.md",
+        "id": "github:common-workflow-language/cwl-v1.2@f049263fc4e4d40f13c606ed932f10dcf2154b63:README.md",
         "kind": "source-document",
         "repository": "common-workflow-language/cwl-v1.2"
       },
@@ -179,57 +179,57 @@
         "repository": "crs4/life_monitor"
       },
       {
-        "id": "github:seek4science/seek@766000e3a4b82c12844e87bfc13e4195a35bd19a:README.md",
+        "id": "github:seek4science/seek@d2d7ea5136e34759cb48a1ae6cd4c35877074214:README.md",
         "kind": "source-document",
         "repository": "seek4science/seek"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:Workflow-RO-Crate/1.1/changelog.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:Workflow-RO-Crate/1.1/changelog.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:Workflow-RO-Crate/1.1/index.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:Workflow-RO-Crate/1.1/index.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:developer/how-to-make-a-workflow-ro-crate.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:developer/how-to-make-a-workflow-ro-crate.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/maintaining-your-workflow.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/maintaining-your-workflow.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/adding-files.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/adding-files.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/check-uploaded-workflow.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/check-uploaded-workflow.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/complete-workflow-metadata.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/complete-workflow-metadata.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/register-and-login.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/register-and-login.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/registering-a-workflow.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/registering-a-workflow.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
       {
-        "id": "github:workflowhub-eu/about@3b30f0c9e0f750929c3c4a310f1212af498b0c0c:docs/registering_workflows/supported-workflow-types.md",
+        "id": "github:workflowhub-eu/about@5caaedbd2de25c177816ef5ec60de274340f8103:docs/registering_workflows/supported-workflow-types.md",
         "kind": "source-document",
         "repository": "workflowhub-eu/about"
       },
@@ -261,7 +261,7 @@
       "fragment_count": 10,
       "fragments": [
         {
-          "commit": "b359998838f48ed5f60307d500a39ed3deb5b7da",
+          "commit": "f049263fc4e4d40f13c606ed932f10dcf2154b63",
           "content_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
           "excerpt": "You may browse the CWL v1.2.1 standards online at https://w3id.org/cwl/v1.2/ (a.k.a https://www.commonwl.org/v1.2 )",
           "matched_aliases": [
@@ -270,10 +270,10 @@
           "path": "README.md",
           "repository": "common-workflow-language/cwl-v1.2",
           "source_id": "cwl-standard",
-          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/b359998838f48ed5f60307d500a39ed3deb5b7da/README.md"
+          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/f049263fc4e4d40f13c606ed932f10dcf2154b63/README.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "9e6e0a75f802dbc7649bd26c44aa1a4a60dfcd1dba932818e45b6fa4b6650da8",
           "excerpt": "* Updated examples and Profile Crate to align with RO-Crate 1.3 ([#83](https://github.com/workflowhub-eu/about/pull/83/files)) ([#86](https://github.com/workflowhub-eu/about/pull/86)) * Profile conformance should now be declared on the root data entity (inherited from [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/root-data-entity.html#ro-crate-metadata-descriptor)) ([#83…",
           "matched_aliases": [
@@ -283,10 +283,10 @@
           "path": "Workflow-RO-Crate/1.1/changelog.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/Workflow-RO-Crate/1.1/changelog.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/Workflow-RO-Crate/1.1/changelog.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
           "excerpt": "--- title: Workflow RO-Crate profile 1.1 --- <!-- https://signposting.org/FAIR/ markup --->",
           "matched_aliases": [
@@ -298,10 +298,10 @@
           "path": "Workflow-RO-Crate/1.1/index.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/Workflow-RO-Crate/1.1/index.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/Workflow-RO-Crate/1.1/index.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "708bfed302a020ab1563d304bee3cf22eb10577f2571737bcdbe21de14b22a06",
           "excerpt": "--- title: How to make a workflow RO-crate redirect_from: /how-to-make-a-workflow-ro-crate/ ---",
           "matched_aliases": [
@@ -312,10 +312,10 @@
           "path": "developer/how-to-make-a-workflow-ro-crate.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/developer/how-to-make-a-workflow-ro-crate.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/developer/how-to-make-a-workflow-ro-crate.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "00285b9e2aa20590c5747d9b1fab4e8ca5fb87b5eb64572a480dc37a3a600f36",
           "excerpt": "Note that updates made in the metadata will not affect the metadata in the RO-crate, yet (upcoming feature).",
           "matched_aliases": [
@@ -325,10 +325,10 @@
           "path": "docs/maintaining-your-workflow.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/maintaining-your-workflow.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/maintaining-your-workflow.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "c344f71a09398bd45ade67bfa7c0b1321ccb6e72b10466dd6679cfff273e787a",
           "excerpt": "* [Upload / import a local file](#local) * [Upload / import using a remote file URL](#remote-url) * [Importing a Git repository](#git) * [Upload / Import a Workflow Research Object Crate (RO-Crate)](#ro-crate)",
           "matched_aliases": [
@@ -338,10 +338,10 @@
           "path": "docs/registering_workflows/adding-files.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/adding-files.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/adding-files.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "95c45dc401ea160827d9fa691d41bdbe94e8d14332347305f59ee86af7b7c838",
           "excerpt": "* Make sure that all the metadata you filled in previously is shown properly and is correct (**Fig 10**). * WorkflowHub generates an RO-Crate based on these files and the metadata you filled in while registering the workflow. * Click `Download RO-Crate` to check whether the metadata files (`ro-crate-metadata.json` and `ro-crate-preview.html`) are correctly generated.",
           "matched_aliases": [
@@ -350,10 +350,10 @@
           "path": "docs/registering_workflows/check-uploaded-workflow.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/check-uploaded-workflow.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/check-uploaded-workflow.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "c27542d4d93e6c37d2af21444ddd4d1fd0bb1b166ad280879b2ac534355797a1",
           "excerpt": "This metadata will also be included in the RO-Crate metadata for the workflow, which is automatically generated when the workflow is submitted.",
           "matched_aliases": [
@@ -362,10 +362,10 @@
           "path": "docs/registering_workflows/complete-workflow-metadata.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/complete-workflow-metadata.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/complete-workflow-metadata.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "2ce47811d2780a2add18c0bc15ea771ff52aa477a97ab9981e65a4e0d88dde31",
           "excerpt": "![Remote files URLs, Git Repository, Local Files, Zipped RO-Crate are Imported, then Register workflow, Add Metadata and Finalize Registration with review]({{ '/images/registration-01-overview-02.png' | relative_url }} \"Registration Overview\")",
           "matched_aliases": [
@@ -374,10 +374,10 @@
           "path": "docs/registering_workflows/registering-a-workflow.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/registering-a-workflow.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/registering-a-workflow.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "a05f7dc28462c35c8c0297e12f79a2ebd834f17099f8bd840a7f56cb0af77942",
           "excerpt": "* Galaxy (`.ga`) * Common Workflow Language (`.cwl`) * Nextflow (`.nf`) * SnakeMake (`.snake`) * KNIME (`.knwf`)",
           "matched_aliases": [
@@ -386,7 +386,7 @@
           "path": "docs/registering_workflows/supported-workflow-types.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/supported-workflow-types.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/supported-workflow-types.md"
         }
       ],
       "source_count": 2,
@@ -411,7 +411,7 @@
           "url": "https://github.com/crs4/life_monitor/blob/7649406c11c5c04eebc5ca61926f5dbe30469c82/README.md"
         },
         {
-          "commit": "766000e3a4b82c12844e87bfc13e4195a35bd19a",
+          "commit": "d2d7ea5136e34759cb48a1ae6cd4c35877074214",
           "content_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
           "excerpt": "[![Build Status](https://github.com/seek4science/seek/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/seek4science/seek/actions/workflows/tests.yml) [![DOI](https://zenodo.org/badge/20803285.svg)](https://zenodo.org/badge/latestdoi/20803285)",
           "matched_aliases": [
@@ -420,10 +420,10 @@
           "path": "README.md",
           "repository": "seek4science/seek",
           "source_id": "seek",
-          "url": "https://github.com/seek4science/seek/blob/766000e3a4b82c12844e87bfc13e4195a35bd19a/README.md"
+          "url": "https://github.com/seek4science/seek/blob/d2d7ea5136e34759cb48a1ae6cd4c35877074214/README.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
           "excerpt": "* [Workflow Testing RO-Crate](https://w3id.org/ro/wftest) defines test infrastructure recognized by [LifeMonitor](https://lifemonitor.eu/) * The [Workflow Run Crate](https://w3id.org/ro/wfrun/workflow) profile extends Workflow RO-Crate to describe *workflow run provenance*, documenting execution of a workflow. * [Five Safes RO-Crate](https://w3id.org/5s-crate/) refers to Workflow RO-Crate for the …",
           "matched_aliases": [
@@ -433,7 +433,7 @@
           "path": "Workflow-RO-Crate/1.1/index.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/Workflow-RO-Crate/1.1/index.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/Workflow-RO-Crate/1.1/index.md"
         }
       ],
       "source_count": 3,
@@ -444,7 +444,7 @@
       "fragment_count": 13,
       "fragments": [
         {
-          "commit": "b359998838f48ed5f60307d500a39ed3deb5b7da",
+          "commit": "f049263fc4e4d40f13c606ed932f10dcf2154b63",
           "content_sha256": "5dee437bac676a000ed5bd0e654808a3e16af0d7ff6cac7982abd871e41b3c4c",
           "excerpt": "This repo holds the ratified v1.2.1 of the Common Workflow Language standards and the history of its development.",
           "matched_aliases": [
@@ -453,7 +453,7 @@
           "path": "README.md",
           "repository": "common-workflow-language/cwl-v1.2",
           "source_id": "cwl-standard",
-          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/b359998838f48ed5f60307d500a39ed3deb5b7da/README.md"
+          "url": "https://github.com/common-workflow-language/cwl-v1.2/blob/f049263fc4e4d40f13c606ed932f10dcf2154b63/README.md"
         },
         {
           "commit": "7649406c11c5c04eebc5ca61926f5dbe30469c82",
@@ -481,7 +481,7 @@
           "url": "https://github.com/crs4/life_monitor/blob/7649406c11c5c04eebc5ca61926f5dbe30469c82/docs/wfhub-setup-notes.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "9e6e0a75f802dbc7649bd26c44aa1a4a60dfcd1dba932818e45b6fa4b6650da8",
           "excerpt": "* Updated examples and Profile Crate to align with RO-Crate 1.3 ([#83](https://github.com/workflowhub-eu/about/pull/83/files)) ([#86](https://github.com/workflowhub-eu/about/pull/86)) * Profile conformance should now be declared on the root data entity (inherited from [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/root-data-entity.html#ro-crate-metadata-descriptor)) ([#83…",
           "matched_aliases": [
@@ -491,10 +491,10 @@
           "path": "Workflow-RO-Crate/1.1/changelog.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/Workflow-RO-Crate/1.1/changelog.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/Workflow-RO-Crate/1.1/changelog.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "4a4ebe83c8cb0f1d520680912a3f3099c1942f9781a8e02c5cc8dba6280ceb68",
           "excerpt": "--- title: Workflow RO-Crate profile 1.1 --- <!-- https://signposting.org/FAIR/ markup --->",
           "matched_aliases": [
@@ -504,10 +504,10 @@
           "path": "Workflow-RO-Crate/1.1/index.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/Workflow-RO-Crate/1.1/index.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/Workflow-RO-Crate/1.1/index.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "708bfed302a020ab1563d304bee3cf22eb10577f2571737bcdbe21de14b22a06",
           "excerpt": "--- title: How to make a workflow RO-crate redirect_from: /how-to-make-a-workflow-ro-crate/ ---",
           "matched_aliases": [
@@ -517,10 +517,10 @@
           "path": "developer/how-to-make-a-workflow-ro-crate.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/developer/how-to-make-a-workflow-ro-crate.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/developer/how-to-make-a-workflow-ro-crate.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "00285b9e2aa20590c5747d9b1fab4e8ca5fb87b5eb64572a480dc37a3a600f36",
           "excerpt": "--- title: Maintaining a registered workflow entry description: How to maintain a workflow on WorkflowHub, including updating metadata and creating new versions. page_id: maintaining redirect_from: /Updating-a-registered-workflow/ ---",
           "matched_aliases": [
@@ -530,10 +530,10 @@
           "path": "docs/maintaining-your-workflow.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/maintaining-your-workflow.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/maintaining-your-workflow.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "c344f71a09398bd45ade67bfa7c0b1321ccb6e72b10466dd6679cfff273e787a",
           "excerpt": "--- title: Adding workflow files ---",
           "matched_aliases": [
@@ -543,10 +543,10 @@
           "path": "docs/registering_workflows/adding-files.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/adding-files.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/adding-files.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "95c45dc401ea160827d9fa691d41bdbe94e8d14332347305f59ee86af7b7c838",
           "excerpt": "--- title: Finalising workflow registration ---",
           "matched_aliases": [
@@ -557,10 +557,10 @@
           "path": "docs/registering_workflows/check-uploaded-workflow.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/check-uploaded-workflow.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/check-uploaded-workflow.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "c27542d4d93e6c37d2af21444ddd4d1fd0bb1b166ad280879b2ac534355797a1",
           "excerpt": "--- title: Complete workflow metadata ---",
           "matched_aliases": [
@@ -571,10 +571,10 @@
           "path": "docs/registering_workflows/complete-workflow-metadata.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/complete-workflow-metadata.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/complete-workflow-metadata.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "17eec7fed9721b0d66108a2ef95eb9f67e71f0d8635409e83db03080bb04f2c7",
           "excerpt": "Return to the main page of WorkflowHub and either click on the `Contribute` button, or select `Workflow` from the `Create` drop down menu at the top of the page (see **Fig 1**).",
           "matched_aliases": [
@@ -583,10 +583,10 @@
           "path": "docs/registering_workflows/register-and-login.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/register-and-login.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/register-and-login.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "2ce47811d2780a2add18c0bc15ea771ff52aa477a97ab9981e65a4e0d88dde31",
           "excerpt": "--- title: Registering a workflow on WorkflowHub description: A guide to the steps required for workflow import, metadata annotation, and registration. page_id: registering toc: false redirect_from: - /docs/registering-a-workflow/ - /registering-workflows/ - /Registering-an-existing-Workflow-RO-Crate/ - /How-to-register-your-workflow(s)-in-WorkflowHub/ - /Registering-a-workflow-with-a-diagram-and-…",
           "matched_aliases": [
@@ -597,10 +597,10 @@
           "path": "docs/registering_workflows/registering-a-workflow.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/registering-a-workflow.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/registering-a-workflow.md"
         },
         {
-          "commit": "3b30f0c9e0f750929c3c4a310f1212af498b0c0c",
+          "commit": "5caaedbd2de25c177816ef5ec60de274340f8103",
           "content_sha256": "a05f7dc28462c35c8c0297e12f79a2ebd834f17099f8bd840a7f56cb0af77942",
           "excerpt": "--- title: Supported workflow types ---",
           "matched_aliases": [
@@ -610,7 +610,7 @@
           "path": "docs/registering_workflows/supported-workflow-types.md",
           "repository": "workflowhub-eu/about",
           "source_id": "workflowhub",
-          "url": "https://github.com/workflowhub-eu/about/blob/3b30f0c9e0f750929c3c4a310f1212af498b0c0c/docs/registering_workflows/supported-workflow-types.md"
+          "url": "https://github.com/workflowhub-eu/about/blob/5caaedbd2de25c177816ef5ec60de274340f8103/docs/registering_workflows/supported-workflow-types.md"
         }
       ],
       "source_count": 3,
