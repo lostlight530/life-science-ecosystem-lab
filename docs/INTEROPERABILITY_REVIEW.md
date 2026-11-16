@@ -1,5 +1,26 @@
 # External interoperability: versioned standards and evidence review
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** 外部标准、注册服务和实验性兼容要求分开，项目本地实现不能冒充最新外部平台响应
+
+**English owning title:** External interoperability: versioned standards and evidence review
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| 1 — Separate the standards before discussing upgrades | 该软件研究对象的实现机制与限制 |
+| 2 — Non-cosmetic JSON-LD migration question | 该软件研究对象的实现机制与限制 |
+| 3 — Six independent institutional interfaces | 该软件研究对象的实现机制与限制 |
+| 4 — Reconcile independently owned software records | 该软件研究对象的实现机制与限制 |
+| 5 — Source-to-downstream metadata discrepancy review | 该软件研究对象的实现机制与限制 |
+| 6 — Acceptance is a chain of separate decisions | 该软件研究对象的实现机制与限制 |
+| 7 — Operational boundary and references | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 [Documentation index](README.md) · [Standards mapping](STANDARDS.md) · [Cross-asset replay](EVIDENCE_REPLAY_PROTOCOL.md) · [Provenance](PROVENANCE.md)
 
 **Review date:** 2026-10-29. This is a project-owned **read-only compatibility and evidence worksheet**, not an official profile, certification report or a claim that external registries were modified. Official upstream publications govern their standards; this repository governs only its own versioned implementation, historical releases and reviews.

@@ -1,5 +1,27 @@
 # External Agent research handoff · optional interoperability
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** 异构 Agent 可以提交 proposal-only 研究与 PR，但 GitHub 账户署名不能独立证明不同 Agent Runtime 的真实身份
+
+**English owning title:** External Agent research handoff · optional interoperability
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| Three deliberately separate clocks | 该软件研究对象的实现机制与限制 |
+| Pull-request gate participation | 该软件研究对象的实现机制与限制 |
+| Optional handoff lifecycle | 该软件研究对象的实现机制与限制 |
+| Files and minimum executable interface | 该软件研究对象的实现机制与限制 |
+| Cache and durable-state hygiene | 该软件研究对象的实现机制与限制 |
+| Evidence limitations | 该软件研究对象的实现机制与限制 |
+| Independent reviewer base check | 该软件研究对象的实现机制与限制 |
+| Heterogeneous multi-Agent research submissions | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 The frozen `v0.4.0` Life Science Ecosystem Lab release has **three peer software assets**, not an embedded Agent orchestration service. The current source tree also has one separately packaged experimental [Framework](../framework/README.md) for software-contract assessment. The independent [Bio Tool](../bio_tool/README.md) processes supplied protein FASTA/PDB files without an Agent. The existing [Knowledge Workflow](../.github/README.md) is authoritative for approved-source ingestion, native topic matching, graph projection, accepted `data/` state, receipts and Git-based replay; the independent [Evidence Tool](../evidence/README.md) is a reusable validator and inspector. None requires an LLM API or an Agent scheduler.
 
 ## Three deliberately separate clocks

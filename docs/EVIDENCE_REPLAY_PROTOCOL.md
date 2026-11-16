@@ -1,5 +1,26 @@
 # Cross-asset evidence replay and claim adjudication
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** Knowledge、Evidence、Bio 和独立 Framework 的证据归属与本地重放不同，不能让工具 PASS 越权接管生产或科学声明
+
+**English owning title:** Cross-asset evidence replay and claim adjudication
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| 1 — Freeze the unit of analysis | 该软件研究对象的实现机制与限制 |
+| 2 — Six evidence surfaces that cannot substitute for each other | 该软件研究对象的实现机制与限制 |
+| 3 — Read-only local replay | 该软件研究对象的实现机制与限制 |
+| 4 — Negative, missing and change controls | 该软件研究对象的实现机制与限制 |
+| 5 — An experiment on method transfer that may fail | 该软件研究对象的实现机制与限制 |
+| 6 — Claim-specific review record | 该软件研究对象的实现机制与限制 |
+| 7 — Where to independently verify changing facts | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 [Documentation index](README.md) · [Research methodology](RESEARCH_METHODOLOGY.md) · [Understanding results](VERIFYING_RESULTS.md) · [Production operations](PRODUCTION_OPERATIONS.md)
 
 This is a **read-only, reproducible research review protocol** for three established independent assets, the separately packaged experimental Framework and human/Agent contributions. It adds no runtime, Workflow, Tool, CI gate, accepted data write, scientific result or institutional accreditation. All commands below use existing public entrypoints.
