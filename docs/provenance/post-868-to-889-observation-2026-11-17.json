@@ -621,7 +621,160 @@
       "v0.4.0",
       "v0.5.0",
       "v0.5.1"
-    ]
+    ],
+    "prior_main_commits": 299,
+    "new_main_commits": [
+      {
+        "sha": "93d4cfb5f26c258880a92c700ad14192400a5b17",
+        "parents": [
+          "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a"
+        ],
+        "tree_sha": "27167cb7656bf3047b72b056e7aa29ea9d2520e7",
+        "committed_at_utc": "2026-11-16T11:41:26Z",
+        "subject": "data: persist verified workflow knowledge snapshot"
+      },
+      {
+        "sha": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+        "parents": [
+          "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5",
+          "f1364419a267065d46b7f4e64581db6876b1c6e8"
+        ],
+        "tree_sha": "77dadf5f8651be38b22023973f161314db23656e",
+        "committed_at_utc": "2026-11-15T15:38:45Z",
+        "subject": "Merge PR #77 — source-pinned LS history and reusable failure evidence"
+      },
+      {
+        "sha": "f1364419a267065d46b7f4e64581db6876b1c6e8",
+        "parents": [
+          "f2eeec69a1fe3295bf40aff06f0279a2f69c5ae5"
+        ],
+        "tree_sha": "77dadf5f8651be38b22023973f161314db23656e",
+        "committed_at_utc": "2026-11-15T15:36:53Z",
+        "subject": "docs(test): classify LS root-to-Nov15 history and preserve generalizable research failures"
+      }
+    ],
+    "prior_tracked_paths": 331,
+    "added_paths": [
+      {
+        "path": "data/inputs/archive/2026/11/f2c5bba131d905bd-787471b78dfe37c2-a6d8a83fe15e.json",
+        "git_blob_sha": "33b18ea4d08702b534ec91bcb0af2d6204adcea5"
+      },
+      {
+        "path": "data/receipts/gh-43859884737-1.json",
+        "git_blob_sha": "9b15cd2d59f48498c017db27f3f19465c2607230"
+      },
+      {
+        "path": "docs/lessons/2026-11-15-generalizable-research-software-failure-catalog.md",
+        "git_blob_sha": "62b0e5227ca8f7eadab79cf8befbe12b7ba10e42"
+      },
+      {
+        "path": "docs/provenance/POST_849_TO_868_RECONCILIATION_2026-11-15.md",
+        "git_blob_sha": "a70da177768722c53901e9de3f9bc77409ad49ba"
+      },
+      {
+        "path": "docs/provenance/post-849-to-868-observation-2026-11-15.json",
+        "git_blob_sha": "446a28b2357bf50313ce063baa142757ae7a56a8"
+      },
+      {
+        "path": "docs/taxonomy/FULL_HISTORY_CLASSIFICATION_2026-11-15.md",
+        "git_blob_sha": "59b5c1264bfa3b5749d0add30a3acad0c545708b"
+      },
+      {
+        "path": "docs/taxonomy/full-history-classification-2026-11-15.json",
+        "git_blob_sha": "9282c61db5ac58aec3b8dc15de51de5c4b57ff59"
+      },
+      {
+        "path": "tests/test_full_history_classification_2026_11_15.py",
+        "git_blob_sha": "bc339f4b7b31f574ab630b0337a1390982001c3f"
+      }
+    ],
+    "changed_existing_paths": [
+      {
+        "path": "README.md",
+        "prior_git_blob_sha": "1120df3d68eaf1ac450b43b34b80f82d53ff18dc",
+        "current_git_blob_sha": "1398641efca5d0d8901155a9a0fe794ac765c5e1"
+      },
+      {
+        "path": "data/inputs/current/candidate.json",
+        "prior_git_blob_sha": "33b18ea4d08702b534ec91bcb0af2d6204adcea5",
+        "current_git_blob_sha": "34e27848cf4cc5ace6bd802883d50e6101e6d3b8"
+      },
+      {
+        "path": "data/knowledge/current.json",
+        "prior_git_blob_sha": "3d437d021a905cb09d34dd2793131582f9df1d15",
+        "current_git_blob_sha": "af9ee047c054df6aa2e7966cc0354f214be93e2f"
+      },
+      {
+        "path": "data/knowledge/entities.jsonl",
+        "prior_git_blob_sha": "8feb548993362b7ded5e3e5f3f2e616ed751d857",
+        "current_git_blob_sha": "1767bb4dfe04f4d974a486528cea15c0d4c2e142"
+      },
+      {
+        "path": "data/knowledge/events.jsonl",
+        "prior_git_blob_sha": "d916bcba6352691741156403379df50465fb8e83",
+        "current_git_blob_sha": "002fc4295d98156fe3971106490f90f1ab879026"
+      },
+      {
+        "path": "data/knowledge/graph-manifest.json",
+        "prior_git_blob_sha": "1bc9a52b6bb641d4803bacedbf0cdf5dbe014dc9",
+        "current_git_blob_sha": "4b040e3d3ff17eee295ca517ac777f8c9a1cdd73"
+      },
+      {
+        "path": "data/knowledge/relations.jsonl",
+        "prior_git_blob_sha": "68a08784a932be2b350477569ff9d1aae0d4b365",
+        "current_git_blob_sha": "6fc8d22df1a5341fa408ab7358c1c1349fdd3cdf"
+      },
+      {
+        "path": "data/memories/current.json",
+        "prior_git_blob_sha": "13b13df7c8cd26a86e3c92abcc0b2ca2a1e60ab3",
+        "current_git_blob_sha": "2c856a74cf1ba834bef6ec7298eae97b08e66bc0"
+      },
+      {
+        "path": "docs/README.md",
+        "prior_git_blob_sha": "1336a3cca1ee5d5c1d2adcd4cd5142d3887b867a",
+        "current_git_blob_sha": "eaec96f0d9f1b05af94f5a54f95d8e0aa12d3f06"
+      },
+      {
+        "path": "docs/provenance/README.md",
+        "prior_git_blob_sha": "6d8f3cc7a8457456f55812c439c9d3aac10a19b7",
+        "current_git_blob_sha": "f841597e2d4ec905ed7e8e59ec0374eb5dc49a94"
+      },
+      {
+        "path": "docs/taxonomy/README.md",
+        "prior_git_blob_sha": "a91db718df4d4f94e2ba8c5ac5d4b2d572d3e5e4",
+        "current_git_blob_sha": "cbd1c1a802b9e6f0dc3d7349e93785c2e15362a2"
+      },
+      {
+        "path": "evidence/profiles/docs.json",
+        "prior_git_blob_sha": "17e8e5f074d1c69014ddde0f6efaa809e18e3147",
+        "current_git_blob_sha": "7131c671380c97983cbd57520e4723f83cfc97ce"
+      }
+    ],
+    "removed_prior_paths": [],
+    "pr_delta": [
+      {
+        "number": 77,
+        "title": "docs(test): complete first-day→Nov15 provenance taxonomy and reusable research failure atlas",
+        "disposition": "MERGED",
+        "head_sha": "f1364419a267065d46b7f4e64581db6876b1c6e8",
+        "merged_at_utc": "2026-11-15T15:38:46Z"
+      },
+      {
+        "number": 78,
+        "title": "docs(research): consolidate origin-to-current lessons and classification",
+        "disposition": "CLOSED_UNMERGED",
+        "head_sha": "2e692a86987363c82f0fc5db6cbb2c08caef86f3",
+        "merged_at_utc": null
+      },
+      {
+        "number": 79,
+        "title": "docs: bilingual coverage of all 23 life-science professional documents",
+        "disposition": "OPEN_DRAFT",
+        "head_sha": "da80177131449ac55df874a64bc5174fc22c5509",
+        "merged_at_utc": null
+      }
+    ],
+    "current_unique_trees": 276
   },
   "accepted_state": {
     "receipts": 6,
