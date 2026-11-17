@@ -102,16 +102,25 @@ class Post798AuditTests(unittest.TestCase):
                           a["archived_candidates"]), (5, 5, 4))
         receipts = sorted((ROOT / "data" / "receipts").glob("gh-*.json"))
         archives = sorted((ROOT / "data" / "inputs" / "archive").rglob("*.json"))
-        self.assertEqual((len(receipts), len(archives)), (5, 4))
-        raw = (ROOT / "data" / "knowledge" / "events.jsonl").read_bytes()
-        events = [json.loads(x) for x in raw.decode("utf-8").splitlines()]
-        self.assertEqual(len(events), 5)
-        self.assertEqual(events[-1]["event_sha256"], a["latest_event_sha256"])
-        self.assertEqual(events[-1]["run_id"], a["execution_id"])
-        self.assertEqual(blob_sha(raw), a["event_ledger_blob_sha_at_cutoff"])
+        # The archive is a Nov 10 *as-of* witness. Later native APPLIED
+        # events are legal append-only state, not mutations of that snapshot.
+        self.assertGreaterEqual(len(receipts), a["receipts"])
+        self.assertGreaterEqual(len(archives), a["archived_candidates"])
+        lines = (ROOT / "data" / "knowledge" / "events.jsonl").read_bytes().splitlines(keepends=True)
+        events = [json.loads(line) for line in lines if line.strip()]
+        self.assertGreaterEqual(len(events), a["chained_events"])
+        self.assertEqual(len(receipts), len(events))
+        self.assertEqual(len(archives), len(events) - 1)
+        frozen = events[:a["chained_events"]]
+        self.assertEqual(frozen[-1]["event_sha256"], a["latest_event_sha256"])
+        self.assertEqual(frozen[-1]["run_id"], a["execution_id"])
+        self.assertEqual(blob_sha(b"".join(lines[:a["chained_events"]])),
+                         a["event_ledger_blob_sha_at_cutoff"])
         receipt = ROOT / a["latest_receipt"]
         self.assertEqual(blob_sha(receipt.read_bytes()),
                          a["latest_receipt_blob_sha"])
+        from accepted_production_history import authorized_native_append_paths
+        authorized_native_append_paths(ROOT)
         from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
         result = verify_state(StateRoots(ROOT), require_accepted=True)
         self.assertTrue(result.valid, result.errors)
