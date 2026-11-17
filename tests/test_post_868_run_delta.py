@@ -143,7 +143,7 @@ class Post868To889EvidenceTests(unittest.TestCase):
         self.assertGreaterEqual(len(events), 6)
         self.assertEqual(events[5]["run_id"], a["latest_execution_id"])
         self.assertEqual(events[5]["event_sha256"],
-                         "9665258e83117c625f03ad43794fa260785887653a5c898ad6e2f15a6a7dfa")
+                         "9665258e83117c625f03ad43794fa260785887653a5c898ad6e2f15f6a9d7dfa")
         self.assertEqual(git_blob(b"".join(lines[:6])),
                          "002fc4295d98156fe3971106490f90f1ab879026")
         receipt = ROOT / ("data/receipts/" + a["latest_execution_id"] + ".json")
