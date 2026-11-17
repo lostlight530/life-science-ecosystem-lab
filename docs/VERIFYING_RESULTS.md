@@ -1,5 +1,27 @@
 # Understanding verification results
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** PR CI、CLI 验证、Framework 合同检查、生产 Receipt 和外部科研结论属于不同证据表面
+
+**English owning title:** Understanding verification results
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| Six independent evidence surfaces | 六类相互独立的证据 |
+| Required pull-request verdict | 该软件研究对象的实现机制与限制 |
+| Framework evidence levels and strict abstention | 该软件研究对象的实现机制与限制 |
+| Tool report decisions | 该软件研究对象的实现机制与限制 |
+| Graph claims and reproducibility | 该软件研究对象的实现机制与限制 |
+| Native workflow reading guide | 该软件研究对象的实现机制与限制 |
+| Cross-version knowledge review | 该软件研究对象的实现机制与限制 |
+| Research claim decisions are not executable verdicts | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 This project's independent Workflow, two Tools and separate experimental Framework produce **bounded engineering evidence**, not clinical/biological correctness or external platform certification. Determine *exactly which artifact, version, command and check* supports a statement.
 
 For an end-to-end **read-only replay with negative controls and claim-level review fields**, see [Cross-asset evidence replay](EVIDENCE_REPLAY_PROTOCOL.md). For cross-service identity, version and standards compatibility, see [Interoperability review](INTEROPERABILITY_REVIEW.md). These guides add no new executable guarantee.

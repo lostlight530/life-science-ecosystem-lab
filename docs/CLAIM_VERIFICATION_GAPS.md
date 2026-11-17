@@ -1,5 +1,23 @@
 # Unresolved claims and research falsifiers — LS repository
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** 缺口记录是 10 月 29 日时点的否定性与未知性台账，后续补充需要维持每一日期和修正链
+
+**English owning title:** Unresolved claims and research falsifiers — LS repository
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| Addendum · subsequent 2026-10-30 observation, separate from the original pinned cutoff | 该软件研究对象的实现机制与限制 |
+| Decision rights and four incompatible truth levels | 该软件研究对象的实现机制与限制 |
+| Addendum · 2026-10-31 causal attribution, owner retention and predecessor evidence | 该软件研究对象的实现机制与限制 |
+| Addendum · 2026-10-31 independent root-to-current full-population replay | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 [Complete historical reconstruction](REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Frozen GitHub census](provenance/README.md) · [Eight-stage method](RESEARCH_METHODOLOGY.md)
 
 **Pinned review:** 2026-10-29T16:24:03.499Z UTC, main `05ab6b2dc98dfe13581b5ae1bedcd11a58dbbb77`. This is a **review-only issue ledger**, not a runnable new Tool, Workflow, CI gate or authorization to mutate production, institutions or external platforms. It accepts `UNVERIFIED`, `NOT_TESTED`, `NO_CHANGE`, `INAPPLICABLE`, `BLOCKED` and genuine negative results.

@@ -2,6 +2,14 @@
 
 This repository is a **research software engineering methodology demonstrator**, not a fixed biological benchmark or a catalog whose scientific significance is measured by the number of supported assays. An illustrative domain can be exchanged without replacing the methods for provenance, reproducibility, evaluation and human authority.
 
+## 八阶段双语语义索引 / Eight-stage bilingual semantic key
+
+`DEFINE` 定义可证伪问题 / falsifiable question · `PIN` 固定输入与版本 / immutable inputs and versions · `QUALIFY` 资格与局限审查 / suitability and limitations · `EXECUTE` 版本绑定的真实执行 / revision-bound execution · `EVALUATE` 单位、对照与不确定性 / metrics, comparator and uncertainty · `AUDIT` 原始证据与独立复核 / inspectable evidence and independent audit · `REVIEW` 人类权限与声明审批 / human claim and write authority · `REPLAY` 可比重放与失败保留 / comparable rerun and retained failure
+
+**不允许的跳跃 / Prohibited promotion:** `PROPOSAL_ONLY` ≠ executed experiment, `PASS` from a local Framework shape check ≠ scientifically valid method, green CI ≠ accepted Knowledge write, DOI or public registry page ≠ independent institutional certification / 方法顺序是审查合同，不是每阶段已经实际完成的声明
+
+**历史边界 / Historical scope:** The November 15 [30-pattern failure catalog](lessons/2026-11-15-generalizable-research-software-failure-catalog.md) is source-pinned research-software experience, not an expansion of the fixed biological dataset or a new accepted prospective scientific observation / 历史样例保留原始失败与时间身份
+
 ## Stable lifecycle
 
 | Stage | Required methodological question | Evidence boundary |

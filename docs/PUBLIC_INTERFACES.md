@@ -1,5 +1,25 @@
 # Public software interfaces
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** Knowledge Workflow、Evidence Tool、Bio Tool 与 Framework 提供独立文件和 CLI 界面，不等于一个共享 Agent Runtime
+
+**English owning title:** Public software interfaces
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| Knowledge Workflow (`.github/`) | 该软件研究对象的实现机制与限制 |
+| Research Software Evidence Tool (`evidence/`) | 该软件研究对象的实现机制与限制 |
+| Independent Protein Bio Tool (`bio_tool/`) | 该软件研究对象的实现机制与限制 |
+| Experimental Cross-Domain Software Framework (`framework/`) | 该软件研究对象的实现机制与限制 |
+| Composition | 该软件研究对象的实现机制与限制 |
+| Common methodological contract across research examples | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 [First-use commands](GETTING_STARTED.md) · [Result interpretation](VERIFYING_RESULTS.md) · [Documentation index](README.md)
 
 The released `v0.4.0` baseline publishes three peer software assets under one source-code and release identity. The current repository also contains one separately packaged experimental Framework added after that release.

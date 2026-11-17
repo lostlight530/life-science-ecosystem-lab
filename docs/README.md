@@ -35,6 +35,21 @@ Choose the path matching your task. This index describes **public, reproducible 
 | Check external standards and registration readiness | [Standards](STANDARDS.md) |
 | Maintain the repository safely and understand the publication boundary | [Maintenance](MAINTENANCE.md) |
 
+## 中文与英文快速恢复路径 / Bilingual asset and evidence recovery map
+
+**四种软件身份 / Four distinct software identities**
+
+| 对象 / Asset | 自身拥有的能力 / Owned behavior | 不得继承的权威 / Authority not inherited |
+| --- | --- | --- |
+| Knowledge Workflow | `.github/` 的调度、来源约束、状态与有条件 `data/` 接受 / Native scheduling, source-graded state and guarded acceptance | Agent 建议、外部状态页或测试绿色不能替代真实 Receipt 与 Git commit / Agent proposals, dashboards or green checks |
+| Evidence Tool | `evidence/` 中独立的来源与证据检查 CLI / Independent source and evidence CLI | 不等于外部科研代码真正执行或发表认证 / Not external method execution or publication certification |
+| Bio Tool | `bio_tool/` 的有界 FASTA/PDB 处理 / Bounded FASTA/PDB processing | 不等于蛋白质结构预测准确或生物学发现 / Not structure prediction accuracy or biological discovery |
+| Framework | `framework/` 的独立实验性软件工程合同检查 / Separate experimental engineering contract checks | 不是第四个 Tool、已发行的 `v0.4.0` 资产或通用科学裁决器 / Not a fourth Tool, part of the frozen v0.4.0 archive, or a scientific judge |
+
+**当前与历史 / Current versus historical:** The [November 15 source-pinned failure atlas](lessons/2026-11-15-generalizable-research-software-failure-catalog.md) was merged through [PR #77](https://github.com/lostlight530/life-science-ecosystem-lab/pull/77), while [PR #78](https://github.com/lostlight530/life-science-ecosystem-lab/pull/78) closed without merge / #77 的 30 项失败图谱已并入 main，#78 的未合并草案不能视作当前正式文件
+
+**执行与证据 / Execution and evidence:** Start with [architecture](ARCHITECTURE.md), [method](RESEARCH_METHODOLOGY.md), [replay protocol](EVIDENCE_REPLAY_PROTOCOL.md) and [verification](VERIFYING_RESULTS.md), then inspect actual source revision and accepted receipts / 不要把日期索引、Agent 自述或历史 CI 运行结果当成当前执行证明
+
 ## Canonical asset guides
 
 - [Knowledge Workflow](../.github/README.md): GitHub Actions native executor, computational CWL sub-workflow, source-cited graph, state and guarded persistence

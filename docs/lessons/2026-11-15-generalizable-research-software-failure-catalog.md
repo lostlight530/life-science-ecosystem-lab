@@ -2,7 +2,7 @@
 
 **Scope:** portable engineering and scientific-evidence lessons extracted from the publicly inspectable history of one life-sciences research software repository, 2026-10-16 through 2026-11-15 (Asia/Shanghai). **Not** a list of biological failures, a claim to have observed every private or vanished execution, a new research result, or an institutional certification.
 
-**通用定位：** 这份错误经验库面向任何长期运行的科研软件、开放科学基础设施、异构 Agent 协作与自动化研究系统。把错误视为可以定位、证伪、复现和修订的工程证据，而不是按红灯数量制造经验；保留原始失败、修复过程、审核分歧与未知，不改变正式科研历史。
+**通用定位：** 这份错误经验库面向任何长期运行的科研软件、开放科学基础设施、异构 Agent 协作与自动化研究系统；把错误视为可以定位、证伪、复现和修订的工程证据，而不是按红灯数量制造经验；保留原始失败、修复过程、审核分歧与未知，不改变正式科研历史；
 
 [Full source classification](../taxonomy/FULL_HISTORY_CLASSIFICATION_2026-11-15.md) · [Machine census](../taxonomy/full-history-classification-2026-11-15.json) · [Native 849→868 evidence](../provenance/POST_849_TO_868_RECONCILIATION_2026-11-15.md) · [Earlier correction register](../taxonomy/CORRECTION_REGISTER_2026-11-03.md) · [Eight-stage method](../RESEARCH_METHODOLOGY.md) · [Agent review decisions](../AGENT_REVIEW_DECISIONS.md)
 

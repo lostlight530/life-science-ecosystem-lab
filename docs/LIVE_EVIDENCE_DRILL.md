@@ -1,5 +1,23 @@
 # Real-world life-science read-only field drill · 2026-10-17
 
+## 中文专业证据对应 / Chinese evidence counterpart
+
+**历史或实现对象 / Exact subject:** 2026-10-17 只读现场演练记录真实 GitHub Source 和 Actions 操作，不意味着后续平台状态或者生物学证明
+
+**Original English title:** Real-world life-science read-only field drill · 2026-10-17
+
+**证据对象 / Evidence object:** GitHub PR/Run、Tool/Framework 合同、真实研究结果、Agent 自报身份及人工复核应按所属来源和日期分别存放，过去的 failed、closed-unmerged 与 unknown 不能被新文档擦除 / Preserve original objects, chronology, failed and unmerged dispositions, and independently witnessed source evidence
+
+| English original section | 中文阅读定位 |
+| --- | --- |
+| Actual GitHub Actions runs | 实际观察的 Actions 运行 |
+| Real live-source results | 真实来源的时点观察 |
+| Independent external software preflight | 外部软件预检 |
+| Rerun without data writes | 证据与限界条件 |
+
+**状态 / Status:** 这是中英双语文档校准，没有新运行任何实验、外部机构验证或生产数据接受 / This is documentation clarification, not new scientific execution, external certification or production acceptance
+
+
 This is **observed external-source field evidence**, not a synthetic CWL fixture, a product claim, a registry registration, or an accepted main-branch knowledge snapshot.
 
 ## Actual GitHub Actions runs

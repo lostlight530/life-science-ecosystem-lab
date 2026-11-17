@@ -1,5 +1,22 @@
 # Provenance policy
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** 源码版本、真实执行、Receipt、外部 DOI 和 GitHub 接受的来源与时间独立，不能把索引卡视为实际 Scientific Run
+
+**English owning title:** Provenance policy
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| Snapshot versus execution identities | 该软件研究对象的实现机制与限制 |
+| Cross-component evidence and authority boundaries | 该软件研究对象的实现机制与限制 |
+| Cross-infrastructure metadata and identity reconciliation | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 The [dated origin-to-October-30 reconstruction](REPOSITORY_HISTORY_AND_PROVENANCE.md) recorded 42 PR objects, 234 main-reachable commits and 531 currently visible Runs at **that original historical cutoff**, not at all future times. The [full-history classification](taxonomy/README.md) separately pins 250 main-reachable commits, 57 PR objects and 274 tracked files at source main 94f5f0875e7f590846781e5557912730bc482221; the [additive provenance index](provenance/README.md) retains a later 684-Run source cutoff. The separately dated JSON snapshots are **project-authored, non-production historical evidence**: they do not replace Git objects, accepted `data/`, external institution records, expired Actions artifacts, direct scientific observations or reviewer authority. The [open claim/falsifier register](CLAIM_VERIFICATION_GAPS.md) keeps unknown, negative and unmerged evidence independently visible.
 
 A [later append-only reconciliation](provenance/RECONCILIATION_2026-10-30.md) records an observed difference between two dated Actions API snapshots, including disappeared historical failures and an independent [daily native quality ledger](provenance/NATIVE_DAILY_QUALITY_2026-10-30.md). The original census is deliberately not rewritten. Per-run absence from a later API response is not evidence of its deletion mechanism or actor, and no retired-run metadata can substitute for missing original Job logs.

@@ -11,6 +11,14 @@ Each established asset and the experimental Framework can operate independently 
 
 The frozen `v0.4.0` repository release and its Zenodo DOI cover the three established assets. The Framework was added later as an unreleased experimental component with its own `0.1.0` package identity. Current source metadata lists all four repository components without rewriting the historical release boundary
 
+## 中文架构身份与责任分界 / Bilingual architecture and responsibility boundary
+
+**中文：** 三个已建立的软件资产和一个独立实验性 Framework 是并列的执行与合同身份，`.github/` 中的 Knowledge Workflow 有受门禁保护的生产写入边界，Evidence Tool 与 Bio Tool 是各自可调用的 CLI，Framework 不属于这三个资产的依赖树或 `v0.4.0` 冻结发行范围
+
+**English:** The three established peer assets and separately packaged experimental Framework are distinct runtime/contract owners, not a single agent harness or four mutually dependent tools, only the native Knowledge acceptance path may persist governed `data/` after its own validation and approval gates
+
+**中英共同验证规则 / Shared verification rule:** Implementation source and machine receipts decide the behavior of each asset, a cross-asset call or schema pass does not by itself establish an externally accepted research claim, biological correctness, institutional enrollment or a historical release update / 任一层级的通过不得越级充当另一层级的结果
+
 ## Native lifecycle
 
 `Approved source profiles → Collect → Validate → Aggregate → Project Knowledge → Verify Knowledge → Compare to Active → Archive Superseded → Record Memory → Check World-line → Guarded Apply → Receipt`

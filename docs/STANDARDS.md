@@ -1,5 +1,23 @@
 # Standards mapping and external status
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** RO-Crate、Workflow profile、Testing profile、CodeMeta 与 FAIR4RS 各有具体版本和语义，格式正确不等于认证
+
+**English owning title:** Standards mapping and external status
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| Current external RO-Crate release versus reviewed project pins | 该软件研究对象的实现机制与限制 |
+| Local readiness and external acceptance | 该软件研究对象的实现机制与限制 |
+| Portable CWL package | 该软件研究对象的实现机制与限制 |
+| Third independently callable Bio Tool | 该软件研究对象的实现机制与限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 [Documentation index](README.md) · [Understanding results](VERIFYING_RESULTS.md)
 
 This document lists supported *software-interface mappings*, not certifications.

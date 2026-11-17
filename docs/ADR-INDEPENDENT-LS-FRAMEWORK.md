@@ -1,5 +1,24 @@
 # ADR: independent life-sciences cross-domain software engineering framework
 
+## 中文专业内容对应 / Chinese technical counterpart
+
+**本文件确切边界 / Actual subject:** 实验性的独立 Framework 只验证软件工程合同，非第四个 Tool、非 0.4 归档组成物、非生物学裁决器
+
+**English owning title:** ADR: independent life-sciences cross-domain software engineering framework
+
+**可核验证据 / Required evidence:** 单独固定执行者、准确源码版本、具体输入 bytes、来源授权、实际命令与返回数据，以及人工接受或拒绝的记录，缺失的外部来源和历史运行日志保持未知 / Preserve independent actor, revision, input, source eligibility, execution and human disposition identities, a documentation check never proves biological truth
+
+| English source section / 原文章节 | 中文专业定位 / Chinese subject map |
+| --- | --- |
+| Context | 该软件研究对象的实现机制与限制 |
+| Implemented architecture decision | 该软件研究对象的实现机制与限制 |
+| Explicit engineering invariants | 该软件研究对象的实现机制与限制 |
+| Research method and assessment | 该软件研究对象的实现机制与限制 |
+| Standards relationship | 标准对照与符合性限制 |
+
+**四资产分界 / Four-asset boundary:** 原生 Knowledge Workflow 是唯一受门禁约束的 `data/` 接受路径，Evidence CLI、Bio CLI 和独立 Framework 不会因为组合调用而继承写入授权 / Only the guarded native lifecycle owns accepted knowledge writes, no peer asset or Agent proposal inherits that authority
+
+
 Decision proposed: 2026-10-19
 Implementation merged: 2026-10-20 via PR #30 at main commit 20b3cdd03eb1df690ab26ddb2816121df3af54a7
 Status: IMPLEMENTED SOFTWARE ASSET · EXPERIMENTAL RESEARCH VALIDATION
