@@ -24,7 +24,7 @@ def read(path):
 
 
 def git_blob(content):
-    return hashlib.sha1(b"blob " + str(len(content)).encode() + b"\\0" + content).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(content)).encode() + b"\0" + content).hexdigest()
 
 
 class Post868To889EvidenceTests(unittest.TestCase):
