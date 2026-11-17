@@ -1,0 +1,654 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "SOURCE_SCOPED_READ_ONLY_RECONCILIATION",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_logical_day_asia_shanghai": "2026-11-17",
+  "source_main_sha": "93d4cfb5f26c258880a92c700ad14192400a5b17",
+  "source_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "latest_included_run_created_at_utc": "2026-11-16T17:33:07Z",
+  "per_request_acquisition_timestamps": null,
+  "source_scope": "889 pre-maintenance Runs, after 868-Nov15 archive; branch-created post-cutoff Runs excluded even if returned by API",
+  "previous_archive": "docs/provenance/post-849-to-868-observation-2026-11-15.json",
+  "actions": {
+    "previous_visible": 868,
+    "previous_849_ids": 849,
+    "additional_19_ids": 19,
+    "new_count": 21,
+    "current_prewrite_visible": 889,
+    "old_ids_missing": [],
+    "new_events": {
+      "push": 10,
+      "pull_request": 8,
+      "schedule": 3
+    },
+    "new_conclusions": {
+      "success": 17,
+      "failure": 4
+    },
+    "new_latest_attempt_jobs": 40,
+    "new_latest_attempt_job_conclusions": {
+      "success": 34,
+      "skipped": 1,
+      "failure": 5
+    },
+    "new_runs": [
+      {
+        "id": 43730871445,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:36:58Z",
+        "head_sha": "f1364419a267065d46b7f4e64581db6876b1c6e8",
+        "head_branch": "audit/2026-11-15-full-history-and-general-research-lessons",
+        "jobs": [
+          {
+            "id": 132862777614,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43730901584,
+        "workflow": "Validate life-science workflow and evidence contracts",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:37:18Z",
+        "head_sha": "f1364419a267065d46b7f4e64581db6876b1c6e8",
+        "head_branch": "audit/2026-11-15-full-history-and-general-research-lessons",
+        "jobs": [
+          {
+            "id": 132862869937,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 132862870167,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 132862870196,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 132862870273,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 132862992701,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43730901585,
+        "workflow": "Life Science Bio Tool — Independent Data Processing",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:37:18Z",
+        "head_sha": "f1364419a267065d46b7f4e64581db6876b1c6e8",
+        "head_branch": "audit/2026-11-15-full-history-and-general-research-lessons",
+        "jobs": [
+          {
+            "id": 132862869807,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 132862870006,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43730901587,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:37:18Z",
+        "head_sha": "f1364419a267065d46b7f4e64581db6876b1c6e8",
+        "head_branch": "audit/2026-11-15-full-history-and-general-research-lessons",
+        "jobs": [
+          {
+            "id": 132862869772,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43731014936,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:38:33Z",
+        "head_sha": "24e02bc233f1d6752bc29b0a9239dcbe5c0a72c8",
+        "head_branch": "research/2026-11-15-universal-lessons-classification",
+        "jobs": [
+          {
+            "id": 132863223340,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43731019053,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:38:36Z",
+        "head_sha": "feedc79eddeeb06023ceae4ee5eab43203c2fb53",
+        "head_branch": "research/2026-11-15-universal-lessons-classification",
+        "jobs": [
+          {
+            "id": 132863236366,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43731037006,
+        "workflow": "Life Science Bio Tool — Independent Data Processing",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:38:49Z",
+        "head_sha": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+        "head_branch": "main",
+        "jobs": [
+          {
+            "id": 132863293250,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 132863294650,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ]
+      },
+      {
+        "id": 43731037047,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:38:49Z",
+        "head_sha": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+        "head_branch": "main",
+        "jobs": [
+          {
+            "id": 132863293087,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43731037077,
+        "workflow": "Validate life-science workflow and evidence contracts",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:38:49Z",
+        "head_sha": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+        "head_branch": "main",
+        "jobs": [
+          {
+            "id": 132863293566,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 132863293573,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 132863293638,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 132863293688,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 132863427819,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43731066114,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:39:08Z",
+        "head_sha": "72698df4f3bf88a6bfaa19483d16efdb07958901",
+        "head_branch": "research/2026-11-15-universal-lessons-classification",
+        "jobs": [
+          {
+            "id": 132863379996,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43731079210,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:39:17Z",
+        "head_sha": "2e692a86987363c82f0fc5db6cbb2c08caef86f3",
+        "head_branch": "research/2026-11-15-universal-lessons-classification",
+        "jobs": [
+          {
+            "id": 132863420462,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43732583023,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-15T15:55:44Z",
+        "head_sha": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+        "head_branch": "v0.5.1",
+        "jobs": [
+          {
+            "id": 132868096018,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43832487384,
+        "workflow": "Daily research self-check — Institutional defaults and project custom",
+        "event": "schedule",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T08:35:39Z",
+        "head_sha": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+        "head_branch": "main",
+        "jobs": [
+          {
+            "id": 133180895688,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 133180896133,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43859884737,
+        "workflow": "Life Science Knowledge Workflow — Native Lifecycle",
+        "event": "schedule",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T11:40:57Z",
+        "head_sha": "101baf41d4a1ecd6bafcb4c867edc434ce20dd5a",
+        "head_branch": "main",
+        "jobs": [
+          {
+            "id": 133273607295,
+            "name": "validate",
+            "conclusion": "success",
+            "not_success_steps": [
+              {
+                "number": 15,
+                "name": "Preserve bounded diagnostics on validation failure",
+                "conclusion": "skipped"
+              }
+            ]
+          },
+          {
+            "id": 133273769432,
+            "name": "apply",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43870632783,
+        "workflow": "Verify accepted life-science knowledge continuity",
+        "event": "schedule",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T12:53:21Z",
+        "head_sha": "93d4cfb5f26c258880a92c700ad14192400a5b17",
+        "head_branch": "main",
+        "jobs": [
+          {
+            "id": 133310545196,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43919372833,
+        "workflow": "Life Science Framework — Independent Software Engineering Contracts",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T17:32:07Z",
+        "head_sha": "da9d2b72a03d4fa95756923d6b52b7f0f853eda6",
+        "head_branch": "docs/2026-11-17-bilingual-asset-recovery",
+        "jobs": [
+          {
+            "id": 133482195829,
+            "name": "standalone-framework",
+            "conclusion": "success"
+          },
+          {
+            "id": 133482196360,
+            "name": "windows-cross-platform",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43919536363,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "failure",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T17:33:02Z",
+        "head_sha": "da80177131449ac55df874a64bc5174fc22c5509",
+        "head_branch": "docs/2026-11-17-bilingual-asset-recovery",
+        "jobs": [
+          {
+            "id": 133482772491,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "failure",
+            "not_success_steps": [
+              {
+                "number": 5,
+                "name": "Test package and GitHub evidence contracts",
+                "conclusion": "failure"
+              },
+              {
+                "number": 6,
+                "name": "Verify research documentation and metadata links",
+                "conclusion": "skipped"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 43919549660,
+        "workflow": "Validate life-science workflow and evidence contracts",
+        "event": "pull_request",
+        "conclusion": "failure",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T17:33:06Z",
+        "head_sha": "da80177131449ac55df874a64bc5174fc22c5509",
+        "head_branch": "docs/2026-11-17-bilingual-asset-recovery",
+        "jobs": [
+          {
+            "id": 133482821673,
+            "name": "Repository contracts",
+            "conclusion": "failure",
+            "not_success_steps": [
+              {
+                "number": 5,
+                "name": "Compile source and run regression tests",
+                "conclusion": "failure"
+              },
+              {
+                "number": 6,
+                "name": "Validate profiles, metadata and public boundaries",
+                "conclusion": "skipped"
+              },
+              {
+                "number": 7,
+                "name": "Enforce tracked repository hygiene",
+                "conclusion": "skipped"
+              }
+            ]
+          },
+          {
+            "id": 133482822116,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 133482822280,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 133482822334,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 133483306512,
+            "name": "validate",
+            "conclusion": "failure",
+            "not_success_steps": [
+              {
+                "number": 2,
+                "name": "Report and enforce all validation domains",
+                "conclusion": "failure"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 43919549686,
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "pull_request",
+        "conclusion": "failure",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T17:33:06Z",
+        "head_sha": "da80177131449ac55df874a64bc5174fc22c5509",
+        "head_branch": "docs/2026-11-17-bilingual-asset-recovery",
+        "jobs": [
+          {
+            "id": 133482820581,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "failure",
+            "not_success_steps": [
+              {
+                "number": 5,
+                "name": "Test package and GitHub evidence contracts",
+                "conclusion": "failure"
+              },
+              {
+                "number": 6,
+                "name": "Verify research documentation and metadata links",
+                "conclusion": "skipped"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 43919549698,
+        "workflow": "Life Science Framework — Independent Software Engineering Contracts",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T17:33:06Z",
+        "head_sha": "da80177131449ac55df874a64bc5174fc22c5509",
+        "head_branch": "docs/2026-11-17-bilingual-asset-recovery",
+        "jobs": [
+          {
+            "id": 133482820531,
+            "name": "windows-cross-platform",
+            "conclusion": "success"
+          },
+          {
+            "id": 133482821057,
+            "name": "standalone-framework",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 43919549907,
+        "workflow": "Daily research self-check — Institutional defaults and project custom",
+        "event": "pull_request",
+        "conclusion": "failure",
+        "attempt": 1,
+        "created_at_utc": "2026-11-16T17:33:07Z",
+        "head_sha": "da80177131449ac55df874a64bc5174fc22c5509",
+        "head_branch": "docs/2026-11-17-bilingual-asset-recovery",
+        "jobs": [
+          {
+            "id": 133482821510,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "failure",
+            "not_success_steps": [
+              {
+                "number": 4,
+                "name": "Run isolated custom checks with complete failure ledger",
+                "conclusion": "failure"
+              }
+            ]
+          },
+          {
+            "id": 133482822213,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "schedule": {
+    "nominal_to_created_cause": "UNKNOWN",
+    "new_runs": [
+      {
+        "run_id": 43832487384,
+        "nominal_utc": "2026-11-16T01:41:00Z",
+        "created_utc": "2026-11-16T08:35:39Z",
+        "offset_seconds": 24879,
+        "job_conclusions": [
+          {
+            "id": 133180895688,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 133180896133,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43859884737,
+        "nominal_utc": "2026-11-16T03:23:00Z",
+        "created_utc": "2026-11-16T11:40:57Z",
+        "offset_seconds": 29877,
+        "job_conclusions": [
+          {
+            "id": 133273607295,
+            "name": "validate",
+            "conclusion": "success"
+          },
+          {
+            "id": 133273769432,
+            "name": "apply",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "run_id": 43870632783,
+        "nominal_utc": "2026-11-16T04:17:00Z",
+        "created_utc": "2026-11-16T12:53:21Z",
+        "offset_seconds": 30981,
+        "job_conclusions": [
+          {
+            "id": 133310545196,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "git": {
+    "main_reachable_commits": 302,
+    "tracked_blob_paths": 339,
+    "main_tree_entries": 390,
+    "prs": 79,
+    "merged_prs": 74,
+    "closed_unmerged_prs": [
+      29,
+      32,
+      67,
+      78
+    ],
+    "open_prs": [
+      79
+    ],
+    "releases": [
+      "v0.4.0",
+      "v0.5.0",
+      "v0.5.1"
+    ]
+  },
+  "accepted_state": {
+    "receipts": 6,
+    "events": 6,
+    "archives": 5,
+    "latest_execution_id": "gh-43859884737-1",
+    "latest_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "graph_entities": 17,
+    "graph_relations": 26,
+    "new_scientific_claims_verified": 0
+  },
+  "negative_evidence": {
+    "failed_pr79_run_ids": [
+      43919536363,
+      43919549660,
+      43919549686,
+      43919549907
+    ],
+    "fault_test": "tests/test_post_798_run_delta.py:105",
+    "failure_kind": "FROZEN_NOV10_ASSERTION_AGAINST_LIVE_APPEND_ONLY_DATA",
+    "cancelled_parent_with_failed_job": 43210854941,
+    "successful_parent_with_skipped_bio_job": 43266573648
+  },
+  "limits": [
+    "Job steps are preserved for decisive non-success execution/diagnostic outcomes; successful steps are not exhaustively archived",
+    "GitHub API visible is not all historical executions",
+    "Chronological cron-to-created offset cause UNKNOWN",
+    "Git APPLIED and successful CI are not scientific truth or provider certification"
+  ]
+}
