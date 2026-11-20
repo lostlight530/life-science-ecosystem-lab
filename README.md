@@ -69,9 +69,10 @@ Run from the cloned **repository root** with Python 3.11+. The CWL replay is off
 | --- | --- | --- |
 | Three established assets, citation baseline `0.4.0` | [Version DOI 10.5281/zenodo.23447089](https://doi.org/10.5281/zenodo.23447089) | The Knowledge Workflow, Evidence Tool and Protein File Audit baseline |
 | Repository archive `v0.5.0` | [Version DOI 10.5281/zenodo.23839899](https://doi.org/10.5281/zenodo.23839899) | The three established assets plus the separately packaged experimental Framework `0.1.0` |
+| Repository archive [`v0.5.1`](https://github.com/lostlight530/life-science-ecosystem-lab/tree/v0.5.1) | [Version DOI 10.5281/zenodo.24249719](https://doi.org/10.5281/zenodo.24249719) | November 15 full-history provenance and research failure atlas checkpoint |
 | Repository software family | [Concept DOI 10.5281/zenodo.23447088](https://doi.org/10.5281/zenodo.23447088) | All repository versions |
 
-`CITATION.cff` remains on the v0.4.0 three-asset citation target; it is not silently rewritten to the broader v0.5.0 repository archive. The two version DOIs identify different immutable scopes, while the current `main` branch remains an evolving repository state.
+`CITATION.cff` remains on the v0.4.0 three-asset citation target; it is not silently rewritten to the broader v0.5.0 repository archive. These version DOIs identify different immutable scopes, while the current `main` branch remains an evolving repository state.
 
 ### 软件版本与长期数据 / Software citation and longitudinal provenance
 
