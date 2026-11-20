@@ -4,7 +4,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 
 | I want to… | Read |
 | --- | --- |
-| Reconcile Oct 16 Git root to Nov 17 source state, native Run/Job quality, accepted-state continuity and current CI failure | [2026-11-17 Provenance Addendum](provenance/POST_868_TO_889_RECONCILIATION_2026-11-17.md) · [Machine Run/Job Ledger](provenance/post-868-to-889-observation-2026-11-17.json) · [Causal Failure Lesson](lessons/2026-11-17-frozen-history-vs-live-accepted-state.md) |
+| Reconcile Oct 16 Git root to Nov 17 source state, native Run/Job quality, accepted-state continuity and CI failures recorded in the Nov 17 snapshot | [2026-11-17 Provenance Addendum](provenance/POST_868_TO_889_RECONCILIATION_2026-11-17.md) · [Machine Run/Job Ledger](provenance/post-868-to-889-observation-2026-11-17.json) · [Causal Failure Lesson](lessons/2026-11-17-frozen-history-vs-live-accepted-state.md) |
 | Install and run the three established callable assets and optional experimental Framework from a clean checkout | [Getting Started](GETTING_STARTED.md) |
 | Know what a report proves, how to reproduce it, or why a CI check passes | [Understanding Verification](VERIFYING_RESULTS.md) |
 | Run daily independent official-default observations and local project self-checks | [Daily Self-Check](DAILY_SELF_CHECK.md) |
