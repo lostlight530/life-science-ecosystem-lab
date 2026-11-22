@@ -4,6 +4,7 @@ Choose the path matching your task. This index describes **public, reproducible 
 
 | I want to… | Read |
 | --- | --- |
+| Reconcile 915→932 currently visible Runs, 17 new Run/31 Job IDs, Nov 20–22 schedule offsets, unchanged native acceptance and historical failures | [2026-11-22 Source-pinned Quality](provenance/POST_915_TO_932_RECONCILIATION_2026-11-22.md) · [Machine Witness](provenance/post-915-to-932-observation-2026-11-22.json) · [Retention Lesson](lessons/2026-11-20-run-retention-and-denominator-drift.md) |
 | Reconcile the 889-Run Nov 17 frozen evidence to 915 currently visible Nov 20 Runs, 30 new Run / 63 Job IDs, and four unavailable historic failures without rewriting their verdicts | [2026-11-20 Native Provenance Review](provenance/POST_889_TO_915_RECONCILIATION_2026-11-20.md) · [Machine Run/Job Evidence](provenance/post-889-to-915-observation-2026-11-20.json) · [Retention / Denominator Lesson](lessons/2026-11-20-run-retention-and-denominator-drift.md) |
 | Reconcile Oct 16 Git root to Nov 17 source state, native Run/Job quality, accepted-state continuity and CI failures recorded in the Nov 17 snapshot | [2026-11-17 Provenance Addendum](provenance/POST_868_TO_889_RECONCILIATION_2026-11-17.md) · [Machine Run/Job Ledger](provenance/post-868-to-889-observation-2026-11-17.json) · [Causal Failure Lesson](lessons/2026-11-17-frozen-history-vs-live-accepted-state.md) |
 | Install and run the three established callable assets and optional experimental Framework from a clean checkout | [Getting Started](GETTING_STARTED.md) |
