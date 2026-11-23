@@ -1,0 +1,1028 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "SOURCE_SCOPED_GITHUB_READ_ONLY_RECONCILIATION_AND_SCHEDULE_CLOCK_LEDGER",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_logical_day_asia_shanghai": "2026-11-23",
+  "source_main_sha": "e5997e4221b6218d0315db9f146c33b289d6f8d7",
+  "source_git_root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+  "prior_archive": "docs/provenance/post-915-to-932-observation-2026-11-22.json",
+  "latest_included_run_created_at_utc": "2026-11-22T15:06:26Z",
+  "per_request_acquisition_timestamps": null,
+  "acquisition_scope": {
+    "latest_visible_run_total_from_actions_api": true,
+    "prior_total_from_frozen_archive": true,
+    "exact_previous_932_vs_current_939_id_set_join": false,
+    "scheduled_83_run_id_and_clock_census": true,
+    "latest_attempt_jobs_7_new_runs_individually_read": true,
+    "scheduled_83_latest_attempt_job_results_independently_read_in_review_session": true,
+    "scheduled_129_job_ids_archived": false,
+    "github_actions_native_cron_unchanged": true
+  },
+  "actions": {
+    "prior_visible": {
+      "count": 932,
+      "conclusions": {
+        "success": 881,
+        "cancelled": 51,
+        "failure": 0
+      },
+      "events": {
+        "push": 469,
+        "pull_request": 376,
+        "schedule": 83,
+        "workflow_dispatch": 4
+      }
+    },
+    "current_visible": {
+      "count": 939,
+      "conclusions": {
+        "success": 888,
+        "cancelled": 51,
+        "failure": 0
+      },
+      "events": {
+        "push": 473,
+        "pull_request": 379,
+        "schedule": 83,
+        "workflow_dispatch": 4
+      }
+    },
+    "net_visible_count_change": 7,
+    "post_cutoff_new_runs": [
+      {
+        "id": 45036269933,
+        "created_at_utc": "2026-11-22T15:04:36Z",
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "head_sha": "24b0f24690550450dbb60588cb9833029027dd31",
+        "jobs": [
+          {
+            "id": 137250610502,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45036293705,
+        "created_at_utc": "2026-11-22T15:04:52Z",
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "head_sha": "24b0f24690550450dbb60588cb9833029027dd31",
+        "jobs": [
+          {
+            "id": 137250684819,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45036293717,
+        "created_at_utc": "2026-11-22T15:04:52Z",
+        "workflow": "Validate life-science workflow and evidence contracts",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "head_sha": "24b0f24690550450dbb60588cb9833029027dd31",
+        "jobs": [
+          {
+            "id": 137250685325,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 137250685517,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 137250685582,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 137250686022,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 137250854715,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45036293819,
+        "created_at_utc": "2026-11-22T15:04:53Z",
+        "workflow": "Life Science Bio Tool — Independent Data Processing",
+        "event": "pull_request",
+        "conclusion": "success",
+        "attempt": 1,
+        "head_sha": "24b0f24690550450dbb60588cb9833029027dd31",
+        "jobs": [
+          {
+            "id": 137250685458,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 137250685830,
+            "name": "pinned-field",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45036444609,
+        "created_at_utc": "2026-11-22T15:06:26Z",
+        "workflow": "Validate life-science workflow and evidence contracts",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "head_sha": "e5997e4221b6218d0315db9f146c33b289d6f8d7",
+        "jobs": [
+          {
+            "id": 137251150488,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 137251150692,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 137251150724,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 137251150856,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 137251325993,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45036444668,
+        "created_at_utc": "2026-11-22T15:06:26Z",
+        "workflow": "Life Science Bio Tool — Independent Data Processing",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "head_sha": "e5997e4221b6218d0315db9f146c33b289d6f8d7",
+        "jobs": [
+          {
+            "id": 137251150688,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 137251151786,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ]
+      },
+      {
+        "id": 45036444708,
+        "created_at_utc": "2026-11-22T15:06:26Z",
+        "workflow": "Life Science Evidence Tool — Independent Verification",
+        "event": "push",
+        "conclusion": "success",
+        "attempt": 1,
+        "head_sha": "e5997e4221b6218d0315db9f146c33b289d6f8d7",
+        "jobs": [
+          {
+            "id": 137251150660,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ],
+    "new_run_conclusions": {
+      "success": 7
+    },
+    "new_run_events": {
+      "push": 4,
+      "pull_request": 3
+    },
+    "post_cutoff_latest_attempt_job_count": 17,
+    "post_cutoff_latest_attempt_job_conclusions": {
+      "success": 16,
+      "skipped": 1
+    }
+  },
+  "schedules": {
+    "currently_visible_schedule_runs": 83,
+    "latest_attempt_jobs_independently_inspected_in_review": 129,
+    "observed_latest_attempt_job_conclusions": {
+      "success": 129
+    },
+    "schedule_definitions": {
+      "daily_selfcheck": {
+        "name": "Daily research self-check — Institutional defaults and project custom",
+        "cron_utc": "41 1 * * *",
+        "cadence": "daily"
+      },
+      "continuity": {
+        "name": "Verify accepted life-science knowledge continuity",
+        "cron_utc": "17 4 * * *",
+        "cadence": "daily"
+      },
+      "knowledge": {
+        "name": "Life Science Knowledge Workflow — Native Lifecycle",
+        "cron_utc": "23 3 * * 1",
+        "cadence": "monday"
+      },
+      "bio": {
+        "name": "Life Science Bio Tool — Independent Data Processing",
+        "cron_utc": "19 2 * * 5",
+        "cadence": "friday"
+      }
+    },
+    "cohorts": {
+      "daily_selfcheck": {
+        "workflow": "Daily research self-check — Institutional defaults and project custom",
+        "cron_utc": "41 1 * * *",
+        "first_observed_utc_day": "2026-10-18",
+        "last_observed_utc_day": "2026-11-22",
+        "run_count": 36,
+        "median_created_offset_seconds": 23330,
+        "min_created_offset_seconds": 17230,
+        "max_created_offset_seconds": 28993,
+        "missing_expected_dates_within_observed_span": []
+      },
+      "continuity": {
+        "workflow": "Verify accepted life-science knowledge continuity",
+        "cron_utc": "17 4 * * *",
+        "first_observed_utc_day": "2026-10-17",
+        "last_observed_utc_day": "2026-11-22",
+        "run_count": 37,
+        "median_created_offset_seconds": 26325,
+        "min_created_offset_seconds": 15667,
+        "max_created_offset_seconds": 33555,
+        "missing_expected_dates_within_observed_span": []
+      },
+      "knowledge": {
+        "workflow": "Life Science Knowledge Workflow — Native Lifecycle",
+        "cron_utc": "23 3 * * 1",
+        "first_observed_utc_day": "2026-10-19",
+        "last_observed_utc_day": "2026-11-16",
+        "run_count": 5,
+        "median_created_offset_seconds": 28874,
+        "min_created_offset_seconds": 20415,
+        "max_created_offset_seconds": 30229,
+        "missing_expected_dates_within_observed_span": []
+      },
+      "bio": {
+        "workflow": "Life Science Bio Tool — Independent Data Processing",
+        "cron_utc": "19 2 * * 5",
+        "first_observed_utc_day": "2026-10-23",
+        "last_observed_utc_day": "2026-11-20",
+        "run_count": 5,
+        "median_created_offset_seconds": 25585,
+        "min_created_offset_seconds": 18861,
+        "max_created_offset_seconds": 27753,
+        "missing_expected_dates_within_observed_span": []
+      }
+    },
+    "runs": [
+      {
+        "id": 39018100269,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-17T08:38:07Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-17T04:17:00.000Z",
+        "created_minus_nominal_seconds": 15667
+      },
+      {
+        "id": 39104619997,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-18T06:36:06Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-18T01:41:00.000Z",
+        "created_minus_nominal_seconds": 17706
+      },
+      {
+        "id": 39113275640,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-18T08:54:43Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-18T04:17:00.000Z",
+        "created_minus_nominal_seconds": 16663
+      },
+      {
+        "id": 39212240189,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-19T06:50:22Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-19T01:41:00.000Z",
+        "created_minus_nominal_seconds": 18562
+      },
+      {
+        "id": 39227185707,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-10-19T09:03:15Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-19T03:23:00.000Z",
+        "created_minus_nominal_seconds": 20415
+      },
+      {
+        "id": 39234388500,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-19T10:01:15Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-19T04:17:00.000Z",
+        "created_minus_nominal_seconds": 20655
+      },
+      {
+        "id": 39381392189,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-20T06:36:46Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-20T01:41:00.000Z",
+        "created_minus_nominal_seconds": 17746
+      },
+      {
+        "id": 39401074752,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-20T09:29:45Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-20T04:17:00.000Z",
+        "created_minus_nominal_seconds": 18765
+      },
+      {
+        "id": 39556259140,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-21T06:34:32Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-21T01:41:00.000Z",
+        "created_minus_nominal_seconds": 17612
+      },
+      {
+        "id": 39576864291,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-21T09:25:38Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-21T04:17:00.000Z",
+        "created_minus_nominal_seconds": 18518
+      },
+      {
+        "id": 39734820988,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-22T06:34:47Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-22T01:41:00.000Z",
+        "created_minus_nominal_seconds": 17627
+      },
+      {
+        "id": 39755679098,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-22T09:28:23Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-22T04:17:00.000Z",
+        "created_minus_nominal_seconds": 18683
+      },
+      {
+        "id": 39911716174,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-23T06:28:43Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-23T01:41:00.000Z",
+        "created_minus_nominal_seconds": 17263
+      },
+      {
+        "id": 39918537642,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-10-23T07:33:21Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-23T02:19:00.000Z",
+        "created_minus_nominal_seconds": 18861
+      },
+      {
+        "id": 39931669556,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-23T09:24:47Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-23T04:17:00.000Z",
+        "created_minus_nominal_seconds": 18467
+      },
+      {
+        "id": 40070323977,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-24T06:28:10Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-24T01:41:00.000Z",
+        "created_minus_nominal_seconds": 17230
+      },
+      {
+        "id": 40079984160,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-24T08:56:23Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-24T04:17:00.000Z",
+        "created_minus_nominal_seconds": 16763
+      },
+      {
+        "id": 40170677920,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-25T06:52:44Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-25T01:41:00.000Z",
+        "created_minus_nominal_seconds": 18704
+      },
+      {
+        "id": 40179710305,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-25T09:12:50Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-25T04:17:00.000Z",
+        "created_minus_nominal_seconds": 17750
+      },
+      {
+        "id": 40282973703,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-26T06:58:36Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-26T01:41:00.000Z",
+        "created_minus_nominal_seconds": 19056
+      },
+      {
+        "id": 40297059874,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-10-26T09:06:46Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-26T03:23:00.000Z",
+        "created_minus_nominal_seconds": 20626
+      },
+      {
+        "id": 40305966236,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-26T10:15:22Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-26T04:17:00.000Z",
+        "created_minus_nominal_seconds": 21502
+      },
+      {
+        "id": 40463449543,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-27T06:50:03Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-27T01:41:00.000Z",
+        "created_minus_nominal_seconds": 18543
+      },
+      {
+        "id": 40484158969,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-27T09:52:54Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-27T04:17:00.000Z",
+        "created_minus_nominal_seconds": 20154
+      },
+      {
+        "id": 40649970391,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-28T07:25:23Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-28T01:41:00.000Z",
+        "created_minus_nominal_seconds": 20663
+      },
+      {
+        "id": 40673890368,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-28T10:39:45Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-28T04:17:00.000Z",
+        "created_minus_nominal_seconds": 22965
+      },
+      {
+        "id": 40836887893,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-29T07:39:57Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-29T01:41:00.000Z",
+        "created_minus_nominal_seconds": 21537
+      },
+      {
+        "id": 40861584405,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-29T10:57:15Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-29T04:17:00.000Z",
+        "created_minus_nominal_seconds": 24015
+      },
+      {
+        "id": 41021830497,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-30T07:43:26Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-30T01:41:00.000Z",
+        "created_minus_nominal_seconds": 21746
+      },
+      {
+        "id": 41027958936,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-10-30T08:39:51Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-30T02:19:00.000Z",
+        "created_minus_nominal_seconds": 22851
+      },
+      {
+        "id": 41044195993,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-30T10:54:39Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-30T04:17:00.000Z",
+        "created_minus_nominal_seconds": 23859
+      },
+      {
+        "id": 41180826289,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-31T07:29:57Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-31T01:41:00.000Z",
+        "created_minus_nominal_seconds": 20937
+      },
+      {
+        "id": 41192786481,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-31T10:26:54Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-10-31T04:17:00.000Z",
+        "created_minus_nominal_seconds": 22194
+      },
+      {
+        "id": 41287694940,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-01T09:10:05Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-01T01:41:00.000Z",
+        "created_minus_nominal_seconds": 26945
+      },
+      {
+        "id": 41301526739,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-01T11:21:24Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-01T04:17:00.000Z",
+        "created_minus_nominal_seconds": 25464
+      },
+      {
+        "id": 41412197104,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-02T08:19:20Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-02T01:41:00.000Z",
+        "created_minus_nominal_seconds": 23900
+      },
+      {
+        "id": 41436556408,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-11-02T11:24:14Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-02T03:23:00.000Z",
+        "created_minus_nominal_seconds": 28874
+      },
+      {
+        "id": 41445992506,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-02T12:35:49Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-02T04:17:00.000Z",
+        "created_minus_nominal_seconds": 29929
+      },
+      {
+        "id": 41604262360,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-03T08:34:18Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-03T01:41:00.000Z",
+        "created_minus_nominal_seconds": 24798
+      },
+      {
+        "id": 41632276154,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-03T12:01:44Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-03T04:17:00.000Z",
+        "created_minus_nominal_seconds": 27884
+      },
+      {
+        "id": 41796192635,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-04T08:00:20Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-04T01:41:00.000Z",
+        "created_minus_nominal_seconds": 22760
+      },
+      {
+        "id": 41827751347,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-04T12:15:47Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-04T04:17:00.000Z",
+        "created_minus_nominal_seconds": 28727
+      },
+      {
+        "id": 41994924429,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-05T08:30:00Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-05T01:41:00.000Z",
+        "created_minus_nominal_seconds": 24540
+      },
+      {
+        "id": 42027562052,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-05T12:29:27Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-05T04:17:00.000Z",
+        "created_minus_nominal_seconds": 29547
+      },
+      {
+        "id": 42188093525,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-06T08:29:54Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-06T01:41:00.000Z",
+        "created_minus_nominal_seconds": 24534
+      },
+      {
+        "id": 42194936143,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-11-06T09:25:25Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-06T02:19:00.000Z",
+        "created_minus_nominal_seconds": 25585
+      },
+      {
+        "id": 42215956253,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-06T12:12:59Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-06T04:17:00.000Z",
+        "created_minus_nominal_seconds": 28559
+      },
+      {
+        "id": 42352695753,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-07T07:46:53Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-07T01:41:00.000Z",
+        "created_minus_nominal_seconds": 21953
+      },
+      {
+        "id": 42366998260,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-07T11:09:45Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-07T04:17:00.000Z",
+        "created_minus_nominal_seconds": 24765
+      },
+      {
+        "id": 42460920843,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-08T07:58:17Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-08T01:41:00.000Z",
+        "created_minus_nominal_seconds": 22637
+      },
+      {
+        "id": 42475429538,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-08T11:22:01Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-08T04:17:00.000Z",
+        "created_minus_nominal_seconds": 25501
+      },
+      {
+        "id": 42587589778,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-09T08:39:54Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-09T01:41:00.000Z",
+        "created_minus_nominal_seconds": 25134
+      },
+      {
+        "id": 42611716908,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-11-09T11:46:49Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-09T03:23:00.000Z",
+        "created_minus_nominal_seconds": 30229
+      },
+      {
+        "id": 42621610650,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-09T12:59:53Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-09T04:17:00.000Z",
+        "created_minus_nominal_seconds": 31373
+      },
+      {
+        "id": 42785634316,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-10T08:49:21Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-10T01:41:00.000Z",
+        "created_minus_nominal_seconds": 25701
+      },
+      {
+        "id": 42818454449,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-10T12:45:23Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-10T04:17:00.000Z",
+        "created_minus_nominal_seconds": 30503
+      },
+      {
+        "id": 42986640895,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-11T08:23:24Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-11T01:41:00.000Z",
+        "created_minus_nominal_seconds": 24144
+      },
+      {
+        "id": 43016063251,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-11T11:56:21Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-11T04:17:00.000Z",
+        "created_minus_nominal_seconds": 27561
+      },
+      {
+        "id": 43186230480,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-12T08:50:19Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-12T01:41:00.000Z",
+        "created_minus_nominal_seconds": 25759
+      },
+      {
+        "id": 43222080700,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-12T12:53:31Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-12T04:17:00.000Z",
+        "created_minus_nominal_seconds": 30991
+      },
+      {
+        "id": 43395693337,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-13T08:45:15Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-13T01:41:00.000Z",
+        "created_minus_nominal_seconds": 25455
+      },
+      {
+        "id": 43402043543,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-11-13T09:31:36Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-13T02:19:00.000Z",
+        "created_minus_nominal_seconds": 25956
+      },
+      {
+        "id": 43424281460,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-13T12:20:11Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-13T04:17:00.000Z",
+        "created_minus_nominal_seconds": 28991
+      },
+      {
+        "id": 43573703106,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-14T08:00:18Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-14T01:41:00.000Z",
+        "created_minus_nominal_seconds": 22758
+      },
+      {
+        "id": 43590779143,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-14T11:35:45Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-14T04:17:00.000Z",
+        "created_minus_nominal_seconds": 26325
+      },
+      {
+        "id": 43694578292,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-15T08:27:15Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-15T01:41:00.000Z",
+        "created_minus_nominal_seconds": 24375
+      },
+      {
+        "id": 43711715966,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-15T12:01:18Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-15T04:17:00.000Z",
+        "created_minus_nominal_seconds": 27858
+      },
+      {
+        "id": 43832487384,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-16T08:35:39Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-16T01:41:00.000Z",
+        "created_minus_nominal_seconds": 24879
+      },
+      {
+        "id": 43859884737,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-11-16T11:40:57Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-16T03:23:00.000Z",
+        "created_minus_nominal_seconds": 29877
+      },
+      {
+        "id": 43870632783,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-16T12:53:21Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-16T04:17:00.000Z",
+        "created_minus_nominal_seconds": 30981
+      },
+      {
+        "id": 44058293652,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-17T09:44:13Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-17T01:41:00.000Z",
+        "created_minus_nominal_seconds": 28993
+      },
+      {
+        "id": 44094378063,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-17T13:36:15Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-17T04:17:00.000Z",
+        "created_minus_nominal_seconds": 33555
+      },
+      {
+        "id": 44273143027,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-18T09:08:36Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-18T01:41:00.000Z",
+        "created_minus_nominal_seconds": 26856
+      },
+      {
+        "id": 44311104573,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-18T13:10:59Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-18T04:17:00.000Z",
+        "created_minus_nominal_seconds": 32039
+      },
+      {
+        "id": 44496929532,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-19T09:29:48Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-19T01:41:00.000Z",
+        "created_minus_nominal_seconds": 28128
+      },
+      {
+        "id": 44533617045,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-19T13:27:23Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-19T04:17:00.000Z",
+        "created_minus_nominal_seconds": 33023
+      },
+      {
+        "id": 44708588937,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-20T09:11:21Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-20T01:41:00.000Z",
+        "created_minus_nominal_seconds": 27021
+      },
+      {
+        "id": 44715660705,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-11-20T10:01:33Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-20T02:19:00.000Z",
+        "created_minus_nominal_seconds": 27753
+      },
+      {
+        "id": 44741605920,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-20T13:07:51Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-20T04:17:00.000Z",
+        "created_minus_nominal_seconds": 31851
+      },
+      {
+        "id": 44886413448,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-21T08:46:06Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-21T01:41:00.000Z",
+        "created_minus_nominal_seconds": 25506
+      },
+      {
+        "id": 44905603255,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-21T12:46:58Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-21T04:17:00.000Z",
+        "created_minus_nominal_seconds": 30598
+      },
+      {
+        "id": 45004651729,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-22T08:50:12Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-22T01:41:00.000Z",
+        "created_minus_nominal_seconds": 25752
+      },
+      {
+        "id": 45023517759,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-22T12:40:38Z",
+        "conclusion": "success",
+        "nominal_utc": "2026-11-22T04:17:00.000Z",
+        "created_minus_nominal_seconds": 30218
+      }
+    ],
+    "extra_sample_run_clock": {
+      "run_id": 45004651729,
+      "created_at_utc": "2026-11-22T08:50:12Z",
+      "run_started_at_utc": "2026-11-22T08:50:12Z"
+    },
+    "offset_semantics": "created_at - same-UTC-date nominal cron; not independently measured dispatch, GitHub queue latency or runner delay",
+    "missing_day_semantics": "No absent nominal dates BETWEEN first and last observed scheduled Run dates. No claim about current UTC day before its observation window closes."
+  },
+  "git": {
+    "previous_main_reachable_commits": 325,
+    "current_main_reachable_commits": 327,
+    "previous_blobs": 347,
+    "current_blobs": 350,
+    "previous_tree_entries": 398,
+    "current_tree_entries": 401,
+    "previous_prs": 82,
+    "current_prs": 83,
+    "open_prs": 0,
+    "last_merge_pr": 83,
+    "merged_pr_sha": "e5997e4221b6218d0315db9f146c33b289d6f8d7",
+    "release_tags": [
+      "v0.4.0",
+      "v0.5.0",
+      "v0.5.1"
+    ]
+  },
+  "production": {
+    "accepted_event_count": 6,
+    "receipt_count": 6,
+    "last_accepted_execution_id": "gh-43859884737-1",
+    "last_accepted_logical_date": "2026-11-16",
+    "last_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "graph_entities": 17,
+    "graph_relations": 26,
+    "new_accepted_science_claims": 0,
+    "readback_level": "Event-to-Receipt field checks, not full independent byte-digest replay"
+  },
+  "negative_controls": {
+    "historic_failed_run_ids_with_current_http_404": [
+      43919536363,
+      43919549660,
+      43919549686,
+      43919549907
+    ],
+    "historic_cancelled_parent_containing_failed_job": {
+      "run_id": 43210854941,
+      "job_id": 131157765073,
+      "job_conclusion": "failure",
+      "parent_conclusion": "cancelled"
+    },
+    "expected_new_skipped_bio_push_job_id": 137251151786,
+    "root_cause_for_schedule_offsets": "UNKNOWN"
+  },
+  "limits": [
+    "Raw GitHub Actions availability is not immutable; original historical failed Run/Job logs cannot be recreated from 404.",
+    "Schedule difference is a timestamp observation, not evidence of GitHub platform malfunction or successful queue-delay measurement.",
+    "Job-detail identities for 129 scheduled jobs were inspected in the review but not archived; their aggregate is a less replayable witness.",
+    "No third-party institutional approval, biological efficacy, agent identity or new scientific result is attested.",
+    "Branch protection and GitHub repository settings are intentionally out of remediation scope."
+  ]
+}
