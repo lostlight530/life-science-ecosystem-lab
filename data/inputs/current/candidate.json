@@ -93,8 +93,8 @@
     }
   ],
   "diagnostics": [],
-  "input_digest": "f6941a1f87c175b35ebaac08b991e930480895840f8735c559cbfeb8451e4674",
-  "output_digest": "e7850785586c4a8ad013d50773b153f89f7dc8cb08dc11b92266f1b1a9e7aa2a",
+  "input_digest": "588b1b2d36741901fd2dad06e242c592cf33cd66d4c930f2b8baaeb83bd15301",
+  "output_digest": "fc1393b47f1d46b91b5a3f3b737d9b09a57570889858e8d5ba2d2d805fd5c354",
   "profile_digest": "787471b78dfe37c2e63d0bbc637a747b53150590210b4bfab61d3b74aea835a3",
   "projection_eligible": true,
   "records": [
@@ -149,7 +149,7 @@
     {
       "blob_sha": "4e275794c59642694d77328219c673d305d19975",
       "collector_version": "0.3.0",
-      "commit": "d2d7ea5136e34759cb48a1ae6cd4c35877074214",
+      "commit": "8d69b15b06aa7120ceffb96ae9a1113c3913b9f2",
       "content_sha256": "bb450fa60c523fdbc40943e6c3a139c10aa7d580e62f30687e5a97e3df599576",
       "path": "README.md",
       "raw_size": 2905,
@@ -159,7 +159,7 @@
       "source_id": "seek",
       "source_registry": "life-science-approved-github-sources",
       "text": "[![Build Status](https://github.com/seek4science/seek/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/seek4science/seek/actions/workflows/tests.yml)\n[![DOI](https://zenodo.org/badge/20803285.svg)](https://zenodo.org/badge/latestdoi/20803285)\n\n# FAIRDOM-SEEK\n\n## License\n\nCopyright © 2009-2026, University of Manchester and HITS gGmbH\n\n[BSD 3-clause](BSD-LICENSE)\n\n## About FAIRDOM-SEEK\n\nThe FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets,models or simulations, processes and research outcomes. It preserves associations between them, along with information about the people and organisations involved.\nUnderpinning SEEK is the ISA infrastructure, a standard format for describing how individual experiments are aggregated into wider studies and investigations. Within SEEK, ISA has been extended and is configurable to allow the structure to be used outside of Biology.\n\nFAIRDOM-SEEK is incorporating semantic technology allowing sophisticated queries over the data, yet without getting in the way of your users.\n\nFor an example of FAIRDOM-SEEK please visit our [Demo](http://demo.seek4science.org/).\n\nTo see FAIRDOM-SEEK being used for real science, as part of [FAIRDOM](http://fair-dom.org) please visit [FAIRDOMHub](http://fairdomhub.org). Examples include: \n\n- [FAIRDOMHub](https://fairdomhub.org/)\n- [WorkflowHub](https://workflowhub.eu/)\n- [DataHub](https://datahub.elixir-belgium.org/)\n- [IBISBAKHub](https://hub.ibisba.eu/)\n- [NextSEEK](https://fair-dom.org/fairdom-in-use/nextseek)\n\nFor more information please visit: [SEEK for Science](http://www.seek4science.org/)\n\n## FAIRDOM\n\nFAIRDOM-SEEK is being developed and funded as part of the FAIRDOM initiative.\nFor more information please visit: [FAIRDOM](http://fair-dom.org).\n\n\n## Installation\n\nWe recommend installing FAIRDOM-SEEK on Debian or Ubuntu.\n\nTo install the latest release please visit:\n[SEEK install guide](http://docs.seek4science.org/tech/install)\n\nFor details about other distributions and installing on macOS please visit:\n[Other distributions guide](http://docs.seek4science.org/tech/other-distributions)\n\nThe documentation is available in its own repository: [seek-documentation](https://github.com/seek4science/seek-documentation).\n\n## Contacting Us\n\nFor details about how to contact us, to raise bugs or offer suggestion, please visit [Contacting Us](http://docs.seek4science.org/contacting_us)\n\n## Contributing to FAIRDOM-SEEK\n\nIn general :\n\n1. Fork it ( https://github.com/seek4science/seek/fork )\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am 'Add some feature'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create a new Pull Request\n\nFor more details on how and what you can contribute to SEEK please visit [Contributing](http://docs.seek4science.org/contributing)\n",
-      "tree_sha": "78b4f53e748edb7acbdfce1991c71b139180e73a",
+      "tree_sha": "9cf241ced3e335c6f8b3e8d77522d1570a6ad416",
       "trust": "primary"
     },
     {
@@ -339,7 +339,7 @@
       "trust": "primary"
     }
   ],
-  "run_id": "f6941a1f87c175b3-787471b78dfe37c2",
+  "run_id": "588b1b2d36741901-787471b78dfe37c2",
   "schema_version": "1.0.0",
   "sources": [
     {
@@ -353,7 +353,7 @@
       "source_id": "lifemonitor"
     },
     {
-      "commit": "d2d7ea5136e34759cb48a1ae6cd4c35877074214",
+      "commit": "8d69b15b06aa7120ceffb96ae9a1113c3913b9f2",
       "repository": "seek4science/seek",
       "source_id": "seek"
     },
