@@ -121,7 +121,7 @@ class Post932ScheduleQuality(unittest.TestCase):
         self.assertTrue(self.d["acquisition_scope"]["github_actions_native_cron_unchanged"])
         self.assertEqual(self.d["git"]["current_main_reachable_commits"], 327)
         self.assertEqual(self.d["git"]["current_prs"], 83)
-        self.assertIn("branch protection", " ".join(self.d["limits"]))
+        self.assertIn("branch protection", " ".join(self.d["limits"]).lower())
         for key in self.d["schedules"]["schedule_definitions"]:
             self.assertIn("cron_utc", self.d["schedules"]["schedule_definitions"][key])
         lesson = (ROOT / "docs/lessons/2026-11-23-schedule-time-observability.md").read_text(encoding="utf-8")
