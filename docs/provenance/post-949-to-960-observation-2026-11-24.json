@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "SOURCE_SCOPED_POST_949_OBSERVATION",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_logical_day_asia_shanghai": "2026-11-24",
+  "source_main_sha": "dfd44c14c6ffbed64b9a19fdbe4c03243214821a",
+  "prior_archive": "docs/provenance/post-939-to-949-observation-2026-11-24.json",
+  "prior_latest_run_created_at_utc": "2026-11-23T14:52:59Z",
+  "latest_included_run_created_at_utc": "2026-11-24T11:37:03Z",
+  "per_request_acquisition_timestamps": null,
+  "git": {
+    "root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+    "root_author_date_utc": "2026-10-16T10:35:56Z",
+    "main_reachable_commits": 339,
+    "missing_parent_ids": 0,
+    "tracked_blob_paths": 360,
+    "recursive_tree_entries": 411,
+    "pr_total": 85,
+    "pr_merged": 81,
+    "closed_unmerged_prs": [
+      29,
+      32,
+      67,
+      78
+    ],
+    "open_pr_count": 0,
+    "release_tags": [
+      "v0.4.0",
+      "v0.5.0",
+      "v0.5.1"
+    ],
+    "workflow_definition_count": 9
+  },
+  "actions": {
+    "pages": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      60
+    ],
+    "unique_run_count": 960,
+    "exact_prior_949_id_set_join": false,
+    "prior_visible": {
+      "count": 949,
+      "conclusions": {
+        "success": 898,
+        "cancelled": 51,
+        "failure": 0
+      },
+      "events": {
+        "push": 477,
+        "pull_request": 382,
+        "schedule": 86,
+        "workflow_dispatch": 4
+      }
+    },
+    "current_visible": {
+      "count": 960,
+      "conclusions": {
+        "success": 909,
+        "cancelled": 51,
+        "failure": 0
+      },
+      "events": {
+        "push": 484,
+        "pull_request": 385,
+        "schedule": 87,
+        "workflow_dispatch": 4
+      }
+    },
+    "post_cutoff_runs": [
+      {
+        "id": 45385818132,
+        "created_at_utc": "2026-11-24T11:37:03Z",
+        "event": "schedule",
+        "workflow_key": "daily-selfcheck",
+        "head_sha": "dfd44c14c6ffbed64b9a19fdbe4c03243214821a",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138416307734,
+            "name": "Project custom — three assets and accepted evidence",
+            "conclusion": "success"
+          },
+          {
+            "id": 138416308241,
+            "name": "Institutional defaults — public read-only observations",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221670457,
+        "created_at_utc": "2026-11-23T16:54:05Z",
+        "event": "push",
+        "workflow_key": "validate",
+        "head_sha": "dfd44c14c6ffbed64b9a19fdbe4c03243214821a",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137857271260,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 137857271751,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 137857272123,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 137857272180,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 137857605625,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221670159,
+        "created_at_utc": "2026-11-23T16:54:05Z",
+        "event": "push",
+        "workflow_key": "evidence",
+        "head_sha": "dfd44c14c6ffbed64b9a19fdbe4c03243214821a",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137857270891,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221670027,
+        "created_at_utc": "2026-11-23T16:54:05Z",
+        "event": "push",
+        "workflow_key": "bio",
+        "head_sha": "dfd44c14c6ffbed64b9a19fdbe4c03243214821a",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137857269660,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 137857271934,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ]
+      },
+      {
+        "id": 45221477089,
+        "created_at_utc": "2026-11-23T16:53:02Z",
+        "event": "pull_request",
+        "workflow_key": "bio",
+        "head_sha": "5f1372940da10e0dd46dd91867c0714ffa307565",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137856586949,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 137856587043,
+            "name": "pinned-field",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221476633,
+        "created_at_utc": "2026-11-23T16:53:02Z",
+        "event": "pull_request",
+        "workflow_key": "validate",
+        "head_sha": "5f1372940da10e0dd46dd91867c0714ffa307565",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137856583726,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 137856584313,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 137856584430,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 137856584514,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 137856914229,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221476542,
+        "created_at_utc": "2026-11-23T16:53:02Z",
+        "event": "pull_request",
+        "workflow_key": "evidence",
+        "head_sha": "5f1372940da10e0dd46dd91867c0714ffa307565",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137856583100,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221363041,
+        "created_at_utc": "2026-11-23T16:52:25Z",
+        "event": "push",
+        "workflow_key": "evidence",
+        "head_sha": "5f1372940da10e0dd46dd91867c0714ffa307565",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137856185095,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221356141,
+        "created_at_utc": "2026-11-23T16:52:23Z",
+        "event": "push",
+        "workflow_key": "evidence",
+        "head_sha": "16944d821ec52279417b3300886001e07bbb7376",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137856160072,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45221300913,
+        "created_at_utc": "2026-11-23T16:52:04Z",
+        "event": "push",
+        "workflow_key": "evidence",
+        "head_sha": "0af664d76c03fb3f10b1638bbc385edcb110dba6",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137855969685,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45219860432,
+        "created_at_utc": "2026-11-23T16:44:20Z",
+        "event": "push",
+        "workflow_key": "evidence",
+        "head_sha": "cbfc5a9d3a3ffd0c098f5e7e96975fd16546e982",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 137850878640,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ],
+    "post_cutoff_job_count": 22,
+    "post_cutoff_job_conclusions": {
+      "success": 21,
+      "skipped": 1
+    }
+  },
+  "schedule": {
+    "visible_successful_runs_by_workflow": {
+      "daily_selfcheck": 38,
+      "continuity": 38,
+      "knowledge": 6,
+      "bio": 5
+    },
+    "new_selfcheck_run": 45385818132,
+    "nominal_utc": "2026-11-24T01:41:00Z",
+    "created_minus_nominal_seconds": 35763,
+    "continuity_2026_11_24": "NOT_OBSERVED_AT_CUTOFF",
+    "cause": "UNKNOWN",
+    "artifacts": [
+      {
+        "id": 14916685747,
+        "name": "institutional-defaults",
+        "expired": false,
+        "digest": "sha256:f150df64773ab96ad4b0daa6146e676200020e39f26e40854bcccb9a98d46967"
+      },
+      {
+        "id": 14916570960,
+        "name": "project-custom",
+        "expired": false,
+        "digest": "sha256:3443335568da6e4a94aa251ae2bb3448d31ab004049d82f93989cdbe9e4593bf"
+      }
+    ],
+    "artifact_contents_independently_read": false
+  },
+  "production": {
+    "accepted_event_count": 7,
+    "historical_candidate_count": 6,
+    "last_execution_id": "gh-45181050512-1",
+    "last_event_sha256": "da42794579788f5c47061f6fb94e928ab35b4f9cd273701abbc596c5e0e6fefb",
+    "last_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "graph_entities": 17,
+    "graph_relations": 26,
+    "knowledge_digest": "df485b7d4599a1831e20a72ed437843aa8b89fcb1d20bb49e0232f7bac33e9d2",
+    "data_paths_changed_since_prior_source": false
+  },
+  "negative_evidence": {
+    "historic_failed_run_ids_currently_http404": [
+      43919536363,
+      43919549660,
+      43919549686,
+      43919549907
+    ],
+    "prior_frozen_cancelled_run_with_failed_job": {
+      "run_id": 43210854941,
+      "job_id": 131157765073
+    }
+  },
+  "governance": {
+    "main_protected": false,
+    "repository_rulesets_count": 0
+  },
+  "limits": [
+    "Prior full 949-ID set not independently available for exact set join; net and post-cutoff counts are separate observations.",
+    "Latest attempt job summaries only; not complete historical attempt or artifact-content replay.",
+    "No claim that partial UTC day continuity is missing or scheduler delay is measured queue time.",
+    "No new Knowledge acceptance, biological discovery, institutional certification, private account access or production-data mutation."
+  ]
+}
