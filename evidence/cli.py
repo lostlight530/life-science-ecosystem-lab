@@ -143,9 +143,9 @@ def main(argv: list[str] | None = None) -> int:
             labels = bounded_json(args.labels) if args.labels else None
             if bool(args.candidate) != bool(args.topics):
                 raise ValueError('--candidate and --topics must be supplied together')
-            payload = audit_knowledge(current, previous=previous, labels=labels,
-                                      candidate=bounded_json(args.candidate) if args.candidate else None,
-                                      registry=bounded_json(args.topics) if args.topics else None)
+            binding = ({"candidate": bounded_json(args.candidate), "registry": bounded_json(args.topics)}
+                       if args.candidate else {})
+            payload = audit_knowledge(current, previous=previous, labels=labels, **binding)
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False, allow_nan=False) + '\n', encoding='utf-8')
             print('KNOWLEDGE_QUALITY_' + payload['status'])

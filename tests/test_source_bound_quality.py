@@ -78,6 +78,7 @@ class SourceBindingTests(unittest.TestCase):
 
     def test_missing_binding_input_and_numeric_labels(self):
         self.assertEqual(audit_knowledge(self.k, candidate=self.c)["status"], "FAIL")
+        self.assertEqual(audit_knowledge(self.k, candidate=None, registry=None)["status"], "FAIL")
         with self.assertRaisesRegex(ValueError, "boolean"):
             audit_knowledge(self.k, labels={"schema_version": "1.0.0", "cases": [
                 {"topic_id": "t", "repository": "a/b", "path": "x", "relevant": 1}]})

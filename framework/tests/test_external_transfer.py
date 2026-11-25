@@ -59,15 +59,22 @@ class ExternalTransferTests(unittest.TestCase):
                 "path": row["local"]})
         bundle = {"kind": "LS_RSE_INTEROP_BUNDLE", "schema_version": "0.1.0",
                   "scope": "LIFE_SCIENCES", "assets": assets, "steps": [], "claims": []}
-        self.assertEqual(assess(bundle, ROOT)["status"], "PASS")
-        self.assertEqual(assess(bundle, ROOT)["metrics"]["local_bytes_verified"], 2)
-        self.assertEqual(assess(bundle, ROOT)["metrics"]["declared_cross_domain_steps"], 0)
+        combined = assess(bundle, ROOT)
+        self.assertEqual(combined["status"], "FAIL")
+        self.assertIn("MISSING_LINEAGE_STEPS", {x["code"] for x in combined["errors"]})
+        for asset in assets:
+            single = dict(bundle, assets=[asset])
+            report = assess(single, ROOT)
+            self.assertEqual(report["status"], "PASS", report)
+            self.assertEqual(report["metrics"]["local_bytes_verified"], 1)
+            self.assertEqual(report["metrics"]["declared_cross_domain_steps"], 0)
+        bundle = dict(bundle, assets=[assets[0]])
         cases = []
         wrong = copy.deepcopy(bundle)
         wrong["assets"][0]["sha256"] = "0" * 64
         cases.append((wrong, "FAIL"))
         missing = copy.deepcopy(bundle)
-        del missing["assets"][1]["path"]
+        del missing["assets"][0]["path"]
         cases.append((missing, "INDETERMINATE"))
         claim = copy.deepcopy(bundle)
         claim["claims"] = [{"id": "c", "statement": "unreviewed scientific claim",

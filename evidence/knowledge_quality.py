@@ -20,6 +20,7 @@ REPOSITORY = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 MAX_TOPICS = 128
 MAX_FRAGMENTS = 25000
 MAX_LABELS = 2000
+_UNSUPPLIED = object()
 
 
 def _safe_path(value: Any) -> bool:
@@ -274,7 +275,7 @@ def _bind_sources(now: Mapping[str, Any], candidate: Any, registry: Any,
             "upstream_authenticity": "NOT_ATTESTED", "scientific_truth": "NOT_EVALUATED"}
 
 def audit_knowledge(current: Any, *, previous: Any = None, labels: Any = None,
-                    candidate: Any = None, registry: Any = None) -> dict[str, Any]:
+                    candidate: Any = _UNSUPPLIED, registry: Any = _UNSUPPLIED) -> dict[str, Any]:
     now = _inspect(current)
     now["value"] = current if isinstance(current, dict) else {}
     issues = list(now["issues"])
@@ -288,7 +289,7 @@ def audit_knowledge(current: Any, *, previous: Any = None, labels: Any = None,
         if not issues:
             comparison = _compare(now, old)
     binding = None
-    if candidate is not None or registry is not None:
+    if candidate is not _UNSUPPLIED or registry is not _UNSUPPLIED:
         binding = ({"status": "NOT_EVALUATED", "reason": "STRUCTURAL_FAILURE"} if now["issues"]
                    else _bind_sources(now, candidate, registry, issues))
     score = _score_labels(set(now["fragments"]), labels)
