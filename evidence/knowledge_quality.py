@@ -12,6 +12,7 @@ from typing import Any, Mapping
 from urllib.parse import quote
 
 from .aggregation import canonical_bytes
+from .validation import validate_candidate_bundle
 
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
@@ -185,7 +186,7 @@ def _score_labels(fragment_keys: set[tuple[str, str, str]], labels: Any) -> dict
         if not all(isinstance(x, str) and x for x in key) or key in seen:
             raise ValueError("duplicate or invalid label identity")
         seen.add(key)
-        if case.get("relevant") not in (True, False):
+        if type(case.get("relevant")) is not bool:
             raise ValueError("label relevant must be boolean")
         predicted = key in fragment_keys
         outcome = "TP" if predicted and case["relevant"] else "FP" if predicted else "FN" if case["relevant"] else "TN"
@@ -196,7 +197,84 @@ def _score_labels(fragment_keys: set[tuple[str, str, str]], labels: Any) -> dict
             "counts": counts, "precision": precision, "recall": recall, "sample_count": len(cases)}
 
 
-def audit_knowledge(current: Any, *, previous: Any = None, labels: Any = None) -> dict[str, Any]:
+
+def _bind_sources(now: Mapping[str, Any], candidate: Any, registry: Any,
+                  issues: list[dict[str, str]]) -> dict[str, Any]:
+    """Independent, offline oracle for candidate-relative selection and excerpts.
+
+    Does not import or call the Knowledge Workflow builder. A supplied candidate
+    is not itself proof of upstream authenticity; verify its Git bytes separately.
+    """
+    before = len(issues)
+    checked = 0
+    if not isinstance(candidate, dict) or not isinstance(registry, dict):
+        _fail("INVALID_SOURCE_BINDING_INPUT", "candidate and topic registry must be objects", issues)
+    elif not validate_candidate_bundle(candidate).valid or candidate.get("projection_eligible") is not True:
+        _fail("INVALID_BOUND_CANDIDATE", "candidate validation or projection eligibility failed", issues)
+    else:
+        topics = registry.get("topics")
+        value = now["value"]
+        if (not isinstance(topics, list) or len(topics) > MAX_TOPICS
+                or any(not isinstance(t, dict) or not isinstance(t.get("id"), str)
+                       for t in topics)):
+            _fail("INVALID_BOUND_PROFILE", "invalid topic registry", issues)
+        elif (hashlib.sha256(canonical_bytes(topics)).hexdigest() != candidate["profile_digest"]
+              or value.get("topic_profile_digest") != candidate["profile_digest"]
+              or value.get("evidence_bundle_digest") != candidate["output_digest"]):
+            _fail("SOURCE_BINDING_DIGEST_MISMATCH", "candidate, profile and map disagree", issues)
+        else:
+            records = candidate["records"]
+            by_key = {(r["repository"], r["path"]): r for r in records}
+            if (len(by_key) != len(records) or any(not isinstance(r.get("text"), str) for r in records)
+                    or len(records) > MAX_FRAGMENTS):
+                _fail("AMBIGUOUS_OR_MISSING_SOURCE_TEXT", "unique text-bearing source records required", issues)
+            elif (value.get("record_count") != len(records)
+                  or value.get("source_count") != len({r["repository"] for r in records})):
+                _fail("BOUND_SOURCE_COUNT_MISMATCH", "map source/record counts disagree", issues)
+            else:
+                expected = {}
+                ids = set()
+                for t in topics:
+                    tid = t["id"]
+                    terms = [t.get("aliases"), t.get("required_terms", []), t.get("excluded_terms", [])]
+                    minimum = t.get("minimum_matches", 1)
+                    if (tid in ids or any(not isinstance(a, list) or not all(isinstance(x, str) for x in a)
+                                          for a in terms) or type(minimum) is not int or minimum < 1):
+                        _fail("INVALID_BOUND_PROFILE", tid, issues)
+                        continue
+                    ids.add(tid)
+                    aliases, required, excluded = (set(x.casefold() for x in a) for a in terms)
+                    selected = {}
+                    for key, r in by_key.items():
+                        words = set(re.findall(r"[a-z0-9][a-z0-9_-]*", r["text"].casefold()))
+                        hits = aliases & words
+                        if hits and required <= words and not excluded & words:
+                            selected[(tid, *key)] = sorted(hits)
+                    if len(selected) >= minimum:
+                        expected.update(selected)
+                if ids != set(now["topics"]) or set(expected) != set(now["fragments"]):
+                    _fail("BOUND_SELECTION_MISMATCH", "topic or selected source set differs from reference rule", issues)
+                for key, row in now["fragments"].items():
+                    r = by_key.get(key[1:])
+                    if r is None or any(row.get(k) != r.get(k) for k in ("source_id", "commit", "content_sha256")):
+                        _fail("BOUND_SOURCE_IDENTITY_MISMATCH", ":".join(key), issues)
+                        continue
+                    if row.get("matched_aliases") != expected.get(key):
+                        _fail("BOUND_ALIAS_MISMATCH", ":".join(key), issues)
+                    excerpt = row["excerpt"]
+                    compact = " ".join(r["text"].split())
+                    # The producer can truncate a passage to 400 chars plus an ellipsis.
+                    # A literal terminal ellipsis is also allowed as source text.
+                    if not (len(excerpt) <= 401 and (excerpt in compact or
+                            (len(excerpt) == 401 and excerpt.endswith("…") and excerpt[:-1] in compact))):
+                        _fail("BOUND_EXCERPT_NOT_IN_SOURCE", ":".join(key), issues)
+                    checked += 1
+    return {"status": "PASS" if len(issues) == before else "FAIL",
+            "checked_fragments": checked, "oracle": "CANDIDATE_RELATIVE_INDEPENDENT_RULE_AND_CONTAINMENT",
+            "upstream_authenticity": "NOT_ATTESTED", "scientific_truth": "NOT_EVALUATED"}
+
+def audit_knowledge(current: Any, *, previous: Any = None, labels: Any = None,
+                    candidate: Any = None, registry: Any = None) -> dict[str, Any]:
     now = _inspect(current)
     now["value"] = current if isinstance(current, dict) else {}
     issues = list(now["issues"])
@@ -209,6 +287,10 @@ def audit_knowledge(current: Any, *, previous: Any = None, labels: Any = None) -
                           for issue in old["issues"])
         if not issues:
             comparison = _compare(now, old)
+    binding = None
+    if candidate is not None or registry is not None:
+        binding = ({"status": "NOT_EVALUATED", "reason": "STRUCTURAL_FAILURE"} if now["issues"]
+                   else _bind_sources(now, candidate, registry, issues))
     score = _score_labels(set(now["fragments"]), labels)
     report = {
         "schema_version": "1.0.0",
@@ -229,5 +311,7 @@ def audit_knowledge(current: Any, *, previous: Any = None, labels: Any = None) -
             "external registry acceptance or third-party use",
         ],
     }
+    if binding is not None:
+        report["source_binding"] = binding
     report["report_sha256"] = hashlib.sha256(canonical_bytes(report)).hexdigest()
     return report

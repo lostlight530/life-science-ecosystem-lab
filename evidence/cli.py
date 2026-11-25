@@ -62,6 +62,8 @@ def parser() -> argparse.ArgumentParser:
     quality.add_argument("--knowledge", type=Path, required=True)
     quality.add_argument("--previous", type=Path, help="Previously accepted knowledge map, never a hidden live fetch")
     quality.add_argument("--labels", type=Path, help="Optional user-supplied labeled topic/document examples")
+    quality.add_argument("--candidate", type=Path, help="Bind the map to an explicitly supplied candidate")
+    quality.add_argument("--topics", type=Path, help="Exact topic registry for independent selection audit")
     quality.add_argument("--output", type=Path, required=True)
     find = commands.add_parser("discover", help="Find unapproved GitHub topic candidates")
     find.add_argument("--topic", required=True)
@@ -139,7 +141,11 @@ def main(argv: list[str] | None = None) -> int:
             current = bounded_json(args.knowledge)
             previous = bounded_json(args.previous) if args.previous else None
             labels = bounded_json(args.labels) if args.labels else None
-            payload = audit_knowledge(current, previous=previous, labels=labels)
+            if bool(args.candidate) != bool(args.topics):
+                raise ValueError('--candidate and --topics must be supplied together')
+            payload = audit_knowledge(current, previous=previous, labels=labels,
+                                      candidate=bounded_json(args.candidate) if args.candidate else None,
+                                      registry=bounded_json(args.topics) if args.topics else None)
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False, allow_nan=False) + '\n', encoding='utf-8')
             print('KNOWLEDGE_QUALITY_' + payload['status'])
