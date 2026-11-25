@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 import unittest
+from reviewed_framework_paths import REVIEWED_FRAMEWORK_PATHS
 from accepted_production_history import authorized_native_append_paths
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -130,7 +131,7 @@ class FullCurrentRepositoryDispositionTests(unittest.TestCase):
         # This is a dated snapshot: preserve every old Blob and accepted data byte,
         # but do not reject correctly governed research notes added after its cutoff.
         extra = tracked - pinned
-        allowed_extra = {NEW_REPORT, NEW_JSON, NEW_TEST}
+        allowed_extra = {NEW_REPORT, NEW_JSON, NEW_TEST} | REVIEWED_FRAMEWORK_PATHS
         later_research = {
             p for p in extra
             if (p.startswith("docs/provenance/") and p.endswith((".md", ".json")))

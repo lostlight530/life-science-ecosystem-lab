@@ -10,6 +10,7 @@ import subprocess
 import unittest
 
 from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
+from reviewed_framework_paths import REVIEWED_FRAMEWORK_PATHS
 from accepted_production_history import authorized_native_append_paths
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -85,6 +86,8 @@ class LiveTaxonomyAddendumTests(unittest.TestCase):
         for path in sorted(tracked - old - named):
             matched = [cat for prefix, cat in category_prefixes.items()
                        if path.startswith(prefix)]
+            if path in REVIEWED_FRAMEWORK_PATHS:
+                matched.append("EXPERIMENTAL_FRAMEWORK")
             if path in production_append and path.startswith("data/"):
                 matched.append("ACCEPTED_PRODUCTION_STATE")
             self.assertEqual(len(matched), 1, "UNCLASSIFIED_NEW_PATH: " + path)

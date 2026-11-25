@@ -93,8 +93,8 @@ jobs:
           diff -u build/cwl-one/knowledge.json build/cwl-two/knowledge.json
           diff -u build/cwl-one/candidate.json build/cwl-two/candidate.json
           python -m life_science_ecosystem_lab knowledge verify --candidate build/cwl-one/candidate.json --topics evidence/profiles/topics.json --knowledge build/cwl-one/knowledge.json
-          ls-evidence audit-knowledge --knowledge data/knowledge/current.json --output build/accepted-quality.json
-          ls-evidence audit-knowledge --knowledge build/cwl-one/knowledge.json --previous build/cwl-two/knowledge.json --output build/replay-quality.json
+          ls-evidence audit-knowledge --knowledge data/knowledge/current.json --candidate data/inputs/current/candidate.json --topics evidence/profiles/topics.json --output build/accepted-quality.json
+          ls-evidence audit-knowledge --knowledge build/cwl-one/knowledge.json --previous build/cwl-two/knowledge.json --candidate build/cwl-one/candidate.json --topics evidence/profiles/topics.json --output build/replay-quality.json
           python -m life_science_ecosystem_lab graph project --knowledge build/cwl-one/knowledge.json --output-dir build/graph
           python -m life_science_ecosystem_lab graph verify --dir build/graph --knowledge build/cwl-one/knowledge.json
           python -m life_science_ecosystem_lab graph search --dir build/graph --query workflow --limit 3 --hops 1

@@ -12,6 +12,7 @@ import subprocess
 import unittest
 
 from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
+from reviewed_framework_paths import REVIEWED_FRAMEWORK_PATHS
 from accepted_production_history import authorized_native_append_paths
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -88,6 +89,8 @@ class CompleteHistoryClassificationTests(unittest.TestCase):
         for path in sorted(newer):
             matches = [label for prefix, label in categories.items()
                        if path.startswith(prefix)]
+            if path in REVIEWED_FRAMEWORK_PATHS:
+                matches.append("EXPERIMENTAL_FRAMEWORK")
             if path in accepted_append and path.startswith("data/"):
                 matches.append("ACCEPTED_PRODUCTION_STATE")
             self.assertEqual(len(matches), 1, f"UNCLASSIFIED_NEW_PATH: {path}")

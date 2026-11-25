@@ -12,6 +12,7 @@ import re
 import subprocess
 import unittest
 
+from reviewed_framework_paths import REVIEWED_FRAMEWORK_PATHS
 from accepted_production_history import authorized_native_append_paths
 from life_science_ecosystem_lab.lifecycle.state import StateRoots, verify_state
 
@@ -155,7 +156,7 @@ class RootToNovember15SourceClassificationTests(unittest.TestCase):
             self.assertEqual(git_blob(ROOT / path), row["git_blob_sha"],
                              "IMMUTABLE_FROZEN_SOURCE_REWRITTEN: " + path)
         for path in all_tracked - set(current):
-            allowed = any(path.startswith(p) for p in SAFE_NEW)
+            allowed = path in REVIEWED_FRAMEWORK_PATHS or any(path.startswith(p) for p in SAFE_NEW)
             allowed = allowed or (path in native_append
                                   and path.startswith("data/"))
             self.assertTrue(allowed, "UNREVIEWED_NEW_ROOT_PATH: " + path)

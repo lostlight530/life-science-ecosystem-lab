@@ -91,3 +91,9 @@ This is a new `bc33c75efeee341194f1d2eec804565ed58a90bb`-pinned observation with
 | L18 — completed research evidence | Only three unchanged production Knowledge Receipts despite 598 visible Runs, plus Bio file audit without independent biological oracle | New domain-controlled validation and independent reference truth before promoting a substantive scientific proposition |
 
 The [offline independent replay](../tests/test_full_history_census_replay.py) intentionally asserts previous frozen Git Blob identities and accepted `data/` byte integrity; a CI PASS is a bounded software/evidence check, **not** scientific authenticity
+
+## Addendum · 2026-11-25 bounded verification improvements
+
+L07/L18 and independent extraction evidence: [candidate-relative binding](VERIFYING_RESULTS.md) adds an independent implementation-level selection and excerpt oracle and an isolated actual upstream content-change replay. [External software-artifact transfer](../framework/docs/ASSURANCE.md) adds pinned public examples and separate format checks, including a counterexample where rehashed invalid content passes identity but fails format checks. These are bounded engineering pilots, not externally reviewed scientific results. The oracle author and software maintainer are not independently authenticated; no scientific oracle or new production acceptance is claimed. No change to branch protection, schedules, approved sources or accepted data.
+
+The first PR #88 test attempt was rejected by the existing file-classification gates (six exact new Framework paths not yet registered) and the Framework's `MISSING_LINEAGE_STEPS` contract. The correction registers only those six paths as EXPERIMENTAL_FRAMEWORK and assesses each domain separately; the no-lineage combination is retained as an explicit negative control. The frozen classification archives are not rewritten.
