@@ -1,0 +1,1039 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "SOURCE_SCOPED_POST_960_OBSERVATION",
+  "repository": "lostlight530/life-science-ecosystem-lab",
+  "review_logical_day_asia_shanghai": "2026-11-25",
+  "source_main_sha": "c2fdd0ea165a1e89e17203a94415c665cbf70f2b",
+  "prior_archive": "docs/provenance/post-949-to-960-observation-2026-11-24.json",
+  "prior_latest_run_created_at_utc": "2026-11-24T11:37:03Z",
+  "latest_included_run_created_at_utc": "2026-11-24T14:57:48Z",
+  "per_request_acquisition_timestamps": null,
+  "git": {
+    "root_sha": "00009a38bc136a7c245270770b005e4e102a870d",
+    "root_author_date_utc": "2026-10-16T10:35:56Z",
+    "main_reachable_commits": 340,
+    "missing_parent_ids": 0,
+    "tracked_blob_paths": 362,
+    "pr_total": 86,
+    "pr_merged": 82,
+    "closed_unmerged_prs": [
+      29,
+      32,
+      67,
+      78
+    ],
+    "open_pr_count": 0,
+    "release_tags": [
+      "v0.4.0",
+      "v0.5.0",
+      "v0.5.1"
+    ],
+    "workflow_definition_count": 9
+  },
+  "actions": {
+    "pages": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      68
+    ],
+    "unique_run_count": 968,
+    "exact_prior_960_id_set_join": false,
+    "prior_visible": {
+      "count": 960,
+      "conclusions": {
+        "success": 909,
+        "cancelled": 51,
+        "failure": 0
+      },
+      "events": {
+        "push": 484,
+        "pull_request": 385,
+        "schedule": 87,
+        "workflow_dispatch": 4
+      }
+    },
+    "current_visible": {
+      "count": 968,
+      "conclusions": {
+        "success": 917,
+        "cancelled": 51,
+        "failure": 0
+      },
+      "events": {
+        "push": 488,
+        "pull_request": 388,
+        "schedule": 88,
+        "workflow_dispatch": 4
+      }
+    },
+    "post_cutoff_runs": [
+      {
+        "id": 45419953754,
+        "workflow_key": "continuity",
+        "event": "schedule",
+        "created_at_utc": "2026-11-24T14:57:48Z",
+        "head_sha": "c2fdd0ea165a1e89e17203a94415c665cbf70f2b",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138536480015,
+            "name": "verify",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45407149976,
+        "workflow_key": "validate",
+        "event": "push",
+        "created_at_utc": "2026-11-24T13:47:54Z",
+        "head_sha": "c2fdd0ea165a1e89e17203a94415c665cbf70f2b",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138490825754,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490826188,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490826266,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490826320,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 138491152606,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45407149869,
+        "workflow_key": "bio",
+        "event": "push",
+        "created_at_utc": "2026-11-24T13:47:54Z",
+        "head_sha": "c2fdd0ea165a1e89e17203a94415c665cbf70f2b",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138490825243,
+            "name": "offline",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490827732,
+            "name": "pinned-field",
+            "conclusion": "skipped"
+          }
+        ]
+      },
+      {
+        "id": 45407149865,
+        "workflow_key": "evidence",
+        "event": "push",
+        "created_at_utc": "2026-11-24T13:47:54Z",
+        "head_sha": "c2fdd0ea165a1e89e17203a94415c665cbf70f2b",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138490825056,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45407014791,
+        "workflow_key": "evidence",
+        "event": "pull_request",
+        "created_at_utc": "2026-11-24T13:47:06Z",
+        "head_sha": "5e95cf9c3e9db7327d2ff858787215c5bab35b59",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138490347321,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45407014769,
+        "workflow_key": "validate",
+        "event": "pull_request",
+        "created_at_utc": "2026-11-24T13:47:06Z",
+        "head_sha": "5e95cf9c3e9db7327d2ff858787215c5bab35b59",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138490348352,
+            "name": "Portable package",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490348679,
+            "name": "Evidence Tool",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490348709,
+            "name": "Repository contracts",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490348882,
+            "name": "Knowledge Workflow",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490630252,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45407014764,
+        "workflow_key": "bio",
+        "event": "pull_request",
+        "created_at_utc": "2026-11-24T13:47:06Z",
+        "head_sha": "5e95cf9c3e9db7327d2ff858787215c5bab35b59",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138490347244,
+            "name": "pinned-field",
+            "conclusion": "success"
+          },
+          {
+            "id": 138490347857,
+            "name": "offline",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 45406975104,
+        "workflow_key": "evidence",
+        "event": "push",
+        "created_at_utc": "2026-11-24T13:46:52Z",
+        "head_sha": "5e95cf9c3e9db7327d2ff858787215c5bab35b59",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 138490202790,
+            "name": "Verify evidence CLI, source contracts and docs",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ],
+    "post_cutoff_job_count": 18,
+    "post_cutoff_job_conclusions": {
+      "success": 17,
+      "skipped": 1
+    }
+  },
+  "schedule": {
+    "observations": [
+      {
+        "id": 45419953754,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-24T14:57:48Z",
+        "nominal_utc": "2026-11-24T04:17:00Z",
+        "offset_seconds": 38448,
+        "conclusion": "success"
+      },
+      {
+        "id": 45385818132,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-24T11:37:03Z",
+        "nominal_utc": "2026-11-24T01:41:00Z",
+        "offset_seconds": 35763,
+        "conclusion": "success"
+      },
+      {
+        "id": 45198977184,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-23T14:52:59Z",
+        "nominal_utc": "2026-11-23T04:17:00Z",
+        "offset_seconds": 38159,
+        "conclusion": "success"
+      },
+      {
+        "id": 45181050512,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-11-23T13:09:05Z",
+        "nominal_utc": "2026-11-23T03:23:00Z",
+        "offset_seconds": 35165,
+        "conclusion": "success"
+      },
+      {
+        "id": 45150173180,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-23T09:47:20Z",
+        "nominal_utc": "2026-11-23T01:41:00Z",
+        "offset_seconds": 29180,
+        "conclusion": "success"
+      },
+      {
+        "id": 45023517759,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-22T12:40:38Z",
+        "nominal_utc": "2026-11-22T04:17:00Z",
+        "offset_seconds": 30218,
+        "conclusion": "success"
+      },
+      {
+        "id": 45004651729,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-22T08:50:12Z",
+        "nominal_utc": "2026-11-22T01:41:00Z",
+        "offset_seconds": 25752,
+        "conclusion": "success"
+      },
+      {
+        "id": 44905603255,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-21T12:46:58Z",
+        "nominal_utc": "2026-11-21T04:17:00Z",
+        "offset_seconds": 30598,
+        "conclusion": "success"
+      },
+      {
+        "id": 44886413448,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-21T08:46:06Z",
+        "nominal_utc": "2026-11-21T01:41:00Z",
+        "offset_seconds": 25506,
+        "conclusion": "success"
+      },
+      {
+        "id": 44741605920,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-20T13:07:51Z",
+        "nominal_utc": "2026-11-20T04:17:00Z",
+        "offset_seconds": 31851,
+        "conclusion": "success"
+      },
+      {
+        "id": 44715660705,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-11-20T10:01:33Z",
+        "nominal_utc": "2026-11-20T02:19:00Z",
+        "offset_seconds": 27753,
+        "conclusion": "success"
+      },
+      {
+        "id": 44708588937,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-20T09:11:21Z",
+        "nominal_utc": "2026-11-20T01:41:00Z",
+        "offset_seconds": 27021,
+        "conclusion": "success"
+      },
+      {
+        "id": 44533617045,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-19T13:27:23Z",
+        "nominal_utc": "2026-11-19T04:17:00Z",
+        "offset_seconds": 33023,
+        "conclusion": "success"
+      },
+      {
+        "id": 44496929532,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-19T09:29:48Z",
+        "nominal_utc": "2026-11-19T01:41:00Z",
+        "offset_seconds": 28128,
+        "conclusion": "success"
+      },
+      {
+        "id": 44311104573,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-18T13:10:59Z",
+        "nominal_utc": "2026-11-18T04:17:00Z",
+        "offset_seconds": 32039,
+        "conclusion": "success"
+      },
+      {
+        "id": 44273143027,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-18T09:08:36Z",
+        "nominal_utc": "2026-11-18T01:41:00Z",
+        "offset_seconds": 26856,
+        "conclusion": "success"
+      },
+      {
+        "id": 44094378063,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-17T13:36:15Z",
+        "nominal_utc": "2026-11-17T04:17:00Z",
+        "offset_seconds": 33555,
+        "conclusion": "success"
+      },
+      {
+        "id": 44058293652,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-17T09:44:13Z",
+        "nominal_utc": "2026-11-17T01:41:00Z",
+        "offset_seconds": 28993,
+        "conclusion": "success"
+      },
+      {
+        "id": 43870632783,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-16T12:53:21Z",
+        "nominal_utc": "2026-11-16T04:17:00Z",
+        "offset_seconds": 30981,
+        "conclusion": "success"
+      },
+      {
+        "id": 43859884737,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-11-16T11:40:57Z",
+        "nominal_utc": "2026-11-16T03:23:00Z",
+        "offset_seconds": 29877,
+        "conclusion": "success"
+      },
+      {
+        "id": 43832487384,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-16T08:35:39Z",
+        "nominal_utc": "2026-11-16T01:41:00Z",
+        "offset_seconds": 24879,
+        "conclusion": "success"
+      },
+      {
+        "id": 43711715966,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-15T12:01:18Z",
+        "nominal_utc": "2026-11-15T04:17:00Z",
+        "offset_seconds": 27858,
+        "conclusion": "success"
+      },
+      {
+        "id": 43694578292,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-15T08:27:15Z",
+        "nominal_utc": "2026-11-15T01:41:00Z",
+        "offset_seconds": 24375,
+        "conclusion": "success"
+      },
+      {
+        "id": 43590779143,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-14T11:35:45Z",
+        "nominal_utc": "2026-11-14T04:17:00Z",
+        "offset_seconds": 26325,
+        "conclusion": "success"
+      },
+      {
+        "id": 43573703106,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-14T08:00:18Z",
+        "nominal_utc": "2026-11-14T01:41:00Z",
+        "offset_seconds": 22758,
+        "conclusion": "success"
+      },
+      {
+        "id": 43424281460,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-13T12:20:11Z",
+        "nominal_utc": "2026-11-13T04:17:00Z",
+        "offset_seconds": 28991,
+        "conclusion": "success"
+      },
+      {
+        "id": 43402043543,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-11-13T09:31:36Z",
+        "nominal_utc": "2026-11-13T02:19:00Z",
+        "offset_seconds": 25956,
+        "conclusion": "success"
+      },
+      {
+        "id": 43395693337,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-13T08:45:15Z",
+        "nominal_utc": "2026-11-13T01:41:00Z",
+        "offset_seconds": 25455,
+        "conclusion": "success"
+      },
+      {
+        "id": 43222080700,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-12T12:53:31Z",
+        "nominal_utc": "2026-11-12T04:17:00Z",
+        "offset_seconds": 30991,
+        "conclusion": "success"
+      },
+      {
+        "id": 43186230480,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-12T08:50:19Z",
+        "nominal_utc": "2026-11-12T01:41:00Z",
+        "offset_seconds": 25759,
+        "conclusion": "success"
+      },
+      {
+        "id": 43016063251,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-11T11:56:21Z",
+        "nominal_utc": "2026-11-11T04:17:00Z",
+        "offset_seconds": 27561,
+        "conclusion": "success"
+      },
+      {
+        "id": 42986640895,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-11T08:23:24Z",
+        "nominal_utc": "2026-11-11T01:41:00Z",
+        "offset_seconds": 24144,
+        "conclusion": "success"
+      },
+      {
+        "id": 42818454449,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-10T12:45:23Z",
+        "nominal_utc": "2026-11-10T04:17:00Z",
+        "offset_seconds": 30503,
+        "conclusion": "success"
+      },
+      {
+        "id": 42785634316,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-10T08:49:21Z",
+        "nominal_utc": "2026-11-10T01:41:00Z",
+        "offset_seconds": 25701,
+        "conclusion": "success"
+      },
+      {
+        "id": 42621610650,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-09T12:59:53Z",
+        "nominal_utc": "2026-11-09T04:17:00Z",
+        "offset_seconds": 31373,
+        "conclusion": "success"
+      },
+      {
+        "id": 42611716908,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-11-09T11:46:49Z",
+        "nominal_utc": "2026-11-09T03:23:00Z",
+        "offset_seconds": 30229,
+        "conclusion": "success"
+      },
+      {
+        "id": 42587589778,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-09T08:39:54Z",
+        "nominal_utc": "2026-11-09T01:41:00Z",
+        "offset_seconds": 25134,
+        "conclusion": "success"
+      },
+      {
+        "id": 42475429538,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-08T11:22:01Z",
+        "nominal_utc": "2026-11-08T04:17:00Z",
+        "offset_seconds": 25501,
+        "conclusion": "success"
+      },
+      {
+        "id": 42460920843,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-08T07:58:17Z",
+        "nominal_utc": "2026-11-08T01:41:00Z",
+        "offset_seconds": 22637,
+        "conclusion": "success"
+      },
+      {
+        "id": 42366998260,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-07T11:09:45Z",
+        "nominal_utc": "2026-11-07T04:17:00Z",
+        "offset_seconds": 24765,
+        "conclusion": "success"
+      },
+      {
+        "id": 42352695753,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-07T07:46:53Z",
+        "nominal_utc": "2026-11-07T01:41:00Z",
+        "offset_seconds": 21953,
+        "conclusion": "success"
+      },
+      {
+        "id": 42215956253,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-06T12:12:59Z",
+        "nominal_utc": "2026-11-06T04:17:00Z",
+        "offset_seconds": 28559,
+        "conclusion": "success"
+      },
+      {
+        "id": 42194936143,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-11-06T09:25:25Z",
+        "nominal_utc": "2026-11-06T02:19:00Z",
+        "offset_seconds": 25585,
+        "conclusion": "success"
+      },
+      {
+        "id": 42188093525,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-06T08:29:54Z",
+        "nominal_utc": "2026-11-06T01:41:00Z",
+        "offset_seconds": 24534,
+        "conclusion": "success"
+      },
+      {
+        "id": 42027562052,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-05T12:29:27Z",
+        "nominal_utc": "2026-11-05T04:17:00Z",
+        "offset_seconds": 29547,
+        "conclusion": "success"
+      },
+      {
+        "id": 41994924429,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-05T08:30:00Z",
+        "nominal_utc": "2026-11-05T01:41:00Z",
+        "offset_seconds": 24540,
+        "conclusion": "success"
+      },
+      {
+        "id": 41827751347,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-04T12:15:47Z",
+        "nominal_utc": "2026-11-04T04:17:00Z",
+        "offset_seconds": 28727,
+        "conclusion": "success"
+      },
+      {
+        "id": 41796192635,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-04T08:00:20Z",
+        "nominal_utc": "2026-11-04T01:41:00Z",
+        "offset_seconds": 22760,
+        "conclusion": "success"
+      },
+      {
+        "id": 41632276154,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-03T12:01:44Z",
+        "nominal_utc": "2026-11-03T04:17:00Z",
+        "offset_seconds": 27884,
+        "conclusion": "success"
+      },
+      {
+        "id": 41604262360,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-03T08:34:18Z",
+        "nominal_utc": "2026-11-03T01:41:00Z",
+        "offset_seconds": 24798,
+        "conclusion": "success"
+      },
+      {
+        "id": 41445992506,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-02T12:35:49Z",
+        "nominal_utc": "2026-11-02T04:17:00Z",
+        "offset_seconds": 29929,
+        "conclusion": "success"
+      },
+      {
+        "id": 41436556408,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-11-02T11:24:14Z",
+        "nominal_utc": "2026-11-02T03:23:00Z",
+        "offset_seconds": 28874,
+        "conclusion": "success"
+      },
+      {
+        "id": 41412197104,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-02T08:19:20Z",
+        "nominal_utc": "2026-11-02T01:41:00Z",
+        "offset_seconds": 23900,
+        "conclusion": "success"
+      },
+      {
+        "id": 41301526739,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-11-01T11:21:24Z",
+        "nominal_utc": "2026-11-01T04:17:00Z",
+        "offset_seconds": 25464,
+        "conclusion": "success"
+      },
+      {
+        "id": 41287694940,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-11-01T09:10:05Z",
+        "nominal_utc": "2026-11-01T01:41:00Z",
+        "offset_seconds": 26945,
+        "conclusion": "success"
+      },
+      {
+        "id": 41192786481,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-31T10:26:54Z",
+        "nominal_utc": "2026-10-31T04:17:00Z",
+        "offset_seconds": 22194,
+        "conclusion": "success"
+      },
+      {
+        "id": 41180826289,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-31T07:29:57Z",
+        "nominal_utc": "2026-10-31T01:41:00Z",
+        "offset_seconds": 20937,
+        "conclusion": "success"
+      },
+      {
+        "id": 41044195993,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-30T10:54:39Z",
+        "nominal_utc": "2026-10-30T04:17:00Z",
+        "offset_seconds": 23859,
+        "conclusion": "success"
+      },
+      {
+        "id": 41027958936,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-10-30T08:39:51Z",
+        "nominal_utc": "2026-10-30T02:19:00Z",
+        "offset_seconds": 22851,
+        "conclusion": "success"
+      },
+      {
+        "id": 41021830497,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-30T07:43:26Z",
+        "nominal_utc": "2026-10-30T01:41:00Z",
+        "offset_seconds": 21746,
+        "conclusion": "success"
+      },
+      {
+        "id": 40861584405,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-29T10:57:15Z",
+        "nominal_utc": "2026-10-29T04:17:00Z",
+        "offset_seconds": 24015,
+        "conclusion": "success"
+      },
+      {
+        "id": 40836887893,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-29T07:39:57Z",
+        "nominal_utc": "2026-10-29T01:41:00Z",
+        "offset_seconds": 21537,
+        "conclusion": "success"
+      },
+      {
+        "id": 40673890368,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-28T10:39:45Z",
+        "nominal_utc": "2026-10-28T04:17:00Z",
+        "offset_seconds": 22965,
+        "conclusion": "success"
+      },
+      {
+        "id": 40649970391,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-28T07:25:23Z",
+        "nominal_utc": "2026-10-28T01:41:00Z",
+        "offset_seconds": 20663,
+        "conclusion": "success"
+      },
+      {
+        "id": 40484158969,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-27T09:52:54Z",
+        "nominal_utc": "2026-10-27T04:17:00Z",
+        "offset_seconds": 20154,
+        "conclusion": "success"
+      },
+      {
+        "id": 40463449543,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-27T06:50:03Z",
+        "nominal_utc": "2026-10-27T01:41:00Z",
+        "offset_seconds": 18543,
+        "conclusion": "success"
+      },
+      {
+        "id": 40305966236,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-26T10:15:22Z",
+        "nominal_utc": "2026-10-26T04:17:00Z",
+        "offset_seconds": 21502,
+        "conclusion": "success"
+      },
+      {
+        "id": 40297059874,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-10-26T09:06:46Z",
+        "nominal_utc": "2026-10-26T03:23:00Z",
+        "offset_seconds": 20626,
+        "conclusion": "success"
+      },
+      {
+        "id": 40282973703,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-26T06:58:36Z",
+        "nominal_utc": "2026-10-26T01:41:00Z",
+        "offset_seconds": 19056,
+        "conclusion": "success"
+      },
+      {
+        "id": 40179710305,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-25T09:12:50Z",
+        "nominal_utc": "2026-10-25T04:17:00Z",
+        "offset_seconds": 17750,
+        "conclusion": "success"
+      },
+      {
+        "id": 40170677920,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-25T06:52:44Z",
+        "nominal_utc": "2026-10-25T01:41:00Z",
+        "offset_seconds": 18704,
+        "conclusion": "success"
+      },
+      {
+        "id": 40079984160,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-24T08:56:23Z",
+        "nominal_utc": "2026-10-24T04:17:00Z",
+        "offset_seconds": 16763,
+        "conclusion": "success"
+      },
+      {
+        "id": 40070323977,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-24T06:28:10Z",
+        "nominal_utc": "2026-10-24T01:41:00Z",
+        "offset_seconds": 17230,
+        "conclusion": "success"
+      },
+      {
+        "id": 39931669556,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-23T09:24:47Z",
+        "nominal_utc": "2026-10-23T04:17:00Z",
+        "offset_seconds": 18467,
+        "conclusion": "success"
+      },
+      {
+        "id": 39918537642,
+        "workflow_key": "bio",
+        "created_at_utc": "2026-10-23T07:33:21Z",
+        "nominal_utc": "2026-10-23T02:19:00Z",
+        "offset_seconds": 18861,
+        "conclusion": "success"
+      },
+      {
+        "id": 39911716174,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-23T06:28:43Z",
+        "nominal_utc": "2026-10-23T01:41:00Z",
+        "offset_seconds": 17263,
+        "conclusion": "success"
+      },
+      {
+        "id": 39755679098,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-22T09:28:23Z",
+        "nominal_utc": "2026-10-22T04:17:00Z",
+        "offset_seconds": 18683,
+        "conclusion": "success"
+      },
+      {
+        "id": 39734820988,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-22T06:34:47Z",
+        "nominal_utc": "2026-10-22T01:41:00Z",
+        "offset_seconds": 17627,
+        "conclusion": "success"
+      },
+      {
+        "id": 39576864291,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-21T09:25:38Z",
+        "nominal_utc": "2026-10-21T04:17:00Z",
+        "offset_seconds": 18518,
+        "conclusion": "success"
+      },
+      {
+        "id": 39556259140,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-21T06:34:32Z",
+        "nominal_utc": "2026-10-21T01:41:00Z",
+        "offset_seconds": 17612,
+        "conclusion": "success"
+      },
+      {
+        "id": 39401074752,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-20T09:29:45Z",
+        "nominal_utc": "2026-10-20T04:17:00Z",
+        "offset_seconds": 18765,
+        "conclusion": "success"
+      },
+      {
+        "id": 39381392189,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-20T06:36:46Z",
+        "nominal_utc": "2026-10-20T01:41:00Z",
+        "offset_seconds": 17746,
+        "conclusion": "success"
+      },
+      {
+        "id": 39234388500,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-19T10:01:15Z",
+        "nominal_utc": "2026-10-19T04:17:00Z",
+        "offset_seconds": 20655,
+        "conclusion": "success"
+      },
+      {
+        "id": 39227185707,
+        "workflow_key": "knowledge",
+        "created_at_utc": "2026-10-19T09:03:15Z",
+        "nominal_utc": "2026-10-19T03:23:00Z",
+        "offset_seconds": 20415,
+        "conclusion": "success"
+      },
+      {
+        "id": 39212240189,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-19T06:50:22Z",
+        "nominal_utc": "2026-10-19T01:41:00Z",
+        "offset_seconds": 18562,
+        "conclusion": "success"
+      },
+      {
+        "id": 39113275640,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-18T08:54:43Z",
+        "nominal_utc": "2026-10-18T04:17:00Z",
+        "offset_seconds": 16663,
+        "conclusion": "success"
+      },
+      {
+        "id": 39104619997,
+        "workflow_key": "daily_selfcheck",
+        "created_at_utc": "2026-10-18T06:36:06Z",
+        "nominal_utc": "2026-10-18T01:41:00Z",
+        "offset_seconds": 17706,
+        "conclusion": "success"
+      },
+      {
+        "id": 39018100269,
+        "workflow_key": "continuity",
+        "created_at_utc": "2026-10-17T08:38:07Z",
+        "nominal_utc": "2026-10-17T04:17:00Z",
+        "offset_seconds": 15667,
+        "conclusion": "success"
+      }
+    ],
+    "stats": {
+      "continuity": {
+        "count": 39,
+        "median_offset_seconds": 27561
+      },
+      "daily_selfcheck": {
+        "count": 38,
+        "median_offset_seconds": 24022
+      },
+      "knowledge": {
+        "count": 6,
+        "median_offset_seconds": 29375.5
+      },
+      "bio": {
+        "count": 5,
+        "median_offset_seconds": 25585
+      }
+    },
+    "continuity_2026_11_24": "OBSERVED_SUCCESS_AFTER_PRIOR_CUTOFF",
+    "new_continuity_run": 45419953754,
+    "continuity_job": 138536480015,
+    "created_minus_nominal_seconds": 38448,
+    "cause": "UNKNOWN",
+    "nov25": "NOT_OBSERVED_AT_PARTIAL_DAY_CUTOFF",
+    "artifact": {
+      "id": 14932963983,
+      "name": "accepted-knowledge-continuity",
+      "expired": false,
+      "digest": "sha256:cc8af58e4aa30145858716110063eba8cb9a95d4f2f8ec7a4909e446b24bb2bb"
+    },
+    "artifact_contents_independently_read": false,
+    "job_log_observed": "KNOWLEDGE_QUALITY_PASS"
+  },
+  "production": {
+    "accepted_event_count": 7,
+    "historical_candidate_count": 6,
+    "last_execution_id": "gh-45181050512-1",
+    "last_event_sha256": "da42794579788f5c47061f6fb94e928ab35b4f9cd273701abbc596c5e0e6fefb",
+    "last_change_kind": "DOCUMENT_TEXT_UNCHANGED",
+    "graph_entities": 17,
+    "graph_relations": 26,
+    "knowledge_digest": "df485b7d4599a1831e20a72ed437843aa8b89fcb1d20bb49e0232f7bac33e9d2",
+    "data_paths_changed_since_prior_source": false,
+    "previous_to_current_records": 15,
+    "selected_text_changes": 0,
+    "selected_content_digest_changes": 0,
+    "source_revision_changes": [
+      {
+        "repository": "seek4science/seek",
+        "path": "README.md",
+        "before": "d2d7ea5136e34759cb48a1ae6cd4c35877074214",
+        "after": "8d69b15b06aa7120ceffb96ae9a1113c3913b9f2"
+      }
+    ]
+  },
+  "negative_evidence": {
+    "historic_failed_run_ids_currently_http404": [
+      43919536363,
+      43919549660,
+      43919549686,
+      43919549907
+    ],
+    "prior_frozen_cancelled_run_with_failed_job": {
+      "run_id": 43210854941,
+      "job_id": 131157765073
+    }
+  },
+  "governance": {
+    "main_protected": false,
+    "repository_rulesets_count": 0
+  },
+  "limits": [
+    "No exact prior 960-ID set join; eight later-created objects and net difference are separate observations.",
+    "All 88 visible scheduled Run identities re-enumerated; historical Job attempts and artifact bytes not fully replayed.",
+    "Job log and provider artifact digest are not independent artifact-byte verification.",
+    "November 25 partial day does not establish missed schedule. Cron-to-created offset is not measured queue time.",
+    "No production mutation, new biological finding, external certification or new release. Publishing PR and its runs excluded."
+  ]
+}
