@@ -2,6 +2,18 @@
 
 [Full-first-day classification](../taxonomy/README.md) · [Original 2026-10-30 historical reconstruction](../REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Open claims](../CLAIM_VERIFICATION_GAPS.md) · [Evidence authority](../PROVENANCE.md)
 
+## Post-960 bounded observation · 2026-11-25
+
+[Machine evidence: 960→968](post-960-to-968-observation-2026-11-25.json) · [Offline regression](../../tests/test_post_960_run_delta.py). Fixed source main `c2fdd0ea165a1e89e17203a94415c665cbf70f2b`; latest included Run created 2026-11-24T14:57:48Z. **DEFINE / PIN / QUALIFY:** distinguish the previously open continuity observation window from a missed schedule. All 340 main-reachable commits have resolvable parent identities (root 2026-10-16); 362 tracked blobs; 86 PRs (82 merged, four closed unmerged); nine Workflow definitions and three releases. Compare to prior source: one commit, four documentation/test paths, no accepted data changes.
+
+**EXECUTE / EVALUATE:** ten pages, 968 unique visible Runs (917 success, 51 cancelled, zero currently visible failed parents); eight later-created successes, 18 latest-attempt Jobs (17 success, one conditional Bio main-push skip). Seven Runs are PR #86 engineering checks, one is scheduled continuity. No exact previous 960-ID set join. Re-enumerated 88 successful scheduled Run IDs, including 38 daily self-check, 39 continuity, six Knowledge and five Bio; historical attempts/Job logs are not exhaustively replayed.
+
+**AUDIT:** [Run 45419953754](https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/45419953754), Job 138536480015, observed 2026-11-24T14:57:48Z, 10:40:48 after nominal UTC Cron. The prior archive's NOT_OBSERVED_AT_CUTOFF remains correct at its own cutoff; this later Job verified seven events, 17 entities, 26 relations and emitted KNOWLEDGE_QUALITY_PASS. Artifact 14932963983 provider digest agrees with upload log; bytes not independently downloaded. November 25 is a partial observation day, scheduler cause UNKNOWN. Four frozen failed Run IDs again returned 404; retain original negative evidence, including the cancelled-parent/failed-Job witness.
+
+**REVIEW / REPLAY:** seven Receipts/events, six archives, current candidate 15 records; independent comparison to previous Candidate found zero text/digest changes and one SEEK README source-revision change. No new native apply or scientific claim. No asset, Framework, schedule, accepted data, Release, DOI or protection setting changes. Replay with `python -m unittest discover -s tests -p 'test_post_960_run_delta.py' -v`; it tests frozen observations and the accepted event prefix, not historical network execution. The later observation closes a visibility gap without rewriting the earlier cutoff or establishing scheduler causality.
+
+**Disposition:** `SOURCE_PINNED / CONTINUITY_OBSERVED / NO_NEW_ACCEPTANCE / NO_CHANGE_REQUIRED / SCHEDULER_CAUSE_UNKNOWN / HISTORICAL_FAILURE_RETAINED`
+
 ## Post-949 bounded observation · 2026-11-24 (later cutoff)
 
 [Machine evidence: 949→960](post-949-to-960-observation-2026-11-24.json) · [Offline regression](../../tests/test_post_949_run_delta.py). Source main `dfd44c14c6ffbed64b9a19fdbe4c03243214821a`; latest included Run created 2026-11-24T11:37:03Z. This addendum does not replace the earlier November 24 archive.
