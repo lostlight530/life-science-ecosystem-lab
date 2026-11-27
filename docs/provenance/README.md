@@ -2,6 +2,18 @@
 
 [Full-first-day classification](../taxonomy/README.md) · [Original 2026-10-30 historical reconstruction](../REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Open claims](../CLAIM_VERIFICATION_GAPS.md) · [Evidence authority](../PROVENANCE.md)
 
+## Post-987 bounded observation · 2026-11-27
+
+[Machine evidence: 987→998](post-987-to-998-observation-2026-11-27.json) · [Offline regression](../../tests/test_post_987_run_delta.py). Source main `853a3736ba0b4db6ca979e485fa88028f2e4d00a`; latest included Run created 2026-11-27T10:51:59Z. **DEFINE / PIN / QUALIFY:** 343 reachable commits, one root, no missing parents; 374 tracked blobs; 89 PRs (85 merged, four closed unmerged), nine workflows, three releases. PR #89 changed three provenance/test paths, not accepted data.
+
+**EXECUTE / EVALUATE:** ten pages, 998 unique visible Runs (947 success, 51 cancelled); eleven later-created successes, 24 latest-attempt Jobs (23 success, one conditional Bio main-push skip). Seven Runs are publishing CI and four are scheduled work. The previous 987 full ID set is unavailable; retain the complete current 998-ID baseline for future exact set comparison instead of claiming a retrospective join. All 90 prior scheduled identities, clocks and conclusions rechecked; 94 now visible (41 self-check, 41 continuity, six Knowledge, six Bio).
+
+**AUDIT:** November 26 [self-check 45797474237](https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/45797474237) and [continuity 45834522862](https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/45834522862) close the prior cutoff visibility gap. November 27 [self-check 45979484121](https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/45979484121) and [Bio QA 45985681186](https://github.com/lostlight530/life-science-ecosystem-lab/actions/runs/45985681186) completed; seven native Jobs succeeded. Both custom checks report eleven passes, both institutional jobs are PUBLIC_HTTP_READ_ONLY, continuity reports seven events and KNOWLEDGE_QUALITY_PASS, Bio pinned-field reports six analyzed fixed files and offline logs report 331 tests and successful CWL execution. Seven Artifact IDs and provider digests agree with original upload logs; ZIP bytes not independently examined. November 27 continuity remains NOT_OBSERVED_AT_CUTOFF, not a missed-run verdict; scheduler cause UNKNOWN.
+
+**REVIEW / REPLAY:** seven accepted events/receipts, six archives, 15 selected records, 17 entities, 26 relations unchanged; no new scientific result. Frozen negative witnesses retained. Retrieved public WorkflowHub version 2 page still describes portable v0.4.0; external registry APIs/DOI unavailable in review and private LifeMonitor state not reverified. Local Git transport blocked by DNS; independent full local suite not run. Replay with `python -m unittest discover -s tests -p 'test_post_987_run_delta.py' -v`; tests frozen counts, clocks, artifact metadata and accepted prefix, not original remote execution. No asset, Framework, registry, schedule, accepted data, release or DOI changes.
+
+**Disposition:** `SOURCE_PINNED / NATIVE_VISIBILITY_GAP_CLOSED / NO_NEW_ACCEPTANCE / HISTORICAL_REPLAY_PARTIAL`
+
 ## Post-968 bounded observation · 2026-11-26
 
 [Machine evidence: 968→987](post-968-to-987-observation-2026-11-26.json) · [Offline regression](../../tests/test_post_968_run_delta.py). Source main `dcdb8b963e6eed42430770ca343a4890614f4b38`; latest visible Run created 2026-11-25T14:33:39Z. **DEFINE / PIN / QUALIFY:** 342 main-reachable commits, one root, no missing parents; 372 tracked blobs; 88 PRs (84 merged, four closed unmerged); nine workflow definitions and three releases. Two commits and 22 changed paths since previous source, none under accepted data.
