@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "INDEPENDENT_ARTIFACT_BYTE_REPLAY_ADDENDUM",
+  "logical_day_asia_shanghai": "2026-11-27",
+  "prior_observation": "docs/provenance/post-987-to-998-observation-2026-11-27.json",
+  "prior_observation_blob": "ebedc0273d09bb564fc2c3518b72cd48395e21f9",
+  "source_execution_sha": "853a3736ba0b4db6ca979e485fa88028f2e4d00a",
+  "review_main_sha": "b0fd18326f16b8e514ed438d7a2f58bbc0e661ac",
+  "prior_cutoff_preserved": true,
+  "prior_archive_artifact_contents_independently_read": false,
+  "artifact_contents_independently_read": true,
+  "verification_methods": [
+    "Independent Python standard-library ZIP CRC, hashlib SHA-256 and JSON inspection",
+    "Independent JS SHA-1/SHA-256 standard test vectors, fixed Git source bytes and simple FASTA/PDB counting oracle",
+    "Independent candidate-relative selection, alias, source identity and excerpt containment with fabricated excerpt negative control"
+  ],
+  "artifacts": [
+    {
+      "run_id": 45985681186,
+      "job_id": 140460569313,
+      "id": 15191492115,
+      "sha256": "2caaa14756de8bc3241fff938b270732609cb8acd2a1ac8113c3028f275236df",
+      "log_api_digest_agreement": true,
+      "byte_count": 1356,
+      "members_sha256": {
+        "pinned-sample-report.json": "e5ad0a8b580bf651fe3b50e107fd3d321751431d04f1149bb41f9ad14077d8bd"
+      },
+      "independent_zip_sha256_match": true,
+      "zip_crc_ok": true,
+      "tamper_digest_rejected": true
+    },
+    {
+      "run_id": 45985681186,
+      "job_id": 140460569425,
+      "id": 15191826340,
+      "sha256": "fbcf333a53335931adc638d2093324338f62165747b793b2e2469540b246b95b",
+      "log_api_digest_agreement": true,
+      "byte_count": 1298,
+      "members_sha256": {
+        "fasta-one.json": "ca1697502ec1c48afef0631e8cfbce0ab3ea3e221243284c368a9ffeb19e1692",
+        "pdb-one.json": "7b99771c0ca9fc359d69530b815a86311c9a8fb3ee8184efb9c118ed92867a13"
+      },
+      "independent_zip_sha256_match": true,
+      "zip_crc_ok": true,
+      "tamper_digest_rejected": true
+    },
+    {
+      "run_id": 45979484121,
+      "job_id": 140439435407,
+      "id": 15187959042,
+      "sha256": "83524fdbd721878be72e13617e32c605f97cdaacd5fd46b236920b46cfc8b17c",
+      "log_api_digest_agreement": true,
+      "byte_count": 11799,
+      "members_sha256": {
+        "docs-audit.json": "ee66a134f26cf8f7db0f6679b1f7982dd3d2b28e2f52ade6a8864a7b7cd7bda8",
+        "execution-report.json": "460d65ca4a65fce492538f89340f8b39c56323e7dd4d7cd2d3740b8745727c8e",
+        "ecosystem-preflight.json": "b83b75e1f82836c339200d85cb66f0b17a8c49794ca933aaada519e2c32421b8",
+        "file-contract.json": "f38592b6c165a8672358eb08a036aa7fc006e2695f0057b265059b2ccd3b3077",
+        "knowledge-quality.json": "0e3fbced4202e5c3298c70e2bdea2bf3029172451f417af46aafe54d110a5d26"
+      },
+      "independent_zip_sha256_match": true,
+      "zip_crc_ok": true,
+      "tamper_digest_rejected": true
+    },
+    {
+      "run_id": 45979484121,
+      "job_id": 140439435815,
+      "id": 15188592258,
+      "sha256": "bf5b9703d1bd9166f6b470e5a33e7ae22b72efe6115495de160ff495d67d4017",
+      "log_api_digest_agreement": true,
+      "byte_count": 908,
+      "members_sha256": {
+        "report.json": "954686f6a0c1e7e8bed7fa163d63d1a3bc03b5dbe9e54daa9d30730b2c6e263d"
+      },
+      "independent_zip_sha256_match": true,
+      "zip_crc_ok": true,
+      "tamper_digest_rejected": true
+    },
+    {
+      "run_id": 45834522862,
+      "job_id": 139959758047,
+      "id": 15123491992,
+      "sha256": "0573c56d8b26204d1e9762a8d2f79718cc19ba6fcbcc74afcf213853bfba3198",
+      "log_api_digest_agreement": true,
+      "byte_count": 967,
+      "members_sha256": {
+        "knowledge-quality.json": "0e3fbced4202e5c3298c70e2bdea2bf3029172451f417af46aafe54d110a5d26"
+      },
+      "independent_zip_sha256_match": true,
+      "zip_crc_ok": true,
+      "tamper_digest_rejected": true
+    },
+    {
+      "run_id": 45797474237,
+      "job_id": 139831722109,
+      "id": 15104913081,
+      "sha256": "d8567e70d69af1d4995e4853bfb3316b8bd975bd98603fc97f4c885e889643b3",
+      "log_api_digest_agreement": true,
+      "byte_count": 908,
+      "members_sha256": {
+        "report.json": "4270f0de1f8b2035b4d7936e1a151d2a87b55cb38859b912f9f241f22ebab041"
+      },
+      "independent_zip_sha256_match": true,
+      "zip_crc_ok": true,
+      "tamper_digest_rejected": true
+    },
+    {
+      "run_id": 45797474237,
+      "job_id": 139831722392,
+      "id": 15104409381,
+      "sha256": "02e4f321662927c2dc97e37be718e937170a24645fd9753642bd2c1de3534188",
+      "log_api_digest_agreement": true,
+      "byte_count": 11801,
+      "members_sha256": {
+        "docs-audit.json": "ee66a134f26cf8f7db0f6679b1f7982dd3d2b28e2f52ade6a8864a7b7cd7bda8",
+        "execution-report.json": "a7e75a7503a747432ed7f5ac92100506b0081b3a234198eb94d05485c8a14a5d",
+        "ecosystem-preflight.json": "b83b75e1f82836c339200d85cb66f0b17a8c49794ca933aaada519e2c32421b8",
+        "file-contract.json": "a7210805bc6547635d70cf2354b543449e4af7c3ae75c1d0674623e50ffef2ce",
+        "knowledge-quality.json": "0e3fbced4202e5c3298c70e2bdea2bf3029172451f417af46aafe54d110a5d26"
+      },
+      "independent_zip_sha256_match": true,
+      "zip_crc_ok": true,
+      "tamper_digest_rejected": true
+    }
+  ],
+  "artifact_count": 7,
+  "member_count": 16,
+  "embedded_report_digest_recomputed_count": 5,
+  "embedded_report_digest_match_count": 5,
+  "negative_controls": {
+    "zip_mutation_rejected_count": 7,
+    "fabricated_excerpt_rejected": true,
+    "event_outcome_mutation_rejected": true,
+    "graph_removal_detected": true
+  },
+  "daily_custom": {
+    "run_ids": [
+      45797474237,
+      45979484121
+    ],
+    "checks_per_run": 11,
+    "blocking_failure_count": 0,
+    "advisory_failure_count": 0,
+    "file_contract_checks": 48,
+    "docs_issue_count": 0,
+    "ecosystem_preflight_status": "REVIEW_REQUIRED",
+    "ecosystem_finding": "MAIN_WORKFLOW_PORTABILITY_NOT_VERIFIED"
+  },
+  "institutional": {
+    "run_ids": [
+      45797474237,
+      45979484121
+    ],
+    "mode": "PUBLIC_HTTP_READ_ONLY",
+    "inconclusive_count_per_run": 0,
+    "http_observations_each_run": {
+      "ls-login": 301,
+      "workflowhub": 200,
+      "lifemonitor": 206,
+      "openebench": 206,
+      "fairdomhub": 200,
+      "bio-tools": 206
+    },
+    "service_health_or_authorization_verified": false
+  },
+  "knowledge": {
+    "accepted_events": 7,
+    "knowledge_digest": "df485b7d4599a1831e20a72ed437843aa8b89fcb1d20bb49e0232f7bac33e9d2",
+    "observed_native_quality_status": "PASS",
+    "observed_native_quality_report_source_binding_present": false,
+    "structural_findings": 0,
+    "fragments": 26,
+    "topics": 3,
+    "review_candidates": 9,
+    "label_status": "NO_HUMAN_LABELS",
+    "independent_candidate_binding": {
+      "expected_fragments": 26,
+      "actual_fragments": 26,
+      "selection_set_equal": true,
+      "profile_digest_match": true,
+      "evidence_bundle_digest_match": true,
+      "identity_alias_excerpt_findings": 0,
+      "fabricated_excerpt_rejected": true,
+      "upstream_authenticity": "NOT_ATTESTED",
+      "scientific_truth": "NOT_EVALUATED"
+    }
+  },
+  "bio": {
+    "pinned_verified_count": 6,
+    "samples": [
+      {
+        "id": "openfold-fasta",
+        "repository": "aqlaboratory/openfold",
+        "commit": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+        "path": "examples/monomer/fasta_dir/6kwc.fasta",
+        "blob_sha": "4fbcc4f33528dc49d7c13f4f7734123ac5637598",
+        "bytes": 200,
+        "format": "FASTA",
+        "role": "example_sequence",
+        "count": 191,
+        "count_unit": "residues",
+        "source_sha256": "b247679c36ec63f89aa5b849caac450e9368cee99e3082951303698a73f33166",
+        "independently_recomputed_git_blob_sha": "4fbcc4f33528dc49d7c13f4f7734123ac5637598",
+        "independent_sha256_and_count_match": true
+      },
+      {
+        "id": "openfold-predicted-pdb",
+        "repository": "aqlaboratory/openfold",
+        "commit": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+        "path": "examples/monomer/sample_predictions/6KWC_1_model_1_ptm_relaxed.pdb",
+        "blob_sha": "78781cf1472d3bcb18c5914f7b1889ac25f9cb4a",
+        "bytes": 230149,
+        "format": "PDB",
+        "role": "predicted_structure",
+        "count": 191,
+        "count_unit": "first_model_unique_CA_residues",
+        "source_sha256": "27483bf9432d0c2aa594485db4529d71f55c62ea8361cc1e8be65ce23b146095",
+        "independently_recomputed_git_blob_sha": "78781cf1472d3bcb18c5914f7b1889ac25f9cb4a",
+        "independent_sha256_and_count_match": true
+      },
+      {
+        "id": "casp15-alphafold2-t1104",
+        "repository": "Bhattacharya-Lab/CASP15",
+        "commit": "96687bc0f6e117240015766bb7c4d8b11ec796cd",
+        "path": "AlphaFold2/T1104.pdb",
+        "blob_sha": "155ae80aba876ed7cd374a8bc0d8f25918740165",
+        "bytes": 146132,
+        "format": "PDB",
+        "role": "benchmark_prediction",
+        "count": 117,
+        "count_unit": "first_model_unique_CA_residues",
+        "source_sha256": "9745a23e6e055bd7886cfa1c2764f87fa06d80c5e89cfe605cec3f05b1f0a488",
+        "independently_recomputed_git_blob_sha": "155ae80aba876ed7cd374a8bc0d8f25918740165",
+        "independent_sha256_and_count_match": true
+      },
+      {
+        "id": "casp15-esmfold-t1104",
+        "repository": "Bhattacharya-Lab/CASP15",
+        "commit": "96687bc0f6e117240015766bb7c4d8b11ec796cd",
+        "path": "ESMFold/T1104.pdb",
+        "blob_sha": "2f1b7b6efc395301554185d2c400860a20c68991",
+        "bytes": 72861,
+        "format": "PDB",
+        "role": "benchmark_prediction",
+        "count": 117,
+        "count_unit": "first_model_unique_CA_residues",
+        "source_sha256": "90afd5eca26255571373a9c76ebc7dc9f6210a9d15035614486740baafa7be6d",
+        "independently_recomputed_git_blob_sha": "2f1b7b6efc395301554185d2c400860a20c68991",
+        "independent_sha256_and_count_match": true
+      },
+      {
+        "id": "proteingym-fasta",
+        "repository": "ProteinGym/proteingym-base",
+        "commit": "8e0e29b608c60755f4341707292670cf14aa7992",
+        "path": "example_data/NEIME_2019/A0A1I9GEU1.fasta",
+        "blob_sha": "7c626626bd61060085ab87be4501390f63d82db7",
+        "bytes": 244,
+        "format": "FASTA",
+        "role": "variant_effect_example",
+        "count": 161,
+        "count_unit": "residues",
+        "source_sha256": "3d0ba22d4fe71bcfb96ff6902853f5317b82e6f1c9a65ffe550c1f7f2c9b8a94",
+        "independently_recomputed_git_blob_sha": "7c626626bd61060085ab87be4501390f63d82db7",
+        "independent_sha256_and_count_match": true
+      },
+      {
+        "id": "proteingym-computational-pdb",
+        "repository": "ProteinGym/proteingym-base",
+        "commit": "8e0e29b608c60755f4341707292670cf14aa7992",
+        "path": "example_data/NEIME_2019/Structures/computational.pdb",
+        "blob_sha": "5ce0d454aea57ad445ec7ccade6c30bf6dd0adaa",
+        "bytes": 101978,
+        "format": "PDB",
+        "role": "variant_effect_example",
+        "count": 161,
+        "count_unit": "first_model_unique_CA_residues",
+        "source_sha256": "70a6b010f70c95d7586243eaf4dd9714e7d634e76260b3a49989c75b6c9a3b50",
+        "independently_recomputed_git_blob_sha": "5ce0d454aea57ad445ec7ccade6c30bf6dd0adaa",
+        "independent_sha256_and_count_match": true
+      }
+    ],
+    "excluded_non_fasta_pdb_manifest_item": "alphafold3-ubiquitin",
+    "offline_fasta": {
+      "status": "WARN_UNCERTAIN_RESIDUES",
+      "record_count": 2,
+      "residue_count": 24,
+      "uncertain_residue_count": 2
+    },
+    "offline_pdb": {
+      "status": "PASS",
+      "chain_count": 1,
+      "observed_ca_count": 2
+    },
+    "scientific_model_execution_or_accuracy_claim": "NOT_EVALUATED"
+  },
+  "limitations": [
+    "Downloaded ZIP bytes and compact report fields independently inspected; no third-party original biological data or private logs redistributed.",
+    "Local full repository suite not executed in the external Agent sandbox; Git transport DNS blocked. PR and main Runner execution separately verified.",
+    "Native structural quality PASS, candidate-relative independent PASS and semantic/scientific validation are different layers.",
+    "No new production acceptance, source registry, workflow, framework, release or external registration change."
+  ],
+  "disposition": "ARTIFACT_BYTES_VERIFIED / BOUNDED_SOURCE_AND_BIO_REPLAY_PASS / SCIENTIFIC_NONCLAIMS_RETAINED"
+}

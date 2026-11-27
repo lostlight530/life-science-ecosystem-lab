@@ -2,6 +2,14 @@
 
 [Full-first-day classification](../taxonomy/README.md) · [Original 2026-10-30 historical reconstruction](../REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Open claims](../CLAIM_VERIFICATION_GAPS.md) · [Evidence authority](../PROVENANCE.md)
 
+## November 27 · independent artifact-byte replay (after PR #90 cutoff)
+
+[Machine evidence](2026-11-27-independent-artifact-byte-replay.json) · [Offline relationship regression](../../tests/test_post_998_artifact_replay.py). This later read-only verification supplements, not rewrites, the frozen 987→998 observation. Seven ZIPs actually downloaded; independently recomputed SHA-256 agrees with all seven provider/upload digests, all ZIP CRC checks pass, 16 JSON members individually hashed, five embedded report digests independently recomputed and seven ZIP-mutation negative controls rejected. No raw third-party biological content redistributed.
+
+The two daily custom reports have 11/11 checks each, but embedded ecosystem preflight remains REVIEW_REQUIRED (MAIN_WORKFLOW_PORTABILITY_NOT_VERIFIED). Institutional probes observed six public endpoint responses/redirects on each day, not service health or account authorization. The continuity and custom Knowledge Quality reports are byte-identical: 3 topics, 26 fragments, nine review candidates, no structural findings, NO_HUMAN_LABELS and structural PASS **without source-binding mode**. A separate independent candidate-relative oracle matched all 26 selection/source/alias/excerpt identities and rejected a fabricated excerpt; it does not attest upstream authenticity or scientific truth.
+
+The six pinned FASTA/PDB samples were independently retrieved at their immutable commits; Git Blob SHA-1, byte length, SHA-256 and independently counted FASTA residues or unique first-model C-alpha residues all match the actual Bio artifact. The separate JSON inference-input example is outside the Bio FASTA/PDB gate. Preserve offline FASTA WARN_UNCERTAIN_RESIDUES (24 residues across two records, two uncertain residues) and PDB PASS (two observed C-alpha residues). These are file-processing observations, not inference, ground truth or benchmark validation. Native workflows, approved sources, Framework and accepted production remain unchanged. Full external sandbox repository replay remains blocked by Git transport DNS; the offline regression tests archived identity relationships, not a new external download.
+
 ## Post-987 bounded observation · 2026-11-27
 
 [Machine evidence: 987→998](post-987-to-998-observation-2026-11-27.json) · [Offline regression](../../tests/test_post_987_run_delta.py). Source main `853a3736ba0b4db6ca979e485fa88028f2e4d00a`; latest included Run created 2026-11-27T10:51:59Z. **DEFINE / PIN / QUALIFY:** 343 reachable commits, one root, no missing parents; 374 tracked blobs; 89 PRs (85 merged, four closed unmerged), nine workflows, three releases. PR #89 changed three provenance/test paths, not accepted data.
