@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "INDEPENDENT_PORTABLE_SOURCE_RECOVERY_AND_REPLAY",
+  "logical_day_asia_shanghai": "2026-11-28",
+  "recorded_at_utc": "2026-11-28T14:53:31Z",
+  "source_main_sha": "41b46662f91643b210b6caf77003dc586fe8d9cc",
+  "source_tree_sha": "c8603ff14f6961a51d51acea535c103787f68e9b",
+  "prior_observation": "docs/provenance/2026-11-28-independent-artifact-byte-replay.json",
+  "disposition": "NEW_BOUNDED_EXECUTION_EVIDENCE_NO_PRODUCTION_CHANGE",
+  "question": "Can a revision-bound portable artifact recover independently executable three-asset source when direct Git transport fails, and reproduce accepted extractive outputs and Bio fixtures without modifying accepted data?",
+  "git_transport": "DNS_RESOLUTION_FAILED",
+  "recovery": {
+    "artifact_id": 15267112762,
+    "member": "portable-one.crate.zip",
+    "inner_zip_members": 74,
+    "python_source_paths": 39,
+    "source_git_blob_matches": 39,
+    "source_manifest_sha256": "3c4d89bb3ac6cb909911eb3d6fa269cc665bed78075bc6d4afdd4d872d051ef9",
+    "manifest_method": "Sort all .py paths in .github/runtime/, evidence/, bio_tool/ lexically, recompute Git blob SHA-1 over exact bytes (blob SP length NUL bytes), compare against pinned Git tree; SHA-256 over canonical JSON list of {path,blob_sha}.",
+    "execution_environment": "Independent Python 3.13 container, PYTHONPATH=.:.github/runtime, unpacked portable crate, temporary local output, no production writes",
+    "full_repo_clone": false,
+    "full_suite_independently_run": false,
+    "cwltool_available": false,
+    "framework_independently_run": false
+  },
+  "census": {
+    "previous_visible_run_count": 1015,
+    "visible_runs": 1029,
+    "success": 978,
+    "cancelled": 51,
+    "previous_ids_missing": 0,
+    "additional_successful_pr_or_push_runs": 14,
+    "scheduled_runs": 97,
+    "scheduled_success_jobs": 151,
+    "scheduled_visible_artifacts": 80,
+    "scheduled_runs_without_visible_artifact": 49,
+    "scheduled_job_and_artifact_count_reconciliation": 97,
+    "main_reachable_commits": 347,
+    "missing_parents": 0,
+    "tracked_blobs": 382,
+    "prs": 93,
+    "merged": 89,
+    "closed_unmerged": [
+      29,
+      32,
+      67,
+      78
+    ],
+    "open_prs": 0
+  },
+  "artifacts": [
+    {
+      "id": 14820557604,
+      "bytes": 32184,
+      "provider_sha256": "61d29185a351465b67ae07a6e9b21d6844b48fa5852f53ccb5a81e4b597abb23",
+      "independently_measured_sha256": "61d29185a351465b67ae07a6e9b21d6844b48fa5852f53ccb5a81e4b597abb23",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15191492115,
+      "bytes": 1356,
+      "provider_sha256": "2caaa14756de8bc3241fff938b270732609cb8acd2a1ac8113c3028f275236df",
+      "independently_measured_sha256": "2caaa14756de8bc3241fff938b270732609cb8acd2a1ac8113c3028f275236df",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15191826340,
+      "bytes": 1298,
+      "provider_sha256": "fbcf333a53335931adc638d2093324338f62165747b793b2e2469540b246b95b",
+      "independently_measured_sha256": "fbcf333a53335931adc638d2093324338f62165747b793b2e2469540b246b95b",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15203379053,
+      "bytes": 967,
+      "provider_sha256": "60cfdc6be02f625f13560e025f859806d532532b528dd6c8bfb7c5795a0377a4",
+      "independently_measured_sha256": "60cfdc6be02f625f13560e025f859806d532532b528dd6c8bfb7c5795a0377a4",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15257417844,
+      "bytes": 11837,
+      "provider_sha256": "4c7aa08bfbb7101dbea2ae36e409d2c8bcd6e877b5b4e2feac34f6ac1a21996d",
+      "independently_measured_sha256": "4c7aa08bfbb7101dbea2ae36e409d2c8bcd6e877b5b4e2feac34f6ac1a21996d",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15257675335,
+      "bytes": 948,
+      "provider_sha256": "e4584aabd04016b6235627b9e95c54519f124baf8a9fb2b20a7f14b358a4d0b0",
+      "independently_measured_sha256": "e4584aabd04016b6235627b9e95c54519f124baf8a9fb2b20a7f14b358a4d0b0",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15264379031,
+      "bytes": 967,
+      "provider_sha256": "00fc9e7db5f6e7e8ced19d38ac6bcb86582fd4a4ea31b3b2b6cd3f9782edf139",
+      "independently_measured_sha256": "00fc9e7db5f6e7e8ced19d38ac6bcb86582fd4a4ea31b3b2b6cd3f9782edf139",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15266808373,
+      "bytes": 5430,
+      "provider_sha256": "b90ab2347a3d6597f5bdfb6badf88d61b37ab6a922b05694e1cb67561e8472b4",
+      "independently_measured_sha256": "b90ab2347a3d6597f5bdfb6badf88d61b37ab6a922b05694e1cb67561e8472b4",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15267112762,
+      "bytes": 105275,
+      "provider_sha256": "e597763808f82b722c9f13a27c2251fb0e700e51c0793c139550c0b4cf3f88a4",
+      "independently_measured_sha256": "e597763808f82b722c9f13a27c2251fb0e700e51c0793c139550c0b4cf3f88a4",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15267353140,
+      "bytes": 4553,
+      "provider_sha256": "f4b570f07f3e72e0799bfab15a6faef5e962329e4662c8b5d112b63cb7dfdcdd",
+      "independently_measured_sha256": "f4b570f07f3e72e0799bfab15a6faef5e962329e4662c8b5d112b63cb7dfdcdd",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15267695466,
+      "bytes": 10317,
+      "provider_sha256": "ed63f9b948b3d927d8eb17ed37a6760930c63476204755597380ea7a829198b0",
+      "independently_measured_sha256": "ed63f9b948b3d927d8eb17ed37a6760930c63476204755597380ea7a829198b0",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15267720408,
+      "bytes": 9875,
+      "provider_sha256": "b572cddb66a37ea31d6653af4fc57289a32b6748cf45abf0e5c1f2c15e6ea0fb",
+      "independently_measured_sha256": "b572cddb66a37ea31d6653af4fc57289a32b6748cf45abf0e5c1f2c15e6ea0fb",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    },
+    {
+      "id": 15267745446,
+      "bytes": 1298,
+      "provider_sha256": "a2ce820f6cbac7ee3521d84d10701e45586ada50d196b51655469d35d623fa13",
+      "independently_measured_sha256": "a2ce820f6cbac7ee3521d84d10701e45586ada50d196b51655469d35d623fa13",
+      "crc_ok": true,
+      "one_byte_mutation_rejected": true
+    }
+  ],
+  "artifact_count": 13,
+  "member_occurrences": 61,
+  "embedded_report_digest_occurrences": 12,
+  "inspection_digest_scope": {
+    "artifact_ids": [
+      15267353140,
+      15267720408
+    ],
+    "member_paths": [
+      "software-inspection.json",
+      "tool-inspection.json"
+    ],
+    "expected_sha256": "c8a4f72e0c0f6a1cb4836f814b03de9017a9af2f9935b69d072fd7887a8b9eb9",
+    "excluded_fields": [
+      "object",
+      "report_sha256"
+    ],
+    "observed_object": ".",
+    "included_payload": {
+      "counts": {
+        "FAIL": 0,
+        "PASS": 6,
+        "WARN": 0
+      },
+      "findings": [
+        {
+          "detail": "README available",
+          "path": "README.md",
+          "rule": "documentation.readme",
+          "status": "PASS"
+        },
+        {
+          "detail": "Citation metadata contains CFF version",
+          "path": "CITATION.cff",
+          "rule": "citation.version",
+          "status": "PASS"
+        },
+        {
+          "detail": "Main workflow referenced by existing local file",
+          "path": ".github/workflows/life-science-knowledge.yml",
+          "rule": "rocrate.main_entity",
+          "status": "PASS"
+        },
+        {
+          "detail": "Basic JSON-LD identity present (not profile certification)",
+          "path": "bioschemas-bio-tool.jsonld",
+          "rule": "bioschemas.identity",
+          "status": "PASS"
+        },
+        {
+          "detail": "Basic JSON-LD identity present (not profile certification)",
+          "path": "bioschemas-tool.jsonld",
+          "rule": "bioschemas.identity",
+          "status": "PASS"
+        },
+        {
+          "detail": "Basic JSON-LD identity present (not profile certification)",
+          "path": "bioschemas-workflow.jsonld",
+          "rule": "bioschemas.identity",
+          "status": "PASS"
+        }
+      ],
+      "kind": "RESEARCH_SOFTWARE_EVIDENCE_INSPECTION",
+      "observed_files": [
+        ".github/workflows/life-science-knowledge.yml",
+        "CITATION.cff",
+        "README.md",
+        "metadata/bioschemas-bio-tool.jsonld",
+        "metadata/bioschemas-tool.jsonld",
+        "metadata/bioschemas-workflow.jsonld",
+        "ro-crate-metadata.json"
+      ],
+      "schema_version": "1.0.0",
+      "scope": "local, static, nonexecuting, basic scientific-software identity and metadata preflight",
+      "status": "PASS",
+      "unverified": [
+        "scientific validity",
+        "external registrations",
+        "full standards conformance",
+        "remote links",
+        "workflow reproducibility"
+      ]
+    },
+    "initial_oracle": "Incorrectly hashed all fields except report_sha256; two inspection reports did not match.",
+    "correction": "Read inspection.py; the stable report digest deliberately excludes object. Recomputed using the documented source contract; both match. This is an audit-oracle error, not a runtime defect or full-report authentication."
+  },
+  "replay": {
+    "source_candidate_artifact_id": 14820557604,
+    "quality_comparator_artifact_id": 15267695466,
+    "bio_comparator_artifact_id": 15267745446,
+    "commands": [
+      "python -m evidence validate --bundle candidate.json",
+      "python -m life_science_ecosystem_lab knowledge build --candidate candidate.json --topics evidence/profiles/topics.json --output rebuilt.json",
+      "python -m life_science_ecosystem_lab knowledge verify --candidate candidate.json --topics evidence/profiles/topics.json --knowledge rebuilt.json",
+      "python -m life_science_ecosystem_lab graph project --knowledge rebuilt.json --output-dir rebuilt-graph",
+      "python -m life_science_ecosystem_lab graph verify --dir rebuilt-graph --knowledge rebuilt.json",
+      "python -m evidence audit-knowledge --knowledge rebuilt.json --candidate candidate.json --topics evidence/profiles/topics.json --output quality.json",
+      "python -m bio_tool protein-fasta --input .github/bio/test/example.fasta --output fasta.json",
+      "python -m bio_tool protein-pdb --input .github/bio/test/example.pdb --output pdb.json"
+    ],
+    "byte_equal": [
+      {
+        "name": "knowledge.json",
+        "sha256": "c7fd835949bda2181bffc9467dfa2190bfb868fd0b769cce19f92ec63d9b48ea"
+      },
+      {
+        "name": "graph/entities.jsonl",
+        "sha256": "df6a0611b49438a74b95fb59a2377fe19e0c1ab2433b3fe52bf45ba4a8dd1e05"
+      },
+      {
+        "name": "graph/relations.jsonl",
+        "sha256": "a3578d6888b96714633ac19dca5da9496aabb808af1bfa8e5b1b42ee71498e9c"
+      },
+      {
+        "name": "graph/graph-manifest.json",
+        "sha256": "fda4ee3224911d2ad44b5b67a52e34281acf321e4ca6ee5647aa0be73235d782"
+      }
+    ],
+    "json_equal": [
+      {
+        "name": "accepted-quality.json",
+        "status": "PASS",
+        "local_sha256": "f027beac991e09de878f87ebfc8f0ff7711fdafbead857854f2db030ade99efd"
+      },
+      {
+        "name": "fasta-one.json",
+        "status": "WARN_UNCERTAIN_RESIDUES",
+        "local_sha256": "ca1697502ec1c48afef0631e8cfbce0ab3ea3e221243284c368a9ffeb19e1692"
+      },
+      {
+        "name": "pdb-one.json",
+        "status": "PASS",
+        "local_sha256": "7b99771c0ca9fc359d69530b815a86311c9a8fb3ee8184efb9c118ed92867a13"
+      }
+    ],
+    "negative_cli_controls": [
+      {
+        "mutation": "append text to candidate record without changing digest",
+        "exit": 2
+      },
+      {
+        "mutation": "replace knowledge fragment with fabricated unsupported claim",
+        "exit": 2
+      },
+      {
+        "mutation": "FASTA >bad newline ACD@",
+        "exit": 2
+      }
+    ],
+    "source_binding_fragments": 26,
+    "scientific_truth": "NOT_EVALUATED"
+  },
+  "production": {
+    "data_git_blobs_unchanged": 26,
+    "accepted_events": 7,
+    "receipts": 7,
+    "archive_candidates": 6,
+    "records": 15,
+    "entities": 17,
+    "relations": 26,
+    "event_digest_and_chain_matches": 7,
+    "receipt_matches": 7,
+    "upstream_document_blob_and_normalized_text_matches": 15,
+    "source_revision_changes_since_previous": 1,
+    "document_text_changes_since_previous": 0,
+    "last_acceptance_commit": "c11343ece9ac3671700bb533cbf4eb00afac4d12"
+  },
+  "bio_pinned_field": {
+    "artifact_id": 15191492115,
+    "source_blob_matches": 6,
+    "independent_counts_matches": 6,
+    "counts": [
+      [
+        "CASP15 AlphaFold2 T1104",
+        "observed_CA",
+        117
+      ],
+      [
+        "CASP15 ESMFold T1104",
+        "observed_CA",
+        117
+      ],
+      [
+        "OpenFold FASTA",
+        "residues",
+        191
+      ],
+      [
+        "OpenFold PDB",
+        "observed_CA",
+        191
+      ],
+      [
+        "ProteinGym FASTA",
+        "residues",
+        161
+      ],
+      [
+        "ProteinGym PDB",
+        "observed_CA",
+        161
+      ]
+    ],
+    "not_verified": [
+      "fold accuracy",
+      "molecular geometry",
+      "biological ground truth"
+    ]
+  },
+  "limits": [
+    "Source cutoff excludes publishing PR and its CI.",
+    "Only 13 selected ZIPs were downloaded, not all 80 visible native artifacts or unavailable historical artifacts.",
+    "No full source checkout, local CWL engine execution, independent Framework execution, or complete historical runner log replay; CI remains separate.",
+    "No new native production acceptance, human relevance labels, external scientific review, registration or scientific conclusion."
+  ]
+}
