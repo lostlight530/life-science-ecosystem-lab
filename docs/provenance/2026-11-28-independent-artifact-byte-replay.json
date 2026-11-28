@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "INDEPENDENT_ARTIFACT_BYTE_REPLAY_ADDENDUM",
+  "logical_day_asia_shanghai": "2026-11-28",
+  "source_execution_sha": "d1aa636801f5c74ff0fe825bce0d80e89dfb219b",
+  "review_main_sha": "1d1321a7960e3625637d1c87d436de9700302a2b",
+  "prior_observation": "docs/provenance/post-998-to-1015-observation-2026-11-28.json",
+  "prior_observation_blob": "7acb23556e271ef1cd3fb37da4bbf2771892fe21",
+  "prior_cutoff_preserved": true,
+  "method": "Downloaded all four ZIPs independently; Python standard-library hashlib, zipfile.testzip, JSON canonical digest recomputation and in-memory one-byte mutation; compared upload log and API digest.",
+  "artifacts": [
+    {
+      "run_id": 46148483612,
+      "job_id": 140989623478,
+      "id": 15264379031,
+      "provider_sha256": "00fc9e7db5f6e7e8ced19d38ac6bcb86582fd4a4ea31b3b2b6cd3f9782edf139",
+      "independently_measured_sha256": "00fc9e7db5f6e7e8ced19d38ac6bcb86582fd4a4ea31b3b2b6cd3f9782edf139",
+      "upload_log_sha256": "00fc9e7db5f6e7e8ced19d38ac6bcb86582fd4a4ea31b3b2b6cd3f9782edf139",
+      "bytes": 967,
+      "zip_crc_ok": true,
+      "one_byte_mutation_rejected": true,
+      "members_sha256": {
+        "knowledge-quality.json": "0e3fbced4202e5c3298c70e2bdea2bf3029172451f417af46aafe54d110a5d26"
+      },
+      "embedded_report_digests_recomputed": {
+        "knowledge-quality.json": "1c0d691135539b9fce46bc63458c302f8bcf242aff39050e664fb2640f114c27"
+      }
+    },
+    {
+      "run_id": 46130549225,
+      "job_id": 140934503091,
+      "id": 15257675335,
+      "provider_sha256": "e4584aabd04016b6235627b9e95c54519f124baf8a9fb2b20a7f14b358a4d0b0",
+      "independently_measured_sha256": "e4584aabd04016b6235627b9e95c54519f124baf8a9fb2b20a7f14b358a4d0b0",
+      "upload_log_sha256": "e4584aabd04016b6235627b9e95c54519f124baf8a9fb2b20a7f14b358a4d0b0",
+      "bytes": 948,
+      "zip_crc_ok": true,
+      "one_byte_mutation_rejected": true,
+      "members_sha256": {
+        "report.json": "c97eb26cf0509b5260de19071a0ff2b801225f199a96ea7ae9eb29371e2f89f4"
+      },
+      "embedded_report_digests_recomputed": {}
+    },
+    {
+      "run_id": 46130549225,
+      "job_id": 140934503317,
+      "id": 15257417844,
+      "provider_sha256": "4c7aa08bfbb7101dbea2ae36e409d2c8bcd6e877b5b4e2feac34f6ac1a21996d",
+      "independently_measured_sha256": "4c7aa08bfbb7101dbea2ae36e409d2c8bcd6e877b5b4e2feac34f6ac1a21996d",
+      "upload_log_sha256": "4c7aa08bfbb7101dbea2ae36e409d2c8bcd6e877b5b4e2feac34f6ac1a21996d",
+      "bytes": 11837,
+      "zip_crc_ok": true,
+      "one_byte_mutation_rejected": true,
+      "members_sha256": {
+        "docs-audit.json": "d0f79b96c57e1246a6965bd785fca3d4ccc81750e897e3d7b47c6c4dde755287",
+        "execution-report.json": "4718f2401ec90fd6032393383996b6add6a4344333604fbb6f7df57d61503920",
+        "ecosystem-preflight.json": "b83b75e1f82836c339200d85cb66f0b17a8c49794ca933aaada519e2c32421b8",
+        "file-contract.json": "5e02e541b938744338b0f84ac3b79614eccf17e2c2472b148d60a03f2de4744d",
+        "knowledge-quality.json": "0e3fbced4202e5c3298c70e2bdea2bf3029172451f417af46aafe54d110a5d26"
+      },
+      "embedded_report_digests_recomputed": {
+        "knowledge-quality.json": "1c0d691135539b9fce46bc63458c302f8bcf242aff39050e664fb2640f114c27",
+        "ecosystem-preflight.json": "3b850c0b3f4e2d8e2b261bb55f7c8b20e108a9ebb6a9cfaacb4de2addcfa9601"
+      }
+    },
+    {
+      "run_id": 46011675683,
+      "job_id": 140548483335,
+      "id": 15203379053,
+      "provider_sha256": "60cfdc6be02f625f13560e025f859806d532532b528dd6c8bfb7c5795a0377a4",
+      "independently_measured_sha256": "60cfdc6be02f625f13560e025f859806d532532b528dd6c8bfb7c5795a0377a4",
+      "upload_log_sha256": "60cfdc6be02f625f13560e025f859806d532532b528dd6c8bfb7c5795a0377a4",
+      "bytes": 967,
+      "zip_crc_ok": true,
+      "one_byte_mutation_rejected": true,
+      "members_sha256": {
+        "knowledge-quality.json": "0e3fbced4202e5c3298c70e2bdea2bf3029172451f417af46aafe54d110a5d26"
+      },
+      "embedded_report_digests_recomputed": {
+        "knowledge-quality.json": "1c0d691135539b9fce46bc63458c302f8bcf242aff39050e664fb2640f114c27"
+      }
+    }
+  ],
+  "artifact_count": 4,
+  "member_occurrences": 8,
+  "embedded_report_digest_occurrences": 4,
+  "institutional": {
+    "run_id": 46130549225,
+    "job_id": 140934503091,
+    "mode": "PUBLIC_HTTP_READ_ONLY",
+    "observed_at": "2026-11-28T09:27:39Z",
+    "observations": {
+      "ls-login": 301,
+      "workflowhub": 200,
+      "lifemonitor": 206,
+      "openebench": 206,
+      "fairdomhub": null,
+      "bio-tools": 206
+    },
+    "inconclusive_count": 1,
+    "inconclusive": {
+      "service": "fairdomhub",
+      "error_type": "TimeoutError",
+      "result": "INCONCLUSIVE_NETWORK",
+      "cause": "UNKNOWN"
+    },
+    "service_health_or_authorization_verified": false
+  },
+  "custom": {
+    "run_id": 46130549225,
+    "job_id": 140934503317,
+    "source_commit": "d1aa636801f5c74ff0fe825bce0d80e89dfb219b",
+    "status": "PASS",
+    "checks": 11,
+    "blocking_failure_count": 0,
+    "advisory_failure_count": 0,
+    "file_contract_checks": 48,
+    "docs_scanned": 101,
+    "docs_issues": 0,
+    "ecosystem_preflight_status": "REVIEW_REQUIRED",
+    "ecosystem_finding": "MAIN_WORKFLOW_PORTABILITY_NOT_VERIFIED"
+  },
+  "knowledge": {
+    "accepted_events": 7,
+    "digest": "df485b7d4599a1831e20a72ed437843aa8b89fcb1d20bb49e0232f7bac33e9d2",
+    "quality_report_member_sha256": "0e3fbced4202e5c3298c70e2bdea2bf3029172451f417af46aafe54d110a5d26",
+    "identical_report_occurrences": 3,
+    "fragments": 26,
+    "topics": 3,
+    "review_candidates": 9,
+    "structural_findings": 0,
+    "label_status": "NO_HUMAN_LABELS",
+    "source_binding": "NOT_SUPPLIED_TO_NATIVE_QUALITY_REPORT",
+    "scientific_truth": "NOT_EVALUATED"
+  },
+  "limits": [
+    "The four ZIPs are the new native artifacts at the earlier 1015-Run cutoff, not every historical artifact.",
+    "The transient FAIRDOMHub timeout is not a service outage or registration failure.",
+    "An advisory runner exit PASS does not promote its REVIEW_REQUIRED ecosystem report.",
+    "No new biological result, upstream independent scientific review, or production acceptance.",
+    "Native full-suite execution was not rerun in this independent container because Git transport DNS failed; PR CI remains a separate gate."
+  ]
+}
