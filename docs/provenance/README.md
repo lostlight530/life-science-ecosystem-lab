@@ -2,6 +2,12 @@
 
 [Full-first-day classification](../taxonomy/README.md) · [Original 2026-10-30 historical reconstruction](../REPOSITORY_HISTORY_AND_PROVENANCE.md) · [Open claims](../CLAIM_VERIFICATION_GAPS.md) · [Evidence authority](../PROVENANCE.md)
 
+## November 28 · exact 998→1015 Run reconciliation and artifact visibility
+
+[Machine evidence](post-998-to-1015-observation-2026-11-28.json) · [Offline falsifiers](../../tests/test_post_998_run_delta.py). Pinned source main `d1aa636801f5c74ff0fe825bce0d80e89dfb219b`, latest included Run created 2026-11-28T13:12:48Z. Exact old/new Run-ID join retains all 998 prior IDs and adds 17 successes; 38 latest-attempt Jobs (36 success, two conditional Bio main-push skips). The full 97 scheduled Runs expose 151 successful Jobs, but only 48 Runs return any Artifact (80 provider-digested objects); 49 return none. Artifact absence and cron-to-created offset causes remain UNKNOWN. New native Artifacts have provider metadata, not independently recomputed ZIP bytes in this observation.
+
+Independent source-relative verification joins seven accepted events and receipts, six archived candidates, 15 normalized source texts and 26 source-bound fragments; recomputed event and graph digests agree, five tamper controls rejected. All 15 pinned upstream document identities and normalized texts match; provider Blob SHA is not independently recomputed here. A naive raw-substring oracle undercounts folded/truncated excerpts (6/26); the contract-normalized oracle matches 26/26. This is an audit-method correction, not a source defect or scientific discovery. No production change since November 23; historical negative evidence remains immutable. Local full-suite execution is blocked by Git transport DNS; GitHub execution and external certification remain separate evidence surfaces.
+
 ## November 27 · independent artifact-byte replay (after PR #90 cutoff)
 
 [Machine evidence](2026-11-27-independent-artifact-byte-replay.json) · [Offline relationship regression](../../tests/test_post_998_artifact_replay.py). This later read-only verification supplements, not rewrites, the frozen 987→998 observation. Seven ZIPs actually downloaded; independently recomputed SHA-256 agrees with all seven provider/upload digests, all ZIP CRC checks pass, 16 JSON members individually hashed, five embedded report digests independently recomputed and seven ZIP-mutation negative controls rejected. No raw third-party biological content redistributed.
